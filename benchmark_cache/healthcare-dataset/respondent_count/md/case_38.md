@@ -1,0 +1,147 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 102
+
+- **Name:** KaTiE hENry
+- **Age:** 70
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** d
+- **Date of Admission:** 2022-07-08
+- **Doctor:** Roberto Petersen
+- **Hospital:** Reed LLC
+- **Insurance Provider:** a
+- **Billing Amount:** 7187
+- **Room Number:** 402
+- **Admission Type:** b
+- **Discharge Date:** 2022-07-25
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 70
+
+- **Name:** Erica myERS
+- **Age:** 19
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** a
+- **Date of Admission:** 2020-01-30
+- **Doctor:** Ian Benitez
+- **Hospital:** Jackson and Lane, Dillon
+- **Insurance Provider:** d
+- **Billing Amount:** 20228
+- **Room Number:** 241
+- **Admission Type:** a
+- **Discharge Date:** 2020-02-12
+- **Medication:** e
+- **Test Results:** c
+
+### Respondent 43
+
+- **Name:** Mr. eRiC Lane
+- **Age:** 49
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** b
+- **Date of Admission:** 2022-06-24
+- **Doctor:** Matthew Thomas
+- **Hospital:** and Howell Brooks, Rogers
+- **Insurance Provider:** c
+- **Billing Amount:** 25966
+- **Room Number:** 418
+- **Admission Type:** a
+- **Discharge Date:** 2022-07-18
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 72
+
+- **Name:** JOSe LopEz
+- **Age:** 18
+- **Gender:** b
+- **Blood Type:** b
+- **Medical Condition:** f
+- **Date of Admission:** 2022-01-09
+- **Doctor:** Erika Jackson
+- **Hospital:** Miles, and Weaver Hudson
+- **Insurance Provider:** a
+- **Billing Amount:** 46957
+- **Room Number:** 377
+- **Admission Type:** b
+- **Discharge Date:** 2022-01-15
+- **Medication:** a
+- **Test Results:** b
+
+### Respondent 11
+
+- **Name:** mIchElLe daniELs
+- **Age:** 72
+- **Gender:** b
+- **Blood Type:** g
+- **Medical Condition:** c
+- **Date of Admission:** 2020-04-19
+- **Doctor:** John Duncan
+- **Hospital:** Schaefer-Porter
+- **Insurance Provider:** d
+- **Billing Amount:** 12577
+- **Room Number:** 394
+- **Admission Type:** c
+- **Discharge Date:** 2020-04-22
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 97
+
+- **Name:** ANNE THOMPSoN
+- **Age:** 76
+- **Gender:** a
+- **Blood Type:** g
+- **Medical Condition:** d
+- **Date of Admission:** 2024-03-24
+- **Doctor:** Kyle Smith
+- **Hospital:** Kemp-Munoz
+- **Insurance Provider:** a
+- **Billing Amount:** 6313
+- **Room Number:** 226
+- **Admission Type:** a
+- **Discharge Date:** 2024-04-14
+- **Medication:** a
+- **Test Results:** a
+
+### Respondent 80
+
+- **Name:** tiMOThY myers
+- **Age:** 61
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** c
+- **Date of Admission:** 2024-03-02
+- **Doctor:** Timothy Baker
+- **Hospital:** and Sons Reyes
+- **Insurance Provider:** e
+- **Billing Amount:** 29504
+- **Room Number:** 422
+- **Admission Type:** c
+- **Discharge Date:** 2024-03-26
+- **Medication:** b
+- **Test Results:** b

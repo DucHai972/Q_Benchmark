@@ -1,0 +1,75 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 24
+
+- **Name:** dR. EilEEn thomPsoN
+- **Age:** 59
+- **Gender:** b
+- **Blood Type:** a
+- **Medical Condition:** b
+- **Date of Admission:** 2021-08-02
+- **Doctor:** Donna Martinez MD
+- **Hospital:** and Sons Smith
+- **Insurance Provider:** a
+- **Billing Amount:** 25250
+- **Room Number:** 119
+- **Admission Type:** c
+- **Discharge Date:** 2021-08-12
+- **Medication:** c
+- **Test Results:** b
+
+### Respondent 45
+
+- **Name:** pAUL wILLiAmS
+- **Age:** 81
+- **Gender:** a
+- **Blood Type:** d
+- **Medical Condition:** c
+- **Date of Admission:** 2020-08-23
+- **Doctor:** Kristin Martinez
+- **Hospital:** Gates Brown, and Stuart
+- **Insurance Provider:** d
+- **Billing Amount:** 42685
+- **Room Number:** 328
+- **Admission Type:** c
+- **Discharge Date:** 2020-09-08
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 1
+
+- **Name:** Bobby JacksOn
+- **Age:** 30
+- **Blood Type:** f
+- **Medical Condition:** c
+- **Date of Admission:** 2024-01-31
+- **Doctor:** Matthew Smith
+- **Hospital:** Sons and Miller
+- **Insurance Provider:** b
+- **Billing Amount:** 18856
+- **Room Number:** 328
+- **Admission Type:** c
+- **Discharge Date:** 2024-02-02
+- **Medication:** d
+- **Test Results:** c
+

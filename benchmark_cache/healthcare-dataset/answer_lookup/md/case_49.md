@@ -1,0 +1,75 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 135
+
+- **Name:** aLaN AlVaREz
+- **Age:** 81
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** e
+- **Date of Admission:** 2021-10-25
+- **Doctor:** Elizabeth Morales
+- **Hospital:** and Smith, Tucker Cross
+- **Insurance Provider:** e
+- **Billing Amount:** 46378
+- **Room Number:** 275
+- **Admission Type:** c
+- **Discharge Date:** 2021-11-22
+- **Medication:** c
+- **Test Results:** c
+
+### Respondent 87
+
+- **Name:** kayLa padillA
+- **Age:** 63
+- **Gender:** b
+- **Blood Type:** f
+- **Medical Condition:** b
+- **Date of Admission:** 2020-09-24
+- **Doctor:** Jermaine Peters
+- **Hospital:** and Morales Jennings Cook,
+- **Insurance Provider:** a
+- **Billing Amount:** 34774
+- **Room Number:** 152
+- **Admission Type:** b
+- **Discharge Date:** 2020-10-08
+- **Medication:** e
+- **Test Results:** b
+
+### Respondent 119
+
+- **Name:** JAMEs Ross
+- **Age:** 83
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** d
+- **Date of Admission:** 2024-01-13
+- **Doctor:** Michael Baker
+- **Hospital:** Cox-Hester
+- **Insurance Provider:** b
+- **Billing Amount:** 10352
+- **Room Number:** 394
+- **Admission Type:** c
+- **Discharge Date:** 2024-01-22
+- **Medication:** a
+- **Test Results:** a

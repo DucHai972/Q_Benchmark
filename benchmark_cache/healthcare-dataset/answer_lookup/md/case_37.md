@@ -1,0 +1,75 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 50
+
+- **Name:** BRandOn coLLINS
+- **Age:** 77
+- **Gender:** a
+- **Blood Type:** g
+- **Medical Condition:** b
+- **Date of Admission:** 2019-07-19
+- **Doctor:** Cameron Young
+- **Hospital:** Lopez PLC
+- **Insurance Provider:** c
+- **Billing Amount:** 16320
+- **Room Number:** 138
+- **Admission Type:** c
+- **Discharge Date:** 2019-07-29
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 111
+
+- **Name:** coLtoN stRONg
+- **Age:** 55
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** b
+- **Date of Admission:** 2022-05-13
+- **Doctor:** Benjamin Webb
+- **Hospital:** Stewart Sons and
+- **Insurance Provider:** a
+- **Billing Amount:** 37406
+- **Room Number:** 212
+- **Admission Type:** a
+- **Discharge Date:** 2022-05-20
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 135
+
+- **Name:** aLaN AlVaREz
+- **Age:** 81
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** e
+- **Date of Admission:** 2021-10-25
+- **Doctor:** Elizabeth Morales
+- **Hospital:** and Smith, Tucker Cross
+- **Insurance Provider:** e
+- **Billing Amount:** 46378
+- **Room Number:** 275
+- **Admission Type:** c
+- **Discharge Date:** 2021-11-22
+- **Medication:** c
+- **Test Results:** c

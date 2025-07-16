@@ -1,0 +1,147 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 101
+
+- **Name:** mARcUS ZAmorA
+- **Age:** 69
+- **Gender:** b
+- **Blood Type:** g
+- **Medical Condition:** a
+- **Date of Admission:** 2021-11-13
+- **Doctor:** Jeremiah Wolf
+- **Hospital:** Hernandez, Ritter and Huffman
+- **Insurance Provider:** c
+- **Billing Amount:** 25426
+- **Room Number:** 115
+- **Admission Type:** a
+- **Discharge Date:** 2021-11-21
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 82
+
+- **Name:** ChAd MorEnO
+- **Age:** 67
+- **Gender:** b
+- **Blood Type:** c
+- **Medical Condition:** e
+- **Date of Admission:** 2020-08-26
+- **Doctor:** Connie Boyd
+- **Hospital:** Inc Skinner
+- **Insurance Provider:** a
+- **Billing Amount:** 46814
+- **Room Number:** 134
+- **Admission Type:** c
+- **Discharge Date:** 2020-08-27
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 108
+
+- **Name:** DAVid higgInS
+- **Age:** 49
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** a
+- **Date of Admission:** 2021-03-05
+- **Doctor:** Erin Henderson MD
+- **Hospital:** Evans and Hall Schneider,
+- **Insurance Provider:** d
+- **Billing Amount:** 24948
+- **Room Number:** 361
+- **Admission Type:** b
+- **Discharge Date:** 2021-03-20
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 3
+
+- **Name:** DaNnY sMitH
+- **Age:** 76
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** f
+- **Date of Admission:** 2022-09-22
+- **Doctor:** Tiffany Mitchell
+- **Hospital:** Cook PLC
+- **Insurance Provider:** a
+- **Billing Amount:** 27955
+- **Room Number:** 205
+- **Admission Type:** b
+- **Discharge Date:** 2022-10-07
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 19
+
+- **Name:** LuKE BuRgEss
+- **Age:** 34
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** e
+- **Date of Admission:** 2021-03-04
+- **Doctor:** Justin Moore Jr.
+- **Hospital:** Houston PLC
+- **Insurance Provider:** b
+- **Billing Amount:** 18843
+- **Room Number:** 260
+- **Admission Type:** a
+- **Discharge Date:** 2021-03-14
+- **Medication:** a
+- **Test Results:** a
+
+### Respondent 124
+
+- **Name:** DR. LaUreN ClaRk DDs
+- **Age:** 19
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** c
+- **Date of Admission:** 2020-10-26
+- **Doctor:** Brian Wagner
+- **Hospital:** PLC Jimenez
+- **Insurance Provider:** e
+- **Billing Amount:** 49834
+- **Room Number:** 302
+- **Admission Type:** a
+- **Discharge Date:** 2020-11-17
+- **Medication:** c
+- **Test Results:** b
+
+### Respondent 27
+
+- **Name:** cathy sMaLl
+- **Age:** 51
+- **Gender:** a
+- **Blood Type:** h
+- **Medical Condition:** b
+- **Date of Admission:** 2023-12-23
+- **Doctor:** Wendy Glenn
+- **Hospital:** Brown, and Jones Weaver
+- **Insurance Provider:** b
+- **Billing Amount:** 26787
+- **Room Number:** 401
+- **Admission Type:** a
+- **Discharge Date:** 2024-01-19
+- **Medication:** b
+- **Test Results:** c

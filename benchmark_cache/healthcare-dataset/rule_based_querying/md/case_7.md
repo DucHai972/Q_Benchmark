@@ -1,0 +1,76 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 95
+
+- **Name:** heatHER mIller
+- **Age:** 76
+- **Gender:** b
+- **Blood Type:** a
+- **Medical Condition:** d
+- **Date of Admission:** 2021-04-17
+- **Doctor:** Scott Grant
+- **Hospital:** Powell Ward, and Mercado
+- **Insurance Provider:** a
+- **Billing Amount:** 3909
+- **Room Number:** 428
+- **Admission Type:** a
+- **Discharge Date:** 2021-05-10
+- **Medication:** c
+- **Test Results:** b
+
+### Respondent 52
+
+- **Name:** STepHaNie kEnt
+- **Age:** 42
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** c
+- **Date of Admission:** 2019-06-15
+- **Doctor:** Mary Moss
+- **Hospital:** Beck-Galloway
+- **Insurance Provider:** a
+- **Billing Amount:** 14681
+- **Room Number:** 234
+- **Admission Type:** b
+- **Discharge Date:** 2019-07-05
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 150
+
+- **Name:** SierRa MoRTON
+- **Age:** 27
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** b
+- **Date of Admission:** 2021-10-27
+- **Doctor:** Daniel Shelton
+- **Hospital:** Sons Garcia and
+- **Insurance Provider:** a
+- **Billing Amount:** 32562
+- **Room Number:** 485
+- **Admission Type:** a
+- **Discharge Date:** 2021-11-04
+- **Medication:** b
+- **Test Results:** b
+

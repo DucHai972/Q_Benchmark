@@ -1,0 +1,147 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 122
+
+- **Name:** RENEE bAilEY
+- **Age:** 19
+- **Gender:** a
+- **Blood Type:** e
+- **Medical Condition:** c
+- **Date of Admission:** 2021-07-03
+- **Doctor:** Sarah Shaffer
+- **Hospital:** Johnson, and Ross Harris
+- **Insurance Provider:** d
+- **Billing Amount:** 33682
+- **Room Number:** 177
+- **Admission Type:** a
+- **Discharge Date:** 2021-07-31
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 83
+
+- **Name:** SeaN jenniNGs
+- **Age:** 80
+- **Gender:** a
+- **Blood Type:** d
+- **Medical Condition:** d
+- **Date of Admission:** 2023-11-12
+- **Doctor:** James Tucker
+- **Hospital:** Clark-Johnson
+- **Insurance Provider:** b
+- **Billing Amount:** 20258
+- **Room Number:** 255
+- **Admission Type:** a
+- **Discharge Date:** 2023-12-12
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 28
+
+- **Name:** mr. KenNEth MoORE
+- **Age:** 34
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** d
+- **Date of Admission:** 2022-06-21
+- **Doctor:** James Ellis
+- **Hospital:** Serrano-Dixon
+- **Insurance Provider:** e
+- **Billing Amount:** 18835
+- **Room Number:** 157
+- **Admission Type:** b
+- **Discharge Date:** 2022-06-30
+- **Medication:** c
+- **Test Results:** a
+
+### Respondent 63
+
+- **Name:** tRAvIs carTeR
+- **Age:** 18
+- **Gender:** b
+- **Blood Type:** a
+- **Medical Condition:** c
+- **Date of Admission:** 2022-07-06
+- **Doctor:** Megan Hahn
+- **Hospital:** Moss and Ferguson, Baker
+- **Insurance Provider:** e
+- **Billing Amount:** 48407
+- **Room Number:** 325
+- **Admission Type:** b
+- **Discharge Date:** 2022-07-18
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 27
+
+- **Name:** cathy sMaLl
+- **Age:** 51
+- **Gender:** a
+- **Blood Type:** h
+- **Medical Condition:** b
+- **Date of Admission:** 2023-12-23
+- **Doctor:** Wendy Glenn
+- **Hospital:** Brown, and Jones Weaver
+- **Insurance Provider:** b
+- **Billing Amount:** 26787
+- **Room Number:** 401
+- **Admission Type:** a
+- **Discharge Date:** 2024-01-19
+- **Medication:** b
+- **Test Results:** c
+
+### Respondent 8
+
+- **Name:** CHrisTInA MARtinez
+- **Age:** 20
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** c
+- **Date of Admission:** 2021-12-28
+- **Doctor:** Suzanne Thomas
+- **Hospital:** Powell Robinson and Valdez,
+- **Insurance Provider:** c
+- **Billing Amount:** 45820
+- **Room Number:** 277
+- **Admission Type:** b
+- **Discharge Date:** 2022-01-07
+- **Medication:** d
+- **Test Results:** b
+
+### Respondent 102
+
+- **Name:** KaTiE hENry
+- **Age:** 70
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** d
+- **Date of Admission:** 2022-07-08
+- **Doctor:** Roberto Petersen
+- **Hospital:** Reed LLC
+- **Insurance Provider:** a
+- **Billing Amount:** 7187
+- **Room Number:** 402
+- **Admission Type:** b
+- **Discharge Date:** 2022-07-25
+- **Medication:** a
+- **Test Results:** c

@@ -1,0 +1,129 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 2
+
+- **Name:** LesLie TErRy
+- **Age:** 62
+- **Gender:** b
+- **Blood Type:** a
+- **Medical Condition:** f
+- **Date of Admission:** 2019-08-20
+- **Doctor:** Samantha Davies
+- **Hospital:** Kim Inc
+- **Insurance Provider:** d
+- **Billing Amount:** 33643
+- **Room Number:** 265
+- **Admission Type:** b
+- **Discharge Date:** 2019-08-26
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 82
+
+- **Name:** ChAd MorEnO
+- **Age:** 67
+- **Gender:** b
+- **Blood Type:** c
+- **Medical Condition:** e
+- **Date of Admission:** 2020-08-26
+- **Doctor:** Connie Boyd
+- **Hospital:** Inc Skinner
+- **Insurance Provider:** a
+- **Billing Amount:** 46814
+- **Room Number:** 134
+- **Admission Type:** c
+- **Discharge Date:** 2020-08-27
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 68
+
+- **Name:** jOhN hARTmAN
+- **Age:** 27
+- **Gender:** b
+- **Blood Type:** f
+- **Medical Condition:** e
+- **Date of Admission:** 2023-01-07
+- **Doctor:** Jack Jackson
+- **Hospital:** Bullock-Ramsey
+- **Insurance Provider:** c
+- **Billing Amount:** 49402
+- **Room Number:** 263
+- **Admission Type:** a
+- **Discharge Date:** 2023-01-27
+- **Medication:** c
+- **Test Results:** b
+
+### Respondent 131
+
+- **Name:** PaUL MaRTinEz
+- **Age:** 20
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** e
+- **Date of Admission:** 2019-10-13
+- **Doctor:** Tracey Spence
+- **Hospital:** Lewis Livingston, Lowe and
+- **Insurance Provider:** b
+- **Billing Amount:** 10664
+- **Room Number:** 104
+- **Admission Type:** b
+- **Discharge Date:** 2019-10-16
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 133
+
+- **Name:** ashLEy ERIcKSoN
+- **Age:** 32
+- **Gender:** a
+- **Blood Type:** d
+- **Medical Condition:** c
+- **Date of Admission:** 2019-11-05
+- **Doctor:** Gerald Hooper
+- **Hospital:** and Johnson Moore, Branch
+- **Insurance Provider:** a
+- **Billing Amount:** -503
+- **Room Number:** 376
+- **Admission Type:** c
+- **Discharge Date:** 2019-11-23
+- **Medication:** e
+- **Test Results:** c
+
+### Respondent 77
+
+- **Name:** AdriaN BuckLEY
+- **Age:** 22
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** a
+- **Date of Admission:** 2023-10-11
+- **Doctor:** Julie Ramirez
+- **Hospital:** Lin Thompson Wells, and
+- **Insurance Provider:** b
+- **Billing Amount:** 42697
+- **Room Number:** 102
+- **Admission Type:** c
+- **Discharge Date:** 2023-10-27
+- **Medication:** e
+- **Test Results:** c

@@ -1,0 +1,129 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 19
+
+- **Name:** LuKE BuRgEss
+- **Age:** 34
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** e
+- **Date of Admission:** 2021-03-04
+- **Doctor:** Justin Moore Jr.
+- **Hospital:** Houston PLC
+- **Insurance Provider:** b
+- **Billing Amount:** 18843
+- **Room Number:** 260
+- **Admission Type:** a
+- **Discharge Date:** 2021-03-14
+- **Medication:** a
+- **Test Results:** a
+
+### Respondent 112
+
+- **Name:** MARK priCE
+- **Age:** 18
+- **Gender:** b
+- **Blood Type:** f
+- **Medical Condition:** a
+- **Date of Admission:** 2022-09-22
+- **Doctor:** Krystal Fox
+- **Hospital:** Hall Roberts and Duarte,
+- **Insurance Provider:** d
+- **Billing Amount:** 31486
+- **Room Number:** 440
+- **Admission Type:** b
+- **Discharge Date:** 2022-10-14
+- **Medication:** b
+- **Test Results:** c
+
+### Respondent 122
+
+- **Name:** RENEE bAilEY
+- **Age:** 19
+- **Gender:** a
+- **Blood Type:** e
+- **Medical Condition:** c
+- **Date of Admission:** 2021-07-03
+- **Doctor:** Sarah Shaffer
+- **Hospital:** Johnson, and Ross Harris
+- **Insurance Provider:** d
+- **Billing Amount:** 33682
+- **Room Number:** 177
+- **Admission Type:** a
+- **Discharge Date:** 2021-07-31
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 45
+
+- **Name:** pAUL wILLiAmS
+- **Age:** 81
+- **Gender:** a
+- **Blood Type:** d
+- **Medical Condition:** c
+- **Date of Admission:** 2020-08-23
+- **Doctor:** Kristin Martinez
+- **Hospital:** Gates Brown, and Stuart
+- **Insurance Provider:** d
+- **Billing Amount:** 42685
+- **Room Number:** 328
+- **Admission Type:** c
+- **Discharge Date:** 2020-09-08
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 126
+
+- **Name:** JasOn baKEr
+- **Age:** 50
+- **Gender:** a
+- **Blood Type:** h
+- **Medical Condition:** f
+- **Date of Admission:** 2020-10-24
+- **Doctor:** Julia Yoder
+- **Hospital:** Wright-Alexander
+- **Insurance Provider:** e
+- **Billing Amount:** 40134
+- **Room Number:** 130
+- **Admission Type:** c
+- **Discharge Date:** 2020-11-13
+- **Medication:** b
+- **Test Results:** c
+
+### Respondent 40
+
+- **Name:** PAmela fErNanDeZ
+- **Age:** 57
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** f
+- **Date of Admission:** 2021-01-17
+- **Doctor:** Emily Taylor
+- **Hospital:** Walton-Meyer
+- **Insurance Provider:** d
+- **Billing Amount:** 32974
+- **Room Number:** 272
+- **Admission Type:** c
+- **Discharge Date:** 2021-01-29
+- **Medication:** e
+- **Test Results:** a

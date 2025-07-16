@@ -1,0 +1,75 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 111
+
+- **Name:** coLtoN stRONg
+- **Age:** 55
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** b
+- **Date of Admission:** 2022-05-13
+- **Doctor:** Benjamin Webb
+- **Hospital:** Stewart Sons and
+- **Insurance Provider:** a
+- **Billing Amount:** 37406
+- **Room Number:** 212
+- **Admission Type:** a
+- **Discharge Date:** 2022-05-20
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 65
+
+- **Name:** Nancy glOVeR
+- **Age:** 58
+- **Gender:** b
+- **Blood Type:** b
+- **Medical Condition:** e
+- **Date of Admission:** 2020-05-08
+- **Doctor:** Jennifer Larson
+- **Hospital:** Khan, and Rodriguez Fischer
+- **Insurance Provider:** d
+- **Billing Amount:** 19183
+- **Room Number:** 378
+- **Admission Type:** b
+- **Discharge Date:** 2020-06-01
+- **Medication:** a
+- **Test Results:** a
+
+### Respondent 71
+
+- **Name:** cAROl PaTtERSoN
+- **Age:** 29
+- **Gender:** a
+- **Blood Type:** g
+- **Medical Condition:** c
+- **Date of Admission:** 2022-10-24
+- **Doctor:** Jamie Baker
+- **Hospital:** Turner Cook, Banks and
+- **Insurance Provider:** b
+- **Billing Amount:** 19328
+- **Room Number:** 231
+- **Admission Type:** c
+- **Discharge Date:** 2022-11-07
+- **Medication:** b
+- **Test Results:** c

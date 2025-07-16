@@ -1,0 +1,130 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 19
+
+- **Name:** LuKE BuRgEss
+- **Age:** 34
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** e
+- **Date of Admission:** 2021-03-04
+- **Doctor:** Justin Moore Jr.
+- **Hospital:** Houston PLC
+- **Insurance Provider:** b
+- **Billing Amount:** 18843
+- **Room Number:** 260
+- **Admission Type:** a
+- **Discharge Date:** 2021-03-14
+- **Medication:** a
+- **Test Results:** a
+
+### Respondent 62
+
+- **Name:** Kim ScOtt
+- **Age:** 63
+- **Gender:** b
+- **Blood Type:** b
+- **Medical Condition:** b
+- **Date of Admission:** 2024-04-07
+- **Doctor:** Cindy Ellis
+- **Hospital:** Scott-Kelly
+- **Insurance Provider:** e
+- **Billing Amount:** 39723
+- **Room Number:** 244
+- **Admission Type:** b
+- **Discharge Date:** 2024-05-04
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 64
+
+- **Name:** LArry rodgeRs
+- **Age:** 23
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** e
+- **Date of Admission:** 2022-08-03
+- **Doctor:** Eric Kelly
+- **Hospital:** and Mason Smith Chase,
+- **Insurance Provider:** c
+- **Billing Amount:** 5517
+- **Room Number:** 113
+- **Admission Type:** a
+- **Discharge Date:** 2022-08-10
+- **Medication:** a
+- **Test Results:** b
+
+### Respondent 80
+
+- **Name:** tiMOThY myers
+- **Age:** 61
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** c
+- **Date of Admission:** 2024-03-02
+- **Doctor:** Timothy Baker
+- **Hospital:** and Sons Reyes
+- **Insurance Provider:** e
+- **Billing Amount:** 29504
+- **Room Number:** 422
+- **Admission Type:** c
+- **Discharge Date:** 2024-03-26
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 88
+
+- **Name:** JUan klEiN
+- **Age:** 58
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** a
+- **Date of Admission:** 2023-08-19
+- **Doctor:** Lisa Edwards
+- **Hospital:** Group Hood
+- **Insurance Provider:** e
+- **Billing Amount:** 24870
+- **Room Number:** 321
+- **Admission Type:** b
+- **Discharge Date:** 2023-08-25
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 114
+
+- **Name:** MIchaEL HUrLEY
+- **Age:** 67
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** f
+- **Date of Admission:** 2019-06-02
+- **Doctor:** Jonathan Watson
+- **Hospital:** Garcia, and Bishop Hernandez
+- **Insurance Provider:** a
+- **Billing Amount:** 3326
+- **Room Number:** 424
+- **Admission Type:** b
+- **Discharge Date:** 2019-06-04
+- **Medication:** c
+- **Test Results:** b
+

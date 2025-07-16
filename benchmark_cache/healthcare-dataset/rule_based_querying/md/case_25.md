@@ -1,0 +1,94 @@
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 106
+
+- **Name:** dWAYnE DAViS
+- **Age:** 28
+- **Gender:** b
+- **Blood Type:** g
+- **Medical Condition:** c
+- **Date of Admission:** 2024-01-15
+- **Doctor:** Wendy Davis
+- **Hospital:** Ltd Thomas
+- **Insurance Provider:** d
+- **Billing Amount:** 40783
+- **Room Number:** 373
+- **Admission Type:** a
+- **Discharge Date:** 2024-02-07
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 57
+
+- **Name:** beThaNY MoOrE
+- **Age:** 55
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** c
+- **Date of Admission:** 2023-04-09
+- **Doctor:** Penny Pruitt
+- **Hospital:** and Montes Graves, Thomas
+- **Insurance Provider:** c
+- **Billing Amount:** 10301
+- **Room Number:** 330
+- **Admission Type:** b
+- **Discharge Date:** 2023-04-21
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 134
+
+- **Name:** SEaN carDenaS
+- **Age:** 55
+- **Gender:** b
+- **Blood Type:** f
+- **Medical Condition:** d
+- **Date of Admission:** 2021-02-07
+- **Doctor:** Todd Sanchez
+- **Hospital:** Holmes and Hughes, Phillips
+- **Insurance Provider:** c
+- **Billing Amount:** 34758
+- **Room Number:** 331
+- **Admission Type:** b
+- **Discharge Date:** 2021-03-05
+- **Medication:** a
+- **Test Results:** c
+
+### Respondent 60
+
+- **Name:** jACqUeLINE jORdaN
+- **Age:** 51
+- **Gender:** b
+- **Blood Type:** g
+- **Medical Condition:** e
+- **Date of Admission:** 2020-07-10
+- **Doctor:** Jacob Daniel
+- **Hospital:** Hunter-Grant
+- **Insurance Provider:** a
+- **Billing Amount:** 17840
+- **Room Number:** 306
+- **Admission Type:** a
+- **Discharge Date:** 2020-07-20
+- **Medication:** d
+- **Test Results:** a
+

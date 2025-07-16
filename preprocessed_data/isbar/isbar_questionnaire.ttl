@@ -1,0 +1,306 @@
+# Questions
+:Qdate                                   pred:text "What is the date of the session?" ; pred:type "Open-ended" .
+:Qsessionname                            pred:text "What is the name of the session?" ; pred:type "Open-ended" .
+:Qidentification                         pred:text "Identification of self, role, and patient." ; pred:type "Rubric" ; pred:options "0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete" .
+:Qsituation                              pred:text "Identifies the main problem(s)." ; pred:type "Rubric" ; pred:options "0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted" .
+:Qbackgroundhistory                      pred:text "Gives appropriate history." ; pred:type "Rubric" ; pred:options "0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history" .
+:Qbackgroundexamination                  pred:text "Gives appropriate examination/observations." ; pred:type "Rubric" ; pred:options "0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations" .
+:Qassessment                             pred:text "Makes logical assessment (correlates problem, history, exam, context)." ; pred:type "Rubric" ; pred:options "0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning" .
+:Qrecommendationclearrecommendation      pred:text "Makes a clear recommendation." ; pred:type "Rubric" ; pred:options "0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning" .
+:Qrecommendationglobalratingscale        pred:text "Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient?" ; pred:type "Rubric" ; pred:options "0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning" .
+:Qcomments                               pred:text "Comments on the session." ; pred:type "Open-ended" .
+
+
+# Respondent 1 
+:R1 pred:answers :Qdate                                   ; pred:value "2025-03-14" .
+:R1 pred:answers :Qsessionname                            ; pred:value "III-Sepsis" .
+:R1 pred:answers :Qidentification                         ; pred:value "3" .
+:R1 pred:answers :Qsituation                              ; pred:value "3" .
+:R1 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R1 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R1 pred:answers :Qassessment                             ; pred:value "2" .
+:R1 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R1 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R1 pred:answers :Qcomments                               ; pred:value "Time: (1:00-1:17)" .
+
+# Respondent 2 
+:R2 pred:answers :Qdate                                   ; pred:value "2025-03-14" .
+:R2 pred:answers :Qsessionname                            ; pred:value "II-Anaphylaxsis" .
+:R2 pred:answers :Qidentification                         ; pred:value "3" .
+:R2 pred:answers :Qsituation                              ; pred:value "3" .
+:R2 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R2 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R2 pred:answers :Qassessment                             ; pred:value "3" .
+:R2 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R2 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R2 pred:answers :Qcomments                               ; pred:value "Time: (11:43-11:58)
+Talking to registrav could not summarize the condition of patient very clearly
+DID: Sepsis I Anaphylaxsis given by team" .
+
+# Respondent 3 
+:R3 pred:answers :Qdate                                   ; pred:value "2025-03-14" .
+:R3 pred:answers :Qsessionname                            ; pred:value "IV-Hypoglycemia" .
+:R3 pred:answers :Qidentification                         ; pred:value "3" .
+:R3 pred:answers :Qsituation                              ; pred:value "3" .
+:R3 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R3 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R3 pred:answers :Qassessment                             ; pred:value "3" .
+:R3 pred:answers :Qrecommendationclearrecommendation      ; pred:value "1" .
+:R3 pred:answers :Qrecommendationglobalratingscale        ; pred:value "1" .
+:R3 pred:answers :Qcomments                               ; pred:value "Time: (2:36-2:53)
+Late response for considering consultation" .
+
+# Respondent 4 
+:R4 pred:answers :Qdate                                   ; pred:value "2025-03-14" .
+:R4 pred:answers :Qsessionname                            ; pred:value "I-VF" .
+:R4 pred:answers :Qidentification                         ; pred:value "3" .
+:R4 pred:answers :Qsituation                              ; pred:value "3" .
+:R4 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R4 pred:answers :Qbackgroundexamination                  ; pred:value "1" .
+:R4 pred:answers :Qassessment                             ; pred:value "2" .
+:R4 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R4 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R4 pred:answers :Qcomments                               ; pred:value "Time: (10:29-10:54)
+Ventricular fibrillation (CVS)
+Lack of communication btween 2 main interns
+Further brief to patient, ask patent concerns" .
+
+# Respondent 5 
+:R5 pred:answers :Qdate                                   ; pred:value "2025-03-14" .
+:R5 pred:answers :Qsessionname                            ; pred:value "(MI)-VT" .
+:R5 pred:answers :Qidentification                         ; pred:value "0" .
+:R5 pred:answers :Qsituation                              ; pred:value "2" .
+:R5 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R5 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R5 pred:answers :Qassessment                             ; pred:value "2" .
+:R5 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R5 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R5 pred:answers :Qcomments                               ; pred:value "Time: (15:53-16:14)" .
+
+# Respondent 6 
+:R6 pred:answers :Qdate                                   ; pred:value "2025-04-04" .
+:R6 pred:answers :Qsessionname                            ; pred:value "III-Sepsis" .
+:R6 pred:answers :Qidentification                         ; pred:value "-1" .
+:R6 pred:answers :Qsituation                              ; pred:value "2" .
+:R6 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R6 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R6 pred:answers :Qassessment                             ; pred:value "3" .
+:R6 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R6 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R6 pred:answers :Qcomments                               ; pred:value "The patient/simulation is not oriented in TPP.
+Clear communication between Reg and colleague during handover" .
+
+# Respondent 7 
+:R7 pred:answers :Qdate                                   ; pred:value "2025-04-04" .
+:R7 pred:answers :Qsessionname                            ; pred:value "II (Anaphylactic Shock)" .
+:R7 pred:answers :Qidentification                         ; pred:value "3" .
+:R7 pred:answers :Qsituation                              ; pred:value "2" .
+:R7 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R7 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R7 pred:answers :Qassessment                             ; pred:value "2" .
+:R7 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R7 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R7 pred:answers :Qcomments                               ; pred:value "MISSING" .
+
+# Respondent 8 
+:R8 pred:answers :Qdate                                   ; pred:value "2025-04-04" .
+:R8 pred:answers :Qsessionname                            ; pred:value "IV (AF)" .
+:R8 pred:answers :Qidentification                         ; pred:value "3" .
+:R8 pred:answers :Qsituation                              ; pred:value "3" .
+:R8 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R8 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R8 pred:answers :Qassessment                             ; pred:value "3" .
+:R8 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R8 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R8 pred:answers :Qcomments                               ; pred:value "Clear communication and handover" .
+
+# Respondent 9 
+:R9 pred:answers :Qdate                                   ; pred:value "2025-04-04" .
+:R9 pred:answers :Qsessionname                            ; pred:value "MI" .
+:R9 pred:answers :Qidentification                         ; pred:value "2" .
+:R9 pred:answers :Qsituation                              ; pred:value "3" .
+:R9 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R9 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R9 pred:answers :Qassessment                             ; pred:value "3" .
+:R9 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R9 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R9 pred:answers :Qcomments                               ; pred:value "MISSING" .
+
+# Respondent 10 
+:R10 pred:answers :Qdate                                   ; pred:value "2025-05-02" .
+:R10 pred:answers :Qsessionname                            ; pred:value "III (Sepsis)" .
+:R10 pred:answers :Qidentification                         ; pred:value "3" .
+:R10 pred:answers :Qsituation                              ; pred:value "3" .
+:R10 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R10 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R10 pred:answers :Qassessment                             ; pred:value "2" .
+:R10 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R10 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R10 pred:answers :Qcomments                               ; pred:value "Clear communication during handover
+Good" .
+
+# Respondent 11 
+:R11 pred:answers :Qdate                                   ; pred:value "2025-05-02" .
+:R11 pred:answers :Qsessionname                            ; pred:value "II (Anaphylaxis)" .
+:R11 pred:answers :Qidentification                         ; pred:value "3" .
+:R11 pred:answers :Qsituation                              ; pred:value "3" .
+:R11 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R11 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R11 pred:answers :Qassessment                             ; pred:value "2" .
+:R11 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R11 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R11 pred:answers :Qcomments                               ; pred:value "Good" .
+
+# Respondent 12 
+:R12 pred:answers :Qdate                                   ; pred:value "2025-05-02" .
+:R12 pred:answers :Qsessionname                            ; pred:value "IV (VT)" .
+:R12 pred:answers :Qidentification                         ; pred:value "3" .
+:R12 pred:answers :Qsituation                              ; pred:value "3" .
+:R12 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R12 pred:answers :Qbackgroundexamination                  ; pred:value "-1" .
+:R12 pred:answers :Qassessment                             ; pred:value "3" .
+:R12 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R12 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R12 pred:answers :Qcomments                               ; pred:value "Good" .
+
+# Respondent 13 
+:R13 pred:answers :Qdate                                   ; pred:value "2025-05-02" .
+:R13 pred:answers :Qsessionname                            ; pred:value "I - MI" .
+:R13 pred:answers :Qidentification                         ; pred:value "3" .
+:R13 pred:answers :Qsituation                              ; pred:value "3" .
+:R13 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R13 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R13 pred:answers :Qassessment                             ; pred:value "3" .
+:R13 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R13 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R13 pred:answers :Qcomments                               ; pred:value "Consent denied for video recordings
+Satisfactory" .
+
+# Respondent 14 
+:R14 pred:answers :Qdate                                   ; pred:value "2025-05-02" .
+:R14 pred:answers :Qsessionname                            ; pred:value "V (Hypoglycemia)" .
+:R14 pred:answers :Qidentification                         ; pred:value "3" .
+:R14 pred:answers :Qsituation                              ; pred:value "2" .
+:R14 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R14 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R14 pred:answers :Qassessment                             ; pred:value "3" .
+:R14 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R14 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R14 pred:answers :Qcomments                               ; pred:value "Satisfactory" .
+
+# Respondent 15 
+:R15 pred:answers :Qdate                                   ; pred:value "2025-05-04" .
+:R15 pred:answers :Qsessionname                            ; pred:value "III - Sepsis" .
+:R15 pred:answers :Qidentification                         ; pred:value "3" .
+:R15 pred:answers :Qsituation                              ; pred:value "3" .
+:R15 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R15 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R15 pred:answers :Qassessment                             ; pred:value "2" .
+:R15 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R15 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R15 pred:answers :Qcomments                               ; pred:value "Detailed Response - clear communication" .
+
+# Respondent 16 
+:R16 pred:answers :Qdate                                   ; pred:value "2025-05-04" .
+:R16 pred:answers :Qsessionname                            ; pred:value "II - Anaphylaxsis" .
+:R16 pred:answers :Qidentification                         ; pred:value "3" .
+:R16 pred:answers :Qsituation                              ; pred:value "3" .
+:R16 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R16 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R16 pred:answers :Qassessment                             ; pred:value "3" .
+:R16 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R16 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R16 pred:answers :Qcomments                               ; pred:value "Good clear and precise clinical handover
+Good" .
+
+# Respondent 17 
+:R17 pred:answers :Qdate                                   ; pred:value "2025-05-04" .
+:R17 pred:answers :Qsessionname                            ; pred:value "IV - VT" .
+:R17 pred:answers :Qidentification                         ; pred:value "3" .
+:R17 pred:answers :Qsituation                              ; pred:value "3" .
+:R17 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R17 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R17 pred:answers :Qassessment                             ; pred:value "3" .
+:R17 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R17 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R17 pred:answers :Qcomments                               ; pred:value "Not very concise or clear communication
+Satisfactory" .
+
+# Respondent 18 
+:R18 pred:answers :Qdate                                   ; pred:value "2025-05-04" .
+:R18 pred:answers :Qsessionname                            ; pred:value "I - MI" .
+:R18 pred:answers :Qidentification                         ; pred:value "3" .
+:R18 pred:answers :Qsituation                              ; pred:value "3" .
+:R18 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R18 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R18 pred:answers :Qassessment                             ; pred:value "2" .
+:R18 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R18 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R18 pred:answers :Qcomments                               ; pred:value "Wrong CPR position
+Clarity is a bit low over whole case scenario
+Satisfactory" .
+
+# Respondent 19 
+:R19 pred:answers :Qdate                                   ; pred:value "2025-05-04" .
+:R19 pred:answers :Qsessionname                            ; pred:value "V (Hypoglycemia)" .
+:R19 pred:answers :Qidentification                         ; pred:value "3" .
+:R19 pred:answers :Qsituation                              ; pred:value "3" .
+:R19 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R19 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R19 pred:answers :Qassessment                             ; pred:value "3" .
+:R19 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R19 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R19 pred:answers :Qcomments                               ; pred:value "Concise - clear
+Satisfactory" .
+
+# Respondent 20 
+:R20 pred:answers :Qdate                                   ; pred:value "2025-05-16" .
+:R20 pred:answers :Qsessionname                            ; pred:value "III (Sepsis)" .
+:R20 pred:answers :Qidentification                         ; pred:value "3" .
+:R20 pred:answers :Qsituation                              ; pred:value "3" .
+:R20 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R20 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R20 pred:answers :Qassessment                             ; pred:value "2" .
+:R20 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R20 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R20 pred:answers :Qcomments                               ; pred:value "Clinical handover and communication skills, satisfactory
+No panic, no arrest team
+Satisfactory" .
+
+# Respondent 21 
+:R21 pred:answers :Qdate                                   ; pred:value "2025-05-16" .
+:R21 pred:answers :Qsessionname                            ; pred:value "II (Anaphylaxsis)" .
+:R21 pred:answers :Qidentification                         ; pred:value "3" .
+:R21 pred:answers :Qsituation                              ; pred:value "3" .
+:R21 pred:answers :Qbackgroundhistory                      ; pred:value "2" .
+:R21 pred:answers :Qbackgroundexamination                  ; pred:value "2" .
+:R21 pred:answers :Qassessment                             ; pred:value "2" .
+:R21 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R21 pred:answers :Qrecommendationglobalratingscale        ; pred:value "2" .
+:R21 pred:answers :Qcomments                               ; pred:value "Overall a bit unclear communication reflected" .
+
+# Respondent 22 
+:R22 pred:answers :Qdate                                   ; pred:value "2025-05-16" .
+:R22 pred:answers :Qsessionname                            ; pred:value "IV (VT)" .
+:R22 pred:answers :Qidentification                         ; pred:value "3" .
+:R22 pred:answers :Qsituation                              ; pred:value "3" .
+:R22 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R22 pred:answers :Qbackgroundexamination                  ; pred:value "3" .
+:R22 pred:answers :Qassessment                             ; pred:value "2" .
+:R22 pred:answers :Qrecommendationclearrecommendation      ; pred:value "2" .
+:R22 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R22 pred:answers :Qcomments                               ; pred:value "Clear communication skills
+Good" .
+
+# Respondent 23 
+:R23 pred:answers :Qdate                                   ; pred:value "2025-05-16" .
+:R23 pred:answers :Qsessionname                            ; pred:value "I (Myocardial infarction)" .
+:R23 pred:answers :Qidentification                         ; pred:value "3" .
+:R23 pred:answers :Qsituation                              ; pred:value "2" .
+:R23 pred:answers :Qbackgroundhistory                      ; pred:value "3" .
+:R23 pred:answers :Qbackgroundexamination                  ; pred:value "1" .
+:R23 pred:answers :Qassessment                             ; pred:value "2" .
+:R23 pred:answers :Qrecommendationclearrecommendation      ; pred:value "3" .
+:R23 pred:answers :Qrecommendationglobalratingscale        ; pred:value "3" .
+:R23 pred:answers :Qcomments                               ; pred:value "Diagnostic clarity is present
+Good and early assessment of condition is done" .

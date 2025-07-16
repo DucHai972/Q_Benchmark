@@ -1,0 +1,9020 @@
+## Questions
+
+- **Question 1:** ResponseId: Respondent's ID number [Open-ended]
+- **Question 2:** MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]
+- **Question 3:** Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]
+- **Question 4:** EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]
+- **Question 5:** YearsCode: Total years of coding experience [Open-ended]
+- **Question 6:** YearsCodePro: Years of professional coding experience [Open-ended]
+- **Question 7:** DevType: Roles in development [Open-ended]
+- **Question 8:** OrgSize: Size of the organization they work in [Open-ended]
+- **Question 9:** Country: Country of residence [Open-ended]
+- **Question 10:** CompTotal: Total compensation [Open-ended]
+- **Question 11:** CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]
+- **Question 12:** LanguageHaveWorkedWith: Programming languages worked with [Open-ended]
+- **Question 13:** LanguageWantToWorkWith: Programming languages they want to use [Open-ended]
+- **Question 14:** ToolsTechHaveWorkedWith: Developer tools used [Open-ended]
+- **Question 15:** VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]
+
+## Responses
+
+### Respondent 1
+
+- **ResponseId:** 29109
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 2
+- **DevType:** Engineer, data;Engineer, site reliability;Academic researcher;Cloud infrastructure engineer
+- **OrgSize:** 10 to 19 employees
+- **Country:** Turkey
+- **CompTotal:** 45000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Java;JavaScript;Python
+- **LanguageWantToWorkWith:** Go;JavaScript;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 2
+
+- **ResponseId:** 29111
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 20
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Spain
+- **CompTotal:** 47000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C#;HTML/CSS;JavaScript;TypeScript;VBA
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 3
+
+- **ResponseId:** 29113
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Developer, game or graphics;Designer
+- **OrgSize:** 10 to 19 employees
+- **Country:** Norway
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 4
+
+- **ResponseId:** 29114
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 13
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Nigeria
+- **CompTotal:** 1200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** Elixir;Erlang;Go;HTML/CSS;JavaScript;PHP;Python;Ruby;Scala;Solidity;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 5
+
+- **ResponseId:** 29115
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 23
+- **YearsCodePro:** 18
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Bangladesh
+- **CompTotal:** 280000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript
+- **LanguageWantToWorkWith:** Erlang;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 6
+
+- **ResponseId:** 29122
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 2
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Viet Nam
+- **CompTotal:** 700.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Python
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 7
+
+- **ResponseId:** 29124
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** India
+- **CompTotal:** 3500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;HTML/CSS;Java;SQL;TypeScript
+- **LanguageWantToWorkWith:** C++;Go;HTML/CSS;Java;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A, C
+
+### Respondent 8
+
+- **ResponseId:** 29067
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack;Developer, back-end;Other (please specify):
+- **OrgSize:** 500 to 999 employees
+- **Country:** France
+- **CompTotal:** 36000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;PHP;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 9
+
+- **ResponseId:** 29056
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** India
+- **CompTotal:** 60000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 10
+
+- **ResponseId:** 29060
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Estonia
+- **CompTotal:** 5000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 11
+
+- **ResponseId:** 29061
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Turkey
+- **CompTotal:** 30000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;Java;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;C++;Java;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 12
+
+- **ResponseId:** 29096
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** D
+- **YearsCode:** 4
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** France
+- **CompTotal:** 1100.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Java;JavaScript;PHP;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Java;JavaScript;Julia;PHP;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm;Unity 3D;Unreal Engine;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 13
+
+- **ResponseId:** 29098
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** Slovakia
+- **CompTotal:** 3200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;Dart;Go;Java;JavaScript;Solidity;SQL;TypeScript
+- **LanguageWantToWorkWith:** C++;Dart;Elixir;Go;Java;JavaScript;Solidity;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 14
+
+- **ResponseId:** 29103
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 13
+- **YearsCodePro:** 8
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist;System administrator
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Spain
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;Groovy;HTML/CSS;Java;JavaScript;Kotlin;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 15
+
+- **ResponseId:** 29105
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Netherlands
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;Go;Java;JavaScript;Ruby;SQL
+- **LanguageWantToWorkWith:** C;Go
+- **ToolsTechHaveWorkedWith:** Docker;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 16
+
+- **ResponseId:** 29106
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, desktop or enterprise applications;Educator;Engineering manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** Iran, Islamic Republic of...
+- **CompTotal:** 200000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Rust;TypeScript
+- **LanguageWantToWorkWith:** Go;HTML/CSS;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 17
+
+- **ResponseId:** 29034
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Designer
+- **OrgSize:** 10 to 19 employees
+- **Country:** Kenya
+- **CompTotal:** 500.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;Python;Solidity;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 18
+
+- **ResponseId:** 29038
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Spain
+- **CompTotal:** 50000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 19
+
+- **ResponseId:** 29043
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 18
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 20 to 99 employees
+- **Country:** Switzerland
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#
+- **LanguageWantToWorkWith:** C#;HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 20
+
+- **ResponseId:** 29045
+- **MainBranch:** A
+- **Employment:** A, C, B
+- **EdLevel:** C
+- **YearsCode:** 36
+- **YearsCodePro:** 21
+- **DevType:** Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, QA or test;Developer, mobile;Engineering manager;Database administrator;DevOps specialist;Project manager;Cloud infrastructure engineer;Designer;Product manager;Senior Executive (C-Suite, VP, etc.);System administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** Israel
+- **CompTotal:** 19000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;Go;Groovy;HTML/CSS;Java;JavaScript;Lua;Objective-C;Perl;PHP;Python;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;C++;HTML/CSS;Java;JavaScript;Kotlin;Perl;PHP;Ruby;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 21
+
+- **ResponseId:** 29047
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Developer, embedded applications or devices
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** India
+- **CompTotal:** 800000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;HTML/CSS;Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** C;C++;Go;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 22
+
+- **ResponseId:** 29048
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, desktop or enterprise applications;Developer, embedded applications or devices
+- **OrgSize:** 100 to 499 employees
+- **Country:** Italy
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Go;Python
+- **LanguageWantToWorkWith:** Bash/Shell;C;Go;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 23
+
+- **ResponseId:** 29049
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, mobile
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 58000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** Dart;Go;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 24
+
+- **ResponseId:** 29054
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 28
+- **YearsCodePro:** 21
+- **DevType:** Engineer, data;Developer, back-end;DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Germany
+- **CompTotal:** 111000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;Java;Python;Rust;Scala;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Python;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Chef;Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 25
+
+- **ResponseId:** 29141
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 2
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Turkey
+- **CompTotal:** 7500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 26
+
+- **ResponseId:** 29143
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 23
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications;Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 41470.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** C#;Kotlin
+- **ToolsTechHaveWorkedWith:** Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 27
+
+- **ResponseId:** 29145
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Estonia
+- **CompTotal:** 3200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 28
+
+- **ResponseId:** 29150
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 2
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, QA or test
+- **OrgSize:** 500 to 999 employees
+- **Country:** Portugal
+- **CompTotal:** 28000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;JavaScript;Python
+- **LanguageWantToWorkWith:** Groovy;Java;JavaScript;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 29
+
+- **ResponseId:** 29152
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** India
+- **CompTotal:** 2800000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Dart;SQL
+- **LanguageWantToWorkWith:** Go;SQL
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 30
+
+- **ResponseId:** 29154
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** DevOps specialist
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 72000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;JavaScript;PHP;PowerShell;Python;Swift
+- **LanguageWantToWorkWith:** Bash/Shell;Kotlin;PHP;Python;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 31
+
+- **ResponseId:** 29157
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 58000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;PowerShell;Python;TypeScript
+- **LanguageWantToWorkWith:** Assembly;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A, C
+
+### Respondent 32
+
+- **ResponseId:** 29031
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Czech Republic
+- **CompTotal:** 110000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 33
+
+- **ResponseId:** 73206
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 30
+- **YearsCodePro:** 23
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 205000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Clojure
+- **LanguageWantToWorkWith:** C;Clojure;Julia
+- **ToolsTechHaveWorkedWith:** Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 34
+
+- **ResponseId:** 73208
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 6
+- **DevType:** Engineering manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** Brazil
+- **CompTotal:** 9000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 35
+
+- **ResponseId:** 73209
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 9
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Project manager;Designer;Product manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** Bolivia
+- **CompTotal:** 6500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Dart;Delphi;HTML/CSS;Java;JavaScript;PHP;PowerShell;Python;SAS;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;Go;HTML/CSS;JavaScript;Perl;PHP;Python;R;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 36
+
+- **ResponseId:** 73211
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;Other (please specify):;Cloud infrastructure engineer;Security professional
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;PowerShell;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 37
+
+- **ResponseId:** 73213
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Peru
+- **CompTotal:** 3000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;JavaScript;Lua;Rust;Solidity;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 38
+
+- **ResponseId:** 73215
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 67000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 39
+
+- **ResponseId:** 73217
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 22
+- **YearsCodePro:** 16
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 165000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 40
+
+- **ResponseId:** 73219
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 6
+- **DevType:** Developer, mobile
+- **OrgSize:** 500 to 999 employees
+- **Country:** Brazil
+- **CompTotal:** 55000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Swift
+- **LanguageWantToWorkWith:** Go;Rust;SQL;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 41
+
+- **ResponseId:** 63
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** G
+- **YearsCode:** 14
+- **YearsCodePro:** 14
+- **DevType:** Developer, back-end;Designer
+- **OrgSize:** I don’t know
+- **Country:** France
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Groovy;Java;Kotlin
+- **LanguageWantToWorkWith:** Java;Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 42
+
+- **ResponseId:** 64
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 12
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, embedded applications or devices;Designer
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 150000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Go;HTML/CSS;Java;JavaScript;Python;Swift;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 43
+
+- **ResponseId:** 73190
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** A
+- **YearsCode:** 15
+- **YearsCodePro:** 12
+- **DevType:** Engineer, data;Developer, back-end;Database administrator;DevOps specialist;Project manager;System administrator
+- **OrgSize:** 500 to 999 employees
+- **Country:** Sweden
+- **CompTotal:** 64200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** Python;SQL
+- **ToolsTechHaveWorkedWith:** npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 44
+
+- **ResponseId:** 73191
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 13
+- **DevType:** Engineering manager;Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 100 to 499 employees
+- **Country:** Spain
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript;Ruby;TypeScript
+- **LanguageWantToWorkWith:** Python;Ruby;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 45
+
+- **ResponseId:** 73195
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 11
+- **DevType:** Developer, back-end;Other (please specify):
+- **OrgSize:** 100 to 499 employees
+- **Country:** Netherlands
+- **CompTotal:** 57000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Lua
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Puppet;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 46
+
+- **ResponseId:** 73196
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Bangladesh
+- **CompTotal:** 25000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;Java;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 47
+
+- **ResponseId:** 73198
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 92000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Java;Ruby;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 48
+
+- **ResponseId:** 73200
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 18
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack;Product manager
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 439000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Dart;Haskell;HTML/CSS;Java;JavaScript;Kotlin;Objective-C;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;F#;Go;HTML/CSS;JavaScript;Rust;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Pulumi;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 49
+
+- **ResponseId:** 50
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 4000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 50
+
+- **ResponseId:** 52
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Poland
+- **CompTotal:** 14000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 51
+
+- **ResponseId:** 55
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 20 to 99 employees
+- **Country:** Norway
+- **CompTotal:** 1000000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;Java;JavaScript;LISP;PowerShell;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;F#;Go;Haskell;JavaScript;Kotlin;LISP;Python;Ruby;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 52
+
+- **ResponseId:** 56
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 141000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 53
+
+- **ResponseId:** 57
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end;Developer, embedded applications or devices
+- **OrgSize:** 100 to 499 employees
+- **Country:** Taiwan
+- **CompTotal:** 1632000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++
+- **LanguageWantToWorkWith:** C++
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 54
+
+- **ResponseId:** 58
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Netherlands
+- **CompTotal:** 3650.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;HTML/CSS;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Flow;Kubernetes;npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 55
+
+- **ResponseId:** 60
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 2
+- **DevType:** Student;Developer, embedded applications or devices
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** C;C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 56
+
+- **ResponseId:** 61
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Engineering manager;Database administrator;Developer, game or graphics;Project manager;Cloud infrastructure engineer;Designer;Product manager;Senior Executive (C-Suite, VP, etc.);System administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** Canada
+- **CompTotal:** 85000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;HTML/CSS;Java;JavaScript;Kotlin;Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;Kotlin;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Terraform;Unity 3D;Unreal Engine;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 57
+
+- **ResponseId:** 29071
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Blockchain
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 130000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;Java;JavaScript;Solidity
+- **LanguageWantToWorkWith:** Go;Java;Rust;Solidity
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 58
+
+- **ResponseId:** 73262
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** France
+- **CompTotal:** 36000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 59
+
+- **ResponseId:** 73260
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Poland
+- **CompTotal:** 8000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Elixir
+- **LanguageWantToWorkWith:** Elixir
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 60
+
+- **ResponseId:** 73259
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** India
+- **CompTotal:** 3200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;Java;SQL
+- **LanguageWantToWorkWith:** JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 61
+
+- **ResponseId:** 73254
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Australia
+- **CompTotal:** 121000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go
+- **LanguageWantToWorkWith:** Go;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 62
+
+- **ResponseId:** 42
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 3
+- **YearsCodePro:** 3
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Israel
+- **CompTotal:** 19000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 63
+
+- **ResponseId:** 46
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Madagascar
+- **CompTotal:** 400.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Dart
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 64
+
+- **ResponseId:** 48
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 135000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** C++;Go
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 65
+
+- **ResponseId:** 121
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Designer
+- **OrgSize:** 500 to 999 employees
+- **Country:** Canada
+- **CompTotal:** 85000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;Kotlin;SQL;TypeScript
+- **LanguageWantToWorkWith:** Clojure;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 66
+
+- **ResponseId:** 122
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 4
+- **DevType:** Engineer, data
+- **OrgSize:** 20 to 99 employees
+- **Country:** Sweden
+- **CompTotal:** 67000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;Java;Python
+- **LanguageWantToWorkWith:** Go;Kotlin;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 67
+
+- **ResponseId:** 123
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Romania
+- **CompTotal:** 17500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 68
+
+- **ResponseId:** 127
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 5
+- **DevType:** Engineer, data;Data or business analyst
+- **OrgSize:** 10,000 or more employees
+- **Country:** Canada
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 69
+
+- **ResponseId:** 133
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 98000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** Chef;Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 70
+
+- **ResponseId:** 73094
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Engineer, data
+- **OrgSize:** 500 to 999 employees
+- **Country:** Poland
+- **CompTotal:** 288000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;Scala;TypeScript
+- **LanguageWantToWorkWith:** Go;Haskell;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 71
+
+- **ResponseId:** 73095
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 27
+- **YearsCodePro:** 16
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end;Engineering manager;Project manager;Cloud infrastructure engineer;Data or business analyst;Product manager
+- **OrgSize:** 2 to 9 employees
+- **Country:** Bulgaria
+- **CompTotal:** 7300.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 72
+
+- **ResponseId:** 73096
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 13
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, QA or test;Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** Austria
+- **CompTotal:** 35738.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Python;Rust
+- **LanguageWantToWorkWith:** Clojure;Kotlin;Rust
+- **ToolsTechHaveWorkedWith:** Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 73
+
+- **ResponseId:** 73153
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, QA or test
+- **OrgSize:** I don’t know
+- **Country:** United States of America
+- **CompTotal:** 57000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;PowerShell;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Ansible
+- **VersionControlSystem:** A
+
+### Respondent 74
+
+- **ResponseId:** 102
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Kotlin;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 75
+
+- **ResponseId:** 103
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end;Student;DevOps specialist;Project manager;System administrator
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 38000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Python;SQL
+- **LanguageWantToWorkWith:** C#
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 76
+
+- **ResponseId:** 104
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 22
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;SQL
+- **LanguageWantToWorkWith:** C++;Python;R
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** Other (please specify):
+
+### Respondent 77
+
+- **ResponseId:** 106
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Italy
+- **CompTotal:** 7300.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 78
+
+- **ResponseId:** 110
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Spain
+- **CompTotal:** 42000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Kotlin;PowerShell;Rust;TypeScript
+- **LanguageWantToWorkWith:** C#;Go;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 79
+
+- **ResponseId:** 113
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 32
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end;Security professional
+- **OrgSize:** 10,000 or more employees
+- **Country:** Poland
+- **CompTotal:** 330000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;PHP;Python;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 80
+
+- **ResponseId:** 115
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 14
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Engineering manager;Other (please specify):
+- **OrgSize:** 10,000 or more employees
+- **Country:** Uruguay
+- **CompTotal:** 90000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Groovy;Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** Go;Java;JavaScript;Python;Ruby;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 81
+
+- **ResponseId:** 73142
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 16
+- **DevType:** Developer, full-stack;Developer, mobile
+- **OrgSize:** 100 to 499 employees
+- **Country:** France
+- **CompTotal:** 3944.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Groovy;HTML/CSS;Java;JavaScript;Lua;Objective-C;PHP;PowerShell;Python;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C;HTML/CSS;Java;JavaScript;Objective-C;Rust;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 82
+
+- **ResponseId:** 73143
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 85000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Clojure;Go;Java;JavaScript;Ruby;TypeScript
+- **LanguageWantToWorkWith:** Go;Groovy;Haskell;Ruby;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Puppet;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 83
+
+- **ResponseId:** 73144
+- **MainBranch:** A
+- **Employment:** C, B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Lithuania
+- **CompTotal:** 4500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Groovy;HTML/CSS;Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** Groovy;Kotlin;SQL
+- **ToolsTechHaveWorkedWith:** Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 84
+
+- **ResponseId:** 73145
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** Go;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 85
+
+- **ResponseId:** 73147
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 12000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Elixir;JavaScript
+- **LanguageWantToWorkWith:** Elixir
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 86
+
+- **ResponseId:** 73148
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Portugal
+- **CompTotal:** 1400.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Java;JavaScript
+- **LanguageWantToWorkWith:** Dart;Go;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 87
+
+- **ResponseId:** 73149
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist;System administrator
+- **OrgSize:** 10,000 or more employees
+- **Country:** Portugal
+- **CompTotal:** 1714.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 88
+
+- **ResponseId:** 73150
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Data scientist or machine learning specialist;Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Academic researcher;Developer, embedded applications or devices
+- **OrgSize:** 20 to 99 employees
+- **Country:** Russian Federation
+- **CompTotal:** 300000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;JavaScript;Rust;SQL
+- **LanguageWantToWorkWith:** Go;HTML/CSS;JavaScript;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 89
+
+- **ResponseId:** 100
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 11
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** Turkey
+- **CompTotal:** 16000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;HTML/CSS;Java;JavaScript;MATLAB;Python;SQL
+- **LanguageWantToWorkWith:** C;C++;Clojure;JavaScript;Kotlin;Python;Scala
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 90
+
+- **ResponseId:** 73128
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** Kyrgyzstan
+- **CompTotal:** 8000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 91
+
+- **ResponseId:** 73129
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack;DevOps specialist;Other (please specify):;Security professional
+- **OrgSize:** 10 to 19 employees
+- **Country:** Poland
+- **CompTotal:** 11000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;Java;JavaScript;Lua;PHP;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;PHP;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 92
+
+- **ResponseId:** 73131
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Argentina
+- **CompTotal:** 90000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** PHP;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 93
+
+- **ResponseId:** 73136
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 3
+- **DevType:** DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 20 to 99 employees
+- **Country:** Italy
+- **CompTotal:** 33000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;Java;PowerShell;Python
+- **LanguageWantToWorkWith:** Go;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 94
+
+- **ResponseId:** 73137
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Engineer, data;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;DevOps specialist;Developer, embedded applications or devices;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** India
+- **CompTotal:** 1600000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;JavaScript;Python;R;SQL
+- **LanguageWantToWorkWith:** C++;Python;SQL
+- **ToolsTechHaveWorkedWith:** Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 95
+
+- **ResponseId:** 73138
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 57600.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;PHP;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 96
+
+- **ResponseId:** 73140
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 12
+- **DevType:** Data scientist or machine learning specialist;Developer, front-end;Engineer, data;Developer, full-stack;Developer, back-end;Database administrator;Developer, embedded applications or devices;Data or business analyst
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 81000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Python;R;SQL;Swift
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 97
+
+- **ResponseId:** 155
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 7
+- **DevType:** Other (please specify):
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 60000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;Erlang;Go;Groovy;HTML/CSS;Java;JavaScript;Kotlin;PHP;PowerShell;Python;Ruby;Scala;SQL;Swift
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Erlang;Go;HTML/CSS;Java;Kotlin;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Puppet
+- **VersionControlSystem:** A
+
+### Respondent 98
+
+- **ResponseId:** 157
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 9
+- **DevType:** Developer, back-end;DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Belgium
+- **CompTotal:** 5000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 99
+
+- **ResponseId:** 159
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Engineer, site reliability;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 7200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 100
+
+- **ResponseId:** 160
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack
+- **OrgSize:** I don’t know
+- **Country:** Bulgaria
+- **CompTotal:** 5000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Haskell;HTML/CSS;JavaScript;LISP;Python;Scala;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 101
+
+- **ResponseId:** 161
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Netherlands
+- **CompTotal:** 3000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;Python
+- **LanguageWantToWorkWith:** C#
+- **ToolsTechHaveWorkedWith:** Docker;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 102
+
+- **ResponseId:** 162
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 32
+- **YearsCodePro:** 23
+- **DevType:** Database administrator;DevOps specialist;System administrator
+- **OrgSize:** 500 to 999 employees
+- **Country:** Germany
+- **CompTotal:** 155000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** Go;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 103
+
+- **ResponseId:** 165
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 29
+- **YearsCodePro:** 15
+- **DevType:** Developer, full-stack;Developer, back-end;Database administrator;DevOps specialist;Cloud infrastructure engineer;Senior Executive (C-Suite, VP, etc.);System administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 136000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Kotlin;SQL
+- **LanguageWantToWorkWith:** C#;Kotlin;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 104
+
+- **ResponseId:** 73064
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 12
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** France
+- **CompTotal:** 53000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;HTML/CSS;JavaScript;PHP;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 105
+
+- **ResponseId:** 73124
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, mobile
+- **OrgSize:** 10,000 or more employees
+- **Country:** Canada
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Swift
+- **LanguageWantToWorkWith:** Swift
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 106
+
+- **ResponseId:** 73125
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** India
+- **CompTotal:** 500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 107
+
+- **ResponseId:** 134
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 24
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 144000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Perl;Python;Ruby;SQL
+- **LanguageWantToWorkWith:** JavaScript;Perl;Python;Ruby;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 108
+
+- **ResponseId:** 136
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 24
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 98000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;Erlang;Go;Java;Python
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 109
+
+- **ResponseId:** 139
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Israel
+- **CompTotal:** 55000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** PHP;Python;Scala
+- **LanguageWantToWorkWith:** Python;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A, B
+
+### Respondent 110
+
+- **ResponseId:** 143
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 20
+- **YearsCodePro:** 8
+- **DevType:** Data scientist or machine learning specialist;Developer, embedded applications or devices
+- **OrgSize:** 10,000 or more employees
+- **Country:** Singapore
+- **CompTotal:** 180000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C++;Julia;Python;Rust
+- **LanguageWantToWorkWith:** F#;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 111
+
+- **ResponseId:** 152
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Data or business analyst
+- **OrgSize:** 10,000 or more employees
+- **Country:** India
+- **CompTotal:** 100000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A, C
+
+### Respondent 112
+
+- **ResponseId:** 154
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 11
+- **DevType:** Developer, front-end;Engineer, data;Developer, full-stack;Developer, back-end;Engineering manager;Database administrator;Cloud infrastructure engineer;Data or business analyst
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Go;HTML/CSS;Java;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 113
+
+- **ResponseId:** 73112
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, QA or test;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 115000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;HTML/CSS;Java;JavaScript;PHP;PowerShell;Python;Scala;SQL;VBA
+- **LanguageWantToWorkWith:** Bash/Shell;COBOL;Go;PowerShell;Python;Scala;SQL;Swift;VBA
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 114
+
+- **ResponseId:** 73113
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** Austria
+- **CompTotal:** 49000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;Kotlin;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 115
+
+- **ResponseId:** 73115
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** D
+- **YearsCode:** 7
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Project manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 38500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;F#;Go;HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 116
+
+- **ResponseId:** 73117
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 21
+- **YearsCodePro:** 16
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Product manager
+- **OrgSize:** 10 to 19 employees
+- **Country:** United States of America
+- **CompTotal:** 115000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 117
+
+- **ResponseId:** 73119
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** Nigeria
+- **CompTotal:** 2000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 118
+
+- **ResponseId:** 73120
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack;Data or business analyst
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;JavaScript;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 119
+
+- **ResponseId:** 73121
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end;DevOps specialist
+- **OrgSize:** 10,000 or more employees
+- **Country:** Spain
+- **CompTotal:** 33000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Groovy;Haskell;Java;JavaScript;Kotlin;Python;Rust;Scala;TypeScript
+- **LanguageWantToWorkWith:** APL;Clojure;Erlang;Haskell;JavaScript;Kotlin;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 120
+
+- **ResponseId:** 73122
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Data scientist or machine learning specialist;Scientist
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** Clojure;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 121
+
+- **ResponseId:** 73097
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack;Developer, embedded applications or devices
+- **OrgSize:** 100 to 499 employees
+- **Country:** France
+- **CompTotal:** 33400.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C++;HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** C;Dart;HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 122
+
+- **ResponseId:** 73099
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Poland
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;TypeScript
+- **LanguageWantToWorkWith:** C#;Go;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 123
+
+- **ResponseId:** 73100
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 10
+- **DevType:** Developer, mobile;Database administrator
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 48000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Dart;SQL
+- **LanguageWantToWorkWith:** Dart;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 124
+
+- **ResponseId:** 73101
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Finland
+- **CompTotal:** 40625.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Haskell;HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** Elixir;Haskell;HTML/CSS;JavaScript;Ruby
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 125
+
+- **ResponseId:** 73102
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 14
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Database administrator;DevOps specialist;Project manager;System administrator
+- **OrgSize:** 10 to 19 employees
+- **Country:** Switzerland
+- **CompTotal:** 106600.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 126
+
+- **ResponseId:** 73103
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Developer, embedded applications or devices;Cloud infrastructure engineer
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 40000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C;C#;C++;Elixir;Erlang;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 127
+
+- **ResponseId:** 73106
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 9
+- **YearsCodePro:** 7
+- **DevType:** DevOps specialist
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Kotlin;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Go;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Chef;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 128
+
+- **ResponseId:** 73107
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** United Arab Emirates
+- **CompTotal:** 50000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Dart;HTML/CSS;JavaScript;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 129
+
+- **ResponseId:** 192
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications
+- **OrgSize:** 500 to 999 employees
+- **Country:** Greece
+- **CompTotal:** 28000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 130
+
+- **ResponseId:** 193
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 3
+- **DevType:** Engineer, data;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 110000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Clojure;Java;Rust
+- **LanguageWantToWorkWith:** Clojure;Julia;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 131
+
+- **ResponseId:** 194
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 12
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;C;C#;C++;Dart;HTML/CSS;Java;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Assembly;C;C#;C++
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 132
+
+- **ResponseId:** 197
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Data scientist or machine learning specialist;Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** India
+- **CompTotal:** 4500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Elixir;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 133
+
+- **ResponseId:** 73030
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 4
+- **DevType:** Engineer, data
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 49500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** C++;Python
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 134
+
+- **ResponseId:** 73031
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Data scientist or machine learning specialist;Other (please specify):;Data or business analyst
+- **OrgSize:** 500 to 999 employees
+- **Country:** Poland
+- **CompTotal:** 18500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** F#;Python;R;Scala
+- **LanguageWantToWorkWith:** F#;Go;Python;R
+- **ToolsTechHaveWorkedWith:** Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 135
+
+- **ResponseId:** 73037
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 23
+- **YearsCodePro:** 15
+- **DevType:** Developer, desktop or enterprise applications;Developer, mobile
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Russian Federation
+- **CompTotal:** 450000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C++;Ruby;Swift
+- **LanguageWantToWorkWith:** C;C++;HTML/CSS;JavaScript;Python;Ruby;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 136
+
+- **ResponseId:** 73038
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 13
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Thailand
+- **CompTotal:** 7200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 137
+
+- **ResponseId:** 172
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, embedded applications or devices
+- **OrgSize:** I don’t know
+- **Country:** United States of America
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Python
+- **LanguageWantToWorkWith:** C;C#;Python;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 138
+
+- **ResponseId:** 173
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 18
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 109000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;Python
+- **LanguageWantToWorkWith:** C++;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 139
+
+- **ResponseId:** 179
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Developer, back-end;DevOps specialist;Developer, embedded applications or devices
+- **OrgSize:** 10,000 or more employees
+- **Country:** Poland
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;Java;PHP;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 140
+
+- **ResponseId:** 183
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 15
+- **DevType:** Other (please specify):
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C#;C++;Fortran;Java;Objective-C;Swift;VBA
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 141
+
+- **ResponseId:** 184
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 94500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;Java;Python;SQL
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 142
+
+- **ResponseId:** 185
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 23
+- **DevType:** Developer, full-stack;Other (please specify):
+- **OrgSize:** 100 to 499 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 75000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;Java;JavaScript;PHP;Python;Ruby;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;C++;Clojure;Elixir;Erlang;F#;Haskell;HTML/CSS;JavaScript;Julia;Kotlin;LISP;PowerShell;Rust;Scala;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 143
+
+- **ResponseId:** 186
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, QA or test;Cloud infrastructure engineer
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 33000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C++;Go;Groovy;Java;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Groovy;Java;JavaScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 144
+
+- **ResponseId:** 189
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 12
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 45000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 145
+
+- **ResponseId:** 73084
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 35
+- **YearsCodePro:** 30
+- **DevType:** Developer, back-end;Project manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 300000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Elixir;Ruby
+- **LanguageWantToWorkWith:** Elixir;Ruby;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 146
+
+- **ResponseId:** 73085
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Czech Republic
+- **CompTotal:** 63000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** JavaScript;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 147
+
+- **ResponseId:** 73087
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Spain
+- **CompTotal:** 55000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;Kotlin;Python;SQL
+- **LanguageWantToWorkWith:** Java;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 148
+
+- **ResponseId:** 73090
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;Go;HTML/CSS;JavaScript;PHP;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Pulumi;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 149
+
+- **ResponseId:** 73093
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 13
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Romania
+- **CompTotal:** 4000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;Kotlin;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 150
+
+- **ResponseId:** 166
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 22000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;Groovy;Java;Python
+- **LanguageWantToWorkWith:** Go;Java;Kotlin;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 151
+
+- **ResponseId:** 168
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end;Data or business analyst
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 43000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;JavaScript;Python;R;TypeScript
+- **LanguageWantToWorkWith:** C++;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Docker
+- **VersionControlSystem:** A
+
+### Respondent 152
+
+- **ResponseId:** 171
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 48
+- **YearsCodePro:** 45
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 400000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;Python;TypeScript
+- **LanguageWantToWorkWith:** LISP;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 153
+
+- **ResponseId:** 73067
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, back-end;Data or business analyst
+- **OrgSize:** 100 to 499 employees
+- **Country:** Sweden
+- **CompTotal:** 46000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;HTML/CSS;JavaScript;Objective-C;Python;SQL
+- **LanguageWantToWorkWith:** Go;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 154
+
+- **ResponseId:** 73069
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 125000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 155
+
+- **ResponseId:** 73070
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 14
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Kotlin;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;HTML/CSS;Kotlin;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 156
+
+- **ResponseId:** 73073
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 6
+- **DevType:** Data scientist or machine learning specialist;Developer, front-end;Developer, full-stack;Developer, back-end;Developer, mobile;DevOps specialist;Cloud infrastructure engineer;Blockchain
+- **OrgSize:** 20 to 99 employees
+- **Country:** Hong Kong (S.A.R.)
+- **CompTotal:** 25500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Dart;Go;HTML/CSS;JavaScript;Python;Solidity;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** Dart;Go;HTML/CSS;JavaScript;Python;Rust;Solidity;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Pulumi;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 157
+
+- **ResponseId:** 73075
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, QA or test
+- **OrgSize:** 100 to 499 employees
+- **Country:** Portugal
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** C#;JavaScript;Python;R
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 158
+
+- **ResponseId:** 73076
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack;Educator
+- **OrgSize:** 2 to 9 employees
+- **Country:** India
+- **CompTotal:** 12000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 159
+
+- **ResponseId:** 73078
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** I
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Hungary
+- **CompTotal:** 75000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Elixir;HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** C#;Elixir;HTML/CSS;JavaScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 160
+
+- **ResponseId:** 73082
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Czech Republic
+- **CompTotal:** 124800.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Dart;Go;HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 161
+
+- **ResponseId:** 225
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 47000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;Groovy;HTML/CSS;Java;JavaScript;Python
+- **LanguageWantToWorkWith:** C++;HTML/CSS;JavaScript;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 162
+
+- **ResponseId:** 229
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 9
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications;Engineering manager;Database administrator;DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 163
+
+- **ResponseId:** 72998
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 26
+- **YearsCodePro:** 25
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Educator;DevOps specialist
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 143000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 164
+
+- **ResponseId:** 73006
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, back-end;Engineering manager
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 145000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 165
+
+- **ResponseId:** 73007
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 14
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack;Developer, back-end;Engineering manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 207000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 166
+
+- **ResponseId:** 73010
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 44000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;F#;Java;JavaScript;Kotlin;Ruby;Rust;Scala;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Kotlin;Ruby;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 167
+
+- **ResponseId:** 73012
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, desktop or enterprise applications
+- **OrgSize:** 500 to 999 employees
+- **Country:** Israel
+- **CompTotal:** 17800.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Dart;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 168
+
+- **ResponseId:** 73013
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** India
+- **CompTotal:** 0.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** C;C#;C++;HTML/CSS;Java;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 169
+
+- **ResponseId:** 208
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 48000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 170
+
+- **ResponseId:** 211
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 9
+- **DevType:** Developer, front-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 171
+
+- **ResponseId:** 213
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, full-stack;Student
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 22000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** C;C#;C++;Dart;Go;HTML/CSS;Java;JavaScript;Python;Ruby;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 172
+
+- **ResponseId:** 215
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Data scientist or machine learning specialist;Developer, front-end;Engineer, data;Developer, full-stack;Developer, back-end;Scientist
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 173
+
+- **ResponseId:** 219
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 28
+- **YearsCodePro:** 15
+- **DevType:** Engineer, site reliability;Developer, back-end;Engineering manager;Database administrator;DevOps specialist;Project manager;Cloud infrastructure engineer;System administrator;Security professional
+- **OrgSize:** 100 to 499 employees
+- **Country:** France
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Groovy;PowerShell;SQL
+- **LanguageWantToWorkWith:** C#;Go;PowerShell;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker
+- **VersionControlSystem:** A
+
+### Respondent 174
+
+- **ResponseId:** 222
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 11
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Saudi Arabia
+- **CompTotal:** 50000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Erlang;Go;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Go;Java;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 175
+
+- **ResponseId:** 223
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 14
+- **DevType:** Developer, back-end;Security professional
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 147000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;C++;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 176
+
+- **ResponseId:** 224
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack;Engineering manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 172000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** JavaScript;VBA
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 177
+
+- **ResponseId:** 73056
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 20
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Russian Federation
+- **CompTotal:** 5000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP
+- **LanguageWantToWorkWith:** Ruby
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 178
+
+- **ResponseId:** 73057
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 37
+- **YearsCodePro:** 25
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Netherlands
+- **CompTotal:** 6000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 179
+
+- **ResponseId:** 73059
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 38
+- **YearsCodePro:** 34
+- **DevType:** Engineer, data;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Database administrator;DevOps specialist;Data or business analyst
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Norway
+- **CompTotal:** 850000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Delphi;HTML/CSS;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** C#;Delphi;PowerShell;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 180
+
+- **ResponseId:** 202
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Portugal
+- **CompTotal:** 42000044.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 181
+
+- **ResponseId:** 203
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 7
+- **DevType:** Data scientist or machine learning specialist;Developer, back-end;Academic researcher;Scientist
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Netherlands
+- **CompTotal:** 50000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C;C++;LISP;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 182
+
+- **ResponseId:** 204
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Engineer, data
+- **OrgSize:** 100 to 499 employees
+- **Country:** France
+- **CompTotal:** 49500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 183
+
+- **ResponseId:** 205
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;Java;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Java;Kotlin;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 184
+
+- **ResponseId:** 206
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, QA or test
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;PowerShell
+- **LanguageWantToWorkWith:** C#;F#;JavaScript;Swift
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 185
+
+- **ResponseId:** 73040
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 15
+- **YearsCodePro:** 8
+- **DevType:** Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Italy
+- **CompTotal:** 36000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;SQL
+- **LanguageWantToWorkWith:** Java;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Kubernetes
+- **VersionControlSystem:** Other (please specify):
+
+### Respondent 186
+
+- **ResponseId:** 73043
+- **MainBranch:** B
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 25
+- **DevType:** Engineer, site reliability;Database administrator;DevOps specialist;Cloud infrastructure engineer;System administrator;Security professional
+- **OrgSize:** 100 to 499 employees
+- **Country:** Lithuania
+- **CompTotal:** 6200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;HTML/CSS;Java;PHP;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;Java;JavaScript;Lua;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A, C
+
+### Respondent 187
+
+- **ResponseId:** 73047
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;Java;Ruby
+- **LanguageWantToWorkWith:** Go;Java
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 188
+
+- **ResponseId:** 73048
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 40
+- **YearsCodePro:** 25
+- **DevType:** DevOps specialist
+- **OrgSize:** 100 to 499 employees
+- **Country:** France
+- **CompTotal:** 620.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 189
+
+- **ResponseId:** 73050
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, front-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Myanmar
+- **CompTotal:** 90.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** Haskell;HTML/CSS;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 190
+
+- **ResponseId:** 73051
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, mobile
+- **OrgSize:** 2 to 9 employees
+- **Country:** Estonia
+- **CompTotal:** 3550.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Go;Solidity;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 191
+
+- **ResponseId:** 73052
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** France
+- **CompTotal:** 52000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Go;HTML/CSS;Java;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 192
+
+- **ResponseId:** 73053
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 25
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 500 to 999 employees
+- **Country:** Portugal
+- **CompTotal:** 76000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Ruby
+- **LanguageWantToWorkWith:** Elixir
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 193
+
+- **ResponseId:** 72976
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 25
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 300000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 194
+
+- **ResponseId:** 72978
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Other (please specify):
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Brazil
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Delphi;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** Dart;Delphi;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 195
+
+- **ResponseId:** 72981
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 2
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** Nigeria
+- **CompTotal:** 2600000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 196
+
+- **ResponseId:** 72984
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 14
+- **YearsCodePro:** 13
+- **DevType:** Engineer, site reliability
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Canada
+- **CompTotal:** 161000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;JavaScript;Python;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 197
+
+- **ResponseId:** 72987
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;DevOps specialist;System administrator
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C++;Erlang;Go;Groovy;HTML/CSS;Java;JavaScript;Kotlin;Python;Solidity;SQL;TypeScript
+- **LanguageWantToWorkWith:** Haskell;Objective-C
+- **ToolsTechHaveWorkedWith:** Chef;Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A, B
+
+### Respondent 198
+
+- **ResponseId:** 72989
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Data scientist or machine learning specialist;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 250000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;Go;Haskell;Python;Rust;Scala;SQL
+- **LanguageWantToWorkWith:** Elixir;Haskell;Rust;Scala;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 199
+
+- **ResponseId:** 72991
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 2
+- **YearsCodePro:** 2
+- **DevType:** Developer, desktop or enterprise applications;Database administrator
+- **OrgSize:** 10,000 or more employees
+- **Country:** Costa Rica
+- **CompTotal:** 917403.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;C++;Python;SQL;Swift;VBA
+- **LanguageWantToWorkWith:** C#;C++;Go;HTML/CSS;JavaScript;Kotlin;Python;SQL;Swift;TypeScript;VBA
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 200
+
+- **ResponseId:** 72994
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, QA or test;DevOps specialist;Security professional
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Canada
+- **CompTotal:** 103000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** Assembly;Go;HTML/CSS;JavaScript;Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 201
+
+- **ResponseId:** 255
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 12
+- **YearsCodePro:** 3
+- **DevType:** DevOps specialist
+- **OrgSize:** 500 to 999 employees
+- **Country:** Canada
+- **CompTotal:** 96700.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Groovy;Java;Python;Ruby
+- **LanguageWantToWorkWith:** Bash/Shell;C++;Kotlin;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 202
+
+- **ResponseId:** 259
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 10000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;Haskell;JavaScript;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Haskell;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 203
+
+- **ResponseId:** 260
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 11
+- **DevType:** Engineering manager
+- **OrgSize:** 500 to 999 employees
+- **Country:** Israel
+- **CompTotal:** 55000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Clojure;Python;Ruby;Scala
+- **LanguageWantToWorkWith:** Clojure;Go;Python
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 204
+
+- **ResponseId:** 261
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Database administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Sweden
+- **CompTotal:** 60000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 205
+
+- **ResponseId:** 72969
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 26
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Designer
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Clojure;HTML/CSS;Java;JavaScript
+- **LanguageWantToWorkWith:** Clojure;HTML/CSS
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 206
+
+- **ResponseId:** 72970
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** I don’t know
+- **Country:** Bolivia
+- **CompTotal:** 17500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C#;C++;Go;HTML/CSS;Java;JavaScript;Python;Ruby;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;Java;JavaScript;Python;Ruby;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 207
+
+- **ResponseId:** 72972
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 28
+- **YearsCodePro:** 26
+- **DevType:** Developer, back-end;Engineering manager
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 225000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go
+- **LanguageWantToWorkWith:** Bash/Shell;Go
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Puppet;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 208
+
+- **ResponseId:** 72973
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Cameroon
+- **CompTotal:** 650000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 209
+
+- **ResponseId:** 238
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** Engineering manager
+- **OrgSize:** 500 to 999 employees
+- **Country:** Canada
+- **CompTotal:** 175000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Python;Scala;SQL
+- **LanguageWantToWorkWith:** Go;Python;Scala;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 210
+
+- **ResponseId:** 240
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 48
+- **YearsCodePro:** 46
+- **DevType:** Developer, back-end;Project manager;Product manager;System administrator;Security professional
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Python;SQL
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 211
+
+- **ResponseId:** 242
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Database administrator;Data or business analyst
+- **OrgSize:** 500 to 999 employees
+- **Country:** France
+- **CompTotal:** 55000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 212
+
+- **ResponseId:** 245
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Mexico
+- **CompTotal:** 12500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL;VBA
+- **LanguageWantToWorkWith:** Dart;HTML/CSS;JavaScript;Python;R;SAS;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 213
+
+- **ResponseId:** 246
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 3
+- **DevType:** Data scientist or machine learning specialist;Academic researcher
+- **OrgSize:** 500 to 999 employees
+- **Country:** Spain
+- **CompTotal:** 24500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;MATLAB;Python;R;Rust;SQL
+- **LanguageWantToWorkWith:** Haskell;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 214
+
+- **ResponseId:** 247
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Database administrator
+- **OrgSize:** 10 to 19 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;JavaScript;Kotlin;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Go;HTML/CSS;JavaScript;PHP;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 215
+
+- **ResponseId:** 248
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 22
+- **DevType:** Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 250000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;JavaScript;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** C#;F#;HTML/CSS;JavaScript;PowerShell;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 216
+
+- **ResponseId:** 254
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 25
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Developer, back-end;DevOps specialist;Cloud infrastructure engineer;Designer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Netherlands
+- **CompTotal:** 46000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Terraform
+- **VersionControlSystem:** A
+
+### Respondent 217
+
+- **ResponseId:** 73015
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** C
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Database administrator;System administrator
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Madagascar
+- **CompTotal:** 1700000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Elixir;HTML/CSS;PHP;Python
+- **LanguageWantToWorkWith:** Elixir;HTML/CSS;Python
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 218
+
+- **ResponseId:** 73017
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Student;System administrator
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** France
+- **CompTotal:** 1566.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Assembly;C;C++;Go;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 219
+
+- **ResponseId:** 73018
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 27
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 126000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;SQL
+- **LanguageWantToWorkWith:** C;Java;Kotlin;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 220
+
+- **ResponseId:** 73020
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 40000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript;Objective-C;Swift;TypeScript
+- **LanguageWantToWorkWith:** Scala
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 221
+
+- **ResponseId:** 73021
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** Iran, Islamic Republic of...
+- **CompTotal:** 10000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 222
+
+- **ResponseId:** 73023
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Armenia
+- **CompTotal:** 1000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;JavaScript;PHP;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Elixir;Go;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 223
+
+- **ResponseId:** 73024
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Estonia
+- **CompTotal:** 4700.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;Java;JavaScript;PHP;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;Java;JavaScript;Kotlin;PHP;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 224
+
+- **ResponseId:** 235
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** Brazil
+- **CompTotal:** 204300.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go
+- **LanguageWantToWorkWith:** Bash/Shell;Go
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 225
+
+- **ResponseId:** 285
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** B
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, mobile;Database administrator;Project manager;Product manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** Italy
+- **CompTotal:** 33000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Java;JavaScript;Kotlin;PHP;SQL;TypeScript;VBA
+- **LanguageWantToWorkWith:** Java;JavaScript;Kotlin;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Unity 3D
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 226
+
+- **ResponseId:** 286
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 18
+- **YearsCodePro:** 13
+- **DevType:** Security professional
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Austria
+- **CompTotal:** 62000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** JavaScript;PowerShell
+- **ToolsTechHaveWorkedWith:** npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 227
+
+- **ResponseId:** 288
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 67000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 228
+
+- **ResponseId:** 291
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 83000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Dart;HTML/CSS;JavaScript;PowerShell;Python;TypeScript
+- **LanguageWantToWorkWith:** C#;C++;Dart;Go;Python
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 229
+
+- **ResponseId:** 293
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** Sweden
+- **CompTotal:** 59000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Go;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Java;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 230
+
+- **ResponseId:** 72904
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 18
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 105000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Python;R
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 231
+
+- **ResponseId:** 72905
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 110000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PHP
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 232
+
+- **ResponseId:** 72909
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 8
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Pakistan
+- **CompTotal:** 6000000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;Python;Rust
+- **LanguageWantToWorkWith:** JavaScript;Python;Rust;Swift
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 233
+
+- **ResponseId:** 268
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, QA or test;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 220000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C++;Go;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 234
+
+- **ResponseId:** 269
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Academic researcher;Designer
+- **OrgSize:** 500 to 999 employees
+- **Country:** Kenya
+- **CompTotal:** 80000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 235
+
+- **ResponseId:** 272
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 77000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 236
+
+- **ResponseId:** 274
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 38
+- **YearsCodePro:** 23
+- **DevType:** Engineer, site reliability;Developer, full-stack;Developer, back-end;Educator;Other (please specify):
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C#;C++;Java;PowerShell
+- **LanguageWantToWorkWith:** C#;Java;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A, C
+
+### Respondent 237
+
+- **ResponseId:** 275
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** B
+- **YearsCode:** 29
+- **YearsCodePro:** 25
+- **DevType:** Developer, back-end;Database administrator;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Delphi;HTML/CSS;PowerShell;Python;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Delphi;Python;Ruby;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 238
+
+- **ResponseId:** 277
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 33500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 239
+
+- **ResponseId:** 278
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 12
+- **DevType:** Engineer, data;Developer, full-stack;Developer, back-end;DevOps specialist;Data or business analyst
+- **OrgSize:** 20 to 99 employees
+- **Country:** Netherlands
+- **CompTotal:** 88000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python;R;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 240
+
+- **ResponseId:** 279
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 67000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Python
+- **LanguageWantToWorkWith:** C#;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 241
+
+- **ResponseId:** 72955
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 1
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Data or business analyst
+- **OrgSize:** 10,000 or more employees
+- **Country:** Switzerland
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;MATLAB;Python;R;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;MATLAB;Python;R;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 242
+
+- **ResponseId:** 72958
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Greece
+- **CompTotal:** 1000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C#;HTML/CSS;Java;SQL
+- **LanguageWantToWorkWith:** Java;Python;Rust;Solidity;SQL
+- **ToolsTechHaveWorkedWith:** Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 243
+
+- **ResponseId:** 72959
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 25
+- **YearsCodePro:** 22
+- **DevType:** Data scientist or machine learning specialist;Database administrator;Academic researcher;DevOps specialist;System administrator;Security professional
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;Perl;PHP;Python;Ruby
+- **LanguageWantToWorkWith:** Lua;PHP;Python;Ruby;Scala;Swift
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Puppet
+- **VersionControlSystem:** A
+
+### Respondent 244
+
+- **ResponseId:** 72962
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 14
+- **DevType:** Engineering manager
+- **OrgSize:** 10,000 or more employees
+- **Country:** Israel
+- **CompTotal:** 950000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** C#;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 245
+
+- **ResponseId:** 72964
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Engineer, site reliability;Educator;Engineering manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** Sweden
+- **CompTotal:** 45000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 246
+
+- **ResponseId:** 72965
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** Developer, back-end;Other (please specify):
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 73000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Kotlin;Scala;SQL
+- **LanguageWantToWorkWith:** Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 247
+
+- **ResponseId:** 263
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 2
+- **DevType:** Other (please specify):
+- **OrgSize:** 10,000 or more employees
+- **Country:** Canada
+- **CompTotal:** 56000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;Lua;Python;Rust
+- **LanguageWantToWorkWith:** Assembly;C;Rust;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 248
+
+- **ResponseId:** 267
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Czech Republic
+- **CompTotal:** 220000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C#;C++;Go;Python;Rust
+- **LanguageWantToWorkWith:** C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 249
+
+- **ResponseId:** 72935
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** France
+- **CompTotal:** 2300.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** JavaScript;Kotlin;PHP;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A, C
+
+### Respondent 250
+
+- **ResponseId:** 72937
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** B
+- **YearsCode:** 12
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Switzerland
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 251
+
+- **ResponseId:** 72939
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 7
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 62000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Dart;HTML/CSS;JavaScript;PHP
+- **LanguageWantToWorkWith:** Dart;HTML/CSS;JavaScript;PHP
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 252
+
+- **ResponseId:** 72941
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** A
+- **YearsCode:** 16
+- **YearsCodePro:** 12
+- **DevType:** Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;SQL
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 253
+
+- **ResponseId:** 72944
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 4
+- **DevType:** Developer, desktop or enterprise applications;Data or business analyst
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Python;SQL
+- **LanguageWantToWorkWith:** C#;F#;Python
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 254
+
+- **ResponseId:** 72945
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile;DevOps specialist
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 115000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Objective-C;Swift
+- **LanguageWantToWorkWith:** Ruby;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 255
+
+- **ResponseId:** 72947
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 2 to 9 employees
+- **Country:** Iran, Islamic Republic of...
+- **CompTotal:** 78000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;Go;HTML/CSS;Java;JavaScript;PHP;SQL;VBA
+- **LanguageWantToWorkWith:** C;C#;C++;Java;JavaScript;Kotlin;PHP;Python;Solidity;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 256
+
+- **ResponseId:** 72950
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 2
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Ukraine
+- **CompTotal:** 130000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Ruby
+- **LanguageWantToWorkWith:** Elixir;Ruby
+- **ToolsTechHaveWorkedWith:** Homebrew;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 257
+
+- **ResponseId:** 72872
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 15
+- **YearsCodePro:** 6
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end;Engineering manager;Project manager;Scientist
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Canada
+- **CompTotal:** 175000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 258
+
+- **ResponseId:** 72873
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 40000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 259
+
+- **ResponseId:** 72877
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 20
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Go;HTML/CSS;Java;Perl;PowerShell;Python;R;Solidity;SQL;VBA
+- **LanguageWantToWorkWith:** C#;Go;Python;R;Solidity;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 260
+
+- **ResponseId:** 72878
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 13
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 188000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;Dart;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;C++;Dart;F#;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 261
+
+- **ResponseId:** 72887
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Germany
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 262
+
+- **ResponseId:** 72891
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Philippines
+- **CompTotal:** 285000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** Yarn
+- **VersionControlSystem:** A
+
+### Respondent 263
+
+- **ResponseId:** 72893
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 105000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Assembly;C;C++;JavaScript;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 264
+
+- **ResponseId:** 72894
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Italy
+- **CompTotal:** 32000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;JavaScript;Julia;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 265
+
+- **ResponseId:** 308
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 206000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Go;HTML/CSS;JavaScript;PowerShell;Python
+- **LanguageWantToWorkWith:** Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 266
+
+- **ResponseId:** 309
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 160000.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** Go;Python;SQL
+- **LanguageWantToWorkWith:** Elixir;Erlang;Go;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Terraform;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 267
+
+- **ResponseId:** 312
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 22
+- **YearsCodePro:** 15
+- **DevType:** Developer, full-stack;Project manager
+- **OrgSize:** 2 to 9 employees
+- **Country:** Spain
+- **CompTotal:** 46000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;Lua;PowerShell;SQL;VBA
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 268
+
+- **ResponseId:** 313
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 45000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;TypeScript
+- **LanguageWantToWorkWith:** C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 269
+
+- **ResponseId:** 316
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Engineer, data;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 270
+
+- **ResponseId:** 317
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 18
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end;Engineering manager;Cloud infrastructure engineer
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 230000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;Scala;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Python;Scala;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 271
+
+- **ResponseId:** 319
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** A
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** Latvia
+- **CompTotal:** 36000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Dart;Kotlin;Python;Ruby;Swift;TypeScript
+- **LanguageWantToWorkWith:** Dart;Python;Ruby
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 272
+
+- **ResponseId:** 323
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 22
+- **YearsCodePro:** 19
+- **DevType:** Engineer, site reliability;Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 110000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Erlang;Go;Groovy;Java;JavaScript;Lua;Python;Ruby
+- **LanguageWantToWorkWith:** Bash/Shell;Erlang;Go;Groovy;Java;JavaScript;Python;Ruby
+- **ToolsTechHaveWorkedWith:** Chef;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 273
+
+- **ResponseId:** 72929
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end;DevOps specialist
+- **OrgSize:** 10,000 or more employees
+- **Country:** Canada
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Go;Java;Kotlin;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 274
+
+- **ResponseId:** 72931
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Engineering manager
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 310000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;JavaScript;Python;Scala;SQL
+- **LanguageWantToWorkWith:** JavaScript;Python;R;Scala;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 275
+
+- **ResponseId:** 72932
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 40
+- **YearsCodePro:** 32
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Canada
+- **CompTotal:** 140000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;Java;JavaScript
+- **LanguageWantToWorkWith:** Bash/Shell;Java;JavaScript;SQL
+- **ToolsTechHaveWorkedWith:** Kubernetes;Puppet
+- **VersionControlSystem:** A
+
+### Respondent 276
+
+- **ResponseId:** 297
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Canada
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Python
+- **LanguageWantToWorkWith:** Elixir;Julia
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 277
+
+- **ResponseId:** 298
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 21
+- **YearsCodePro:** 14
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Canada
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;JavaScript;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 278
+
+- **ResponseId:** 300
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, QA or test
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 104000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Java;JavaScript;Perl;PowerShell;Python;Ruby;SAS;SQL;TypeScript;VBA
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 279
+
+- **ResponseId:** 303
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 155000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 280
+
+- **ResponseId:** 306
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 90000.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;Java;JavaScript;Kotlin;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 281
+
+- **ResponseId:** 72911
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 9
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Educator
+- **OrgSize:** I don’t know
+- **Country:** Lithuania
+- **CompTotal:** 4000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 282
+
+- **ResponseId:** 72913
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 14
+- **DevType:** Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 500 to 999 employees
+- **Country:** Belgium
+- **CompTotal:** 4500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Go;Java;PowerShell;Scala
+- **LanguageWantToWorkWith:** Bash/Shell;Go;Java;PowerShell;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 283
+
+- **ResponseId:** 72915
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 1
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, mobile
+- **OrgSize:** 10 to 19 employees
+- **Country:** Italy
+- **CompTotal:** 33000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Dart;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Dart;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 284
+
+- **ResponseId:** 72916
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;Java;Python
+- **LanguageWantToWorkWith:** Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 285
+
+- **ResponseId:** 72921
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** I
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** India
+- **CompTotal:** 1000000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Python;Ruby
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A, C
+
+### Respondent 286
+
+- **ResponseId:** 72926
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 27
+- **YearsCodePro:** 20
+- **DevType:** Educator;Academic researcher
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Brazil
+- **CompTotal:** 19000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;Python;Ruby;Swift
+- **LanguageWantToWorkWith:** C;Go;Haskell;Python;Ruby;Rust;Swift
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 287
+
+- **ResponseId:** 72927
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 28
+- **YearsCodePro:** 24
+- **DevType:** Developer, full-stack;Developer, mobile;Project manager;Designer
+- **OrgSize:** 10 to 19 employees
+- **Country:** United States of America
+- **CompTotal:** 134000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Dart;HTML/CSS;Java;JavaScript;Objective-C;PHP;Python;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** Dart;Java
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 288
+
+- **ResponseId:** 72928
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 15
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, desktop or enterprise applications;Developer, mobile
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 3000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 289
+
+- **ResponseId:** 72851
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 19
+- **YearsCodePro:** 15
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 290
+
+- **ResponseId:** 72856
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Developer, mobile;Database administrator;DevOps specialist;Designer;System administrator;Security professional
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 29000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C#;HTML/CSS;JavaScript;PHP;PowerShell;SQL;VBA
+- **LanguageWantToWorkWith:** C;C#;HTML/CSS;PHP;PowerShell;SQL;VBA
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 291
+
+- **ResponseId:** 72858
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Sweden
+- **CompTotal:** 38000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 292
+
+- **ResponseId:** 72859
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** C
+- **YearsCode:** 7
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Netherlands
+- **CompTotal:** 3200.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** Go;Java;JavaScript;Kotlin;TypeScript
+- **LanguageWantToWorkWith:** Go;Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 293
+
+- **ResponseId:** 72867
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** Less than 1 year
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** India
+- **CompTotal:** 15000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** C++;Clojure;Go;HTML/CSS;Java;JavaScript;Kotlin;Python;Solidity;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 294
+
+- **ResponseId:** 72869
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Pakistan
+- **CompTotal:** 2260.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PHP;Ruby
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 295
+
+- **ResponseId:** 72813
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** China
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Go;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **LanguageWantToWorkWith:** C#;F#;HTML/CSS;JavaScript;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 296
+
+- **ResponseId:** 72814
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 10 to 19 employees
+- **Country:** Austria
+- **CompTotal:** 2900.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;JavaScript;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;JavaScript;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 297
+
+- **ResponseId:** 355
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** Sweden
+- **CompTotal:** 56000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 298
+
+- **ResponseId:** 72840
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist
+- **OrgSize:** 2 to 9 employees
+- **Country:** Hong Kong (S.A.R.)
+- **CompTotal:** 40000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Go;HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 299
+
+- **ResponseId:** 72841
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 11
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 149000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Elixir;HTML/CSS;JavaScript;Ruby;TypeScript
+- **LanguageWantToWorkWith:** Elixir
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 300
+
+- **ResponseId:** 72842
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Greece
+- **CompTotal:** 42000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C++;Go;Haskell;HTML/CSS;JavaScript;PHP;Python;TypeScript
+- **LanguageWantToWorkWith:** Go;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 301
+
+- **ResponseId:** 72843
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end;DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Germany
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Python
+- **LanguageWantToWorkWith:** Python;Ruby
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 302
+
+- **ResponseId:** 72847
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 16
+- **YearsCodePro:** 12
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 38000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;PHP;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;PHP;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 303
+
+- **ResponseId:** 72848
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end;DevOps specialist;System administrator
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Germany
+- **CompTotal:** 4200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Go;HTML/CSS;PHP;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 304
+
+- **ResponseId:** 72850
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 12
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack;Engineering manager;Database administrator;DevOps specialist;Cloud infrastructure engineer;Data or business analyst;Product manager;Marketing or sales professional
+- **OrgSize:** 2 to 9 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 24000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 305
+
+- **ResponseId:** 334
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 12
+- **DevType:** Developer, embedded applications or devices
+- **OrgSize:** 100 to 499 employees
+- **Country:** Israel
+- **CompTotal:** 650000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;C++;Python;SQL
+- **LanguageWantToWorkWith:** Assembly;C;C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker
+- **VersionControlSystem:** A
+
+### Respondent 306
+
+- **ResponseId:** 336
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 29
+- **YearsCodePro:** 24
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Perl;SQL
+- **LanguageWantToWorkWith:** Go;Julia;Python;Swift
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Puppet
+- **VersionControlSystem:** A, C
+
+### Respondent 307
+
+- **ResponseId:** 338
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 1
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;JavaScript;Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Haskell;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 308
+
+- **ResponseId:** 343
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 21
+- **DevType:** Developer, full-stack
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** South Africa
+- **CompTotal:** 900000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Rust;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Rust;SQL
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 309
+
+- **ResponseId:** 347
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 6
+- **YearsCodePro:** 1
+- **DevType:** Engineer, data;Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Germany
+- **CompTotal:** 42000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Dart;Go;HTML/CSS;Java;JavaScript;Rust;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Go;HTML/CSS;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 310
+
+- **ResponseId:** 348
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, full-stack;Product manager
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;Java;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C++;Go;HTML/CSS;JavaScript;Python;R
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 311
+
+- **ResponseId:** 349
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack;Developer, mobile;Educator
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;Kotlin;Python;TypeScript
+- **LanguageWantToWorkWith:** Elixir;Erlang;Go;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 312
+
+- **ResponseId:** 352
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 100 to 499 employees
+- **Country:** Austria
+- **CompTotal:** 3400.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;Go;Python
+- **LanguageWantToWorkWith:** Bash/Shell;C++;Go;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 313
+
+- **ResponseId:** 72895
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 11
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Designer
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 146400.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** C;C++;HTML/CSS;Java;JavaScript;PHP;PowerShell;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** C
+
+### Respondent 314
+
+- **ResponseId:** 72897
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 35
+- **YearsCodePro:** 20
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, mobile;Database administrator;System administrator
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Greece
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Java;JavaScript;SQL;Swift
+- **LanguageWantToWorkWith:** Bash/Shell;Elixir;Go;Objective-C;Rust;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 315
+
+- **ResponseId:** 72898
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 14
+- **DevType:** Developer, front-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 174000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 316
+
+- **ResponseId:** 72899
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 2
+- **DevType:** Developer, embedded applications or devices
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C++
+- **LanguageWantToWorkWith:** Assembly;C;C++;Go;JavaScript;Python;Ruby;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 317
+
+- **ResponseId:** 72901
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 160000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 318
+
+- **ResponseId:** 326
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C#;C++;Crystal;Dart;Go;Groovy;HTML/CSS;Java;JavaScript;Kotlin;Objective-C;Python;TypeScript
+- **LanguageWantToWorkWith:** C++;Dart;Go;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Unreal Engine
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 319
+
+- **ResponseId:** 331
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 14
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Canada
+- **CompTotal:** 95000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C;C#;C++;HTML/CSS;JavaScript;Rust;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 320
+
+- **ResponseId:** 332
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 4
+- **DevType:** Engineer, site reliability;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;PowerShell;Python
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Go;Python
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Puppet;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 321
+
+- **ResponseId:** 371
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 19
+- **YearsCodePro:** 13
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Database administrator;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 10 to 19 employees
+- **Country:** United States of America
+- **CompTotal:** 150000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Kotlin;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 322
+
+- **ResponseId:** 373
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Engineer, data;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python;Rust
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 323
+
+- **ResponseId:** 374
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 21
+- **YearsCodePro:** 19
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 10 to 19 employees
+- **Country:** Brazil
+- **CompTotal:** 360000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Java;Kotlin;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 324
+
+- **ResponseId:** 375
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Montenegro
+- **CompTotal:** 1060.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript;SQL
+- **LanguageWantToWorkWith:** Elixir;Go;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 325
+
+- **ResponseId:** 379
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 9
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, back-end;Database administrator;Cloud infrastructure engineer;System administrator;Security professional
+- **OrgSize:** 2 to 9 employees
+- **Country:** Italy
+- **CompTotal:** 1130.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;JavaScript;PHP;Rust;SQL
+- **LanguageWantToWorkWith:** Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 326
+
+- **ResponseId:** 382
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 15
+- **DevType:** Developer, front-end;Engineer, data;Other (please specify):;Data or business analyst
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 8000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** APL;Assembly;Bash/Shell;HTML/CSS;JavaScript;SQL
+- **LanguageWantToWorkWith:** Go;Java
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 327
+
+- **ResponseId:** 383
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 52800.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 328
+
+- **ResponseId:** 384
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;System administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 40000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;C++;HTML/CSS;JavaScript;Kotlin;Lua;PHP;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;C;C++;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 329
+
+- **ResponseId:** 359
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 3
+- **DevType:** Developer, mobile
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Thailand
+- **CompTotal:** 1568000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Dart;Go;JavaScript;Swift;TypeScript
+- **LanguageWantToWorkWith:** C++;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 330
+
+- **ResponseId:** 361
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 5
+- **DevType:** Engineer, site reliability;Developer, full-stack;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** China
+- **CompTotal:** 42000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C#;C++;HTML/CSS;JavaScript;Kotlin;Lua;PowerShell;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** C;C#;C++;HTML/CSS;JavaScript;Kotlin;Lua;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 331
+
+- **ResponseId:** 362
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 11
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 150000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;Dart;Go;HTML/CSS;Java;JavaScript;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 332
+
+- **ResponseId:** 363
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, back-end;Developer, embedded applications or devices
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Sweden
+- **CompTotal:** 50000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Go;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 333
+
+- **ResponseId:** 364
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 14
+- **YearsCodePro:** 14
+- **DevType:** Developer, full-stack;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Java;JavaScript;Lua;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** C#;PowerShell
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 334
+
+- **ResponseId:** 365
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 20
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 210000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Java
+- **LanguageWantToWorkWith:** C#;Go;Java
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 335
+
+- **ResponseId:** 368
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Data or business analyst
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 109000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;MATLAB;Python;Rust
+- **LanguageWantToWorkWith:** Clojure;Go;Julia;Python;Rust
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 336
+
+- **ResponseId:** 369
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C#;C++;F#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C;C#;C++;Go;PowerShell;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 337
+
+- **ResponseId:** 72827
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, desktop or enterprise applications;Other (please specify):
+- **OrgSize:** 10 to 19 employees
+- **Country:** Switzerland
+- **CompTotal:** 85336.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Scala
+- **LanguageWantToWorkWith:** Rust;Scala
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 338
+
+- **ResponseId:** 72829
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Designer
+- **OrgSize:** 2 to 9 employees
+- **Country:** Austria
+- **CompTotal:** 3500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Elixir;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Yarn
+- **VersionControlSystem:** A
+
+### Respondent 339
+
+- **ResponseId:** 72831
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Israel
+- **CompTotal:** 21000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 340
+
+- **ResponseId:** 72833
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** B
+- **YearsCode:** 23
+- **YearsCodePro:** 16
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 341
+
+- **ResponseId:** 72834
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 42
+- **YearsCodePro:** 38
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Switzerland
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;HTML/CSS;Java;JavaScript;Kotlin;PowerShell;Scala;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;C++;HTML/CSS;Java;JavaScript;PowerShell;Scala;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 342
+
+- **ResponseId:** 72835
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 7
+- **DevType:** Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, QA or test;Designer;System administrator
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Colombia
+- **CompTotal:** 37000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 343
+
+- **ResponseId:** 72836
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 25
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, game or graphics;Product manager
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 102000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;Java;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;C;C++;Java;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Unreal Engine
+- **VersionControlSystem:** Other (please specify):
+
+### Respondent 344
+
+- **ResponseId:** 72837
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 13
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Finland
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 345
+
+- **ResponseId:** 72815
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 7
+- **DevType:** Developer, mobile
+- **OrgSize:** 100 to 499 employees
+- **Country:** Greece
+- **CompTotal:** 45000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Dart;Go;Kotlin;Swift
+- **LanguageWantToWorkWith:** Dart;Kotlin;Swift
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 346
+
+- **ResponseId:** 72817
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 9
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications;Developer, embedded applications or devices
+- **OrgSize:** 20 to 99 employees
+- **Country:** Austria
+- **CompTotal:** 2600.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;C++;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 347
+
+- **ResponseId:** 72819
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;COBOL;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;COBOL;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Terraform
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 348
+
+- **ResponseId:** 72821
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** G
+- **YearsCode:** 22
+- **YearsCodePro:** 18
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Engineering manager
+- **OrgSize:** 10,000 or more employees
+- **Country:** Colombia
+- **CompTotal:** 6000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Clojure;Go;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Clojure;Elixir;F#;JavaScript;Kotlin;LISP;Scala;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 349
+
+- **ResponseId:** 72823
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 17
+- **YearsCodePro:** 15
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Netherlands
+- **CompTotal:** 53000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PHP;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 350
+
+- **ResponseId:** 72824
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Lithuania
+- **CompTotal:** 6000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 351
+
+- **ResponseId:** 72825
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** Pakistan
+- **CompTotal:** 1000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Dart;JavaScript;Kotlin;Python;TypeScript
+- **LanguageWantToWorkWith:** Dart;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 352
+
+- **ResponseId:** 72826
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, mobile
+- **OrgSize:** 100 to 499 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 77000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 353
+
+- **ResponseId:** 397
+- **MainBranch:** A
+- **Employment:** C, B
+- **EdLevel:** B
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** Germany
+- **CompTotal:** 1680.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 354
+
+- **ResponseId:** 398
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 44000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 355
+
+- **ResponseId:** 401
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 5
+- **DevType:** Data or business analyst
+- **OrgSize:** 500 to 999 employees
+- **Country:** France
+- **CompTotal:** 49000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;Python;SQL
+- **LanguageWantToWorkWith:** Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible
+- **VersionControlSystem:** A
+
+### Respondent 356
+
+- **ResponseId:** 403
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;DevOps specialist
+- **OrgSize:** 500 to 999 employees
+- **Country:** Israel
+- **CompTotal:** 31000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 357
+
+- **ResponseId:** 404
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 7
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 45000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Rust;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 358
+
+- **ResponseId:** 406
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 115000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Elixir;Go;Haskell;JavaScript
+- **LanguageWantToWorkWith:** Elixir;Haskell
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 359
+
+- **ResponseId:** 407
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 11
+- **YearsCodePro:** 8
+- **DevType:** Data scientist or machine learning specialist;Developer, front-end;Developer, full-stack;Developer, back-end;Engineering manager;Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Kotlin;Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Kotlin;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 360
+
+- **ResponseId:** 409
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, game or graphics;Blockchain
+- **OrgSize:** 20 to 99 employees
+- **Country:** Japan
+- **CompTotal:** 252000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;C;C++;JavaScript;Lua;Rust;TypeScript
+- **LanguageWantToWorkWith:** Lua;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 361
+
+- **ResponseId:** 72804
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Hungary
+- **CompTotal:** 500000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;Java;Kotlin;Python;Scala
+- **LanguageWantToWorkWith:** Go;Haskell;Python;Scala
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 362
+
+- **ResponseId:** 72805
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;System administrator
+- **OrgSize:** 500 to 999 employees
+- **Country:** Slovenia
+- **CompTotal:** 28000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PHP;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Go;HTML/CSS;JavaScript;PHP;PowerShell;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 363
+
+- **ResponseId:** 391
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 10,000 or more employees
+- **Country:** France
+- **CompTotal:** 42000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript
+- **LanguageWantToWorkWith:** Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 364
+
+- **ResponseId:** 392
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 24
+- **YearsCodePro:** 20
+- **DevType:** Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 205000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Elixir;Erlang;F#;Go;HTML/CSS;JavaScript;PowerShell;Rust;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** C#;Elixir;F#;Go;HTML/CSS;JavaScript;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 365
+
+- **ResponseId:** 393
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 25
+- **YearsCodePro:** 14
+- **DevType:** Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Slovakia
+- **CompTotal:** 4200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Go;JavaScript;Rust;TypeScript
+- **LanguageWantToWorkWith:** Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 366
+
+- **ResponseId:** 394
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications
+- **OrgSize:** 20 to 99 employees
+- **Country:** Netherlands
+- **CompTotal:** 4250.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 367
+
+- **ResponseId:** 395
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** APL;Bash/Shell;C;C++;Go;Haskell;LISP;Perl;Python;Rust
+- **LanguageWantToWorkWith:** APL;C;C++;Haskell;Perl;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 368
+
+- **ResponseId:** 396
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Ireland
+- **CompTotal:** 65000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 369
+
+- **ResponseId:** 72789
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 16
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Indonesia
+- **CompTotal:** 36000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;JavaScript;PHP;Ruby;SQL
+- **LanguageWantToWorkWith:** Elixir;Go;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 370
+
+- **ResponseId:** 72793
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Data scientist or machine learning specialist
+- **OrgSize:** 2 to 9 employees
+- **Country:** Lithuania
+- **CompTotal:** 2500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Python
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 371
+
+- **ResponseId:** 72796
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 21
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Cloud infrastructure engineer;Blockchain
+- **OrgSize:** 10 to 19 employees
+- **Country:** Ghana
+- **CompTotal:** 20000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Dart;F#;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Dart;F#;JavaScript;Kotlin;R;Rust;Solidity;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 372
+
+- **ResponseId:** 72799
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 9
+- **DevType:** Engineering manager
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 166000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;Python
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 373
+
+- **ResponseId:** 72800
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 25
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Canada
+- **CompTotal:** 78000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C++;Go;Java;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 374
+
+- **ResponseId:** 72801
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 20
+- **DevType:** Developer, full-stack;Developer, back-end;Engineering manager;Database administrator;Cloud infrastructure engineer;Data or business analyst;Product manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** Luxembourg
+- **CompTotal:** 96000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;Python;R;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;F#;Go;HTML/CSS;JavaScript;Python;R;Ruby;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 375
+
+- **ResponseId:** 72802
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 2
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Bosnia and Herzegovina
+- **CompTotal:** 2700.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** Java;JavaScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 376
+
+- **ResponseId:** 72803
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 15
+- **YearsCodePro:** 15
+- **DevType:** Developer, full-stack;Developer, mobile;Engineering manager;Developer, game or graphics
+- **OrgSize:** 100 to 499 employees
+- **Country:** Canada
+- **CompTotal:** 300000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;Dart;Groovy;Java;JavaScript;Kotlin;Objective-C;PowerShell;Rust;SQL;Swift;TypeScript
+- **LanguageWantToWorkWith:** C#;Kotlin
+- **ToolsTechHaveWorkedWith:** Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 377
+
+- **ResponseId:** 386
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 22
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist;Cloud infrastructure engineer;Security professional
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 160000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;Kotlin;Python;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;Kotlin;Perl;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 378
+
+- **ResponseId:** 387
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** Finland
+- **CompTotal:** 3300.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;TypeScript
+- **LanguageWantToWorkWith:** Elixir;Java;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 379
+
+- **ResponseId:** 388
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 124000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** Java;JavaScript;SQL
+- **ToolsTechHaveWorkedWith:** npm;Puppet
+- **VersionControlSystem:** A
+
+### Respondent 380
+
+- **ResponseId:** 389
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Engineering manager;Cloud infrastructure engineer;Security professional
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PHP;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 381
+
+- **ResponseId:** 72776
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, QA or test
+- **OrgSize:** 2 to 9 employees
+- **Country:** Germany
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Rust;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 382
+
+- **ResponseId:** 72778
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Georgia
+- **CompTotal:** 5000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Go;HTML/CSS;JavaScript;Python;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Elixir;Go;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;npm;Terraform;Unity 3D
+- **VersionControlSystem:** A, C
+
+### Respondent 383
+
+- **ResponseId:** 72783
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack;Academic researcher;Designer;Scientist
+- **OrgSize:** 10 to 19 employees
+- **Country:** Spain
+- **CompTotal:** 21000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;Java;JavaScript;Julia;PHP;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 384
+
+- **ResponseId:** 72784
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 12
+- **DevType:** Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, mobile;Educator;Engineering manager;Database administrator;DevOps specialist;Project manager;Cloud infrastructure engineer;System administrator
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Japan
+- **CompTotal:** 600000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Elixir;HTML/CSS;JavaScript;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Elixir;Go;HTML/CSS;JavaScript;Ruby;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 385
+
+- **ResponseId:** 433
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, back-end;Developer, desktop or enterprise applications;Designer
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 96300.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;LISP;PowerShell;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;Java;JavaScript;PowerShell;Python;SQL
+- **ToolsTechHaveWorkedWith:** Puppet
+- **VersionControlSystem:** A
+
+### Respondent 386
+
+- **ResponseId:** 437
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 3
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Designer
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 55000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;Python
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 387
+
+- **ResponseId:** 440
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 12
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile;Engineering manager;Cloud infrastructure engineer
+- **OrgSize:** 10,000 or more employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 100400.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Dart
+- **LanguageWantToWorkWith:** C#;Dart
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 388
+
+- **ResponseId:** 441
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 4
+- **DevType:** Data scientist or machine learning specialist;Engineer, data
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 158000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Python;Scala;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;npm
+- **VersionControlSystem:** A, B
+
+### Respondent 389
+
+- **ResponseId:** 442
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 9
+- **DevType:** Developer, mobile
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 350000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;Kotlin;Python;Rust
+- **LanguageWantToWorkWith:** Kotlin;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A, B
+
+### Respondent 390
+
+- **ResponseId:** 444
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** H
+- **YearsCode:** 11
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 10 to 19 employees
+- **Country:** United States of America
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 391
+
+- **ResponseId:** 446
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** I don’t know
+- **Country:** Spain
+- **CompTotal:** 24000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A, C
+
+### Respondent 392
+
+- **ResponseId:** 447
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** Less than 1 year
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Engineer, data
+- **OrgSize:** 100 to 499 employees
+- **Country:** Spain
+- **CompTotal:** 20000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Python;TypeScript
+- **LanguageWantToWorkWith:** Python;Scala;SQL
+- **ToolsTechHaveWorkedWith:** Yarn
+- **VersionControlSystem:** A
+
+### Respondent 393
+
+- **ResponseId:** 72771
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** India
+- **CompTotal:** 1200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;C#;C++;Delphi;HTML/CSS;Java;JavaScript;MATLAB;PHP;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Delphi;Go;HTML/CSS;JavaScript;PowerShell;Python;R;SQL;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 394
+
+- **ResponseId:** 72772
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** H
+- **YearsCode:** 10
+- **YearsCodePro:** 8
+- **DevType:** Engineer, data;Developer, QA or test
+- **OrgSize:** 500 to 999 employees
+- **Country:** Spain
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C#;PHP;SQL
+- **LanguageWantToWorkWith:** Swift
+- **ToolsTechHaveWorkedWith:** Ansible;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 395
+
+- **ResponseId:** 72773
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 14
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist;Other (please specify):;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Austria
+- **CompTotal:** 73500.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Groovy;Java
+- **LanguageWantToWorkWith:** Go;Groovy;Java;Rust
+- **ToolsTechHaveWorkedWith:** Chef;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 396
+
+- **ResponseId:** 423
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack;Developer, back-end;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 165000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;JavaScript;Python;Rust;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Python;Rust
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A
+
+### Respondent 397
+
+- **ResponseId:** 424
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 13
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack;Educator
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** United States of America
+- **CompTotal:** 350000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;Ruby
+- **LanguageWantToWorkWith:** Ruby;Swift
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 398
+
+- **ResponseId:** 427
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 6
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, back-end;Security professional
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 160000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;C++;Go;Java;JavaScript;LISP;Lua;Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;Haskell;LISP;Lua;OCaml;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 399
+
+- **ResponseId:** 428
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** DevOps specialist
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 145000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Dart;Go;JavaScript;PowerShell;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 400
+
+- **ResponseId:** 430
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 11
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Clojure;HTML/CSS;JavaScript;Kotlin;PHP;Rust;SQL
+- **LanguageWantToWorkWith:** C#;F#;Haskell;JavaScript;Kotlin;PHP;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 401
+
+- **ResponseId:** 72752
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Poland
+- **CompTotal:** 9400.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;Python;SQL
+- **LanguageWantToWorkWith:** C#;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 402
+
+- **ResponseId:** 72753
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 40
+- **YearsCodePro:** 25
+- **DevType:** Project manager
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Italy
+- **CompTotal:** 1500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;Rust;SQL;VBA
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;C#;HTML/CSS;JavaScript;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 403
+
+- **ResponseId:** 72754
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 35
+- **YearsCodePro:** 20
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Sweden
+- **CompTotal:** 45000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Elixir;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;Erlang
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Pulumi
+- **VersionControlSystem:** A
+
+### Respondent 404
+
+- **ResponseId:** 72759
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Austria
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;Lua;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 405
+
+- **ResponseId:** 72761
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Data scientist or machine learning specialist;Developer, full-stack;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Greece
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;COBOL;Java;Python
+- **LanguageWantToWorkWith:** JavaScript;Kotlin
+- **ToolsTechHaveWorkedWith:** Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 406
+
+- **ResponseId:** 72762
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 8
+- **DevType:** Developer, back-end;Engineering manager;Cloud infrastructure engineer
+- **OrgSize:** 100 to 499 employees
+- **Country:** Germany
+- **CompTotal:** 79000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Elixir;Java;Kotlin;Python;Rust;Scala;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Java;Kotlin;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 407
+
+- **ResponseId:** 72763
+- **MainBranch:** B
+- **Employment:** C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 3
+- **DevType:** Engineer, data;Database administrator
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 11000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;HTML/CSS;Java;JavaScript;PowerShell;Python;SQL
+- **LanguageWantToWorkWith:** PowerShell;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 408
+
+- **ResponseId:** 72766
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 26
+- **YearsCodePro:** 23
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications;Database administrator;Project manager;Product manager;System administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Italy
+- **CompTotal:** 33000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Python
+- **LanguageWantToWorkWith:** Python
+- **ToolsTechHaveWorkedWith:** Puppet
+- **VersionControlSystem:** B, C
+
+### Respondent 409
+
+- **ResponseId:** 411
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Denmark
+- **CompTotal:** 60000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C++;HTML/CSS;JavaScript;Python;Ruby;Rust;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 410
+
+- **ResponseId:** 412
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 3
+- **YearsCodePro:** 3
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 3200.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;PHP;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Assembly;C;Clojure;Haskell;Python;R;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 411
+
+- **ResponseId:** 413
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** C
+- **YearsCode:** 28
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack;Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** United States of America
+- **CompTotal:** 0.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Rust;SQL
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 412
+
+- **ResponseId:** 420
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 16
+- **YearsCodePro:** 12
+- **DevType:** Developer, front-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 86000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 413
+
+- **ResponseId:** 72744
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** Switzerland
+- **CompTotal:** 106000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Elixir;JavaScript;Solidity;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 414
+
+- **ResponseId:** 72746
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 11
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** Sweden
+- **CompTotal:** 40000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 415
+
+- **ResponseId:** 72749
+- **MainBranch:** A
+- **Employment:** A, C, B
+- **EdLevel:** C
+- **YearsCode:** 16
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack;Designer
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 11000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 416
+
+- **ResponseId:** 72751
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 15
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 417
+
+- **ResponseId:** 470
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;HTML/CSS;Java;JavaScript;Kotlin;Python;Rust;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 418
+
+- **ResponseId:** 471
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Data scientist or machine learning specialist;Engineer, data;Developer, back-end;Developer, desktop or enterprise applications;Project manager
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;HTML/CSS;Perl;PHP;PowerShell;Python;Rust;SQL;VBA
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Go;Haskell;Kotlin;PowerShell;Python;Rust;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 419
+
+- **ResponseId:** 475
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 11
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 320000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;OCaml;Python;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Kotlin;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 420
+
+- **ResponseId:** 476
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 19
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Australia
+- **CompTotal:** 150000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;Python
+- **LanguageWantToWorkWith:** C#;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 421
+
+- **ResponseId:** 479
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** H
+- **YearsCode:** 43
+- **YearsCodePro:** 39
+- **DevType:** Developer, embedded applications or devices
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;Bash/Shell;C;C++;MATLAB
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;C;C++;MATLAB
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 422
+
+- **ResponseId:** 484
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 20
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Python;Rust
+- **LanguageWantToWorkWith:** Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 423
+
+- **ResponseId:** 72679
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** India
+- **CompTotal:** 2800000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Java;Python;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Java;Python;Solidity;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 424
+
+- **ResponseId:** 72680
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Python
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;Python;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker
+- **VersionControlSystem:** A
+
+### Respondent 425
+
+- **ResponseId:** 72740
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** B
+- **YearsCode:** 8
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Czech Republic
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 426
+
+- **ResponseId:** 72741
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 2 to 9 employees
+- **Country:** Italy
+- **CompTotal:** 3000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 427
+
+- **ResponseId:** 455
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 4
+- **DevType:** Developer, full-stack
+- **OrgSize:** 10 to 19 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Go;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm
+- **VersionControlSystem:** A
+
+### Respondent 428
+
+- **ResponseId:** 459
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 7
+- **DevType:** Engineer, data
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** Sweden
+- **CompTotal:** 910000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Python;Rust;Scala;SQL
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 429
+
+- **ResponseId:** 461
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 10
+- **YearsCodePro:** 1
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 75000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;Go;HTML/CSS;JavaScript;Kotlin;Python;TypeScript
+- **LanguageWantToWorkWith:** Haskell;HTML/CSS;JavaScript;Kotlin;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 430
+
+- **ResponseId:** 466
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 40
+- **YearsCodePro:** 22
+- **DevType:** Other (please specify):
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 86000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Haskell;HTML/CSS;Python;Ruby;Rust
+- **LanguageWantToWorkWith:** F#;Haskell;Rust
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 431
+
+- **ResponseId:** 468
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Canada
+- **CompTotal:** 114000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;JavaScript;Rust;TypeScript
+- **LanguageWantToWorkWith:** Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 432
+
+- **ResponseId:** 469
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 9
+- **YearsCodePro:** 8
+- **DevType:** Developer, full-stack;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 433
+
+- **ResponseId:** 72727
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 25
+- **YearsCodePro:** 22
+- **DevType:** Developer, back-end;Engineering manager
+- **OrgSize:** 500 to 999 employees
+- **Country:** Switzerland
+- **CompTotal:** 155000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Dart;HTML/CSS;Java;JavaScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;Java;JavaScript;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 434
+
+- **ResponseId:** 72728
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** China
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** Dart;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A, C
+
+### Respondent 435
+
+- **ResponseId:** 72730
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 10
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, mobile;Developer, game or graphics
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 11000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Groovy;HTML/CSS;JavaScript;PHP;PowerShell;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 436
+
+- **ResponseId:** 72731
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 30
+- **YearsCodePro:** 20
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Database administrator;Developer, game or graphics;Designer;System administrator
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Germany
+- **CompTotal:** 3000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Assembly;C#;C++;HTML/CSS;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Unity 3D
+- **VersionControlSystem:** D
+
+### Respondent 437
+
+- **ResponseId:** 72734
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Engineer, data;Developer, full-stack;Educator;Database administrator;Cloud infrastructure engineer;Data or business analyst;System administrator
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 55000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** C;Dart;HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 438
+
+- **ResponseId:** 72735
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 12
+- **DevType:** Developer, full-stack;Engineering manager
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 94000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Elixir;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 439
+
+- **ResponseId:** 72738
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** India
+- **CompTotal:** 400000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C++;HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 440
+
+- **ResponseId:** 72739
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 18
+- **YearsCodePro:** 5
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 10 to 19 employees
+- **Country:** Germany
+- **CompTotal:** 48000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;Java;JavaScript;SQL
+- **LanguageWantToWorkWith:** Clojure;Go;JavaScript;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 441
+
+- **ResponseId:** 448
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 150000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;Ruby;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 442
+
+- **ResponseId:** 450
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** H
+- **YearsCode:** 38
+- **YearsCodePro:** 25
+- **DevType:** Data scientist or machine learning specialist;Developer, full-stack;Educator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Assembly;C;PHP;Python;R;SQL
+- **LanguageWantToWorkWith:** C;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 443
+
+- **ResponseId:** 72710
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 1
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Blockchain
+- **OrgSize:** I don’t know
+- **Country:** Costa Rica
+- **CompTotal:** 950000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** Go;Kotlin;Solidity;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 444
+
+- **ResponseId:** 72712
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 7
+- **DevType:** Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** Canada
+- **CompTotal:** 140000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** F#;Go;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 445
+
+- **ResponseId:** 72714
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 18
+- **DevType:** Developer, front-end;Developer, back-end;Engineering manager;Senior Executive (C-Suite, VP, etc.);System administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 125000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Elixir;HTML/CSS;JavaScript;Lua;Ruby;SQL
+- **LanguageWantToWorkWith:** Bash/Shell;Elixir;Julia;Lua;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Pulumi
+- **VersionControlSystem:** A
+
+### Respondent 446
+
+- **ResponseId:** 72719
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 17
+- **YearsCodePro:** 15
+- **DevType:** Product manager
+- **OrgSize:** 500 to 999 employees
+- **Country:** Ireland
+- **CompTotal:** 84000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 447
+
+- **ResponseId:** 72720
+- **MainBranch:** A
+- **Employment:** C
+- **EdLevel:** C
+- **YearsCode:** 37
+- **YearsCodePro:** 32
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile;DevOps specialist;Project manager
+- **OrgSize:** Just me - I am a freelancer, sole proprietor, etc.
+- **Country:** Belgium
+- **CompTotal:** 120000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript
+- **LanguageWantToWorkWith:** Clojure;Elixir;Erlang;Swift
+- **ToolsTechHaveWorkedWith:** Homebrew
+- **VersionControlSystem:** A, Other (please specify):
+
+### Respondent 448
+
+- **ResponseId:** 72725
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 26
+- **YearsCodePro:** 14
+- **DevType:** Developer, full-stack;Engineering manager;Cloud infrastructure engineer;Senior Executive (C-Suite, VP, etc.)
+- **OrgSize:** 2 to 9 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 50000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** C#;Go;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 449
+
+- **ResponseId:** 515
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;DevOps specialist
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 145000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C++;Python
+- **LanguageWantToWorkWith:** Bash/Shell;C++;HTML/CSS;JavaScript;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 450
+
+- **ResponseId:** 72647
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;DevOps specialist;Cloud infrastructure engineer;System administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Brazil
+- **CompTotal:** 4600.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Dart;Groovy;HTML/CSS;JavaScript;Kotlin;Lua;PHP;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Dart;Go;JavaScript;Kotlin;Lua;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 451
+
+- **ResponseId:** 72651
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** China
+- **CompTotal:** 350000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;Java;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 452
+
+- **ResponseId:** 72659
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 10
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 91000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;C++;HTML/CSS;JavaScript;MATLAB;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 453
+
+- **ResponseId:** 72663
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 4
+- **YearsCodePro:** 5
+- **DevType:** Other (please specify):
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** China
+- **CompTotal:** 30000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Go;HTML/CSS;Java;JavaScript;Python;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 454
+
+- **ResponseId:** 72664
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 16
+- **YearsCodePro:** 10
+- **DevType:** Engineer, site reliability
+- **OrgSize:** 20 to 99 employees
+- **Country:** Singapore
+- **CompTotal:** 12000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;Go;HTML/CSS;JavaScript;Python;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C++;Go;JavaScript;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 455
+
+- **ResponseId:** 72668
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 10 to 19 employees
+- **Country:** Japan
+- **CompTotal:** 5500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Dart;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Dart;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 456
+
+- **ResponseId:** 72669
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 2
+- **DevType:** Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 91000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Groovy;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Go;HTML/CSS;Java;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 457
+
+- **ResponseId:** 494
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist
+- **OrgSize:** 10 to 19 employees
+- **Country:** Netherlands
+- **CompTotal:** 4900.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** C#;F#;HTML/CSS;JavaScript;PHP;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 458
+
+- **ResponseId:** 498
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 15
+- **DevType:** Engineer, site reliability;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 500 to 999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 459
+
+- **ResponseId:** 499
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 8
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 300000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Java;Kotlin;Python;SQL
+- **LanguageWantToWorkWith:** Kotlin;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 460
+
+- **ResponseId:** 501
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 4
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** United States of America
+- **CompTotal:** 53000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;F#;HTML/CSS;JavaScript;PowerShell;SQL
+- **LanguageWantToWorkWith:** C#;F#;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 461
+
+- **ResponseId:** 508
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** 3
+- **DevType:** Developer, back-end;Developer, QA or test
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 72000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;JavaScript;Python;Rust
+- **LanguageWantToWorkWith:** C#;C++;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Unity 3D
+- **VersionControlSystem:** A
+
+### Respondent 462
+
+- **ResponseId:** 510
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 3
+- **DevType:** Data scientist or machine learning specialist;Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Canada
+- **CompTotal:** 80000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Haskell;Python;Rust
+- **LanguageWantToWorkWith:** C++;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 463
+
+- **ResponseId:** 511
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 3
+- **DevType:** Engineer, data;Developer, desktop or enterprise applications;Database administrator;Academic researcher
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 50000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;F#;SQL
+- **LanguageWantToWorkWith:** C#;F#;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 464
+
+- **ResponseId:** 513
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 14
+- **YearsCodePro:** 9
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 500 to 999 employees
+- **Country:** France
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;TypeScript
+- **LanguageWantToWorkWith:** C#;Kotlin;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 465
+
+- **ResponseId:** 72700
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 15
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 100 to 499 employees
+- **Country:** Hong Kong (S.A.R.)
+- **CompTotal:** 52000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** SQL;VBA
+- **LanguageWantToWorkWith:** Go;Java;Python
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A, C
+
+### Respondent 466
+
+- **ResponseId:** 72705
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Database administrator;DevOps specialist;Designer
+- **OrgSize:** 20 to 99 employees
+- **Country:** Canada
+- **CompTotal:** 60000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;HTML/CSS;JavaScript;Python
+- **LanguageWantToWorkWith:** Bash/Shell;HTML/CSS;JavaScript;Python;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 467
+
+- **ResponseId:** 72706
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 8
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** India
+- **CompTotal:** 3500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** JavaScript;Python
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 468
+
+- **ResponseId:** 486
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 6
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 10,000 or more employees
+- **Country:** Czech Republic
+- **CompTotal:** 47000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#
+- **LanguageWantToWorkWith:** C#
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 469
+
+- **ResponseId:** 487
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** Viet Nam
+- **CompTotal:** 12000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Java;JavaScript;PHP;Ruby;SQL;TypeScript
+- **LanguageWantToWorkWith:** Go;Haskell;HTML/CSS;Kotlin;LISP;Ruby;Rust;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 470
+
+- **ResponseId:** 489
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 28
+- **YearsCodePro:** 17
+- **DevType:** Developer, full-stack;Developer, back-end
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 160000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Elixir;Go;JavaScript;Rust
+- **LanguageWantToWorkWith:** Elixir;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 471
+
+- **ResponseId:** 491
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 5
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United States of America
+- **CompTotal:** 110000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;Java;JavaScript;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 472
+
+- **ResponseId:** 492
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end
+- **OrgSize:** 100 to 499 employees
+- **Country:** Poland
+- **CompTotal:** 120000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;PHP
+- **LanguageWantToWorkWith:** PHP
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 473
+
+- **ResponseId:** 72681
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** D
+- **YearsCode:** 7
+- **YearsCodePro:** 5
+- **DevType:** Developer, back-end;Developer, QA or test
+- **OrgSize:** 100 to 499 employees
+- **Country:** Ecuador
+- **CompTotal:** 1500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;Python;SQL
+- **LanguageWantToWorkWith:** C#;HTML/CSS;JavaScript;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 474
+
+- **ResponseId:** 72682
+- **MainBranch:** A
+- **Employment:** A, C
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 20 to 99 employees
+- **Country:** United States of America
+- **CompTotal:** 128000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Go;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;Go;JavaScript;Python;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 475
+
+- **ResponseId:** 72683
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 11
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Student
+- **OrgSize:** 10 to 19 employees
+- **Country:** Brazil
+- **CompTotal:** 4600.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP;SQL
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;PHP;Python;R;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 476
+
+- **ResponseId:** 72685
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 31
+- **YearsCodePro:** 23
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Brazil
+- **CompTotal:** 18300.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C;C++;Python;Rust
+- **LanguageWantToWorkWith:** C;C++;Python;Rust
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 477
+
+- **ResponseId:** 72686
+- **MainBranch:** A
+- **Employment:** B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 4
+- **YearsCodePro:** Less than 1 year
+- **DevType:** Developer, front-end;Data or business analyst
+- **OrgSize:** 20 to 99 employees
+- **Country:** India
+- **CompTotal:** 500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** JavaScript;PowerShell;Python;Rust;Scala;SQL;TypeScript
+- **LanguageWantToWorkWith:** Clojure;Dart;Go;Kotlin;Rust;Scala
+- **ToolsTechHaveWorkedWith:** Docker;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 478
+
+- **ResponseId:** 72689
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 3
+- **YearsCodePro:** 2
+- **DevType:** Developer, front-end
+- **OrgSize:** 2 to 9 employees
+- **Country:** China
+- **CompTotal:** 2000.0
+- **CompFreq:** A
+- **LanguageHaveWorkedWith:** JavaScript
+- **LanguageWantToWorkWith:** JavaScript;Python;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 479
+
+- **ResponseId:** 72690
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 11
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** India
+- **CompTotal:** 4500000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Java;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 480
+
+- **ResponseId:** 72692
+- **MainBranch:** A
+- **Employment:** A, B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 5
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications
+- **OrgSize:** 20 to 99 employees
+- **Country:** Iran, Islamic Republic of...
+- **CompTotal:** 300000000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** C#;HTML/CSS;SQL
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 481
+
+- **ResponseId:** 72584
+- **MainBranch:** B
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 9
+- **DevType:** DevOps specialist
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 190000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Python
+- **LanguageWantToWorkWith:** Go
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Kubernetes;Terraform;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 482
+
+- **ResponseId:** 72588
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 69200.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** HTML/CSS;JavaScript;TypeScript
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 483
+
+- **ResponseId:** 72591
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 23
+- **YearsCodePro:** 15
+- **DevType:** Developer, front-end;Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 100000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** HTML/CSS;JavaScript;PHP
+- **LanguageWantToWorkWith:** Python;Ruby;Swift;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 484
+
+- **ResponseId:** 72592
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 8
+- **YearsCodePro:** 6
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** United States of America
+- **CompTotal:** 180000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;F#;JavaScript;TypeScript
+- **LanguageWantToWorkWith:** Clojure;Go;Java;Kotlin
+- **ToolsTechHaveWorkedWith:** Docker;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 485
+
+- **ResponseId:** 72593
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 12
+- **YearsCodePro:** 10
+- **DevType:** Developer, back-end;Developer, desktop or enterprise applications;Database administrator
+- **OrgSize:** 2 to 9 employees
+- **Country:** Brazil
+- **CompTotal:** 6000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Delphi;Python;SQL
+- **LanguageWantToWorkWith:** C#;Delphi;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 486
+
+- **ResponseId:** 72594
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;System administrator
+- **OrgSize:** 20 to 99 employees
+- **Country:** Germany
+- **CompTotal:** 57000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;HTML/CSS;JavaScript;PHP;TypeScript
+- **LanguageWantToWorkWith:** Dart;Go;Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 487
+
+- **ResponseId:** 72603
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 8
+- **DevType:** Developer, embedded applications or devices
+- **OrgSize:** 20 to 99 employees
+- **Country:** Denmark
+- **CompTotal:** 50000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;C;C++;JavaScript;Python;Rust;TypeScript
+- **LanguageWantToWorkWith:** Rust;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm;Unity 3D;Unreal Engine
+- **VersionControlSystem:** A
+
+### Respondent 488
+
+- **ResponseId:** 72604
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 2
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 138000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Groovy;HTML/CSS;Java;JavaScript;Ruby
+- **LanguageWantToWorkWith:** Go;Kotlin;Python;Ruby;TypeScript
+- **ToolsTechHaveWorkedWith:** Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 489
+
+- **ResponseId:** 529
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 20
+- **YearsCodePro:** 9
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 40000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Go;JavaScript;PHP;Python;SQL
+- **LanguageWantToWorkWith:** Go;Python;Rust;Scala
+- **ToolsTechHaveWorkedWith:** Docker
+- **VersionControlSystem:** A
+
+### Respondent 490
+
+- **ResponseId:** 537
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** C
+- **YearsCode:** 6
+- **YearsCodePro:** 6
+- **DevType:** Developer, full-stack;DevOps specialist;System administrator
+- **OrgSize:** 5,000 to 9,999 employees
+- **Country:** United Kingdom of Great Britain and Northern Ireland
+- **CompTotal:** 45000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Go;Groovy;Java;Python;Ruby;Rust
+- **LanguageWantToWorkWith:** Elixir;Erlang;Go;Java;Python;Ruby;Rust
+- **ToolsTechHaveWorkedWith:** Ansible;Docker
+- **VersionControlSystem:** A
+
+### Respondent 491
+
+- **ResponseId:** 539
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Master’s degree (M.A., M.S., M.Eng., MBA, etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 11
+- **DevType:** Developer, full-stack
+- **OrgSize:** 20 to 99 employees
+- **Country:** Portugal
+- **CompTotal:** 47000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;C#;F#;HTML/CSS;JavaScript;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A
+
+### Respondent 492
+
+- **ResponseId:** 540
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 15
+- **YearsCodePro:** 1
+- **DevType:** Developer, full-stack
+- **OrgSize:** 100 to 499 employees
+- **Country:** United States of America
+- **CompTotal:** 200000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;Clojure;Haskell;HTML/CSS
+- **LanguageWantToWorkWith:** APL;Bash/Shell;Clojure;Haskell;Rust
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Yarn
+- **VersionControlSystem:** A
+
+### Respondent 493
+
+- **ResponseId:** 547
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 2
+- **DevType:** Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Hungary
+- **CompTotal:** 700000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Erlang
+- **LanguageWantToWorkWith:** Elixir;Erlang;Java;Python;Rust;Scala;TypeScript
+- **ToolsTechHaveWorkedWith:** Kubernetes
+- **VersionControlSystem:** A
+
+### Respondent 494
+
+- **ResponseId:** 548
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 9
+- **YearsCodePro:** 3
+- **DevType:** Developer, full-stack;Developer, desktop or enterprise applications
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** United States of America
+- **CompTotal:** 90000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** C#;C++;HTML/CSS;Java;JavaScript;PowerShell;Python;Rust;SQL;TypeScript
+- **LanguageWantToWorkWith:** C++;Rust
+- **ToolsTechHaveWorkedWith:** npm
+- **VersionControlSystem:** A
+
+### Respondent 495
+
+- **ResponseId:** 72582
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 6
+- **DevType:** Engineer, data;Developer, back-end
+- **OrgSize:** 10,000 or more employees
+- **Country:** Germany
+- **CompTotal:** 70000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Dart;Go;Python;SQL
+- **LanguageWantToWorkWith:** Dart;Go;Python;SQL
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 496
+
+- **ResponseId:** 72583
+- **MainBranch:** A
+- **Employment:** C, B
+- **EdLevel:** C
+- **YearsCode:** 40
+- **YearsCodePro:** 36
+- **DevType:** Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Developer, mobile;Database administrator;DevOps specialist;Developer, embedded applications or devices;Project manager;Cloud infrastructure engineer;Designer;System administrator;Security professional
+- **OrgSize:** 2 to 9 employees
+- **Country:** Germany
+- **CompTotal:** 320000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Delphi;HTML/CSS;Java;JavaScript;SQL;TypeScript
+- **LanguageWantToWorkWith:** Bash/Shell;Delphi;HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;npm
+- **VersionControlSystem:** A, C
+
+### Respondent 497
+
+- **ResponseId:** 72626
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** B
+- **YearsCode:** 22
+- **YearsCodePro:** 18
+- **DevType:** Engineer, site reliability;Developer, full-stack;Engineering manager;Security professional
+- **OrgSize:** 20 to 99 employees
+- **Country:** Argentina
+- **CompTotal:** 130000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C;Elixir;Go;HTML/CSS;JavaScript;Kotlin;PHP;Ruby;SQL
+- **LanguageWantToWorkWith:** Assembly;Bash/Shell;C;Elixir;Go;Kotlin;Ruby
+- **ToolsTechHaveWorkedWith:** Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 498
+
+- **ResponseId:** 72630
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 10
+- **YearsCodePro:** 4
+- **DevType:** Developer, back-end
+- **OrgSize:** 500 to 999 employees
+- **Country:** Russian Federation
+- **CompTotal:** 205000.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Bash/Shell;Go;Groovy;HTML/CSS;Java;JavaScript;Kotlin;PowerShell;SQL
+- **LanguageWantToWorkWith:** Groovy;Haskell;Java;Kotlin;Python;TypeScript
+- **ToolsTechHaveWorkedWith:** Docker;npm
+- **VersionControlSystem:** A
+
+### Respondent 499
+
+- **ResponseId:** 72632
+- **MainBranch:** A
+- **Employment:** A, B
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 6
+- **YearsCodePro:** 6
+- **DevType:** Developer, back-end
+- **OrgSize:** 1,000 to 4,999 employees
+- **Country:** Mexico
+- **CompTotal:** 39500.0
+- **CompFreq:** B
+- **LanguageHaveWorkedWith:** Python;SQL
+- **LanguageWantToWorkWith:** Go;Python;SQL
+- **ToolsTechHaveWorkedWith:** Docker;Homebrew;Kubernetes;Terraform
+- **VersionControlSystem:** A
+
+### Respondent 500
+
+- **ResponseId:** 72634
+- **MainBranch:** A
+- **Employment:** A
+- **EdLevel:** Bachelor’s degree (B.A., B.S., B.Eng., etc.)
+- **YearsCode:** 5
+- **YearsCodePro:** 4
+- **DevType:** Engineer, site reliability;Developer, back-end;DevOps specialist;Cloud infrastructure engineer
+- **OrgSize:** 2 to 9 employees
+- **Country:** United States of America
+- **CompTotal:** 125000.0
+- **CompFreq:** C
+- **LanguageHaveWorkedWith:** Bash/Shell;C#;Elixir;Erlang;F#;Go;HTML/CSS;Java;LISP;Perl;Python;Scala
+- **LanguageWantToWorkWith:** Elixir;LISP;Python
+- **ToolsTechHaveWorkedWith:** Ansible;Docker;Homebrew;Kubernetes;Pulumi;Terraform
+- **VersionControlSystem:** A
+
