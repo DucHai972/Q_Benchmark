@@ -1,7 +1,7 @@
 """
 Test Healthcare Cases with Gemini
-Tests the first 3 cases from extracted_ttl_failures/healthcare-dataset
-using TTL data from inextracted_ttl_failure and compares with expected answers
+Tests cases from extracted_ttl_failures/healthcare-dataset
+using TTL data from modified_inextracted_ttl directory and compares with expected answers
 """
 
 import json
@@ -19,8 +19,8 @@ from evaluator import BenchmarkEvaluator
 import time
 
 def load_ttl_data(case_id, source_task):
-    """Load TTL data from the inextracted_ttl_failure directory."""
-    ttl_file = Path(f"inextracted_ttl_failure/{case_id}_{source_task}.ttl")
+    """Load TTL data from the modified_inextracted_ttl directory."""
+    ttl_file = Path(f"modified_inextracted_ttl/{case_id}_{source_task}.ttl")
     if ttl_file.exists():
         with open(ttl_file, 'r', encoding='utf-8') as f:
             return f.read()
