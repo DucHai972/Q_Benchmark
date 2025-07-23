@@ -2,12 +2,11 @@
   {
     "case_id": "case_1",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 29",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 10 and Happiness score of 9?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "3",
     "metadata": {
-      "inference_question": "Among respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?",
+      "inference_question": "Which respondent numbers have Life satisfaction score of 10 and Happiness score of 9?",
       "matching_respondents": [
-        "29",
         "3"
       ]
     }
@@ -15,50 +14,47 @@
   {
     "case_id": "case_2",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "34, 82, 93",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Life satisfaction score of 8?",
       "matching_respondents": [
-        "34",
-        "82",
-        "93"
+        "29"
       ]
     }
   },
   {
     "case_id": "case_3",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong female respondents, which ones also have moderate stress levels (3 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "87",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Stress score of 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "25, 124",
     "metadata": {
-      "inference_question": "Among female respondents, which ones also have moderate stress levels (3 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Stress score of 3?",
       "matching_respondents": [
-        "87"
+        "25",
+        "124"
       ]
     }
   },
   {
     "case_id": "case_4",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "50, 73, 106",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Socio-economic status score of 5 and Life satisfaction score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "3",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Socio-economic status score of 5 and Life satisfaction score of 10?",
       "matching_respondents": [
-        "106",
-        "50",
-        "73"
+        "3"
       ]
     }
   },
   {
     "case_id": "case_5",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?\n\nDATA:\n\n[Insert the full data block here]",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 3?\n\nDATA:\n\n[Insert the full data block here]",
     "expected_answer": "55",
     "metadata": {
-      "inference_question": "Among respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?",
+      "inference_question": "Which respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 3?",
       "matching_respondents": [
         "55"
       ]
@@ -67,127 +63,122 @@
   {
     "case_id": "case_6",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high stress levels (\u00e2\u2030\u00a57), which ones also satisfy: respondents with high anxiety symptoms?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "None",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Happiness score of 8 and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "88, 136",
     "metadata": {
-      "inference_question": "Among respondents with high stress levels (\u00e2\u2030\u00a57), which ones also satisfy: respondents with high anxiety symptoms?",
-      "matching_respondents": []
+      "inference_question": "Which respondent numbers have Happiness score of 8 and Life satisfaction score of 8?",
+      "matching_respondents": [
+        "88",
+        "136"
+      ]
     }
   },
   {
     "case_id": "case_7",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "93",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Happiness score of 10 and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29, 122",
     "metadata": {
-      "inference_question": "Among respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?",
+      "inference_question": "Which respondent numbers have Happiness score of 10 and Life satisfaction score of 8?",
       "matching_respondents": [
-        "93"
+        "29",
+        "122"
       ]
     }
   },
   {
     "case_id": "case_8",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "97",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Loneliness score of 8 and Depression score of 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "25",
     "metadata": {
-      "inference_question": "Among respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?",
+      "inference_question": "Which respondent numbers have Loneliness score of 8 and Depression score of 3?",
       "matching_respondents": [
-        "97"
+        "25"
       ]
     }
   },
   {
     "case_id": "case_9",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "8, 36, 75",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Life satisfaction score of 5?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "84",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Life satisfaction score of 5?",
       "matching_respondents": [
-        "36",
-        "75",
-        "8"
+        "84"
       ]
     }
   },
   {
     "case_id": "case_10",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "69, 84, 136",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Happiness score of 7?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "136",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Happiness score of 7?",
       "matching_respondents": [
-        "136",
-        "69",
-        "84"
+        "136"
       ]
     }
   },
   {
     "case_id": "case_11",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "29, 69, 75",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Socio-economic status score of 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "124",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Socio-economic status score of 1?",
       "matching_respondents": [
-        "29",
-        "69",
-        "75"
+        "124"
       ]
     }
   },
   {
     "case_id": "case_12",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with loss of interest symptoms (1 or above), which ones also have sleep problems (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "72, 131, 135",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Depressive Symptoms Frequency Anhedonia score of 2 and Depressive Symptoms Frequency Sleep Problems score of 0?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55, 84",
     "metadata": {
-      "inference_question": "Among respondents with loss of interest symptoms (1 or above), which ones also have sleep problems (1 or above)?",
+      "inference_question": "Which respondent numbers have Depressive Symptoms Frequency Anhedonia score of 2 and Depressive Symptoms Frequency Sleep Problems score of 0?",
       "matching_respondents": [
-        "131",
-        "135",
-        "72"
+        "55",
+        "84"
       ]
     }
   },
   {
     "case_id": "case_13",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "26, 47, 103",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 2 and Anxiety Symptoms Frequency Trouble Relaxing score of 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "3",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 2 and Anxiety Symptoms Frequency Trouble Relaxing score of 2?",
       "matching_respondents": [
-        "103",
-        "26",
-        "47"
+        "3"
       ]
     }
   },
   {
     "case_id": "case_14",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with often upset by unexpected events (2 or above), which ones also have anxiety symptoms (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "81, 139",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 2 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55, 136",
     "metadata": {
-      "inference_question": "Among respondents with often upset by unexpected events (2 or above), which ones also have anxiety symptoms (1 or above)?",
+      "inference_question": "Which respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 2 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 1?",
       "matching_respondents": [
-        "139",
-        "81"
+        "55",
+        "136"
       ]
     }
   },
   {
     "case_id": "case_15",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high socioeconomic status (5 or 6), which ones also have high life satisfaction (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Socio-economic status score of 5 and Happiness score of 9?\n\nDATA:\n\n[Insert the full data block here]",
     "expected_answer": "54",
     "metadata": {
-      "inference_question": "Among respondents with high socioeconomic status (5 or 6), which ones also have high life satisfaction (7 or above)?",
+      "inference_question": "Which respondent numbers have Socio-economic status score of 5 and Happiness score of 9?",
       "matching_respondents": [
         "54"
       ]
@@ -196,86 +187,86 @@
   {
     "case_id": "case_16",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low socioeconomic status (1 or 2), which ones also have high stress levels (4 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "45, 144",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Socio-economic status score of 2 and Stress score of 4?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55, 84",
     "metadata": {
-      "inference_question": "Among respondents with low socioeconomic status (1 or 2), which ones also have high stress levels (4 or above)?",
+      "inference_question": "Which respondent numbers have Socio-economic status score of 2 and Stress score of 4?",
       "matching_respondents": [
-        "144",
-        "45"
+        "55",
+        "84"
       ]
     }
   },
   {
     "case_id": "case_17",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high learning experiences (7 or above), which ones also have high enjoyment levels (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "21, 145",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Learning score of 9 and Enjoyment score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "54",
     "metadata": {
-      "inference_question": "Among respondents with high learning experiences (7 or above), which ones also have high enjoyment levels (7 or above)?",
+      "inference_question": "Which respondent numbers have Learning score of 9 and Enjoyment score of 10?",
       "matching_respondents": [
-        "145",
-        "21"
+        "54"
       ]
     }
   },
   {
     "case_id": "case_18",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "105, 140, 145",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 8 and Enjoyment score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Life satisfaction score of 8 and Enjoyment score of 10?",
       "matching_respondents": [
-        "105",
-        "140",
-        "145"
+        "29"
       ]
     }
   },
   {
     "case_id": "case_19",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high loneliness levels (6 or above), which ones also have moderate depression levels (2 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "None",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Loneliness score of 0 and Stress score of 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29, 88",
     "metadata": {
-      "inference_question": "Among respondents with high loneliness levels (6 or above), which ones also have moderate depression levels (2 or above)?",
-      "matching_respondents": []
+      "inference_question": "Which respondent numbers have Loneliness score of 0 and Stress score of 1?",
+      "matching_respondents": [
+        "29",
+        "88"
+      ]
     }
   },
   {
     "case_id": "case_20",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high stress levels (\u00e2\u2030\u00a57), which ones also satisfy: respondents with low life satisfaction (\u00e2\u2030\u00a43)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "None",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 2 and Happiness score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122",
     "metadata": {
-      "inference_question": "Among respondents with high stress levels (\u00e2\u2030\u00a57), which ones also satisfy: respondents with low life satisfaction (\u00e2\u2030\u00a43)?",
-      "matching_respondents": []
+      "inference_question": "Which respondent numbers have Stress score of 2 and Happiness score of 10?",
+      "matching_respondents": [
+        "122"
+      ]
     }
   },
   {
     "case_id": "case_21",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "93, 129",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 8 and Laughter score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122",
     "metadata": {
-      "inference_question": "Among respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?",
+      "inference_question": "Which respondent numbers have Life satisfaction score of 8 and Laughter score of 10?",
       "matching_respondents": [
-        "129",
-        "93"
+        "122"
       ]
     }
   },
   {
     "case_id": "case_22",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "92, 94, 110",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Stress score of 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122, 94",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Stress score of 2?",
       "matching_respondents": [
-        "110",
-        "92",
+        "122",
         "94"
       ]
     }
@@ -283,254 +274,244 @@
   {
     "case_id": "case_23",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "37, 44, 144",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Socio-economic status score of 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55, 84",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Socio-economic status score of 2?",
       "matching_respondents": [
-        "144",
-        "37",
-        "44"
+        "55",
+        "84"
       ]
     }
   },
   {
     "case_id": "case_24",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with male respondents, which ones also have good life satisfaction (6 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "62",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Life satisfaction score of 6?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "124",
     "metadata": {
-      "inference_question": "Among respondents with male respondents, which ones also have good life satisfaction (6 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Life satisfaction score of 6?",
       "matching_respondents": [
-        "62"
+        "124"
       ]
     }
   },
   {
     "case_id": "case_25",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "86",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Irritability score of 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55",
     "metadata": {
-      "inference_question": "Among respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?",
+      "inference_question": "Which respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Irritability score of 3?",
       "matching_respondents": [
-        "86"
+        "55"
       ]
     }
   },
   {
     "case_id": "case_26",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low stress levels (2 or below), which ones also have high happiness levels (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "92",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 1 and Happiness score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "88",
     "metadata": {
-      "inference_question": "Among respondents with low stress levels (2 or below), which ones also have high happiness levels (7 or above)?",
+      "inference_question": "Which respondent numbers have Stress score of 1 and Happiness score of 8?",
       "matching_respondents": [
-        "92"
+        "88"
       ]
     }
   },
   {
     "case_id": "case_27",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "101",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Happiness score of 8 and Learning score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122",
     "metadata": {
-      "inference_question": "Among respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?",
+      "inference_question": "Which respondent numbers have Happiness score of 8 and Learning score of 8?",
       "matching_respondents": [
-        "101"
+        "122"
       ]
     }
   },
   {
     "case_id": "case_28",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "40, 141",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Loneliness score of 6 and Happiness score of 6?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55",
     "metadata": {
-      "inference_question": "Among respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?",
+      "inference_question": "Which respondent numbers have Loneliness score of 6 and Happiness score of 6?",
       "matching_respondents": [
-        "141",
-        "40"
+        "55"
       ]
     }
   },
   {
     "case_id": "case_29",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 32, 84",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "136, 94",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Life satisfaction score of 8?",
       "matching_respondents": [
-        "2",
-        "32",
-        "84"
+        "136",
+        "94"
       ]
     }
   },
   {
     "case_id": "case_30",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "14, 15, 61",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Life satisfaction score of 7?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "54",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Life satisfaction score of 7?",
       "matching_respondents": [
-        "14",
-        "15",
-        "61"
+        "54"
       ]
     }
   },
   {
     "case_id": "case_31",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "5, 36, 71",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Loneliness score of 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "136",
     "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
+      "inference_question": "Which respondent numbers have Gender Female and Loneliness score of 1?",
       "matching_respondents": [
-        "36",
-        "5",
-        "71"
+        "136"
       ]
     }
   },
   {
     "case_id": "case_32",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with loss of interest symptoms (1 or above), which ones also have sleep problems (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "30, 86",
-    "metadata": {
-      "inference_question": "Among respondents with loss of interest symptoms (1 or above), which ones also have sleep problems (1 or above)?",
-      "matching_respondents": [
-        "30",
-        "86"
-      ]
-    }
-  },
-  {
-    "case_id": "case_33",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with frequent inability to cope (3 or 4), which ones also have high stress levels (4 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "112",
-    "metadata": {
-      "inference_question": "Among respondents with frequent inability to cope (3 or 4), which ones also have high stress levels (4 or above)?",
-      "matching_respondents": [
-        "112"
-      ]
-    }
-  },
-  {
-    "case_id": "case_34",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with often upset by unexpected events (2 or above), which ones also have anxiety symptoms (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "68, 91, 113",
-    "metadata": {
-      "inference_question": "Among respondents with often upset by unexpected events (2 or above), which ones also have anxiety symptoms (1 or above)?",
-      "matching_respondents": [
-        "113",
-        "68",
-        "91"
-      ]
-    }
-  },
-  {
-    "case_id": "case_35",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high socioeconomic status (5 or 6), which ones also have high life satisfaction (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "41",
-    "metadata": {
-      "inference_question": "Among respondents with high socioeconomic status (5 or 6), which ones also have high life satisfaction (7 or above)?",
-      "matching_respondents": [
-        "41"
-      ]
-    }
-  },
-  {
-    "case_id": "case_36",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low socioeconomic status (1 or 2), which ones also have high stress levels (4 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "119",
-    "metadata": {
-      "inference_question": "Among respondents with low socioeconomic status (1 or 2), which ones also have high stress levels (4 or above)?",
-      "matching_respondents": [
-        "119"
-      ]
-    }
-  },
-  {
-    "case_id": "case_37",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high learning experiences (7 or above), which ones also have high enjoyment levels (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "104",
-    "metadata": {
-      "inference_question": "Among respondents with high learning experiences (7 or above), which ones also have high enjoyment levels (7 or above)?",
-      "matching_respondents": [
-        "104"
-      ]
-    }
-  },
-  {
-    "case_id": "case_38",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "21, 67, 105",
-    "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
-      "matching_respondents": [
-        "105",
-        "21",
-        "67"
-      ]
-    }
-  },
-  {
-    "case_id": "case_39",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with gender information, which ones also have any life satisfaction (1 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "39, 50, 58",
-    "metadata": {
-      "inference_question": "Among respondents with gender information, which ones also have any life satisfaction (1 or above)?",
-      "matching_respondents": [
-        "39",
-        "50",
-        "58"
-      ]
-    }
-  },
-  {
-    "case_id": "case_40",
-    "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with very high life satisfaction (8 or above), which ones also have low stress levels (2 or below)?\n\nDATA:\n\n[Insert the full data block here]",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Depressive Symptoms Frequency Anhedonia score of 1 and Depressive Symptoms Frequency Sleep Problems score of 2?\n\nDATA:\n\n[Insert the full data block here]",
     "expected_answer": "29",
     "metadata": {
-      "inference_question": "Among respondents with very high life satisfaction (8 or above), which ones also have low stress levels (2 or below)?",
+      "inference_question": "Which respondent numbers have Depressive Symptoms Frequency Anhedonia score of 1 and Depressive Symptoms Frequency Sleep Problems score of 2?",
       "matching_respondents": [
         "29"
       ]
     }
   },
   {
+    "case_id": "case_33",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Emotional Regulation Frequency Unable to Cope score of 3 and Stress score of 4?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55, 84",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Emotional Regulation Frequency Unable to Cope score of 3 and Stress score of 4?",
+      "matching_respondents": [
+        "55",
+        "84"
+      ]
+    }
+  },
+  {
+    "case_id": "case_34",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 3 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "124, 69",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Emotional Regulation Frequency Upset by Unexpected Events score of 3 and Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 1?",
+      "matching_respondents": [
+        "124",
+        "69"
+      ]
+    }
+  },
+  {
+    "case_id": "case_35",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Socio-economic status score of 6 and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "88, 69",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Socio-economic status score of 6 and Life satisfaction score of 8?",
+      "matching_respondents": [
+        "88",
+        "69"
+      ]
+    }
+  },
+  {
+    "case_id": "case_36",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Socio-economic status score of 1 and Loneliness score of 7?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "124",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Socio-economic status score of 1 and Loneliness score of 7?",
+      "matching_respondents": [
+        "124"
+      ]
+    }
+  },
+  {
+    "case_id": "case_37",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Learning score of 10 and Enjoyment score of 7?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "94",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Learning score of 10 and Enjoyment score of 7?",
+      "matching_respondents": [
+        "94"
+      ]
+    }
+  },
+  {
+    "case_id": "case_38",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Happiness score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "88, 94",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Gender Male and Happiness score of 8?",
+      "matching_respondents": [
+        "88",
+        "94"
+      ]
+    }
+  },
+  {
+    "case_id": "case_39",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Life satisfaction score of 6?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Gender Female and Life satisfaction score of 6?",
+      "matching_respondents": [
+        "55"
+      ]
+    }
+  },
+  {
+    "case_id": "case_40",
+    "task": "multi_hop_relational_inference",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 8 and Stress score of 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122",
+    "metadata": {
+      "inference_question": "Which respondent numbers have Life satisfaction score of 8 and Stress score of 2?",
+      "matching_respondents": [
+        "122"
+      ]
+    }
+  },
+  {
     "case_id": "case_41",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "56",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 7 and Happiness score of 9?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "54",
     "metadata": {
-      "inference_question": "Among respondents with high life satisfaction (7 or above), which ones also have high happiness levels (8 or above)?",
+      "inference_question": "Which respondent numbers have Life satisfaction score of 7 and Happiness score of 9?",
       "matching_respondents": [
-        "56"
+        "54"
       ]
     }
   },
   {
     "case_id": "case_42",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low life satisfaction (4 or below), which ones also have moderate depression levels (2 or above)?\n\nDATA:\n\n[Insert the full data block here]",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Life satisfaction score of 3 and Depressive Symptoms Frequency Anhedonia score of 3?\n\nDATA:\n\n[Insert the full data block here]",
     "expected_answer": "25",
     "metadata": {
-      "inference_question": "Among respondents with low life satisfaction (4 or below), which ones also have moderate depression levels (2 or above)?",
+      "inference_question": "Which respondent numbers have Life satisfaction score of 3 and Depressive Symptoms Frequency Anhedonia score of 3?",
       "matching_respondents": [
         "25"
       ]
@@ -539,97 +520,100 @@
   {
     "case_id": "case_43",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong female respondents, which ones also satisfy: respondents with low life satisfaction (\u00e2\u2030\u00a43)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "None",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Female and Life satisfaction score of 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "25",
     "metadata": {
-      "inference_question": "Among female respondents, which ones also satisfy: respondents with low life satisfaction (\u00e2\u2030\u00a43)?",
-      "matching_respondents": []
+      "inference_question": "Which respondent numbers have Gender Female and Life satisfaction score of 3?",
+      "matching_respondents": [
+        "25"
+      ]
     }
   },
   {
     "case_id": "case_44",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with male respondents, which ones also have good life satisfaction (6 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "28, 63",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Gender Male and Life satisfaction score of 8?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "122, 94",
     "metadata": {
-      "inference_question": "Among respondents with male respondents, which ones also have good life satisfaction (6 or above)?",
+      "inference_question": "Which respondent numbers have Gender Male and Life satisfaction score of 8?",
       "matching_respondents": [
-        "28",
-        "63"
+        "122",
+        "94"
       ]
     }
   },
   {
     "case_id": "case_45",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "28",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Fear Something Awful Might Happen score of 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "55",
     "metadata": {
-      "inference_question": "Among respondents with high stress levels (4 or above), which ones also have frequent anxiety symptoms (2 or 3)?",
+      "inference_question": "Which respondent numbers have Stress score of 4 and Anxiety Symptoms Frequency Fear Something Awful Might Happen score of 3?",
       "matching_respondents": [
-        "28"
+        "55"
       ]
     }
   },
   {
     "case_id": "case_46",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low stress levels (2 or below), which ones also have high happiness levels (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "48, 101, 114",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Stress score of 1 and Loneliness score of 0?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29, 88",
     "metadata": {
-      "inference_question": "Among respondents with low stress levels (2 or below), which ones also have high happiness levels (7 or above)?",
+      "inference_question": "Which respondent numbers have Stress score of 1 and Loneliness score of 0?",
       "matching_respondents": [
-        "101",
-        "114",
-        "48"
+        "29",
+        "88"
       ]
     }
   },
   {
     "case_id": "case_47",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "36, 48",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Happiness score of 8 and Stress score of 4?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "94",
     "metadata": {
-      "inference_question": "Among respondents with high happiness levels (8 or above), which ones also have high life satisfaction (7 or above)?",
+      "inference_question": "Which respondent numbers have Happiness score of 8 and Stress score of 4?",
       "matching_respondents": [
-        "36",
-        "48"
+        "94"
       ]
     }
   },
   {
     "case_id": "case_48",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "None",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Happiness score of 5 and Loneliness score of 10?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "84",
     "metadata": {
-      "inference_question": "Among respondents with low happiness levels (5 or below), which ones also have high loneliness levels (5 or above)?",
-      "matching_respondents": []
+      "inference_question": "Which respondent numbers have Happiness score of 5 and Loneliness score of 10?",
+      "matching_respondents": [
+        "84"
+      ]
     }
   },
   {
     "case_id": "case_49",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with frequent anxiety symptoms (2 or 3), which ones also have female respondents?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "59, 133",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 3 and Gender Female?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "25, 55, 94",
     "metadata": {
-      "inference_question": "Among respondents with frequent anxiety symptoms (2 or 3), which ones also have female respondents?",
+      "inference_question": "Which respondent numbers have Anxiety Symptoms Frequency Feeling Nervous or On Edge score of 3 and Gender Female?",
       "matching_respondents": [
-        "133",
-        "59"
+        "25",
+        "55",
+        "94"
       ]
     }
   },
   {
     "case_id": "case_50",
     "task": "multi_hop_relational_inference",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nAmong respondents with restlessness symptoms (1 or above), which ones also have moderate stress levels (3 or above)?\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "127",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have Anxiety Symptoms Frequency Restlessness score of 1 and Stress score of 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "29",
     "metadata": {
-      "inference_question": "Among respondents with restlessness symptoms (1 or above), which ones also have moderate stress levels (3 or above)?",
+      "inference_question": "Which respondent numbers have Anxiety Symptoms Frequency Restlessness score of 1 and Stress score of 2?",
       "matching_respondents": [
-        "127"
+        "29"
       ]
     }
   }

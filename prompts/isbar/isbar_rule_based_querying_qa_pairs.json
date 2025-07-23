@@ -2,850 +2,560 @@
   {
     "case_id": "case_1",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 8, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "19, 8, 3",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have identification scores equal to 3?",
       "matching_respondents": [
-        "3",
+        "19",
         "8",
-        "19"
-      ],
-      "question_category": "perfect_identification"
+        "3"
+      ]
     }
   },
   {
     "case_id": "case_2",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "6, 7, 8, 9, 14, 15, 17, 20",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores greater than or equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "6, 14, 7, 9, 20, 15, 8, 17",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have situation scores greater than or equal to 2?",
       "matching_respondents": [
         "6",
-        "7",
-        "8",
-        "9",
         "14",
+        "7",
+        "9",
+        "20",
         "15",
-        "17",
-        "20"
-      ],
-      "question_category": "good_situation"
+        "8",
+        "17"
+      ]
     }
   },
   {
     "case_id": "case_3",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 2, 4",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "2, 4, 1",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have background (history) scores equal to 2?",
       "matching_respondents": [
-        "1",
         "2",
-        "4"
-      ],
-      "question_category": "perfect_identification"
+        "4",
+        "1"
+      ]
     }
   },
   {
     "case_id": "case_4",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "5, 19, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "19",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have assessment scores equal to 3?",
       "matching_respondents": [
-        "5",
-        "19",
-        "22"
-      ],
-      "question_category": "good_situation"
+        "19"
+      ]
     }
   },
   {
     "case_id": "case_5",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "13, 19, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "19",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores equal to 3?",
       "matching_respondents": [
-        "13",
-        "19",
-        "22"
-      ],
-      "question_category": "perfect_identification"
+        "19"
+      ]
     }
   },
   {
     "case_id": "case_6",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 12, 15, 16, 19, 22, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores equal to 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "23",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have background (examination) scores equal to 1?",
       "matching_respondents": [
-        "1",
-        "12",
-        "15",
-        "16",
-        "19",
-        "22",
         "23"
-      ],
-      "question_category": "perfect_identification"
+      ]
     }
   },
   {
     "case_id": "case_7",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 4, 8, 10, 11, 18, 20, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (global rating scale) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "1",
-        "4",
-        "8",
-        "10",
-        "11",
-        "18",
-        "20",
-        "22"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have recommendation (global rating scale) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_8",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "4, 5, 7, 11",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "4",
-        "5",
-        "7",
-        "11"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have situation scores equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_9",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 15, 21",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores greater than or equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "1",
-        "15",
-        "21"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have assessment scores greater than or equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_10",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "5, 19, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "5",
-        "19",
-        "23"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have identification scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_11",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 4, 6, 10, 11, 13, 14, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores greater than 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "2",
-        "4",
-        "6",
-        "10",
-        "11",
-        "13",
-        "14",
-        "19"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have background (examination) scores greater than 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_12",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 8, 13, 16, 21, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "2",
-        "8",
-        "13",
-        "16",
-        "21",
-        "23"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have situation scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_13",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 4, 9, 13, 17, 20, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "2",
-        "4",
-        "9",
-        "13",
-        "17",
-        "20",
-        "22"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_14",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 4, 7, 8, 9, 11, 13, 21",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores greater than 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "3",
-        "4",
-        "7",
-        "8",
-        "9",
-        "11",
-        "13",
-        "21"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have background (history) scores greater than 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_15",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 4, 15, 16, 17, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (global rating scale) scores greater than 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "1",
-        "4",
-        "15",
-        "16",
-        "17",
-        "19"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have recommendation (global rating scale) scores greater than 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_16",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 3, 10, 13, 19, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "2, 23, 19",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores equal to 3?",
       "matching_respondents": [
         "2",
-        "3",
-        "10",
-        "13",
-        "19",
-        "23"
-      ],
-      "question_category": "perfect_identification"
+        "23",
+        "19"
+      ]
     }
   },
   {
     "case_id": "case_17",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 7, 9, 11, 15, 17",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "1",
-        "7",
-        "9",
-        "11",
-        "15",
-        "17"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have situation scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_18",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 2, 8, 15, 16, 17",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "1",
-        "2",
-        "8",
-        "15",
-        "16",
-        "17"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have assessment scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_19",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 5, 15, 17, 22, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "3",
-        "5",
-        "15",
-        "17",
-        "22",
-        "23"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have background (examination) scores equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_20",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "9, 11, 13, 20, 21, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "9",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
+      "rule_query": "Which respondent numbers have identification scores equal to 2?",
       "matching_respondents": [
-        "9",
-        "11",
-        "13",
-        "20",
-        "21",
-        "22"
-      ],
-      "question_category": "good_identification"
+        "9"
+      ]
     }
   },
   {
     "case_id": "case_21",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 8, 9, 14, 15, 20",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores greater than or equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "3",
-        "8",
-        "9",
-        "14",
-        "15",
-        "20"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have situation scores greater than or equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_22",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 10, 17, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "19",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores equal to 3?",
       "matching_respondents": [
-        "3",
-        "10",
-        "17",
         "19"
-      ],
-      "question_category": "perfect_identification"
+      ]
     }
   },
   {
     "case_id": "case_23",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "6, 18, 21",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "6",
-        "18",
-        "21"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have assessment scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_24",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "6, 10, 16",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "6",
-        "10",
-        "16"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have background (history) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_25",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 17, 18, 19, 21",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (global rating scale) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "17, 1, 21, 19, 18",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
+      "rule_query": "Which respondent numbers have recommendation (global rating scale) scores equal to 2?",
       "matching_respondents": [
-        "1",
         "17",
-        "18",
+        "1",
+        "21",
         "19",
-        "21"
-      ],
-      "question_category": "perfect_identification"
+        "18"
+      ]
     }
   },
   {
     "case_id": "case_26",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "7, 9, 14",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "7",
-        "9",
-        "14"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have identification scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_27",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 3, 4, 6, 9, 17, 18, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "9",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have identification scores equal to 2?",
       "matching_respondents": [
-        "2",
-        "3",
-        "4",
-        "6",
-        "9",
-        "17",
-        "18",
-        "19"
-      ],
-      "question_category": "good_situation"
+        "9"
+      ]
     }
   },
   {
     "case_id": "case_28",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 3, 9, 16, 20, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores equal to 1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "1",
-        "3",
-        "9",
-        "16",
-        "20",
-        "23"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have background (examination) scores equal to 1?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_29",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "8, 12, 18",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "8",
-        "12",
-        "18"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have situation scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_30",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 2, 5, 13, 14, 15",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to 0?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "5",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have identification scores equal to 0?",
       "matching_respondents": [
-        "1",
-        "2",
-        "5",
-        "13",
-        "14",
-        "15"
-      ],
-      "question_category": "good_situation"
+        "5"
+      ]
     }
   },
   {
     "case_id": "case_31",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "9, 11, 15",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "9",
-        "11",
-        "15"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have background (history) scores equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_32",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 12, 15",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores greater than 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "3",
-        "12",
-        "15"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have assessment scores greater than 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_33",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 12, 18",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "3",
-        "12",
-        "18"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_34",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "10, 16, 19",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores less than or equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "10",
-        "16",
-        "19"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have situation scores less than or equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_35",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "3, 5, 6, 8, 9, 18, 20, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores equal to -1?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "6",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have identification scores equal to -1?",
       "matching_respondents": [
-        "3",
-        "5",
-        "6",
-        "8",
-        "9",
-        "18",
-        "20",
-        "23"
-      ],
-      "question_category": "good_situation"
+        "6"
+      ]
     }
   },
   {
     "case_id": "case_36",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 3, 5, 9, 10, 13, 18",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "2",
-        "3",
-        "5",
-        "9",
-        "10",
-        "13",
-        "18"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have background (examination) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_37",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "7, 11, 13, 18, 21",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (global rating scale) scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "7",
-        "11",
-        "13",
-        "18",
-        "21"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have recommendation (global rating scale) scores equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_38",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 3, 10, 12, 15, 17, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "2",
-        "3",
-        "10",
-        "12",
-        "15",
-        "17",
-        "22"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have assessment scores equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_39",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "9, 15, 17",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "9",
-        "15",
-        "17"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have background (history) scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_40",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 2, 5, 6, 7, 11",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have identification scores not equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "5, 11, 7, 2, 1, 6",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have identification scores not equal to 3?",
       "matching_respondents": [
-        "1",
-        "2",
         "5",
-        "6",
+        "11", 
         "7",
-        "11"
-      ],
-      "question_category": "good_situation"
+        "2",
+        "1",
+        "6"
+      ]
     }
   },
   {
     "case_id": "case_41",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "5, 8, 9",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "5",
-        "8",
-        "9"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have situation scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_42",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "10, 11, 14",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores greater than or equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "10",
-        "11",
-        "14"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have background (examination) scores greater than or equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_43",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 8, 13, 15",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "2",
-        "8",
-        "13",
-        "15"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have assessment scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_44",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 3, 6, 16",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "2",
-        "3",
-        "6",
-        "16"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_45",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 7, 9, 10, 11, 16",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "2, 11, 7, 16, 10",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
+      "rule_query": "Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?",
       "matching_respondents": [
         "2",
-        "7",
-        "9",
-        "10",
         "11",
-        "16"
-      ],
-      "question_category": "good_identification"
+        "7",
+        "16",
+        "10"
+      ]
     }
   },
   {
     "case_id": "case_46",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "1, 2, 3, 13, 14, 17, 18",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have situation scores less than 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "1",
-        "2",
-        "3",
-        "13",
-        "14",
-        "17",
-        "18"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have situation scores less than 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_47",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "2, 6, 22",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (history) scores equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
-      "matching_respondents": [
-        "2",
-        "6",
-        "22"
-      ],
-      "question_category": "good_situation"
+      "rule_query": "Which respondent numbers have background (history) scores equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_48",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect identification scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "9, 16, 19, 20",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have assessment scores greater than or equal to 2?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect identification scores (2-3).",
-      "matching_respondents": [
-        "9",
-        "16",
-        "19",
-        "20"
-      ],
-      "question_category": "good_identification"
+      "rule_query": "Which respondent numbers have assessment scores greater than or equal to 2?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_49",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with perfect identification scores (3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "4, 11, 17, 19, 21, 23",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have background (examination) scores not equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "None",
     "metadata": {
-      "rule_description": "Find all respondents with perfect identification scores (3).",
-      "matching_respondents": [
-        "4",
-        "11",
-        "17",
-        "19",
-        "21",
-        "23"
-      ],
-      "question_category": "perfect_identification"
+      "rule_query": "Which respondent numbers have background (examination) scores not equal to 3?",
+      "matching_respondents": []
     }
   },
   {
     "case_id": "case_50",
     "task": "rule_based_querying",
-    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nFind all respondents with good or perfect situation scores (2-3).\n\nDATA:\n\n[Insert the full data block here]",
-    "expected_answer": "6, 15, 17, 20",
+    "prompt": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.\n\nYou will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.\n\nOUTPUT INSTRUCTIONS:\nProvide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.\n\nQUESTION:\nWhich respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?\n\nDATA:\n\n[Insert the full data block here]",
+    "expected_answer": "6, 20",
     "metadata": {
-      "rule_description": "Find all respondents with good or perfect situation scores (2-3).",
+      "rule_query": "Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?",
       "matching_respondents": [
         "6",
-        "15",
-        "17",
         "20"
-      ],
-      "question_category": "good_situation"
+      ]
     }
   }
-]
+] 
