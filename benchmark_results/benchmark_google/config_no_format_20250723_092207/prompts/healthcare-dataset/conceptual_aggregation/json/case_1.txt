@@ -1,0 +1,327 @@
+================================================================================
+PROMPT SENT TO LLM - NO_FORMAT
+================================================================================
+Dataset: healthcare-dataset
+Task: conceptual_aggregation
+Case: case_1
+Format: json
+Expected Answer: 2
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: False
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+How many patients have blood type O+?
+
+DATA:
+
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "94",
+      "answers": {
+        "Name": "mIcHAeL MaRTIn",
+        "Age": "84",
+        "Gender": "B",
+        "Blood Type": "A",
+        "Medical Condition": "B",
+        "Date of Admission": "2022-09-06",
+        "Doctor": "John Summers",
+        "Hospital": "Sons Horn and",
+        "Insurance Provider": "C",
+        "Billing Amount": "23685",
+        "Room Number": "162",
+        "Admission Type": "C",
+        "Discharge Date": "2022-09-27",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "47",
+      "answers": {
+        "Name": "chRIsTOpHEr CHaPmAN",
+        "Age": "31",
+        "Gender": "A",
+        "Blood Type": "G",
+        "Medical Condition": "E",
+        "Date of Admission": "2021-12-01",
+        "Doctor": "Emily Patterson",
+        "Hospital": "Ltd Schwartz",
+        "Insurance Provider": "C",
+        "Billing Amount": "29615",
+        "Room Number": "211",
+        "Admission Type": "A",
+        "Discharge Date": "2021-12-09",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "149",
+      "answers": {
+        "Name": "RoBErt hIGGInS",
+        "Age": "42",
+        "Gender": "B",
+        "Blood Type": "D",
+        "Medical Condition": "B",
+        "Date of Admission": "2021-05-06",
+        "Doctor": "Scott Davis",
+        "Hospital": "and Ford Lee, Rodriguez",
+        "Insurance Provider": "D",
+        "Billing Amount": "13356",
+        "Room Number": "451",
+        "Admission Type": "A",
+        "Discharge Date": "2021-05-29",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "84",
+      "answers": {
+        "Name": "DIAnE brAnch",
+        "Age": "44",
+        "Gender": "B",
+        "Blood Type": "G",
+        "Medical Condition": "F",
+        "Date of Admission": "2020-05-30",
+        "Doctor": "Juan Acevedo",
+        "Hospital": "Perez and Sons",
+        "Insurance Provider": "C",
+        "Billing Amount": "22841",
+        "Room Number": "410",
+        "Admission Type": "B",
+        "Discharge Date": "2020-06-14",
+        "Medication": "A",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "112",
+      "answers": {
+        "Name": "MARK priCE",
+        "Age": "18",
+        "Gender": "B",
+        "Blood Type": "F",
+        "Medical Condition": "A",
+        "Date of Admission": "2022-09-22",
+        "Doctor": "Krystal Fox",
+        "Hospital": "Hall Roberts and Duarte,",
+        "Insurance Provider": "D",
+        "Billing Amount": "31486",
+        "Room Number": "440",
+        "Admission Type": "B",
+        "Discharge Date": "2022-10-14",
+        "Medication": "B",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "15",
+      "answers": {
+        "Name": "bROOkE brady",
+        "Age": "44",
+        "Gender": "A",
+        "Blood Type": "C",
+        "Medical Condition": "C",
+        "Date of Admission": "2021-10-08",
+        "Doctor": "Roberta Stewart",
+        "Hospital": "Morris-Arellano",
+        "Insurance Provider": "E",
+        "Billing Amount": "40702",
+        "Room Number": "182",
+        "Admission Type": "C",
+        "Discharge Date": "2021-10-13",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    }
+  ]
+}
+
+Answer: 2
+</example>
+
+<questionnaire>
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "94",
+      "answers": {
+        "Name": "mIcHAeL MaRTIn",
+        "Age": "84",
+        "Gender": "B",
+        "Blood Type": "A",
+        "Medical Condition": "B",
+        "Date of Admission": "2022-09-06",
+        "Doctor": "John Summers",
+        "Hospital": "Sons Horn and",
+        "Insurance Provider": "C",
+        "Billing Amount": "23685",
+        "Room Number": "162",
+        "Admission Type": "C",
+        "Discharge Date": "2022-09-27",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "47",
+      "answers": {
+        "Name": "chRIsTOpHEr CHaPmAN",
+        "Age": "31",
+        "Gender": "A",
+        "Blood Type": "G",
+        "Medical Condition": "E",
+        "Date of Admission": "2021-12-01",
+        "Doctor": "Emily Patterson",
+        "Hospital": "Ltd Schwartz",
+        "Insurance Provider": "C",
+        "Billing Amount": "29615",
+        "Room Number": "211",
+        "Admission Type": "A",
+        "Discharge Date": "2021-12-09",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "149",
+      "answers": {
+        "Name": "RoBErt hIGGInS",
+        "Age": "42",
+        "Gender": "B",
+        "Blood Type": "D",
+        "Medical Condition": "B",
+        "Date of Admission": "2021-05-06",
+        "Doctor": "Scott Davis",
+        "Hospital": "and Ford Lee, Rodriguez",
+        "Insurance Provider": "D",
+        "Billing Amount": "13356",
+        "Room Number": "451",
+        "Admission Type": "A",
+        "Discharge Date": "2021-05-29",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "84",
+      "answers": {
+        "Name": "DIAnE brAnch",
+        "Age": "44",
+        "Gender": "B",
+        "Blood Type": "G",
+        "Medical Condition": "F",
+        "Date of Admission": "2020-05-30",
+        "Doctor": "Juan Acevedo",
+        "Hospital": "Perez and Sons",
+        "Insurance Provider": "C",
+        "Billing Amount": "22841",
+        "Room Number": "410",
+        "Admission Type": "B",
+        "Discharge Date": "2020-06-14",
+        "Medication": "A",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "112",
+      "answers": {
+        "Name": "MARK priCE",
+        "Age": "18",
+        "Gender": "B",
+        "Blood Type": "F",
+        "Medical Condition": "A",
+        "Date of Admission": "2022-09-22",
+        "Doctor": "Krystal Fox",
+        "Hospital": "Hall Roberts and Duarte,",
+        "Insurance Provider": "D",
+        "Billing Amount": "31486",
+        "Room Number": "440",
+        "Admission Type": "B",
+        "Discharge Date": "2022-10-14",
+        "Medication": "B",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "15",
+      "answers": {
+        "Name": "bROOkE brady",
+        "Age": "44",
+        "Gender": "A",
+        "Blood Type": "C",
+        "Medical Condition": "C",
+        "Date of Admission": "2021-10-08",
+        "Doctor": "Roberta Stewart",
+        "Hospital": "Morris-Arellano",
+        "Insurance Provider": "E",
+        "Billing Amount": "40702",
+        "Room Number": "182",
+        "Admission Type": "C",
+        "Discharge Date": "2021-10-13",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many patients have blood type O+?
+</task>

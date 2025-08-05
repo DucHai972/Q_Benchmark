@@ -1,0 +1,251 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ONE_SHOT
+================================================================================
+Dataset: healthcare-dataset
+Task: respondent_count
+Case: case_3
+Format: html
+Expected Answer: 10
+
+Configuration:
+• One-shot example: False
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<questionnaire>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Data</title>
+</head>
+<body>
+<h1>Questions</h1>
+<ul>
+  <li><strong>Name:</strong> What is your name? [Open-ended]</li>
+  <li><strong>Age:</strong> What is your age? [Open-ended]</li>
+  <li><strong>Gender:</strong> What is your gender? [MCQ: A. Female B. Male]</li>
+  <li><strong>Blood Type:</strong> What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]</li>
+  <li><strong>Medical Condition:</strong> What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]</li>
+  <li><strong>Date of Admission:</strong> What is your date of admission? [Open-ended]</li>
+  <li><strong>Doctor:</strong> What is your doctor? [Open-ended]</li>
+  <li><strong>Hospital:</strong> What is your hospital? [Open-ended]</li>
+  <li><strong>Insurance Provider:</strong> What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]</li>
+  <li><strong>Billing Amount:</strong> What is your billing amount? [Open-ended]</li>
+  <li><strong>Room Number:</strong> What is your room number? [Open-ended]</li>
+  <li><strong>Admission Type:</strong> What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]</li>
+  <li><strong>Discharge Date:</strong> What is your discharge date? [Open-ended]</li>
+  <li><strong>Medication:</strong> What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]</li>
+  <li><strong>Test Results:</strong> What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]</li>
+</ul>
+<h1>Responses</h1>
+<h2>Respondent 70</h2>
+<ul>
+  <li><strong>Name:</strong> Erica myERS</li>
+  <li><strong>Age:</strong> 19</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> a</li>
+  <li><strong>Medical Condition:</strong> a</li>
+  <li><strong>Date of Admission:</strong> 2020-01-30</li>
+  <li><strong>Doctor:</strong> Ian Benitez</li>
+  <li><strong>Hospital:</strong> Jackson and Lane, Dillon</li>
+  <li><strong>Insurance Provider:</strong> d</li>
+  <li><strong>Billing Amount:</strong> 20228</li>
+  <li><strong>Room Number:</strong> 241</li>
+  <li><strong>Admission Type:</strong> a</li>
+  <li><strong>Discharge Date:</strong> 2020-02-12</li>
+  <li><strong>Medication:</strong> e</li>
+  <li><strong>Test Results:</strong> c</li>
+</ul>
+<h2>Respondent 61</h2>
+<ul>
+  <li><strong>Name:</strong> ASHleY guTIERreZ</li>
+  <li><strong>Age:</strong> 83</li>
+  <li><strong>Gender:</strong> b</li>
+  <li><strong>Blood Type:</strong> c</li>
+  <li><strong>Medical Condition:</strong> f</li>
+  <li><strong>Date of Admission:</strong> 2019-11-06</li>
+  <li><strong>Doctor:</strong> Tyler Braun</li>
+  <li><strong>Hospital:</strong> Miller-Lawson</li>
+  <li><strong>Insurance Provider:</strong> a</li>
+  <li><strong>Billing Amount:</strong> 24637</li>
+  <li><strong>Room Number:</strong> 333</li>
+  <li><strong>Admission Type:</strong> a</li>
+  <li><strong>Discharge Date:</strong> 2019-11-22</li>
+  <li><strong>Medication:</strong> d</li>
+  <li><strong>Test Results:</strong> b</li>
+</ul>
+<h2>Respondent 8</h2>
+<ul>
+  <li><strong>Name:</strong> CHrisTInA MARtinez</li>
+  <li><strong>Age:</strong> 20</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> a</li>
+  <li><strong>Medical Condition:</strong> c</li>
+  <li><strong>Date of Admission:</strong> 2021-12-28</li>
+  <li><strong>Doctor:</strong> Suzanne Thomas</li>
+  <li><strong>Hospital:</strong> Powell Robinson and Valdez,</li>
+  <li><strong>Insurance Provider:</strong> c</li>
+  <li><strong>Billing Amount:</strong> 45820</li>
+  <li><strong>Room Number:</strong> 277</li>
+  <li><strong>Admission Type:</strong> b</li>
+  <li><strong>Discharge Date:</strong> 2022-01-07</li>
+  <li><strong>Medication:</strong> d</li>
+  <li><strong>Test Results:</strong> b</li>
+</ul>
+<h2>Respondent 125</h2>
+<ul>
+  <li><strong>Name:</strong> terRY THoMaS</li>
+  <li><strong>Age:</strong> 50</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> f</li>
+  <li><strong>Medical Condition:</strong> b</li>
+  <li><strong>Date of Admission:</strong> 2021-06-03</li>
+  <li><strong>Doctor:</strong> Lucas Cole</li>
+  <li><strong>Hospital:</strong> Cantu-Berry</li>
+  <li><strong>Insurance Provider:</strong> a</li>
+  <li><strong>Billing Amount:</strong> 48175</li>
+  <li><strong>Room Number:</strong> 368</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2021-07-01</li>
+  <li><strong>Medication:</strong> d</li>
+  <li><strong>Test Results:</strong> b</li>
+</ul>
+<h2>Respondent 50</h2>
+<ul>
+  <li><strong>Name:</strong> BRandOn coLLINS</li>
+  <li><strong>Age:</strong> 77</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> g</li>
+  <li><strong>Medical Condition:</strong> b</li>
+  <li><strong>Date of Admission:</strong> 2019-07-19</li>
+  <li><strong>Doctor:</strong> Cameron Young</li>
+  <li><strong>Hospital:</strong> Lopez PLC</li>
+  <li><strong>Insurance Provider:</strong> c</li>
+  <li><strong>Billing Amount:</strong> 16320</li>
+  <li><strong>Room Number:</strong> 138</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2019-07-29</li>
+  <li><strong>Medication:</strong> b</li>
+  <li><strong>Test Results:</strong> a</li>
+</ul>
+<h2>Respondent 5</h2>
+<ul>
+  <li><strong>Name:</strong> adrIENNE bEll</li>
+  <li><strong>Age:</strong> 43</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> c</li>
+  <li><strong>Medical Condition:</strong> c</li>
+  <li><strong>Date of Admission:</strong> 2022-09-19</li>
+  <li><strong>Doctor:</strong> Kathleen Hanna</li>
+  <li><strong>Hospital:</strong> White-White</li>
+  <li><strong>Insurance Provider:</strong> a</li>
+  <li><strong>Billing Amount:</strong> 14238</li>
+  <li><strong>Room Number:</strong> 458</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2022-10-09</li>
+  <li><strong>Medication:</strong> e</li>
+  <li><strong>Test Results:</strong> a</li>
+</ul>
+<h2>Respondent 147</h2>
+<ul>
+  <li><strong>Name:</strong> aLExiS wilsOn</li>
+  <li><strong>Age:</strong> 68</li>
+  <li><strong>Gender:</strong> a</li>
+  <li><strong>Blood Type:</strong> e</li>
+  <li><strong>Medical Condition:</strong> a</li>
+  <li><strong>Date of Admission:</strong> 2019-08-16</li>
+  <li><strong>Doctor:</strong> Brian Walton</li>
+  <li><strong>Hospital:</strong> Thomas-Kelley</li>
+  <li><strong>Insurance Provider:</strong> a</li>
+  <li><strong>Billing Amount:</strong> 2679</li>
+  <li><strong>Room Number:</strong> 427</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2019-08-21</li>
+  <li><strong>Medication:</strong> d</li>
+  <li><strong>Test Results:</strong> a</li>
+</ul>
+<h2>Respondent 80</h2>
+<ul>
+  <li><strong>Name:</strong> tiMOThY myers</li>
+  <li><strong>Age:</strong> 61</li>
+  <li><strong>Gender:</strong> b</li>
+  <li><strong>Blood Type:</strong> e</li>
+  <li><strong>Medical Condition:</strong> c</li>
+  <li><strong>Date of Admission:</strong> 2024-03-02</li>
+  <li><strong>Doctor:</strong> Timothy Baker</li>
+  <li><strong>Hospital:</strong> and Sons Reyes</li>
+  <li><strong>Insurance Provider:</strong> e</li>
+  <li><strong>Billing Amount:</strong> 29504</li>
+  <li><strong>Room Number:</strong> 422</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2024-03-26</li>
+  <li><strong>Medication:</strong> b</li>
+  <li><strong>Test Results:</strong> b</li>
+</ul>
+<h2>Respondent 142</h2>
+<ul>
+  <li><strong>Name:</strong> riTA archER</li>
+  <li><strong>Age:</strong> 20</li>
+  <li><strong>Gender:</strong> b</li>
+  <li><strong>Blood Type:</strong> h</li>
+  <li><strong>Medical Condition:</strong> d</li>
+  <li><strong>Date of Admission:</strong> 2024-01-05</li>
+  <li><strong>Doctor:</strong> Victoria Gonzales</li>
+  <li><strong>Hospital:</strong> and Marquez Silva Smith,</li>
+  <li><strong>Insurance Provider:</strong> d</li>
+  <li><strong>Billing Amount:</strong> 48996</li>
+  <li><strong>Room Number:</strong> 406</li>
+  <li><strong>Admission Type:</strong> a</li>
+  <li><strong>Discharge Date:</strong> 2024-02-04</li>
+  <li><strong>Medication:</strong> c</li>
+  <li><strong>Test Results:</strong> c</li>
+</ul>
+<h2>Respondent 127</h2>
+<ul>
+  <li><strong>Name:</strong> JEssicA gUtiERrEz</li>
+  <li><strong>Age:</strong> 40</li>
+  <li><strong>Gender:</strong> b</li>
+  <li><strong>Blood Type:</strong> g</li>
+  <li><strong>Medical Condition:</strong> f</li>
+  <li><strong>Date of Admission:</strong> 2019-08-27</li>
+  <li><strong>Doctor:</strong> Crystal Chavez</li>
+  <li><strong>Hospital:</strong> Guzman-Carlson</li>
+  <li><strong>Insurance Provider:</strong> a</li>
+  <li><strong>Billing Amount:</strong> 9586</li>
+  <li><strong>Room Number:</strong> 424</li>
+  <li><strong>Admission Type:</strong> c</li>
+  <li><strong>Discharge Date:</strong> 2019-09-06</li>
+  <li><strong>Medication:</strong> c</li>
+  <li><strong>Test Results:</strong> b</li>
+</ul>
+</body>
+</html>
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many respondents are there?
+</task>

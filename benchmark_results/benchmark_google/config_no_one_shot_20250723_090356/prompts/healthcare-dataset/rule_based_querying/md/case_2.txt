@@ -1,0 +1,121 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ONE_SHOT
+================================================================================
+Dataset: healthcare-dataset
+Task: rule_based_querying
+Case: case_2
+Format: md
+Expected Answer: 105, 31, 58
+
+Configuration:
+• One-shot example: False
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<questionnaire>
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 117
+
+- **Name:** jUdy joHNsoN
+- **Age:** 52
+- **Gender:** a
+- **Blood Type:** d
+- **Medical Condition:** c
+- **Date of Admission:** 2020-08-21
+- **Doctor:** Victoria Patel
+- **Hospital:** Hughes and Erickson, Anderson
+- **Insurance Provider:** c
+- **Billing Amount:** 47985
+- **Room Number:** 388
+- **Admission Type:** a
+- **Discharge Date:** 2020-09-06
+- **Medication:** e
+- **Test Results:** b
+
+### Respondent 57
+
+- **Name:** beThaNY MoOrE
+- **Age:** 55
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** c
+- **Date of Admission:** 2023-04-09
+- **Doctor:** Penny Pruitt
+- **Hospital:** and Montes Graves, Thomas
+- **Insurance Provider:** c
+- **Billing Amount:** 10301
+- **Room Number:** 330
+- **Admission Type:** b
+- **Discharge Date:** 2023-04-21
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 102
+
+- **Name:** KaTiE hENry
+- **Age:** 70
+- **Gender:** b
+- **Blood Type:** e
+- **Medical Condition:** d
+- **Date of Admission:** 2022-07-08
+- **Doctor:** Roberto Petersen
+- **Hospital:** Reed LLC
+- **Insurance Provider:** a
+- **Billing Amount:** 7187
+- **Room Number:** 402
+- **Admission Type:** b
+- **Discharge Date:** 2022-07-25
+- **Medication:** a
+- **Test Results:** c
+
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have billing amount greater than 30000?
+</task>

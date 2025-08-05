@@ -1,0 +1,127 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ONE_SHOT
+================================================================================
+Dataset: self-reported-mental-health-college-students-2022
+Task: rule_based_querying
+Case: case_2
+Format: html
+Expected Answer: None
+
+Configuration:
+• One-shot example: False
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<questionnaire>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Data</title>
+</head>
+<body>
+<h1>Questions</h1>
+<ul>
+  <li><strong>Year of birth:</strong> What is your date of birth? [Open-ended]</li>
+  <li><strong>Gender:</strong> What is your gender? [MCQ: 1. Male 2. Female]</li>
+  <li><strong>Socio-economic status:</strong> What is the socio-economic status of your home? [Likert 1–6: 1 = Very low, 6 = Very high]</li>
+  <li><strong>Ethnic identity:</strong> According to your culture, people, or physical features, you are or are recognized as: [MCQ: 1. Indigenous 2. Gypsy 3. Raizal from San Andres, Providencia and Santa Catalina Archipelago 4. Palenquero from San Basilio 5. Black, mulatto (Afro-descendant), Afro-Colombian 6. None of the above]</li>
+  <li><strong>Parental Education:</strong> How many years of education did your parents receive? [Open-ended] <ul> <li><strong>Father:</strong> Father?</li>
+  <li><strong>Mother:</strong> Mother?</li>
+</ul>
+<h1>Responses</h1>
+<h2>Respondent 41</h2>
+<ul>
+  <li><strong>Year of birth:</strong> 2002.0</li>
+  <li><strong>Gender:</strong> 1.0</li>
+  <li><strong>Socio-economic status:</strong> 5.0</li>
+  <li><strong>Ethnic identity:</strong> 6.0</li>
+  <li><strong>Parental Education:</strong> <ul> <li><strong>Father:</strong> 10.0</li>
+  <li><strong>Mother:</strong> 15.0</li>
+</ul>
+<h2>Respondent 72</h2>
+<ul>
+  <li><strong>Year of birth:</strong> 2002.0</li>
+  <li><strong>Gender:</strong> 1.0</li>
+  <li><strong>Socio-economic status:</strong> 3.0</li>
+  <li><strong>Ethnic identity:</strong> 6.0</li>
+  <li><strong>Life satisfaction:</strong> 6.0</li>
+  <li><strong>Happiness:</strong> 6.0</li>
+  <li><strong>Laughter:</strong> 7.0</li>
+  <li><strong>Learning:</strong> 4.0</li>
+  <li><strong>Enjoyment:</strong> 5.0</li>
+  <li><strong>Worry:</strong> 1.0</li>
+  <li><strong>Depression:</strong> 0.0</li>
+  <li><strong>Anger:</strong> 0.0</li>
+  <li><strong>Stress:</strong> 1.0</li>
+  <li><strong>Loneliness:</strong> 0.0</li>
+  <li><strong>Emotional Regulation Frequency:</strong> <ul> <li><strong>Upset by Unexpected Events:</strong> 2.0</li>
+  <li><strong>Unable to Control Important Things:</strong> 2.0</li>
+  <li><strong>Lacked Confidence Handling Problems:</strong> 3.0</li>
+  <li><strong>Unable to Cope:</strong> 2.0</li>
+  <li><strong>Irritated by Life:</strong> 3.0</li>
+  <li><strong>On Top of Things:</strong> 2.0</li>
+</ul>
+<h2>Respondent 16</h2>
+<ul>
+  <li><strong>Year of birth:</strong> 2001.0</li>
+  <li><strong>Gender:</strong> 1.0</li>
+  <li><strong>Socio-economic status:</strong> 5.0</li>
+  <li><strong>Ethnic identity:</strong> 6.0</li>
+  <li><strong>Parental Education:</strong> <ul> <li><strong>Father:</strong> 30.0</li>
+  <li><strong>Mother:</strong> 20.0</li>
+</ul>
+<h2>Respondent 44</h2>
+<ul>
+  <li><strong>Year of birth:</strong> 2022.0</li>
+  <li><strong>Gender:</strong> 1.0</li>
+  <li><strong>Socio-economic status:</strong> 2.0</li>
+  <li><strong>Ethnic identity:</strong> 6.0</li>
+  <li><strong>Life satisfaction:</strong> 7.0</li>
+  <li><strong>Happiness:</strong> 5.0</li>
+  <li><strong>Laughter:</strong> 5.0</li>
+  <li><strong>Learning:</strong> 6.0</li>
+  <li><strong>Enjoyment:</strong> 5.0</li>
+  <li><strong>Worry:</strong> 1.0</li>
+  <li><strong>Depression:</strong> 2.0</li>
+  <li><strong>Anger:</strong> 3.0</li>
+  <li><strong>Stress:</strong> 2.0</li>
+  <li><strong>Loneliness:</strong> 8.0</li>
+  <li><strong>Emotional Regulation Frequency:</strong> <ul> <li><strong>Upset by Unexpected Events:</strong> 2.0</li>
+  <li><strong>Unable to Control Important Things:</strong> 2.0</li>
+  <li><strong>Lacked Confidence Handling Problems:</strong> 1.0</li>
+  <li><strong>Unable to Cope:</strong> 2.0</li>
+  <li><strong>Irritated by Life:</strong> 3.0</li>
+  <li><strong>On Top of Things:</strong> 2.0</li>
+</ul>
+</body>
+</html>
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have stress scores greater than or equal to 6?
+</task>

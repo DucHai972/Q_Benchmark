@@ -1,0 +1,116 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ONE_SHOT
+================================================================================
+Dataset: healthcare-dataset
+Task: answer_reverse_lookup
+Case: case_4
+Format: ttl
+Expected Answer: dWAYnE DAViS
+
+Configuration:
+• One-shot example: False
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<questionnaire>
+@prefix : <http://example.org/survey#> .
+@prefix pred: <http://example.org/predicate#> .
+
+# Questions
+:QName pred:text "What is your name? [Open-ended]" .
+:QAge pred:text "What is your age? [Open-ended]" .
+:QGender pred:text "What is your gender? [MCQ: A. Female B. Male]" .
+:QBlood_Type pred:text "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]" .
+:QMedical_Condition pred:text "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]" .
+:QDate_of_Admission pred:text "What is your date of admission? [Open-ended]" .
+:QDoctor pred:text "What is your doctor? [Open-ended]" .
+:QHospital pred:text "What is your hospital? [Open-ended]" .
+:QInsurance_Provider pred:text "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]" .
+:QBilling_Amount pred:text "What is your billing amount? [Open-ended]" .
+:QRoom_Number pred:text "What is your room number? [Open-ended]" .
+:QAdmission_Type pred:text "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]" .
+:QDischarge_Date pred:text "What is your discharge date? [Open-ended]" .
+:QMedication pred:text "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]" .
+:QTest_Results pred:text "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]" .
+
+# Responses
+:Respondent72 a :Person ;
+    pred:Name "JOSe LopEz" ;
+    pred:Age "18" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "b" ;
+    pred:Medical_Condition "f" ;
+    pred:Date_of_Admission "2022-01-09" ;
+    pred:Doctor "Erika Jackson" ;
+    pred:Hospital "Miles, and Weaver Hudson" ;
+    pred:Insurance_Provider "a" ;
+    pred:Billing_Amount "46957" ;
+    pred:Room_Number "377" ;
+    pred:Admission_Type "b" ;
+    pred:Discharge_Date "2022-01-15" ;
+    pred:Medication "a" ;
+    pred:Test_Results "b" .
+
+:Respondent105 a :Person ;
+    pred:Name "HunTeR mckAy" ;
+    pred:Age "85" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "b" ;
+    pred:Medical_Condition "a" ;
+    pred:Date_of_Admission "2021-05-14" ;
+    pred:Doctor "Dominic Mitchell" ;
+    pred:Hospital "Newton-White" ;
+    pred:Insurance_Provider "e" ;
+    pred:Billing_Amount "40015" ;
+    pred:Room_Number "425" ;
+    pred:Admission_Type "b" ;
+    pred:Discharge_Date "2021-06-03" ;
+    pred:Medication "a" ;
+    pred:Test_Results "a" .
+
+:Respondent106 a :Person ;
+    pred:Name "dWAYnE DAViS" ;
+    pred:Age "28" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "g" ;
+    pred:Medical_Condition "c" ;
+    pred:Date_of_Admission "2024-01-15" ;
+    pred:Doctor "Wendy Davis" ;
+    pred:Hospital "Ltd Thomas" ;
+    pred:Insurance_Provider "d" ;
+    pred:Billing_Amount "40783" ;
+    pred:Room_Number "373" ;
+    pred:Admission_Type "a" ;
+    pred:Discharge_Date "2024-02-07" ;
+    pred:Medication "b" ;
+    pred:Test_Results "a" .
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which patient has the medical condition Cancer?
+</task>

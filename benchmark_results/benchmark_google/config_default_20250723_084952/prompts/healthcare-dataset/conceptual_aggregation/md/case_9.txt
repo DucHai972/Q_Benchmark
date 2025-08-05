@@ -1,0 +1,261 @@
+================================================================================
+PROMPT SENT TO LLM - DEFAULT
+================================================================================
+Dataset: healthcare-dataset
+Task: conceptual_aggregation
+Case: case_9
+Format: md
+Expected Answer: 0
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+How many patients have blood type O+?
+
+DATA:
+
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 94
+
+- **Name:** mIcHAeL MaRTIn
+- **Age:** 84
+- **Gender:** b
+- **Blood Type:** a
+- **Medical Condition:** b
+- **Date of Admission:** 2022-09-06
+- **Doctor:** John Summers
+- **Hospital:** Sons Horn and
+- **Insurance Provider:** c
+- **Billing Amount:** 23685
+- **Room Number:** 162
+- **Admission Type:** c
+- **Discharge Date:** 2022-09-27
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 47
+
+- **Name:** chRIsTOpHEr CHaPmAN
+- **Age:** 31
+- **Gender:** a
+- **Blood Type:** g
+- **Medical Condition:** e
+- **Date of Admission:** 2021-12-01
+- **Doctor:** Emily Patterson
+- **Hospital:** Ltd Schwartz
+- **Insurance Provider:** c
+- **Billing Amount:** 29615
+- **Room Number:** 211
+- **Admission Type:** a
+- **Discharge Date:** 2021-12-09
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 149
+
+- **Name:** RoBErt hIGGInS
+- **Age:** 42
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** b
+- **Date of Admission:** 2021-05-06
+- **Doctor:** Scott Davis
+- **Hospital:** and Ford Lee, Rodriguez
+- **Insurance Provider:** d
+- **Billing Amount:** 13356
+- **Room Number:** 451
+- **Admission Type:** a
+- **Discharge Date:** 2021-05-29
+- **Medication:** b
+- **Test Results:** b
+
+### Respondent 84
+
+- **Name:** DIAnE brAnch
+- **Age:** 44
+- **Gender:** b
+- **Blood Type:** g
+- **Medical Condition:** f
+- **Date of Admission:** 2020-05-30
+- **Doctor:** Juan Acevedo
+- **Hospital:** Perez and Sons
+- **Insurance Provider:** c
+- **Billing Amount:** 22841
+- **Room Number:** 410
+- **Admission Type:** b
+- **Discharge Date:** 2020-06-14
+- **Medication:** a
+- **Test Results:** b
+
+### Respondent 112
+
+- **Name:** MARK priCE
+- **Age:** 18
+- **Gender:** b
+- **Blood Type:** f
+- **Medical Condition:** a
+- **Date of Admission:** 2022-09-22
+- **Doctor:** Krystal Fox
+- **Hospital:** Hall Roberts and Duarte,
+- **Insurance Provider:** d
+- **Billing Amount:** 31486
+- **Room Number:** 440
+- **Admission Type:** b
+- **Discharge Date:** 2022-10-14
+- **Medication:** b
+- **Test Results:** c
+
+### Respondent 15
+
+- **Name:** bROOkE brady
+- **Age:** 44
+- **Gender:** a
+- **Blood Type:** c
+- **Medical Condition:** c
+- **Date of Admission:** 2021-10-08
+- **Doctor:** Roberta Stewart
+- **Hospital:** Morris-Arellano
+- **Insurance Provider:** e
+- **Billing Amount:** 40702
+- **Room Number:** 182
+- **Admission Type:** c
+- **Discharge Date:** 2021-10-13
+- **Medication:** d
+- **Test Results:** c
+
+
+
+Answer: 2
+</example>
+
+<questionnaire>
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 77
+
+- **Name:** AdriaN BuckLEY
+- **Age:** 22
+- **Gender:** a
+- **Blood Type:** b
+- **Medical Condition:** a
+- **Date of Admission:** 2023-10-11
+- **Doctor:** Julie Ramirez
+- **Hospital:** Lin Thompson Wells, and
+- **Insurance Provider:** b
+- **Billing Amount:** 42697
+- **Room Number:** 102
+- **Admission Type:** c
+- **Discharge Date:** 2023-10-27
+- **Medication:** e
+- **Test Results:** c
+
+### Respondent 109
+
+- **Name:** bRADlEY coMbS
+- **Age:** 52
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** e
+- **Date of Admission:** 2021-05-14
+- **Doctor:** Christopher Butler
+- **Hospital:** Stout-Brown
+- **Insurance Provider:** c
+- **Billing Amount:** 37735
+- **Room Number:** 251
+- **Admission Type:** a
+- **Discharge Date:** 2021-06-06
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 88
+
+- **Name:** JUan klEiN
+- **Age:** 58
+- **Gender:** a
+- **Blood Type:** f
+- **Medical Condition:** a
+- **Date of Admission:** 2023-08-19
+- **Doctor:** Lisa Edwards
+- **Hospital:** Group Hood
+- **Insurance Provider:** e
+- **Billing Amount:** 24870
+- **Room Number:** 321
+- **Admission Type:** b
+- **Discharge Date:** 2023-08-25
+- **Medication:** b
+- **Test Results:** b
+
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many patients have Cancer?
+</task>

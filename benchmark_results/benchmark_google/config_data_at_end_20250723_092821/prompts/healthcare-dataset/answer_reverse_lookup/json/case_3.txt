@@ -1,0 +1,215 @@
+================================================================================
+PROMPT SENT TO LLM - DATA_AT_END
+================================================================================
+Dataset: healthcare-dataset
+Task: answer_reverse_lookup
+Case: case_3
+Format: json
+Expected Answer: ShAUN GuzmAn
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: True
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+Which patient has the medical condition Asthma?
+
+DATA:
+
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "69",
+      "answers": {
+        "Name": "MicHAEl MillEr",
+        "Age": "31",
+        "Gender": "B",
+        "Blood Type": "E",
+        "Medical Condition": "D",
+        "Date of Admission": "2024-02-06",
+        "Doctor": "Jonathan Drake",
+        "Hospital": "Clark Brown, and Myers",
+        "Insurance Provider": "E",
+        "Billing Amount": "35777",
+        "Room Number": "489",
+        "Admission Type": "B",
+        "Discharge Date": "2024-02-10",
+        "Medication": "E",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "94",
+      "answers": {
+        "Name": "mIcHAeL MaRTIn",
+        "Age": "84",
+        "Gender": "B",
+        "Blood Type": "A",
+        "Medical Condition": "B",
+        "Date of Admission": "2022-09-06",
+        "Doctor": "John Summers",
+        "Hospital": "Sons Horn and",
+        "Insurance Provider": "C",
+        "Billing Amount": "23685",
+        "Room Number": "162",
+        "Admission Type": "C",
+        "Discharge Date": "2022-09-27",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "87",
+      "answers": {
+        "Name": "kayLa padillA",
+        "Age": "63",
+        "Gender": "B",
+        "Blood Type": "F",
+        "Medical Condition": "B",
+        "Date of Admission": "2020-09-24",
+        "Doctor": "Jermaine Peters",
+        "Hospital": "and Morales Jennings Cook,",
+        "Insurance Provider": "A",
+        "Billing Amount": "34774",
+        "Room Number": "152",
+        "Admission Type": "B",
+        "Discharge Date": "2020-10-08",
+        "Medication": "E",
+        "Test Results": "B"
+      }
+    }
+  ]
+}
+
+Answer: mIcHAeL MaRTIn, kayLa padillA
+</example>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which patient has Inconclusive test results?
+</task>
+
+<questionnaire>
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "145",
+      "answers": {
+        "Name": "ShAUN GuzmAn",
+        "Age": "21",
+        "Gender": "A",
+        "Blood Type": "D",
+        "Medical Condition": "A",
+        "Date of Admission": "2022-04-02",
+        "Doctor": "Lori Mendoza",
+        "Hospital": "Ltd Conrad",
+        "Insurance Provider": "A",
+        "Billing Amount": "1590",
+        "Room Number": "244",
+        "Admission Type": "B",
+        "Discharge Date": "2022-04-09",
+        "Medication": "A",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "32",
+      "answers": {
+        "Name": "JAmES pattERson",
+        "Age": "23",
+        "Gender": "A",
+        "Blood Type": "A",
+        "Medical Condition": "A",
+        "Date of Admission": "2019-11-03",
+        "Doctor": "Kristina Frazier",
+        "Hospital": "Cruz-Santiago",
+        "Insurance Provider": "E",
+        "Billing Amount": "25835",
+        "Room Number": "108",
+        "Admission Type": "C",
+        "Discharge Date": "2019-11-29",
+        "Medication": "E",
+        "Test Results": "A"
+      }
+    },
+    {
+      "respondent": "11",
+      "answers": {
+        "Name": "mIchElLe daniELs",
+        "Age": "72",
+        "Gender": "B",
+        "Blood Type": "G",
+        "Medical Condition": "C",
+        "Date of Admission": "2020-04-19",
+        "Doctor": "John Duncan",
+        "Hospital": "Schaefer-Porter",
+        "Insurance Provider": "D",
+        "Billing Amount": "12577",
+        "Room Number": "394",
+        "Admission Type": "C",
+        "Discharge Date": "2020-04-22",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    }
+  ]
+}
+</questionnaire>

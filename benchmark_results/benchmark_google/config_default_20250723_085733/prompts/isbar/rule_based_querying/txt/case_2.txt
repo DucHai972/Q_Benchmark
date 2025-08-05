@@ -1,0 +1,201 @@
+================================================================================
+PROMPT SENT TO LLM - DEFAULT
+================================================================================
+Dataset: isbar
+Task: rule_based_querying
+Case: case_2
+Format: txt
+Expected Answer: 6, 14, 7, 9, 20, 15, 8, 17
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+Which respondent numbers have identification scores equal to 3?
+
+DATA:
+
+Survey Data
+==================================================
+
+Questions:
+
+Responses:
+--------------------
+
+Respondent 19:
+  Date: 2025-05-04
+  SessionName: V (Hypoglycemia)
+  Identification: 3
+  Situation: 3
+  Background (history): 3
+  Background (examination): 3
+  Assessment: 3
+  Recommendation (clear recommendation): 3
+  Recommendation (global rating scale): 2
+  Comments: Concise - clear
+
+Respondent 8:
+  Date: 2025-04-04
+  SessionName: IV (AF)
+  Identification: 3
+  Situation: 3
+  Background (history): 3
+  Background (examination): 3
+  Assessment: 3
+  Recommendation (clear recommendation): 3
+  Recommendation (global rating scale): 3
+  Comments: Clear communication and handover
+
+Respondent 3:
+  Date: 2025-03-14
+  SessionName: IV-Hypoglycemia
+  Identification: 3
+  Situation: 3
+  Background (history): 2
+  Background (examination): 2
+  Assessment: 3
+  Recommendation (clear recommendation): 1
+  Recommendation (global rating scale): 1
+  Comments: Time: (2:36-2:53)
+
+
+Answer: 19, 8, 3
+</example>
+
+<questionnaire>
+Survey Data
+==================================================
+
+Questions:
+
+Responses:
+--------------------
+
+Respondent 6:
+  Date: 2025-04-04
+  SessionName: III-Sepsis
+  Identification: -1
+  Situation: 2
+  Background (history): 3
+  Background (examination): 3
+  Assessment: 3
+  Recommendation (clear recommendation): 3
+  Recommendation (global rating scale): 3
+  Comments: The patient/simulation is not oriented in TPP.
+
+Respondent 14:
+  Date: 2025-05-02
+  SessionName: V (Hypoglycemia)
+  Identification: 3
+  Situation: 2
+  Background (history): 2
+  Background (examination): 2
+  Assessment: 3
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 3
+  Comments: Satisfactory
+
+Respondent 7:
+  Date: 2025-04-04
+  SessionName: II (Anaphylactic Shock)
+  Identification: 3
+  Situation: 2
+  Background (history): 3
+  Background (examination): 3
+  Assessment: 2
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 3
+  Comments:
+
+Respondent 9:
+  Date: 2025-04-04
+  SessionName: MI
+  Identification: 2
+  Situation: 3
+  Background (history): 2
+  Background (examination): 3
+  Assessment: 3
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 2
+  Comments:
+
+Respondent 20:
+  Date: 2025-05-16
+  SessionName: III (Sepsis)
+  Identification: 3
+  Situation: 3
+  Background (history): 3
+  Background (examination): 2
+  Assessment: 2
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 2
+  Comments: Clinical handover and communication skills, satisfactory
+
+Respondent 15:
+  Date: 2025-05-04
+  SessionName: III - Sepsis
+  Identification: 3
+  Situation: 3
+  Background (history): 2
+  Background (examination): 3
+  Assessment: 2
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 2
+  Comments: Detailed Response - clear communication
+
+Respondent 8:
+  Date: 2025-04-04
+  SessionName: IV (AF)
+  Identification: 3
+  Situation: 3
+  Background (history): 3
+  Background (examination): 3
+  Assessment: 3
+  Recommendation (clear recommendation): 3
+  Recommendation (global rating scale): 3
+  Comments: Clear communication and handover
+
+Respondent 17:
+  Date: 2025-05-04
+  SessionName: IV - VT
+  Identification: 3
+  Situation: 3
+  Background (history): 2
+  Background (examination): 2
+  Assessment: 3
+  Recommendation (clear recommendation): 2
+  Recommendation (global rating scale): 2
+  Comments: Not very concise or clear communication
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have situation scores greater than or equal to 2?
+</task>

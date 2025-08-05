@@ -1,0 +1,197 @@
+================================================================================
+PROMPT SENT TO LLM - DEFAULT
+================================================================================
+Dataset: healthcare-dataset
+Task: answer_lookup
+Case: case_2
+Format: ttl
+Expected Answer: Aetna
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+What is the billing amount for mRS. jamiE cAMPBELl?
+
+DATA:
+
+@prefix : <http://example.org/survey#> .
+@prefix pred: <http://example.org/predicate#> .
+
+# Questions
+:QName pred:text "What is your name? [Open-ended]" .
+:QAge pred:text "What is your age? [Open-ended]" .
+:QGender pred:text "What is your gender? [MCQ: A. Female B. Male]" .
+:QBlood_Type pred:text "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]" .
+:QMedical_Condition pred:text "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]" .
+:QDate_of_Admission pred:text "What is your date of admission? [Open-ended]" .
+:QDoctor pred:text "What is your doctor? [Open-ended]" .
+:QHospital pred:text "What is your hospital? [Open-ended]" .
+:QInsurance_Provider pred:text "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]" .
+:QBilling_Amount pred:text "What is your billing amount? [Open-ended]" .
+:QRoom_Number pred:text "What is your room number? [Open-ended]" .
+:QAdmission_Type pred:text "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]" .
+:QDischarge_Date pred:text "What is your discharge date? [Open-ended]" .
+:QMedication pred:text "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]" .
+:QTest_Results pred:text "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]" .
+
+# Responses
+:Respondent2 a :Person ;
+    pred:Name "LesLie TErRy" ;
+    pred:Age "62" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "a" ;
+    pred:Medical_Condition "f" ;
+    pred:Date_of_Admission "2019-08-20" ;
+    pred:Doctor "Samantha Davies" ;
+    pred:Hospital "Kim Inc" ;
+    pred:Insurance_Provider "d" ;
+    pred:Billing_Amount "33643" ;
+    pred:Room_Number "265" ;
+    pred:Admission_Type "b" ;
+    pred:Discharge_Date "2019-08-26" ;
+    pred:Medication "b" ;
+    pred:Test_Results "b" .
+
+:Respondent18 a :Person ;
+    pred:Name "mRS. jamiE cAMPBELl" ;
+    pred:Age "38" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "d" ;
+    pred:Medical_Condition "f" ;
+    pred:Date_of_Admission "2020-03-08" ;
+    pred:Doctor "Justin Kim" ;
+    pred:Hospital "Torres, and Harrison Jones" ;
+    pred:Insurance_Provider "c" ;
+    pred:Billing_Amount "17440" ;
+    pred:Room_Number "449" ;
+    pred:Admission_Type "c" ;
+    pred:Discharge_Date "2020-04-02" ;
+    pred:Medication "d" ;
+    pred:Test_Results "a" .
+
+:Respondent118 a :Person ;
+    pred:Name "TOnyA caMpbell" ;
+    pred:Age "37" ;
+    pred:Gender "a" ;
+    pred:Blood_Type "e" ;
+    pred:Medical_Condition "b" ;
+    pred:Date_of_Admission "2021-02-12" ;
+    pred:Doctor "Louis Bell" ;
+    pred:Hospital "Lane-Kelly" ;
+    pred:Insurance_Provider "e" ;
+    pred:Billing_Amount "25230" ;
+    pred:Room_Number "326" ;
+    pred:Admission_Type "a" ;
+    pred:Discharge_Date "2021-03-11" ;
+    pred:Medication "b" ;
+    pred:Test_Results "b" .
+
+
+Answer: 17440
+</example>
+
+<questionnaire>
+@prefix : <http://example.org/survey#> .
+@prefix pred: <http://example.org/predicate#> .
+
+# Questions
+:QName pred:text "What is your name? [Open-ended]" .
+:QAge pred:text "What is your age? [Open-ended]" .
+:QGender pred:text "What is your gender? [MCQ: A. Female B. Male]" .
+:QBlood_Type pred:text "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]" .
+:QMedical_Condition pred:text "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]" .
+:QDate_of_Admission pred:text "What is your date of admission? [Open-ended]" .
+:QDoctor pred:text "What is your doctor? [Open-ended]" .
+:QHospital pred:text "What is your hospital? [Open-ended]" .
+:QInsurance_Provider pred:text "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]" .
+:QBilling_Amount pred:text "What is your billing amount? [Open-ended]" .
+:QRoom_Number pred:text "What is your room number? [Open-ended]" .
+:QAdmission_Type pred:text "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]" .
+:QDischarge_Date pred:text "What is your discharge date? [Open-ended]" .
+:QMedication pred:text "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]" .
+:QTest_Results pred:text "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]" .
+
+# Responses
+:Respondent129 a :Person ;
+    pred:Name "ANthONy reYEs" ;
+    pred:Age "82" ;
+    pred:Gender "b" ;
+    pred:Blood_Type "c" ;
+    pred:Medical_Condition "f" ;
+    pred:Date_of_Admission "2023-10-15" ;
+    pred:Doctor "Michael Cole" ;
+    pred:Hospital "Dudley-Atkinson" ;
+    pred:Insurance_Provider "e" ;
+    pred:Billing_Amount "16399" ;
+    pred:Room_Number "133" ;
+    pred:Admission_Type "b" ;
+    pred:Discharge_Date "2023-11-08" ;
+    pred:Medication "e" ;
+    pred:Test_Results "a" .
+
+:Respondent85 a :Person ;
+    pred:Name "cindY OROzco" ;
+    pred:Age "26" ;
+    pred:Gender "a" ;
+    pred:Blood_Type "f" ;
+    pred:Medical_Condition "b" ;
+    pred:Date_of_Admission "2023-05-12" ;
+    pred:Doctor "Julie Finley" ;
+    pred:Hospital "Kemp LLC" ;
+    pred:Insurance_Provider "d" ;
+    pred:Billing_Amount "10284" ;
+    pred:Room_Number "273" ;
+    pred:Admission_Type "b" ;
+    pred:Discharge_Date "2023-06-10" ;
+    pred:Medication "b" ;
+    pred:Test_Results "a" .
+
+:Respondent53 a :Person ;
+    pred:Name "JessE BaNks" ;
+    pred:Age "67" ;
+    pred:Gender "a" ;
+    pred:Blood_Type "c" ;
+    pred:Medical_Condition "c" ;
+    pred:Date_of_Admission "2022-10-29" ;
+    pred:Doctor "Alexander Garcia" ;
+    pred:Hospital "Decker Glover, and Christensen" ;
+    pred:Insurance_Provider "a" ;
+    pred:Billing_Amount "21880" ;
+    pred:Room_Number "492" ;
+    pred:Admission_Type "c" ;
+    pred:Discharge_Date "2022-11-20" ;
+    pred:Medication "e" ;
+    pred:Test_Results "b" .
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+What is the insurance provider of JessE BaNks?
+</task>

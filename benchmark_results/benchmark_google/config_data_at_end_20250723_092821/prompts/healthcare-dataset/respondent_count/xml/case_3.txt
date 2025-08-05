@@ -1,0 +1,437 @@
+================================================================================
+PROMPT SENT TO LLM - DATA_AT_END
+================================================================================
+Dataset: healthcare-dataset
+Task: respondent_count
+Case: case_3
+Format: xml
+Expected Answer: 10
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: True
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+How many respondents are there?
+
+DATA:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="Name">What is your name? [Open-ended]</question>
+    <question id="Age">What is your age? [Open-ended]</question>
+    <question id="Gender">What is your gender? [MCQ: A. Female B. Male]</question>
+    <question id="Blood Type">What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]</question>
+    <question id="Medical Condition">What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]</question>
+    <question id="Date of Admission">What is your date of admission? [Open-ended]</question>
+    <question id="Doctor">What is your doctor? [Open-ended]</question>
+    <question id="Hospital">What is your hospital? [Open-ended]</question>
+    <question id="Insurance Provider">What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]</question>
+    <question id="Billing Amount">What is your billing amount? [Open-ended]</question>
+    <question id="Room Number">What is your room number? [Open-ended]</question>
+    <question id="Admission Type">What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]</question>
+    <question id="Discharge Date">What is your discharge date? [Open-ended]</question>
+    <question id="Medication">What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]</question>
+    <question id="Test Results">What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]</question>
+  </questions>
+  <responses>
+    <respondent id="104">
+      <answer question="Name">KaTRina maRTin</answer>
+      <answer question="Age">47</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">b</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2019-07-09</answer>
+      <answer question="Doctor">Patricia Colon</answer>
+      <answer question="Hospital">Group Nguyen</answer>
+      <answer question="Insurance Provider">d</answer>
+      <answer question="Billing Amount">31516</answer>
+      <answer question="Room Number">418</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2019-08-05</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="105">
+      <answer question="Name">HunTeR mckAy</answer>
+      <answer question="Age">85</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">b</answer>
+      <answer question="Medical Condition">a</answer>
+      <answer question="Date of Admission">2021-05-14</answer>
+      <answer question="Doctor">Dominic Mitchell</answer>
+      <answer question="Hospital">Newton-White</answer>
+      <answer question="Insurance Provider">e</answer>
+      <answer question="Billing Amount">40015</answer>
+      <answer question="Room Number">425</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2021-06-03</answer>
+      <answer question="Medication">a</answer>
+      <answer question="Test Results">a</answer>
+    </respondent>
+    <respondent id="88">
+      <answer question="Name">JUan klEiN</answer>
+      <answer question="Age">58</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">f</answer>
+      <answer question="Medical Condition">a</answer>
+      <answer question="Date of Admission">2023-08-19</answer>
+      <answer question="Doctor">Lisa Edwards</answer>
+      <answer question="Hospital">Group Hood</answer>
+      <answer question="Insurance Provider">e</answer>
+      <answer question="Billing Amount">24870</answer>
+      <answer question="Room Number">321</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2023-08-25</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="95">
+      <answer question="Name">heatHER mIller</answer>
+      <answer question="Age">76</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">a</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2021-04-17</answer>
+      <answer question="Doctor">Scott Grant</answer>
+      <answer question="Hospital">Powell Ward, and Mercado</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">3909</answer>
+      <answer question="Room Number">428</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2021-05-10</answer>
+      <answer question="Medication">c</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="133">
+      <answer question="Name">ashLEy ERIcKSoN</answer>
+      <answer question="Age">32</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">d</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2019-11-05</answer>
+      <answer question="Doctor">Gerald Hooper</answer>
+      <answer question="Hospital">and Johnson Moore, Branch</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">-503</answer>
+      <answer question="Room Number">376</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2019-11-23</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="71">
+      <answer question="Name">cAROl PaTtERSoN</answer>
+      <answer question="Age">29</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">g</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2022-10-24</answer>
+      <answer question="Doctor">Jamie Baker</answer>
+      <answer question="Hospital">Turner Cook, Banks and</answer>
+      <answer question="Insurance Provider">b</answer>
+      <answer question="Billing Amount">19328</answer>
+      <answer question="Room Number">231</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2022-11-07</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="64">
+      <answer question="Name">LArry rodgeRs</answer>
+      <answer question="Age">23</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">f</answer>
+      <answer question="Medical Condition">e</answer>
+      <answer question="Date of Admission">2022-08-03</answer>
+      <answer question="Doctor">Eric Kelly</answer>
+      <answer question="Hospital">and Mason Smith Chase,</answer>
+      <answer question="Insurance Provider">c</answer>
+      <answer question="Billing Amount">5517</answer>
+      <answer question="Room Number">113</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2022-08-10</answer>
+      <answer question="Medication">a</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="37">
+      <answer question="Name">DEnIse ToRRES</answer>
+      <answer question="Age">33</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">c</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2019-10-14</answer>
+      <answer question="Doctor">Laura Myers</answer>
+      <answer question="Hospital">LLC Martin</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">4398</answer>
+      <answer question="Room Number">481</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2019-10-19</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="34">
+      <answer question="Name">Erin oRTEga</answer>
+      <answer question="Age">43</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">d</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2023-05-24</answer>
+      <answer question="Doctor">Heather Garcia</answer>
+      <answer question="Hospital">Lopez-Phillips</answer>
+      <answer question="Insurance Provider">d</answer>
+      <answer question="Billing Amount">21186</answer>
+      <answer question="Room Number">494</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2023-06-03</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="44">
+      <answer question="Name">KAThEriNE SmiTH</answer>
+      <answer question="Age">26</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">c</answer>
+      <answer question="Medical Condition">f</answer>
+      <answer question="Date of Admission">2021-06-09</answer>
+      <answer question="Doctor">Mary Logan</answer>
+      <answer question="Hospital">and Mcclure White Boone,</answer>
+      <answer question="Insurance Provider">e</answer>
+      <answer question="Billing Amount">21784</answer>
+      <answer question="Room Number">410</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2021-07-01</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+
+Answer: 10
+</example>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many respondents are there?
+</task>
+
+<questionnaire>
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="Name">What is your name? [Open-ended]</question>
+    <question id="Age">What is your age? [Open-ended]</question>
+    <question id="Gender">What is your gender? [MCQ: A. Female B. Male]</question>
+    <question id="Blood Type">What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]</question>
+    <question id="Medical Condition">What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]</question>
+    <question id="Date of Admission">What is your date of admission? [Open-ended]</question>
+    <question id="Doctor">What is your doctor? [Open-ended]</question>
+    <question id="Hospital">What is your hospital? [Open-ended]</question>
+    <question id="Insurance Provider">What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]</question>
+    <question id="Billing Amount">What is your billing amount? [Open-ended]</question>
+    <question id="Room Number">What is your room number? [Open-ended]</question>
+    <question id="Admission Type">What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]</question>
+    <question id="Discharge Date">What is your discharge date? [Open-ended]</question>
+    <question id="Medication">What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]</question>
+    <question id="Test Results">What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]</question>
+  </questions>
+  <responses>
+    <respondent id="70">
+      <answer question="Name">Erica myERS</answer>
+      <answer question="Age">19</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">a</answer>
+      <answer question="Medical Condition">a</answer>
+      <answer question="Date of Admission">2020-01-30</answer>
+      <answer question="Doctor">Ian Benitez</answer>
+      <answer question="Hospital">Jackson and Lane, Dillon</answer>
+      <answer question="Insurance Provider">d</answer>
+      <answer question="Billing Amount">20228</answer>
+      <answer question="Room Number">241</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2020-02-12</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="61">
+      <answer question="Name">ASHleY guTIERreZ</answer>
+      <answer question="Age">83</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">c</answer>
+      <answer question="Medical Condition">f</answer>
+      <answer question="Date of Admission">2019-11-06</answer>
+      <answer question="Doctor">Tyler Braun</answer>
+      <answer question="Hospital">Miller-Lawson</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">24637</answer>
+      <answer question="Room Number">333</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2019-11-22</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="8">
+      <answer question="Name">CHrisTInA MARtinez</answer>
+      <answer question="Age">20</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">a</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2021-12-28</answer>
+      <answer question="Doctor">Suzanne Thomas</answer>
+      <answer question="Hospital">Powell Robinson and Valdez,</answer>
+      <answer question="Insurance Provider">c</answer>
+      <answer question="Billing Amount">45820</answer>
+      <answer question="Room Number">277</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2022-01-07</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="125">
+      <answer question="Name">terRY THoMaS</answer>
+      <answer question="Age">50</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">f</answer>
+      <answer question="Medical Condition">b</answer>
+      <answer question="Date of Admission">2021-06-03</answer>
+      <answer question="Doctor">Lucas Cole</answer>
+      <answer question="Hospital">Cantu-Berry</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">48175</answer>
+      <answer question="Room Number">368</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2021-07-01</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="50">
+      <answer question="Name">BRandOn coLLINS</answer>
+      <answer question="Age">77</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">g</answer>
+      <answer question="Medical Condition">b</answer>
+      <answer question="Date of Admission">2019-07-19</answer>
+      <answer question="Doctor">Cameron Young</answer>
+      <answer question="Hospital">Lopez PLC</answer>
+      <answer question="Insurance Provider">c</answer>
+      <answer question="Billing Amount">16320</answer>
+      <answer question="Room Number">138</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2019-07-29</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">a</answer>
+    </respondent>
+    <respondent id="5">
+      <answer question="Name">adrIENNE bEll</answer>
+      <answer question="Age">43</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">c</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2022-09-19</answer>
+      <answer question="Doctor">Kathleen Hanna</answer>
+      <answer question="Hospital">White-White</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">14238</answer>
+      <answer question="Room Number">458</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2022-10-09</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">a</answer>
+    </respondent>
+    <respondent id="147">
+      <answer question="Name">aLExiS wilsOn</answer>
+      <answer question="Age">68</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">e</answer>
+      <answer question="Medical Condition">a</answer>
+      <answer question="Date of Admission">2019-08-16</answer>
+      <answer question="Doctor">Brian Walton</answer>
+      <answer question="Hospital">Thomas-Kelley</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">2679</answer>
+      <answer question="Room Number">427</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2019-08-21</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">a</answer>
+    </respondent>
+    <respondent id="80">
+      <answer question="Name">tiMOThY myers</answer>
+      <answer question="Age">61</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">e</answer>
+      <answer question="Medical Condition">c</answer>
+      <answer question="Date of Admission">2024-03-02</answer>
+      <answer question="Doctor">Timothy Baker</answer>
+      <answer question="Hospital">and Sons Reyes</answer>
+      <answer question="Insurance Provider">e</answer>
+      <answer question="Billing Amount">29504</answer>
+      <answer question="Room Number">422</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2024-03-26</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="142">
+      <answer question="Name">riTA archER</answer>
+      <answer question="Age">20</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">h</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2024-01-05</answer>
+      <answer question="Doctor">Victoria Gonzales</answer>
+      <answer question="Hospital">and Marquez Silva Smith,</answer>
+      <answer question="Insurance Provider">d</answer>
+      <answer question="Billing Amount">48996</answer>
+      <answer question="Room Number">406</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2024-02-04</answer>
+      <answer question="Medication">c</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="127">
+      <answer question="Name">JEssicA gUtiERrEz</answer>
+      <answer question="Age">40</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">g</answer>
+      <answer question="Medical Condition">f</answer>
+      <answer question="Date of Admission">2019-08-27</answer>
+      <answer question="Doctor">Crystal Chavez</answer>
+      <answer question="Hospital">Guzman-Carlson</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">9586</answer>
+      <answer question="Room Number">424</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2019-09-06</answer>
+      <answer question="Medication">c</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+</questionnaire>

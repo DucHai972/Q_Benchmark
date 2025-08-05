@@ -1,0 +1,293 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ROLE
+================================================================================
+Dataset: healthcare-dataset
+Task: rule_based_querying
+Case: case_3
+Format: json
+Expected Answer: 68, 131, 66
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: False
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+Which respondent numbers are older than 50?
+
+DATA:
+
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "68",
+      "answers": {
+        "Name": "jOhN hARTmAN",
+        "Age": "27",
+        "Gender": "B",
+        "Blood Type": "F",
+        "Medical Condition": "E",
+        "Date of Admission": "2023-01-07",
+        "Doctor": "Jack Jackson",
+        "Hospital": "Bullock-Ramsey",
+        "Insurance Provider": "C",
+        "Billing Amount": "49402",
+        "Room Number": "263",
+        "Admission Type": "A",
+        "Discharge Date": "2023-01-27",
+        "Medication": "C",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "94",
+      "answers": {
+        "Name": "mIcHAeL MaRTIn",
+        "Age": "84",
+        "Gender": "B",
+        "Blood Type": "A",
+        "Medical Condition": "B",
+        "Date of Admission": "2022-09-06",
+        "Doctor": "John Summers",
+        "Hospital": "Sons Horn and",
+        "Insurance Provider": "C",
+        "Billing Amount": "23685",
+        "Room Number": "162",
+        "Admission Type": "C",
+        "Discharge Date": "2022-09-27",
+        "Medication": "B",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "131",
+      "answers": {
+        "Name": "PaUL MaRTinEz",
+        "Age": "20",
+        "Gender": "B",
+        "Blood Type": "E",
+        "Medical Condition": "E",
+        "Date of Admission": "2019-10-13",
+        "Doctor": "Tracey Spence",
+        "Hospital": "Lewis Livingston, Lowe and",
+        "Insurance Provider": "B",
+        "Billing Amount": "10664",
+        "Room Number": "104",
+        "Admission Type": "B",
+        "Discharge Date": "2019-10-16",
+        "Medication": "A",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "39",
+      "answers": {
+        "Name": "NIcOlE LUcErO",
+        "Age": "70",
+        "Gender": "A",
+        "Blood Type": "H",
+        "Medical Condition": "D",
+        "Date of Admission": "2022-03-12",
+        "Doctor": "Christine Johnson",
+        "Hospital": "and Garcia Morris Cunningham,",
+        "Insurance Provider": "C",
+        "Billing Amount": "48291",
+        "Room Number": "113",
+        "Admission Type": "B",
+        "Discharge Date": "2022-03-29",
+        "Medication": "C",
+        "Test Results": "A"
+      }
+    },
+    {
+      "respondent": "90",
+      "answers": {
+        "Name": "CARL BEst",
+        "Age": "60",
+        "Gender": "B",
+        "Blood Type": "E",
+        "Medical Condition": "E",
+        "Date of Admission": "2022-08-22",
+        "Doctor": "Gregory Hansen",
+        "Hospital": "Ltd Wang",
+        "Insurance Provider": "B",
+        "Billing Amount": "26062",
+        "Room Number": "482",
+        "Admission Type": "A",
+        "Discharge Date": "2022-09-07",
+        "Medication": "D",
+        "Test Results": "B"
+      }
+    },
+    {
+      "respondent": "66",
+      "answers": {
+        "Name": "JessIca king",
+        "Age": "27",
+        "Gender": "B",
+        "Blood Type": "D",
+        "Medical Condition": "C",
+        "Date of Admission": "2019-12-09",
+        "Doctor": "William Hess",
+        "Hospital": "Sons Watson and",
+        "Insurance Provider": "D",
+        "Billing Amount": "8321",
+        "Room Number": "468",
+        "Admission Type": "C",
+        "Discharge Date": "2019-12-21",
+        "Medication": "C",
+        "Test Results": "A"
+      }
+    }
+  ]
+}
+
+Answer: 94, 39, 90
+</example>
+
+<questionnaire>
+{
+  "questions": {
+    "Name": "What is your name? [Open-ended]",
+    "Age": "What is your age? [Open-ended]",
+    "Gender": "What is your gender? [MCQ: A. Female B. Male]",
+    "Blood Type": "What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]",
+    "Medical Condition": "What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]",
+    "Date of Admission": "What is your date of admission? [Open-ended]",
+    "Doctor": "What is your doctor? [Open-ended]",
+    "Hospital": "What is your hospital? [Open-ended]",
+    "Insurance Provider": "What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]",
+    "Billing Amount": "What is your billing amount? [Open-ended]",
+    "Room Number": "What is your room number? [Open-ended]",
+    "Admission Type": "What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]",
+    "Discharge Date": "What is your discharge date? [Open-ended]",
+    "Medication": "What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]",
+    "Test Results": "What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]"
+  },
+  "responses": [
+    {
+      "respondent": "73",
+      "answers": {
+        "Name": "kEVIn SiMmoNs Jr.",
+        "Age": "24",
+        "Gender": "B",
+        "Blood Type": "D",
+        "Medical Condition": "C",
+        "Date of Admission": "2023-12-28",
+        "Doctor": "Amanda Garcia",
+        "Hospital": "Evans Ltd",
+        "Insurance Provider": "C",
+        "Billing Amount": "10710",
+        "Room Number": "407",
+        "Admission Type": "B",
+        "Discharge Date": "2024-01-02",
+        "Medication": "D",
+        "Test Results": "A"
+      }
+    },
+    {
+      "respondent": "57",
+      "answers": {
+        "Name": "beThaNY MoOrE",
+        "Age": "55",
+        "Gender": "A",
+        "Blood Type": "A",
+        "Medical Condition": "C",
+        "Date of Admission": "2023-04-09",
+        "Doctor": "Penny Pruitt",
+        "Hospital": "and Montes Graves, Thomas",
+        "Insurance Provider": "C",
+        "Billing Amount": "10301",
+        "Room Number": "330",
+        "Admission Type": "B",
+        "Discharge Date": "2023-04-21",
+        "Medication": "D",
+        "Test Results": "C"
+      }
+    },
+    {
+      "respondent": "18",
+      "answers": {
+        "Name": "mRS. jamiE cAMPBELl",
+        "Age": "38",
+        "Gender": "B",
+        "Blood Type": "D",
+        "Medical Condition": "F",
+        "Date of Admission": "2020-03-08",
+        "Doctor": "Justin Kim",
+        "Hospital": "Torres, and Harrison Jones",
+        "Insurance Provider": "C",
+        "Billing Amount": "17440",
+        "Room Number": "449",
+        "Admission Type": "C",
+        "Discharge Date": "2020-04-02",
+        "Medication": "D",
+        "Test Results": "A"
+      }
+    },
+    {
+      "respondent": "92",
+      "answers": {
+        "Name": "MR. TYler TAYLOR Phd",
+        "Age": "80",
+        "Gender": "B",
+        "Blood Type": "A",
+        "Medical Condition": "D",
+        "Date of Admission": "2022-11-05",
+        "Doctor": "Robert Salazar",
+        "Hospital": "Dean-Hawkins",
+        "Insurance Provider": "E",
+        "Billing Amount": "10662",
+        "Room Number": "120",
+        "Admission Type": "B",
+        "Discharge Date": "2022-11-25",
+        "Medication": "C",
+        "Test Results": "A"
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers are younger than 30?
+</task>

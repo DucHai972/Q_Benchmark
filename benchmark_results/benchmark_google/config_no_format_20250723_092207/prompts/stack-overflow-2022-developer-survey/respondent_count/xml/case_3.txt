@@ -1,0 +1,210 @@
+================================================================================
+PROMPT SENT TO LLM - NO_FORMAT
+================================================================================
+Dataset: stack-overflow-2022-developer-survey
+Task: respondent_count
+Case: case_3
+Format: xml
+Expected Answer: 1
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: False
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+How many respondents are there?
+
+DATA:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="ResponseId">ResponseId: Respondent's ID number [Open-ended]</question>
+    <question id="MainBranch">MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]</question>
+    <question id="Employment">Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]</question>
+    <question id="EdLevel">EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]</question>
+    <question id="YearsCode">YearsCode: Total years of coding experience [Open-ended]</question>
+    <question id="YearsCodePro">YearsCodePro: Years of professional coding experience [Open-ended]</question>
+    <question id="DevType">DevType: Roles in development [Open-ended]</question>
+    <question id="OrgSize">OrgSize: Size of the organization they work in [Open-ended]</question>
+    <question id="Country">Country: Country of residence [Open-ended]</question>
+    <question id="CompTotal">CompTotal: Total compensation [Open-ended]</question>
+    <question id="CompFreq">CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]</question>
+    <question id="LanguageHaveWorkedWith">LanguageHaveWorkedWith: Programming languages worked with [Open-ended]</question>
+    <question id="LanguageWantToWorkWith">LanguageWantToWorkWith: Programming languages they want to use [Open-ended]</question>
+    <question id="ToolsTechHaveWorkedWith">ToolsTechHaveWorkedWith: Developer tools used [Open-ended]</question>
+    <question id="VersionControlSystem">VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]</question>
+  </questions>
+  <responses>
+    <respondent id="291">
+      <answer question="ResponseId">291</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">A</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">7</answer>
+      <answer question="YearsCodePro">3</answer>
+      <answer question="DevType">Developer, full-stack</answer>
+      <answer question="OrgSize">1,000 to 4,999 employees</answer>
+      <answer question="Country">United States of America</answer>
+      <answer question="CompTotal">83000.0</answer>
+      <answer question="CompFreq">C</answer>
+      <answer question="LanguageHaveWorkedWith">C#;Dart;HTML/CSS;JavaScript;PowerShell;Python;TypeScript</answer>
+      <answer question="LanguageWantToWorkWith">C#;C++;Dart;Go;Python</answer>
+      <answer question="ToolsTechHaveWorkedWith">npm</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+    <respondent id="72789">
+      <answer question="ResponseId">72789</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">A</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">16</answer>
+      <answer question="YearsCodePro">16</answer>
+      <answer question="DevType">Developer, back-end</answer>
+      <answer question="OrgSize">20 to 99 employees</answer>
+      <answer question="Country">Indonesia</answer>
+      <answer question="CompTotal">36000000.0</answer>
+      <answer question="CompFreq">B</answer>
+      <answer question="LanguageHaveWorkedWith">Bash/Shell;JavaScript;PHP;Ruby;SQL</answer>
+      <answer question="LanguageWantToWorkWith">Elixir;Go;TypeScript</answer>
+      <answer question="ToolsTechHaveWorkedWith">Docker;Homebrew;Kubernetes;npm;Yarn</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+    <respondent id="73076">
+      <answer question="ResponseId">73076</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">A</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">5</answer>
+      <answer question="YearsCodePro">4</answer>
+      <answer question="DevType">Developer, full-stack;Educator</answer>
+      <answer question="OrgSize">2 to 9 employees</answer>
+      <answer question="Country">India</answer>
+      <answer question="CompTotal">12000.0</answer>
+      <answer question="CompFreq">B</answer>
+      <answer question="LanguageHaveWorkedWith">HTML/CSS;Java;JavaScript;Python;TypeScript</answer>
+      <answer question="LanguageWantToWorkWith">HTML/CSS;JavaScript;Kotlin;TypeScript</answer>
+      <answer question="ToolsTechHaveWorkedWith">npm</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+    <respondent id="450">
+      <answer question="ResponseId">450</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">['A', 'C']</answer>
+      <answer question="EdLevel">H</answer>
+      <answer question="YearsCode">38</answer>
+      <answer question="YearsCodePro">25</answer>
+      <answer question="DevType">Data scientist or machine learning specialist;Developer, full-stack;Educator</answer>
+      <answer question="OrgSize">20 to 99 employees</answer>
+      <answer question="Country">Germany</answer>
+      <answer question="CompTotal">120000.0</answer>
+      <answer question="CompFreq">C</answer>
+      <answer question="LanguageHaveWorkedWith">Assembly;C;PHP;Python;R;SQL</answer>
+      <answer question="LanguageWantToWorkWith">C;Python</answer>
+      <answer question="ToolsTechHaveWorkedWith">Ansible;Docker;Kubernetes</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+    <respondent id="424">
+      <answer question="ResponseId">424</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">C</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">13</answer>
+      <answer question="YearsCodePro">9</answer>
+      <answer question="DevType">Developer, full-stack;Educator</answer>
+      <answer question="OrgSize">Just me - I am a freelancer, sole proprietor, etc.</answer>
+      <answer question="Country">United States of America</answer>
+      <answer question="CompTotal">350000.0</answer>
+      <answer question="CompFreq">C</answer>
+      <answer question="LanguageHaveWorkedWith">HTML/CSS;JavaScript;PHP;Ruby</answer>
+      <answer question="LanguageWantToWorkWith">Ruby;Swift</answer>
+      <answer question="ToolsTechHaveWorkedWith">Homebrew;npm</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+    <respondent id="134">
+      <answer question="ResponseId">134</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">A</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">26</answer>
+      <answer question="YearsCodePro">24</answer>
+      <answer question="DevType">Developer, back-end</answer>
+      <answer question="OrgSize">100 to 499 employees</answer>
+      <answer question="Country">United States of America</answer>
+      <answer question="CompTotal">144000.0</answer>
+      <answer question="CompFreq">C</answer>
+      <answer question="LanguageHaveWorkedWith">C#;JavaScript;Perl;Python;Ruby;SQL</answer>
+      <answer question="LanguageWantToWorkWith">JavaScript;Perl;Python;Ruby;SQL</answer>
+      <answer question="ToolsTechHaveWorkedWith">Docker;Kubernetes</answer>
+      <answer question="VersionControlSystem">A</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+
+
+Answer: 6
+</example>
+
+<questionnaire>
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="ResponseId">ResponseId: Respondent's ID number [Open-ended]</question>
+    <question id="MainBranch">MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]</question>
+    <question id="Employment">Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]</question>
+    <question id="EdLevel">EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]</question>
+    <question id="YearsCode">YearsCode: Total years of coding experience [Open-ended]</question>
+    <question id="YearsCodePro">YearsCodePro: Years of professional coding experience [Open-ended]</question>
+    <question id="DevType">DevType: Roles in development [Open-ended]</question>
+    <question id="OrgSize">OrgSize: Size of the organization they work in [Open-ended]</question>
+    <question id="Country">Country: Country of residence [Open-ended]</question>
+    <question id="CompTotal">CompTotal: Total compensation [Open-ended]</question>
+    <question id="CompFreq">CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]</question>
+    <question id="LanguageHaveWorkedWith">LanguageHaveWorkedWith: Programming languages worked with [Open-ended]</question>
+    <question id="LanguageWantToWorkWith">LanguageWantToWorkWith: Programming languages they want to use [Open-ended]</question>
+    <question id="ToolsTechHaveWorkedWith">ToolsTechHaveWorkedWith: Developer tools used [Open-ended]</question>
+    <question id="VersionControlSystem">VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]</question>
+  </questions>
+  <responses>
+    <respondent id="72805">
+      <answer question="ResponseId">72805</answer>
+      <answer question="MainBranch">A</answer>
+      <answer question="Employment">A</answer>
+      <answer question="EdLevel">Bachelor’s degree (B.A., B.S., B.Eng., etc.)</answer>
+      <answer question="YearsCode">6</answer>
+      <answer question="YearsCodePro">2</answer>
+      <answer question="DevType">Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;System administrator</answer>
+      <answer question="OrgSize">500 to 999 employees</answer>
+      <answer question="Country">Slovenia</answer>
+      <answer question="CompTotal">28000.0</answer>
+      <answer question="CompFreq">C</answer>
+      <answer question="LanguageHaveWorkedWith">Bash/Shell;C#;HTML/CSS;JavaScript;PHP;PowerShell;SQL;TypeScript</answer>
+      <answer question="LanguageWantToWorkWith">Bash/Shell;C#;Go;HTML/CSS;JavaScript;PHP;PowerShell;TypeScript</answer>
+      <answer question="ToolsTechHaveWorkedWith">Docker;npm</answer>
+      <answer question="VersionControlSystem">['A', 'C']</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many respondents are there?
+</task>

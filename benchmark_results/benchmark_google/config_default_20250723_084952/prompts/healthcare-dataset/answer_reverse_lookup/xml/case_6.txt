@@ -1,0 +1,199 @@
+================================================================================
+PROMPT SENT TO LLM - DEFAULT
+================================================================================
+Dataset: healthcare-dataset
+Task: answer_reverse_lookup
+Case: case_6
+Format: xml
+Expected Answer: jACqUeLINE jORdaN
+
+Configuration:
+• One-shot example: True
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<example>
+Which patient has the medical condition Asthma?
+
+DATA:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="Name">What is your name? [Open-ended]</question>
+    <question id="Age">What is your age? [Open-ended]</question>
+    <question id="Gender">What is your gender? [MCQ: A. Female B. Male]</question>
+    <question id="Blood Type">What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]</question>
+    <question id="Medical Condition">What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]</question>
+    <question id="Date of Admission">What is your date of admission? [Open-ended]</question>
+    <question id="Doctor">What is your doctor? [Open-ended]</question>
+    <question id="Hospital">What is your hospital? [Open-ended]</question>
+    <question id="Insurance Provider">What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]</question>
+    <question id="Billing Amount">What is your billing amount? [Open-ended]</question>
+    <question id="Room Number">What is your room number? [Open-ended]</question>
+    <question id="Admission Type">What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]</question>
+    <question id="Discharge Date">What is your discharge date? [Open-ended]</question>
+    <question id="Medication">What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]</question>
+    <question id="Test Results">What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]</question>
+  </questions>
+  <responses>
+    <respondent id="69">
+      <answer question="Name">MicHAEl MillEr</answer>
+      <answer question="Age">31</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">e</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2024-02-06</answer>
+      <answer question="Doctor">Jonathan Drake</answer>
+      <answer question="Hospital">Clark Brown, and Myers</answer>
+      <answer question="Insurance Provider">e</answer>
+      <answer question="Billing Amount">35777</answer>
+      <answer question="Room Number">489</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2024-02-10</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="94">
+      <answer question="Name">mIcHAeL MaRTIn</answer>
+      <answer question="Age">84</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">a</answer>
+      <answer question="Medical Condition">b</answer>
+      <answer question="Date of Admission">2022-09-06</answer>
+      <answer question="Doctor">John Summers</answer>
+      <answer question="Hospital">Sons Horn and</answer>
+      <answer question="Insurance Provider">c</answer>
+      <answer question="Billing Amount">23685</answer>
+      <answer question="Room Number">162</answer>
+      <answer question="Admission Type">c</answer>
+      <answer question="Discharge Date">2022-09-27</answer>
+      <answer question="Medication">b</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+    <respondent id="87">
+      <answer question="Name">kayLa padillA</answer>
+      <answer question="Age">63</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">f</answer>
+      <answer question="Medical Condition">b</answer>
+      <answer question="Date of Admission">2020-09-24</answer>
+      <answer question="Doctor">Jermaine Peters</answer>
+      <answer question="Hospital">and Morales Jennings Cook,</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">34774</answer>
+      <answer question="Room Number">152</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2020-10-08</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+
+Answer: mIcHAeL MaRTIn, kayLa padillA
+</example>
+
+<questionnaire>
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <questions>
+    <question id="Name">What is your name? [Open-ended]</question>
+    <question id="Age">What is your age? [Open-ended]</question>
+    <question id="Gender">What is your gender? [MCQ: A. Female B. Male]</question>
+    <question id="Blood Type">What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]</question>
+    <question id="Medical Condition">What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]</question>
+    <question id="Date of Admission">What is your date of admission? [Open-ended]</question>
+    <question id="Doctor">What is your doctor? [Open-ended]</question>
+    <question id="Hospital">What is your hospital? [Open-ended]</question>
+    <question id="Insurance Provider">What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]</question>
+    <question id="Billing Amount">What is your billing amount? [Open-ended]</question>
+    <question id="Room Number">What is your room number? [Open-ended]</question>
+    <question id="Admission Type">What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]</question>
+    <question id="Discharge Date">What is your discharge date? [Open-ended]</question>
+    <question id="Medication">What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]</question>
+    <question id="Test Results">What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]</question>
+  </questions>
+  <responses>
+    <respondent id="142">
+      <answer question="Name">riTA archER</answer>
+      <answer question="Age">20</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">h</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2024-01-05</answer>
+      <answer question="Doctor">Victoria Gonzales</answer>
+      <answer question="Hospital">and Marquez Silva Smith,</answer>
+      <answer question="Insurance Provider">d</answer>
+      <answer question="Billing Amount">48996</answer>
+      <answer question="Room Number">406</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2024-02-04</answer>
+      <answer question="Medication">c</answer>
+      <answer question="Test Results">c</answer>
+    </respondent>
+    <respondent id="60">
+      <answer question="Name">jACqUeLINE jORdaN</answer>
+      <answer question="Age">51</answer>
+      <answer question="Gender">b</answer>
+      <answer question="Blood Type">g</answer>
+      <answer question="Medical Condition">e</answer>
+      <answer question="Date of Admission">2020-07-10</answer>
+      <answer question="Doctor">Jacob Daniel</answer>
+      <answer question="Hospital">Hunter-Grant</answer>
+      <answer question="Insurance Provider">a</answer>
+      <answer question="Billing Amount">17840</answer>
+      <answer question="Room Number">306</answer>
+      <answer question="Admission Type">a</answer>
+      <answer question="Discharge Date">2020-07-20</answer>
+      <answer question="Medication">d</answer>
+      <answer question="Test Results">a</answer>
+    </respondent>
+    <respondent id="78">
+      <answer question="Name">apRil SANTIAgO</answer>
+      <answer question="Age">33</answer>
+      <answer question="Gender">a</answer>
+      <answer question="Blood Type">f</answer>
+      <answer question="Medical Condition">d</answer>
+      <answer question="Date of Admission">2021-01-30</answer>
+      <answer question="Doctor">Jacob Rich</answer>
+      <answer question="Hospital">Jones-Scott</answer>
+      <answer question="Insurance Provider">c</answer>
+      <answer question="Billing Amount">2305</answer>
+      <answer question="Room Number">249</answer>
+      <answer question="Admission Type">b</answer>
+      <answer question="Discharge Date">2021-02-04</answer>
+      <answer question="Medication">e</answer>
+      <answer question="Test Results">b</answer>
+    </respondent>
+  </responses>
+</questionnaire>
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which patient has Aetna insurance?
+</task>

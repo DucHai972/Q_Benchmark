@@ -1,0 +1,175 @@
+================================================================================
+PROMPT SENT TO LLM - NO_ONE_SHOT
+================================================================================
+Dataset: healthcare-dataset
+Task: conceptual_aggregation
+Case: case_3
+Format: md
+Expected Answer: 3
+
+Configuration:
+• One-shot example: False
+• Partition marks: True
+• Role prompting: True
+• Format explanation: True
+• Data at end: False
+
+================================================================================
+ACTUAL PROMPT
+================================================================================
+
+<questionnaire>
+# Survey Data
+
+## Questions
+
+- **Name:** What is your name? [Open-ended]
+- **Age:** What is your age? [Open-ended]
+- **Gender:** What is your gender? [MCQ: A. Female B. Male]
+- **Blood Type:** What is your blood type? [MCQ: A. A+ B. A- C. AB+ D. AB- E. B+ F. B- G. O+ H. O-]
+- **Medical Condition:** What is your medical condition? [MCQ: A. Arthritis B. Asthma C. Cancer D. Diabetes E. Hypertension F. Obesity]
+- **Date of Admission:** What is your date of admission? [Open-ended]
+- **Doctor:** What is your doctor? [Open-ended]
+- **Hospital:** What is your hospital? [Open-ended]
+- **Insurance Provider:** What is your insurance provider? [MCQ: A. Aetna B. Blue Cross C. Cigna D. Medicare E. UnitedHealthcare]
+- **Billing Amount:** What is your billing amount? [Open-ended]
+- **Room Number:** What is your room number? [Open-ended]
+- **Admission Type:** What is your admission type? [MCQ: A. Elective B. Emergency C. Urgent]
+- **Discharge Date:** What is your discharge date? [Open-ended]
+- **Medication:** What is your medication? [MCQ: A. Aspirin B. Ibuprofen C. Lipitor D. Paracetamol E. Penicillin]
+- **Test Results:** What is your test results? [MCQ: A. Abnormal B. Inconclusive C. Normal]
+
+## Responses
+
+### Respondent 28
+
+- **Name:** mr. KenNEth MoORE
+- **Age:** 34
+- **Gender:** a
+- **Blood Type:** a
+- **Medical Condition:** d
+- **Date of Admission:** 2022-06-21
+- **Doctor:** James Ellis
+- **Hospital:** Serrano-Dixon
+- **Insurance Provider:** e
+- **Billing Amount:** 18835
+- **Room Number:** 157
+- **Admission Type:** b
+- **Discharge Date:** 2022-06-30
+- **Medication:** c
+- **Test Results:** a
+
+### Respondent 14
+
+- **Name:** rObeRt bAuer
+- **Age:** 68
+- **Gender:** a
+- **Blood Type:** c
+- **Medical Condition:** b
+- **Date of Admission:** 2020-05-22
+- **Doctor:** Theresa Freeman
+- **Hospital:** Rivera-Gutierrez
+- **Insurance Provider:** e
+- **Billing Amount:** 33208
+- **Room Number:** 309
+- **Admission Type:** c
+- **Discharge Date:** 2020-06-19
+- **Medication:** c
+- **Test Results:** c
+
+### Respondent 111
+
+- **Name:** coLtoN stRONg
+- **Age:** 55
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** b
+- **Date of Admission:** 2022-05-13
+- **Doctor:** Benjamin Webb
+- **Hospital:** Stewart Sons and
+- **Insurance Provider:** a
+- **Billing Amount:** 37406
+- **Room Number:** 212
+- **Admission Type:** a
+- **Discharge Date:** 2022-05-20
+- **Medication:** d
+- **Test Results:** c
+
+### Respondent 109
+
+- **Name:** bRADlEY coMbS
+- **Age:** 52
+- **Gender:** b
+- **Blood Type:** d
+- **Medical Condition:** e
+- **Date of Admission:** 2021-05-14
+- **Doctor:** Christopher Butler
+- **Hospital:** Stout-Brown
+- **Insurance Provider:** c
+- **Billing Amount:** 37735
+- **Room Number:** 251
+- **Admission Type:** a
+- **Discharge Date:** 2021-06-06
+- **Medication:** e
+- **Test Results:** a
+
+### Respondent 139
+
+- **Name:** mELIssa sCOtt
+- **Age:** 38
+- **Gender:** a
+- **Blood Type:** c
+- **Medical Condition:** b
+- **Date of Admission:** 2020-01-24
+- **Doctor:** Kari Moore
+- **Hospital:** Gordon-Ward
+- **Insurance Provider:** d
+- **Billing Amount:** 17979
+- **Room Number:** 384
+- **Admission Type:** a
+- **Discharge Date:** 2020-02-12
+- **Medication:** b
+- **Test Results:** a
+
+### Respondent 126
+
+- **Name:** JasOn baKEr
+- **Age:** 50
+- **Gender:** a
+- **Blood Type:** h
+- **Medical Condition:** f
+- **Date of Admission:** 2020-10-24
+- **Doctor:** Julia Yoder
+- **Hospital:** Wright-Alexander
+- **Insurance Provider:** e
+- **Billing Amount:** 40134
+- **Room Number:** 130
+- **Admission Type:** c
+- **Discharge Date:** 2020-11-13
+- **Medication:** b
+- **Test Results:** c
+
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., "42").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., "17, 21, 23").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+How many patients have Asthma?
+</task>
