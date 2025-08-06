@@ -1,4 +1,20 @@
-@prefix : <http://example.org/survey#> .
+#!/usr/bin/env python3
+"""
+Script to fix TTL format in conceptual_aggregation to match answer_lookup format:
+1. Add missing qg: namespace prefix
+2. Fix question structure to use pred:BaseQuestion and qg:hasSubQuestion for grouped questions
+3. Fix response format to use pred: namespace and proper grouping structure
+4. Use numeric values instead of quoted strings
+"""
+
+import os
+import json
+import re
+
+def generate_ttl_from_json(json_data):
+    """Generate properly formatted TTL content from JSON data"""
+    
+    ttl_content = """@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 @prefix qg: <http://example.org/question_group#> .
 
@@ -8,7 +24,6 @@
 :QSocio_economic_status pred:Text "What is the socio-economic status of your home? [Likert 1–6: 1 = Very low, 6 = Very high]" .
 :QEthnic_identity pred:Text "According to your culture, people, or physical features, you are or are recognized as: [MCQ: 1. Indigenous 2. Gypsy 3. Raizal from San Andres, Providencia and Santa Catalina Archipelago 4. Palenquero from San Basilio 5. Black, mulatto (Afro-descendant), Afro-Colombian 6. None of the above]" .
 
-# Parental Education Question Group
 :QGParental_Education pred:BaseQuestion "How many years of education did your parents receive? [Open-ended]" ;
     qg:hasSubQuestion :QParental_Education_Father, :QParental_Education_Mother .
 :QParental_Education_Father pred:Text "Father?" .
@@ -25,7 +40,6 @@
 :QStress pred:Text "How much stress did you feel yesterday? [Likert 0–10: 0 = At no time, 10 = All the time]" .
 :QLoneliness pred:Text "How lonely or unsupported did you feel yesterday? [Likert 0–10: 0 = At no time, 10 = All the time]" .
 
-# Emotional Regulation Frequency Question Group
 :QGEmotional_Regulation_Frequency pred:BaseQuestion "Next, you will be asked questions about your emotional state. Please answer on a scale of 0 to 4, where 0 is never, 1 is 'almost never', 2 is 'sometimes', 3 is 'fairly often', and 4 is 'very often', how often you experienced the following feelings during the last month: [Likert 0–4]" ;
     qg:hasSubQuestion :QEmotional_Regulation_Frequency_Upset_by_Unexpected_Events,
                       :QEmotional_Regulation_Frequency_Unable_to_Control_Important_Things,
@@ -49,7 +63,6 @@
 :QEmotional_Regulation_Frequency_Angered_by_Uncontrollable_Events pred:Text "how often have you been angered because of things that happened that were outside of your control?" .
 :QEmotional_Regulation_Frequency_Felt_Overwhelmed pred:Text "how often have you felt difficulties were piling up so high that you could not overcome them?" .
 
-# Anxiety Symptoms Frequency Question Group
 :QGAnxiety_Symptoms_Frequency pred:BaseQuestion "Next, you will be asked questions about your emotional state. Please answer on a scale of 0 to 3, where 0 is 'Not at all', 1 is 'several days', 2 is 'more than half of the days', and 3 is 'Nearly every day'. Over the last two weeks, how often have you been bothered by the following problems? [Likert 0–3]" ;
     qg:hasSubQuestion :QAnxiety_Symptoms_Frequency_Feeling_Nervous_or_On_Edge,
                       :QAnxiety_Symptoms_Frequency_Uncontrollable_Worrying,
@@ -67,7 +80,6 @@
 :QAnxiety_Symptoms_Frequency_Irritability pred:Text "Becoming easily annoyed or irritable" .
 :QAnxiety_Symptoms_Frequency_Fear_Something_Awful_Might_Happen pred:Text "Feeling afraid, as if something awful might happen" .
 
-# Depressive Symptoms Frequency Question Group
 :QGDepressive_Symptoms_Frequency pred:BaseQuestion "Next, you will be asked questions about your emotional state. Please answer on a scale of 0 to 3, where 0 is 'Not at all', 1 is 'several days', 2 is 'more than half of the days', and 3 is 'Nearly every day'. Over the last two weeks, how often have you been bothered by the following problems?" ;
     qg:hasSubQuestion :QDepressive_Symptoms_Frequency_Anhedonia,
                       :QDepressive_Symptoms_Frequency_Depressed_Mood,
@@ -89,134 +101,114 @@
 :QDepressive_Symptoms_Frequency_Psychomotor_Changes pred:Text "Moving or speaking so slowly that other people could have noticed. Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual" .
 :QDepressive_Symptoms_Frequency_Suicidal_Thoughts pred:Text "Thoughts that you would be better off dead, or of hurting yourself" .
 
+
 # Responses
-:R73 pred:Year_of_birth 2005.0 ;
-     pred:Gender 2.0 ;
-     pred:Socio_economic_status 2.0 ;
-     pred:Ethnic_identity 6.0 .
+"""
+    
+    # Process each respondent in the JSON data
+    for respondent_data in json_data['responses']:
+        respondent_id = respondent_data['respondent']
+        answers = respondent_data['answers']
+        
+        # Individual answers first
+        individual_answers = []
+        for question, answer in answers.items():
+            if not isinstance(answer, dict):
+                # Convert question name to proper format
+                question_key = question.replace(' ', '_').replace('-', '_')
+                individual_answers.append(f"     pred:{question_key} {answer}")
+        
+        # Start respondent block
+        ttl_content += f":Respondent{respondent_id} " + ";\n     ".join(individual_answers) + " .\n\n"
+        
+        # Add grouped responses
+        for question, answer in answers.items():
+            if isinstance(answer, dict):
+                # This is a grouped question
+                group_key = question.replace(' ', '_').replace('-', '_')
+                group_responses = []
+                
+                for sub_question, sub_answer in answer.items():
+                    sub_key = sub_question.replace(' ', '_').replace('-', '_')
+                    group_responses.append(f"                       pred:{sub_key} {sub_answer}")
+                
+                ttl_content += f":Respondent{respondent_id}_{group_key}\n" + " ;\n".join(group_responses) + " .\n"
+                ttl_content += f":Respondent{respondent_id} pred:hasGroupResponse :Respondent{respondent_id}_{group_key} .\n\n"
+    
+    return ttl_content
 
-:R73_Parental_Education pred:Father 25.0 ;
-                       pred:Mother 15.0 .
-:R73 pred:hasGroupResponse :R73_Parental_Education .
+def fix_ttl_format(json_file_path, ttl_file_path):
+    """Fix TTL file format using JSON as source"""
+    
+    # Read JSON data
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        json_data = json.load(f)
+    
+    # Generate properly formatted TTL content
+    fixed_content = generate_ttl_from_json(json_data)
+    
+    # Write the fixed content
+    with open(ttl_file_path, 'w', encoding='utf-8') as f:
+        f.write(fixed_content)
+    
+    return True
 
-:R73 pred:Life_satisfaction 8.0 ;
-     pred:Happiness 5.0 ;
-     pred:Laughter 4.0 ;
-     pred:Learning 5.0 ;
-     pred:Enjoyment 5.0 ;
-     pred:Worry 2.0 ;
-     pred:Depression 1.0 ;
-     pred:Anger 2.0 ;
-     pred:Stress 4.0 ;
-     pred:Loneliness 6.0 .
+def process_all_conceptual_aggregation_ttl_files():
+    """Process all TTL files in conceptual_aggregation to match answer_lookup format"""
+    json_base_path = '/insight-fast/dnguyen/Q_Benchmark/benchmark_cache/self-reported-mental-health/conceptual_aggregation/json'
+    ttl_base_path = '/insight-fast/dnguyen/Q_Benchmark/benchmark_cache/self-reported-mental-health/conceptual_aggregation/ttl'
+    
+    if not os.path.exists(json_base_path):
+        print(f"Error: JSON directory not found: {json_base_path}")
+        return
+    
+    if not os.path.exists(ttl_base_path):
+        print(f"Error: TTL directory not found: {ttl_base_path}")
+        return
+    
+    # Get all JSON files to use as source
+    json_files = [f for f in os.listdir(json_base_path) if f.endswith('.json')]
+    
+    print(f"Found {len(json_files)} JSON files to process...")
+    
+    processed_count = 0
+    changes_made = 0
+    
+    for json_file in sorted(json_files):
+        # Determine corresponding TTL file
+        ttl_file = json_file.replace('.json', '.ttl')
+        json_file_path = os.path.join(json_base_path, json_file)
+        ttl_file_path = os.path.join(ttl_base_path, ttl_file)
+        
+        if not os.path.exists(ttl_file_path):
+            print(f"Warning: TTL file not found: {ttl_file}")
+            continue
+        
+        # Fix the TTL file using JSON data
+        try:
+            if fix_ttl_format(json_file_path, ttl_file_path):
+                changes_made += 1
+                print(f"Processing {ttl_file}: Fixed format to match answer_lookup structure")
+            else:
+                print(f"Processing {ttl_file}: No changes needed")
+        except Exception as e:
+            print(f"Error processing {ttl_file}: {str(e)}")
+        
+        processed_count += 1
+    
+    print(f"\nProcessing complete!")
+    print(f"- Total files processed: {processed_count}")
+    print(f"- Files with changes: {changes_made}")
+    print(f"- Files without changes: {processed_count - changes_made}")
+    
+    if changes_made > 0:
+        print(f"\nSuccessfully standardized conceptual_aggregation TTL format!")
+        print(f"- Added missing qg: namespace prefix")
+        print(f"- Fixed question structure with pred:BaseQuestion and qg:hasSubQuestion")
+        print(f"- Fixed response format with pred: namespace and proper grouping")
+        print(f"- Converted to numeric values matching answer_lookup format")
+    else:
+        print(f"\nAll TTL files already had correct format.")
 
-:R73_Emotional_Regulation_Frequency pred:Upset_by_Unexpected_Events 2.0 ;
-                                   pred:Unable_to_Control_Important_Things 2.0 ;
-                                   pred:Lacked_Confidence_Handling_Problems 2.0 ;
-                                   pred:Unable_to_Cope 2.0 ;
-                                   pred:Irritated_by_Life 2.0 ;
-                                   pred:On_Top_of_Things 2.0 .
-:R73 pred:hasGroupResponse :R73_Emotional_Regulation_Frequency .
-
-:R73_Anxiety_Symptoms_Frequency pred:Feeling_Nervous_or_On_Edge 2.0 ;
-                               pred:Trouble_Relaxing 1.0 ;
-                               pred:Restlessness 1.0 ;
-                               pred:Irritability 2.0 ;
-                               pred:Fear_Something_Awful_Might_Happen 2.0 .
-:R73 pred:hasGroupResponse :R73_Anxiety_Symptoms_Frequency .
-
-:R73_Depressive_Symptoms_Frequency pred:Anhedonia 1.0 ;
-                                  pred:Sleep_Problems 2.0 ;
-                                  pred:Fatigue 1.0 ;
-                                  pred:Appetite_Changes 1.0 ;
-                                  pred:Feelings_of_Worthlessness 1.0 ;
-                                  pred:Concentration_Difficulties 1.0 ;
-                                  pred:Suicidal_Thoughts 0.0 .
-:R73 pred:hasGroupResponse :R73_Depressive_Symptoms_Frequency .
-
-:R85 pred:Year_of_birth 2004.0 ;
-     pred:Gender 2.0 ;
-     pred:Socio_economic_status 3.0 ;
-     pred:Ethnic_identity 6.0 .
-
-:R85_Parental_Education pred:Father 18.0 .
-:R85 pred:hasGroupResponse :R85_Parental_Education .
-
-:R85 pred:Life_satisfaction 5.0 ;
-     pred:Happiness 6.0 ;
-     pred:Laughter 6.0 ;
-     pred:Learning 8.0 ;
-     pred:Enjoyment 5.0 ;
-     pred:Worry 1.0 ;
-     pred:Depression 1.0 ;
-     pred:Anger 2.0 ;
-     pred:Stress 4.0 ;
-     pred:Loneliness 1.0 .
-
-:R85_Emotional_Regulation_Frequency pred:Upset_by_Unexpected_Events 2.0 ;
-                                   pred:Unable_to_Control_Important_Things 3.0 ;
-                                   pred:Lacked_Confidence_Handling_Problems 2.0 ;
-                                   pred:Unable_to_Cope 3.0 ;
-                                   pred:Irritated_by_Life 3.0 ;
-                                   pred:On_Top_of_Things 2.0 .
-:R85 pred:hasGroupResponse :R85_Emotional_Regulation_Frequency .
-
-:R85_Anxiety_Symptoms_Frequency pred:Feeling_Nervous_or_On_Edge 1.0 ;
-                               pred:Trouble_Relaxing 1.0 ;
-                               pred:Restlessness 0.0 ;
-                               pred:Irritability 1.0 ;
-                               pred:Fear_Something_Awful_Might_Happen 1.0 .
-:R85 pred:hasGroupResponse :R85_Anxiety_Symptoms_Frequency .
-
-:R85_Depressive_Symptoms_Frequency pred:Anhedonia 2.0 ;
-                                  pred:Sleep_Problems 2.0 ;
-                                  pred:Fatigue 3.0 ;
-                                  pred:Appetite_Changes 3.0 ;
-                                  pred:Feelings_of_Worthlessness 1.0 ;
-                                  pred:Concentration_Difficulties 1.0 ;
-                                  pred:Suicidal_Thoughts 0.0 .
-:R85 pred:hasGroupResponse :R85_Depressive_Symptoms_Frequency .
-
-:R129 pred:Year_of_birth 2001.0 ;
-      pred:Gender 2.0 ;
-      pred:Socio_economic_status 3.0 ;
-      pred:Ethnic_identity 6.0 .
-
-:R129_Parental_Education pred:Father 13.0 ;
-                        pred:Mother 13.0 .
-:R129 pred:hasGroupResponse :R129_Parental_Education .
-
-:R129 pred:Life_satisfaction 8.0 ;
-      pred:Happiness 9.0 ;
-      pred:Laughter 6.0 ;
-      pred:Learning 5.0 ;
-      pred:Enjoyment 6.0 ;
-      pred:Worry 1.0 ;
-      pred:Depression 1.0 ;
-      pred:Anger 1.0 ;
-      pred:Stress 3.0 ;
-      pred:Loneliness 0.0 .
-
-:R129_Emotional_Regulation_Frequency pred:Upset_by_Unexpected_Events 1.0 ;
-                                    pred:Unable_to_Control_Important_Things 1.0 ;
-                                    pred:Lacked_Confidence_Handling_Problems 3.0 ;
-                                    pred:Unable_to_Cope 2.0 ;
-                                    pred:Irritated_by_Life 3.0 ;
-                                    pred:On_Top_of_Things 2.0 .
-:R129 pred:hasGroupResponse :R129_Emotional_Regulation_Frequency .
-
-:R129_Anxiety_Symptoms_Frequency pred:Feeling_Nervous_or_On_Edge 1.0 ;
-                                pred:Trouble_Relaxing 1.0 ;
-                                pred:Restlessness 0.0 ;
-                                pred:Irritability 0.0 ;
-                                pred:Fear_Something_Awful_Might_Happen 0.0 .
-:R129 pred:hasGroupResponse :R129_Anxiety_Symptoms_Frequency .
-
-:R129_Depressive_Symptoms_Frequency pred:Anhedonia 1.0 ;
-                                   pred:Sleep_Problems 1.0 ;
-                                   pred:Fatigue 2.0 ;
-                                   pred:Appetite_Changes 2.0 ;
-                                   pred:Feelings_of_Worthlessness 0.0 ;
-                                   pred:Concentration_Difficulties 2.0 ;
-                                   pred:Suicidal_Thoughts 0.0 .
-:R129 pred:hasGroupResponse :R129_Depressive_Symptoms_Frequency .
+if __name__ == "__main__":
+    process_all_conceptual_aggregation_ttl_files()
