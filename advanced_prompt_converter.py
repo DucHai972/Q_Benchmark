@@ -1,405 +1,274 @@
 #!/usr/bin/env python3
 """
-Advanced Prompt Converter
+Advanced Prompt Converter for Q-Benchmark
 
-This script reads advanced prompt templates from the advanced_prompts directory
-and converts them into actual LLM prompts by replacing all placeholders with 
-actual data from the preprocessed_data directory.
+This script converts advanced prompts by combining:
+1. Advanced prompt templates from advanced_prompts/ directory
+2. Questionnaire data from benchmark_cache/ directory
+
+Output format matches the existing converted_prompts/ structure with CSV files
+containing: case_id, task, question, questionnaire, expected_answer, prompt, metadata_json
 """
 
 import json
 import csv
 import os
+import argparse
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-import argparse
-import logging
-
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+import sys
 
 
 class AdvancedPromptConverter:
-    """Converts advanced prompt templates into actual LLM prompts."""
-    
-    def __init__(self, 
-                 advanced_prompts_dir: str = "advanced_prompts",
-                 preprocessed_data_dir: str = "preprocessed_data",
+    def __init__(self, advanced_prompts_dir: str = "advanced_prompts", 
+                 benchmark_cache_dir: str = "benchmark_cache",
                  output_dir: str = "converted_prompts"):
-        """
-        Initialize the prompt converter.
-        
-        Args:
-            advanced_prompts_dir: Directory containing advanced prompt templates
-            preprocessed_data_dir: Directory containing preprocessed data
-            output_dir: Directory to save converted prompts
-        """
         self.advanced_prompts_dir = Path(advanced_prompts_dir)
-        self.preprocessed_data_dir = Path(preprocessed_data_dir)
+        self.benchmark_cache_dir = Path(benchmark_cache_dir) 
         self.output_dir = Path(output_dir)
         
-        # Create output directory
-        self.output_dir.mkdir(exist_ok=True)
+        # Ensure output directory exists
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         
-    def load_questionnaire_data(self, dataset: str, format: str = "json") -> str:
-        """
-        Load questionnaire data for a dataset in specified format.
+        # Supported data formats
+        self.formats = ["json", "xml", "html", "md", "txt", "ttl"]
         
-        Args:
-            dataset: Dataset name
-            format: Data format (json, xml, html, md, txt, ttl)
-            
-        Returns:
-            String representation of the questionnaire data
-        """
-        # Map format extensions
-        format_extensions = {
-            "json": ".json",
-            "xml": ".xml", 
-            "html": ".html",
-            "md": ".md",
-            "txt": ".txt",
-            "ttl": ".ttl"
-        }
-        
-        if format not in format_extensions:
-            raise ValueError(f"Unsupported format: {format}")
-        
-        # Find the questionnaire file for this dataset
-        dataset_dir = self.preprocessed_data_dir / dataset
-        if not dataset_dir.exists():
-            raise FileNotFoundError(f"Dataset directory not found: {dataset_dir}")
-        
-        # Look for questionnaire files
-        questionnaire_files = list(dataset_dir.glob(f"*questionnaire{format_extensions[format]}"))
-        if not questionnaire_files:
-            raise FileNotFoundError(f"No questionnaire file found for {dataset} in {format} format")
-        
-        questionnaire_file = questionnaire_files[0]
-        
-        with open(questionnaire_file, 'r', encoding='utf-8') as f:
-            return f.read()
+    def load_advanced_prompt_file(self, filepath: Path) -> List[Dict[str, Any]]:
+        """Load and parse an advanced prompt JSON file"""
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    return data
+                else:
+                    return [data]
+        except Exception as e:
+            print(f"Error loading advanced prompt file {filepath}: {e}")
+            return []
     
-    def replace_data_placeholders(self, text: str, dataset: str, format: str = "json") -> str:
-        """
-        Replace data placeholders like '[Insert the full data block here]' with actual data.
-        
-        Args:
-            text: Text containing placeholders
-            dataset: Dataset name
-            format: Data format
-            
-        Returns:
-            Text with placeholders replaced
-        """
-        if "[Insert the full data block here]" in text:
-            questionnaire_data = self.load_questionnaire_data(dataset, format)
-            text = text.replace("[Insert the full data block here]", questionnaire_data)
-        
-        return text
-    
-    def convert_prompt_template(self, prompt_data: Dict[str, Any], dataset: str, format: str = "json") -> str:
-        """
-        Convert a single prompt template into an actual LLM prompt.
-        
-        Args:
-            prompt_data: Dictionary containing prompt template data
-            dataset: Dataset name
-            format: Data format
-            
-        Returns:
-            Final LLM prompt string
-        """
-        # Get the template
-        template = prompt_data.get("prompt", "")
-        
-        if not template:
-            logger.warning(f"No prompt template found for case {prompt_data.get('case_id', 'unknown')}")
+    def load_questionnaire_data(self, filepath: Path) -> str:
+        """Load questionnaire data from benchmark cache file"""
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                return f.read()
+        except Exception as e:
+            print(f"Error loading questionnaire file {filepath}: {e}")
             return ""
-        
-        # Create a copy of prompt_data for replacements
-        replacement_data = prompt_data.copy()
-        
-        # Replace data placeholders in all relevant fields
-        fields_with_data_placeholders = ["CASE_1", "questionnaire"]
-        for field in fields_with_data_placeholders:
-            if field in replacement_data:
-                replacement_data[field] = self.replace_data_placeholders(
-                    replacement_data[field], dataset, format
-                )
-        
-        # Replace template placeholders with actual values
-        final_prompt = template
-        
-        # List of placeholder patterns to replace
-        placeholder_patterns = [
-            "[CASE_1]",
-            "[questionnaire]", 
-            "[ROLE_PROMPTING]",
-            "[FORMAT_EXPLANATION]",
-            "[OUTPUT_INSTRUCTIONS]",
-            "[question]"
-        ]
-        
-        for pattern in placeholder_patterns:
-            # Remove brackets to get the key name
-            key = pattern[1:-1]  # Remove [ and ]
-            
-            if key in replacement_data:
-                final_prompt = final_prompt.replace(pattern, str(replacement_data[key]))
-            else:
-                logger.warning(f"Placeholder {pattern} found but no corresponding key '{key}' in prompt data")
-        
-        return final_prompt
     
-    def convert_dataset_prompts(self, dataset: str, task: Optional[str] = None, 
-                               format: str = "json", max_cases: Optional[int] = None) -> Dict[str, Any]:
-        """
-        Convert all prompts for a dataset/task combination.
+    def substitute_prompt_variables(self, prompt_template: str, variables: Dict[str, str]) -> str:
+        """Substitute variables in prompt template with actual values"""
+        result = prompt_template
         
-        Args:
-            dataset: Dataset name
-            task: Task name (if None, convert all tasks)
-            format: Data format
-            max_cases: Maximum number of cases to convert
-            
-        Returns:
-            Dictionary containing converted prompts
-        """
-        results = {
-            "dataset": dataset,
-            "task": task,
-            "format": format,
-            "converted_prompts": []
+        # Replace bracketed variables with their values
+        for key, value in variables.items():
+            placeholder = f"[{key}]"
+            if placeholder in result:
+                result = result.replace(placeholder, value)
+        
+        return result
+    
+    def generate_converted_prompt(self, advanced_prompt: Dict[str, Any], 
+                                  questionnaire_data: str, format_type: str) -> Dict[str, str]:
+        """Generate a converted prompt entry"""
+        
+        # Extract components from advanced prompt
+        case_id = advanced_prompt.get("case_id", "")
+        task = advanced_prompt.get("task", "")
+        question = advanced_prompt.get("question", "")
+        expected_answer = advanced_prompt.get("expected_answer", "")
+        prompt_template = advanced_prompt.get("prompt", "")
+        metadata = advanced_prompt.get("metadata", {})
+        
+        # Prepare variables for substitution
+        variables = {
+            "questionnaire": questionnaire_data,
+            "question": question,
+            "ROLE_PROMPTING": advanced_prompt.get("ROLE_PROMPTING", ""),
+            "FORMAT_EXPLANATION": advanced_prompt.get("FORMAT_EXPLANATION", ""),
+            "OUTPUT_INSTRUCTIONS": advanced_prompt.get("OUTPUT_INSTRUCTIONS", ""),
+            "CASE_1": advanced_prompt.get("CASE_1", "")
         }
         
-        # Find advanced prompt files for this dataset
-        dataset_prompts_dir = self.advanced_prompts_dir / dataset
-        if not dataset_prompts_dir.exists():
-            raise FileNotFoundError(f"Advanced prompts directory not found: {dataset_prompts_dir}")
+        # Generate the final prompt
+        final_prompt = self.substitute_prompt_variables(prompt_template, variables)
         
-        # Get prompt files
-        if task:
-            prompt_files = list(dataset_prompts_dir.glob(f"*{task}*qa_pairs.json"))
-        else:
-            prompt_files = list(dataset_prompts_dir.glob("*qa_pairs.json"))
+        return {
+            "case_id": case_id,
+            "task": task,
+            "question": question,
+            "questionnaire": questionnaire_data,
+            "expected_answer": expected_answer,
+            "prompt": final_prompt,
+            "metadata_json": json.dumps(metadata) if metadata else ""
+        }
+    
+    def process_dataset_task_format(self, dataset: str, task: str, format_type: str) -> bool:
+        """Process a specific dataset/task/format combination"""
         
-        if not prompt_files:
-            raise FileNotFoundError(f"No prompt files found for dataset {dataset}" + 
-                                   (f" task {task}" if task else ""))
+        # Load advanced prompt file
+        advanced_prompt_file = (self.advanced_prompts_dir / dataset / 
+                               f"{dataset}_{task}_qa_pairs.json")
         
-        for prompt_file in prompt_files:
-            logger.info(f"Converting prompts from: {prompt_file}")
+        if not advanced_prompt_file.exists():
+            print(f"Advanced prompt file not found: {advanced_prompt_file}")
+            return False
             
-            # Load prompt data
-            with open(prompt_file, 'r', encoding='utf-8') as f:
-                prompt_data_list = json.load(f)
+        advanced_prompts = self.load_advanced_prompt_file(advanced_prompt_file)
+        if not advanced_prompts:
+            print(f"No advanced prompts loaded from {advanced_prompt_file}")
+            return False
+        
+        # Prepare output data
+        converted_prompts = []
+        
+        # Process each advanced prompt case
+        for advanced_prompt in advanced_prompts:
+            case_id = advanced_prompt.get("case_id", "")
             
-            # Convert each prompt
-            converted_count = 0
-            for prompt_data in prompt_data_list:
-                if max_cases and converted_count >= max_cases:
-                    break
+            # Load corresponding questionnaire data
+            questionnaire_file = (self.benchmark_cache_dir / dataset / task / 
+                                format_type / f"{case_id}.{format_type}")
+            
+            if not questionnaire_file.exists():
+                print(f"Warning: Questionnaire file not found: {questionnaire_file}")
+                continue
                 
-                try:
-                    converted_prompt = self.convert_prompt_template(prompt_data, dataset, format)
-                    
-                    result_item = {
-                        "case_id": prompt_data.get("case_id", f"case_{converted_count + 1}"),
-                        "task": prompt_data.get("task", "unknown"),
-                        "question": prompt_data.get("question", ""),
-                        "expected_answer": prompt_data.get("expected_answer", ""),
-                        "converted_prompt": converted_prompt,
-                        "metadata": prompt_data.get("metadata", {})
-                    }
-                    
-                    results["converted_prompts"].append(result_item)
-                    converted_count += 1
-                    
-                except Exception as e:
-                    logger.error(f"Error converting prompt for case {prompt_data.get('case_id', 'unknown')}: {e}")
-        
-        logger.info(f"Converted {len(results['converted_prompts'])} prompts for {dataset}")
-        return results
-    
-    def save_converted_prompts(self, results: Dict[str, Any], filename: str, output_format: str = "json"):
-        """
-        Save converted prompts to file in specified format.
-        
-        Args:
-            results: Results dictionary from convert_dataset_prompts
-            filename: Output filename (without extension)
-            output_format: Output format - 'json' or 'csv'
-        """
-        if output_format.lower() == "csv":
-            self._save_as_csv(results, filename)
-        else:
-            self._save_as_json(results, filename)
-    
-    def _save_as_json(self, results: Dict[str, Any], filename: str):
-        """Save results as JSON file."""
-        output_file = self.output_dir / f"{filename}.json"
-        
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-        
-        logger.info(f"Saved converted prompts to JSON: {output_file}")
-    
-    def _save_as_csv(self, results: Dict[str, Any], filename: str):
-        """Save results as CSV file."""
-        output_file = self.output_dir / f"{filename}.csv"
-        
-        # Prepare data for CSV
-        prompts_data = results.get("converted_prompts", [])
-        
-        if not prompts_data:
-            logger.warning("No prompts to save")
-            return
-        
-        # Increase CSV field size limit to handle large prompts
-        csv.field_size_limit(1000000)  # Set to 1MB limit
-        
-        # Define CSV columns
-        fieldnames = [
-            "case_id", 
-            "task", 
-            "question", 
-            "expected_answer", 
-            "converted_prompt",
-            "metadata_json"
-        ]
-        
-        with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
-            writer.writeheader()
+            questionnaire_data = self.load_questionnaire_data(questionnaire_file)
+            if not questionnaire_data:
+                print(f"Warning: No questionnaire data loaded from {questionnaire_file}")
+                continue
             
-            for prompt_item in prompts_data:
-                # Convert metadata to JSON string for CSV storage
-                metadata_json = json.dumps(prompt_item.get("metadata", {}), ensure_ascii=False)
+            # Generate converted prompt
+            converted_prompt = self.generate_converted_prompt(
+                advanced_prompt, questionnaire_data, format_type)
+            converted_prompts.append(converted_prompt)
+        
+        if not converted_prompts:
+            print(f"No converted prompts generated for {dataset}/{task}/{format_type}")
+            return False
+        
+        # Write output CSV file
+        output_file = (self.output_dir / dataset / task / 
+                      f"{task}_{format_type}_converted_prompts.csv")
+        
+        # Ensure output directory exists
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        try:
+            with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
+                fieldnames = ["case_id", "task", "question", "questionnaire", 
+                            "expected_answer", "prompt", "metadata_json"]
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
-                row = {
-                    "case_id": prompt_item.get("case_id", ""),
-                    "task": prompt_item.get("task", ""),
-                    "question": prompt_item.get("question", ""),
-                    "expected_answer": prompt_item.get("expected_answer", ""),
-                    "converted_prompt": prompt_item.get("converted_prompt", ""),
-                    "metadata_json": metadata_json
-                }
-                writer.writerow(row)
-        
-        logger.info(f"Saved converted prompts to CSV: {output_file}")
-        logger.info(f"CSV contains {len(prompts_data)} rows of prompt data")
+                writer.writeheader()
+                for prompt in converted_prompts:
+                    writer.writerow(prompt)
+            
+            print(f"Successfully generated: {output_file} ({len(converted_prompts)} prompts)")
+            return True
+            
+        except Exception as e:
+            print(f"Error writing output file {output_file}: {e}")
+            return False
     
-    def convert_all_datasets(self, format: str = "json", max_cases: Optional[int] = None, output_format: str = "csv"):
-        """
-        Convert prompts for all available datasets.
-        
-        Args:
-            format: Data format (json, xml, html, etc.)
-            max_cases: Maximum cases per dataset/task
-            output_format: Output format - 'json' or 'csv'
-        """
+    def get_available_datasets(self) -> List[str]:
+        """Get list of available datasets"""
         if not self.advanced_prompts_dir.exists():
-            raise FileNotFoundError(f"Advanced prompts directory not found: {self.advanced_prompts_dir}")
+            return []
+        return [d.name for d in self.advanced_prompts_dir.iterdir() if d.is_dir()]
+    
+    def get_available_tasks(self, dataset: str) -> List[str]:
+        """Get list of available tasks for a dataset"""
+        dataset_dir = self.advanced_prompts_dir / dataset
+        if not dataset_dir.exists():
+            return []
         
-        # Get all dataset directories
-        datasets = [d.name for d in self.advanced_prompts_dir.iterdir() if d.is_dir()]
+        tasks = set()
+        for file in dataset_dir.glob("*.json"):
+            # Extract task from filename: dataset_task_qa_pairs.json
+            name_parts = file.stem.split('_')
+            if len(name_parts) >= 3 and name_parts[-2] == "qa" and name_parts[-1] == "pairs":
+                task = "_".join(name_parts[1:-2])  # Remove dataset prefix and qa_pairs suffix
+                tasks.add(task)
+        
+        return sorted(list(tasks))
+    
+    def convert_all(self, datasets: Optional[List[str]] = None, 
+                   tasks: Optional[List[str]] = None,
+                   formats: Optional[List[str]] = None) -> bool:
+        """Convert all specified datasets/tasks/formats"""
+        
+        # Use all available if not specified
+        if datasets is None:
+            datasets = self.get_available_datasets()
+        if formats is None:
+            formats = self.formats
+            
+        success_count = 0
+        total_count = 0
         
         for dataset in datasets:
-            logger.info(f"Converting dataset: {dataset}")
+            dataset_tasks = tasks if tasks else self.get_available_tasks(dataset)
             
-            try:
-                results = self.convert_dataset_prompts(dataset, format=format, max_cases=max_cases)
-                filename = f"{dataset}_{format}_converted_prompts"
-                self.save_converted_prompts(results, filename, output_format)
-                
-            except Exception as e:
-                logger.error(f"Error converting dataset {dataset}: {e}")
+            for task in dataset_tasks:
+                for format_type in formats:
+                    total_count += 1
+                    if self.process_dataset_task_format(dataset, task, format_type):
+                        success_count += 1
+        
+        print(f"\nConversion completed: {success_count}/{total_count} successful")
+        return success_count == total_count
 
 
 def main():
-    """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        description="Convert advanced prompt templates into actual LLM prompts",
-        formatter_class=argparse.RawDescriptionHelpFormatter
-    )
+        description="Convert advanced prompts by combining templates with questionnaire data")
     
-    parser.add_argument(
-        "--dataset", "-d",
-        default="healthcare-dataset",
-        help="Dataset to convert (default: healthcare-dataset)"
-    )
-    
-    parser.add_argument(
-        "--task", "-t",
-        help="Specific task to convert (default: all tasks)"
-    )
-    
-    parser.add_argument(
-        "--format", "-f",
-        default="json",
-        choices=["json", "xml", "html", "md", "txt", "ttl"],
-        help="Data format to use (default: json)"
-    )
-    
-    parser.add_argument(
-        "--max-cases", "-n",
-        type=int,
-        help="Maximum number of cases to convert"
-    )
-    
-    parser.add_argument(
-        "--all-datasets",
-        action="store_true",
-        help="Convert all available datasets"
-    )
-    
-    parser.add_argument(
-        "--output-dir", "-o",
-        default="converted_prompts",
-        help="Output directory (default: converted_prompts)"
-    )
-    
-    parser.add_argument(
-        "--output-format", 
-        default="csv",
-        choices=["json", "csv"],
-        help="Output file format (default: csv)"
-    )
+    parser.add_argument("--datasets", nargs="*", 
+                       help="Dataset names to process (default: all)")
+    parser.add_argument("--tasks", nargs="*",
+                       help="Task names to process (default: all)")
+    parser.add_argument("--formats", nargs="*", 
+                       choices=["json", "xml", "html", "md", "txt", "ttl"],
+                       help="Data formats to process (default: all)")
+    parser.add_argument("--advanced-prompts-dir", default="advanced_prompts",
+                       help="Directory containing advanced prompt templates")
+    parser.add_argument("--benchmark-cache-dir", default="benchmark_cache", 
+                       help="Directory containing questionnaire data")
+    parser.add_argument("--output-dir", default="converted_prompts",
+                       help="Output directory for converted prompts")
+    parser.add_argument("--list", action="store_true",
+                       help="List available datasets and tasks")
     
     args = parser.parse_args()
     
     # Initialize converter
-    converter = AdvancedPromptConverter(output_dir=args.output_dir)
+    converter = AdvancedPromptConverter(
+        args.advanced_prompts_dir,
+        args.benchmark_cache_dir, 
+        args.output_dir
+    )
     
-    try:
-        if args.all_datasets:
-            logger.info("Converting all datasets...")
-            converter.convert_all_datasets(format=args.format, max_cases=args.max_cases, output_format=args.output_format)
-        else:
-            logger.info(f"Converting dataset: {args.dataset}")
-            results = converter.convert_dataset_prompts(
-                dataset=args.dataset,
-                task=args.task,
-                format=args.format,
-                max_cases=args.max_cases
-            )
-            
-            # Generate filename (without extension, let save method add it)
-            task_suffix = f"_{args.task}" if args.task else ""
-            filename = f"{args.dataset}{task_suffix}_{args.format}_converted_prompts"
-            
-            converter.save_converted_prompts(results, filename, args.output_format)
-        
-        logger.info("Conversion completed successfully!")
-        
-    except Exception as e:
-        logger.error(f"Conversion failed: {e}")
-        return 1
+    # List available options
+    if args.list:
+        print("Available datasets:")
+        for dataset in converter.get_available_datasets():
+            print(f"  - {dataset}")
+            tasks = converter.get_available_tasks(dataset)
+            if tasks:
+                print(f"    Tasks: {', '.join(tasks)}")
+        print(f"\nAvailable formats: {', '.join(converter.formats)}")
+        return
     
-    return 0
+    # Convert prompts
+    success = converter.convert_all(
+        datasets=args.datasets,
+        tasks=args.tasks,
+        formats=args.formats
+    )
+    
+    sys.exit(0 if success else 1)
 
 
 if __name__ == "__main__":
-    exit(main())
+    main()

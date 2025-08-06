@@ -1,0 +1,3147 @@
+"case_id","task","question","questionnaire","expected_answer","prompt","metadata_json"
+"case_1","multi_hop_relational_inference","Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""272"",
+      ""answers"": {
+        ""ResponseId"": 272,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, back-end;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 77000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;JavaScript"",
+        ""LanguageWantToWorkWith"": ""Go"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","29115","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""272"",
+      ""answers"": {
+        ""ResponseId"": 272,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, back-end;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 77000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;JavaScript"",
+        ""LanguageWantToWorkWith"": ""Go"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""272"",
+      ""answers"": {
+        ""ResponseId"": 272,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, back-end;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 77000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;JavaScript"",
+        ""LanguageWantToWorkWith"": ""Go"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+</task>","{""inference_question"": ""Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?"", ""matching_respondents"": [""29115""]}"
+"case_2","multi_hop_relational_inference","Which respondent numbers have MainBranch A and CompTotal of 67000.0?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""331"",
+      ""answers"": {
+        ""ResponseId"": 331,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 95000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C;C#;C++;HTML/CSS;JavaScript;Rust;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    },
+    {
+      ""respondent"": ""72851"",
+      ""answers"": {
+        ""ResponseId"": 72851,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""19"",
+        ""YearsCodePro"": ""15"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 120000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""56"",
+      ""answers"": {
+        ""ResponseId"": 56,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""9"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 141000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;Java;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","73215","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""331"",
+      ""answers"": {
+        ""ResponseId"": 331,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 95000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C;C#;C++;HTML/CSS;JavaScript;Rust;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    },
+    {
+      ""respondent"": ""72851"",
+      ""answers"": {
+        ""ResponseId"": 72851,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""19"",
+        ""YearsCodePro"": ""15"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 120000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""56"",
+      ""answers"": {
+        ""ResponseId"": 56,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""9"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 141000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;Java;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""331"",
+      ""answers"": {
+        ""ResponseId"": 331,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 95000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C;C#;C++;HTML/CSS;JavaScript;Rust;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    },
+    {
+      ""respondent"": ""72851"",
+      ""answers"": {
+        ""ResponseId"": 72851,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""19"",
+        ""YearsCodePro"": ""15"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 120000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""56"",
+      ""answers"": {
+        ""ResponseId"": 56,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""9"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 141000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;Java;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73215"",
+      ""answers"": {
+        ""ResponseId"": 73215,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, front-end;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 67000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;HTML/CSS;JavaScript;PowerShell;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have MainBranch A and CompTotal of 67000.0?
+</task>","{""inference_question"": ""Which respondent numbers have MainBranch A and CompTotal of 67000.0?"", ""matching_respondents"": [""73215""]}"
+"case_3","multi_hop_relational_inference","Which respondent numbers have EdLevel E and Country United Kingdom of Great Britain and Northern Ireland?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""297"",
+      ""answers"": {
+        ""ResponseId"": 297,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Python"",
+        ""LanguageWantToWorkWith"": ""Elixir;Julia"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""143"",
+      ""answers"": {
+        ""ResponseId"": 143,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""H"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Data scientist or machine learning specialist;Developer, embedded applications or devices"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Singapore"",
+        ""CompTotal"": 180000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C++;Julia;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""F#;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72878"",
+      ""answers"": {
+        ""ResponseId"": 72878,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""13"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 188000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;Dart;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;C++;Dart;F#;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","272","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""297"",
+      ""answers"": {
+        ""ResponseId"": 297,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Python"",
+        ""LanguageWantToWorkWith"": ""Elixir;Julia"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""143"",
+      ""answers"": {
+        ""ResponseId"": 143,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""H"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Data scientist or machine learning specialist;Developer, embedded applications or devices"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Singapore"",
+        ""CompTotal"": 180000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C++;Julia;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""F#;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72878"",
+      ""answers"": {
+        ""ResponseId"": 72878,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""13"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 188000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;Dart;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;C++;Dart;F#;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""297"",
+      ""answers"": {
+        ""ResponseId"": 297,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Python"",
+        ""LanguageWantToWorkWith"": ""Elixir;Julia"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""143"",
+      ""answers"": {
+        ""ResponseId"": 143,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""H"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Data scientist or machine learning specialist;Developer, embedded applications or devices"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Singapore"",
+        ""CompTotal"": 180000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C++;Julia;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""F#;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72878"",
+      ""answers"": {
+        ""ResponseId"": 72878,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""13"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 188000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;Dart;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;C++;Dart;F#;HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have EdLevel E and Country United Kingdom of Great Britain and Northern Ireland?
+</task>","{""inference_question"": ""Which respondent numbers have EdLevel E and Country United Kingdom of Great Britain and Northern Ireland?"", ""matching_respondents"": [""272""]}"
+"case_4","multi_hop_relational_inference","Which respondent numbers have EdLevel E and LanguageHaveWorkedWith containing Python?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73038"",
+      ""answers"": {
+        ""ResponseId"": 73038,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""13"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Thailand"",
+        ""CompTotal"": 7200.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""127"",
+      ""answers"": {
+        ""ResponseId"": 127,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 100000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;Python;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73059"",
+      ""answers"": {
+        ""ResponseId"": 73059,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""38"",
+        ""YearsCodePro"": ""34"",
+        ""DevType"": ""Engineer, data;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Database administrator;DevOps specialist;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Norway"",
+        ""CompTotal"": 850000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;Delphi;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Delphi;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","72659, 73103","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73038"",
+      ""answers"": {
+        ""ResponseId"": 73038,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""13"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Thailand"",
+        ""CompTotal"": 7200.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""127"",
+      ""answers"": {
+        ""ResponseId"": 127,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 100000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;Python;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73059"",
+      ""answers"": {
+        ""ResponseId"": 73059,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""38"",
+        ""YearsCodePro"": ""34"",
+        ""DevType"": ""Engineer, data;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Database administrator;DevOps specialist;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Norway"",
+        ""CompTotal"": 850000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;Delphi;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Delphi;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73038"",
+      ""answers"": {
+        ""ResponseId"": 73038,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""13"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Thailand"",
+        ""CompTotal"": 7200.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""127"",
+      ""answers"": {
+        ""ResponseId"": 127,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Canada"",
+        ""CompTotal"": 100000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;Python;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73059"",
+      ""answers"": {
+        ""ResponseId"": 73059,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""38"",
+        ""YearsCodePro"": ""34"",
+        ""DevType"": ""Engineer, data;Developer, back-end;Developer, desktop or enterprise applications;Developer, QA or test;Database administrator;DevOps specialist;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Norway"",
+        ""CompTotal"": 850000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;Delphi;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Delphi;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have EdLevel E and LanguageHaveWorkedWith containing Python?
+</task>","{""inference_question"": ""Which respondent numbers have EdLevel E and LanguageHaveWorkedWith containing Python?"", ""matching_respondents"": [""72659"", ""73103""]}"
+"case_5","multi_hop_relational_inference","Which respondent numbers have DevType containing Developer, full-stack and ToolsTechHaveWorkedWith containing Docker?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""72659"",
+      ""answers"": {
+        ""ResponseId"": 72659,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 91000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;C++;HTML/CSS;JavaScript;MATLAB;PowerShell;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73211"",
+      ""answers"": {
+        ""ResponseId"": 73211,
+        ""MainBranch"": ""B"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;Other (please specify):;Cloud infrastructure engineer;Security professional"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 130000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Go;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72651"",
+      ""answers"": {
+        ""ResponseId"": 72651,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""1,000 to 4,999 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 350000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Java;JavaScript;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73103"",
+      ""answers"": {
+        ""ResponseId"": 73103,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Developer, embedded applications or devices;Cloud infrastructure engineer"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;C#;C++;Elixir;Erlang;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Unity 3D;Unreal Engine"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","72659, 73103","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""72659"",
+      ""answers"": {
+        ""ResponseId"": 72659,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 91000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;C++;HTML/CSS;JavaScript;MATLAB;PowerShell;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73211"",
+      ""answers"": {
+        ""ResponseId"": 73211,
+        ""MainBranch"": ""B"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;Other (please specify):;Cloud infrastructure engineer;Security professional"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 130000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Go;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72651"",
+      ""answers"": {
+        ""ResponseId"": 72651,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""1,000 to 4,999 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 350000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Java;JavaScript;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73103"",
+      ""answers"": {
+        ""ResponseId"": 73103,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Developer, embedded applications or devices;Cloud infrastructure engineer"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;C#;C++;Elixir;Erlang;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Unity 3D;Unreal Engine"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""72659"",
+      ""answers"": {
+        ""ResponseId"": 72659,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""10"",
+        ""DevType"": ""Developer, full-stack;Developer, desktop or enterprise applications"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 91000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;C++;HTML/CSS;JavaScript;MATLAB;PowerShell;Python;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73211"",
+      ""answers"": {
+        ""ResponseId"": 73211,
+        ""MainBranch"": ""B"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;DevOps specialist;Other (please specify):;Cloud infrastructure engineer;Security professional"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 130000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""LanguageWantToWorkWith"": ""C#;Go;HTML/CSS;JavaScript;PowerShell;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72651"",
+      ""answers"": {
+        ""ResponseId"": 72651,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""C"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""1,000 to 4,999 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 350000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;Java;JavaScript;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73103"",
+      ""answers"": {
+        ""ResponseId"": 73103,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Database administrator;Developer, embedded applications or devices;Cloud infrastructure engineer"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;C#;C++;Elixir;Erlang;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Unity 3D;Unreal Engine"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have DevType containing Developer, full-stack and ToolsTechHaveWorkedWith containing Docker?
+</task>","{""inference_question"": ""Which respondent numbers have DevType containing Developer, full-stack and ToolsTechHaveWorkedWith containing Docker?"", ""matching_respondents"": [""72659"", ""73103""]}"
+"case_6","multi_hop_relational_inference","Which respondent numbers have YearsCode of 15 and EdLevel E?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73051"",
+      ""answers"": {
+        ""ResponseId"": 73051,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""Estonia"",
+        ""CompTotal"": 3550.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;Solidity;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73085"",
+      ""answers"": {
+        ""ResponseId"": 73085,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Czech Republic"",
+        ""CompTotal"": 63000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73142"",
+      ""answers"": {
+        ""ResponseId"": 73142,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""26"",
+        ""YearsCodePro"": ""16"",
+        ""DevType"": ""Developer, full-stack;Developer, mobile"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""France"",
+        ""CompTotal"": 3944.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;Groovy;HTML/CSS;Java;JavaScript;Lua;Objective-C;PHP;PowerShell;Python;SQL;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;HTML/CSS;Java;JavaScript;Objective-C;Rust;SQL;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""285"",
+      ""answers"": {
+        ""ResponseId"": 285,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile;Database administrator;Project manager;Product manager"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Italy"",
+        ""CompTotal"": 33000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;HTML/CSS;Java;JavaScript;Kotlin;PHP;SQL;TypeScript;VBA"",
+        ""LanguageWantToWorkWith"": ""Java;JavaScript;Kotlin;PHP;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Unity 3D"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    }
+  ]
+}","72659","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73051"",
+      ""answers"": {
+        ""ResponseId"": 73051,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""Estonia"",
+        ""CompTotal"": 3550.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;Solidity;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73085"",
+      ""answers"": {
+        ""ResponseId"": 73085,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Czech Republic"",
+        ""CompTotal"": 63000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73142"",
+      ""answers"": {
+        ""ResponseId"": 73142,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""26"",
+        ""YearsCodePro"": ""16"",
+        ""DevType"": ""Developer, full-stack;Developer, mobile"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""France"",
+        ""CompTotal"": 3944.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;Groovy;HTML/CSS;Java;JavaScript;Lua;Objective-C;PHP;PowerShell;Python;SQL;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;HTML/CSS;Java;JavaScript;Objective-C;Rust;SQL;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""285"",
+      ""answers"": {
+        ""ResponseId"": 285,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile;Database administrator;Project manager;Product manager"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Italy"",
+        ""CompTotal"": 33000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;HTML/CSS;Java;JavaScript;Kotlin;PHP;SQL;TypeScript;VBA"",
+        ""LanguageWantToWorkWith"": ""Java;JavaScript;Kotlin;PHP;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Unity 3D"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73051"",
+      ""answers"": {
+        ""ResponseId"": 73051,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""7"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""Estonia"",
+        ""CompTotal"": 3550.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""JavaScript;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;Solidity;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73085"",
+      ""answers"": {
+        ""ResponseId"": 73085,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""18"",
+        ""YearsCodePro"": ""12"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Czech Republic"",
+        ""CompTotal"": 63000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;SQL"",
+        ""LanguageWantToWorkWith"": ""JavaScript;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73142"",
+      ""answers"": {
+        ""ResponseId"": 73142,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""26"",
+        ""YearsCodePro"": ""16"",
+        ""DevType"": ""Developer, full-stack;Developer, mobile"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""France"",
+        ""CompTotal"": 3944.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;C;Groovy;HTML/CSS;Java;JavaScript;Lua;Objective-C;PHP;PowerShell;Python;SQL;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;C;HTML/CSS;Java;JavaScript;Objective-C;Rust;SQL;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""285"",
+      ""answers"": {
+        ""ResponseId"": 285,
+        ""MainBranch"": ""A"",
+        ""Employment"": [
+          ""A"",
+          ""C""
+        ],
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""3"",
+        ""DevType"": ""Developer, mobile;Database administrator;Project manager;Product manager"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Italy"",
+        ""CompTotal"": 33000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;C++;HTML/CSS;Java;JavaScript;Kotlin;PHP;SQL;TypeScript;VBA"",
+        ""LanguageWantToWorkWith"": ""Java;JavaScript;Kotlin;PHP;SQL"",
+        ""ToolsTechHaveWorkedWith"": ""Unity 3D"",
+        ""VersionControlSystem"": [
+          ""A"",
+          ""Other (please specify):""
+        ]
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have YearsCode of 15 and EdLevel E?
+</task>","{""inference_question"": ""Which respondent numbers have YearsCode of 15 and EdLevel E?"", ""matching_respondents"": [""72659""]}"
+"case_7","multi_hop_relational_inference","Which respondent numbers have MainBranch B and CompTotal of 130000.0?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""455"",
+      ""answers"": {
+        ""ResponseId"": 455,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""4"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 70000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""303"",
+      ""answers"": {
+        ""ResponseId"": 303,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 155000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72804"",
+      ""answers"": {
+        ""ResponseId"": 72804,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Hungary"",
+        ""CompTotal"": 500000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Go;HTML/CSS;Java;Kotlin;Python;Scala"",
+        ""LanguageWantToWorkWith"": ""Go;Haskell;Python;Scala"",
+        ""ToolsTechHaveWorkedWith"": ""Docker"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","73211","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""455"",
+      ""answers"": {
+        ""ResponseId"": 455,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""4"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 70000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""303"",
+      ""answers"": {
+        ""ResponseId"": 303,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 155000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72804"",
+      ""answers"": {
+        ""ResponseId"": 72804,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Hungary"",
+        ""CompTotal"": 500000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Go;HTML/CSS;Java;Kotlin;Python;Scala"",
+        ""LanguageWantToWorkWith"": ""Go;Haskell;Python;Scala"",
+        ""ToolsTechHaveWorkedWith"": ""Docker"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""455"",
+      ""answers"": {
+        ""ResponseId"": 455,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""4"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 70000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""C#;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""303"",
+      ""answers"": {
+        ""ResponseId"": 303,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 155000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72804"",
+      ""answers"": {
+        ""ResponseId"": 72804,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""Hungary"",
+        ""CompTotal"": 500000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""Go;HTML/CSS;Java;Kotlin;Python;Scala"",
+        ""LanguageWantToWorkWith"": ""Go;Haskell;Python;Scala"",
+        ""ToolsTechHaveWorkedWith"": ""Docker"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have MainBranch B and CompTotal of 130000.0?
+</task>","{""inference_question"": ""Which respondent numbers have MainBranch B and CompTotal of 130000.0?"", ""matching_respondents"": [""73211""]}"
+"case_8","multi_hop_relational_inference","Which respondent numbers have EdLevel C and YearsCode of 3?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73070"",
+      ""answers"": {
+        ""ResponseId"": 73070,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;HTML/CSS;Kotlin;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72897"",
+      ""answers"": {
+        ""ResponseId"": 72897,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""35"",
+        ""YearsCodePro"": ""20"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, mobile;Database administrator;System administrator"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Greece"",
+        ""CompTotal"": 80000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;Java;JavaScript;SQL;Swift"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;Elixir;Go;Objective-C;Rust;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72746"",
+      ""answers"": {
+        ""ResponseId"": 72746,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""Sweden"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""368"",
+      ""answers"": {
+        ""ResponseId"": 368,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 109000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Go;MATLAB;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""Clojure;Go;Julia;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","72651","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73070"",
+      ""answers"": {
+        ""ResponseId"": 73070,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;HTML/CSS;Kotlin;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72897"",
+      ""answers"": {
+        ""ResponseId"": 72897,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""35"",
+        ""YearsCodePro"": ""20"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, mobile;Database administrator;System administrator"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Greece"",
+        ""CompTotal"": 80000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;Java;JavaScript;SQL;Swift"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;Elixir;Go;Objective-C;Rust;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72746"",
+      ""answers"": {
+        ""ResponseId"": 72746,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""Sweden"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""368"",
+      ""answers"": {
+        ""ResponseId"": 368,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 109000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Go;MATLAB;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""Clojure;Go;Julia;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""73070"",
+      ""answers"": {
+        ""ResponseId"": 73070,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""B"",
+        ""YearsCode"": ""14"",
+        ""YearsCodePro"": ""8"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Developer, mobile"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United Kingdom of Great Britain and Northern Ireland"",
+        ""CompTotal"": 90000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Go;HTML/CSS;Kotlin;Python;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;Kubernetes;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72897"",
+      ""answers"": {
+        ""ResponseId"": 72897,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""35"",
+        ""YearsCodePro"": ""20"",
+        ""DevType"": ""Developer, full-stack;Developer, back-end;Developer, mobile;Database administrator;System administrator"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""Greece"",
+        ""CompTotal"": 80000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;Java;JavaScript;SQL;Swift"",
+        ""LanguageWantToWorkWith"": ""Bash/Shell;Elixir;Go;Objective-C;Rust;Swift;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72746"",
+      ""answers"": {
+        ""ResponseId"": 72746,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""15"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""500 to 999 employees"",
+        ""Country"": ""Sweden"",
+        ""CompTotal"": 40000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""C#;HTML/CSS;TypeScript"",
+        ""LanguageWantToWorkWith"": ""C#;HTML/CSS;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""368"",
+      ""answers"": {
+        ""ResponseId"": 368,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""8"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Data scientist or machine learning specialist;Engineer, data;Data or business analyst"",
+        ""OrgSize"": ""5,000 to 9,999 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 109000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Go;MATLAB;Python;Rust"",
+        ""LanguageWantToWorkWith"": ""Clojure;Go;Julia;Python;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have EdLevel C and YearsCode of 3?
+</task>","{""inference_question"": ""Which respondent numbers have EdLevel C and YearsCode of 3?"", ""matching_respondents"": [""72651""]}"
+"case_9","multi_hop_relational_inference","Which respondent numbers have Country China and CompFreq C?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""319"",
+      ""answers"": {
+        ""ResponseId"": 319,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""A"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Latvia"",
+        ""CompTotal"": 36000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Dart;Kotlin;Python;Ruby;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Dart;Python;Ruby"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72835"",
+      ""answers"": {
+        ""ResponseId"": 72835,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, QA or test;Designer;System administrator"",
+        ""OrgSize"": ""Just me - I am a freelancer, sole proprietor, etc."",
+        ""Country"": ""Colombia"",
+        ""CompTotal"": 37000000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","72651","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""319"",
+      ""answers"": {
+        ""ResponseId"": 319,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""A"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Latvia"",
+        ""CompTotal"": 36000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Dart;Kotlin;Python;Ruby;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Dart;Python;Ruby"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72835"",
+      ""answers"": {
+        ""ResponseId"": 72835,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, QA or test;Designer;System administrator"",
+        ""OrgSize"": ""Just me - I am a freelancer, sole proprietor, etc."",
+        ""Country"": ""Colombia"",
+        ""CompTotal"": 37000000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""319"",
+      ""answers"": {
+        ""ResponseId"": 319,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""A"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""5"",
+        ""DevType"": ""Developer, mobile"",
+        ""OrgSize"": ""10 to 19 employees"",
+        ""Country"": ""Latvia"",
+        ""CompTotal"": 36000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Dart;Kotlin;Python;Ruby;Swift;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Dart;Python;Ruby"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""29115"",
+      ""answers"": {
+        ""ResponseId"": 29115,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""23"",
+        ""YearsCodePro"": ""18"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""Bangladesh"",
+        ""CompTotal"": 280000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;Java;JavaScript;Kotlin;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""Erlang;Rust"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72835"",
+      ""answers"": {
+        ""ResponseId"": 72835,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""C"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""7"",
+        ""DevType"": ""Developer, front-end;Engineer, site reliability;Developer, full-stack;Developer, back-end;Developer, QA or test;Designer;System administrator"",
+        ""OrgSize"": ""Just me - I am a freelancer, sole proprietor, etc."",
+        ""Country"": ""Colombia"",
+        ""CompTotal"": 37000000.0,
+        ""CompFreq"": ""B"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;Python"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;Python;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Homebrew;npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have Country China and CompFreq C?
+</task>","{""inference_question"": ""Which respondent numbers have Country China and CompFreq C?"", ""matching_respondents"": [""72651""]}"
+"case_10","multi_hop_relational_inference","Which respondent numbers have EdLevel F and CompTotal of 320000.0?","{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""475"",
+      ""answers"": {
+        ""ResponseId"": 475,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 320000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;OCaml;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Kotlin;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72916"",
+      ""answers"": {
+        ""ResponseId"": 72916,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end;DevOps specialist;Cloud infrastructure engineer;System administrator"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Germany"",
+        ""CompTotal"": 65000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;Java;Python"",
+        ""LanguageWantToWorkWith"": ""Kotlin"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Terraform"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73069"",
+      ""answers"": {
+        ""ResponseId"": 73069,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 125000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Ansible;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}","475","<example>
+Which respondent numbers have YearsCodePro of 18 and CompTotal of 280000.0?
+
+DATA:
+
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""475"",
+      ""answers"": {
+        ""ResponseId"": 475,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 320000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;OCaml;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Kotlin;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72916"",
+      ""answers"": {
+        ""ResponseId"": 72916,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end;DevOps specialist;Cloud infrastructure engineer;System administrator"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Germany"",
+        ""CompTotal"": 65000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;Java;Python"",
+        ""LanguageWantToWorkWith"": ""Kotlin"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Terraform"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73069"",
+      ""answers"": {
+        ""ResponseId"": 73069,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 125000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Ansible;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+
+Answer: 29115
+</example>
+
+<questionnaire>
+{
+  ""questions"": {
+    ""ResponseId"": ""ResponseId: Respondent's ID number [Open-ended]"",
+    ""MainBranch"": ""MainBranch: Primary professional identity [MCQ: A. I am a developer by profession B. I am not primarily a developer, but I write code sometimes as part of my work C. I used to be a developer by profession, but no longer am D. I am learning to code E. I code primarily as a hobby F. None of these]"",
+    ""Employment"": ""Employment: Employment status [MCQ-Multi: A. Employed, full-time B. Employed, part-time C. Independent contractor, freelancer, or self-employed D. Not employed, but looking for work E. Not employed, and not looking for work F. Student, full-time G. Student, part-time H. Retired I. Prefer not to say]"",
+    ""EdLevel"": ""EdLevel: Highest level of education [MCQ: A. Primary/elementary school B. Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.) C. Some college/university study without earning a degree D. Associate degree (A.A., A.S., etc.) E. Bachelor's degree (B.A., B.S., B.Eng., etc.) F. Master's degree (M.A., M.S., M.Eng., MBA, etc.) G. Professional degree (JD, MD, etc.) H. Other doctoral degree (Ph.D., Ed.D., etc.) I. Something else]"",
+    ""YearsCode"": ""YearsCode: Total years of coding experience [Open-ended]"",
+    ""YearsCodePro"": ""YearsCodePro: Years of professional coding experience [Open-ended]"",
+    ""DevType"": ""DevType: Roles in development [Open-ended]"",
+    ""OrgSize"": ""OrgSize: Size of the organization they work in [Open-ended]"",
+    ""Country"": ""Country: Country of residence [Open-ended]"",
+    ""CompTotal"": ""CompTotal: Total compensation [Open-ended]"",
+    ""CompFreq"": ""CompFreq: Compensation frequency [MCQ: A. Weekly B. Monthly C. Yearly]"",
+    ""LanguageHaveWorkedWith"": ""LanguageHaveWorkedWith: Programming languages worked with [Open-ended]"",
+    ""LanguageWantToWorkWith"": ""LanguageWantToWorkWith: Programming languages they want to use [Open-ended]"",
+    ""ToolsTechHaveWorkedWith"": ""ToolsTechHaveWorkedWith: Developer tools used [Open-ended]"",
+    ""VersionControlSystem"": ""VersionControlSystem: Version control systems used [MCQ: A. Git B. Mercurial C. SVN D. I don't use one]""
+  },
+  ""responses"": [
+    {
+      ""respondent"": ""475"",
+      ""answers"": {
+        ""ResponseId"": 475,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""F"",
+        ""YearsCode"": ""20"",
+        ""YearsCodePro"": ""11"",
+        ""DevType"": ""Developer, front-end;Developer, full-stack"",
+        ""OrgSize"": ""100 to 499 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 320000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;HTML/CSS;JavaScript;OCaml;Python;TypeScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Kotlin;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Homebrew;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72916"",
+      ""answers"": {
+        ""ResponseId"": 72916,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""5"",
+        ""YearsCodePro"": ""1"",
+        ""DevType"": ""Developer, back-end;DevOps specialist;Cloud infrastructure engineer;System administrator"",
+        ""OrgSize"": ""10,000 or more employees"",
+        ""Country"": ""Germany"",
+        ""CompTotal"": 65000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""Bash/Shell;Go;HTML/CSS;Java;Python"",
+        ""LanguageWantToWorkWith"": ""Kotlin"",
+        ""ToolsTechHaveWorkedWith"": ""Docker;Kubernetes;Terraform"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""73069"",
+      ""answers"": {
+        ""ResponseId"": 73069,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""12"",
+        ""YearsCodePro"": ""4"",
+        ""DevType"": ""Developer, full-stack"",
+        ""OrgSize"": ""20 to 99 employees"",
+        ""Country"": ""United States of America"",
+        ""CompTotal"": 125000.0,
+        ""CompFreq"": ""C"",
+        ""LanguageHaveWorkedWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""LanguageWantToWorkWith"": ""HTML/CSS;JavaScript;SQL;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""Ansible;npm;Yarn"",
+        ""VersionControlSystem"": ""A""
+      }
+    },
+    {
+      ""respondent"": ""72689"",
+      ""answers"": {
+        ""ResponseId"": 72689,
+        ""MainBranch"": ""A"",
+        ""Employment"": ""A"",
+        ""EdLevel"": ""E"",
+        ""YearsCode"": ""3"",
+        ""YearsCodePro"": ""2"",
+        ""DevType"": ""Developer, front-end"",
+        ""OrgSize"": ""2 to 9 employees"",
+        ""Country"": ""China"",
+        ""CompTotal"": 2000.0,
+        ""CompFreq"": ""A"",
+        ""LanguageHaveWorkedWith"": ""JavaScript"",
+        ""LanguageWantToWorkWith"": ""JavaScript;Python;Rust;TypeScript"",
+        ""ToolsTechHaveWorkedWith"": ""npm"",
+        ""VersionControlSystem"": ""A""
+      }
+    }
+  ]
+}
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+
+If the question asks for a count, provide only the final number (e.g., ""42"").
+
+If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
+
+If the question asks for a specific text comment, provide only that text.
+
+<task>
+Which respondent numbers have EdLevel F and CompTotal of 320000.0?
+</task>","{""inference_question"": ""Which respondent numbers have EdLevel F and CompTotal of 320000.0?"", ""matching_respondents"": [""475""]}"
