@@ -7,7 +7,7 @@ This script converts advanced prompts by combining:
 2. Questionnaire data from benchmark_cache/ directory
 
 Output format matches the existing converted_prompts/ structure with CSV files
-containing: case_id, task, question, questionnaire, expected_answer, prompt, metadata_json
+containing: case_id, task, question, questionnaire, expected_answer, prompt, Response, Correct
 """
 
 import json
@@ -67,17 +67,34 @@ class AdvancedPromptConverter:
         
         return result
     
+    def load_case1_data(self, dataset: str, task: str, format_type: str) -> str:
+        """Load case_1 data to use as example in CASE_1"""
+        case1_file = (self.benchmark_cache_dir / dataset / task / 
+                     format_type / f"case_1.{format_type}")
+        
+        if case1_file.exists():
+            return self.load_questionnaire_data(case1_file)
+        return ""
+    
     def generate_converted_prompt(self, advanced_prompt: Dict[str, Any], 
-                                  questionnaire_data: str, format_type: str) -> Dict[str, str]:
+                                  questionnaire_data: str, format_type: str,
+                                  dataset: str, task: str) -> Dict[str, str]:
         """Generate a converted prompt entry"""
         
         # Extract components from advanced prompt
         case_id = advanced_prompt.get("case_id", "")
-        task = advanced_prompt.get("task", "")
+        task_name = advanced_prompt.get("task", "")
         question = advanced_prompt.get("question", "")
         expected_answer = advanced_prompt.get("expected_answer", "")
         prompt_template = advanced_prompt.get("prompt", "")
         metadata = advanced_prompt.get("metadata", {})
+        
+        # Load case_1 data for CASE_1 example
+        case1_data = self.load_case1_data(dataset, task, format_type)
+        
+        # Process CASE_1 to replace placeholder with actual case_1 data
+        case_1_template = advanced_prompt.get("CASE_1", "")
+        case_1_with_data = case_1_template.replace("[Insert the full data block here]", case1_data)
         
         # Prepare variables for substitution
         variables = {
@@ -86,7 +103,7 @@ class AdvancedPromptConverter:
             "ROLE_PROMPTING": advanced_prompt.get("ROLE_PROMPTING", ""),
             "FORMAT_EXPLANATION": advanced_prompt.get("FORMAT_EXPLANATION", ""),
             "OUTPUT_INSTRUCTIONS": advanced_prompt.get("OUTPUT_INSTRUCTIONS", ""),
-            "CASE_1": advanced_prompt.get("CASE_1", "")
+            "CASE_1": case_1_with_data
         }
         
         # Generate the final prompt
@@ -94,12 +111,13 @@ class AdvancedPromptConverter:
         
         return {
             "case_id": case_id,
-            "task": task,
+            "task": task_name,
             "question": question,
             "questionnaire": questionnaire_data,
             "expected_answer": expected_answer,
             "prompt": final_prompt,
-            "metadata_json": json.dumps(metadata) if metadata else ""
+            "Response": "",
+            "Correct": ""
         }
     
     def process_dataset_task_format(self, dataset: str, task: str, format_type: str) -> bool:
@@ -140,7 +158,7 @@ class AdvancedPromptConverter:
             
             # Generate converted prompt
             converted_prompt = self.generate_converted_prompt(
-                advanced_prompt, questionnaire_data, format_type)
+                advanced_prompt, questionnaire_data, format_type, dataset, task)
             converted_prompts.append(converted_prompt)
         
         if not converted_prompts:
@@ -157,7 +175,7 @@ class AdvancedPromptConverter:
         try:
             with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
                 fieldnames = ["case_id", "task", "question", "questionnaire", 
-                            "expected_answer", "prompt", "metadata_json"]
+                            "expected_answer", "prompt", "Response", "Correct"]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
                 writer.writeheader()
