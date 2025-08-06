@@ -165,7 +165,7 @@ class AdvancedPromptConverter:
             print(f"No converted prompts generated for {dataset}/{task}/{format_type}")
             return False
         
-        # Write output CSV file
+        # Write output CSV file with smart handling
         output_file = (self.output_dir / dataset / task / 
                       f"{task}_{format_type}_converted_prompts.csv")
         
@@ -173,16 +173,47 @@ class AdvancedPromptConverter:
         output_file.parent.mkdir(parents=True, exist_ok=True)
         
         try:
+            # Load existing CSV data if file exists
+            existing_data = {}
+            if output_file.exists():
+                with open(output_file, 'r', newline='', encoding='utf-8') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    for row in reader:
+                        existing_data[row['case_id']] = row
+            
+            # Update existing data with new prompts (overwrite or add)
+            for prompt in converted_prompts:
+                case_id = prompt['case_id']
+                if case_id in existing_data:
+                    print(f"Overwriting existing case_id: {case_id}")
+                else:
+                    print(f"Adding new case_id: {case_id}")
+                existing_data[case_id] = prompt
+            
+            # Sort by case_id (natural sorting for case_1, case_2, etc.)
+            def natural_sort_key(case_id):
+                # Extract number from case_id (e.g., "case_1" -> 1)
+                try:
+                    if case_id.startswith('case_'):
+                        return int(case_id.split('_')[1])
+                    else:
+                        return float('inf')  # Put non-standard case_ids at the end
+                except (ValueError, IndexError):
+                    return float('inf')
+            
+            sorted_prompts = sorted(existing_data.values(), key=lambda x: natural_sort_key(x['case_id']))
+            
+            # Write the updated and sorted CSV file
+            fieldnames = ["case_id", "task", "question", "questionnaire", 
+                        "expected_answer", "prompt", "Response", "Correct"]
+            
             with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ["case_id", "task", "question", "questionnaire", 
-                            "expected_answer", "prompt", "Response", "Correct"]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                
                 writer.writeheader()
-                for prompt in converted_prompts:
+                for prompt in sorted_prompts:
                     writer.writerow(prompt)
             
-            print(f"Successfully generated: {output_file} ({len(converted_prompts)} prompts)")
+            print(f"Successfully updated: {output_file} ({len(sorted_prompts)} total prompts, {len(converted_prompts)} processed)")
             return True
             
         except Exception as e:

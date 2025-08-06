@@ -1,711 +1,575 @@
+#!/usr/bin/env python3
 """
-Benchmark Pipeline for LLM Data Format Evaluation
+Simple Benchmark Pipeline for Q-Benchmark
+
+This pipeline reads prompts from converted_prompts CSV files, runs them through
+OpenAI and Google Gemini models, evaluates responses, and updates CSV files
+with results.
 """
 
 import os
-import json
+import csv
 import time
-from datetime import datetime
+import argparse
+import logging
 from pathlib import Path
 from typing import Dict, List, Any, Optional
-import logging
 from dotenv import load_dotenv
-import pandas as pd
-from tqdm import tqdm
-
-from benchmark_prompt_generator import BenchmarkPromptGenerator
-from llm_clients import create_llm_client
-from evaluator import BenchmarkEvaluator
+# Progress bar - use tqdm if available, otherwise simple counter
+try:
+    from tqdm import tqdm
+    HAS_TQDM = True
+except ImportError:
+    HAS_TQDM = False
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-class BenchmarkPipeline:
-    """Main benchmark pipeline for evaluating LLMs across data formats."""
+
+class SimpleLLMClient:
+    """Base class for LLM API clients"""
     
-    def __init__(self, output_dir: str = "benchmark_results", selected_models: Optional[List[str]] = None):
+    def __init__(self, api_key: str, model_name: str, provider: str):
+        self.api_key = api_key
+        self.model_name = model_name
+        self.provider = provider
+    
+    def generate(self, prompt: str, max_tokens: int = 1000) -> Dict[str, Any]:
+        """Generate response from LLM"""
+        raise NotImplementedError
+
+
+class SimpleOpenAIClient(SimpleLLMClient):
+    """Simple OpenAI API Client"""
+    
+    def __init__(self, api_key: str, model_name: str = "gpt-4.1-mini"):
+        super().__init__(api_key, model_name, "openai")
+        try:
+            from openai import OpenAI
+            self.client = OpenAI(api_key=api_key)
+        except ImportError:
+            raise ImportError("Please install openai: pip install openai")
+    
+    def generate(self, prompt: str, max_tokens: int = 1000) -> Dict[str, Any]:
+        """Generate response using OpenAI API"""
+        start_time = time.time()
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=max_tokens,
+                temperature=0
+            )
+            
+            end_time = time.time()
+            response_content = response.choices[0].message.content or ""
+            
+            return {
+                "response": response_content.strip(),
+                "success": True,
+                "error": None,
+                "response_time": end_time - start_time
+            }
+        except Exception as e:
+            end_time = time.time()
+            logger.error(f"OpenAI API error: {e}")
+            return {
+                "response": "",
+                "success": False,
+                "error": str(e),
+                "response_time": end_time - start_time
+            }
+
+
+class SimpleGoogleClient(SimpleLLMClient):
+    """Simple Google Gemini API Client"""
+    
+    def __init__(self, api_key: str, model_name: str = "gemini-1.5-flash"):
+        super().__init__(api_key, model_name, "google")
+        try:
+            import google.generativeai as genai
+            genai.configure(api_key=api_key)
+            self.model = genai.GenerativeModel(model_name)
+        except ImportError:
+            raise ImportError("Please install google-generativeai: pip install google-generativeai")
+    
+    def generate(self, prompt: str, max_tokens: int = 1000) -> Dict[str, Any]:
+        """Generate response using Google Gemini API"""
+        start_time = time.time()
+        try:
+            response = self.model.generate_content(
+                prompt,
+                generation_config={
+                    "max_output_tokens": max_tokens,
+                    "temperature": 0
+                }
+            )
+            
+            end_time = time.time()
+            response_text = response.text if response.text else ""
+            
+            return {
+                "response": response_text.strip(),
+                "success": True,
+                "error": None,
+                "response_time": end_time - start_time
+            }
+        except Exception as e:
+            end_time = time.time()
+            logger.error(f"Google API error: {e}")
+            return {
+                "response": "",
+                "success": False,
+                "error": str(e),
+                "response_time": end_time - start_time
+            }
+
+
+class SimpleEvaluator:
+    """Simple response evaluator"""
+    
+    def evaluate_response(self, response: str, expected_answer: str) -> Dict[str, Any]:
         """
-        Initialize the benchmark pipeline.
+        Simple evaluation: check if expected answer appears in response
+        Returns True/False for correctness
+        """
+        if not response or not expected_answer:
+            return {"correct": False, "score": 0.0}
         
-        Args:
-            output_dir: Directory to save results
-            selected_models: List of models to initialize (openai, google, deepseek). If None, initialize all available.
-        """
+        # Simple substring matching (case-insensitive)
+        response_lower = response.lower().strip()
+        expected_lower = expected_answer.lower().strip()
+        
+        # Check if expected answer is contained in response
+        is_correct = expected_lower in response_lower
+        score = 1.0 if is_correct else 0.0
+        
+        return {
+            "correct": is_correct,
+            "score": score
+        }
+
+
+class SimpleBenchmarkPipeline:
+    """Simple benchmark pipeline for processing CSV prompt files"""
+    
+    def __init__(self, converted_prompts_dir: str = "converted_prompts", init_clients: bool = True, 
+                 openai_model: str = "gpt-3.5-turbo", google_model: str = "gemini-1.5-flash"):
         load_dotenv()
         
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(exist_ok=True)
-        self.selected_models = selected_models or ["openai", "google", "deepseek"]
+        self.converted_prompts_dir = Path(converted_prompts_dir)
+        self.results_dir = Path("benchmark_results")
+        self.evaluator = SimpleEvaluator()
+        self.openai_model = openai_model
+        self.google_model = google_model
         
-        # Initialize components
-        self.prompt_generator = BenchmarkPromptGenerator()
-        self.evaluator = BenchmarkEvaluator()
+        # Create results directory
+        self.results_dir.mkdir(exist_ok=True)
         
-        # Initialize LLM clients
-        self.llm_clients = self._initialize_llm_clients()
-        
-        logger.info(f"Initialized pipeline with {len(self.llm_clients)} LLM clients")
+        # Initialize LLM clients only if requested
+        if init_clients:
+            self.clients = self._initialize_clients()
+            logger.info(f"Initialized pipeline with {len(self.clients)} LLM clients")
+        else:
+            self.clients = {}
     
-    def _initialize_llm_clients(self) -> Dict[str, Any]:
-        """Initialize LLM clients from environment variables for selected models only."""
+    def _initialize_clients(self) -> Dict[str, SimpleLLMClient]:
+        """Initialize LLM clients from .env file"""
         clients = {}
         
-        # OpenAI
-        if "openai" in self.selected_models:
-            openai_key = os.getenv("OPENAI_API_KEY")
-            if openai_key:
-                try:
-                    clients["openai"] = create_llm_client("openai", openai_key)
-                    logger.info("Initialized OpenAI client")
-                except Exception as e:
-                    logger.warning(f"Failed to initialize OpenAI client: {e}")
-            else:
-                logger.warning("OpenAI selected but OPENAI_API_KEY not found in .env")
+        # Initialize OpenAI client
+        openai_key = os.getenv("OPENAI_API_KEY")
+        if openai_key:
+            try:
+                clients["openai"] = SimpleOpenAIClient(openai_key, self.openai_model)
+                logger.info(f"Initialized OpenAI client with model: {self.openai_model}")
+            except Exception as e:
+                logger.warning(f"Failed to initialize OpenAI client: {e}")
+        else:
+            logger.warning("OPENAI_API_KEY not found in .env file")
         
-        # Google
-        if "google" in self.selected_models:
-            google_key = os.getenv("GOOGLE_API_KEY")
-            if google_key:
-                try:
-                    clients["google"] = create_llm_client("google", google_key)
-                    logger.info("Initialized Google client")
-                except Exception as e:
-                    logger.warning(f"Failed to initialize Google client: {e}")
-            else:
-                logger.warning("Google selected but GOOGLE_API_KEY not found in .env")
-        
-        # DeepSeek
-        if "deepseek" in self.selected_models:
-            deepseek_key = os.getenv("DEEPSEEK_API_KEY")
-            if deepseek_key:
-                try:
-                    clients["deepseek"] = create_llm_client("deepseek", deepseek_key)
-                    logger.info("Initialized DeepSeek client")
-                except Exception as e:
-                    logger.warning(f"Failed to initialize DeepSeek client: {e}")
-            else:
-                logger.warning("DeepSeek selected but DEEPSEEK_API_KEY not found in .env")
+        # Initialize Google client
+        google_key = os.getenv("GOOGLE_API_KEY")
+        if google_key:
+            try:
+                clients["google"] = SimpleGoogleClient(google_key, self.google_model)
+                logger.info(f"Initialized Google client with model: {self.google_model}")
+            except Exception as e:
+                logger.warning(f"Failed to initialize Google client: {e}")
+        else:
+            logger.warning("GOOGLE_API_KEY not found in .env file")
         
         if not clients:
-            raise ValueError(f"No valid API keys found for selected models: {self.selected_models}. Please check your .env file.")
+            raise ValueError("No valid API keys found in .env file. Please add OPENAI_API_KEY and/or GOOGLE_API_KEY")
         
         return clients
     
-    def run_benchmark(self, 
-                     dataset: Optional[str] = None,
-                     task: Optional[str] = None, 
-                     max_cases: Optional[int] = None,
-                     formats: Optional[List[str]] = None) -> str:
-        """
-        Run the complete benchmark pipeline.
-        
-        Args:
-            dataset: Specific dataset to test (None for all)
-            task: Specific task to test (None for all)
-            max_cases: Maximum cases per task/dataset
-            formats: Specific formats to test (None for all)
-            
-        Returns:
-            Path to results directory
-        """
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        run_dir = self.output_dir / f"run_{timestamp}"
-        run_dir.mkdir(exist_ok=True)
-        
-        return self._run_benchmark_core(run_dir, dataset, task, max_cases, formats)
+    def load_csv_prompts(self, csv_file: Path) -> List[Dict[str, str]]:
+        """Load prompts from CSV file"""
+        prompts = []
+        try:
+            with open(csv_file, 'r', encoding='utf-8', newline='') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    prompts.append(dict(row))
+            return prompts
+        except Exception as e:
+            logger.error(f"Error loading CSV file {csv_file}: {e}")
+            return []
     
-    def run_benchmark_fixed_dir(self, 
-                                run_dir: str,
-                                dataset: Optional[str] = None,
-                                task: Optional[str] = None, 
-                                max_cases: Optional[int] = None,
-                                formats: Optional[List[str]] = None,
-                                progress_bar=None) -> str:
-        """
-        Run benchmark using a fixed run directory.
-        
-        Args:
-            run_dir: Fixed run directory path
-            dataset: Specific dataset to test (None for all)
-            task: Specific task to test (None for all)
-            max_cases: Maximum cases per task/dataset
-            formats: Specific formats to test (None for all)
+    def save_csv_results(self, csv_file: Path, prompts: List[Dict[str, str]], provider_name: str) -> bool:
+        """Save prompts results to benchmark_results directory organized by model with smart merging"""
+        try:
+            # Get actual model name from client
+            client = self.clients[provider_name]
+            actual_model_name = client.model_name
             
-        Returns:
-            Path to results directory
-        """
-        run_dir_path = Path(run_dir)
-        # Ensure the run directory exists
-        run_dir_path.mkdir(parents=True, exist_ok=True)
-        return self._run_benchmark_core(run_dir_path, dataset, task, max_cases, formats, progress_bar)
-    
-    def _run_benchmark_core(self, 
-                           run_dir: Path,
-                           dataset: Optional[str] = None,
-                           task: Optional[str] = None, 
-                           max_cases: Optional[int] = None,
-                           formats: Optional[List[str]] = None,
-                           progress_bar=None) -> str:
-        """
-        Core benchmark logic.
-        
-        Returns:
-            Path to results directory
-        """
-        
-        logger.info(f"Starting benchmark run: {run_dir}")
-        
-        # Generate prompts
-        logger.info("Generating benchmark prompts...")
-        prompts = self.prompt_generator.generate_benchmark_suite(
-            dataset=dataset, 
-            task=task, 
-            max_cases=max_cases
-        )
-        
-        # Filter formats if specified
-        if formats:
-            prompts = [p for p in prompts if p['data_format'] in formats]
-        
-        logger.info(f"Generated {len(prompts)} prompts")
-        
-        # Group prompts by dataset and task
-        grouped_prompts = {}
-        for prompt in prompts:
-            key = f"{prompt['dataset']}_{prompt['task']}"
-            if key not in grouped_prompts:
-                grouped_prompts[key] = []
-            grouped_prompts[key].append(prompt)
-        
-        # Run evaluation on each LLM for each dataset/task group
-        total_model_evaluations = len(grouped_prompts) * len(self.llm_clients)
-        current_evaluation = 0
-        
-        for group_key, group_prompts in grouped_prompts.items():
-            dataset_name, task_name = group_key.split('_', 1)
-            group_dir = run_dir / dataset_name / task_name
-            group_dir.mkdir(parents=True, exist_ok=True)
+            # Create model-specific directory using actual model name
+            model_dir = self.results_dir / actual_model_name
+            model_dir.mkdir(exist_ok=True)
             
-            for provider_name, client in self.llm_clients.items():
-                current_evaluation += 1
-                logger.info(f"Evaluating {provider_name} on {group_key}... ({current_evaluation}/{total_model_evaluations})")
-                
-                # Generate simple results
-                simple_results = self._evaluate_llm_simple(client, group_prompts, progress_bar)
-                
-                # Save results with model name
-                model_name_safe = client.model_name.replace("/", "_").replace("-", "_")
-                results_file = group_dir / f"{model_name_safe}_results.json"
-                with open(results_file, 'w', encoding='utf-8') as f:
-                    json.dump(simple_results, f, indent=2, ensure_ascii=False)
-        
-        logger.info(f"Benchmark completed. Results saved to: {run_dir}")
-        return str(run_dir)
+            # Recreate the same structure as converted_prompts
+            relative_path = csv_file.relative_to(self.converted_prompts_dir)
+            output_file = model_dir / relative_path
+            
+            # Ensure parent directory exists
+            output_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            # Load existing CSV data if file exists (smart merging)
+            existing_data = {}
+            if output_file.exists():
+                with open(output_file, 'r', newline='', encoding='utf-8') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    for row in reader:
+                        existing_data[row['case_id']] = row
+            
+            # Update existing data with new prompts (overwrite or add)
+            for prompt in prompts:
+                case_id = prompt['case_id']
+                if case_id in existing_data:
+                    logger.info(f"Updating existing case_id: {case_id}")
+                else:
+                    logger.info(f"Adding new case_id: {case_id}")
+                existing_data[case_id] = prompt
+            
+            # Sort by case_id (natural sorting for case_1, case_2, etc.)
+            def natural_sort_key(case_id):
+                # Extract number from case_id (e.g., "case_1" -> 1)
+                try:
+                    if case_id.startswith('case_'):
+                        return int(case_id.split('_')[1])
+                    else:
+                        return float('inf')  # Put non-standard case_ids at the end
+                except (ValueError, IndexError):
+                    return float('inf')
+            
+            sorted_prompts = sorted(existing_data.values(), key=lambda x: natural_sort_key(x['case_id']))
+            
+            fieldnames = ["case_id", "task", "question", "questionnaire", 
+                         "expected_answer", "prompt", "Response", "Correct"]
+            
+            with open(output_file, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                for prompt in sorted_prompts:
+                    writer.writerow(prompt)
+            return True
+        except Exception as e:
+            logger.error(f"Error saving results file: {e}")
+            return False
     
-    def _evaluate_llm_simple(self, client, prompts: List[Dict[str, Any]], progress_bar=None) -> List[Dict[str, Any]]:
-        """Evaluate LLM and return simplified results."""
-        results = []
+    def process_csv_file(self, csv_file: Path, model: str, max_cases: Optional[int] = None, start_case: int = 2, overall_pbar=None) -> bool:
+        """Process a single CSV file with specified model"""
+        logger.info(f"Processing {csv_file} with {model}")
         
-        for i, prompt_data in enumerate(prompts):
-            # Generate LLM response
-            llm_result = client.generate(prompt_data['prompt'])
+        # Load prompts
+        prompts = self.load_csv_prompts(csv_file)
+        if not prompts:
+            logger.warning(f"No prompts found in {csv_file}")
+            return False
+        
+        # Apply start_case filtering (convert to 0-based index)
+        if start_case > 1:
+            prompts = prompts[start_case-1:]
+            logger.info(f"Starting from case {start_case}, processing {len(prompts)} remaining cases")
+        
+        # Limit cases if specified
+        if max_cases:
+            prompts = prompts[:max_cases]
+        
+        # Get client
+        if model not in self.clients:
+            logger.error(f"Model {model} not available. Available models: {list(self.clients.keys())}")
+            return False
+        
+        client = self.clients[model]
+        
+        # Process each prompt
+        processed_count = 0
+        
+        for prompt_data in prompts:
+            # Always process (don't skip based on existing Response field)
+            
+            # Generate response
+            result = client.generate(prompt_data["prompt"])
+            
+            # Update prompt data
+            prompt_data["Response"] = result["response"]
             
             # Evaluate response
-            score = 0.0
-            is_correct = False
-            if llm_result['success'] and llm_result['response']:
+            if result["success"]:
                 evaluation = self.evaluator.evaluate_response(
-                    llm_result['response'],
-                    prompt_data['expected_answer'],
-                    prompt_data['task']
+                    result["response"], 
+                    prompt_data["expected_answer"]
                 )
-                score = evaluation['score']
-                is_correct = score > 0.8
+                prompt_data["Correct"] = "True" if evaluation["correct"] else "False"
+            else:
+                prompt_data["Correct"] = "False"
             
-            # Create simple result
-            result = {
-                "case_id": prompt_data['case_id'],
-                "data_format": prompt_data['data_format'],
-                "model_name": client.model_name,
-                "prompt": prompt_data['prompt'],
-                "expected_answer": prompt_data['expected_answer'],
-                "llm_response": llm_result.get('response', ''),
-                "is_correct": is_correct,
-                "score": score,
-                "response_time": llm_result.get('response_time', 0),
-                "success": llm_result.get('success', False),
-                "error": llm_result.get('error', None)
-            }
+            processed_count += 1
             
-            results.append(result)
+            # Update overall progress bar
+            if overall_pbar:
+                overall_pbar.update(1)
+            elif processed_count % 5 == 0:  # Log progress every 5 prompts
+                logger.info(f"Processed {processed_count}/{len(prompts)} prompts")
             
-            # Update progress bar if provided
-            if progress_bar:
-                progress_bar.update(1)
-            
-            # Add delay to avoid rate limits
+            # Rate limiting
             time.sleep(0.5)
         
-        return results
+        # Save results to benchmark_results directory
+        success = self.save_csv_results(csv_file, prompts, model)
+        if success:
+            actual_model_name = self.clients[model].model_name
+            logger.info(f"Saved results for {actual_model_name} with {processed_count} responses")
+        return success
     
-    def _generate_simple_summary(self, run_dir: Path):
-        """Generate a simple summary of all results."""
-        summary = {
-            "timestamp": datetime.now().isoformat(),
-            "overall_stats": {},
-            "by_provider": {},
-            "by_format": {}
-        }
+    def find_csv_files(self, dataset: Optional[str] = None, 
+                       task: Optional[str] = None, 
+                       format_type: Optional[str] = None) -> List[Path]:
+        """Find CSV files matching criteria"""
+        csv_files = []
         
-        all_results = []
+        if not self.converted_prompts_dir.exists():
+            logger.error(f"Converted prompts directory not found: {self.converted_prompts_dir}")
+            return []
         
-        # Collect all results
-        for dataset_dir in run_dir.iterdir():
-            if not dataset_dir.is_dir():
+        # Build search pattern
+        pattern_parts = []
+        
+        if dataset:
+            pattern_parts.append(dataset)
+        else:
+            pattern_parts.append("*")
+        
+        if task:
+            pattern_parts.append(task)
+        else:
+            pattern_parts.append("*")
+        
+        # Search for CSV files
+        search_pattern = "/".join(pattern_parts) + "/*.csv"
+        
+        for csv_file in self.converted_prompts_dir.glob(search_pattern):
+            # Filter by format if specified
+            if format_type and format_type not in csv_file.stem:
                 continue
-            for task_dir in dataset_dir.iterdir():
-                if not task_dir.is_dir():
-                    continue
-                for result_file in task_dir.glob("*_results.json"):
-                    with open(result_file, 'r') as f:
-                        data = json.load(f)
-                    
-                    for item in data:
-                        # Use model_name from the data instead of filename
-                        item['provider'] = item.get('model_name', 'unknown')
-                        item['dataset'] = dataset_dir.name
-                        item['task'] = task_dir.name
-                        all_results.append(item)
+            csv_files.append(csv_file)
         
-        # Calculate statistics
-        if all_results:
-            total_cases = len(all_results)
-            successful_cases = sum(1 for r in all_results if r['success'])
-            correct_cases = sum(1 for r in all_results if r['is_correct'])
-            
-            summary["overall_stats"] = {
-                "total_cases": total_cases,
-                "success_rate": successful_cases / total_cases if total_cases > 0 else 0,
-                "accuracy_rate": correct_cases / successful_cases if successful_cases > 0 else 0,
-                "avg_score": sum(r['score'] for r in all_results) / len(all_results)
-            }
-            
-            # By provider
-            providers = set(r['provider'] for r in all_results)
-            for provider in providers:
-                provider_results = [r for r in all_results if r['provider'] == provider]
-                successful = sum(1 for r in provider_results if r['success'])
-                correct = sum(1 for r in provider_results if r['is_correct'])
-                
-                summary["by_provider"][provider] = {
-                    "total_cases": len(provider_results),
-                    "success_rate": successful / len(provider_results),
-                    "accuracy_rate": correct / successful if successful > 0 else 0,
-                    "avg_score": sum(r['score'] for r in provider_results) / len(provider_results)
-                }
-            
-            # By format
-            formats = set(r['data_format'] for r in all_results)
-            for data_format in formats:
-                format_results = [r for r in all_results if r['data_format'] == data_format]
-                successful = sum(1 for r in format_results if r['success'])
-                correct = sum(1 for r in format_results if r['is_correct'])
-                
-                summary["by_format"][data_format] = {
-                    "total_cases": len(format_results),
-                    "success_rate": successful / len(format_results),
-                    "accuracy_rate": correct / successful if successful > 0 else 0,
-                    "avg_score": sum(r['score'] for r in format_results) / len(format_results)
-                }
-        
-        # Save summary
-        summary_file = run_dir / "summary.json"
-        with open(summary_file, 'w', encoding='utf-8') as f:
-            json.dump(summary, f, indent=2, ensure_ascii=False)
+        return sorted(csv_files)
     
-    def _generate_excel_table(self, run_dir: Path):
-        """Generate Excel table with data formats vs benchmark tasks/LLM models."""
-        logger.info("Generating Excel results table...")
+    def run_benchmark(self, 
+                     dataset: Optional[str] = None,
+                     task: Optional[str] = None,
+                     format_type: Optional[str] = None,
+                     model: Optional[str] = None,
+                     max_cases: Optional[int] = None,
+                     start_case: int = 2) -> bool:
+        """Run benchmark on specified criteria"""
         
-        all_results = []
+        # Find CSV files to process
+        csv_files = self.find_csv_files(dataset, task, format_type)
+        if not csv_files:
+            logger.warning("No CSV files found matching criteria")
+            return False
         
-        # Collect all results
-        for dataset_dir in run_dir.iterdir():
-            if not dataset_dir.is_dir():
-                continue
-            for task_dir in dataset_dir.iterdir():
-                if not task_dir.is_dir():
-                    continue
-                for result_file in task_dir.glob("*_results.json"):
-                    with open(result_file, 'r') as f:
-                        data = json.load(f)
-                    
-                    for item in data:
-                        # Use model_name from the data instead of filename
-                        item['provider'] = item.get('model_name', 'unknown')
-                        item['dataset'] = dataset_dir.name
-                        item['task'] = task_dir.name
-                        all_results.append(item)
+        logger.info(f"Found {len(csv_files)} CSV files to process")
         
-        if not all_results:
-            logger.warning("No results found for Excel generation")
-            return
+        # Print discovered files
+        print(f"DISCOVERED FILES ({len(csv_files)}):")
+        for i, csv_file in enumerate(csv_files, 1):
+            rel_path = csv_file.relative_to(self.converted_prompts_dir)
+            print(f"  {i}. {rel_path}")
+        print()
         
-        # Get unique values
-        formats = sorted(set(r['data_format'] for r in all_results))
-        datasets = sorted(set(r['dataset'] for r in all_results))
-        tasks = sorted(set(r['task'] for r in all_results))
-        providers = sorted(set(r['provider'] for r in all_results))
+        # Determine models to use
+        models_to_use = []
+        if model and model in self.clients:
+            models_to_use = [model]
+        elif model:
+            logger.error(f"Model {model} not available. Available: {list(self.clients.keys())}")
+            return False
+        else:
+            models_to_use = list(self.clients.keys())
         
-        # Create multi-level columns: (dataset, task, provider)
-        columns = []
-        for dataset in datasets:
-            for task in tasks:
-                for provider in providers:
-                    # Check if this combination exists in results
-                    combo_exists = any(
-                        r['dataset'] == dataset and r['task'] == task and r['provider'] == provider 
-                        for r in all_results
-                    )
-                    if combo_exists:
-                        columns.append((dataset, task, provider))
+        # Print models that will be used
+        print(f"MODELS TO USE: {models_to_use}")
+        print()
         
-        # Create DataFrame
-        data_matrix = []
+        # Calculate total operations for progress bar
+        total_operations = 0
+        for csv_file in csv_files:
+            prompts = self.load_csv_prompts(csv_file)
+            # Apply start_case and max_cases filtering
+            if start_case > 1:
+                prompts = prompts[start_case-1:]  # Convert to 0-based index
+            if max_cases:
+                prompts = prompts[:max_cases]
+            total_operations += len(prompts) * len(models_to_use)
         
-        for data_format in formats:
-            row = [data_format]  # First column is data format
-            
-            for dataset, task, provider in columns:
-                # Find results for this combination
-                format_results = [
-                    r for r in all_results 
-                    if (r['data_format'] == data_format and 
-                        r['dataset'] == dataset and 
-                        r['task'] == task and 
-                        r['provider'] == provider)
-                ]
-                
-                if format_results:
-                    total_cases = len(format_results)
-                    correct_cases = sum(1 for r in format_results if r['is_correct'])
-                    cell_value = f"{correct_cases}/{total_cases}"
-                else:
-                    cell_value = "0/0"
-                
-                row.append(cell_value)
-            
-            data_matrix.append(row)
+        # Create overall progress bar
+        if HAS_TQDM:
+            overall_pbar = tqdm(total=total_operations, desc="Overall Progress")
+        else:
+            overall_pbar = None
+            logger.info(f"Starting benchmark: {total_operations} total operations")
         
-        # Create column headers
-        column_headers = ['Data Format']
-        for dataset, task, provider in columns:
-            column_headers.append(f"{dataset}_{task}_{provider}")
+        # Process each CSV file with each model
+        success_count = 0
+        total_count = len(csv_files) * len(models_to_use)
         
-        # Create DataFrame
-        df = pd.DataFrame(data_matrix)
-        df.columns = column_headers
+        try:
+            for csv_file in csv_files:
+                for model_name in models_to_use:
+                    if self.process_csv_file(csv_file, model_name, max_cases, start_case, overall_pbar):
+                        success_count += 1
+        finally:
+            if overall_pbar:
+                overall_pbar.close()
         
-        # Create Excel file with multi-level headers
-        excel_file = run_dir / "benchmark_results_table.xlsx"
+        logger.info(f"Benchmark completed: {success_count}/{total_count} files processed successfully")
         
-        with pd.ExcelWriter(excel_file, engine='openpyxl') as writer:
-            # Write the main data
-            df.to_excel(writer, sheet_name='Results', index=False, startrow=2)
-            
-            # Get the workbook and worksheet
-            workbook = writer.book
-            worksheet = writer.sheets['Results']
-            
-            # Create multi-level headers
-            # Row 1: Dataset names
-            # Row 2: Task names  
-            # Row 3: Provider names
-            
-            col_idx = 2  # Start from column B (after Data Format)
-            for dataset, task, provider in columns:
-                # Write dataset name in row 1
-                worksheet.cell(row=1, column=col_idx, value=dataset)
-                # Write task name in row 2
-                worksheet.cell(row=2, column=col_idx, value=task)
-                # Write provider name in row 3  
-                worksheet.cell(row=3, column=col_idx, value=provider)
-                col_idx += 1
-            
-            # Write "Data Format" in the first column
-            worksheet.cell(row=1, column=1, value="Data")
-            worksheet.cell(row=2, column=1, value="Format")
-            worksheet.cell(row=3, column=1, value="")
-            
-            # Merge cells for repeated dataset/task names
-            from openpyxl.utils import get_column_letter
-            from openpyxl.styles import Alignment, Border, Side
-            
-            # Add borders and center alignment
-            thin_border = Border(
-                left=Side(style='thin'),
-                right=Side(style='thin'), 
-                top=Side(style='thin'),
-                bottom=Side(style='thin')
-            )
-            
-            # Apply formatting to all cells
-            for row in worksheet.iter_rows():
-                for cell in row:
-                    cell.border = thin_border
-                    cell.alignment = Alignment(horizontal='center', vertical='center')
-            
-            # Merge dataset and task cells where they repeat
-            current_dataset = None
-            current_task = None
-            dataset_start_col = 2
-            task_start_col = 2
-            
-            col_idx = 2
-            for dataset, task, provider in columns:
-                if dataset != current_dataset:
-                    # Merge previous dataset cells if needed
-                    if current_dataset and col_idx > dataset_start_col:
-                        if col_idx - 1 > dataset_start_col:
-                            worksheet.merge_cells(
-                                start_row=1, start_column=dataset_start_col,
-                                end_row=1, end_column=col_idx - 1
-                            )
-                    current_dataset = dataset
-                    dataset_start_col = col_idx
-                
-                if task != current_task or dataset != current_dataset:
-                    # Merge previous task cells if needed
-                    if current_task and col_idx > task_start_col:
-                        if col_idx - 1 > task_start_col:
-                            worksheet.merge_cells(
-                                start_row=2, start_column=task_start_col,
-                                end_row=2, end_column=col_idx - 1
-                            )
-                    current_task = task
-                    task_start_col = col_idx
-                
-                col_idx += 1
-            
-            # Merge final dataset and task cells
-            if col_idx > dataset_start_col:
-                if col_idx - 1 > dataset_start_col:
-                    worksheet.merge_cells(
-                        start_row=1, start_column=dataset_start_col,
-                        end_row=1, end_column=col_idx - 1
-                    )
-            
-            if col_idx > task_start_col:
-                if col_idx - 1 > task_start_col:
-                    worksheet.merge_cells(
-                        start_row=2, start_column=task_start_col,
-                        end_row=2, end_column=col_idx - 1
-                    )
-            
-            # Merge Data Format header
-            worksheet.merge_cells(start_row=1, start_column=1, end_row=3, end_column=1)
-        
-        logger.info(f"Excel table saved to: {excel_file}")
-    
-    def _generate_score_excel_table(self, run_dir: Path):
-        """Generate Excel table with score values (score/max_score) instead of correct/incorrect counts."""
-        logger.info("Generating score-based Excel results table...")
-        
-        all_results = []
-        
-        # Collect all results
-        for dataset_dir in run_dir.iterdir():
-            if not dataset_dir.is_dir():
-                continue
-            for task_dir in dataset_dir.iterdir():
-                if not task_dir.is_dir():
-                    continue
-                for result_file in task_dir.glob("*_results.json"):
-                    with open(result_file, 'r') as f:
-                        data = json.load(f)
-                    
-                    for item in data:
-                        # Use model_name from the data instead of filename
-                        item['provider'] = item.get('model_name', 'unknown')
-                        item['dataset'] = dataset_dir.name
-                        item['task'] = task_dir.name
-                        all_results.append(item)
-        
-        if not all_results:
-            logger.warning("No results found for score Excel generation")
-            return
-        
-        # Get unique values
-        formats = sorted(set(r['data_format'] for r in all_results))
-        datasets = sorted(set(r['dataset'] for r in all_results))
-        tasks = sorted(set(r['task'] for r in all_results))
-        providers = sorted(set(r['provider'] for r in all_results))
-        
-        # Create multi-level columns: (dataset, task, provider)
-        columns = []
-        for dataset in datasets:
-            for task in tasks:
-                for provider in providers:
-                    # Check if this combination exists in results
-                    combo_exists = any(
-                        r['dataset'] == dataset and r['task'] == task and r['provider'] == provider 
-                        for r in all_results
-                    )
-                    if combo_exists:
-                        columns.append((dataset, task, provider))
-        
-        # Create DataFrame
-        data_matrix = []
-        
-        for data_format in formats:
-            row = [data_format]  # First column is data format
-            
-            for dataset, task, provider in columns:
-                # Find results for this combination
-                format_results = [
-                    r for r in all_results 
-                    if (r['data_format'] == data_format and 
-                        r['dataset'] == dataset and 
-                        r['task'] == task and 
-                        r['provider'] == provider)
-                ]
-                
-                if format_results:
-                    total_cases = len(format_results)
-                    total_score = sum(r['score'] for r in format_results)
-                    avg_score = total_score / total_cases if total_cases > 0 else 0
-                    # Format as "total_score/total_cases" (e.g., "8.5/10")
-                    cell_value = f"{total_score:.1f}/{total_cases}"
-                else:
-                    cell_value = "0.0/0"
-                
-                row.append(cell_value)
-            
-            data_matrix.append(row)
-        
-        # Create column headers
-        column_headers = ['Data Format']
-        for dataset, task, provider in columns:
-            column_headers.append(f"{dataset}_{task}_{provider}")
-        
-        # Create DataFrame
-        df = pd.DataFrame(data_matrix)
-        df.columns = column_headers
-        
-        # Create Excel file with multi-level headers
-        excel_file = run_dir / "benchmark_scores_table.xlsx"
-        
-        with pd.ExcelWriter(excel_file, engine='openpyxl') as writer:
-            # Write the main data
-            df.to_excel(writer, sheet_name='Scores', index=False, startrow=2)
-            
-            # Get the workbook and worksheet
-            workbook = writer.book
-            worksheet = writer.sheets['Scores']
-            
-            # Create multi-level headers
-            # Row 1: Dataset names
-            # Row 2: Task names  
-            # Row 3: Provider names
-            
-            col_idx = 2  # Start from column B (after Data Format)
-            for dataset, task, provider in columns:
-                # Write dataset name in row 1
-                worksheet.cell(row=1, column=col_idx, value=dataset)
-                # Write task name in row 2
-                worksheet.cell(row=2, column=col_idx, value=task)
-                # Write provider name in row 3  
-                worksheet.cell(row=3, column=col_idx, value=provider)
-                col_idx += 1
-            
-            # Write "Data Format" in the first column
-            worksheet.cell(row=1, column=1, value="Data")
-            worksheet.cell(row=2, column=1, value="Format")
-            worksheet.cell(row=3, column=1, value="")
-            
-            # Merge cells for repeated dataset/task names
-            from openpyxl.utils import get_column_letter
-            from openpyxl.styles import Alignment, Border, Side
-            
-            # Add borders and center alignment
-            thin_border = Border(
-                left=Side(style='thin'),
-                right=Side(style='thin'), 
-                top=Side(style='thin'),
-                bottom=Side(style='thin')
-            )
-            
-            # Apply formatting to all cells
-            for row in worksheet.iter_rows():
-                for cell in row:
-                    cell.border = thin_border
-                    cell.alignment = Alignment(horizontal='center', vertical='center')
-            
-            # Merge dataset and task cells where they repeat
-            current_dataset = None
-            current_task = None
-            dataset_start_col = 2
-            task_start_col = 2
-            
-            col_idx = 2
-            for dataset, task, provider in columns:
-                if dataset != current_dataset:
-                    # Merge previous dataset cells if needed
-                    if current_dataset and col_idx > dataset_start_col:
-                        if col_idx - 1 > dataset_start_col:
-                            worksheet.merge_cells(
-                                start_row=1, start_column=dataset_start_col,
-                                end_row=1, end_column=col_idx - 1
-                            )
-                    current_dataset = dataset
-                    dataset_start_col = col_idx
-                
-                if task != current_task or dataset != current_dataset:
-                    # Merge previous task cells if needed
-                    if current_task and col_idx > task_start_col:
-                        if col_idx - 1 > task_start_col:
-                            worksheet.merge_cells(
-                                start_row=2, start_column=task_start_col,
-                                end_row=2, end_column=col_idx - 1
-                            )
-                    current_task = task
-                    task_start_col = col_idx
-                
-                col_idx += 1
-            
-            # Merge final dataset and task cells
-            if col_idx > dataset_start_col:
-                if col_idx - 1 > dataset_start_col:
-                    worksheet.merge_cells(
-                        start_row=1, start_column=dataset_start_col,
-                        end_row=1, end_column=col_idx - 1
-                    )
-            
-            if col_idx > task_start_col:
-                if col_idx - 1 > task_start_col:
-                    worksheet.merge_cells(
-                        start_row=2, start_column=task_start_col,
-                        end_row=2, end_column=col_idx - 1
-                    )
-            
-            # Merge Data Format header
-            worksheet.merge_cells(start_row=1, start_column=1, end_row=3, end_column=1)
-        
-        logger.info(f"Score Excel table saved to: {excel_file}")
+        # Store actual model names used for summary
+        self.models_used = [self.clients[model].model_name for model in models_to_use]
+        return success_count == total_count
+
 
 def main():
-    """Run benchmark with default settings."""
-    pipeline = BenchmarkPipeline()
+    """Command-line interface"""
+    parser = argparse.ArgumentParser(
+        description="Simple benchmark pipeline for Q-Benchmark converted prompts")
     
-    # Run benchmark on a subset for testing
-    results_dir = pipeline.run_benchmark(
-        dataset="healthcare-dataset",  # Focus on one dataset
-        task="answer_lookup",          # Focus on one task
-        max_cases=5                    # Limit cases for testing
+    parser.add_argument("--dataset", help="Dataset to process (default: all)")
+    parser.add_argument("--task", help="Task to process (default: all)")
+    parser.add_argument("--format", help="Data format to process (default: all)")
+    parser.add_argument("--model", choices=["openai", "google"], 
+                       help="Model provider to use (default: all available)")
+    parser.add_argument("--openai-model", default="gpt-3.5-turbo",
+                       help="OpenAI model name (default: gpt-3.5-turbo). Examples: gpt-4o-mini, gpt-4, gpt-3.5-turbo")
+    parser.add_argument("--google-model", default="gemini-1.5-flash", 
+                       help="Google model name (default: gemini-1.5-flash)")
+    parser.add_argument("--max-cases", type=int, 
+                       help="Maximum cases to process per file")
+    parser.add_argument("--start-case", type=int, default=2,
+                       help="Starting case number (default: 2)")
+    parser.add_argument("--converted-prompts-dir", default="converted_prompts",
+                       help="Directory containing converted prompt CSV files")
+    parser.add_argument("--list", action="store_true",
+                       help="List available datasets, tasks, and formats")
+    
+    args = parser.parse_args()
+    
+    # Print configuration settings
+    if not args.list:
+        print("="*60)
+        print("BENCHMARK CONFIGURATION")
+        print("="*60)
+        print(f"Dataset:              {args.dataset or 'ALL'}")
+        print(f"Task:                 {args.task or 'ALL'}")
+        print(f"Format:               {args.format or 'ALL'}")
+        
+        # Only print the model we're actually using
+        if args.model == "openai":
+            print(f"Model:                {args.openai_model}")
+        elif args.model == "google":
+            print(f"Model:                {args.google_model}")
+        else:
+            print(f"OpenAI Model:         {args.openai_model}")
+            print(f"Google Model:         {args.google_model}")
+            
+        print(f"Max Cases per File:   {args.max_cases or 'UNLIMITED'}")
+        print(f"Starting Case:        {args.start_case}")
+        print(f"Prompts Directory:    {args.converted_prompts_dir}")
+        print("="*60)
+        print()
+
+    # Initialize pipeline
+    try:
+        # Don't initialize clients if just listing
+        pipeline = SimpleBenchmarkPipeline(
+            args.converted_prompts_dir, 
+            init_clients=not args.list,
+            openai_model=args.openai_model,
+            google_model=args.google_model
+        )
+    except Exception as e:
+        logger.error(f"Failed to initialize pipeline: {e}")
+        return 1
+    
+    # List available options
+    if args.list:
+        print("Available options in converted_prompts directory:")
+        csv_files = pipeline.find_csv_files()
+        
+        datasets = set()
+        tasks = set()
+        formats = set()
+        
+        for csv_file in csv_files:
+            parts = csv_file.relative_to(pipeline.converted_prompts_dir).parts
+            if len(parts) >= 2:
+                datasets.add(parts[0])
+                tasks.add(parts[1])
+            
+            # Extract format from filename (e.g., answer_lookup_json_converted_prompts.csv)
+            stem = csv_file.stem
+            if '_' in stem:
+                parts = stem.split('_')
+                # Look for format in the parts
+                for part in parts:
+                    if part in ['json', 'xml', 'html', 'md', 'txt', 'ttl']:
+                        formats.add(part)
+                        break
+        
+        print(f"Datasets: {sorted(datasets)}")
+        print(f"Tasks: {sorted(tasks)}")
+        print(f"Formats: {sorted(formats)}")
+        available_models = ["openai", "google"]  # Hardcoded since we didn't init clients
+        print(f"Models: {available_models}")
+        return 0
+    
+    # Run benchmark
+    success = pipeline.run_benchmark(
+        dataset=args.dataset,
+        task=args.task,
+        format_type=args.format,
+        model=args.model,
+        max_cases=args.max_cases,
+        start_case=args.start_case
     )
     
-    print(f"Benchmark completed. Results in: {results_dir}")
+    # Print final summary
+    print("\n" + "="*60)
+    print("BENCHMARK COMPLETED")
+    print("="*60)
+    print(f"Status: {'SUCCESS' if success else 'FAILED'}")
+    print(f"Models Used: {getattr(pipeline, 'models_used', list(pipeline.clients.keys()))}")
+    print(f"Results Saved To: benchmark_results/")
+    print("="*60)
+    
+    return 0 if success else 1
+
 
 if __name__ == "__main__":
-    main() 
+    exit(main())
