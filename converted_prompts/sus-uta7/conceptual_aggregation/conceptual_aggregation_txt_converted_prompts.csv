@@ -206,13 +206,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group C?
@@ -278,7 +280,7 @@ Respondent 87:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -424,18 +426,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 5?
 </task>",,
-case_3,conceptual_aggregation,How many respondents have Group A?,"Survey Data
+case_3,conceptual_aggregation,How many respondents have Frequent_Usage 4?,"Survey Data
 ==================================================
 
 Questions:
@@ -496,7 +500,7 @@ Respondent 28:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -642,16 +646,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group A?
+How many respondents have Frequent_Usage 4?
 </task>",,
 case_4,conceptual_aggregation,How many respondents have Group D?,"Survey Data
 ==================================================
@@ -860,13 +866,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group D?
@@ -932,7 +940,7 @@ Respondent 72:
   Cumbersome_to_Use: 5
   Confidence_in_Use: 1
   Need_to_Learn_Before_Use: 3
-",1,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -1078,13 +1086,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 5?
@@ -1150,7 +1160,7 @@ Respondent 90:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",3,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -1296,13 +1306,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have System_Complexity 1?
@@ -1514,13 +1526,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group C?
@@ -1586,6 +1600,226 @@ Respondent 13:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 4
+",1,"<example>
+How many respondents have Group C?
+
+DATA:
+
+Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 22:
+  Name: Clinician 22
+  Group: C
+  Frequent_Usage: 2
+  System_Complexity: 2
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 2
+  Integration_of_Functions: 5
+  Inconsistency: 2
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 2
+
+Respondent 38:
+  Name: Clinician 38
+  Group: D
+  Frequent_Usage: 2
+  System_Complexity: 1
+  Ease_of_Use: 2
+  Need_for_Technical_Support: 2
+  Integration_of_Functions: 4
+  Inconsistency: 1
+  Ease_of_Learning: 3
+  Cumbersome_to_Use: 3
+  Confidence_in_Use: 1
+  Need_to_Learn_Before_Use: 1
+
+Respondent 58:
+  Name: Clinician 58
+  Group: C
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+
+Answer: 2
+</example>
+
+<questionnaire>
+Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 32:
+  Name: Clinician 32
+  Group: B
+  Frequent_Usage: 3
+  System_Complexity: 3
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 3
+  Integration_of_Functions: 5
+  Inconsistency: 5
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 1
+
+Respondent 80:
+  Name: Clinician 80
+  Group: B
+  Frequent_Usage: 4
+  System_Complexity: 1
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 3
+  Integration_of_Functions: 4
+  Inconsistency: 2
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 3
+  Need_to_Learn_Before_Use: 3
+
+Respondent 13:
+  Name: Clinician 13
+  Group: C
+  Frequent_Usage: 1
+  System_Complexity: 2
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 4
+  Inconsistency: 1
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 4
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+<task>
+How many respondents have Frequent_Usage 4?
+</task>",,
+case_9,conceptual_aggregation,How many respondents have Confidence_in_Use 5?,"Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 76:
+  Name: Clinician 76
+  Group: D
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 87:
+  Name: Clinician 87
+  Group: B
+  Frequent_Usage: 3
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 47:
+  Name: Clinician 47
+  Group: D
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 4
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 3
 ",2,"<example>
 How many respondents have Group C?
 
@@ -1678,224 +1912,6 @@ Questions:
 Responses:
 --------------------
 
-Respondent 32:
-  Name: Clinician 32
-  Group: B
-  Frequent_Usage: 3
-  System_Complexity: 3
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 3
-  Integration_of_Functions: 5
-  Inconsistency: 5
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 1
-
-Respondent 80:
-  Name: Clinician 80
-  Group: B
-  Frequent_Usage: 4
-  System_Complexity: 1
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 3
-  Integration_of_Functions: 4
-  Inconsistency: 2
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 3
-  Need_to_Learn_Before_Use: 3
-
-Respondent 13:
-  Name: Clinician 13
-  Group: C
-  Frequent_Usage: 1
-  System_Complexity: 2
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 4
-  Inconsistency: 1
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 4
-
-</questionnaire>
-
-You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
-
-You will be given a dataset with two key parts:
-
-A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
-
-A 'responses' section: This contains the raw data from each individual respondent.
-
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
-
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
-
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
-
-<task>
-How many respondents have Frequent_Usage 4?
-</task>",,
-case_9,conceptual_aggregation,How many respondents have Confidence_in_Use 5?,"Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
-Respondent 76:
-  Name: Clinician 76
-  Group: D
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-Respondent 87:
-  Name: Clinician 87
-  Group: B
-  Frequent_Usage: 3
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-Respondent 47:
-  Name: Clinician 47
-  Group: D
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 4
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 3
-",0,"<example>
-How many respondents have Group C?
-
-DATA:
-
-Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
-Respondent 22:
-  Name: Clinician 22
-  Group: C
-  Frequent_Usage: 2
-  System_Complexity: 2
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 5
-  Inconsistency: 2
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 2
-
-Respondent 38:
-  Name: Clinician 38
-  Group: D
-  Frequent_Usage: 2
-  System_Complexity: 1
-  Ease_of_Use: 2
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 4
-  Inconsistency: 1
-  Ease_of_Learning: 3
-  Cumbersome_to_Use: 3
-  Confidence_in_Use: 1
-  Need_to_Learn_Before_Use: 1
-
-Respondent 58:
-  Name: Clinician 58
-  Group: C
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-
-Answer: 2
-</example>
-
-<questionnaire>
-Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
 Respondent 76:
   Name: Clinician 76
   Group: D
@@ -1950,13 +1966,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Confidence_in_Use 5?
@@ -2168,13 +2186,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 5?
@@ -2240,7 +2260,7 @@ Respondent 12:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",3,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -2386,18 +2406,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Integration_of_Functions 5?
 </task>",,
-case_12,conceptual_aggregation,How many respondents have Group A?,"Survey Data
+case_12,conceptual_aggregation,How many respondents have Group B?,"Survey Data
 ==================================================
 
 Questions:
@@ -2458,7 +2480,7 @@ Respondent 16:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 2
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -2604,16 +2626,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group A?
+How many respondents have Group B?
 </task>",,
 case_13,conceptual_aggregation,How many respondents have Need_for_Technical_Support 1?,"Survey Data
 ==================================================
@@ -2822,18 +2846,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Need_for_Technical_Support 1?
 </task>",,
-case_14,conceptual_aggregation,How many respondents have Group D?,"Survey Data
+case_14,conceptual_aggregation,How many respondents have Need_to_Learn_Before_Use 1?,"Survey Data
 ==================================================
 
 Questions:
@@ -2894,7 +2920,7 @@ Respondent 41:
   Cumbersome_to_Use: 5
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 2
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -3040,16 +3066,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group D?
+How many respondents have Need_to_Learn_Before_Use 1?
 </task>",,
 case_15,conceptual_aggregation,How many respondents have Cumbersome_to_Use 1?,"Survey Data
 ==================================================
@@ -3258,13 +3286,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Cumbersome_to_Use 1?
@@ -3476,13 +3506,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group C?
@@ -3548,7 +3580,7 @@ Respondent 33:
   Cumbersome_to_Use: 4
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 5
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -3694,13 +3726,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Learning 5?
@@ -3912,13 +3946,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group A?
@@ -4130,13 +4166,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Frequent_Usage 5?
@@ -4202,7 +4240,7 @@ Respondent 85:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",3,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -4348,18 +4386,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have System_Complexity 1?
 </task>",,
-case_21,conceptual_aggregation,How many respondents have Inconsistency 2?,"Survey Data
+case_21,conceptual_aggregation,How many respondents have Ease_of_Use 5?,"Survey Data
 ==================================================
 
 Questions:
@@ -4566,16 +4606,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Inconsistency 2?
+How many respondents have Ease_of_Use 5?
 </task>",,
 case_22,conceptual_aggregation,How many respondents have Group D?,"Survey Data
 ==================================================
@@ -4784,13 +4826,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group D?
@@ -4856,7 +4900,7 @@ Respondent 43:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 3
-",2,"<example>
+",3,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -5002,13 +5046,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Confidence_in_Use 4?
@@ -5074,7 +5120,7 @@ Respondent 43:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 3
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -5220,13 +5266,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Need_to_Learn_Before_Use 1?
@@ -5438,13 +5486,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group D?
@@ -5510,7 +5560,7 @@ Respondent 80:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 3
   Need_to_Learn_Before_Use: 3
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -5656,13 +5706,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 4?
@@ -5874,13 +5926,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group C?
@@ -5946,7 +6000,7 @@ Respondent 44:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 1
   Need_to_Learn_Before_Use: 4
-",1,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -6092,13 +6146,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Frequent_Usage 5?
@@ -6310,18 +6366,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 5?
 </task>",,
-case_30,conceptual_aggregation,How many respondents have Group B?,"Survey Data
+case_30,conceptual_aggregation,How many respondents have Inconsistency 5?,"Survey Data
 ==================================================
 
 Questions:
@@ -6382,7 +6440,7 @@ Respondent 29:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 3
   Need_to_Learn_Before_Use: 3
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -6528,16 +6586,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group B?
+How many respondents have Inconsistency 5?
 </task>",,
 case_31,conceptual_aggregation,How many respondents have Integration_of_Functions 4?,"Survey Data
 ==================================================
@@ -6600,7 +6660,7 @@ Respondent 79:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -6746,18 +6806,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Integration_of_Functions 4?
 </task>",,
-case_32,conceptual_aggregation,How many respondents have System_Complexity 2?,"Survey Data
+case_32,conceptual_aggregation,How many respondents have Inconsistency 3?,"Survey Data
 ==================================================
 
 Questions:
@@ -6818,7 +6880,7 @@ Respondent 16:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 2
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -6964,18 +7026,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have System_Complexity 2?
+How many respondents have Inconsistency 3?
 </task>",,
-case_33,conceptual_aggregation,How many respondents have Group D?,"Survey Data
+case_33,conceptual_aggregation,How many respondents have Frequent_Usage 1?,"Survey Data
 ==================================================
 
 Questions:
@@ -7036,7 +7100,7 @@ Respondent 42:
   Cumbersome_to_Use: 4
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 3
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -7182,16 +7246,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group D?
+How many respondents have Frequent_Usage 1?
 </task>",,
 case_34,conceptual_aggregation,How many respondents have Ease_of_Learning 4?,"Survey Data
 ==================================================
@@ -7251,6 +7317,226 @@ Respondent 2:
   Integration_of_Functions: 4
   Inconsistency: 2
   Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 1
+",1,"<example>
+How many respondents have Group C?
+
+DATA:
+
+Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 22:
+  Name: Clinician 22
+  Group: C
+  Frequent_Usage: 2
+  System_Complexity: 2
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 2
+  Integration_of_Functions: 5
+  Inconsistency: 2
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 2
+
+Respondent 38:
+  Name: Clinician 38
+  Group: D
+  Frequent_Usage: 2
+  System_Complexity: 1
+  Ease_of_Use: 2
+  Need_for_Technical_Support: 2
+  Integration_of_Functions: 4
+  Inconsistency: 1
+  Ease_of_Learning: 3
+  Cumbersome_to_Use: 3
+  Confidence_in_Use: 1
+  Need_to_Learn_Before_Use: 1
+
+Respondent 58:
+  Name: Clinician 58
+  Group: C
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+
+Answer: 2
+</example>
+
+<questionnaire>
+Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 82:
+  Name: Clinician 82
+  Group: D
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 4
+  Inconsistency: 1
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 26:
+  Name: Clinician 26
+  Group: C
+  Frequent_Usage: 1
+  System_Complexity: 1
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 4
+  Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 2
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 5
+
+Respondent 2:
+  Name: Clinician 2
+  Group: D
+  Frequent_Usage: 2
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 4
+  Inconsistency: 2
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 1
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+<task>
+How many respondents have Ease_of_Learning 4?
+</task>",,
+case_35,conceptual_aggregation,How many respondents have Ease_of_Learning 4?,"Survey Data
+==================================================
+
+Questions:
+1. Name: Name of the respondent [Open-ended]
+2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
+3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
+
+Responses:
+--------------------
+
+Respondent 47:
+  Name: Clinician 47
+  Group: D
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 4
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 3
+
+Respondent 12:
+  Name: Clinician 12
+  Group: C
+  Frequent_Usage: 3
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 3
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 15:
+  Name: Clinician 15
+  Group: D
+  Frequent_Usage: 5
+  System_Complexity: 1
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 4
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 1
@@ -7346,44 +7632,44 @@ Questions:
 Responses:
 --------------------
 
-Respondent 82:
-  Name: Clinician 82
+Respondent 47:
+  Name: Clinician 47
   Group: D
   Frequent_Usage: 5
   System_Complexity: 1
   Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 4
+  Need_for_Technical_Support: 4
+  Integration_of_Functions: 5
   Inconsistency: 1
   Ease_of_Learning: 4
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 4
+  Need_to_Learn_Before_Use: 3
+
+Respondent 12:
+  Name: Clinician 12
+  Group: C
+  Frequent_Usage: 3
+  System_Complexity: 1
+  Ease_of_Use: 5
+  Need_for_Technical_Support: 1
+  Integration_of_Functions: 5
+  Inconsistency: 1
+  Ease_of_Learning: 3
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
 
-Respondent 26:
-  Name: Clinician 26
-  Group: C
-  Frequent_Usage: 1
+Respondent 15:
+  Name: Clinician 15
+  Group: D
+  Frequent_Usage: 5
   System_Complexity: 1
   Ease_of_Use: 4
   Need_for_Technical_Support: 1
-  Integration_of_Functions: 4
+  Integration_of_Functions: 5
   Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 2
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 5
-
-Respondent 2:
-  Name: Clinician 2
-  Group: D
-  Frequent_Usage: 2
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 4
-  Inconsistency: 2
-  Ease_of_Learning: 5
+  Ease_of_Learning: 4
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 1
@@ -7400,18 +7686,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Learning 4?
 </task>",,
-case_35,conceptual_aggregation,How many respondents have Need_for_Technical_Support 2?,"Survey Data
+case_36,conceptual_aggregation,How many respondents have Need_for_Technical_Support 2?,"Survey Data
 ==================================================
 
 Questions:
@@ -7431,48 +7719,48 @@ Questions:
 Responses:
 --------------------
 
-Respondent 47:
-  Name: Clinician 47
-  Group: D
-  Frequent_Usage: 5
+Respondent 56:
+  Name: Clinician 56
+  Group: C
+  Frequent_Usage: 4
   System_Complexity: 1
   Ease_of_Use: 5
-  Need_for_Technical_Support: 4
+  Need_for_Technical_Support: 2
   Integration_of_Functions: 5
   Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 80:
+  Name: Clinician 80
+  Group: B
+  Frequent_Usage: 4
+  System_Complexity: 1
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 3
+  Integration_of_Functions: 4
+  Inconsistency: 2
   Ease_of_Learning: 4
   Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
+  Confidence_in_Use: 3
   Need_to_Learn_Before_Use: 3
 
-Respondent 12:
-  Name: Clinician 12
-  Group: C
+Respondent 87:
+  Name: Clinician 87
+  Group: B
   Frequent_Usage: 3
   System_Complexity: 1
   Ease_of_Use: 5
   Need_for_Technical_Support: 1
   Integration_of_Functions: 5
   Inconsistency: 1
-  Ease_of_Learning: 3
+  Ease_of_Learning: 5
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-
-Respondent 15:
-  Name: Clinician 15
-  Group: D
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -7564,46 +7852,46 @@ Questions:
 Responses:
 --------------------
 
-Respondent 47:
-  Name: Clinician 47
-  Group: D
-  Frequent_Usage: 5
+Respondent 56:
+  Name: Clinician 56
+  Group: C
+  Frequent_Usage: 4
   System_Complexity: 1
   Ease_of_Use: 5
-  Need_for_Technical_Support: 4
+  Need_for_Technical_Support: 2
   Integration_of_Functions: 5
   Inconsistency: 1
+  Ease_of_Learning: 5
+  Cumbersome_to_Use: 1
+  Confidence_in_Use: 5
+  Need_to_Learn_Before_Use: 1
+
+Respondent 80:
+  Name: Clinician 80
+  Group: B
+  Frequent_Usage: 4
+  System_Complexity: 1
+  Ease_of_Use: 4
+  Need_for_Technical_Support: 3
+  Integration_of_Functions: 4
+  Inconsistency: 2
   Ease_of_Learning: 4
   Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
+  Confidence_in_Use: 3
   Need_to_Learn_Before_Use: 3
 
-Respondent 12:
-  Name: Clinician 12
-  Group: C
+Respondent 87:
+  Name: Clinician 87
+  Group: B
   Frequent_Usage: 3
   System_Complexity: 1
   Ease_of_Use: 5
   Need_for_Technical_Support: 1
   Integration_of_Functions: 5
   Inconsistency: 1
-  Ease_of_Learning: 3
+  Ease_of_Learning: 5
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-Respondent 15:
-  Name: Clinician 15
-  Group: D
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 1
 
 </questionnaire>
@@ -7618,236 +7906,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Need_for_Technical_Support 2?
 </task>",,
-case_36,conceptual_aggregation,How many respondents have Group D?,"Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
-Respondent 56:
-  Name: Clinician 56
-  Group: C
-  Frequent_Usage: 4
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-Respondent 80:
-  Name: Clinician 80
-  Group: B
-  Frequent_Usage: 4
-  System_Complexity: 1
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 3
-  Integration_of_Functions: 4
-  Inconsistency: 2
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 3
-  Need_to_Learn_Before_Use: 3
-
-Respondent 87:
-  Name: Clinician 87
-  Group: B
-  Frequent_Usage: 3
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-",0,"<example>
-How many respondents have Group C?
-
-DATA:
-
-Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
-Respondent 22:
-  Name: Clinician 22
-  Group: C
-  Frequent_Usage: 2
-  System_Complexity: 2
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 5
-  Inconsistency: 2
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 4
-  Need_to_Learn_Before_Use: 2
-
-Respondent 38:
-  Name: Clinician 38
-  Group: D
-  Frequent_Usage: 2
-  System_Complexity: 1
-  Ease_of_Use: 2
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 4
-  Inconsistency: 1
-  Ease_of_Learning: 3
-  Cumbersome_to_Use: 3
-  Confidence_in_Use: 1
-  Need_to_Learn_Before_Use: 1
-
-Respondent 58:
-  Name: Clinician 58
-  Group: C
-  Frequent_Usage: 5
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-
-Answer: 2
-</example>
-
-<questionnaire>
-Survey Data
-==================================================
-
-Questions:
-1. Name: Name of the respondent [Open-ended]
-2. Group: Group of the respondent [MCQ: A. Senior B. Junior C. Middle D. Intern]
-3. Frequent_Usage: I think that I would like to use this system frequently. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-4. System_Complexity: I found the system unnecessarily complex. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-5. Ease_of_Use: I thought the system was easy to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-6. Need_for_Technical_Support: I think that I would need the support of a technical person to be able to use this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-7. Integration_of_Functions: I found the various functions in this system were well integrated. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-8. Inconsistency: I thought there was too much inconsistency in this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-9. Ease_of_Learning: I would imagine that most people would learn to use this system very quickly. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-10. Cumbersome_to_Use: I found the system very awkward to use. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-11. Confidence_in_Use: I felt very confident using the system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-12. Need_to_Learn_Before_Use: I needed to learn a lot of things before I could get going with this system. [Likert 1–5: 1 = Strongly Disagree, 5 = Strongly Agree]
-
-Responses:
---------------------
-
-Respondent 56:
-  Name: Clinician 56
-  Group: C
-  Frequent_Usage: 4
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 2
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-Respondent 80:
-  Name: Clinician 80
-  Group: B
-  Frequent_Usage: 4
-  System_Complexity: 1
-  Ease_of_Use: 4
-  Need_for_Technical_Support: 3
-  Integration_of_Functions: 4
-  Inconsistency: 2
-  Ease_of_Learning: 4
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 3
-  Need_to_Learn_Before_Use: 3
-
-Respondent 87:
-  Name: Clinician 87
-  Group: B
-  Frequent_Usage: 3
-  System_Complexity: 1
-  Ease_of_Use: 5
-  Need_for_Technical_Support: 1
-  Integration_of_Functions: 5
-  Inconsistency: 1
-  Ease_of_Learning: 5
-  Cumbersome_to_Use: 1
-  Confidence_in_Use: 5
-  Need_to_Learn_Before_Use: 1
-
-</questionnaire>
-
-You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
-
-You will be given a dataset with two key parts:
-
-A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
-
-A 'responses' section: This contains the raw data from each individual respondent.
-
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
-
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
-
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
-
-<task>
-How many respondents have Group D?
-</task>",,
-case_37,conceptual_aggregation,How many respondents have Group A?,"Survey Data
+case_37,conceptual_aggregation,How many respondents have Inconsistency 1?,"Survey Data
 ==================================================
 
 Questions:
@@ -7908,7 +7980,7 @@ Respondent 89:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -8054,18 +8126,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group A?
+How many respondents have Inconsistency 1?
 </task>",,
-case_38,conceptual_aggregation,How many respondents have Cumbersome_to_Use 3?,"Survey Data
+case_38,conceptual_aggregation,How many respondents have Ease_of_Learning 4?,"Survey Data
 ==================================================
 
 Questions:
@@ -8126,7 +8200,7 @@ Respondent 40:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 3
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -8272,18 +8346,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Cumbersome_to_Use 3?
+How many respondents have Ease_of_Learning 4?
 </task>",,
-case_39,conceptual_aggregation,How many respondents have Group B?,"Survey Data
+case_39,conceptual_aggregation,How many respondents have Integration_of_Functions 4?,"Survey Data
 ==================================================
 
 Questions:
@@ -8344,7 +8420,7 @@ Respondent 21:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 4
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -8490,16 +8566,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group B?
+How many respondents have Integration_of_Functions 4?
 </task>",,
 case_40,conceptual_aggregation,How many respondents have Inconsistency 1?,"Survey Data
 ==================================================
@@ -8562,7 +8640,7 @@ Respondent 60:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",3,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -8708,18 +8786,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Inconsistency 1?
 </task>",,
-case_41,conceptual_aggregation,How many respondents have Group A?,"Survey Data
+case_41,conceptual_aggregation,How many respondents have Frequent_Usage 2?,"Survey Data
 ==================================================
 
 Questions:
@@ -8780,7 +8860,7 @@ Respondent 6:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -8926,16 +9006,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group A?
+How many respondents have Frequent_Usage 2?
 </task>",,
 case_42,conceptual_aggregation,How many respondents have Frequent_Usage 1?,"Survey Data
 ==================================================
@@ -8998,7 +9080,7 @@ Respondent 23:
   Cumbersome_to_Use: 2
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -9144,18 +9226,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Frequent_Usage 1?
 </task>",,
-case_43,conceptual_aggregation,How many respondents have Group A?,"Survey Data
+case_43,conceptual_aggregation,How many respondents have Integration_of_Functions 5?,"Survey Data
 ==================================================
 
 Questions:
@@ -9216,7 +9300,7 @@ Respondent 4:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 4
   Need_to_Learn_Before_Use: 5
-",0,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -9362,16 +9446,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group A?
+How many respondents have Integration_of_Functions 5?
 </task>",,
 case_44,conceptual_aggregation,How many respondents have Need_to_Learn_Before_Use 3?,"Survey Data
 ==================================================
@@ -9434,7 +9520,7 @@ Respondent 60:
   Cumbersome_to_Use: 1
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -9580,18 +9666,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Need_to_Learn_Before_Use 3?
 </task>",,
-case_45,conceptual_aggregation,How many respondents have Group D?,"Survey Data
+case_45,conceptual_aggregation,How many respondents have Frequent_Usage 5?,"Survey Data
 ==================================================
 
 Questions:
@@ -9652,7 +9740,7 @@ Respondent 36:
   Cumbersome_to_Use: 3
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 1
-",0,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -9798,18 +9886,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Group D?
+How many respondents have Frequent_Usage 5?
 </task>",,
-case_46,conceptual_aggregation,How many respondents have Confidence_in_Use 3?,"Survey Data
+case_46,conceptual_aggregation,How many respondents have Group D?,"Survey Data
 ==================================================
 
 Questions:
@@ -10016,16 +10106,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Confidence_in_Use 3?
+How many respondents have Group D?
 </task>",,
 case_47,conceptual_aggregation,How many respondents have Ease_of_Use 5?,"Survey Data
 ==================================================
@@ -10088,7 +10180,7 @@ Respondent 18:
   Cumbersome_to_Use: 2
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 2
-",1,"<example>
+",2,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -10234,13 +10326,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Ease_of_Use 5?
@@ -10452,18 +10546,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 How many respondents have Group B?
 </task>",,
-case_49,conceptual_aggregation,How many respondents have System_Complexity 4?,"Survey Data
+case_49,conceptual_aggregation,How many respondents have System_Complexity 2?,"Survey Data
 ==================================================
 
 Questions:
@@ -10524,7 +10620,7 @@ Respondent 72:
   Cumbersome_to_Use: 5
   Confidence_in_Use: 1
   Need_to_Learn_Before_Use: 3
-",2,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -10670,18 +10766,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have System_Complexity 4?
+How many respondents have System_Complexity 2?
 </task>",,
-case_50,conceptual_aggregation,How many respondents have Integration_of_Functions 4?,"Survey Data
+case_50,conceptual_aggregation,How many respondents have System_Complexity 3?,"Survey Data
 ==================================================
 
 Questions:
@@ -10742,7 +10840,7 @@ Respondent 33:
   Cumbersome_to_Use: 4
   Confidence_in_Use: 5
   Need_to_Learn_Before_Use: 5
-",2,"<example>
+",1,"<example>
 How many respondents have Group C?
 
 DATA:
@@ -10888,14 +10986,16 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-How many respondents have Integration_of_Functions 4?
+How many respondents have System_Complexity 3?
 </task>",,

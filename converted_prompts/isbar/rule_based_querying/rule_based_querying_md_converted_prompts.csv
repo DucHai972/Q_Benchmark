@@ -224,13 +224,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores equal to 3?
@@ -594,13 +596,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have situation scores greater than or equal to 2?
@@ -836,13 +840,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have background (history) scores equal to 2?
@@ -1072,13 +1078,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have assessment scores equal to 3?
@@ -1310,13 +1318,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (clear recommendation) scores equal to 3?
@@ -1654,18 +1664,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have background (examination) scores equal to 1?
 </task>",,
-case_7,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores equal to 2?,"# Survey Data
+case_7,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 1?,"# Survey Data
 
 ## Questions
 
@@ -1804,7 +1816,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication during handover
 Good
-",None,"<example>
+","1, 4, 8, 10, 11, 18, 20, 22","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -2034,18 +2046,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (global rating scale) scores equal to 2?
+Which respondent numbers have assessment scores greater than or equal to 1?
 </task>",,
-case_8,rule_based_querying,Which respondent numbers have situation scores equal to 3?,"# Survey Data
+case_8,rule_based_querying,Which respondent numbers have background (examination) scores less than 2?,"# Survey Data
 
 ## Questions
 
@@ -2126,7 +2140,7 @@ Further brief to patient, ask patent concerns
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:** Time: (15:53-16:14)
-",None,"<example>
+",4,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -2298,18 +2312,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores equal to 3?
+Which respondent numbers have background (examination) scores less than 2?
 </task>",,
-case_9,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 2?,"# Survey Data
+case_9,rule_based_querying,Which respondent numbers have situation scores greater than or equal to 1?,"# Survey Data
 
 ## Questions
 
@@ -2374,7 +2390,7 @@ case_9,rule_based_querying,Which respondent numbers have assessment scores great
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
-",None,"<example>
+","1, 15, 21","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -2530,18 +2546,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores greater than or equal to 2?
+Which respondent numbers have situation scores greater than or equal to 1?
 </task>",,
-case_10,rule_based_querying,Which respondent numbers have identification scores equal to 2?,"# Survey Data
+case_10,rule_based_querying,Which respondent numbers have background (history) scores equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -2608,7 +2626,7 @@ Good and early assessment of condition is done
 - **Recommendation (global rating scale):** 2
 - **Comments:** Concise - clear
 Satisfactory
-",None,"<example>
+",5,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -2766,18 +2784,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have identification scores equal to 2?
+Which respondent numbers have background (history) scores equal to 2?
 </task>",,
-case_11,rule_based_querying,Which respondent numbers have background (examination) scores greater than 2?,"# Survey Data
+case_11,rule_based_querying,Which respondent numbers have situation scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -2916,7 +2936,7 @@ DID: Sepsis I Anaphylaxsis given by team
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication during handover
 Good
-",None,"<example>
+","6, 14","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -3146,16 +3166,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (examination) scores greater than 2?
+Which respondent numbers have situation scores less than 3?
 </task>",,
 case_12,rule_based_querying,Which respondent numbers have situation scores less than 3?,"# Survey Data
 
@@ -3266,7 +3288,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good clear and precise clinical handover
 Good
-",None,"<example>
+",23,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -3466,18 +3488,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have situation scores less than 3?
 </task>",,
-case_13,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores equal to 2?,"# Survey Data
+case_13,rule_based_querying,Which respondent numbers have identification scores greater than or equal to 1?,"# Survey Data
 
 ## Questions
 
@@ -3604,7 +3628,7 @@ Further brief to patient, ask patent concerns
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication skills
 Good
-",None,"<example>
+","2, 4, 9, 13, 17, 20, 22","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -3822,18 +3846,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (clear recommendation) scores equal to 2?
+Which respondent numbers have identification scores greater than or equal to 1?
 </task>",,
-case_14,rule_based_querying,Which respondent numbers have background (history) scores greater than 2?,"# Survey Data
+case_14,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -3968,7 +3994,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 3
 - **Comments:** Consent denied for video recordings
 Satisfactory
-",None,"<example>
+","8, 11, 21","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -4194,18 +4220,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (history) scores greater than 2?
+Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?
 </task>",,
-case_15,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than 2?,"# Survey Data
+case_15,rule_based_querying,Which respondent numbers have background (examination) scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -4315,7 +4343,7 @@ Satisfactory
 Ventricular fibrillation (CVS)
 Lack of communication btween 2 main interns
 Further brief to patient, ask patent concerns
-",None,"<example>
+","1, 15, 16, 19","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -4516,16 +4544,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (global rating scale) scores greater than 2?
+Which respondent numbers have background (examination) scores greater than or equal to 3?
 </task>",,
 case_16,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores equal to 3?,"# Survey Data
 
@@ -4840,18 +4870,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (clear recommendation) scores equal to 3?
 </task>",,
-case_17,rule_based_querying,Which respondent numbers have situation scores less than 3?,"# Survey Data
+case_17,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -4956,7 +4988,7 @@ Satisfactory
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:**
-",None,"<example>
+","7, 11","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -5152,18 +5184,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores less than 3?
+Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?
 </task>",,
-case_18,rule_based_querying,Which respondent numbers have assessment scores equal to 2?,"# Survey Data
+case_18,rule_based_querying,Which respondent numbers have background (examination) scores equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -5271,7 +5305,7 @@ Good
 - **Recommendation (global rating scale):** 2
 - **Comments:** Not very concise or clear communication
 Satisfactory
-",None,"<example>
+","2, 17","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -5470,18 +5504,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores equal to 2?
+Which respondent numbers have background (examination) scores equal to 2?
 </task>",,
-case_19,rule_based_querying,Which respondent numbers have background (examination) scores equal to 3?,"# Survey Data
+case_19,rule_based_querying,Which respondent numbers have background (examination) scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -5589,7 +5625,7 @@ Good
 - **Recommendation (global rating scale):** 2
 - **Comments:** Not very concise or clear communication
 Satisfactory
-",None,"<example>
+","3, 5, 17, 23","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -5788,16 +5824,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (examination) scores equal to 3?
+Which respondent numbers have background (examination) scores less than 3?
 </task>",,
 case_20,rule_based_querying,Which respondent numbers have identification scores equal to 2?,"# Survey Data
 
@@ -6106,18 +6144,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores equal to 2?
 </task>",,
-case_21,rule_based_querying,Which respondent numbers have situation scores greater than or equal to 3?,"# Survey Data
+case_21,rule_based_querying,Which respondent numbers have situation scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -6224,7 +6264,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 1
 - **Comments:** Time: (2:36-2:53)
 Late response for considering consultation
-",None,"<example>
+",14,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -6422,16 +6462,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores greater than or equal to 3?
+Which respondent numbers have situation scores less than 3?
 </task>",,
 case_22,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores equal to 3?,"# Survey Data
 
@@ -6688,18 +6730,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (clear recommendation) scores equal to 3?
 </task>",,
-case_23,rule_based_querying,Which respondent numbers have assessment scores less than 3?,"# Survey Data
+case_23,rule_based_querying,Which respondent numbers have background (examination) scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -6767,7 +6811,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 3
 - **Comments:** The patient/simulation is not oriented in TPP.
 Clear communication between Reg and colleague during handover
-",None,"<example>
+","6, 18","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -6926,18 +6970,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores less than 3?
+Which respondent numbers have background (examination) scores greater than or equal to 3?
 </task>",,
-case_24,rule_based_querying,Which respondent numbers have background (history) scores equal to 2?,"# Survey Data
+case_24,rule_based_querying,Which respondent numbers have identification scores less than 1?,"# Survey Data
 
 ## Questions
 
@@ -7005,7 +7051,7 @@ Good
 - **Recommendation (global rating scale):** 3
 - **Comments:** The patient/simulation is not oriented in TPP.
 Clear communication between Reg and colleague during handover
-",None,"<example>
+",6,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -7164,16 +7210,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (history) scores equal to 2?
+Which respondent numbers have identification scores less than 1?
 </task>",,
 case_25,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores equal to 2?,"# Survey Data
 
@@ -7456,18 +7504,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (global rating scale) scores equal to 2?
 </task>",,
-case_26,rule_based_querying,Which respondent numbers have identification scores less than 3?,"# Survey Data
+case_26,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -7532,7 +7582,7 @@ case_26,rule_based_querying,Which respondent numbers have identification scores 
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:**
-",None,"<example>
+",9,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -7688,16 +7738,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have identification scores less than 3?
+Which respondent numbers have recommendation (global rating scale) scores equal to 2?
 </task>",,
 case_27,rule_based_querying,Which respondent numbers have identification scores equal to 2?,"# Survey Data
 
@@ -8072,18 +8124,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores equal to 2?
 </task>",,
-case_28,rule_based_querying,Which respondent numbers have background (examination) scores equal to 1?,"# Survey Data
+case_28,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -8192,7 +8246,7 @@ Late response for considering consultation
 - **Comments:** Clinical handover and communication skills, satisfactory
 No panic, no arrest team
 Satisfactory
-",None,"<example>
+","1, 9, 16, 20, 23","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -8392,18 +8446,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (examination) scores equal to 1?
+Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?
 </task>",,
-case_29,rule_based_querying,Which respondent numbers have situation scores equal to 2?,"# Survey Data
+case_29,rule_based_querying,Which respondent numbers have background (examination) scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -8470,7 +8526,7 @@ case_29,rule_based_querying,Which respondent numbers have situation scores equal
 - **Comments:** Wrong CPR position
 Clarity is a bit low over whole case scenario
 Satisfactory
-",None,"<example>
+","8, 18","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -8628,16 +8684,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores equal to 2?
+Which respondent numbers have background (examination) scores greater than or equal to 3?
 </task>",,
 case_30,rule_based_querying,Which respondent numbers have identification scores equal to 0?,"# Survey Data
 
@@ -8944,18 +9002,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores equal to 0?
 </task>",,
-case_31,rule_based_querying,Which respondent numbers have background (history) scores equal to 3?,"# Survey Data
+case_31,rule_based_querying,Which respondent numbers have assessment scores equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -9020,7 +9080,7 @@ case_31,rule_based_querying,Which respondent numbers have background (history) s
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:**
-",None,"<example>
+","11, 15","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -9176,18 +9236,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (history) scores equal to 3?
+Which respondent numbers have assessment scores equal to 2?
 </task>",,
-case_32,rule_based_querying,Which respondent numbers have assessment scores greater than 2?,"# Survey Data
+case_32,rule_based_querying,Which respondent numbers have assessment scores equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -9253,7 +9315,7 @@ Late response for considering consultation
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
-",None,"<example>
+","3, 12","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -9410,18 +9472,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores greater than 2?
+Which respondent numbers have assessment scores equal to 3?
 </task>",,
-case_33,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores less than 3?,"# Survey Data
+case_33,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -9489,7 +9553,7 @@ Late response for considering consultation
 - **Comments:** Wrong CPR position
 Clarity is a bit low over whole case scenario
 Satisfactory
-",None,"<example>
+",12,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -9648,18 +9712,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (clear recommendation) scores less than 3?
+Which respondent numbers have recommendation (global rating scale) scores equal to 3?
 </task>",,
-case_34,rule_based_querying,Which respondent numbers have situation scores less than or equal to 2?,"# Survey Data
+case_34,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -9727,7 +9793,7 @@ Good
 - **Recommendation (global rating scale):** 2
 - **Comments:** Concise - clear
 Satisfactory
-",None,"<example>
+",19,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -9886,16 +9952,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores less than or equal to 2?
+Which respondent numbers have recommendation (global rating scale) scores less than 3?
 </task>",,
 case_35,rule_based_querying,Which respondent numbers have identification scores equal to -1?,"# Survey Data
 
@@ -10262,13 +10330,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores equal to -1?
@@ -10397,7 +10467,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 1
 - **Comments:** Time: (2:36-2:53)
 Late response for considering consultation
-",None,"<example>
+","2, 3, 5, 10","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -10612,18 +10682,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have background (examination) scores equal to 2?
 </task>",,
-case_37,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores equal to 3?,"# Survey Data
+case_37,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 3?,"# Survey Data
 
 ## Questions
 
@@ -10717,7 +10789,7 @@ Satisfactory
 - **Comments:** Wrong CPR position
 Clarity is a bit low over whole case scenario
 Satisfactory
-",None,"<example>
+",13,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -10902,18 +10974,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (global rating scale) scores equal to 3?
+Which respondent numbers have assessment scores greater than or equal to 3?
 </task>",,
-case_38,rule_based_querying,Which respondent numbers have assessment scores equal to 3?,"# Survey Data
+case_38,rule_based_querying,Which respondent numbers have identification scores greater than or equal to 1?,"# Survey Data
 
 ## Questions
 
@@ -11036,7 +11110,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication during handover
 Good
-",None,"<example>
+","2, 3, 10, 12, 15, 17, 22","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -11250,18 +11324,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores equal to 3?
+Which respondent numbers have identification scores greater than or equal to 1?
 </task>",,
-case_39,rule_based_querying,Which respondent numbers have background (history) scores less than 3?,"# Survey Data
+case_39,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -11327,7 +11403,7 @@ Satisfactory
 - **Recommendation (clear recommendation):** 2
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
-",None,"<example>
+","9, 15, 17","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -11484,16 +11560,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (history) scores less than 3?
+Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?
 </task>",,
 case_40,rule_based_querying,Which respondent numbers have identification scores not equal to 3?,"# Survey Data
 
@@ -11800,18 +11878,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have identification scores not equal to 3?
 </task>",,
-case_41,rule_based_querying,Which respondent numbers have situation scores equal to 2?,"# Survey Data
+case_41,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -11876,7 +11956,7 @@ case_41,rule_based_querying,Which respondent numbers have situation scores equal
 - **Recommendation (clear recommendation):** 3
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication and handover
-",None,"<example>
+","5, 8, 9","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -12032,18 +12112,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have situation scores equal to 2?
+Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 2?
 </task>",,
-case_42,rule_based_querying,Which respondent numbers have background (examination) scores greater than or equal to 2?,"# Survey Data
+case_42,rule_based_querying,Which respondent numbers have background (examination) scores greater than or equal to 1?,"# Survey Data
 
 ## Questions
 
@@ -12109,7 +12191,7 @@ Good
 - **Recommendation (clear recommendation):** 3
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good
-",None,"<example>
+","10, 11, 14","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -12266,18 +12348,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (examination) scores greater than or equal to 2?
+Which respondent numbers have background (examination) scores greater than or equal to 1?
 </task>",,
-case_43,rule_based_querying,Which respondent numbers have assessment scores equal to 2?,"# Survey Data
+case_43,rule_based_querying,Which respondent numbers have background (examination) scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -12358,7 +12442,7 @@ Satisfactory
 - **Comments:** Time: (11:43-11:58)
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
-",None,"<example>
+",2,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -12530,18 +12614,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have assessment scores equal to 2?
+Which respondent numbers have background (examination) scores less than 3?
 </task>",,
-case_44,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores equal to 2?,"# Survey Data
+case_44,rule_based_querying,Which respondent numbers have identification scores less than 3?,"# Survey Data
 
 ## Questions
 
@@ -12624,7 +12710,7 @@ Late response for considering consultation
 - **Comments:** Time: (11:43-11:58)
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
-",None,"<example>
+",6,"<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -12798,16 +12884,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have recommendation (clear recommendation) scores equal to 2?
+Which respondent numbers have identification scores less than 3?
 </task>",,
 case_45,rule_based_querying,Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?,"# Survey Data
 
@@ -13116,18 +13204,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (global rating scale) scores greater than or equal to 3?
 </task>",,
-case_46,rule_based_querying,Which respondent numbers have situation scores less than 3?,"# Survey Data
+case_46,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -13251,7 +13341,7 @@ Satisfactory
 - **Comments:** Time: (11:43-11:58)
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
-",None,"<example>
+","1, 2, 3, 13, 14, 17, 18","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -13466,524 +13556,530 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
-
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
-
-<task>
-Which respondent numbers have situation scores less than 3?
-</task>",,
-case_47,rule_based_querying,Which respondent numbers have background (history) scores equal to 2?,"# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 6
-
-- **Date:** 2025-04-04
-- **SessionName:** III-Sepsis
-- **Identification:** -1
-- **Situation:** 2
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** The patient/simulation is not oriented in TPP.
-Clear communication between Reg and colleague during handover
-
-### Respondent 2
-
-- **Date:** 2025-03-14
-- **SessionName:** II-Anaphylaxsis
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 2
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** Time: (11:43-11:58)
-Talking to registrav could not summarize the condition of patient very clearly
-DID: Sepsis I Anaphylaxsis given by team
-
-### Respondent 22
-
-- **Date:** 2025-05-16
-- **SessionName:** IV (VT)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 2
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 3
-- **Comments:** Clear communication skills
-Good
-",None,"<example>
-Which respondent numbers have identification scores equal to 3?
-
-DATA:
-
-# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 19
-
-- **Date:** 2025-05-04
-- **SessionName:** V (Hypoglycemia)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 2
-- **Comments:** Concise - clear
-Satisfactory
-
-### Respondent 8
-
-- **Date:** 2025-04-04
-- **SessionName:** IV (AF)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** Clear communication and handover
-
-### Respondent 3
-
-- **Date:** 2025-03-14
-- **SessionName:** IV-Hypoglycemia
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 2
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 1
-- **Recommendation (global rating scale):** 1
-- **Comments:** Time: (2:36-2:53)
-Late response for considering consultation
-
-
-Answer: 19, 8, 3
-</example>
-
-<questionnaire>
-# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 6
-
-- **Date:** 2025-04-04
-- **SessionName:** III-Sepsis
-- **Identification:** -1
-- **Situation:** 2
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** The patient/simulation is not oriented in TPP.
-Clear communication between Reg and colleague during handover
-
-### Respondent 2
-
-- **Date:** 2025-03-14
-- **SessionName:** II-Anaphylaxsis
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 2
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** Time: (11:43-11:58)
-Talking to registrav could not summarize the condition of patient very clearly
-DID: Sepsis I Anaphylaxsis given by team
-
-### Respondent 22
-
-- **Date:** 2025-05-16
-- **SessionName:** IV (VT)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 2
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 3
-- **Comments:** Clear communication skills
-Good
-
-</questionnaire>
-
-You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
-
-You will be given a dataset with two key parts:
-
-A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
-
-A 'responses' section: This contains the raw data from each individual respondent.
-
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
-
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
-
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
-
-<task>
-Which respondent numbers have background (history) scores equal to 2?
-</task>",,
-case_48,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 2?,"# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 19
-
-- **Date:** 2025-05-04
-- **SessionName:** V (Hypoglycemia)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 2
-- **Comments:** Concise - clear
-Satisfactory
-
-### Respondent 16
-
-- **Date:** 2025-05-04
-- **SessionName:** II - Anaphylaxsis
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 3
-- **Comments:** Good clear and precise clinical handover
-Good
-
-### Respondent 9
-
-- **Date:** 2025-04-04
-- **SessionName:** MI
-- **Identification:** 2
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 2
-- **Comments:**
-
-### Respondent 20
-
-- **Date:** 2025-05-16
-- **SessionName:** III (Sepsis)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 2
-- **Assessment:** 2
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 2
-- **Comments:** Clinical handover and communication skills, satisfactory
-No panic, no arrest team
-Satisfactory
-",None,"<example>
-Which respondent numbers have identification scores equal to 3?
-
-DATA:
-
-# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 19
-
-- **Date:** 2025-05-04
-- **SessionName:** V (Hypoglycemia)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 2
-- **Comments:** Concise - clear
-Satisfactory
-
-### Respondent 8
-
-- **Date:** 2025-04-04
-- **SessionName:** IV (AF)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 3
-- **Comments:** Clear communication and handover
-
-### Respondent 3
-
-- **Date:** 2025-03-14
-- **SessionName:** IV-Hypoglycemia
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 2
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 1
-- **Recommendation (global rating scale):** 1
-- **Comments:** Time: (2:36-2:53)
-Late response for considering consultation
-
-
-Answer: 19, 8, 3
-</example>
-
-<questionnaire>
-# Survey Data
-
-## Questions
-
-- **Date:** What is the date of the session? [Open-ended]
-
-- **SessionName:** What is the name of the session? [Open-ended]
-
-- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
-
-- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
-
-- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
-
-- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
-
-- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
-
-- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
-
-- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
-
-- **Comments:** Comments on the session. [Open-ended]
-
-## Responses
-
-
-### Respondent 19
-
-- **Date:** 2025-05-04
-- **SessionName:** V (Hypoglycemia)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 3
-- **Recommendation (global rating scale):** 2
-- **Comments:** Concise - clear
-Satisfactory
-
-### Respondent 16
-
-- **Date:** 2025-05-04
-- **SessionName:** II - Anaphylaxsis
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 3
-- **Comments:** Good clear and precise clinical handover
-Good
-
-### Respondent 9
-
-- **Date:** 2025-04-04
-- **SessionName:** MI
-- **Identification:** 2
-- **Situation:** 3
-- **Background (history):** 2
-- **Background (examination):** 3
-- **Assessment:** 3
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 2
-- **Comments:**
-
-### Respondent 20
-
-- **Date:** 2025-05-16
-- **SessionName:** III (Sepsis)
-- **Identification:** 3
-- **Situation:** 3
-- **Background (history):** 3
-- **Background (examination):** 2
-- **Assessment:** 2
-- **Recommendation (clear recommendation):** 2
-- **Recommendation (global rating scale):** 2
-- **Comments:** Clinical handover and communication skills, satisfactory
-No panic, no arrest team
-Satisfactory
-
-</questionnaire>
-
-You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
-
-You will be given a dataset with two key parts:
-
-A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
-
-A 'responses' section: This contains the raw data from each individual respondent.
-
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
-
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
-
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have assessment scores greater than or equal to 2?
 </task>",,
-case_49,rule_based_querying,Which respondent numbers have background (examination) scores not equal to 3?,"# Survey Data
+case_47,rule_based_querying,Which respondent numbers have assessment scores greater than or equal to 1?,"# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 6
+
+- **Date:** 2025-04-04
+- **SessionName:** III-Sepsis
+- **Identification:** -1
+- **Situation:** 2
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** The patient/simulation is not oriented in TPP.
+Clear communication between Reg and colleague during handover
+
+### Respondent 2
+
+- **Date:** 2025-03-14
+- **SessionName:** II-Anaphylaxsis
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 2
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** Time: (11:43-11:58)
+Talking to registrav could not summarize the condition of patient very clearly
+DID: Sepsis I Anaphylaxsis given by team
+
+### Respondent 22
+
+- **Date:** 2025-05-16
+- **SessionName:** IV (VT)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 2
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 3
+- **Comments:** Clear communication skills
+Good
+","2, 6, 22","<example>
+Which respondent numbers have identification scores equal to 3?
+
+DATA:
+
+# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 19
+
+- **Date:** 2025-05-04
+- **SessionName:** V (Hypoglycemia)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 2
+- **Comments:** Concise - clear
+Satisfactory
+
+### Respondent 8
+
+- **Date:** 2025-04-04
+- **SessionName:** IV (AF)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** Clear communication and handover
+
+### Respondent 3
+
+- **Date:** 2025-03-14
+- **SessionName:** IV-Hypoglycemia
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 2
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 1
+- **Recommendation (global rating scale):** 1
+- **Comments:** Time: (2:36-2:53)
+Late response for considering consultation
+
+
+Answer: 19, 8, 3
+</example>
+
+<questionnaire>
+# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 6
+
+- **Date:** 2025-04-04
+- **SessionName:** III-Sepsis
+- **Identification:** -1
+- **Situation:** 2
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** The patient/simulation is not oriented in TPP.
+Clear communication between Reg and colleague during handover
+
+### Respondent 2
+
+- **Date:** 2025-03-14
+- **SessionName:** II-Anaphylaxsis
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 2
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** Time: (11:43-11:58)
+Talking to registrav could not summarize the condition of patient very clearly
+DID: Sepsis I Anaphylaxsis given by team
+
+### Respondent 22
+
+- **Date:** 2025-05-16
+- **SessionName:** IV (VT)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 2
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 3
+- **Comments:** Clear communication skills
+Good
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+<task>
+Which respondent numbers have assessment scores greater than or equal to 1?
+</task>",,
+case_48,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?,"# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 19
+
+- **Date:** 2025-05-04
+- **SessionName:** V (Hypoglycemia)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 2
+- **Comments:** Concise - clear
+Satisfactory
+
+### Respondent 16
+
+- **Date:** 2025-05-04
+- **SessionName:** II - Anaphylaxsis
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 3
+- **Comments:** Good clear and precise clinical handover
+Good
+
+### Respondent 9
+
+- **Date:** 2025-04-04
+- **SessionName:** MI
+- **Identification:** 2
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 2
+- **Comments:**
+
+### Respondent 20
+
+- **Date:** 2025-05-16
+- **SessionName:** III (Sepsis)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 2
+- **Assessment:** 2
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 2
+- **Comments:** Clinical handover and communication skills, satisfactory
+No panic, no arrest team
+Satisfactory
+",19,"<example>
+Which respondent numbers have identification scores equal to 3?
+
+DATA:
+
+# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 19
+
+- **Date:** 2025-05-04
+- **SessionName:** V (Hypoglycemia)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 2
+- **Comments:** Concise - clear
+Satisfactory
+
+### Respondent 8
+
+- **Date:** 2025-04-04
+- **SessionName:** IV (AF)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 3
+- **Comments:** Clear communication and handover
+
+### Respondent 3
+
+- **Date:** 2025-03-14
+- **SessionName:** IV-Hypoglycemia
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 2
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 1
+- **Recommendation (global rating scale):** 1
+- **Comments:** Time: (2:36-2:53)
+Late response for considering consultation
+
+
+Answer: 19, 8, 3
+</example>
+
+<questionnaire>
+# Survey Data
+
+## Questions
+
+- **Date:** What is the date of the session? [Open-ended]
+
+- **SessionName:** What is the name of the session? [Open-ended]
+
+- **Identification:** Identification of self, role, and patient. [Rubric: 0 = Requires direct prompting, 1 = Introduces themselves but only after a hint, 2 = Introduces themselves but information is incomplete, 3 = Introduces themselves and information is complete]
+
+- **Situation:** Identifies the main problem(s). [Rubric: 0 = Unable to identify the main problem(s), 1 = Identifies the main problem(s) after extended prompting, 2 = Identifies the main problem(s) with fewer prompts needed, 3 = Identifies and prioritizes the main problem(s) unprompted]
+
+- **Background (history):** Gives appropriate history. [Rubric: 0 = History is unstructured or non-relevant, 1 = Relevant history but frequent clarification needed, 2 = Relevant history with few further questions needed, 3 = Comprehensive focused history]
+
+- **Background (examination):** Gives appropriate examination/observations. [Rubric: 0 = Observations are omitted or irrelevant, 1 = Observations reported but frequent clarification needed, 2 = Observations reported with few further questions needed, 3 = Comprehensive focused examination/observations]
+
+- **Assessment:** Makes logical assessment (correlates problem, history, exam, context). [Rubric: 0 = No logical assessment, 1 = Assessment only after extended questioning, 2 = Assessment after minimal questioning, 3 = Comprehensive logical assessment without questioning]
+
+- **Recommendation (clear recommendation):** Makes a clear recommendation. [Rubric: 0 = No recommendation, 1 = Clear recommendation only after extended questioning, 2 = Clear recommendation after minimal questioning, 3 = Clear comprehensive recommendation without questioning]
+
+- **Recommendation (global rating scale):** Global Rating Scale (GRS) - How confident am I that I received an accurate picture of the patient? [Rubric: 0 = Not at all confident, 1 = Confident but required extended questioning, 2 = Confident but required some further questioning, 3 = Confident and required little or no questioning]
+
+- **Comments:** Comments on the session. [Open-ended]
+
+## Responses
+
+
+### Respondent 19
+
+- **Date:** 2025-05-04
+- **SessionName:** V (Hypoglycemia)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 3
+- **Recommendation (global rating scale):** 2
+- **Comments:** Concise - clear
+Satisfactory
+
+### Respondent 16
+
+- **Date:** 2025-05-04
+- **SessionName:** II - Anaphylaxsis
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 3
+- **Comments:** Good clear and precise clinical handover
+Good
+
+### Respondent 9
+
+- **Date:** 2025-04-04
+- **SessionName:** MI
+- **Identification:** 2
+- **Situation:** 3
+- **Background (history):** 2
+- **Background (examination):** 3
+- **Assessment:** 3
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 2
+- **Comments:**
+
+### Respondent 20
+
+- **Date:** 2025-05-16
+- **SessionName:** III (Sepsis)
+- **Identification:** 3
+- **Situation:** 3
+- **Background (history):** 3
+- **Background (examination):** 2
+- **Assessment:** 2
+- **Recommendation (clear recommendation):** 2
+- **Recommendation (global rating scale):** 2
+- **Comments:** Clinical handover and communication skills, satisfactory
+No panic, no arrest team
+Satisfactory
+
+</questionnaire>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
+
+A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
+
+A 'responses' section: This contains the raw data from each individual respondent.
+
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+<task>
+Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?
+</task>",,
+case_49,rule_based_querying,Which respondent numbers have background (history) scores greater than or equal to 2?,"# Survey Data
 
 ## Questions
 
@@ -14093,7 +14189,7 @@ Good and early assessment of condition is done
 - **Recommendation (clear recommendation):** 3
 - **Recommendation (global rating scale):** 2
 - **Comments:** Overall a bit unclear communication reflected
-",None,"<example>
+","4, 11, 17, 19, 21, 23","<example>
 Which respondent numbers have identification scores equal to 3?
 
 DATA:
@@ -14294,16 +14390,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have background (examination) scores not equal to 3?
+Which respondent numbers have background (history) scores greater than or equal to 2?
 </task>",,
 case_50,rule_based_querying,Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?,"# Survey Data
 
@@ -14560,13 +14658,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have recommendation (clear recommendation) scores greater than or equal to 3?

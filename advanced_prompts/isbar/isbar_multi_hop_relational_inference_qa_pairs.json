@@ -6,7 +6,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "14",
@@ -24,16 +24,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 23",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Recommendation (clear recommendation) score of 3?",
-      "matching_respondents": [
-        "21",
-        "23"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -43,14 +40,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Recommendation (global rating scale) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "2",
+    "expected_answer": "11",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 3 and Recommendation (global rating scale) score of 3?",
       "matching_respondents": [
-        "2"
+        "11"
       ]
     }
   },
@@ -61,15 +58,16 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 3 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 16",
+    "expected_answer": "6, 11, 19",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 3 and Background (examination) score of 3?",
       "matching_respondents": [
-        "19",
-        "16"
+        "6",
+        "11",
+        "19"
       ]
     }
   },
@@ -80,7 +78,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 3 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "2, 19",
@@ -99,15 +97,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Assessment score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 23",
+    "expected_answer": "4",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Assessment score of 2?",
       "matching_respondents": [
-        "21",
-        "23"
+        "4"
       ]
     }
   },
@@ -118,18 +115,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 2 and Background (examination) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 14, 2, 20",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 2 and Background (examination) score of 2?",
-      "matching_respondents": [
-        "21",
-        "14",
-        "2",
-        "20"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -139,14 +131,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Situation score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 23",
+    "expected_answer": "23",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 3 and Situation score of 2?",
       "matching_respondents": [
-        "14",
         "23"
       ]
     }
@@ -158,17 +149,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 3 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "9, 19, 16",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 3 and Background (examination) score of 3?",
-      "matching_respondents": [
-        "9",
-        "19",
-        "16"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -178,17 +165,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (clear recommendation) score of 2 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 20, 21, 16",
+    "expected_answer": "9",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (clear recommendation) score of 2 and Recommendation (global rating scale) score of 2?",
       "matching_respondents": [
-        "14",
-        "20",
-        "21",
-        "16"
+        "9"
       ]
     }
   },
@@ -199,16 +183,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Background (history) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 15, 22, 16",
+    "expected_answer": "16",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Background (history) score of 3?",
       "matching_respondents": [
-        "19",
-        "15",
-        "22",
         "16"
       ]
     }
@@ -220,18 +201,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 2 and Assessment score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 20, 15, 22",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 2 and Assessment score of 2?",
-      "matching_respondents": [
-        "21",
-        "20",
-        "15",
-        "22"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -241,15 +217,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 2 and Situation score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "9",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 2 and Situation score of 3?",
-      "matching_respondents": [
-        "9"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -259,16 +233,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "2, 16, 22",
+    "expected_answer": "2",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Assessment score of 3?",
       "matching_respondents": [
-        "2",
-        "16",
-        "22"
+        "2"
       ]
     }
   },
@@ -279,15 +251,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 3 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 16",
+    "expected_answer": "13",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 3 and Assessment score of 3?",
       "matching_respondents": [
-        "19",
-        "16"
+        "13"
       ]
     }
   },
@@ -298,14 +269,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19",
+    "expected_answer": "6",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (clear recommendation) score of 3?",
       "matching_respondents": [
-        "19"
+        "6"
       ]
     }
   },
@@ -316,7 +287,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 2 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "14",
@@ -334,15 +305,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 1 and Assessment score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "23",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 1 and Assessment score of 2?",
-      "matching_respondents": [
-        "23"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -352,15 +321,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (clear recommendation) score of 3 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (clear recommendation) score of 3 and Recommendation (global rating scale) score of 2?",
-      "matching_respondents": [
-        "19"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -370,17 +337,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 2 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 20, 15",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 2 and Recommendation (clear recommendation) score of 2?",
-      "matching_respondents": [
-        "14",
-        "20",
-        "15"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -390,17 +353,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Background (history) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 15, 22, 16",
+    "expected_answer": "19",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 3 and Background (history) score of 3?",
       "matching_respondents": [
-        "19",
-        "15",
-        "22",
-        "16"
+        "19"
       ]
     }
   },
@@ -411,17 +371,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 2 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 20, 23, 15",
+    "expected_answer": "21",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 2 and Recommendation (global rating scale) score of 2?",
       "matching_respondents": [
-        "21",
-        "20",
-        "23",
-        "15"
+        "21"
       ]
     }
   },
@@ -432,16 +389,15 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Recommendation (global rating scale) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "2, 23, 16, 22",
+    "expected_answer": "8, 13, 22",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Recommendation (global rating scale) score of 3?",
       "matching_respondents": [
-        "2",
-        "23",
-        "16",
+        "8",
+        "13",
         "22"
       ]
     }
@@ -453,15 +409,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (global rating scale) score of 2?",
-      "matching_respondents": [
-        "19"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -471,7 +425,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 3 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "19",
@@ -489,15 +443,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 3 and Assessment score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "15, 22",
+    "expected_answer": "11",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 3 and Assessment score of 2?",
       "matching_respondents": [
-        "15",
-        "22"
+        "11"
       ]
     }
   },
@@ -508,17 +461,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Background (examination) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 14, 2, 20",
+    "expected_answer": "3",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 3 and Background (examination) score of 2?",
       "matching_respondents": [
-        "21",
-        "14",
-        "2",
-        "20"
+        "3"
       ]
     }
   },
@@ -529,15 +479,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 2 and Background (history) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 2 and Background (history) score of 2?",
-      "matching_respondents": [
-        "14"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -547,15 +495,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 3 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 3 and Recommendation (global rating scale) score of 2?",
-      "matching_respondents": [
-        "19"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -565,17 +511,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (clear recommendation) score of 2 and Assessment score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "20, 15, 22",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (clear recommendation) score of 2 and Assessment score of 2?",
-      "matching_respondents": [
-        "20",
-        "15",
-        "22"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -585,17 +527,15 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 15, 22, 16",
+    "expected_answer": "19, 22",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Background (examination) score of 3?",
       "matching_respondents": [
         "19",
-        "15",
-        "22",
-        "16"
+        "22"
       ]
     }
   },
@@ -606,16 +546,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 2 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 2",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 2 and Assessment score of 3?",
-      "matching_respondents": [
-        "14",
-        "2"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -625,15 +562,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 2 and Assessment score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "9",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 2 and Assessment score of 3?",
-      "matching_respondents": [
-        "9"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -643,15 +578,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "2, 23",
+    "expected_answer": "2",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Recommendation (clear recommendation) score of 3?",
       "matching_respondents": [
-        "2",
-        "23"
+        "2"
       ]
     }
   },
@@ -662,17 +596,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 2 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 20, 16",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 2 and Recommendation (clear recommendation) score of 2?",
-      "matching_respondents": [
-        "14",
-        "20",
-        "16"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -682,7 +612,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 2 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "14",
@@ -700,15 +630,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 2 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21, 23",
+    "expected_answer": "21",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 2 and Recommendation (clear recommendation) score of 3?",
       "matching_respondents": [
-        "21",
-        "23"
+        "21"
       ]
     }
   },
@@ -719,15 +648,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 3 and Recommendation (global rating scale) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 15",
+    "expected_answer": "18",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 3 and Recommendation (global rating scale) score of 2?",
       "matching_respondents": [
-        "19",
-        "15"
+        "18"
       ]
     }
   },
@@ -738,18 +666,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 3 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "14, 20, 15, 22, 16",
+    "expected_answer": "7",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 3 and Recommendation (clear recommendation) score of 2?",
       "matching_respondents": [
-        "14",
-        "20",
-        "15",
-        "22",
-        "16"
+        "7"
       ]
     }
   },
@@ -760,15 +684,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 3 and Background (history) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Situation score of 3 and Background (history) score of 2?",
-      "matching_respondents": [
-        "21"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -778,15 +700,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 1 and Recommendation (clear recommendation) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "23",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 1 and Recommendation (clear recommendation) score of 3?",
-      "matching_respondents": [
-        "23"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -796,15 +716,14 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 3 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "16, 9",
+    "expected_answer": "16",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 3 and Recommendation (clear recommendation) score of 2?",
       "matching_respondents": [
-        "16",
-        "9"
+        "16"
       ]
     }
   },
@@ -815,16 +734,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (global rating scale) score of 2 and Background (history) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "19, 15",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (global rating scale) score of 2 and Background (history) score of 3?",
-      "matching_respondents": [
-        "19",
-        "15"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -834,15 +750,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (clear recommendation) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "16",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (examination) score of 3 and Recommendation (clear recommendation) score of 2?",
-      "matching_respondents": [
-        "16"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -852,15 +766,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Identification score of 2 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "9",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Identification score of 2 and Background (examination) score of 3?",
-      "matching_respondents": [
-        "9"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -870,7 +782,7 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Situation score of 2 and Background (examination) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
     "expected_answer": "14",
@@ -888,14 +800,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Assessment score of 2 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "15, 22",
+    "expected_answer": "22",
     "metadata": {
       "inference_question": "Which respondent numbers have Assessment score of 2 and Background (examination) score of 3?",
       "matching_respondents": [
-        "15",
         "22"
       ]
     }
@@ -907,15 +818,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (clear recommendation) score of 3 and Background (history) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "21",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (clear recommendation) score of 3 and Background (history) score of 2?",
-      "matching_respondents": [
-        "21"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -925,15 +834,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Background (history) score of 3 and Background (examination) score of 2?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "20",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Background (history) score of 3 and Background (examination) score of 2?",
-      "matching_respondents": [
-        "20"
-      ]
+      "matching_respondents": []
     }
   },
   {
@@ -943,16 +850,13 @@
     "questionnaire": "[Insert the full data block here]",
     "ROLE_PROMPTING": "You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.",
     "FORMAT_EXPLANATION": "You will be given a dataset with two key parts:\n\nA 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.\n\nA 'responses' section: This contains the raw data from each individual respondent.\n\nTo answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.",
-    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:\n\nIf the question asks for a count, provide only the final number (e.g., \"42\").\n\nIf the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., \"17, 21, 23\").\n\nIf the question asks for a specific text comment, provide only that text.",
+    "OUTPUT_INSTRUCTIONS": "Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.\n\nRules:\n- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.\n  Example: If the schema is \"[MCQ: A. Abnormal B. Inconclusive C. Normal]\" and the response is \"a\", output \"Abnormal\".\n- For open-ended fields, output the exact text value.\n- If the question asks for a count, provide only the number (e.g., \"42\").\n- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., \"17, 21, 23\").\n- Preserve capitalization exactly as in the schema (e.g., output \"Abnormal\", not \"abnormal\" or \"A\").",
     "question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Background (examination) score of 3?",
     "prompt": "<example>\n[CASE_1]\n</example>\n\n<questionnaire>\n[questionnaire]\n</questionnaire>\n\n[ROLE_PROMPTING]\n\n[FORMAT_EXPLANATION]\n\n[OUTPUT_INSTRUCTIONS]\n\n<task>\n[question]\n</task>",
-    "expected_answer": "16, 22",
+    "expected_answer": "None",
     "metadata": {
       "inference_question": "Which respondent numbers have Recommendation (global rating scale) score of 3 and Background (examination) score of 3?",
-      "matching_respondents": [
-        "16",
-        "22"
-      ]
+      "matching_respondents": []
     }
   }
 ]

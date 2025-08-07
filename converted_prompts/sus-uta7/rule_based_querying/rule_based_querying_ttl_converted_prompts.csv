@@ -59,7 +59,7 @@ case_1,rule_based_querying,Which respondent numbers have ease of use ratings equ
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","45, 23","<example>
+","23, 45","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -203,13 +203,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings equal to 5?
@@ -418,13 +420,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings greater than or equal to 4?
@@ -489,7 +493,7 @@ case_3,rule_based_querying,Which respondent numbers have confidence in use ratin
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-","82, 50","<example>
+","50, 82","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -633,13 +637,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings equal to 5?
@@ -848,13 +854,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings less than or equal to 1?
@@ -919,7 +927,7 @@ case_5,rule_based_querying,Which respondent numbers have ease of learning rating
     pred:Confidence_in_Use ""3"" ;
     pred:Need_to_Learn_Before_Use ""3"" .
 
-","84, 19, 80","<example>
+","19, 80, 84","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -1063,13 +1071,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of learning ratings equal to 4?
@@ -1278,13 +1288,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have need for technical support ratings equal to 1?
@@ -1493,13 +1505,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings equal to 5?
@@ -1564,7 +1578,7 @@ case_8,rule_based_querying,Which respondent numbers have ease of use ratings equ
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","66, 7, 76","<example>
+","7, 66, 76","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -1708,13 +1722,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings equal to 5?
@@ -1923,13 +1939,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings equal to 5?
@@ -2138,13 +2156,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings greater than 3?
@@ -2353,13 +2373,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have integration of functions ratings greater than or equal to 4?
@@ -2424,7 +2446,7 @@ case_12,rule_based_querying,Which respondent numbers have frequent usage ratings
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","81, 51","<example>
+","51, 81","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -2568,13 +2590,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings greater than or equal to 4?
@@ -2783,13 +2807,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have inconsistency ratings greater than or equal to 4?
@@ -2998,13 +3024,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings less than 3?
@@ -3213,13 +3241,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings greater than or equal to 4 and ease of use ratings greater than or equal to 4?
@@ -3284,7 +3314,7 @@ case_16,rule_based_querying,Which respondent numbers have confidence in use rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","60, 56","<example>
+","56, 60","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -3428,13 +3458,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings equal to 5?
@@ -3643,13 +3675,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of learning ratings equal to 5?
@@ -3714,7 +3748,7 @@ case_18,rule_based_querying,Which respondent numbers have need to learn before u
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","88, 70","<example>
+","70, 88","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -3858,13 +3892,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have need to learn before use ratings less than or equal to 2?
@@ -3929,7 +3965,7 @@ case_19,rule_based_querying,Which respondent numbers have system complexity rati
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",37,"<example>
+",4,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -4073,13 +4109,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings greater than or equal to 3 and ease of use ratings greater than or equal to 4?
@@ -4288,13 +4326,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have cumbersome to use ratings less than 2?
@@ -4359,7 +4399,7 @@ case_21,rule_based_querying,Which respondent numbers have integration of functio
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","15, 58, 46","<example>
+","15, 46, 58","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -4503,13 +4543,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have integration of functions ratings equal to 5?
@@ -4718,13 +4760,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have need for technical support ratings equal to 5?
@@ -4789,7 +4833,7 @@ case_23,rule_based_querying,Which respondent numbers have confidence in use rati
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""5"" .
 
-","59, 13","<example>
+","13, 59","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -4933,13 +4977,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings equal to 5?
@@ -5148,13 +5194,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings greater than or equal to 3 and ease of use ratings greater than or equal to 4?
@@ -5363,18 +5411,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings equal to 5 and confidence in use ratings equal to 5?
 </task>",,
-case_26,rule_based_querying,Which respondent numbers have cumbersome to use ratings greater than 3?,"@prefix : <http://example.org/survey#> .
+case_26,rule_based_querying,Which respondent numbers have ease of use ratings less than or equal to 4?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5434,7 +5484,7 @@ case_26,rule_based_querying,Which respondent numbers have cumbersome to use rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",51,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -5578,16 +5628,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have cumbersome to use ratings greater than 3?
+Which respondent numbers have ease of use ratings less than or equal to 4?
 </task>",,
 case_27,rule_based_querying,Which respondent numbers have frequent usage ratings less than 3?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -5649,7 +5701,7 @@ case_27,rule_based_querying,Which respondent numbers have frequent usage ratings
     pred:Confidence_in_Use ""2"" ;
     pred:Need_to_Learn_Before_Use ""4"" .
 
-",None,"<example>
+","14, 84","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -5793,13 +5845,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings less than 3?
@@ -5864,7 +5918,7 @@ case_28,rule_based_querying,Which respondent numbers have ease of learning ratin
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+","25, 69, 86","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -6008,13 +6062,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of learning ratings greater than or equal to 4?
@@ -6079,7 +6135,7 @@ case_29,rule_based_querying,Which respondent numbers have system complexity rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+","17, 54","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -6223,13 +6279,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings equal to 2?
@@ -6294,7 +6352,7 @@ case_30,rule_based_querying,Which respondent numbers have frequent usage ratings
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-","89, 67","<example>
+","67, 89","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -6438,13 +6496,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings equal to 5?
@@ -6509,7 +6569,7 @@ case_31,rule_based_querying,Which respondent numbers have ease of use ratings gr
     pred:Confidence_in_Use ""1"" ;
     pred:Need_to_Learn_Before_Use ""5"" .
 
-",None,"<example>
+","31, 77","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -6653,18 +6713,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings greater than 3?
 </task>",,
-case_32,rule_based_querying,Which respondent numbers have integration of functions ratings less than 4?,"@prefix : <http://example.org/survey#> .
+case_32,rule_based_querying,Which respondent numbers have group equal to A?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6724,7 +6786,7 @@ case_32,rule_based_querying,Which respondent numbers have integration of functio
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",85,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -6868,16 +6930,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have integration of functions ratings less than 4?
+Which respondent numbers have group equal to A?
 </task>",,
 case_33,rule_based_querying,Which respondent numbers have confidence in use ratings less than or equal to 3?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -6939,7 +7003,7 @@ case_33,rule_based_querying,Which respondent numbers have confidence in use rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",57,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -7083,18 +7147,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings less than or equal to 3?
 </task>",,
-case_34,rule_based_querying,Which respondent numbers have need to learn before use ratings equal to 3?,"@prefix : <http://example.org/survey#> .
+case_34,rule_based_querying,Which respondent numbers have cumbersome to use ratings equal to 5?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7154,7 +7220,7 @@ case_34,rule_based_querying,Which respondent numbers have need to learn before u
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-",None,"<example>
+",41,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -7298,16 +7364,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have need to learn before use ratings equal to 3?
+Which respondent numbers have cumbersome to use ratings equal to 5?
 </task>",,
 case_35,rule_based_querying,Which respondent numbers have inconsistency ratings equal to 1?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -7369,7 +7437,7 @@ case_35,rule_based_querying,Which respondent numbers have inconsistency ratings 
     pred:Confidence_in_Use ""1"" ;
     pred:Need_to_Learn_Before_Use ""3"" .
 
-",None,"<example>
+","6, 51","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -7513,13 +7581,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have inconsistency ratings equal to 1?
@@ -7584,7 +7654,7 @@ case_36,rule_based_querying,Which respondent numbers have need for technical sup
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-",None,"<example>
+",63,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -7728,13 +7798,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have need for technical support ratings greater than 2?
@@ -7799,7 +7871,7 @@ case_37,rule_based_querying,Which respondent numbers have frequent usage ratings
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""4"" .
 
-",None,"<example>
+","54, 77","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -7943,13 +8015,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have frequent usage ratings between 2 and 4?
@@ -8014,7 +8088,7 @@ case_38,rule_based_querying,Which respondent numbers have ease of learning ratin
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",72,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -8158,13 +8232,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of learning ratings less than 3?
@@ -8229,7 +8305,7 @@ case_39,rule_based_querying,Which respondent numbers have system complexity rati
     pred:Confidence_in_Use ""2"" ;
     pred:Need_to_Learn_Before_Use ""4"" .
 
-",None,"<example>
+",64,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -8373,13 +8449,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have system complexity ratings equal to 1 and frequent usage ratings equal to 5?
@@ -8444,7 +8522,7 @@ case_40,rule_based_querying,Which respondent numbers have confidence in use rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-","53, 18","<example>
+","18, 53","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -8588,13 +8666,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have confidence in use ratings equal to 5?
@@ -8659,7 +8739,7 @@ case_41,rule_based_querying,Which respondent numbers have ease of use ratings gr
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+","30, 59","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -8803,18 +8883,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings greater than or equal to 4?
 </task>",,
-case_42,rule_based_querying,Which respondent numbers have integration of functions ratings equal to 4?,"@prefix : <http://example.org/survey#> .
+case_42,rule_based_querying,Which respondent numbers have need for technical support ratings less than 2?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8874,7 +8956,7 @@ case_42,rule_based_querying,Which respondent numbers have integration of functio
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-",None,"<example>
+",18,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -9018,16 +9100,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have integration of functions ratings equal to 4?
+Which respondent numbers have need for technical support ratings less than 2?
 </task>",,
 case_43,rule_based_querying,Which respondent numbers have cumbersome to use ratings less than or equal to 2?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -9089,7 +9173,7 @@ case_43,rule_based_querying,Which respondent numbers have cumbersome to use rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",59,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -9233,18 +9317,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have cumbersome to use ratings less than or equal to 2?
 </task>",,
-case_44,rule_based_querying,Which respondent numbers have need to learn before use ratings greater than 4?,"@prefix : <http://example.org/survey#> .
+case_44,rule_based_querying,Which respondent numbers have inconsistency ratings greater than 3?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9304,7 +9390,7 @@ case_44,rule_based_querying,Which respondent numbers have need to learn before u
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""2"" .
 
-",None,"<example>
+",35,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -9448,16 +9534,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have need to learn before use ratings greater than 4?
+Which respondent numbers have inconsistency ratings greater than 3?
 </task>",,
 case_45,rule_based_querying,Which respondent numbers have inconsistency ratings greater than or equal to 3?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -9519,7 +9607,7 @@ case_45,rule_based_querying,Which respondent numbers have inconsistency ratings 
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""4"" .
 
-",None,"<example>
+",39,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -9663,18 +9751,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have inconsistency ratings greater than or equal to 3?
 </task>",,
-case_46,rule_based_querying,Which respondent numbers have frequent usage ratings equal to 3?,"@prefix : <http://example.org/survey#> .
+case_46,rule_based_querying,Which respondent numbers have frequent usage ratings less than 3?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9734,7 +9824,7 @@ case_46,rule_based_querying,Which respondent numbers have frequent usage ratings
     pred:Confidence_in_Use ""4"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",28,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -9878,18 +9968,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have frequent usage ratings equal to 3?
+Which respondent numbers have frequent usage ratings less than 3?
 </task>",,
-case_47,rule_based_querying,Which respondent numbers have ease of use ratings equal to 3?,"@prefix : <http://example.org/survey#> .
+case_47,rule_based_querying,Which respondent numbers have inconsistency ratings less than or equal to 1?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9949,7 +10041,7 @@ case_47,rule_based_querying,Which respondent numbers have ease of use ratings eq
     pred:Confidence_in_Use ""1"" ;
     pred:Need_to_Learn_Before_Use ""5"" .
 
-",None,"<example>
+","66, 85","<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -10093,16 +10185,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have ease of use ratings equal to 3?
+Which respondent numbers have inconsistency ratings less than or equal to 1?
 </task>",,
 case_48,rule_based_querying,Which respondent numbers have need for technical support ratings equal to 2?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -10164,7 +10258,7 @@ case_48,rule_based_querying,Which respondent numbers have need for technical sup
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",50,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -10308,18 +10402,20 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have need for technical support ratings equal to 2?
 </task>",,
-case_49,rule_based_querying,Which respondent numbers have system complexity ratings greater than 2?,"@prefix : <http://example.org/survey#> .
+case_49,rule_based_querying,Which respondent numbers have ease of use ratings equal to 4?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -10379,7 +10475,7 @@ case_49,rule_based_querying,Which respondent numbers have system complexity rati
     pred:Confidence_in_Use ""5"" ;
     pred:Need_to_Learn_Before_Use ""1"" .
 
-",None,"<example>
+",51,"<example>
 Which respondent numbers have ease of use ratings equal to 5?
 
 DATA:
@@ -10523,16 +10619,18 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
-Which respondent numbers have system complexity ratings greater than 2?
+Which respondent numbers have ease of use ratings equal to 4?
 </task>",,
 case_50,rule_based_querying,Which respondent numbers have ease of use ratings equal to 5?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
@@ -10738,13 +10836,15 @@ A 'responses' section: This contains the raw data from each individual responden
 
 To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
 
-Provide your final answer directly and concisely. Your output should contain only the answer itself, without explaining your thought process or methodology. For example:
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
-If the question asks for a count, provide only the final number (e.g., ""42"").
-
-If the question asks for a list of names or IDs, provide them as a simple comma-separated list (e.g., ""17, 21, 23"").
-
-If the question asks for a specific text comment, provide only that text.
+Rules:
+- For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
+  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+- For open-ended fields, output the exact text value.
+- If the question asks for a count, provide only the number (e.g., ""42"").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
 
 <task>
 Which respondent numbers have ease of use ratings equal to 5?
