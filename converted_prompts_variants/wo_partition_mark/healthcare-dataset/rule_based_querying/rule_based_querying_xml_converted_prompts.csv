@@ -127,7 +127,8 @@ case_1,rule_based_querying,Which respondent numbers are older than 50?,"<?xml ve
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -247,8 +248,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -368,13 +374,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -382,7 +394,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are older than 50?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are older than 50?",,
 case_2,rule_based_querying,Which respondent numbers have billing amount greater than 30000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -460,7 +474,8 @@ case_2,rule_based_querying,Which respondent numbers have billing amount greater 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -580,8 +595,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -650,13 +670,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -664,7 +690,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount greater than 30000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount greater than 30000?",,
 case_3,rule_based_querying,Which respondent numbers are younger than 30?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -759,7 +787,8 @@ case_3,rule_based_querying,Which respondent numbers are younger than 30?,"<?xml 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -879,8 +908,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -966,13 +1000,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -980,7 +1020,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are younger than 30?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are younger than 30?",,
 case_4,rule_based_querying,Which respondent numbers have room number less than 200?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -1092,7 +1134,8 @@ case_4,rule_based_querying,Which respondent numbers have room number less than 2
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -1212,8 +1255,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -1316,13 +1364,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1330,7 +1384,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number less than 200?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number less than 200?",,
 case_5,rule_based_querying,Which respondent numbers are exactly 80 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -1476,7 +1532,8 @@ case_5,rule_based_querying,Which respondent numbers are exactly 80 years old?,"<
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -1596,8 +1653,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -1734,13 +1796,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1748,7 +1816,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 80 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 80 years old?",,
 case_6,rule_based_querying,Which respondent numbers have billing amount less than 15000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -1894,7 +1964,8 @@ case_6,rule_based_querying,Which respondent numbers have billing amount less tha
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2014,8 +2085,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2152,13 +2228,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2166,7 +2248,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount less than 15000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount less than 15000?",,
 case_7,rule_based_querying,Which respondent numbers are 40 years old or older?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -2244,7 +2328,8 @@ case_7,rule_based_querying,Which respondent numbers are 40 years old or older?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2364,8 +2449,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2434,13 +2524,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2448,7 +2544,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are 40 years old or older?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are 40 years old or older?",,
 case_8,rule_based_querying,Which respondent numbers have room number greater than 400?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -2526,7 +2624,8 @@ case_8,rule_based_querying,Which respondent numbers have room number greater tha
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2646,8 +2745,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -2716,13 +2820,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2730,7 +2840,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number greater than 400?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number greater than 400?",,
 case_9,rule_based_querying,Which respondent numbers are younger than 35?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -2893,7 +3005,8 @@ case_9,rule_based_querying,Which respondent numbers are younger than 35?,"<?xml 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3013,8 +3126,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3168,13 +3286,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3182,7 +3306,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are younger than 35?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are younger than 35?",,
 case_10,rule_based_querying,Which respondent numbers have billing amount equal to 43?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -3260,7 +3386,8 @@ case_10,rule_based_querying,Which respondent numbers have billing amount equal t
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3380,8 +3507,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3450,13 +3582,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3464,7 +3602,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount equal to 43?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount equal to 43?",,
 case_11,rule_based_querying,Which respondent numbers are older than 65?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -3542,7 +3682,8 @@ case_11,rule_based_querying,Which respondent numbers are older than 65?,"<?xml v
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3662,8 +3803,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3732,13 +3878,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3746,7 +3898,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are older than 65?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are older than 65?",,
 case_12,rule_based_querying,Which respondent numbers have room number less than 300?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -3875,7 +4029,8 @@ case_12,rule_based_querying,Which respondent numbers have room number less than 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -3995,8 +4150,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -4116,13 +4276,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4130,7 +4296,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number less than 300?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number less than 300?",,
 case_13,rule_based_querying,Which respondent numbers have billing amount greater than or equal to 25000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -4276,7 +4444,8 @@ case_13,rule_based_querying,Which respondent numbers have billing amount greater
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -4396,8 +4565,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -4534,13 +4708,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4548,7 +4728,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount greater than or equal to 25000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount greater than or equal to 25000?",,
 case_14,rule_based_querying,Which respondent numbers are exactly 53 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -4660,7 +4842,8 @@ case_14,rule_based_querying,Which respondent numbers are exactly 53 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -4780,8 +4963,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -4884,13 +5072,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4898,7 +5092,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 53 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 53 years old?",,
 case_15,rule_based_querying,Which respondent numbers have room number equal to 418?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -4976,7 +5172,8 @@ case_15,rule_based_querying,Which respondent numbers have room number equal to 4
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5096,8 +5293,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5166,13 +5368,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5180,7 +5388,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number equal to 418?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number equal to 418?",,
 case_16,rule_based_querying,Which respondent numbers are 30 years old or younger?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -5258,7 +5468,8 @@ case_16,rule_based_querying,Which respondent numbers are 30 years old or younger
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5378,8 +5589,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5448,13 +5664,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5462,7 +5684,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are 30 years old or younger?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are 30 years old or younger?",,
 case_17,rule_based_querying,Which respondent numbers have billing amount less than or equal to 20000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -5591,7 +5815,8 @@ case_17,rule_based_querying,Which respondent numbers have billing amount less th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5711,8 +5936,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -5832,13 +6062,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5846,7 +6082,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount less than or equal to 20000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount less than or equal to 20000?",,
 case_18,rule_based_querying,Which respondent numbers have room number greater than 350?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -5992,7 +6230,8 @@ case_18,rule_based_querying,Which respondent numbers have room number greater th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6112,8 +6351,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6250,13 +6494,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6264,7 +6514,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number greater than 350?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number greater than 350?",,
 case_19,rule_based_querying,Which respondent numbers are exactly 55 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -6359,7 +6611,8 @@ case_19,rule_based_querying,Which respondent numbers are exactly 55 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6479,8 +6732,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6566,13 +6824,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6580,7 +6844,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 55 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 55 years old?",,
 case_20,rule_based_querying,Which respondent numbers have billing amount not equal to 10000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -6658,7 +6924,8 @@ case_20,rule_based_querying,Which respondent numbers have billing amount not equ
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6778,8 +7045,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -6848,13 +7120,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6862,7 +7140,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount not equal to 10000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount not equal to 10000?",,
 case_21,rule_based_querying,Which respondent numbers are older than 45?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -7007,7 +7287,8 @@ case_21,rule_based_querying,Which respondent numbers are older than 45?,"<?xml v
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7127,8 +7408,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7264,13 +7550,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7278,7 +7570,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are older than 45?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are older than 45?",,
 case_22,rule_based_querying,Which respondent numbers have room number less than 250?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -7356,7 +7650,8 @@ case_22,rule_based_querying,Which respondent numbers have room number less than 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7476,8 +7771,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7546,13 +7846,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7560,7 +7866,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number less than 250?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number less than 250?",,
 case_23,rule_based_querying,Which respondent numbers have billing amount equal to 1586?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -7638,7 +7946,8 @@ case_23,rule_based_querying,Which respondent numbers have billing amount equal t
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7758,8 +8067,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -7828,13 +8142,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7842,7 +8162,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount equal to 1586?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount equal to 1586?",,
 case_24,rule_based_querying,Which respondent numbers are 75 years old or older?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -7920,7 +8242,8 @@ case_24,rule_based_querying,Which respondent numbers are 75 years old or older?,
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8040,8 +8363,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8110,13 +8438,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8124,7 +8458,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are 75 years old or older?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are 75 years old or older?",,
 case_25,rule_based_querying,Which respondent numbers have room number greater than or equal to 330?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -8219,7 +8555,8 @@ case_25,rule_based_querying,Which respondent numbers have room number greater th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8339,8 +8676,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8426,13 +8768,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8440,7 +8788,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number greater than or equal to 330?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number greater than or equal to 330?",,
 case_26,rule_based_querying,Which respondent numbers are younger than 25?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -8569,7 +8919,8 @@ case_26,rule_based_querying,Which respondent numbers are younger than 25?,"<?xml
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8689,8 +9040,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -8810,13 +9166,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8824,7 +9186,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are younger than 25?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are younger than 25?",,
 case_27,rule_based_querying,Which respondent numbers have billing amount greater than 20000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -8970,7 +9334,8 @@ case_27,rule_based_querying,Which respondent numbers have billing amount greater
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9090,8 +9455,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9228,13 +9598,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9242,7 +9618,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount greater than 20000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount greater than 20000?",,
 case_28,rule_based_querying,Which respondent numbers have room number equal to 300?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -9371,7 +9749,8 @@ case_28,rule_based_querying,Which respondent numbers have room number equal to 3
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9491,8 +9870,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9612,13 +9996,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9626,7 +10016,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number equal to 300?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number equal to 300?",,
 case_29,rule_based_querying,Which respondent numbers are 60 years old or younger?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -9704,7 +10096,8 @@ case_29,rule_based_querying,Which respondent numbers are 60 years old or younger
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9824,8 +10217,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -9894,13 +10292,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9908,7 +10312,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are 60 years old or younger?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are 60 years old or younger?",,
 case_30,rule_based_querying,Which respondent numbers have billing amount not equal to 6313?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -10071,7 +10477,8 @@ case_30,rule_based_querying,Which respondent numbers have billing amount not equ
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -10191,8 +10598,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -10346,13 +10758,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10360,7 +10778,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount not equal to 6313?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount not equal to 6313?",,
 case_31,rule_based_querying,Which respondent numbers have room number less than or equal to 250?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -10489,7 +10909,8 @@ case_31,rule_based_querying,Which respondent numbers have room number less than 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -10609,8 +11030,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -10730,13 +11156,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10744,7 +11176,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number less than or equal to 250?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number less than or equal to 250?",,
 case_32,rule_based_querying,Which respondent numbers are exactly 49 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -10822,7 +11256,8 @@ case_32,rule_based_querying,Which respondent numbers are exactly 49 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -10942,8 +11377,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11012,13 +11452,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11026,7 +11472,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 49 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 49 years old?",,
 case_33,rule_based_querying,Which respondent numbers have billing amount between 35000 and 45000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -11104,7 +11552,8 @@ case_33,rule_based_querying,Which respondent numbers have billing amount between
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11224,8 +11673,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11294,13 +11748,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11308,7 +11768,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount between 35000 and 45000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount between 35000 and 45000?",,
 case_34,rule_based_querying,Which respondent numbers have room number not equal to 226?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -11437,7 +11899,8 @@ case_34,rule_based_querying,Which respondent numbers have room number not equal 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11557,8 +12020,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11678,13 +12146,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11692,7 +12166,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number not equal to 226?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number not equal to 226?",,
 case_35,rule_based_querying,Which respondent numbers are older than 70?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -11821,7 +12297,8 @@ case_35,rule_based_querying,Which respondent numbers are older than 70?,"<?xml v
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -11941,8 +12418,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12062,13 +12544,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -12076,7 +12564,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are older than 70?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are older than 70?",,
 case_36,rule_based_querying,Which respondent numbers have billing amount less than 10000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -12154,7 +12644,8 @@ case_36,rule_based_querying,Which respondent numbers have billing amount less th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12274,8 +12765,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12344,13 +12840,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -12358,7 +12860,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount less than 10000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount less than 10000?",,
 case_37,rule_based_querying,Which respondent numbers have room number greater than 450?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -12436,7 +12940,8 @@ case_37,rule_based_querying,Which respondent numbers have room number greater th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12556,8 +13061,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12626,13 +13136,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -12640,7 +13156,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number greater than 450?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number greater than 450?",,
 case_38,rule_based_querying,Which respondent numbers are exactly 27 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -12803,7 +13321,8 @@ case_38,rule_based_querying,Which respondent numbers are exactly 27 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -12923,8 +13442,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13078,13 +13602,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -13092,7 +13622,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 27 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 27 years old?",,
 case_39,rule_based_querying,Which respondent numbers have billing amount greater than or equal to 40000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -13187,7 +13719,8 @@ case_39,rule_based_querying,Which respondent numbers have billing amount greater
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13307,8 +13840,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13394,13 +13932,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -13408,7 +13952,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount greater than or equal to 40000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount greater than or equal to 40000?",,
 case_40,rule_based_querying,Which respondent numbers have room number equal to 113?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -13486,7 +14032,8 @@ case_40,rule_based_querying,Which respondent numbers have room number equal to 1
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13606,8 +14153,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13676,13 +14228,19 @@ DATA:
       <answer question=""Medication"">a</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -13690,7 +14248,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number equal to 113?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number equal to 113?",,
 case_41,rule_based_querying,Which respondent numbers are 50 years old or younger?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -13853,7 +14413,8 @@ case_41,rule_based_querying,Which respondent numbers are 50 years old or younger
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -13973,8 +14534,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -14128,13 +14694,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -14142,7 +14714,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are 50 years old or younger?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are 50 years old or younger?",,
 case_42,rule_based_querying,Which respondent numbers have billing amount between 10000 and 30000?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -14220,7 +14794,8 @@ case_42,rule_based_querying,Which respondent numbers have billing amount between
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -14340,8 +14915,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -14410,13 +14990,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -14424,7 +15010,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount between 10000 and 30000?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount between 10000 and 30000?",,
 case_43,rule_based_querying,Which respondent numbers have room number not equal to 162?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -14552,7 +15140,8 @@ case_43,rule_based_querying,Which respondent numbers have room number not equal 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -14672,8 +15261,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -14792,13 +15386,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -14806,7 +15406,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number not equal to 162?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number not equal to 162?",,
 case_44,rule_based_querying,Which respondent numbers are younger than 60?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -14901,7 +15503,8 @@ case_44,rule_based_querying,Which respondent numbers are younger than 60?,"<?xml
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15021,8 +15624,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15108,13 +15716,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -15122,7 +15736,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are younger than 60?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are younger than 60?",,
 case_45,rule_based_querying,Which respondent numbers have billing amount equal to 40015?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -15268,7 +15884,8 @@ case_45,rule_based_querying,Which respondent numbers have billing amount equal t
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15388,8 +16005,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15526,13 +16148,19 @@ DATA:
       <answer question=""Medication"">e</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -15540,7 +16168,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount equal to 40015?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount equal to 40015?",,
 case_46,rule_based_querying,Which respondent numbers have room number less than or equal to 400?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -15703,7 +16333,8 @@ case_46,rule_based_querying,Which respondent numbers have room number less than 
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15823,8 +16454,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -15978,13 +16614,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -15992,7 +16634,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number less than or equal to 400?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number less than or equal to 400?",,
 case_47,rule_based_querying,Which respondent numbers are exactly 84 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -16104,7 +16748,8 @@ case_47,rule_based_querying,Which respondent numbers are exactly 84 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -16224,8 +16869,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -16328,13 +16978,19 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -16342,7 +16998,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 84 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 84 years old?",,
 case_48,rule_based_querying,Which respondent numbers have billing amount not equal to 49402?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -16420,7 +17078,8 @@ case_48,rule_based_querying,Which respondent numbers have billing amount not equ
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -16540,8 +17199,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -16610,13 +17274,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">c</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -16624,7 +17294,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have billing amount not equal to 49402?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have billing amount not equal to 49402?",,
 case_49,rule_based_querying,Which respondent numbers have room number greater than or equal to 200?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -16787,7 +17459,8 @@ case_49,rule_based_querying,Which respondent numbers have room number greater th
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -16907,8 +17580,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -17062,13 +17740,19 @@ DATA:
       <answer question=""Medication"">d</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -17076,7 +17760,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have room number greater than or equal to 200?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have room number greater than or equal to 200?",,
 case_50,rule_based_querying,Which respondent numbers are exactly 51 years old?,"<?xml version=""1.0"" encoding=""UTF-8""?>
 <questionnaire>
   <questions>
@@ -17171,7 +17857,8 @@ case_50,rule_based_querying,Which respondent numbers are exactly 51 years old?,"
 DATA:
 
 <?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -17291,8 +17978,13 @@ DATA:
       <answer question=""Medication"">c</answer>
       <answer question=""Test Results"">a</answer>
     </respondent>
-  </responses>Answer: 94, 39, 90<?xml version=""1.0"" encoding=""UTF-8""?>
-<questions>
+  </responses>
+
+Answer: 94, 39, 90
+
+<?xml version=""1.0"" encoding=""UTF-8""?>
+
+  <questions>
     <question id=""Name"">What is your name? [Open-ended]</question>
     <question id=""Age"">What is your age? [Open-ended]</question>
     <question id=""Gender"">What is your gender? [MCQ: A. Female B. Male]</question>
@@ -17378,13 +18070,19 @@ DATA:
       <answer question=""Medication"">b</answer>
       <answer question=""Test Results"">b</answer>
     </respondent>
-  </responses>You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+  </responses>
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -17392,4 +18090,6 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers are exactly 51 years old?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers are exactly 51 years old?",,

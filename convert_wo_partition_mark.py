@@ -54,9 +54,10 @@ class WoPartitionMarkConverter:
         
         # Remove each specific tag pair
         for tag in tags_to_remove:
-            # Pattern to match both opening and closing tags with optional whitespace
-            opening_pattern = f'<{tag}>\s*'
-            closing_pattern = f'\s*</{tag}>\s*'
+            # Pattern to match both opening and closing tags without removing newlines
+            # Only remove the tags themselves, not surrounding whitespace
+            opening_pattern = f'<{tag}>'
+            closing_pattern = f'</{tag}>'
             
             # Remove opening and closing tags
             modified_prompt = re.sub(opening_pattern, '', modified_prompt)

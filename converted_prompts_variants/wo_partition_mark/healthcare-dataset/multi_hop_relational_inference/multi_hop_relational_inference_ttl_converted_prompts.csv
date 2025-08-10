@@ -156,7 +156,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -229,13 +231,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2019-12-13"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -243,7 +251,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Medical Condition Cancer?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Medical Condition Cancer?",,
 case_2,multi_hop_relational_inference,Which respondent numbers have Gender Female and Blood Type O+?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -401,7 +411,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -474,13 +486,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-02-09"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -488,7 +506,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Female and Blood Type O+?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Female and Blood Type O+?",,
 case_3,multi_hop_relational_inference,Which respondent numbers have Blood Type O+ and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -646,7 +666,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -719,13 +741,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2021-12-09"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -733,7 +761,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type O+ and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type O+ and Test Results Normal?",,
 case_4,multi_hop_relational_inference,Which respondent numbers have Insurance Provider Medicare and Admission Type Elective?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -891,7 +921,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -964,13 +996,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2023-11-08"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -978,7 +1016,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider Medicare and Admission Type Elective?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider Medicare and Admission Type Elective?",,
 case_5,multi_hop_relational_inference,Which respondent numbers have Gender Male and Admission Type Emergency?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1136,7 +1176,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1209,13 +1251,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-07-18"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1223,7 +1271,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Admission Type Emergency?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Admission Type Emergency?",,
 case_6,multi_hop_relational_inference,Which respondent numbers have Medical Condition Diabetes and Medication Aspirin?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1381,7 +1431,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1454,13 +1506,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2022-01-12"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1468,7 +1526,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Diabetes and Medication Aspirin?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Diabetes and Medication Aspirin?",,
 case_7,multi_hop_relational_inference,Which respondent numbers have Medication Penicillin and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1626,7 +1686,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1699,13 +1761,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2023-06-15"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1713,7 +1781,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medication Penicillin and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medication Penicillin and Test Results Normal?",,
 case_8,multi_hop_relational_inference,Which respondent numbers have Blood Type B+ and Medication Paracetamol?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1871,7 +1941,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1944,13 +2016,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2021-06-03"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1958,7 +2036,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type B+ and Medication Paracetamol?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type B+ and Medication Paracetamol?",,
 case_9,multi_hop_relational_inference,Which respondent numbers have Blood Type A- and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2116,7 +2196,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2189,13 +2271,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-05-13"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2203,7 +2291,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type A- and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type A- and Admission Type Urgent?",,
 case_10,multi_hop_relational_inference,Which respondent numbers have Medical Condition Arthritis and Test Results Inconclusive?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2361,7 +2451,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2434,13 +2526,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2023-06-03"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2448,7 +2546,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Arthritis and Test Results Inconclusive?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Arthritis and Test Results Inconclusive?",,
 case_11,multi_hop_relational_inference,Which respondent numbers have Medical Condition Hypertension and Medication Lipitor?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2605,7 +2705,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2677,13 +2779,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2020-06-22"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2691,7 +2799,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Hypertension and Medication Lipitor?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Hypertension and Medication Lipitor?",,
 case_12,multi_hop_relational_inference,Which respondent numbers have Blood Type A- and Medication Lipitor?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2849,7 +2959,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2922,13 +3034,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2020-06-08"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2936,7 +3054,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type A- and Medication Lipitor?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type A- and Medication Lipitor?",,
 case_13,multi_hop_relational_inference,Which respondent numbers have Insurance Provider Medicare and Medical Condition Hypertension?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3094,7 +3214,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3167,13 +3289,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2021-12-07"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3181,7 +3309,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider Medicare and Medical Condition Hypertension?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider Medicare and Medical Condition Hypertension?",,
 case_14,multi_hop_relational_inference,Which respondent numbers have Medical Condition Cancer and Test Results Abnormal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3339,7 +3469,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3412,13 +3544,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2022-11-25"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3426,7 +3564,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Cancer and Test Results Abnormal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Cancer and Test Results Abnormal?",,
 case_15,multi_hop_relational_inference,Which respondent numbers have Gender Female and Insurance Provider Medicare?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3584,7 +3724,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3657,13 +3799,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2020-06-08"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3671,7 +3819,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Female and Insurance Provider Medicare?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Female and Insurance Provider Medicare?",,
 case_16,multi_hop_relational_inference,Which respondent numbers have Gender Female and Blood Type O-?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3829,7 +3979,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3902,13 +4054,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2020-03-07"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3916,7 +4074,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Female and Blood Type O-?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Female and Blood Type O-?",,
 case_17,multi_hop_relational_inference,Which respondent numbers have Blood Type AB- and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4074,7 +4234,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4147,13 +4309,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2019-08-05"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4161,7 +4329,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type AB- and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type AB- and Admission Type Urgent?",,
 case_18,multi_hop_relational_inference,Which respondent numbers have Medical Condition Cancer and Blood Type A+?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4319,7 +4489,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4392,13 +4564,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2023-04-21"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4406,7 +4584,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Cancer and Blood Type A+?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Cancer and Blood Type A+?",,
 case_19,multi_hop_relational_inference,Which respondent numbers have Insurance Provider Blue Cross and Medication Lipitor?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4564,7 +4744,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4637,13 +4819,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-04-02"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4651,7 +4839,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider Blue Cross and Medication Lipitor?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider Blue Cross and Medication Lipitor?",,
 case_20,multi_hop_relational_inference,Which respondent numbers have Blood Type B- and Medical Condition Asthma?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4809,7 +4999,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4882,13 +5074,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-06-28"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4896,7 +5094,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type B- and Medical Condition Asthma?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type B- and Medical Condition Asthma?",,
 case_21,multi_hop_relational_inference,Which respondent numbers have Medication Aspirin and Gender Male?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5054,7 +5254,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5127,13 +5329,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2020-06-01"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5141,7 +5349,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medication Aspirin and Gender Male?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medication Aspirin and Gender Male?",,
 case_22,multi_hop_relational_inference,Which respondent numbers have Test Results Abnormal and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5299,7 +5509,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5372,13 +5584,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2021-03-20"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5386,7 +5604,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Test Results Abnormal and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Test Results Abnormal and Admission Type Urgent?",,
 case_23,multi_hop_relational_inference,Which respondent numbers have Insurance Provider Cigna and Test Results Abnormal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5544,7 +5764,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5617,13 +5839,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-09-07"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5631,7 +5859,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider Cigna and Test Results Abnormal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider Cigna and Test Results Abnormal?",,
 case_24,multi_hop_relational_inference,Which respondent numbers have Blood Type A+ and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5789,7 +6019,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5862,13 +6094,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2024-01-22"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5876,7 +6114,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type A+ and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type A+ and Admission Type Urgent?",,
 case_25,multi_hop_relational_inference,Which respondent numbers have Medical Condition Hypertension and Medication Aspirin?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6034,7 +6274,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6107,13 +6349,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-12-31"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6121,7 +6369,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Hypertension and Medication Aspirin?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Hypertension and Medication Aspirin?",,
 case_26,multi_hop_relational_inference,Which respondent numbers have Blood Type B- and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6278,7 +6528,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6350,13 +6602,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2019-07-29"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6364,7 +6622,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type B- and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type B- and Test Results Normal?",,
 case_27,multi_hop_relational_inference,Which respondent numbers have Admission Type Emergency and Test Results Abnormal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6522,7 +6782,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6595,13 +6857,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2020-09-06"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6609,7 +6877,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Admission Type Emergency and Test Results Abnormal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Admission Type Emergency and Test Results Abnormal?",,
 case_28,multi_hop_relational_inference,Which respondent numbers have Medical Condition Cancer and Insurance Provider Medicare?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6767,7 +7037,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6840,13 +7112,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-02-09"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6854,7 +7132,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Cancer and Insurance Provider Medicare?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Cancer and Insurance Provider Medicare?",,
 case_29,multi_hop_relational_inference,Which respondent numbers have Gender Male and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7012,7 +7292,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7085,13 +7367,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-11-11"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7099,7 +7387,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Test Results Normal?",,
 case_30,multi_hop_relational_inference,Which respondent numbers have Blood Type O+ and Test Results Abnormal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7257,7 +7547,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7330,13 +7622,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-05-20"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7344,7 +7642,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type O+ and Test Results Abnormal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type O+ and Test Results Abnormal?",,
 case_31,multi_hop_relational_inference,Which respondent numbers have Gender Female and Test Results Inconclusive?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7502,7 +7802,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7575,13 +7877,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2022-07-23"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7589,7 +7897,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Female and Test Results Inconclusive?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Female and Test Results Inconclusive?",,
 case_32,multi_hop_relational_inference,Which respondent numbers have Insurance Provider UnitedHealthcare and Blood Type A+?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7747,7 +8057,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7820,13 +8132,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2022-11-25"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7834,7 +8152,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider UnitedHealthcare and Blood Type A+?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider UnitedHealthcare and Blood Type A+?",,
 case_33,multi_hop_relational_inference,Which respondent numbers have Medical Condition Cancer and Medication Penicillin?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7992,7 +8312,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8065,13 +8387,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2020-06-22"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8079,7 +8407,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Cancer and Medication Penicillin?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Cancer and Medication Penicillin?",,
 case_34,multi_hop_relational_inference,Which respondent numbers have Blood Type AB+ and Medication Ibuprofen?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8237,7 +8567,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8310,13 +8642,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2024-03-28"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8324,7 +8662,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type AB+ and Medication Ibuprofen?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type AB+ and Medication Ibuprofen?",,
 case_35,multi_hop_relational_inference,Which respondent numbers have Medical Condition Cancer and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8482,7 +8822,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8555,13 +8897,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2019-08-26"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8569,7 +8917,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Cancer and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Cancer and Admission Type Urgent?",,
 case_36,multi_hop_relational_inference,Which respondent numbers have Gender Female and Medication Lipitor?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8727,7 +9077,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8800,13 +9152,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2021-08-12"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8814,7 +9172,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Female and Medication Lipitor?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Female and Medication Lipitor?",,
 case_37,multi_hop_relational_inference,Which respondent numbers have Blood Type AB+ and Insurance Provider Cigna?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8972,7 +9332,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9045,13 +9407,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2020-07-14"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""a"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""a"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9059,7 +9427,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type AB+ and Insurance Provider Cigna?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type AB+ and Insurance Provider Cigna?",,
 case_38,multi_hop_relational_inference,Which respondent numbers have Gender Male and Medical Condition Cancer?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -9217,7 +9587,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9290,13 +9662,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-04-22"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9304,7 +9682,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Medical Condition Cancer?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Medical Condition Cancer?",,
 case_39,multi_hop_relational_inference,Which respondent numbers have Blood Type B- and Admission Type Urgent?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -9461,7 +9841,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9533,13 +9915,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2024-02-02"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9547,7 +9935,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type B- and Admission Type Urgent?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type B- and Admission Type Urgent?",,
 case_40,multi_hop_relational_inference,Which respondent numbers have Admission Type Urgent and Test Results Abnormal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -9705,7 +10095,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -9778,13 +10170,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-02-09"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9792,7 +10190,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Admission Type Urgent and Test Results Abnormal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Admission Type Urgent and Test Results Abnormal?",,
 case_41,multi_hop_relational_inference,Which respondent numbers have Insurance Provider UnitedHealthcare and Medication Lipitor?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -9950,7 +10350,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -10023,13 +10425,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2020-06-19"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10037,7 +10445,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Insurance Provider UnitedHealthcare and Medication Lipitor?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Insurance Provider UnitedHealthcare and Medication Lipitor?",,
 case_42,multi_hop_relational_inference,Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -10195,7 +10605,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -10268,13 +10680,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2023-11-07"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10282,7 +10700,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?",,
 case_43,multi_hop_relational_inference,Which respondent numbers have Gender Male and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -10440,7 +10860,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -10513,13 +10935,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2022-05-20"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10527,7 +10955,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Test Results Normal?",,
 case_44,multi_hop_relational_inference,Which respondent numbers have Blood Type O+ and Admission Type Elective?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -10685,7 +11115,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -10758,13 +11190,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2024-02-03"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -10772,7 +11210,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type O+ and Admission Type Elective?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type O+ and Admission Type Elective?",,
 case_45,multi_hop_relational_inference,Which respondent numbers have Admission Type Elective and Test Results Inconclusive?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -10930,7 +11370,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -11003,13 +11445,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2023-11-07"" ;
     pred:Medication ""d"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11017,7 +11465,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Admission Type Elective and Test Results Inconclusive?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Admission Type Elective and Test Results Inconclusive?",,
 case_46,multi_hop_relational_inference,Which respondent numbers have Blood Type B- and Insurance Provider Cigna?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -11175,7 +11625,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -11248,13 +11700,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2023-01-11"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11262,7 +11720,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type B- and Insurance Provider Cigna?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type B- and Insurance Provider Cigna?",,
 case_47,multi_hop_relational_inference,Which respondent numbers have Medical Condition Hypertension and Admission Type Elective?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -11419,7 +11879,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -11491,13 +11953,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2019-08-05"" ;
     pred:Medication ""e"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11505,7 +11973,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Medical Condition Hypertension and Admission Type Elective?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Medical Condition Hypertension and Admission Type Elective?",,
 case_48,multi_hop_relational_inference,Which respondent numbers have Gender Male and Test Results Normal?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -11663,7 +12133,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -11736,13 +12208,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""c"" ;
     pred:Discharge_Date ""2021-11-22"" ;
     pred:Medication ""c"" ;
-    pred:Test_Results ""c"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""c"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11750,7 +12228,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Gender Male and Test Results Normal?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Gender Male and Test Results Normal?",,
 case_49,multi_hop_relational_inference,Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -11908,7 +12388,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -11981,13 +12463,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""b"" ;
     pred:Discharge_Date ""2022-04-09"" ;
     pred:Medication ""a"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -11995,7 +12483,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type AB- and Insurance Provider Medicare?",,
 case_50,multi_hop_relational_inference,Which respondent numbers have Blood Type O+ and Medication Ibuprofen?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -12153,7 +12643,9 @@ DATA:
     pred:Medication ""e"" ;
     pred:Test_Results ""a"" .
 
-Answer: 63@prefix : <http://example.org/survey#> .
+Answer: 63
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -12226,13 +12718,19 @@ Answer: 63@prefix : <http://example.org/survey#> .
     pred:Admission_Type ""a"" ;
     pred:Discharge_Date ""2021-09-18"" ;
     pred:Medication ""b"" ;
-    pred:Test_Results ""b"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Test_Results ""b"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -12240,4 +12738,6 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent numbers have Blood Type O+ and Medication Ibuprofen?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent numbers have Blood Type O+ and Medication Ibuprofen?",,

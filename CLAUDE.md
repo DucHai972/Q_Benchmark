@@ -11,21 +11,36 @@ Q-Benchmark is an LLM evaluation framework that tests language model performance
 ### Running Benchmarks
 ```bash
 # Basic benchmark with default settings (healthcare dataset, answer_lookup task, 5 cases)
-python main.py
+python benchmark_pipeline.py
 
 # Run comprehensive benchmark on all datasets and tasks
-python main.py --datasets all --tasks all --cases 50 --output comprehensive_benchmark
+python benchmark_pipeline.py --dataset all --task all --format all --max-cases 50
 
 # Test specific models
-python main.py --model openai --datasets all --tasks all --formats all --cases 50 --output benchmark_openai
-python main.py --model google --datasets all --tasks all --formats all --cases 50 --output benchmark_google
-python main.py --model deepseek --datasets all --tasks all --formats all --cases 50 --output benchmark_deepseeks
+python benchmark_pipeline.py --model openai --dataset all --task all --format all --max-cases 50
+python benchmark_pipeline.py --model google --dataset all --task all --format all --max-cases 50
 
 # Run with specific parameters
-python main.py --dataset healthcare-dataset --task answer_lookup --formats json xml --cases 10
+python benchmark_pipeline.py --dataset healthcare-dataset --task answer_lookup --format json --max-cases 10
+
+# Run with prompt variants (new feature!)
+python benchmark_pipeline.py --variants wo_role_prompting --dataset healthcare-dataset --task answer_lookup --format json
+python benchmark_pipeline.py --variants wo_oneshot --model openai --format all --max-cases 20
+python benchmark_pipeline.py --variants wo_format_explaination --dataset all --task all --format json
+
+# Available variants:
+# - wo_role_prompting: Remove role prompting sections
+# - wo_partition_mark: Remove structural partition marks  
+# - wo_format_explaination: Remove format explanation sections
+# - wo_oneshot: Remove one-shot examples
+# - wo_change_order: Move questionnaire to end of prompt
+
+# Results saved to benchmark_results/modelname_variants/ when using variants
+# Results saved to benchmark_results/modelname/ when using standard prompts
 
 # List available options
-python main.py --list
+python benchmark_pipeline.py --list
+python benchmark_pipeline.py --variants wo_role_prompting --list
 ```
 
 ### Environment Setup

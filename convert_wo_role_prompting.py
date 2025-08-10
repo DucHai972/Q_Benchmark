@@ -28,7 +28,11 @@ class WoRolePromptingConverter:
         
     def remove_role_prompting(self, prompt: str) -> str:
         """
-        Remove the <role>...</role> section from a prompt.
+        Remove the <role>...</role> section from a prompt, or inline role text if no tags exist.
+        
+        This handles two cases:
+        1. Prompts with <role>...</role> XML tags (healthcare-dataset, isbar)
+        2. Prompts with inline role text without tags (sus-uta7, stack-overflow-2022, self-reported-mental-health)
         
         Args:
             prompt: The original prompt text
@@ -36,14 +40,28 @@ class WoRolePromptingConverter:
         Returns:
             The prompt with role prompting section removed
         """
-        # Pattern to match <role>...</role> section (including any content inside)
-        role_pattern = r'<role>\s*.*?\s*</role>\s*'
+        modified_prompt = prompt
         
-        # Remove the role section
-        modified_prompt = re.sub(role_pattern, '', prompt, flags=re.DOTALL)
+        # Case 1: Remove <role>...</role> XML tags if they exist
+        if '<role>' in prompt and '</role>' in prompt:
+            role_pattern = r'<role>\s*.*?\s*</role>\s*'
+            modified_prompt = re.sub(role_pattern, '', modified_prompt, flags=re.DOTALL)
+        
+        # Case 2: Remove inline role text (for datasets without XML tags)
+        else:
+            # Remove the specific role text pattern that appears in datasets without tags
+            role_text_patterns = [
+                r'You are a meticulous data analyst AI\. Your primary function is to accurately analyze structured data and provide precise, verifiable answers\.\s*',
+                r'You are a meticulous data analyst AI\..*?answers\.\s*'
+            ]
+            
+            for pattern in role_text_patterns:
+                if re.search(pattern, modified_prompt, re.DOTALL):
+                    modified_prompt = re.sub(pattern, '', modified_prompt, flags=re.DOTALL)
+                    break  # Only apply the first matching pattern
         
         # Clean up extra whitespace and newlines that might be left
-        modified_prompt = re.sub(r'\n\s*\n\s*\n', '\n\n', modified_prompt)
+        modified_prompt = re.sub(r'\n\s*\n\s*\n+', '\n\n', modified_prompt)
         modified_prompt = modified_prompt.strip()
         
         return modified_prompt

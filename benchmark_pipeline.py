@@ -55,12 +55,43 @@ class SimpleOpenAIClient(SimpleLLMClient):
         """Generate response using OpenAI API"""
         start_time = time.time()
         try:
-            response = self.client.chat.completions.create(
-                model=self.model_name,
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=max_tokens,
-                temperature=0
-            )
+            # Use max_completion_tokens for newer models (GPT-4, GPT-5, etc.)
+            # and max_tokens for legacy models
+            # Some models don't support temperature=0, so use default for those
+            if self.model_name.startswith(('gpt-4', 'gpt-5', 'o1-')):
+                # o1 models don't support temperature parameter at all
+                if self.model_name.startswith('o1-'):
+                    response = self.client.chat.completions.create(
+                        model=self.model_name,
+                        messages=[{"role": "user", "content": prompt}],
+                        max_completion_tokens=max_tokens
+                    )
+                else:
+                    # GPT-4, GPT-5 models - some may not support temperature=0
+                    try:
+                        response = self.client.chat.completions.create(
+                            model=self.model_name,
+                            messages=[{"role": "user", "content": prompt}],
+                            max_completion_tokens=max_tokens,
+                            temperature=0
+                        )
+                    except Exception as e:
+                        if "temperature" in str(e):
+                            # Retry without temperature parameter
+                            response = self.client.chat.completions.create(
+                                model=self.model_name,
+                                messages=[{"role": "user", "content": prompt}],
+                                max_completion_tokens=max_tokens
+                            )
+                        else:
+                            raise
+            else:
+                response = self.client.chat.completions.create(
+                    model=self.model_name,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=max_tokens,
+                    temperature=0
+                )
             
             end_time = time.time()
             response_content = response.choices[0].message.content or ""
@@ -155,7 +186,7 @@ class SimpleBenchmarkPipeline:
     """Simple benchmark pipeline for processing CSV prompt files"""
     
     def __init__(self, converted_prompts_dir: str = "converted_prompts", init_clients: bool = True, 
-                 openai_model: str = "gpt-3.5-turbo", google_model: str = "gemini-1.5-flash"):
+                 openai_model: str = "gpt-3.5-turbo", google_model: str = "gemini-1.5-flash", variants: str = None):
         load_dotenv()
         
         self.converted_prompts_dir = Path(converted_prompts_dir)
@@ -163,6 +194,7 @@ class SimpleBenchmarkPipeline:
         self.evaluator = SimpleEvaluator()
         self.openai_model = openai_model
         self.google_model = google_model
+        self.variants = variants
         
         # Create results directory
         self.results_dir.mkdir(exist_ok=True)
@@ -226,7 +258,11 @@ class SimpleBenchmarkPipeline:
             actual_model_name = client.model_name
             
             # Create model-specific directory using actual model name
-            model_dir = self.results_dir / actual_model_name
+            if self.variants:
+                model_dir_name = f"{actual_model_name}_{self.variants}"
+            else:
+                model_dir_name = actual_model_name
+            model_dir = self.results_dir / model_dir_name
             model_dir.mkdir(exist_ok=True)
             
             # Recreate the same structure as converted_prompts
@@ -463,6 +499,10 @@ def main():
     parser.add_argument("--dataset", help="Dataset to process (default: all)")
     parser.add_argument("--task", help="Task to process (default: all)")
     parser.add_argument("--format", help="Data format to process (default: all)")
+    parser.add_argument("--variants", 
+                       choices=["all", "wo_role_prompting", "wo_partition_mark", "wo_format_explaination", 
+                               "wo_oneshot", "wo_change_order"],
+                       help="Prompt variant to use instead of standard prompts. Use 'all' to run all variants. Available variants: wo_role_prompting, wo_partition_mark, wo_format_explaination, wo_oneshot, wo_change_order")
     parser.add_argument("--model", choices=["openai", "google"], 
                        help="Model provider to use (default: all available)")
     parser.add_argument("--openai-model", default="gpt-3.5-turbo",
@@ -488,6 +528,7 @@ def main():
         print(f"Dataset:              {args.dataset or 'ALL'}")
         print(f"Task:                 {args.task or 'ALL'}")
         print(f"Format:               {args.format or 'ALL'}")
+        print(f"Variants:             {args.variants or 'STANDARD'}")
         
         # Only print the model we're actually using
         if args.model == "openai":
@@ -500,18 +541,105 @@ def main():
             
         print(f"Max Cases per File:   {args.max_cases or 'UNLIMITED'}")
         print(f"Starting Case:        {args.start_case}")
-        print(f"Prompts Directory:    {args.converted_prompts_dir}")
+        if args.variants:
+            print(f"Prompts Directory:    converted_prompts_variants/{args.variants}")
+        else:
+            print(f"Prompts Directory:    {args.converted_prompts_dir}")
         print("="*60)
         print()
 
-    # Initialize pipeline
+    # Handle --variants all case
+    if args.variants == "all":
+        available_variants = ["wo_role_prompting", "wo_partition_mark", "wo_format_explaination", 
+                             "wo_oneshot", "wo_change_order"]
+        
+        print(f"\n{'='*60}")
+        print(f"RUNNING ALL VARIANTS: {len(available_variants)} variants + standard")
+        print(f"{'='*60}")
+        
+        all_results = []
+        
+        # Run standard version first (no variants)
+        print(f"\n[1/{len(available_variants)+1}] Running STANDARD (no variants)")
+        try:
+            pipeline = SimpleBenchmarkPipeline(
+                args.converted_prompts_dir, 
+                init_clients=True,
+                openai_model=args.openai_model,
+                google_model=args.google_model,
+                variants=None
+            )
+            success = pipeline.run_benchmark(
+                dataset=args.dataset,
+                task=args.task,
+                format_type=args.format,
+                model=args.model,
+                max_cases=args.max_cases,
+                start_case=args.start_case
+            )
+            all_results.append(("STANDARD", success))
+            print(f"STANDARD: {'SUCCESS' if success else 'FAILED'}")
+        except Exception as e:
+            logger.error(f"Failed to run standard version: {e}")
+            all_results.append(("STANDARD", False))
+        
+        # Run each variant
+        for i, variant in enumerate(available_variants, 2):
+            print(f"\n[{i}/{len(available_variants)+1}] Running variant: {variant}")
+            try:
+                prompts_dir = f"converted_prompts_variants/{variant}"
+                pipeline = SimpleBenchmarkPipeline(
+                    prompts_dir, 
+                    init_clients=True,
+                    openai_model=args.openai_model,
+                    google_model=args.google_model,
+                    variants=variant
+                )
+                success = pipeline.run_benchmark(
+                    dataset=args.dataset,
+                    task=args.task,
+                    format_type=args.format,
+                    model=args.model,
+                    max_cases=args.max_cases,
+                    start_case=args.start_case
+                )
+                all_results.append((variant, success))
+                print(f"{variant}: {'SUCCESS' if success else 'FAILED'}")
+            except Exception as e:
+                logger.error(f"Failed to run variant {variant}: {e}")
+                all_results.append((variant, False))
+        
+        # Print final summary for all variants
+        print(f"\n{'='*80}")
+        print("ALL VARIANTS BENCHMARK COMPLETED")
+        print(f"{'='*80}")
+        success_count = sum(1 for _, success in all_results if success)
+        total_count = len(all_results)
+        print(f"Overall Status: {success_count}/{total_count} variants completed successfully")
+        print(f"Results:")
+        for variant_name, success in all_results:
+            status = "SUCCESS" if success else "FAILED"
+            print(f"  - {variant_name:<25}: {status}")
+        print(f"Results Saved To: benchmark_results/ (check individual model directories)")
+        print(f"{'='*80}")
+        
+        return 0 if success_count == total_count else 1
+    
+    # Initialize pipeline for single variant or standard
     try:
+        # Determine the prompts directory based on variants argument
+        if args.variants:
+            prompts_dir = f"converted_prompts_variants/{args.variants}"
+        else:
+            prompts_dir = args.converted_prompts_dir
+            
         # Don't initialize clients if just listing
         pipeline = SimpleBenchmarkPipeline(
-            args.converted_prompts_dir, 
+            prompts_dir, 
             init_clients=not args.list,
             openai_model=args.openai_model,
-            google_model=args.google_model
+            google_model=args.google_model,
+            variants=args.variants
         )
     except Exception as e:
         logger.error(f"Failed to initialize pipeline: {e}")
@@ -519,7 +647,10 @@ def main():
     
     # List available options
     if args.list:
-        print("Available options in converted_prompts directory:")
+        if args.variants:
+            print(f"Available options in converted_prompts_variants/{args.variants} directory:")
+        else:
+            print("Available options in converted_prompts directory:")
         csv_files = pipeline.find_csv_files()
         
         datasets = set()
@@ -565,7 +696,11 @@ def main():
     print("="*60)
     print(f"Status: {'SUCCESS' if success else 'FAILED'}")
     print(f"Models Used: {getattr(pipeline, 'models_used', list(pipeline.clients.keys()))}")
-    print(f"Results Saved To: benchmark_results/")
+    if args.variants:
+        model_dirs = [f"{model}_{args.variants}" for model in getattr(pipeline, 'models_used', list(pipeline.clients.keys()))]
+        print(f"Results Saved To: benchmark_results/ (directories: {', '.join(model_dirs)})")
+    else:
+        print(f"Results Saved To: benchmark_results/")
     print("="*60)
     
     return 0 if success else 1

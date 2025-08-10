@@ -7,4 +7,8 @@ python benchmark_pipeline.py --model google --google-model gemini-1.5-pro --data
 
 cd ~/Q_Benchmark && source ~/Q_Benchmark/.venv/bin/activate
 
-python3 benchmark_pipeline.py --model openai --openai-model gpt-4.1-mini --dataset healthcare-dataset --task answer_lookup --max-cases 3 --start-case 2
+python3 benchmark_pipeline.py --model openai --openai-model gpt-5-mini &&
+python benchmark_pipeline.py --model openai --openai-model gpt-5-mini --variants all 
+
+python benchmark_pipeline.py --model google --google-model gemini-2.5-flash && 
+python benchmark_pipeline.py --model google --google-model gemini-2.5-flash --variants all 

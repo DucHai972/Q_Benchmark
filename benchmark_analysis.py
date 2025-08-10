@@ -2,17 +2,25 @@
 """
 Benchmark Results Analysis Script
 
-This script analyzes the benchmark results from Q_Benchmark/benchmark_results/gpt-4.1-mini
+This script analyzes the benchmark results from Q_Benchmark/benchmark_results/
 and generates two tables:
 1. Table showing correct/total counts for each data format and task combination
 2. Table showing percentage correct for each data format and task combination
 
 The script processes all CSV files in the benchmark results directory structure.
+
+Usage:
+  python benchmark_analysis.py                                    # Standard analysis
+  python benchmark_analysis.py --variants all                     # All variants analysis
+  python benchmark_analysis.py --variants wo_role_prompting       # Specific variant
+  python benchmark_analysis.py --model gpt-4.1-mini              # Specific model
 """
 
 import os
 import csv
 import glob
+import argparse
+from pathlib import Path
 from collections import defaultdict
 
 def analyze_benchmark_results(base_path):
@@ -186,7 +194,7 @@ def print_table(table, row_headers, col_headers, title):
             print(f"{cell:<{col_widths[j]}}", end="")
         print()
 
-def save_results(count_table, percentage_table, row_headers, col_headers, output_dir):
+def save_results(count_table, percentage_table, row_headers, col_headers, output_dir, results=None):
     """
     Save the analysis results to CSV files.
     
@@ -194,6 +202,7 @@ def save_results(count_table, percentage_table, row_headers, col_headers, output
         count_table, percentage_table: Table data as lists of lists
         row_headers, col_headers: Headers for rows and columns
         output_dir: Directory to save output files
+        results: Optional results dictionary for dataset summary
     """
     
     # Ensure output directory exists
@@ -215,9 +224,50 @@ def save_results(count_table, percentage_table, row_headers, col_headers, output
         for i, row in enumerate(percentage_table):
             writer.writerow([row_headers[i]] + row)
     
-    print(f"\nResults saved to:")
-    print(f"- Count table: {count_file}")
-    print(f"- Percentage table: {percentage_file}")
+    # Save dataset summary table (average across all tasks per dataset)
+    dataset_file = os.path.join(output_dir, "dataset_summary.csv")
+    if results:
+        save_dataset_summary(results, dataset_file)
+        print(f"\nResults saved to:")
+        print(f"- Count table: {count_file}")
+        print(f"- Percentage table: {percentage_file}")
+        print(f"- Dataset summary: {dataset_file}")
+    else:
+        print(f"\nResults saved to:")
+        print(f"- Count table: {count_file}")
+        print(f"- Percentage table: {percentage_file}")
+
+def save_dataset_summary(results, dataset_file):
+    """
+    Save dataset-level summary (average across all tasks in each dataset).
+    
+    Args:
+        results (dict): Results dictionary from analysis
+        dataset_file (str): Path to save the dataset summary CSV
+    """
+    
+    # Calculate dataset-level statistics
+    dataset_stats = defaultdict(lambda: {'correct': 0, 'total': 0})
+    
+    # Aggregate results by dataset
+    for (dataset, task, data_format), result in results.items():
+        dataset_stats[dataset]['correct'] += result['correct']
+        dataset_stats[dataset]['total'] += result['total']
+    
+    # Write to CSV
+    with open(dataset_file, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Dataset', 'Correct_Answers', 'Total_Questions', 'Average_Accuracy_Percent'])
+        
+        for dataset in sorted(dataset_stats.keys()):
+            stats = dataset_stats[dataset]
+            accuracy = (stats['correct'] / stats['total'] * 100) if stats['total'] > 0 else 0
+            writer.writerow([
+                dataset, 
+                stats['correct'], 
+                stats['total'], 
+                f"{accuracy:.1f}%"
+            ])
 
 def generate_summary_statistics(results):
     """
@@ -274,38 +324,158 @@ def generate_summary_statistics(results):
         pct = (stats['correct'] / stats['total'] * 100) if stats['total'] > 0 else 0
         print(f"  {dataset}: {stats['correct']}/{stats['total']} ({pct:.1f}%)")
 
-def main():
-    """Main function to run the analysis."""
+def get_available_variants():
+    """Get list of available prompt variants."""
+    variants_dir = Path("/insight-fast/dnguyen/Q_Benchmark/converted_prompts_variants")
+    if variants_dir.exists():
+        return sorted([d.name for d in variants_dir.iterdir() if d.is_dir()])
+    return []
+
+def get_available_models():
+    """Get list of available model result directories."""
+    results_dir = Path("/insight-fast/dnguyen/Q_Benchmark/benchmark_results")
+    if results_dir.exists():
+        return sorted([d.name for d in results_dir.iterdir() if d.is_dir()])
+    return []
+
+def analyze_single_variant(model, variant, base_results_dir, output_base_dir):
+    """Analyze a single variant and save results."""
+    if variant:
+        model_dir_name = f"{model}_{variant}"
+        output_suffix = f"_{variant}"
+        analysis_type = f"{model} with variant '{variant}'"
+    else:
+        model_dir_name = model
+        output_suffix = ""
+        analysis_type = f"{model} (standard)"
     
-    # Set the base path for benchmark results
-    base_path = "/insight-fast/dnguyen/Q_Benchmark/benchmark_results/gpt-4.1-mini"
-    output_dir = "/insight-fast/dnguyen/Q_Benchmark/analysis_results"
+    base_path = base_results_dir / model_dir_name
+    output_dir = output_base_dir / f"{model_dir_name}"
     
-    print("Starting benchmark results analysis...")
+    print(f"\n{'='*60}")
+    print(f"ANALYZING: {analysis_type}")
+    print(f"{'='*60}")
     print(f"Base path: {base_path}")
+    print(f"Output dir: {output_dir}")
     
     # Check if base path exists
-    if not os.path.exists(base_path):
-        print(f"Error: Base path does not exist: {base_path}")
-        return
+    if not base_path.exists():
+        print(f"Warning: Base path does not exist: {base_path}")
+        return False
     
     # Run the analysis
-    datasets, tasks, data_formats, results = analyze_benchmark_results(base_path)
+    datasets, tasks, data_formats, results = analyze_benchmark_results(str(base_path))
+    
+    if not results:
+        print(f"No results found for {analysis_type}")
+        return False
     
     # Create tables
     count_table, percentage_table, task_columns = create_tables(datasets, tasks, data_formats, results)
     
     # Display tables
-    print_table(count_table, data_formats, task_columns, "TABLE 1: CORRECT ANSWERS / TOTAL ANSWERS")
-    print_table(percentage_table, data_formats, task_columns, "TABLE 2: PERCENTAGE CORRECT")
+    print_table(count_table, data_formats, task_columns, 
+                f"TABLE 1: CORRECT ANSWERS / TOTAL ANSWERS - {analysis_type}")
+    print_table(percentage_table, data_formats, task_columns, 
+                f"TABLE 2: PERCENTAGE CORRECT - {analysis_type}")
     
     # Save results
-    save_results(count_table, percentage_table, data_formats, task_columns, output_dir)
+    save_results(count_table, percentage_table, data_formats, task_columns, str(output_dir), results)
     
     # Generate summary statistics
     generate_summary_statistics(results)
     
-    print(f"\nAnalysis complete! Check the output directory: {output_dir}")
+    print(f"\nAnalysis complete for {analysis_type}!")
+    return True
+
+def main():
+    """Main function to run the analysis."""
+    parser = argparse.ArgumentParser(
+        description="Analyze Q-Benchmark results across different prompt variants and models",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python benchmark_analysis.py                                    # Analyze gpt-4.1-mini standard
+  python benchmark_analysis.py --variants all                     # All variants for gpt-4.1-mini
+  python benchmark_analysis.py --variants wo_role_prompting       # Specific variant for gpt-4.1-mini
+  python benchmark_analysis.py --model gemini-2.5-flash          # Different model, standard
+  python benchmark_analysis.py --model gpt-4.1-mini --variants all  # All variants for specific model
+        """
+    )
+    
+    # Get available options
+    available_variants = get_available_variants()
+    available_models = get_available_models()
+    
+    parser.add_argument("--variants", 
+                       choices=["all"] + available_variants,
+                       help="Prompt variant to analyze. 'all' analyzes all available variants.")
+    
+    parser.add_argument("--model", 
+                       choices=available_models,
+                       default="gpt-4.1-mini",
+                       help="Model to analyze (default: gpt-4.1-mini)")
+    
+    parser.add_argument("--output-dir",
+                       default="/insight-fast/dnguyen/Q_Benchmark/analysis_results",
+                       help="Base output directory for results")
+    
+    parser.add_argument("--list", action="store_true",
+                       help="List available variants and models")
+    
+    args = parser.parse_args()
+    
+    # Handle list option
+    if args.list:
+        print("Available models:")
+        for model in available_models:
+            print(f"  - {model}")
+        print("\nAvailable variants:")
+        for variant in available_variants:
+            print(f"  - {variant}")
+        return
+    
+    base_results_dir = Path("/insight-fast/dnguyen/Q_Benchmark/benchmark_results")
+    output_base_dir = Path(args.output_dir)
+    
+    print("Starting Q-Benchmark results analysis...")
+    print(f"Model: {args.model}")
+    print(f"Variants: {args.variants or 'standard (no variants)'}")
+    
+    success_count = 0
+    total_analyses = 0
+    
+    if args.variants == "all":
+        # Analyze standard version first
+        total_analyses += 1
+        if analyze_single_variant(args.model, None, base_results_dir, output_base_dir):
+            success_count += 1
+        
+        # Then analyze all variants
+        for variant in available_variants:
+            total_analyses += 1
+            if analyze_single_variant(args.model, variant, base_results_dir, output_base_dir):
+                success_count += 1
+                
+    elif args.variants:
+        # Analyze specific variant
+        total_analyses += 1
+        if analyze_single_variant(args.model, args.variants, base_results_dir, output_base_dir):
+            success_count += 1
+            
+    else:
+        # Analyze standard version only
+        total_analyses += 1
+        if analyze_single_variant(args.model, None, base_results_dir, output_base_dir):
+            success_count += 1
+    
+    # Final summary
+    print(f"\n{'='*80}")
+    print(f"ANALYSIS SUMMARY")
+    print(f"{'='*80}")
+    print(f"Completed analyses: {success_count}/{total_analyses}")
+    print(f"Output directory: {output_base_dir}")
+    print(f"{'='*80}")
 
 if __name__ == "__main__":
     main()

@@ -112,7 +112,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -165,13 +167,19 @@ Good"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Clear communication and handover"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Clear communication and handover"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -179,7 +187,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
 case_2,answer_reverse_lookup,Which respondent has a good recommendation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -293,7 +303,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -346,13 +358,19 @@ Good"" .
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Wrong CPR position
 Clarity is a bit low over whole case scenario
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -360,7 +378,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good recommendation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good recommendation score (2)?",,
 case_3,answer_reverse_lookup,Which respondent has a good clinical assessment score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -472,7 +492,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -523,13 +545,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Concise - clear
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -537,7 +565,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
 case_4,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -651,7 +681,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -704,13 +736,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Overall a bit unclear communication reflected"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Overall a bit unclear communication reflected"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -718,7 +756,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_5,answer_reverse_lookup,Which respondent has a good clinical assessment score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -832,7 +872,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -885,13 +927,19 @@ Satisfactory"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Time: (11:43-11:58)
 Talking to registrav could not summarize the condition of patient very clearly
-DID: Sepsis I Anaphylaxsis given by team"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+DID: Sepsis I Anaphylaxsis given by team"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -899,7 +947,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
 case_6,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1015,7 +1065,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1070,13 +1122,19 @@ Good"" .
     pred:Comments ""Time: (10:29-10:54)
 Ventricular fibrillation (CVS)
 Lack of communication btween 2 main interns
-Further brief to patient, ask patent concerns"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Further brief to patient, ask patent concerns"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1084,7 +1142,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_7,answer_reverse_lookup,Which respondent has a good background examination score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1198,7 +1258,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1251,13 +1313,19 @@ Satisfactory"" .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Concise - clear
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1265,7 +1333,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background examination score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background examination score (2)?",,
 case_8,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1376,7 +1446,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1426,13 +1498,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Clear communication and handover"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Clear communication and handover"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1440,7 +1518,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_9,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1553,7 +1633,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1605,13 +1687,19 @@ Clear communication between Reg and colleague during handover"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1619,7 +1707,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_10,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1731,7 +1821,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1782,13 +1874,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication skills
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1796,7 +1894,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_11,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -1909,7 +2009,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -1961,13 +2063,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments """" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments """" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -1975,7 +2083,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_12,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2091,7 +2201,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2146,13 +2258,19 @@ Further brief to patient, ask patent concerns"" .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Diagnostic clarity is present
-Good and early assessment of condition is done"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good and early assessment of condition is done"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2160,7 +2278,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_13,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2275,7 +2395,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2329,13 +2451,19 @@ Further brief to patient, ask patent concerns"" .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""The patient/simulation is not oriented in TPP.
-Clear communication between Reg and colleague during handover"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Clear communication between Reg and colleague during handover"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2343,7 +2471,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_14,answer_reverse_lookup,Which respondent has a good clinical assessment score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2455,7 +2585,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2506,13 +2638,19 @@ Clear communication between Reg and colleague during handover"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments """" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments """" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2520,7 +2658,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
 case_15,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2634,7 +2774,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2687,13 +2829,19 @@ Satisfactory"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Good clear and precise clinical handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2701,7 +2849,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_16,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2814,7 +2964,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -2866,13 +3018,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Detailed Response - clear communication"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Detailed Response - clear communication"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -2880,7 +3038,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_17,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -2992,7 +3152,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3043,13 +3205,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Diagnostic clarity is present
-Good and early assessment of condition is done"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good and early assessment of condition is done"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3057,7 +3225,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_18,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3172,7 +3342,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3226,13 +3398,19 @@ Late response for considering consultation"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication during handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3240,7 +3418,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_19,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3353,7 +3533,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3405,13 +3587,19 @@ Late response for considering consultation"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication during handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3419,7 +3607,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_20,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3534,7 +3724,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3588,13 +3780,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Detailed Response - clear communication"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Detailed Response - clear communication"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3602,7 +3800,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_21,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3719,7 +3919,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3775,13 +3977,19 @@ Satisfactory"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Not very concise or clear communication
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3789,7 +3997,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_22,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -3900,7 +4110,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -3950,13 +4162,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments """" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments """" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -3964,7 +4182,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_23,answer_reverse_lookup,Which respondent has a good clinical assessment score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4076,7 +4296,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4127,13 +4349,19 @@ Satisfactory"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4141,7 +4369,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
 case_24,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4256,7 +4486,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4310,13 +4542,19 @@ Clear communication between Reg and colleague during handover"" .
     pred:Comments ""Time: (10:29-10:54)
 Ventricular fibrillation (CVS)
 Lack of communication btween 2 main interns
-Further brief to patient, ask patent concerns"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Further brief to patient, ask patent concerns"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4324,7 +4562,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_25,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4436,7 +4676,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4487,13 +4729,19 @@ Clear communication between Reg and colleague during handover"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Time: (15:53-16:14)"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Time: (15:53-16:14)"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4501,7 +4749,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_26,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4615,7 +4865,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4668,13 +4920,19 @@ Late response for considering consultation"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Overall a bit unclear communication reflected"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Overall a bit unclear communication reflected"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4682,7 +4940,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_27,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4796,7 +5056,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -4849,13 +5111,19 @@ Good"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -4863,7 +5131,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_28,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -4979,7 +5249,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5034,13 +5306,19 @@ Satisfactory"" .
     pred:Comments ""Time: (10:29-10:54)
 Ventricular fibrillation (CVS)
 Lack of communication btween 2 main interns
-Further brief to patient, ask patent concerns"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Further brief to patient, ask patent concerns"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5048,7 +5326,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_29,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5162,7 +5442,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5215,13 +5497,19 @@ Good"" .
     pred:Recommendation_clear_recommendation ""1"" ;
     pred:Recommendation_global_rating_scale ""1"" ;
     pred:Comments ""Time: (2:36-2:53)
-Late response for considering consultation"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Late response for considering consultation"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5229,7 +5517,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_30,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5343,7 +5633,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5396,13 +5688,19 @@ Further brief to patient, ask patent concerns"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Detailed Response - clear communication"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Detailed Response - clear communication"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5410,7 +5708,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_31,answer_reverse_lookup,Which respondent has a good situation score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5523,7 +5823,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5575,13 +5877,19 @@ Satisfactory"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5589,7 +5897,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good situation score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good situation score (2)?",,
 case_32,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5703,7 +6013,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5756,13 +6068,19 @@ Answer: 18@prefix : <http://example.org/survey#> .
     pred:Comments ""Time: (10:29-10:54)
 Ventricular fibrillation (CVS)
 Lack of communication btween 2 main interns
-Further brief to patient, ask patent concerns"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Further brief to patient, ask patent concerns"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5770,7 +6088,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_33,answer_reverse_lookup,Which respondent has a good identification score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -5882,7 +6202,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -5933,13 +6255,19 @@ Good"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments """" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments """" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -5947,7 +6275,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good identification score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good identification score (2)?",,
 case_34,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6063,7 +6393,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6118,13 +6450,19 @@ Further brief to patient, ask patent concerns"" .
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Clinical handover and communication skills, satisfactory
 No panic, no arrest team
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6132,7 +6470,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_35,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6245,7 +6585,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6297,13 +6639,19 @@ Good"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication during handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6311,7 +6659,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_36,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6426,7 +6776,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6480,13 +6832,19 @@ Late response for considering consultation"" .
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Wrong CPR position
 Clarity is a bit low over whole case scenario
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6494,7 +6852,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_37,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6606,7 +6966,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6657,13 +7019,19 @@ Good"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6671,7 +7039,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_38,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6783,7 +7153,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -6834,13 +7206,19 @@ Good"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Clear communication and handover"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Clear communication and handover"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -6848,7 +7226,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_39,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -6961,7 +7341,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7013,13 +7395,19 @@ Late response for considering consultation"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Consent denied for video recordings
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7027,7 +7415,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_40,answer_reverse_lookup,Which respondent has a moderate recommendation score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7140,7 +7530,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7192,13 +7584,19 @@ Late response for considering consultation"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7206,7 +7604,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate recommendation score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate recommendation score (1)?",,
 case_41,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7319,7 +7719,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7371,13 +7773,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
-    pred:Comments ""Time: (15:53-16:14)"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Time: (15:53-16:14)"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7385,7 +7793,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_42,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7498,7 +7908,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7550,13 +7962,19 @@ Good"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Not very concise or clear communication
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7564,7 +7982,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_43,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7678,7 +8098,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7731,13 +8153,19 @@ Satisfactory"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7745,7 +8173,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_44,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -7857,7 +8287,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -7908,13 +8340,19 @@ Good and early assessment of condition is done"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -7922,7 +8360,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_45,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8036,7 +8476,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8089,13 +8531,19 @@ DID: Sepsis I Anaphylaxsis given by team"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication during handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8103,7 +8551,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_46,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8217,7 +8667,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8270,13 +8722,19 @@ Satisfactory"" .
     pred:Assessment ""3"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments ""Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments ""Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8284,7 +8742,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_47,answer_reverse_lookup,Which respondent has a moderate background examination score (1)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8400,7 +8860,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8455,13 +8917,19 @@ Further brief to patient, ask patent concerns"" .
     pred:Recommendation_global_rating_scale ""2"" ;
     pred:Comments ""Clinical handover and communication skills, satisfactory
 No panic, no arrest team
-Satisfactory"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Satisfactory"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8469,7 +8937,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a moderate background examination score (1)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a moderate background examination score (1)?",,
 case_48,answer_reverse_lookup,Which respondent has a good background history score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8585,7 +9055,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8640,13 +9112,19 @@ DID: Sepsis I Anaphylaxsis given by team"" .
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication during handover
-Good"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Good"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8654,7 +9132,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good background history score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good background history score (2)?",,
 case_49,answer_reverse_lookup,Which respondent has a poor identification score (0)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8766,7 +9246,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8817,13 +9299,19 @@ Satisfactory"" .
     pred:Assessment ""2"" ;
     pred:Recommendation_clear_recommendation ""2"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
-    pred:Comments """" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+    pred:Comments """" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -8831,7 +9319,9 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a poor identification score (0)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a poor identification score (0)?",,
 case_50,answer_reverse_lookup,Which respondent has a good clinical assessment score (2)?,"@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
@@ -8944,7 +9434,9 @@ Good"" .
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""Clear communication and handover"" .
 
-Answer: 18@prefix : <http://example.org/survey#> .
+Answer: 18
+
+@prefix : <http://example.org/survey#> .
 @prefix pred: <http://example.org/predicate#> .
 
 # Questions
@@ -8996,13 +9488,19 @@ Satisfactory"" .
     pred:Recommendation_clear_recommendation ""3"" ;
     pred:Recommendation_global_rating_scale ""3"" ;
     pred:Comments ""The patient/simulation is not oriented in TPP.
-Clear communication between Reg and colleague during handover"" .You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.You will be given a dataset with two key parts:
+Clear communication between Reg and colleague during handover"" .
+
+You are a meticulous data analyst AI. Your primary function is to accurately analyze structured data and provide precise, verifiable answers.
+
+You will be given a dataset with two key parts:
 
 A 'questions' section: This is your data dictionary or schema. It is the single source of truth for understanding what each field and score means. Refer to it carefully.
 
 A 'responses' section: This contains the raw data from each individual respondent.
 
-To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
+To answer the question correctly, you must first use the 'questions' schema to fully understand the context and meaning of the data points within the 'responses'. Do not rely on any prior knowledge outside of this provided data. Base your entire analysis on the information given.
+
+Provide your final answer directly and concisely. Output must be the human-readable value, not an option code.
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
@@ -9010,4 +9508,6 @@ Rules:
 - For open-ended fields, output the exact text value.
 - If the question asks for a count, provide only the number (e.g., ""42"").
 - If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").Which respondent has a good clinical assessment score (2)?",,
+- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+
+Which respondent has a good clinical assessment score (2)?",,
