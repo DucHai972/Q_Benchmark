@@ -186,7 +186,8 @@ class SimpleBenchmarkPipeline:
     """Simple benchmark pipeline for processing CSV prompt files"""
     
     def __init__(self, converted_prompts_dir: str = "converted_prompts", init_clients: bool = True, 
-                 openai_model: str = "gpt-3.5-turbo", google_model: str = "gemini-1.5-flash", variants: str = None):
+                 openai_model: str = "gpt-3.5-turbo", google_model: str = "gemini-1.5-flash", 
+                 variants: str = None):
         load_dotenv()
         
         self.converted_prompts_dir = Path(converted_prompts_dir)
@@ -233,7 +234,7 @@ class SimpleBenchmarkPipeline:
             logger.warning("GOOGLE_API_KEY not found in .env file")
         
         if not clients:
-            raise ValueError("No valid API keys found in .env file. Please add OPENAI_API_KEY and/or GOOGLE_API_KEY")
+            raise ValueError("No valid clients initialized. Please add API keys to .env file")
         
         return clients
     
@@ -250,15 +251,19 @@ class SimpleBenchmarkPipeline:
             logger.error(f"Error loading CSV file {csv_file}: {e}")
             return []
     
-    def save_csv_results(self, csv_file: Path, prompts: List[Dict[str, str]], provider_name: str) -> bool:
+    def save_csv_results(self, csv_file: Path, prompts: List[Dict[str, str]], provider_name: str, self_aug_type: Optional[str] = None) -> bool:
         """Save prompts results to benchmark_results directory organized by model with smart merging"""
         try:
             # Get actual model name from client
             client = self.clients[provider_name]
             actual_model_name = client.model_name
+            # Clean up model name for directory (remove slashes)
+            actual_model_name = actual_model_name.replace("/", "-").replace("\\", "-")
             
             # Create model-specific directory using actual model name
-            if self.variants:
+            if self_aug_type:
+                model_dir_name = f"{actual_model_name}_{self_aug_type}"
+            elif self.variants:
                 model_dir_name = f"{actual_model_name}_{self.variants}"
             else:
                 model_dir_name = actual_model_name
@@ -315,7 +320,7 @@ class SimpleBenchmarkPipeline:
             logger.error(f"Error saving results file: {e}")
             return False
     
-    def process_csv_file(self, csv_file: Path, model: str, max_cases: Optional[int] = None, start_case: int = 2, overall_pbar=None) -> bool:
+    def process_csv_file(self, csv_file: Path, model: str, max_cases: Optional[int] = None, start_case: int = 2, overall_pbar=None, self_aug_type: Optional[str] = None, self_aug_requests: Optional[dict] = None) -> bool:
         """Process a single CSV file with specified model"""
         logger.info(f"Processing {csv_file} with {model}")
         
@@ -347,8 +352,14 @@ class SimpleBenchmarkPipeline:
         for prompt_data in prompts:
             # Always process (don't skip based on existing Response field)
             
+            # Process self-augmentation prompts if needed
+            processed_prompt = prompt_data["prompt"]
+            if self_aug_type and self_aug_requests and self_aug_type in self_aug_requests:
+                request_message = self_aug_requests[self_aug_type]
+                processed_prompt = processed_prompt.replace("[REQUEST]", request_message)
+            
             # Generate response
-            result = client.generate(prompt_data["prompt"])
+            result = client.generate(processed_prompt)
             
             # Update prompt data
             prompt_data["Response"] = result["response"]
@@ -375,7 +386,7 @@ class SimpleBenchmarkPipeline:
             time.sleep(0.5)
         
         # Save results to benchmark_results directory
-        success = self.save_csv_results(csv_file, prompts, model)
+        success = self.save_csv_results(csv_file, prompts, model, self_aug_type)
         if success:
             actual_model_name = self.clients[model].model_name
             logger.info(f"Saved results for {actual_model_name} with {processed_count} responses")
@@ -408,8 +419,8 @@ class SimpleBenchmarkPipeline:
         search_pattern = "/".join(pattern_parts) + "/*.csv"
         
         for csv_file in self.converted_prompts_dir.glob(search_pattern):
-            # Filter by format if specified
-            if format_type and format_type not in csv_file.stem:
+            # Filter by format if specified (case-insensitive)
+            if format_type and format_type.lower() not in csv_file.stem.lower():
                 continue
             csv_files.append(csv_file)
         
@@ -421,7 +432,9 @@ class SimpleBenchmarkPipeline:
                      format_type: Optional[str] = None,
                      model: Optional[str] = None,
                      max_cases: Optional[int] = None,
-                     start_case: int = 2) -> bool:
+                     start_case: int = 2,
+                     self_aug_type: Optional[str] = None,
+                     self_aug_requests: Optional[dict] = None) -> bool:
         """Run benchmark on specified criteria"""
         
         # Find CSV files to process
@@ -478,7 +491,7 @@ class SimpleBenchmarkPipeline:
         try:
             for csv_file in csv_files:
                 for model_name in models_to_use:
-                    if self.process_csv_file(csv_file, model_name, max_cases, start_case, overall_pbar):
+                    if self.process_csv_file(csv_file, model_name, max_cases, start_case, overall_pbar, self_aug_type, self_aug_requests):
                         success_count += 1
         finally:
             if overall_pbar:
@@ -503,6 +516,9 @@ def main():
                        choices=["all", "wo_role_prompting", "wo_partition_mark", "wo_format_explaination", 
                                "wo_oneshot", "wo_change_order"],
                        help="Prompt variant to use instead of standard prompts. Use 'all' to run all variants. Available variants: wo_role_prompting, wo_partition_mark, wo_format_explaination, wo_oneshot, wo_change_order")
+    parser.add_argument("--self_aug", 
+                       choices=["format_explaination", "critical_values", "structural_info"],
+                       help="Use self-augmentation prompts with specific request type. Mutually exclusive with --variants.")
     parser.add_argument("--model", choices=["openai", "google"], 
                        help="Model provider to use (default: all available)")
     parser.add_argument("--openai-model", default="gpt-3.5-turbo",
@@ -520,6 +536,17 @@ def main():
     
     args = parser.parse_args()
     
+    # Validate mutually exclusive arguments
+    if args.variants and args.self_aug:
+        parser.error("--variants and --self_aug are mutually exclusive. Use one or the other.")
+    
+    # Define REQUEST messages for self_aug types
+    SELF_AUG_REQUESTS = {
+        "format_explaination": "Generate short format specification and description of the table within five sentences.",
+        "critical_values": "Identify critical values and ranges of the table related within five sentences",
+        "structural_info": "Describe structural information, patterns and statistics of the table within five sentences."
+    }
+    
     # Print configuration settings
     if not args.list:
         print("="*60)
@@ -528,7 +555,10 @@ def main():
         print(f"Dataset:              {args.dataset or 'ALL'}")
         print(f"Task:                 {args.task or 'ALL'}")
         print(f"Format:               {args.format or 'ALL'}")
-        print(f"Variants:             {args.variants or 'STANDARD'}")
+        if args.self_aug:
+            print(f"Self-Augmentation:    {args.self_aug}")
+        else:
+            print(f"Variants:             {args.variants or 'STANDARD'}")
         
         # Only print the model we're actually using
         if args.model == "openai":
@@ -541,7 +571,9 @@ def main():
             
         print(f"Max Cases per File:   {args.max_cases or 'UNLIMITED'}")
         print(f"Starting Case:        {args.start_case}")
-        if args.variants:
+        if args.self_aug:
+            print(f"Prompts Directory:    converted_prompts_self_aug")
+        elif args.variants:
             print(f"Prompts Directory:    converted_prompts_variants/{args.variants}")
         else:
             print(f"Prompts Directory:    {args.converted_prompts_dir}")
@@ -627,8 +659,10 @@ def main():
     
     # Initialize pipeline for single variant or standard
     try:
-        # Determine the prompts directory based on variants argument
-        if args.variants:
+        # Determine the prompts directory based on variants or self_aug argument
+        if args.self_aug:
+            prompts_dir = "converted_prompts_self_aug"
+        elif args.variants:
             prompts_dir = f"converted_prompts_variants/{args.variants}"
         else:
             prompts_dir = args.converted_prompts_dir
@@ -647,7 +681,9 @@ def main():
     
     # List available options
     if args.list:
-        if args.variants:
+        if args.self_aug:
+            print(f"Available options in converted_prompts_self_aug directory:")
+        elif args.variants:
             print(f"Available options in converted_prompts_variants/{args.variants} directory:")
         else:
             print("Available options in converted_prompts directory:")
@@ -687,7 +723,9 @@ def main():
         format_type=args.format,
         model=args.model,
         max_cases=args.max_cases,
-        start_case=args.start_case
+        start_case=args.start_case,
+        self_aug_type=args.self_aug,
+        self_aug_requests=SELF_AUG_REQUESTS if args.self_aug else None
     )
     
     # Print final summary
