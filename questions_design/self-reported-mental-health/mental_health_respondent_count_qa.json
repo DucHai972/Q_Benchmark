@@ -1,0 +1,1521 @@
+[
+  {
+    "case_id": "case_1",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "3",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 3,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_2",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "6",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 6
+    }
+  },
+  {
+    "case_id": "case_3",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are female.",
+    "answer": "1",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_4",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Life satisfaction' of 5 or higher.",
+    "answer": "11",
+    "selected_features": [
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Life satisfaction",
+        "threshold": 5,
+        "comparison": "greater_equal"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "score_threshold_filter",
+      "score_field": "Life satisfaction",
+      "threshold": 5,
+      "comparison": "greater_equal",
+      "matching_count": 11
+    }
+  },
+  {
+    "case_id": "case_5",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "3",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_6",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Loneliness' of 2 or lower.",
+    "answer": "2",
+    "selected_features": [
+      "Loneliness"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Loneliness",
+        "threshold": 2,
+        "comparison": "less_equal"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "score_threshold_filter",
+      "score_field": "Loneliness",
+      "threshold": 2,
+      "comparison": "less_equal",
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_7",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are female.",
+    "answer": "1",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_8",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Socio-economic status' of 3 who were born in 1998.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Socio-economic status",
+        "value": 3.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Year of birth",
+        "value": 1998.0,
+        "comparison": "equal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "conditions": [
+        {
+          "field": "Socio-economic status",
+          "value": 3.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Year of birth",
+          "value": 1998.0,
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_9",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Socio-economic status' of 1 who were born in 2003.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Socio-economic status",
+        "value": 1.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Year of birth",
+        "value": 2003.0,
+        "comparison": "equal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "conditions": [
+        {
+          "field": "Socio-economic status",
+          "value": 1.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Year of birth",
+          "value": 2003.0,
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_10",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born after 2003.",
+    "answer": "3",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2003,
+        "comparison": "after"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2003,
+      "comparison": "after",
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_11",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Socio-economic status' of 4 who were born in 2006.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Socio-economic status",
+        "value": 4.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Year of birth",
+        "value": 2006.0,
+        "comparison": "equal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "conditions": [
+        {
+          "field": "Socio-economic status",
+          "value": 4.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Year of birth",
+          "value": 2006.0,
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_12",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born before 2005.",
+    "answer": "6",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2005,
+        "comparison": "before"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2005,
+      "comparison": "before",
+      "matching_count": 6
+    }
+  },
+  {
+    "case_id": "case_13",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are female.",
+    "answer": "4",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_14",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Socio-economic status' of 3 who were born in 2001.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Socio-economic status",
+        "value": 3.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Year of birth",
+        "value": 2001.0,
+        "comparison": "equal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "conditions": [
+        {
+          "field": "Socio-economic status",
+          "value": 3.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Year of birth",
+          "value": 2001.0,
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_15",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "7",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 7
+    }
+  },
+  {
+    "case_id": "case_16",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born after 2002.",
+    "answer": "10",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2002,
+        "comparison": "after"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2002,
+      "comparison": "after",
+      "matching_count": 10
+    }
+  },
+  {
+    "case_id": "case_17",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are female.",
+    "answer": "2",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_18",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "4",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_19",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are male.",
+    "answer": "4",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_20",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born before 2004.",
+    "answer": "3",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2004,
+        "comparison": "before"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2004,
+      "comparison": "before",
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_21",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents who are female.",
+    "answer": "2",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "gender_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_22",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born after 2002.",
+    "answer": "2",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2002,
+        "comparison": "after"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2002,
+      "comparison": "after",
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_23",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born after 2002.",
+    "answer": "5",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2002,
+        "comparison": "after"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2002,
+      "comparison": "after",
+      "matching_count": 5
+    }
+  },
+  {
+    "case_id": "case_24",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents born before 2005.",
+    "answer": "8",
+    "selected_features": [
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "year": 2005,
+        "comparison": "before"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "birth_year_filter",
+      "year": 2005,
+      "comparison": "before",
+      "matching_count": 8
+    }
+  },
+  {
+    "case_id": "case_25",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Socio-economic status' of 4 who were born in 2005.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Year of birth"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Socio-economic status",
+        "value": 4.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Year of birth",
+        "value": 2005.0,
+        "comparison": "equal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "conditions": [
+        {
+          "field": "Socio-economic status",
+          "value": 4.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Year of birth",
+          "value": 2005.0,
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_26",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Depression' and 'Happiness' is exactly 10.",
+    "answer": "0",
+    "selected_features": [
+      "Depression",
+      "Happiness"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Depression",
+          "Happiness"
+        ],
+        "target_total": 10
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Depression",
+        "Happiness"
+      ],
+      "target_total": 10,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_27",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents born in 2003 who have a 'Stress' greater than 7 and a 'Life satisfaction' less than 3.",
+    "answer": "0",
+    "selected_features": [
+      "Year of birth",
+      "Stress",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "value": 2003.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Stress",
+        "threshold": 7,
+        "comparison": "greater"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 3,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Year of birth",
+          "value": 2003.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Stress",
+          "threshold": 7,
+          "comparison": "greater"
+        },
+        {
+          "field": "Life satisfaction",
+          "threshold": 3,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_28",
+    "difficulty_mode": "Medium",
+    "question": "Count the male respondents whose mother has more than 10 years of education and whose 'Life satisfaction' is 7 or higher.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Parental Education-Mother",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Parental Education-Mother",
+        "threshold": 10,
+        "comparison": "greater"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 7,
+        "comparison": "greater_equal"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "gender_education_satisfaction_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "education_years": 10,
+      "satisfaction_threshold": 7,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_29",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Depression' and 'Worry' is exactly 15.",
+    "answer": "0",
+    "selected_features": [
+      "Depression",
+      "Worry"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Depression",
+          "Worry"
+        ],
+        "target_total": 15
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Depression",
+        "Worry"
+      ],
+      "target_total": 15,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_30",
+    "difficulty_mode": "Medium",
+    "question": "Count the male respondents whose mother has more than 10 years of education and whose 'Life satisfaction' is 6 or higher.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Parental Education-Mother",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 1.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Parental Education-Mother",
+        "threshold": 10,
+        "comparison": "greater"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 6,
+        "comparison": "greater_equal"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "gender_education_satisfaction_filter",
+      "gender": {
+        "code": 1.0,
+        "text": "Male"
+      },
+      "education_years": 10,
+      "satisfaction_threshold": 6,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_31",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents born in 2004 who have a 'Stress' greater than 5 and a 'Depression' less than 3.",
+    "answer": "0",
+    "selected_features": [
+      "Year of birth",
+      "Stress",
+      "Depression"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "value": 2004.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Stress",
+        "threshold": 5,
+        "comparison": "greater"
+      },
+      {
+        "field": "Depression",
+        "threshold": 3,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Year of birth",
+          "value": 2004.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Stress",
+          "threshold": 5,
+          "comparison": "greater"
+        },
+        {
+          "field": "Depression",
+          "threshold": 3,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_32",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Depression' and 'Life satisfaction' is exactly 12.",
+    "answer": "0",
+    "selected_features": [
+      "Depression",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Depression",
+          "Life satisfaction"
+        ],
+        "target_total": 12
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Depression",
+        "Life satisfaction"
+      ],
+      "target_total": 12,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_33",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Life satisfaction' and 'Happiness' is exactly 15.",
+    "answer": "0",
+    "selected_features": [
+      "Life satisfaction",
+      "Happiness"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Life satisfaction",
+          "Happiness"
+        ],
+        "target_total": 15
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Life satisfaction",
+        "Happiness"
+      ],
+      "target_total": 15,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_34",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Loneliness' and 'Happiness' is exactly 10.",
+    "answer": "0",
+    "selected_features": [
+      "Loneliness",
+      "Happiness"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Loneliness",
+          "Happiness"
+        ],
+        "target_total": 10
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Loneliness",
+        "Happiness"
+      ],
+      "target_total": 10,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_35",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents born in 2002 who have a 'Life satisfaction' greater than 5 and a 'Happiness' less than 5.",
+    "answer": "1",
+    "selected_features": [
+      "Year of birth",
+      "Life satisfaction",
+      "Happiness"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "value": 2002.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 5,
+        "comparison": "greater"
+      },
+      {
+        "field": "Happiness",
+        "threshold": 5,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Year of birth",
+          "value": 2002.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Life satisfaction",
+          "threshold": 5,
+          "comparison": "greater"
+        },
+        {
+          "field": "Happiness",
+          "threshold": 5,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_36",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents born in 2004 who have a 'Loneliness' greater than 6 and a 'Depression' less than 3.",
+    "answer": "1",
+    "selected_features": [
+      "Year of birth",
+      "Loneliness",
+      "Depression"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "value": 2004.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Loneliness",
+        "threshold": 6,
+        "comparison": "greater"
+      },
+      {
+        "field": "Depression",
+        "threshold": 3,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Year of birth",
+          "value": 2004.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Loneliness",
+          "threshold": 6,
+          "comparison": "greater"
+        },
+        {
+          "field": "Depression",
+          "threshold": 3,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_37",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose total score for 'Depression' and 'Stress' is exactly 20.",
+    "answer": "0",
+    "selected_features": [
+      "Depression",
+      "Stress"
+    ],
+    "filter_conditions": [
+      {
+        "calculated_field": "total_score",
+        "score_fields": [
+          "Depression",
+          "Stress"
+        ],
+        "target_total": 20
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "total_score_exact",
+      "score_fields": [
+        "Depression",
+        "Stress"
+      ],
+      "target_total": 20,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_38",
+    "difficulty_mode": "Medium",
+    "question": "Count the female respondents whose mother has more than 10 years of education and whose 'Life satisfaction' is 7 or higher.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Parental Education-Mother",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Parental Education-Mother",
+        "threshold": 10,
+        "comparison": "greater"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 7,
+        "comparison": "greater_equal"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "gender_education_satisfaction_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "education_years": 10,
+      "satisfaction_threshold": 7,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_39",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents born in 2001 who have a 'Loneliness' greater than 5 and a 'Stress' less than 3.",
+    "answer": "0",
+    "selected_features": [
+      "Year of birth",
+      "Loneliness",
+      "Stress"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Year of birth",
+        "value": 2001.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Loneliness",
+        "threshold": 5,
+        "comparison": "greater"
+      },
+      {
+        "field": "Stress",
+        "threshold": 3,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Year of birth",
+          "value": 2001.0,
+          "comparison": "equal"
+        },
+        {
+          "field": "Loneliness",
+          "threshold": 5,
+          "comparison": "greater"
+        },
+        {
+          "field": "Stress",
+          "threshold": 3,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_40",
+    "difficulty_mode": "Medium",
+    "question": "Count the female respondents whose mother has more than 12 years of education and whose 'Life satisfaction' is 8 or higher.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Parental Education-Mother",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": 2.0,
+        "comparison": "equal"
+      },
+      {
+        "field": "Parental Education-Mother",
+        "threshold": 12,
+        "comparison": "greater"
+      },
+      {
+        "field": "Life satisfaction",
+        "threshold": 8,
+        "comparison": "greater_equal"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "gender_education_satisfaction_filter",
+      "gender": {
+        "code": 2.0,
+        "text": "Female"
+      },
+      "education_years": 12,
+      "satisfaction_threshold": 8,
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_41",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose combined 'Depression' and 'Stress' score is lower than the average combined 'Depression' and 'Stress' score for their gender.",
+    "answer": "4",
+    "selected_features": [
+      "Gender",
+      "Depression",
+      "Stress"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "below_gender_combined_average",
+      "score_fields": [
+        "Depression",
+        "Stress"
+      ],
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_42",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose 'Worry' is higher than the average 'Worry' for their gender.",
+    "answer": "3",
+    "selected_features": [
+      "Gender",
+      "Worry"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_gender_average",
+      "score_field": "Worry",
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_43",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose 'Stress' is higher than the average 'Stress' for their gender.",
+    "answer": "4",
+    "selected_features": [
+      "Gender",
+      "Stress"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "above_gender_average",
+      "score_field": "Stress",
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_44",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'.",
+    "answer": "10",
+    "selected_features": [
+      "Year of birth",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_year_average_life_satisfaction",
+      "overall_average": 7.416666666666667,
+      "qualifying_years": [
+        2022.0,
+        1993.0,
+        2002.0,
+        2004.0,
+        2005.0
+      ],
+      "matching_count": 10
+    }
+  },
+  {
+    "case_id": "case_45",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'.",
+    "answer": "7",
+    "selected_features": [
+      "Year of birth",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "above_year_average_life_satisfaction",
+      "overall_average": 6.6,
+      "qualifying_years": [
+        2002.0,
+        2004.0,
+        2005.0
+      ],
+      "matching_count": 7
+    }
+  },
+  {
+    "case_id": "case_46",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose combined 'Worry' and 'Life satisfaction' score is lower than the average combined 'Worry' and 'Life satisfaction' score for their gender.",
+    "answer": "3",
+    "selected_features": [
+      "Gender",
+      "Worry",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "below_gender_combined_average",
+      "score_fields": [
+        "Worry",
+        "Life satisfaction"
+      ],
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_47",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'.",
+    "answer": "6",
+    "selected_features": [
+      "Year of birth",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_year_average_life_satisfaction",
+      "overall_average": 6.666666666666667,
+      "qualifying_years": [
+        2022.0,
+        2003.0,
+        2004.0,
+        2005.0
+      ],
+      "matching_count": 6
+    }
+  },
+  {
+    "case_id": "case_48",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose total 'Depressive Symptoms' score is higher than the average for their 'Socio-economic status' group.",
+    "answer": "0",
+    "selected_features": [
+      "Socio-economic status",
+      "Depressive Symptoms"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_socioeconomic_depressive_average",
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_49",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents whose combined 'Life satisfaction' and 'Depression' score is lower than the average combined 'Life satisfaction' and 'Depression' score for their gender.",
+    "answer": "4",
+    "selected_features": [
+      "Gender",
+      "Life satisfaction",
+      "Depression"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "below_gender_combined_average",
+      "score_fields": [
+        "Life satisfaction",
+        "Depression"
+      ],
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_50",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'.",
+    "answer": "5",
+    "selected_features": [
+      "Year of birth",
+      "Life satisfaction"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_year_average_life_satisfaction",
+      "overall_average": 7.125,
+      "qualifying_years": [
+        2000.0,
+        2002.0,
+        2003.0
+      ],
+      "matching_count": 5
+    }
+  }
+]

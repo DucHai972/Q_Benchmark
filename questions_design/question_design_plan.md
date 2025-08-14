@@ -6,7 +6,7 @@ This document outlines the plan for designing questions and answers for our benc
 
 ## Key Requirements
 
-1. **Complete Data Retrieval**: When asking about feature X, retrieve ALL respondents and their feature X values FROM THAT SPECIFIC CASE to ensure answer accuracy and handle multiple matches.
+1. **Case-Specific Data Retrieval**: When generating questions for case_X, retrieve ONLY the respondents and their feature values FROM THAT SPECIFIC CASE (case_X.json) to ensure answer accuracy and proper validation scope. Never use data from other cases.
 
 2. **Difficulty Modes**: 
    - Cases 1-25: Easy Mode 
@@ -35,7 +35,7 @@ Examples:
 
 ### Source Data
 - **Path Pattern**: `benchmark_cache/{dataset}/{task}/json/case_{X}.json`
-- **Requirement**: Load ALL case files for complete validation
+- **Requirement**: Load ONLY the specific case file being processed (case-by-case processing)
 
 ## Task Types
 
@@ -59,7 +59,7 @@ Each generated JSON file contains an array of question objects with:
 - `target_respondent`: Specific respondent ID referenced
 - `patient_name`: Generated patient name (if applicable)
 - `reasoning_complexity`: Number of conditions/calculations required
-- `feature_values`: Object containing all relevant feature values from all respondents
+- `feature_values`: Object containing all relevant feature values from respondents in that specific case only
 - `calculation_details`: Object containing intermediate calculations (averages, filters, etc.)
 
 ## Implementation Steps
@@ -78,15 +78,15 @@ Each generated JSON file contains an array of question objects with:
 ## Key Features of JSON Output
 
 1. **Multiple Feature Support**: Each question stores all selected features used
-2. **Complete Feature Values**: All respondents' values for chosen features included  
-3. **Calculation Details**: Intermediate calculations, statistics, and reasoning steps
-4. **Ground Truth Validation**: Comprehensive validation against complete dataset
+2. **Case-Specific Feature Values**: All respondents' values for chosen features from that specific case only  
+3. **Calculation Details**: Intermediate calculations, statistics, and reasoning steps within the case scope
+4. **Ground Truth Validation**: Comprehensive validation against respondents in that specific case
 
 ## Success Criteria
 
 - 50 questions per dataset-task combination
 - Multiple features for Medium/Hard questions (2-4 features per question)
 - Proper difficulty progression: Easy (1-25), Medium (26-40), Hard (41-50) 
-- Complete data validation against ALL respondents for chosen features
+- Complete data validation against respondents in each specific case for chosen features
 - Detailed calculation tracking for complex statistical operations
 - Zero ambiguous answers with full reasoning transparency

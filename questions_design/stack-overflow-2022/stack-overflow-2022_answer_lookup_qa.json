@@ -1,0 +1,2667 @@
+[
+  {
+    "case_id": "case_1",
+    "difficulty_mode": "Easy",
+    "question": "What is the OrgSize of the respondent with EdLevel = 'Primary/elementary school'?",
+    "answer": "100 to 499 employees",
+    "selected_features": [
+      "OrgSize",
+      "EdLevel"
+    ],
+    "target_respondent": "72939",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "OrgSize": {
+        "64": "I don’t know",
+        "72939": "100 to 499 employees",
+        "388": "5,000 to 9,999 employees"
+      },
+      "EdLevel": {
+        "64": "A",
+        "72939": "A",
+        "388": "A"
+      }
+    },
+    "case_respondent_count": 3,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "EdLevel": {
+          "raw": "A",
+          "decoded": "Primary/elementary school"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_2",
+    "difficulty_mode": "Easy",
+    "question": "What is the YearsCode of the respondent with EdLevel = 'Primary/elementary school'?",
+    "answer": "20",
+    "selected_features": [
+      "YearsCode",
+      "EdLevel"
+    ],
+    "target_respondent": "179",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "YearsCode": {
+        "72858": "29",
+        "72939": "14",
+        "73112": "25",
+        "72725": "18",
+        "179": "20",
+        "72771": "25"
+      },
+      "EdLevel": {
+        "72858": "A",
+        "72939": "A",
+        "73112": "A",
+        "72725": "A",
+        "179": "A",
+        "72771": "A"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "EdLevel": {
+          "raw": "A",
+          "decoded": "Primary/elementary school"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_3",
+    "difficulty_mode": "Easy",
+    "question": "What is the CompTotal of respondent '349'?",
+    "answer": "47000.0",
+    "selected_features": [
+      "CompTotal"
+    ],
+    "target_respondent": "349",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "CompTotal": {
+        "104": 65000.0,
+        "103": 25500.0,
+        "185": 300000.0,
+        "331": 85000.0,
+        "349": 47000.0,
+        "72664": 150000.0,
+        "72784": 80000.0,
+        "100": 1060.0,
+        "72739": 180000.0,
+        "306": 55000.0,
+        "72911": 3500000.0
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": 47000.0
+    }
+  },
+  {
+    "case_id": "case_4",
+    "difficulty_mode": "Easy",
+    "question": "What is the ToolsTechHaveWorkedWith of the respondent with the lowest YearsCodePro?",
+    "answer": "Docker",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith",
+      "YearsCodePro"
+    ],
+    "target_respondent": "73020",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "332": "Docker;Homebrew;npm",
+        "29114": "Docker;npm",
+        "72766": "Docker",
+        "391": "Docker",
+        "73023": "Docker;npm",
+        "73094": "npm",
+        "50": "Docker;Homebrew;Kubernetes;npm",
+        "72962": "Docker;Kubernetes;npm;Unity 3D",
+        "73020": "Docker",
+        "261": "Docker;Homebrew;Kubernetes;npm;Terraform",
+        "72894": "npm"
+      },
+      "YearsCodePro": {
+        "332": "7",
+        "29114": "5",
+        "72766": "3",
+        "391": "15",
+        "73023": "20",
+        "73094": "17",
+        "50": "2",
+        "72962": "8",
+        "73020": "1",
+        "261": "36",
+        "72894": "32"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "superlative",
+      "superlative_type": "min",
+      "superlative_feature": "YearsCodePro",
+      "superlative_value": 1.0
+    }
+  },
+  {
+    "case_id": "case_5",
+    "difficulty_mode": "Easy",
+    "question": "What is the DevType of the respondent with VersionControlSystem = 'Git'?",
+    "answer": "Developer, back-end;Engineering manager;Cloud infrastructure engineer",
+    "selected_features": [
+      "DevType",
+      "VersionControlSystem"
+    ],
+    "target_respondent": "447",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "DevType": {
+        "450": "Developer, front-end;Developer, full-stack",
+        "391": "Developer, full-stack;Developer, back-end;Database administrator;DevOps specialist;Cloud infrastructure engineer;Senior Executive (C-Suite, VP, etc.);System administrator",
+        "259": "Developer, back-end",
+        "326": "Engineer, site reliability;Developer, back-end;DevOps specialist;Cloud infrastructure engineer",
+        "73209": "Developer, front-end;Developer, full-stack",
+        "72965": "Data scientist or machine learning specialist;Developer, back-end;Academic researcher;Scientist",
+        "447": "Developer, back-end;Engineering manager;Cloud infrastructure engineer",
+        "194": "Developer, desktop or enterprise applications;Data or business analyst",
+        "185": "Developer, full-stack;Developer, back-end;Developer, QA or test;Cloud infrastructure engineer",
+        "499": "Developer, back-end",
+        "189": "Developer, full-stack;Engineering manager;Cloud infrastructure engineer;Security professional"
+      },
+      "VersionControlSystem": {
+        "450": "A",
+        "391": "A",
+        "259": "A",
+        "326": "A",
+        "73209": "A",
+        "72965": "A",
+        "447": "A",
+        "194": "A",
+        "185": "A",
+        "499": "A",
+        "189": "A"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "VersionControlSystem": {
+          "raw": "A",
+          "decoded": "Git"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_6",
+    "difficulty_mode": "Easy",
+    "question": "What is the EdLevel of the respondent with CompFreq = 'Monthly'?",
+    "answer": "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",
+    "selected_features": [
+      "EdLevel",
+      "CompFreq"
+    ],
+    "target_respondent": "73069",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "EdLevel": {
+        "73069": "B",
+        "459": "A",
+        "72789": "A",
+        "382": "A",
+        "73021": "A",
+        "122": "A",
+        "72928": "A",
+        "29145": "A",
+        "72710": "A",
+        "219": "A"
+      },
+      "CompFreq": {
+        "73069": "B",
+        "459": "C",
+        "72789": "C",
+        "382": "B",
+        "73021": "C",
+        "122": "C",
+        "72928": "C",
+        "29145": "C",
+        "72710": "C",
+        "219": "B"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "CompFreq": {
+          "raw": "B",
+          "decoded": "Monthly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_7",
+    "difficulty_mode": "Easy",
+    "question": "What is the VersionControlSystem of respondent '72753'?",
+    "answer": "Git",
+    "selected_features": [
+      "VersionControlSystem"
+    ],
+    "target_respondent": "72753",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "VersionControlSystem": {
+        "168": "A",
+        "72730": "A",
+        "401": "A",
+        "73050": "A",
+        "72815": "A",
+        "72803": "A",
+        "73103": "A",
+        "73085": "A",
+        "479": "A",
+        "72753": "A",
+        "298": "A"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": "A"
+    }
+  },
+  {
+    "case_id": "case_8",
+    "difficulty_mode": "Easy",
+    "question": "What is the VersionControlSystem of the respondent with EdLevel = 'Some college/university study without earning a degree'?",
+    "answer": "Git",
+    "selected_features": [
+      "VersionControlSystem",
+      "EdLevel"
+    ],
+    "target_respondent": "397",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "VersionControlSystem": {
+        "123": "A",
+        "72841": "A",
+        "343": "A",
+        "72976": "A",
+        "397": "A",
+        "168": "A"
+      },
+      "EdLevel": {
+        "123": "A",
+        "72841": "A",
+        "343": "A",
+        "72976": "H",
+        "397": "C",
+        "168": "A"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "EdLevel": {
+          "raw": "C",
+          "decoded": "Some college/university study without earning a degree"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_9",
+    "difficulty_mode": "Easy",
+    "question": "What is the YearsCode of the respondent with the highest CompTotal?",
+    "answer": "6",
+    "selected_features": [
+      "YearsCode",
+      "CompTotal"
+    ],
+    "target_respondent": "73053",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "YearsCode": {
+        "73090": "29",
+        "193": "8",
+        "499": "14",
+        "391": "28",
+        "29124": "6",
+        "72823": "7",
+        "73053": "6",
+        "484": "11"
+      },
+      "CompTotal": {
+        "73090": 200000.0,
+        "193": 2500.0,
+        "499": 350000.0,
+        "391": 130000.0,
+        "29124": 160000.0,
+        "72823": 65000.0,
+        "73053": 200000000.0,
+        "484": 160000.0
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "superlative",
+      "superlative_type": "max",
+      "superlative_feature": "CompTotal",
+      "superlative_value": 200000000.0
+    }
+  },
+  {
+    "case_id": "case_10",
+    "difficulty_mode": "Easy",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with CompFreq = 'Yearly'?",
+    "answer": "Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "CompFreq"
+    ],
+    "target_respondent": "489",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "489": "Bash/Shell;HTML/CSS;Java;JavaScript;Python;SQL;TypeScript",
+        "470": "Dart;JavaScript;Python;SQL;TypeScript",
+        "317": "Bash/Shell;C#;Go;HTML/CSS;JavaScript;PowerShell;Python",
+        "72850": "HTML/CSS;Java;JavaScript;TypeScript",
+        "383": "F#;Python;R;Scala",
+        "72897": "C#;HTML/CSS;JavaScript;SQL;TypeScript",
+        "73149": "HTML/CSS;JavaScript"
+      },
+      "CompFreq": {
+        "489": "C",
+        "470": "C",
+        "317": "C",
+        "72850": "B",
+        "383": "B",
+        "72897": "C",
+        "73149": "C"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "CompFreq": {
+          "raw": "C",
+          "decoded": "Yearly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_11",
+    "difficulty_mode": "Easy",
+    "question": "What is the VersionControlSystem of respondent '72796'?",
+    "answer": "Git",
+    "selected_features": [
+      "VersionControlSystem"
+    ],
+    "target_respondent": "72796",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "VersionControlSystem": {
+        "72796": "A",
+        "72823": "A",
+        "274": "A",
+        "72706": "A",
+        "72928": "A",
+        "363": "A"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": "A"
+    }
+  },
+  {
+    "case_id": "case_12",
+    "difficulty_mode": "Easy",
+    "question": "What is the Country of the respondent with the highest CompTotal?",
+    "answer": "United States of America",
+    "selected_features": [
+      "Country",
+      "CompTotal"
+    ],
+    "target_respondent": "499",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Country": {
+        "29150": "Canada",
+        "499": "United States of America",
+        "386": "United States of America",
+        "73142": "Turkey",
+        "72825": "Germany",
+        "72877": "Brazil",
+        "72735": "Germany"
+      },
+      "CompTotal": {
+        "29150": 174000.0,
+        "499": 350000.0,
+        "386": 77000.0,
+        "73142": 36000.0,
+        "72825": 80000.0,
+        "72877": 20000.0,
+        "72735": 73000.0
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "superlative",
+      "superlative_type": "max",
+      "superlative_feature": "CompTotal",
+      "superlative_value": 350000.0
+    }
+  },
+  {
+    "case_id": "case_13",
+    "difficulty_mode": "Easy",
+    "question": "What is the YearsCode of the respondent with CompFreq = 'Monthly'?",
+    "answer": "7",
+    "selected_features": [
+      "YearsCode",
+      "CompFreq"
+    ],
+    "target_respondent": "437",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "YearsCode": {
+        "72872": "9",
+        "437": "7",
+        "73064": "42",
+        "72972": "10",
+        "72981": "25",
+        "139": "7",
+        "347": "15",
+        "73040": "15"
+      },
+      "CompFreq": {
+        "72872": "C",
+        "437": "B",
+        "73064": "C",
+        "72972": "C",
+        "72981": "C",
+        "139": "C",
+        "347": "B",
+        "73040": "B"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "CompFreq": {
+          "raw": "B",
+          "decoded": "Monthly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_14",
+    "difficulty_mode": "Easy",
+    "question": "What is the OrgSize of respondent '73020'?",
+    "answer": "20 to 99 employees",
+    "selected_features": [
+      "OrgSize"
+    ],
+    "target_respondent": "73020",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "OrgSize": {
+        "73020": "20 to 99 employees",
+        "424": "Just me - I am a freelancer, sole proprietor, etc.",
+        "547": "20 to 99 employees",
+        "384": "100 to 499 employees",
+        "157": "10,000 or more employees"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": "20 to 99 employees"
+    }
+  },
+  {
+    "case_id": "case_15",
+    "difficulty_mode": "Easy",
+    "question": "What is the EdLevel of the respondent with VersionControlSystem = 'I don't use one'?",
+    "answer": "Primary/elementary school",
+    "selected_features": [
+      "EdLevel",
+      "VersionControlSystem"
+    ],
+    "target_respondent": "73097",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "EdLevel": {
+        "73129": "A",
+        "73190": "A",
+        "72744": "C",
+        "73097": "A",
+        "72913": "B",
+        "424": "A",
+        "319": "A",
+        "72836": "A"
+      },
+      "VersionControlSystem": {
+        "73129": "A",
+        "73190": "A",
+        "72744": "A",
+        "73097": "D",
+        "72913": "A",
+        "424": "A",
+        "319": "A",
+        "72836": "A"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "VersionControlSystem": {
+          "raw": "D",
+          "decoded": "I don't use one"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_16",
+    "difficulty_mode": "Easy",
+    "question": "What is the Employment of the respondent with VersionControlSystem = 'Git'?",
+    "answer": "A",
+    "selected_features": [
+      "Employment",
+      "VersionControlSystem"
+    ],
+    "target_respondent": "72827",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Employment": {
+        "537": "A",
+        "73102": "A",
+        "73131": "A",
+        "72827": "A",
+        "29143": "['C', 'B']",
+        "245": "A",
+        "382": "A",
+        "240": "A",
+        "364": "A",
+        "72944": "A",
+        "72739": "A",
+        "72712": "A"
+      },
+      "VersionControlSystem": {
+        "537": "A",
+        "73102": "A",
+        "73131": "A",
+        "72827": "A",
+        "29143": "A",
+        "245": "A",
+        "382": "A",
+        "240": "A",
+        "364": "A",
+        "72944": "A",
+        "72739": "A",
+        "72712": "['A', 'C']"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "VersionControlSystem": {
+          "raw": "A",
+          "decoded": "Git"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_17",
+    "difficulty_mode": "Easy",
+    "question": "What is the CompFreq of the respondent with Employment = 'A'?",
+    "answer": "Yearly",
+    "selected_features": [
+      "CompFreq",
+      "Employment"
+    ],
+    "target_respondent": "540",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "CompFreq": {
+        "72945": "B",
+        "72762": "C",
+        "29067": "C",
+        "73117": "B",
+        "72761": "C",
+        "540": "C",
+        "479": "B",
+        "332": "B",
+        "238": "C"
+      },
+      "Employment": {
+        "72945": "A",
+        "72762": "A",
+        "29067": "['A', 'C']",
+        "73117": "A",
+        "72761": "A",
+        "540": "A",
+        "479": "A",
+        "332": "C",
+        "238": "A"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "Employment": {
+          "raw": "A",
+          "decoded": "A"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_18",
+    "difficulty_mode": "Easy",
+    "question": "What is the ToolsTechHaveWorkedWith of the respondent with the lowest YearsCode?",
+    "answer": "Docker;Kubernetes;npm;Yarn",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith",
+      "YearsCode"
+    ],
+    "target_respondent": "184",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "184": "Docker;Kubernetes;npm;Yarn",
+        "72958": "Docker;Homebrew;Kubernetes;npm;Unity 3D;Unreal Engine",
+        "127": "Docker;npm;Terraform",
+        "73084": "Docker;Homebrew;Terraform",
+        "204": "Docker;Homebrew;npm",
+        "255": "Docker;Homebrew;npm;Yarn",
+        "72815": "Homebrew",
+        "261": "Docker;Homebrew;Kubernetes;npm;Terraform",
+        "73007": "Docker;Homebrew;npm;Terraform;Yarn",
+        "72867": "Ansible;Docker;Kubernetes;Terraform",
+        "29056": "Docker;Kubernetes;npm",
+        "72776": "Docker;Terraform;Unity 3D"
+      },
+      "YearsCode": {
+        "184": "2",
+        "72958": "15",
+        "127": "10",
+        "73084": "6",
+        "204": "8",
+        "255": "3",
+        "72815": "7",
+        "261": "38",
+        "73007": "7",
+        "72867": "6",
+        "29056": "7",
+        "72776": "9"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "superlative",
+      "superlative_type": "min",
+      "superlative_feature": "YearsCode",
+      "superlative_value": 2.0
+    }
+  },
+  {
+    "case_id": "case_19",
+    "difficulty_mode": "Easy",
+    "question": "What is the DevType of respondent '29157'?",
+    "answer": "Developer, desktop or enterprise applications",
+    "selected_features": [
+      "DevType"
+    ],
+    "target_respondent": "29157",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "DevType": {
+        "510": "Developer, back-end;Cloud infrastructure engineer",
+        "501": "Developer, front-end;Developer, full-stack;Developer, back-end",
+        "72776": "Developer, back-end",
+        "29157": "Developer, desktop or enterprise applications",
+        "72692": "Data scientist or machine learning specialist",
+        "368": "Developer, back-end"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": "Developer, desktop or enterprise applications"
+    }
+  },
+  {
+    "case_id": "case_20",
+    "difficulty_mode": "Easy",
+    "question": "What is the ToolsTechHaveWorkedWith of respondent '73103'?",
+    "answer": "Docker;Homebrew",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith"
+    ],
+    "target_respondent": "73103",
+    "developer_name": "N/A",
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "72867": "Ansible;Docker;Kubernetes;Terraform",
+        "72916": "Docker",
+        "206": "Homebrew;npm;Yarn",
+        "72869": "npm;Yarn",
+        "73103": "Docker;Homebrew"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "direct_lookup",
+      "target_value": "Docker;Homebrew"
+    }
+  },
+  {
+    "case_id": "case_21",
+    "difficulty_mode": "Easy",
+    "question": "What is the Country of the respondent with CompFreq = 'Weekly'?",
+    "answer": "Switzerland",
+    "selected_features": [
+      "Country",
+      "CompFreq"
+    ],
+    "target_respondent": "205",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Country": {
+        "72972": "Spain",
+        "72826": "Canada",
+        "450": "United Kingdom of Great Britain and Northern Ireland",
+        "205": "Switzerland",
+        "401": "Italy",
+        "29098": "India",
+        "260": "United Kingdom of Great Britain and Northern Ireland",
+        "29124": "United States of America",
+        "46": "Peru"
+      },
+      "CompFreq": {
+        "72972": "C",
+        "72826": "C",
+        "450": "C",
+        "205": "A",
+        "401": "B",
+        "29098": "B",
+        "260": "C",
+        "29124": "C",
+        "46": "B"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "CompFreq": {
+          "raw": "A",
+          "decoded": "Weekly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_22",
+    "difficulty_mode": "Easy",
+    "question": "What is the YearsCode of the respondent with the highest CompTotal?",
+    "answer": "11",
+    "selected_features": [
+      "YearsCode",
+      "CompTotal"
+    ],
+    "target_respondent": "73129",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "YearsCode": {
+        "73259": "5",
+        "72659": "40",
+        "72965": "9",
+        "279": "5",
+        "72668": "7",
+        "73129": "11",
+        "202": "14",
+        "73094": "20",
+        "72814": "19"
+      },
+      "CompTotal": {
+        "73259": 130000.0,
+        "72659": 21000.0,
+        "72965": 50000.0,
+        "279": 6000.0,
+        "72668": 79000.0,
+        "73129": 320000.0,
+        "202": 103000.0,
+        "73094": 204300.0,
+        "72814": 55000.0
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "superlative",
+      "superlative_type": "max",
+      "superlative_feature": "CompTotal",
+      "superlative_value": 320000.0
+    }
+  },
+  {
+    "case_id": "case_23",
+    "difficulty_mode": "Easy",
+    "question": "What is the DevType of the respondent with MainBranch = 'I am a developer by profession'?",
+    "answer": "Data scientist or machine learning specialist;Developer, front-end;Developer, full-stack;Developer, back-end;Developer, mobile;DevOps specialist;Cloud infrastructure engineer;Blockchain",
+    "selected_features": [
+      "DevType",
+      "MainBranch"
+    ],
+    "target_respondent": "492",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "DevType": {
+        "73059": "Developer, full-stack",
+        "72825": "Developer, full-stack;Developer, back-end",
+        "72668": "Data scientist or machine learning specialist;Developer, front-end;Engineer, data;Developer, full-stack;Developer, back-end;Scientist",
+        "72796": "Developer, full-stack",
+        "306": "Developer, front-end;Developer, full-stack;Developer, back-end;Developer, desktop or enterprise applications;Designer",
+        "255": "Developer, full-stack",
+        "492": "Data scientist or machine learning specialist;Developer, front-end;Developer, full-stack;Developer, back-end;Developer, mobile;DevOps specialist;Cloud infrastructure engineer;Blockchain",
+        "72965": "Data scientist or machine learning specialist;Developer, back-end;Academic researcher;Scientist",
+        "263": "Developer, back-end"
+      },
+      "MainBranch": {
+        "73059": "A",
+        "72825": "A",
+        "72668": "A",
+        "72796": "A",
+        "306": "A",
+        "255": "A",
+        "492": "A",
+        "72965": "A",
+        "263": "A"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_24",
+    "difficulty_mode": "Easy",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with MainBranch = 'I am a developer by profession'?",
+    "answer": "Bash/Shell;Elixir;Java;Kotlin;Python;Rust;Scala;SQL",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "MainBranch"
+    ],
+    "target_respondent": "433",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "72778": "HTML/CSS;JavaScript;TypeScript",
+        "433": "Bash/Shell;Elixir;Java;Kotlin;Python;Rust;Scala;SQL",
+        "72626": "HTML/CSS;JavaScript;PHP;Ruby;SQL;TypeScript",
+        "60": "C#;HTML/CSS;JavaScript;PowerShell;Python;SQL",
+        "205": "Bash/Shell;Go;MATLAB;Python;R;SQL"
+      },
+      "MainBranch": {
+        "72778": "A",
+        "433": "A",
+        "72626": "A",
+        "60": "A",
+        "205": "A"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_25",
+    "difficulty_mode": "Easy",
+    "question": "What is the YearsCode of the respondent with VersionControlSystem = 'Git'?",
+    "answer": "15",
+    "selected_features": [
+      "YearsCode",
+      "VersionControlSystem"
+    ],
+    "target_respondent": "73195",
+    "developer_name": "N/A",
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "YearsCode": {
+        "73099": "9",
+        "73051": "6",
+        "73021": "10",
+        "412": "11",
+        "359": "12",
+        "143": "12",
+        "361": "15",
+        "72744": "7",
+        "73195": "15",
+        "168": "5"
+      },
+      "VersionControlSystem": {
+        "73099": "A",
+        "73051": "A",
+        "73021": "A",
+        "412": "A",
+        "359": "A",
+        "143": "['A', 'Other (please specify):']",
+        "361": "A",
+        "72744": "A",
+        "73195": "A",
+        "168": "A"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "category_filter",
+      "filter_conditions": {
+        "VersionControlSystem": {
+          "raw": "A",
+          "decoded": "Git"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_26",
+    "difficulty_mode": "Medium",
+    "question": "What is the EdLevel of the respondent with the highest YearsCode among those with Employment = 'A'?",
+    "answer": "Primary/elementary school",
+    "selected_features": [
+      "EdLevel",
+      "YearsCode",
+      "Employment"
+    ],
+    "target_respondent": "72929",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "EdLevel": {
+        "72929": "A",
+        "72603": "A",
+        "73031": "A",
+        "160": "A",
+        "72964": "A",
+        "72705": "A"
+      },
+      "YearsCode": {
+        "72929": "9",
+        "72603": "9",
+        "73031": "4",
+        "160": "4",
+        "72964": "7",
+        "72705": "7"
+      },
+      "Employment": {
+        "72929": "A",
+        "72603": "A",
+        "73031": "A",
+        "160": "['A', 'B']",
+        "72964": "A",
+        "72705": "A"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCode",
+      "superlative_type": "max",
+      "superlative_value": 9.0,
+      "group_feature": "Employment",
+      "group_value": {
+        "raw": "A",
+        "decoded": "A"
+      },
+      "group_statistics": {
+        "count": 5,
+        "average": 7.2,
+        "min": 4.0,
+        "max": 9.0
+      }
+    }
+  },
+  {
+    "case_id": "case_27",
+    "difficulty_mode": "Medium",
+    "question": "What is the ToolsTechHaveWorkedWith of the respondent with the lowest YearsCodePro among those with Country = 'Czech Republic'?",
+    "answer": "npm",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith",
+      "YearsCodePro",
+      "Country"
+    ],
+    "target_respondent": "382",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "223": "Docker;npm",
+        "72840": "Homebrew;npm",
+        "72588": "Chef;Docker;npm",
+        "73195": "Docker;npm",
+        "72728": "Homebrew;npm;Yarn",
+        "268": "Ansible;npm;Yarn",
+        "382": "npm"
+      },
+      "YearsCodePro": {
+        "223": "5",
+        "72840": "5",
+        "72588": "5",
+        "73195": "15",
+        "72728": "10",
+        "268": "4",
+        "382": "6"
+      },
+      "Country": {
+        "223": "China",
+        "72840": "Latvia",
+        "72588": "United States of America",
+        "73195": "United States of America",
+        "72728": "United States of America",
+        "268": "United States of America",
+        "382": "Czech Republic"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCodePro",
+      "superlative_type": "min",
+      "superlative_value": 6.0,
+      "group_feature": "Country",
+      "group_value": {
+        "raw": "Czech Republic",
+        "decoded": "Czech Republic"
+      },
+      "group_statistics": {
+        "count": 1,
+        "average": 6.0,
+        "min": 6.0,
+        "max": 6.0
+      }
+    }
+  },
+  {
+    "case_id": "case_28",
+    "difficulty_mode": "Medium",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with the lowest YearsCodePro among those with Country = 'United Kingdom of Great Britain and Northern Ireland'?",
+    "answer": "Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "YearsCodePro",
+      "Country"
+    ],
+    "target_respondent": "72958",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "73215": "HTML/CSS;JavaScript;TypeScript",
+        "319": "HTML/CSS;JavaScript;PHP;Python;SQL",
+        "73144": "Bash/Shell;Go;JavaScript;PHP;Python",
+        "72714": "C#;Dart;HTML/CSS;Java;JavaScript;Objective-C;PHP;Python;SQL;Swift;TypeScript",
+        "72958": "Bash/Shell;C;C#;C++;HTML/CSS;JavaScript;PowerShell;Python;Rust;SQL;TypeScript",
+        "72928": "C++",
+        "72878": "Python;SQL;TypeScript",
+        "308": "JavaScript;Python;Rust",
+        "72909": "Bash/Shell;C;C++;Erlang;Go;Java;Python",
+        "420": "Bash/Shell;Go;Kotlin;Python",
+        "540": "Bash/Shell;HTML/CSS;JavaScript;SQL;TypeScript"
+      },
+      "YearsCodePro": {
+        "73215": "2",
+        "319": "3",
+        "73144": "6",
+        "72714": "17",
+        "72958": "5",
+        "72928": "3",
+        "72878": "5",
+        "308": "7",
+        "72909": "20",
+        "420": "7",
+        "540": "7"
+      },
+      "Country": {
+        "73215": "Nigeria",
+        "319": "France",
+        "73144": "Armenia",
+        "72714": "United States of America",
+        "72958": "United Kingdom of Great Britain and Northern Ireland",
+        "72928": "Taiwan",
+        "72878": "Switzerland",
+        "308": "Pakistan",
+        "72909": "United Kingdom of Great Britain and Northern Ireland",
+        "420": "United States of America",
+        "540": "United States of America"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCodePro",
+      "superlative_type": "min",
+      "superlative_value": 5.0,
+      "group_feature": "Country",
+      "group_value": {
+        "raw": "United Kingdom of Great Britain and Northern Ireland",
+        "decoded": "United Kingdom of Great Britain and Northern Ireland"
+      },
+      "group_statistics": {
+        "count": 2,
+        "average": 12.5,
+        "min": 5.0,
+        "max": 20.0
+      }
+    }
+  },
+  {
+    "case_id": "case_29",
+    "difficulty_mode": "Medium",
+    "question": "What is the YearsCode of the respondent whose total years of coding experience (YearsCode + YearsCodePro) was exactly 23?",
+    "answer": "18",
+    "selected_features": [
+      "YearsCode",
+      "YearsCode",
+      "YearsCodePro"
+    ],
+    "target_respondent": "155",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "YearsCode": {
+        "29105": "3",
+        "73119": "9",
+        "72682": "7",
+        "29122": "12",
+        "213": "20",
+        "364": "12",
+        "338": "28",
+        "155": "18",
+        "448": "10",
+        "61": "10"
+      },
+      "YearsCodePro": {
+        "29105": "Less than 1 year",
+        "73119": "7",
+        "72682": "4",
+        "29122": "8",
+        "213": "15",
+        "364": "10",
+        "338": "25",
+        "155": "5",
+        "448": "4",
+        "61": "6"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "experience_total_calculation",
+      "years_code": "18",
+      "years_code_pro": "5",
+      "total_years": 23.0
+    }
+  },
+  {
+    "case_id": "case_30",
+    "difficulty_mode": "Medium",
+    "question": "What is the VersionControlSystem of the respondent with Country = 'United States of America' and EdLevel = 'Primary/elementary school'?",
+    "answer": "Git",
+    "selected_features": [
+      "VersionControlSystem",
+      "Country",
+      "EdLevel"
+    ],
+    "target_respondent": "72819",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "VersionControlSystem": {
+        "72766": "A",
+        "332": "A",
+        "50": "A",
+        "161": "Other (please specify):",
+        "72901": "A",
+        "72819": "A",
+        "152": "A",
+        "347": "A"
+      },
+      "Country": {
+        "72766": "India",
+        "332": "Colombia",
+        "50": "Greece",
+        "161": "Italy",
+        "72901": "Israel",
+        "72819": "United States of America",
+        "152": "Canada",
+        "347": "Sweden"
+      },
+      "EdLevel": {
+        "72766": "A",
+        "332": "A",
+        "50": "A",
+        "161": "B",
+        "72901": "B",
+        "72819": "A",
+        "152": "D",
+        "347": "A"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "Country": {
+          "raw": "United States of America",
+          "decoded": "United States of America"
+        },
+        "EdLevel": {
+          "raw": "A",
+          "decoded": "Primary/elementary school"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_31",
+    "difficulty_mode": "Medium",
+    "question": "What is the YearsCode of the respondent with Employment = 'A' and CompFreq = 'Yearly'?",
+    "answer": "20",
+    "selected_features": [
+      "YearsCode",
+      "Employment",
+      "CompFreq"
+    ],
+    "target_respondent": "72681",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "YearsCode": {
+        "73122": "6",
+        "104": "5",
+        "73084": "6",
+        "442": "6",
+        "161": "15",
+        "72681": "20",
+        "355": "27",
+        "391": "28"
+      },
+      "Employment": {
+        "73122": "A",
+        "104": "A",
+        "73084": "B",
+        "442": "A",
+        "161": "A",
+        "72681": "A",
+        "355": "A",
+        "391": "A"
+      },
+      "CompFreq": {
+        "73122": "C",
+        "104": "C",
+        "73084": "B",
+        "442": "B",
+        "161": "C",
+        "72681": "C",
+        "355": "C",
+        "391": "C"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "Employment": {
+          "raw": "A",
+          "decoded": "A"
+        },
+        "CompFreq": {
+          "raw": "C",
+          "decoded": "Yearly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_32",
+    "difficulty_mode": "Medium",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with the highest CompTotal among those with CompFreq = 'Yearly'?",
+    "answer": "Bash/Shell;Dart;Go;JavaScript;PowerShell;Python;Rust;SQL;TypeScript",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "CompTotal",
+      "CompFreq"
+    ],
+    "target_respondent": "72991",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "323": "C#;Go;HTML/CSS;JavaScript;Python;SQL",
+        "72714": "C#;Dart;HTML/CSS;Java;JavaScript;Objective-C;PHP;Python;SQL;Swift;TypeScript",
+        "225": "C#;HTML/CSS;Java;JavaScript;TypeScript",
+        "72921": "Elixir",
+        "73148": "Go",
+        "73101": "C#;HTML/CSS;JavaScript;SQL;TypeScript",
+        "72749": "Bash/Shell;Go;HTML/CSS;Python;SQL",
+        "72753": "HTML/CSS;JavaScript;MATLAB;Python;R;Rust;SQL",
+        "72584": "C++;Go;Groovy;Java;JavaScript;PHP;Python;SQL",
+        "362": "C;C#;C++;Go;Python;Rust",
+        "72991": "Bash/Shell;Dart;Go;JavaScript;PowerShell;Python;Rust;SQL;TypeScript"
+      },
+      "CompTotal": {
+        "323": 42000.0,
+        "72714": 140000.0,
+        "225": 49000.0,
+        "72921": 5000.0,
+        "73148": 124800.0,
+        "73101": 7300.0,
+        "72749": 100000.0,
+        "72753": 24000.0,
+        "72584": 28000.0,
+        "362": 200000.0,
+        "72991": 146400.0
+      },
+      "CompFreq": {
+        "323": "C",
+        "72714": "C",
+        "225": "C",
+        "72921": "B",
+        "73148": "C",
+        "73101": "B",
+        "72749": "C",
+        "72753": "C",
+        "72584": "B",
+        "362": "B",
+        "72991": "C"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "CompTotal",
+      "superlative_type": "max",
+      "superlative_value": 146400.0,
+      "group_feature": "CompFreq",
+      "group_value": {
+        "raw": "C",
+        "decoded": "Yearly"
+      },
+      "group_statistics": {
+        "count": 7,
+        "average": 89457.14285714286,
+        "min": 24000.0,
+        "max": 146400.0
+      }
+    }
+  },
+  {
+    "case_id": "case_33",
+    "difficulty_mode": "Medium",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with MainBranch = 'I am a developer by profession' and CompFreq = 'Monthly'?",
+    "answer": "Bash/Shell;Java;JavaScript;PHP;PowerShell;Python;Swift",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "MainBranch",
+      "CompFreq"
+    ],
+    "target_respondent": "29071",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "73021": "HTML/CSS;JavaScript;TypeScript",
+        "29034": "C#;HTML/CSS;Java;JavaScript;SQL",
+        "297": "Bash/Shell;Groovy;Java;PowerShell;Python",
+        "186": "C#;HTML/CSS;JavaScript;SQL",
+        "189": "Bash/Shell;HTML/CSS;JavaScript;PHP;TypeScript",
+        "72840": "Dart;Kotlin;Python;Ruby;Swift;TypeScript",
+        "29071": "Bash/Shell;Java;JavaScript;PHP;PowerShell;Python;Swift",
+        "470": "Dart;JavaScript;Python;SQL;TypeScript",
+        "29056": "C#;HTML/CSS;JavaScript;TypeScript",
+        "29043": "Bash/Shell;C#;HTML/CSS;JavaScript;PowerShell;SQL;TypeScript",
+        "29157": "C#;Java"
+      },
+      "MainBranch": {
+        "73021": "A",
+        "29034": "A",
+        "297": "A",
+        "186": "A",
+        "189": "A",
+        "72840": "A",
+        "29071": "A",
+        "470": "A",
+        "29056": "A",
+        "29043": "A",
+        "29157": "A"
+      },
+      "CompFreq": {
+        "73021": "C",
+        "29034": "C",
+        "297": "B",
+        "186": "B",
+        "189": "C",
+        "72840": "C",
+        "29071": "B",
+        "470": "C",
+        "29056": "C",
+        "29043": "A",
+        "29157": "C"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        },
+        "CompFreq": {
+          "raw": "B",
+          "decoded": "Monthly"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_34",
+    "difficulty_mode": "Medium",
+    "question": "What is the LanguageHaveWorkedWith of the respondent with the lowest YearsCodePro among those with MainBranch = 'I am a developer by profession'?",
+    "answer": "JavaScript",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "YearsCodePro",
+      "MainBranch"
+    ],
+    "target_respondent": "192",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "72851": "Bash/Shell;C;Elixir;Go;HTML/CSS;JavaScript;Kotlin;PHP;Ruby;SQL",
+        "72835": "C;C#;HTML/CSS;JavaScript;TypeScript;VBA",
+        "72829": "Assembly;Bash/Shell;C;C++;MATLAB",
+        "192": "JavaScript",
+        "154": "JavaScript;PHP",
+        "548": "HTML/CSS;JavaScript;PowerShell;SQL;TypeScript",
+        "72927": "Assembly;Bash/Shell;C;C++;Python;SQL",
+        "448": "C;C++;Go;HTML/CSS;Java;JavaScript;PHP;SQL;VBA"
+      },
+      "YearsCodePro": {
+        "72851": "20",
+        "72835": "10",
+        "72829": "Less than 1 year",
+        "192": "1",
+        "154": "4",
+        "548": "3",
+        "72927": "13",
+        "448": "4"
+      },
+      "MainBranch": {
+        "72851": "A",
+        "72835": "A",
+        "72829": "A",
+        "192": "A",
+        "154": "A",
+        "548": "A",
+        "72927": "A",
+        "448": "A"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCodePro",
+      "superlative_type": "min",
+      "superlative_value": 1.0,
+      "group_feature": "MainBranch",
+      "group_value": {
+        "raw": "A",
+        "decoded": "I am a developer by profession"
+      },
+      "group_statistics": {
+        "count": 7,
+        "average": 7.857142857142857,
+        "min": 1.0,
+        "max": 20.0
+      }
+    }
+  },
+  {
+    "case_id": "case_35",
+    "difficulty_mode": "Medium",
+    "question": "What is the Employment of the respondent with EdLevel = 'Primary/elementary school' and Country = 'Switzerland'?",
+    "answer": "A",
+    "selected_features": [
+      "Employment",
+      "EdLevel",
+      "Country"
+    ],
+    "target_respondent": "29114",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Employment": {
+        "365": "A",
+        "298": "A",
+        "297": "A",
+        "72710": "A",
+        "29114": "A",
+        "240": "A",
+        "29056": "['A', 'C']",
+        "286": "A"
+      },
+      "EdLevel": {
+        "365": "A",
+        "298": "A",
+        "297": "A",
+        "72710": "A",
+        "29114": "A",
+        "240": "A",
+        "29056": "D",
+        "286": "A"
+      },
+      "Country": {
+        "365": "Israel",
+        "298": "United Kingdom of Great Britain and Northern Ireland",
+        "297": "Italy",
+        "72710": "Canada",
+        "29114": "Switzerland",
+        "240": "United States of America",
+        "29056": "Germany",
+        "286": "United Kingdom of Great Britain and Northern Ireland"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "EdLevel": {
+          "raw": "A",
+          "decoded": "Primary/elementary school"
+        },
+        "Country": {
+          "raw": "Switzerland",
+          "decoded": "Switzerland"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_36",
+    "difficulty_mode": "Medium",
+    "question": "What is the CompTotal of the respondent with Country = 'United Kingdom of Great Britain and Northern Ireland' and MainBranch = 'I am a developer by profession'?",
+    "answer": "33400.0",
+    "selected_features": [
+      "CompTotal",
+      "Country",
+      "MainBranch"
+    ],
+    "target_respondent": "73021",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "CompTotal": {
+        "29150": 174000.0,
+        "365": 52000.0,
+        "73096": 72000.0,
+        "73140": 2000.0,
+        "165": 200000.0,
+        "29109": 47000.0,
+        "73021": 33400.0,
+        "73085": 4500000.0,
+        "73078": 500000.0,
+        "72728": 200000.0
+      },
+      "Country": {
+        "29150": "Canada",
+        "365": "Israel",
+        "73096": "United Kingdom of Great Britain and Northern Ireland",
+        "73140": "Viet Nam",
+        "165": "United States of America",
+        "29109": "Greece",
+        "73021": "United Kingdom of Great Britain and Northern Ireland",
+        "73085": "Nigeria",
+        "73078": "Poland",
+        "72728": "United States of America"
+      },
+      "MainBranch": {
+        "29150": "A",
+        "365": "A",
+        "73096": "A",
+        "73140": "A",
+        "165": "A",
+        "29109": "A",
+        "73021": "A",
+        "73085": "A",
+        "73078": "A",
+        "72728": "A"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "Country": {
+          "raw": "United Kingdom of Great Britain and Northern Ireland",
+          "decoded": "United Kingdom of Great Britain and Northern Ireland"
+        },
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_37",
+    "difficulty_mode": "Medium",
+    "question": "What is the Employment of the respondent with MainBranch = 'I am a developer by profession' and Country = 'United States of America'?",
+    "answer": "A",
+    "selected_features": [
+      "Employment",
+      "MainBranch",
+      "Country"
+    ],
+    "target_respondent": "73254",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Employment": {
+        "133": "A",
+        "72834": "A",
+        "72714": "A",
+        "73056": "A",
+        "57": "A",
+        "73254": "A",
+        "185": "A",
+        "73143": "A"
+      },
+      "MainBranch": {
+        "133": "A",
+        "72834": "A",
+        "72714": "A",
+        "73056": "B",
+        "57": "A",
+        "73254": "A",
+        "185": "A",
+        "73143": "A"
+      },
+      "Country": {
+        "133": "Slovakia",
+        "72834": "China",
+        "72714": "United States of America",
+        "73056": "Brazil",
+        "57": "Pakistan",
+        "73254": "United States of America",
+        "185": "Poland",
+        "73143": "Hungary"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        },
+        "Country": {
+          "raw": "United States of America",
+          "decoded": "United States of America"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_38",
+    "difficulty_mode": "Medium",
+    "question": "What is the MainBranch of the respondent with Employment = 'A' and Country = 'Hong Kong (S.A.R.)'?",
+    "answer": "I am a developer by profession",
+    "selected_features": [
+      "MainBranch",
+      "Employment",
+      "Country"
+    ],
+    "target_respondent": "323",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "MainBranch": {
+        "269": "A",
+        "29034": "A",
+        "72603": "A",
+        "72593": "B",
+        "323": "A",
+        "73087": "A",
+        "547": "A",
+        "73121": "A",
+        "152": "A"
+      },
+      "Employment": {
+        "269": "A",
+        "29034": "A",
+        "72603": "A",
+        "72593": "A",
+        "323": "A",
+        "73087": "['A', 'C']",
+        "547": "A",
+        "73121": "A",
+        "152": "A"
+      },
+      "Country": {
+        "269": "Uruguay",
+        "29034": "United Kingdom of Great Britain and Northern Ireland",
+        "72603": "United States of America",
+        "72593": "Sweden",
+        "323": "Hong Kong (S.A.R.)",
+        "73087": "Germany",
+        "547": "Iran, Islamic Republic of...",
+        "73121": "Sweden",
+        "152": "Canada"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "Employment": {
+          "raw": "A",
+          "decoded": "A"
+        },
+        "Country": {
+          "raw": "Hong Kong (S.A.R.)",
+          "decoded": "Hong Kong (S.A.R.)"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_39",
+    "difficulty_mode": "Medium",
+    "question": "What is the EdLevel of the respondent with the highest YearsCode among those with Employment = 'A'?",
+    "answer": "Primary/elementary school",
+    "selected_features": [
+      "EdLevel",
+      "YearsCode",
+      "Employment"
+    ],
+    "target_respondent": "499",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "EdLevel": {
+        "499": "A",
+        "46": "A",
+        "513": "A",
+        "382": "A",
+        "73143": "I",
+        "72991": "A",
+        "29124": "C",
+        "395": "A",
+        "29056": "D"
+      },
+      "YearsCode": {
+        "499": "14",
+        "46": "9",
+        "513": "8",
+        "382": "9",
+        "73143": "6",
+        "72991": "6",
+        "29124": "6",
+        "395": "5",
+        "29056": "7"
+      },
+      "Employment": {
+        "499": "A",
+        "46": "A",
+        "513": "A",
+        "382": "A",
+        "73143": "A",
+        "72991": "A",
+        "29124": "A",
+        "395": "A",
+        "29056": "['A', 'C']"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCode",
+      "superlative_type": "max",
+      "superlative_value": 14.0,
+      "group_feature": "Employment",
+      "group_value": {
+        "raw": "A",
+        "decoded": "A"
+      },
+      "group_statistics": {
+        "count": 8,
+        "average": 7.875,
+        "min": 5.0,
+        "max": 14.0
+      }
+    }
+  },
+  {
+    "case_id": "case_40",
+    "difficulty_mode": "Medium",
+    "question": "What is the CompFreq of the respondent with Employment = 'A' and MainBranch = 'I am a developer by profession'?",
+    "answer": "Monthly",
+    "selected_features": [
+      "CompFreq",
+      "Employment",
+      "MainBranch"
+    ],
+    "target_respondent": "259",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "CompFreq": {
+        "72841": "C",
+        "72913": "B",
+        "72604": "C",
+        "259": "B",
+        "297": "B",
+        "403": "B",
+        "331": "B",
+        "73219": "C",
+        "143": "B",
+        "72754": "C",
+        "72932": "B",
+        "72719": "C"
+      },
+      "Employment": {
+        "72841": "A",
+        "72913": "A",
+        "72604": "A",
+        "259": "A",
+        "297": "A",
+        "403": "A",
+        "331": "B",
+        "73219": "A",
+        "143": "A",
+        "72754": "A",
+        "72932": "A",
+        "72719": "['A', 'C']"
+      },
+      "MainBranch": {
+        "72841": "A",
+        "72913": "A",
+        "72604": "A",
+        "259": "A",
+        "297": "A",
+        "403": "A",
+        "331": "A",
+        "73219": "A",
+        "143": "A",
+        "72754": "A",
+        "72932": "A",
+        "72719": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "Employment": {
+          "raw": "A",
+          "decoded": "A"
+        },
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_41",
+    "difficulty_mode": "Really Hard",
+    "question": "What is the CompFreq of the respondent whose CompTotal is lower than the average CompTotal for all respondents with Employment = 'A' in this case?",
+    "answer": "Monthly",
+    "selected_features": [
+      "CompFreq",
+      "CompTotal",
+      "Employment"
+    ],
+    "target_respondent": "133",
+    "developer_name": "N/A",
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "CompFreq": {
+        "72945": "B",
+        "423": "B",
+        "143": "B",
+        "133": "B",
+        "72762": "C",
+        "72591": "B",
+        "72663": "C",
+        "73137": "B"
+      },
+      "CompTotal": {
+        "72945": 60000.0,
+        "423": 2600.0,
+        "143": 4250.0,
+        "133": 1680.0,
+        "72762": 300000.0,
+        "72591": 4200.0,
+        "72663": 65000.0,
+        "73137": 2300.0
+      },
+      "Employment": {
+        "72945": "A",
+        "423": "A",
+        "143": "A",
+        "133": "A",
+        "72762": "A",
+        "72591": "['A', 'C']",
+        "72663": "A",
+        "73137": "B"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_below_average_in_group_within_case",
+      "numeric_feature": "CompTotal",
+      "group_feature": "Employment",
+      "group_value": {
+        "raw": "A",
+        "decoded": "A"
+      },
+      "group_average": 72255.0,
+      "comparison": "lower",
+      "respondent_value": 1680.0,
+      "qualifying_candidates": 5,
+      "group_statistics": {
+        "count": 6,
+        "average": 72255.0,
+        "min": 1680.0,
+        "max": 300000.0
+      }
+    }
+  },
+  {
+    "case_id": "case_42",
+    "difficulty_mode": "Really Hard",
+    "question": "What is the EdLevel of the respondent whose YearsCode is higher than the average YearsCode for all respondents with MainBranch = 'I am a developer by profession' in this case?",
+    "answer": "Primary/elementary school",
+    "selected_features": [
+      "EdLevel",
+      "YearsCode",
+      "MainBranch"
+    ],
+    "target_respondent": "291",
+    "developer_name": "N/A",
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "EdLevel": {
+        "260": "A",
+        "143": "A",
+        "73211": "A",
+        "72669": "A",
+        "171": "B",
+        "73073": "A",
+        "291": "A",
+        "160": "A",
+        "72773": "A",
+        "159": "C",
+        "72856": "A",
+        "73085": "A"
+      },
+      "YearsCode": {
+        "260": "10",
+        "143": "12",
+        "73211": "10",
+        "72669": "18",
+        "171": "23",
+        "73073": "25",
+        "291": "15",
+        "160": "4",
+        "72773": "12",
+        "159": "6",
+        "72856": "12",
+        "73085": "4"
+      },
+      "MainBranch": {
+        "260": "A",
+        "143": "A",
+        "73211": "A",
+        "72669": "A",
+        "171": "A",
+        "73073": "A",
+        "291": "A",
+        "160": "A",
+        "72773": "A",
+        "159": "A",
+        "72856": "A",
+        "73085": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_below_average_in_group_within_case",
+      "numeric_feature": "YearsCode",
+      "group_feature": "MainBranch",
+      "group_value": {
+        "raw": "A",
+        "decoded": "I am a developer by profession"
+      },
+      "group_average": 12.583333333333334,
+      "comparison": "higher",
+      "respondent_value": 15.0,
+      "qualifying_candidates": 4,
+      "group_statistics": {
+        "count": 12,
+        "average": 12.583333333333334,
+        "min": 4.0,
+        "max": 25.0
+      }
+    }
+  },
+  {
+    "case_id": "case_43",
+    "difficulty_mode": "Really Hard",
+    "question": "What is the LanguageHaveWorkedWith of the respondent whose YearsCode is lower than the average YearsCode for all respondents with MainBranch = 'I am a developer by profession' in this case?",
+    "answer": "HTML/CSS;JavaScript;PowerShell;SQL;TypeScript",
+    "selected_features": [
+      "LanguageHaveWorkedWith",
+      "YearsCode",
+      "MainBranch"
+    ],
+    "target_respondent": "548",
+    "developer_name": "N/A",
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "LanguageHaveWorkedWith": {
+        "548": "HTML/CSS;JavaScript;PowerShell;SQL;TypeScript",
+        "213": "C#;HTML/CSS;JavaScript;Lua;PowerShell;SQL;VBA",
+        "73190": "Bash/Shell;Clojure;Haskell;HTML/CSS",
+        "73107": "Java;Scala;TypeScript",
+        "72746": "HTML/CSS;JavaScript;TypeScript",
+        "364": "Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript",
+        "72754": "HTML/CSS;JavaScript;Python;SQL",
+        "72773": "HTML/CSS;JavaScript;PHP;SQL",
+        "115": "Bash/Shell;HTML/CSS;JavaScript;PHP;Python;SQL"
+      },
+      "YearsCode": {
+        "548": "5",
+        "213": "20",
+        "73190": "15",
+        "73107": "5",
+        "72746": "3",
+        "364": "12",
+        "72754": "7",
+        "72773": "12",
+        "115": "20"
+      },
+      "MainBranch": {
+        "548": "A",
+        "213": "A",
+        "73190": "A",
+        "73107": "A",
+        "72746": "A",
+        "364": "A",
+        "72754": "A",
+        "72773": "A",
+        "115": "A"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_below_average_in_group_within_case",
+      "numeric_feature": "YearsCode",
+      "group_feature": "MainBranch",
+      "group_value": {
+        "raw": "A",
+        "decoded": "I am a developer by profession"
+      },
+      "group_average": 11.0,
+      "comparison": "lower",
+      "respondent_value": 5.0,
+      "qualifying_candidates": 4,
+      "group_statistics": {
+        "count": 9,
+        "average": 11.0,
+        "min": 3.0,
+        "max": 20.0
+      }
+    }
+  },
+  {
+    "case_id": "case_44",
+    "difficulty_mode": "Medium",
+    "question": "What is the LanguageWantToWorkWith of the respondent with the lowest YearsCodePro among those with EdLevel = 'Primary/elementary school'?",
+    "answer": "Go;Haskell;HTML/CSS;Kotlin;LISP;Ruby;Rust;SQL;TypeScript",
+    "selected_features": [
+      "LanguageWantToWorkWith",
+      "YearsCodePro",
+      "EdLevel"
+    ],
+    "target_respondent": "72911",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "LanguageWantToWorkWith": {
+        "171": "Bash/Shell;HTML/CSS;JavaScript;PHP;SQL;TypeScript",
+        "29049": "Go;Java",
+        "72837": "HTML/CSS;Java;JavaScript;PHP;SQL",
+        "72761": "HTML/CSS;JavaScript;PHP;SQL",
+        "72741": "C#;Kotlin;SQL;TypeScript",
+        "72686": "Bash/Shell;Java;Python;Solidity;SQL",
+        "424": "HTML/CSS;Java;JavaScript;PHP;SQL",
+        "73148": "Go;Python;Rust",
+        "375": "F#;Python;Rust",
+        "312": "Clojure;Elixir;Erlang;Swift",
+        "72848": "Bash/Shell;C#;C++;HTML/CSS;Java;JavaScript;PowerShell;Scala;SQL;TypeScript",
+        "72911": "Go;Haskell;HTML/CSS;Kotlin;LISP;Ruby;Rust;SQL;TypeScript"
+      },
+      "YearsCodePro": {
+        "171": "16",
+        "29049": "15",
+        "72837": "3",
+        "72761": "14",
+        "72741": "8",
+        "72686": "4",
+        "424": "2",
+        "73148": "4",
+        "375": "7",
+        "312": "Less than 1 year",
+        "72848": "39",
+        "72911": "1"
+      },
+      "EdLevel": {
+        "171": "B",
+        "29049": "A",
+        "72837": "A",
+        "72761": "C",
+        "72741": "A",
+        "72686": "A",
+        "424": "A",
+        "73148": "A",
+        "375": "A",
+        "312": "C",
+        "72848": "A",
+        "72911": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCodePro",
+      "superlative_type": "min",
+      "superlative_value": 1.0,
+      "group_feature": "EdLevel",
+      "group_value": {
+        "raw": "A",
+        "decoded": "Primary/elementary school"
+      },
+      "group_statistics": {
+        "count": 9,
+        "average": 9.222222222222221,
+        "min": 1.0,
+        "max": 39.0
+      }
+    }
+  },
+  {
+    "case_id": "case_45",
+    "difficulty_mode": "Really Hard",
+    "question": "What is the ToolsTechHaveWorkedWith of the respondent whose YearsCode is lower than the average YearsCode for all respondents with MainBranch = 'I am a developer by profession' in this case?",
+    "answer": "Ansible;Docker;npm",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith",
+      "YearsCode",
+      "MainBranch"
+    ],
+    "target_respondent": "537",
+    "developer_name": "N/A",
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "359": "Docker;Yarn",
+        "382": "npm",
+        "537": "Ansible;Docker;npm",
+        "225": "Terraform",
+        "72850": "Yarn",
+        "72829": "Docker;Homebrew",
+        "406": "Homebrew;npm",
+        "29143": "Kubernetes;npm;Yarn",
+        "424": "npm",
+        "73144": "Docker;Homebrew;Kubernetes;npm"
+      },
+      "YearsCode": {
+        "359": "12",
+        "382": "9",
+        "537": "9",
+        "225": "22",
+        "72850": "10",
+        "72829": "36",
+        "406": "14",
+        "29143": "14",
+        "424": "3",
+        "73144": "7"
+      },
+      "MainBranch": {
+        "359": "A",
+        "382": "A",
+        "537": "A",
+        "225": "A",
+        "72850": "A",
+        "72829": "A",
+        "406": "A",
+        "29143": "A",
+        "424": "A",
+        "73144": "A"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "above_below_average_in_group_within_case",
+      "numeric_feature": "YearsCode",
+      "group_feature": "MainBranch",
+      "group_value": {
+        "raw": "A",
+        "decoded": "I am a developer by profession"
+      },
+      "group_average": 13.6,
+      "comparison": "lower",
+      "respondent_value": 9.0,
+      "qualifying_candidates": 6,
+      "group_statistics": {
+        "count": 10,
+        "average": 13.6,
+        "min": 3.0,
+        "max": 36.0
+      }
+    }
+  },
+  {
+    "case_id": "case_46",
+    "difficulty_mode": "Medium",
+    "question": "What is the CompFreq of the respondent whose total years of coding experience (YearsCode + YearsCodePro) was exactly 17?",
+    "answer": "Yearly",
+    "selected_features": [
+      "CompFreq",
+      "YearsCode",
+      "YearsCodePro"
+    ],
+    "target_respondent": "323",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "CompFreq": {
+        "52": "C",
+        "29143": "B",
+        "72805": "C",
+        "72740": "C",
+        "193": "B",
+        "162": "C",
+        "72712": "B",
+        "323": "C"
+      },
+      "YearsCode": {
+        "52": "6",
+        "29143": "14",
+        "72805": "12",
+        "72740": "16",
+        "193": "8",
+        "162": "7",
+        "72712": "4",
+        "323": "10"
+      },
+      "YearsCodePro": {
+        "52": "1",
+        "29143": "9",
+        "72805": "6",
+        "72740": "10",
+        "193": "1",
+        "162": "4",
+        "72712": "5",
+        "323": "7"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "experience_total_calculation",
+      "years_code": "10",
+      "years_code_pro": "7",
+      "total_years": 17.0
+    }
+  },
+  {
+    "case_id": "case_47",
+    "difficulty_mode": "Really Hard",
+    "question": "What is the ToolsTechHaveWorkedWith of the respondent whose CompTotal is lower than the average CompTotal for all respondents with Employment = 'A' in this case?",
+    "answer": "Docker;npm",
+    "selected_features": [
+      "ToolsTechHaveWorkedWith",
+      "CompTotal",
+      "Employment"
+    ],
+    "target_respondent": "489",
+    "developer_name": "N/A",
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "ToolsTechHaveWorkedWith": {
+        "382": "npm",
+        "225": "Terraform",
+        "73147": "Homebrew;npm;Yarn",
+        "466": "Docker;Homebrew",
+        "73101": "Docker;npm;Yarn",
+        "160": "Docker;npm",
+        "73100": "Docker;npm",
+        "363": "Docker;Kubernetes;npm",
+        "489": "Docker;npm",
+        "394": "Docker;Homebrew;Terraform",
+        "260": "Docker",
+        "29105": "Docker;Kubernetes;npm"
+      },
+      "CompTotal": {
+        "382": 120000.0,
+        "225": 49000.0,
+        "73147": 3000.0,
+        "466": 60000.0,
+        "73101": 7300.0,
+        "160": 78000000.0,
+        "73100": 180000.0,
+        "363": 2260.0,
+        "489": 38000.0,
+        "394": 62000.0,
+        "260": 59000.0,
+        "29105": 2700.0
+      },
+      "Employment": {
+        "382": "A",
+        "225": "A",
+        "73147": "A",
+        "466": "A",
+        "73101": "A",
+        "160": "['A', 'B']",
+        "73100": "A",
+        "363": "['C', 'B']",
+        "489": "A",
+        "394": "A",
+        "260": "A",
+        "29105": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_below_average_in_group_within_case",
+      "numeric_feature": "CompTotal",
+      "group_feature": "Employment",
+      "group_value": {
+        "raw": "A",
+        "decoded": "A"
+      },
+      "group_average": 58100.0,
+      "comparison": "lower",
+      "respondent_value": 38000.0,
+      "qualifying_candidates": 5,
+      "group_statistics": {
+        "count": 10,
+        "average": 58100.0,
+        "min": 2700.0,
+        "max": 180000.0
+      }
+    }
+  },
+  {
+    "case_id": "case_48",
+    "difficulty_mode": "Medium",
+    "question": "What is the YearsCode of the respondent with the lowest YearsCode among those with MainBranch = 'I am a developer by profession'?",
+    "answer": "6",
+    "selected_features": [
+      "YearsCode",
+      "YearsCode",
+      "MainBranch"
+    ],
+    "target_respondent": "72692",
+    "developer_name": "N/A",
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "YearsCode": {
+        "72898": "14",
+        "407": "11",
+        "72800": "10",
+        "73021": "10",
+        "72835": "21",
+        "72692": "6",
+        "52": "6",
+        "72847": "10",
+        "73037": "17",
+        "72731": "7",
+        "406": "14",
+        "73147": "8"
+      },
+      "MainBranch": {
+        "72898": "A",
+        "407": "A",
+        "72800": "A",
+        "73021": "A",
+        "72835": "A",
+        "72692": "A",
+        "52": "A",
+        "72847": "A",
+        "73037": "A",
+        "72731": "B",
+        "406": "A",
+        "73147": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "group_superlative",
+      "numeric_feature": "YearsCode",
+      "superlative_type": "min",
+      "superlative_value": 6.0,
+      "group_feature": "MainBranch",
+      "group_value": {
+        "raw": "A",
+        "decoded": "I am a developer by profession"
+      },
+      "group_statistics": {
+        "count": 11,
+        "average": 11.545454545454545,
+        "min": 6.0,
+        "max": 21.0
+      }
+    }
+  },
+  {
+    "case_id": "case_49",
+    "difficulty_mode": "Medium",
+    "question": "What is the EdLevel of the respondent with CompFreq = 'Yearly' and Country = 'Canada'?",
+    "answer": "Some college/university study without earning a degree",
+    "selected_features": [
+      "EdLevel",
+      "CompFreq",
+      "Country"
+    ],
+    "target_respondent": "208",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "EdLevel": {
+        "73150": "A",
+        "73099": "A",
+        "229": "A",
+        "382": "A",
+        "208": "C",
+        "73107": "A",
+        "202": "A",
+        "72941": "A"
+      },
+      "CompFreq": {
+        "73150": "B",
+        "73099": "C",
+        "229": "C",
+        "382": "B",
+        "208": "C",
+        "73107": "C",
+        "202": "C",
+        "72941": "B"
+      },
+      "Country": {
+        "73150": "Bangladesh",
+        "73099": "Italy",
+        "229": "United Kingdom of Great Britain and Northern Ireland",
+        "382": "Czech Republic",
+        "208": "Canada",
+        "73107": "Poland",
+        "202": "United States of America",
+        "72941": "India"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "CompFreq": {
+          "raw": "C",
+          "decoded": "Yearly"
+        },
+        "Country": {
+          "raw": "Canada",
+          "decoded": "Canada"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "case_50",
+    "difficulty_mode": "Medium",
+    "question": "What is the YearsCode of the respondent with MainBranch = 'I am a developer by profession' and Employment = 'A'?",
+    "answer": "6",
+    "selected_features": [
+      "YearsCode",
+      "MainBranch",
+      "Employment"
+    ],
+    "target_respondent": "72913",
+    "developer_name": "N/A",
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "YearsCode": {
+        "259": "7",
+        "387": "4",
+        "393": "15",
+        "72789": "14",
+        "317": "20",
+        "72913": "6",
+        "455": "37",
+        "312": "30",
+        "72873": "8",
+        "72821": "13",
+        "73075": "26",
+        "382": "9"
+      },
+      "MainBranch": {
+        "259": "A",
+        "387": "A",
+        "393": "A",
+        "72789": "A",
+        "317": "A",
+        "72913": "A",
+        "455": "A",
+        "312": "A",
+        "72873": "A",
+        "72821": "A",
+        "73075": "B",
+        "382": "A"
+      },
+      "Employment": {
+        "259": "A",
+        "387": "A",
+        "393": "A",
+        "72789": "A",
+        "317": "A",
+        "72913": "A",
+        "455": "['A', 'C', 'B']",
+        "312": "C",
+        "72873": "A",
+        "72821": "A",
+        "73075": "A",
+        "382": "A"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "multi_condition_filter",
+      "filter_conditions": {
+        "MainBranch": {
+          "raw": "A",
+          "decoded": "I am a developer by profession"
+        },
+        "Employment": {
+          "raw": "A",
+          "decoded": "A"
+        }
+      }
+    }
+  }
+]

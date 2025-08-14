@@ -1,0 +1,2350 @@
+[
+  {
+    "case_id": "case_1",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with doctor = 'DOC_107' and hospital = 'HOSP_148'.",
+    "answer": "None",
+    "selected_features": [
+      "Doctor",
+      "Hospital"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Doctor": {
+        "117": "DOC_117",
+        "107": "DOC_107",
+        "148": "DOC_148"
+      },
+      "Hospital": {
+        "117": "HOSP_117",
+        "107": "HOSP_107",
+        "148": "HOSP_148"
+      }
+    },
+    "case_respondent_count": 3,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Doctor": {
+          "raw": "DOC_107",
+          "decoded": "DOC_107"
+        },
+        "Hospital": {
+          "raw": "HOSP_148",
+          "decoded": "HOSP_148"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_2",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with gender = 'Female' and admission type = 'Emergency'.",
+    "answer": "None",
+    "selected_features": [
+      "Gender",
+      "Admission Type"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Gender": {
+        "63": "B",
+        "38": "B",
+        "2": "B",
+        "28": "B",
+        "109": "B",
+        "57": "A",
+        "46": "A",
+        "133": "B",
+        "119": "A",
+        "13": "B",
+        "143": "B"
+      },
+      "Admission Type": {
+        "63": "A",
+        "38": "C",
+        "2": "B",
+        "28": "C",
+        "109": "A",
+        "57": "A",
+        "46": "C",
+        "133": "B",
+        "119": "A",
+        "13": "B",
+        "143": "B"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Gender": {
+          "raw": "A",
+          "decoded": "Female"
+        },
+        "Admission Type": {
+          "raw": "B",
+          "decoded": "Emergency"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_3",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose billing amount is between 13115 and 39267.",
+    "answer": "117, 144, 114",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "117",
+      "144",
+      "114"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Billing Amount": {
+        "32": "39723",
+        "117": "20228",
+        "35": "10284",
+        "119": "6768",
+        "136": "4398",
+        "144": "16320",
+        "82": "47985",
+        "114": "20258"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 13115.4,
+        "max": 39267.6
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_4",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose billing amount is between 27216 and 43551.",
+    "answer": "115, 41, 116, 67, 71, 134",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "115",
+      "41",
+      "116",
+      "67",
+      "71",
+      "134"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Billing Amount": {
+        "141": "46378",
+        "115": "40693",
+        "41": "32974",
+        "122": "48996",
+        "116": "40015",
+        "67": "42685",
+        "64": "45354",
+        "71": "31486",
+        "134": "37910",
+        "125": "21772",
+        "62": "44437"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 27216.8,
+        "max": 43551.2
+      },
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_5",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a medication of 'Aspirin'?",
+    "answer": "113, 20, 74, 82, 139",
+    "selected_features": [
+      "Medication"
+    ],
+    "matching_respondents": [
+      "113",
+      "20",
+      "74",
+      "82",
+      "139"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Medication": {
+        "113": "A",
+        "20": "A",
+        "74": "A",
+        "61": "E",
+        "70": "E",
+        "86": "B",
+        "82": "A",
+        "139": "A",
+        "21": "E"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Medication": {
+          "raw": "A",
+          "decoded": "Aspirin"
+        }
+      },
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_6",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a doctor of 'DOC_107'?",
+    "answer": "107",
+    "selected_features": [
+      "Doctor"
+    ],
+    "matching_respondents": [
+      "107"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Doctor": {
+        "39": "DOC_39",
+        "60": "DOC_60",
+        "99": "DOC_99",
+        "40": "DOC_40",
+        "55": "DOC_55",
+        "17": "DOC_17",
+        "107": "DOC_107"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Doctor": {
+          "raw": "DOC_107",
+          "decoded": "DOC_107"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_7",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose billing amount is between 12541 and 40186.",
+    "answer": "139, 16, 108, 150, 6, 148",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "139",
+      "16",
+      "108",
+      "150",
+      "6",
+      "148"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Billing Amount": {
+        "85": "44940",
+        "139": "18843",
+        "120": "49402",
+        "107": "3326",
+        "16": "36992",
+        "53": "48291",
+        "108": "22951",
+        "100": "8000",
+        "150": "13356",
+        "6": "25835",
+        "148": "28838"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 12541.2,
+        "max": 40186.8
+      },
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_8",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose room number is between 180 and 363.",
+    "answer": "123, 77, 100, 140, 125",
+    "selected_features": [
+      "Room Number"
+    ],
+    "matching_respondents": [
+      "123",
+      "77",
+      "100",
+      "140",
+      "125"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Room Number": {
+        "123": "328",
+        "2": "134",
+        "91": "406",
+        "77": "233",
+        "100": "273",
+        "108": "119",
+        "138": "133",
+        "140": "260",
+        "57": "378",
+        "125": "244",
+        "70": "424"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 180.0,
+        "max": 363.0
+      },
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_9",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a blood type of 'AB-'?",
+    "answer": "43",
+    "selected_features": [
+      "Blood Type"
+    ],
+    "matching_respondents": [
+      "43"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Blood Type": {
+        "125": "A",
+        "8": "E",
+        "100": "B",
+        "87": "A",
+        "104": "B",
+        "43": "D",
+        "120": "F",
+        "33": "E",
+        "137": "H",
+        "7": "F",
+        "101": "F"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Blood Type": {
+          "raw": "D",
+          "decoded": "AB-"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_10",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with admission type = 'Urgent' and medication = 'Paracetamol'.",
+    "answer": "None",
+    "selected_features": [
+      "Admission Type",
+      "Medication"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Admission Type": {
+        "22": "C",
+        "110": "A",
+        "35": "B",
+        "119": "A",
+        "47": "C"
+      },
+      "Medication": {
+        "22": "C",
+        "110": "D",
+        "35": "E",
+        "119": "C",
+        "47": "B"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Admission Type": {
+          "raw": "C",
+          "decoded": "Urgent"
+        },
+        "Medication": {
+          "raw": "D",
+          "decoded": "Paracetamol"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_11",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a blood type of 'AB-'?",
+    "answer": "84, 55, 117",
+    "selected_features": [
+      "Blood Type"
+    ],
+    "matching_respondents": [
+      "84",
+      "55",
+      "117"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Blood Type": {
+        "67": "A",
+        "98": "E",
+        "84": "D",
+        "55": "D",
+        "117": "D"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Blood Type": {
+          "raw": "D",
+          "decoded": "AB-"
+        }
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_12",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with gender = 'Female' and test results = 'Abnormal'.",
+    "answer": "5",
+    "selected_features": [
+      "Gender",
+      "Test Results"
+    ],
+    "matching_respondents": [
+      "5"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Gender": {
+        "87": "A",
+        "98": "A",
+        "72": "A",
+        "108": "A",
+        "65": "A",
+        "21": "B",
+        "121": "A",
+        "5": "A",
+        "139": "",
+        "14": "A"
+      },
+      "Test Results": {
+        "87": "C",
+        "98": "C",
+        "72": "B",
+        "108": "C",
+        "65": "C",
+        "21": "B",
+        "121": "C",
+        "5": "A",
+        "139": "C",
+        "14": "B"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Gender": {
+          "raw": "A",
+          "decoded": "Female"
+        },
+        "Test Results": {
+          "raw": "A",
+          "decoded": "Abnormal"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_13",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with hospital = 'HOSP_33' and gender = 'Female'.",
+    "answer": "None",
+    "selected_features": [
+      "Hospital",
+      "Gender"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Hospital": {
+        "58": "HOSP_58",
+        "18": "HOSP_18",
+        "11": "HOSP_11",
+        "8": "HOSP_08",
+        "64": "HOSP_64",
+        "52": "HOSP_52",
+        "6": "HOSP_06",
+        "40": "HOSP_40",
+        "62": "HOSP_62",
+        "33": "HOSP_33"
+      },
+      "Gender": {
+        "58": "B",
+        "18": "B",
+        "11": "B",
+        "8": "B",
+        "64": "A",
+        "52": "B",
+        "6": "B",
+        "40": "A",
+        "62": "B",
+        "33": "B"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Hospital": {
+          "raw": "HOSP_33",
+          "decoded": "HOSP_33"
+        },
+        "Gender": {
+          "raw": "A",
+          "decoded": "Female"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_14",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with gender = 'Female' and blood type = 'A+'.",
+    "answer": "None",
+    "selected_features": [
+      "Gender",
+      "Blood Type"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Gender": {
+        "30": "A",
+        "145": "B",
+        "56": "B",
+        "120": "B",
+        "66": "B",
+        "95": "A",
+        "43": "A",
+        "42": "A",
+        "80": "B",
+        "28": "B",
+        "149": "B",
+        "7": "B"
+      },
+      "Blood Type": {
+        "30": "F",
+        "145": "C",
+        "56": "C",
+        "120": "F",
+        "66": "E",
+        "95": "B",
+        "43": "D",
+        "42": "G",
+        "80": "C",
+        "28": "C",
+        "149": "A",
+        "7": "F"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Gender": {
+          "raw": "A",
+          "decoded": "Female"
+        },
+        "Blood Type": {
+          "raw": "A",
+          "decoded": "A+"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_15",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose age is between 30 and 63.",
+    "answer": "97, 102, 51, 63, 78, 31",
+    "selected_features": [
+      "Age"
+    ],
+    "matching_respondents": [
+      "97",
+      "102",
+      "51",
+      "63",
+      "78",
+      "31"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Age": {
+        "148": "20",
+        "97": "50",
+        "102": "59",
+        "51": "49",
+        "20": "65",
+        "63": "43",
+        "27": "74",
+        "78": "38",
+        "31": "33"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 30.8,
+        "max": 63.2
+      },
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_16",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a admission type of 'Elective'?",
+    "answer": "110, 95",
+    "selected_features": [
+      "Admission Type"
+    ],
+    "matching_respondents": [
+      "110",
+      "95"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Admission Type": {
+        "89": "B",
+        "137": "B",
+        "110": "A",
+        "95": "A",
+        "18": "B"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Admission Type": {
+          "raw": "A",
+          "decoded": "Elective"
+        }
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_17",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a hospital of 'HOSP_40'?",
+    "answer": "40",
+    "selected_features": [
+      "Hospital"
+    ],
+    "matching_respondents": [
+      "40"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Hospital": {
+        "4": "HOSP_04",
+        "108": "HOSP_108",
+        "126": "HOSP_126",
+        "28": "HOSP_28",
+        "111": "HOSP_111",
+        "93": "HOSP_93",
+        "118": "HOSP_118",
+        "40": "HOSP_40",
+        "112": "HOSP_112",
+        "46": "HOSP_46"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Hospital": {
+          "raw": "HOSP_40",
+          "decoded": "HOSP_40"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_18",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with test results = 'Normal' and medical condition = 'Asthma'.",
+    "answer": "23",
+    "selected_features": [
+      "Test Results",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "23"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Test Results": {
+        "138": "A",
+        "124": "B",
+        "120": "B",
+        "112": "B",
+        "69": "B",
+        "83": "A",
+        "63": "C",
+        "23": "C",
+        "72": "B"
+      },
+      "Medical Condition": {
+        "138": "A",
+        "124": "A",
+        "120": "B",
+        "112": "C",
+        "69": "F",
+        "83": "A",
+        "63": "C",
+        "23": "B",
+        "72": "E"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Test Results": {
+          "raw": "C",
+          "decoded": "Normal"
+        },
+        "Medical Condition": {
+          "raw": "B",
+          "decoded": "Asthma"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_19",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with medication = 'Lipitor' and blood type = 'A-'.",
+    "answer": "119",
+    "selected_features": [
+      "Medication",
+      "Blood Type"
+    ],
+    "matching_respondents": [
+      "119"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Medication": {
+        "63": "B",
+        "119": "C",
+        "146": "E",
+        "98": "B",
+        "87": "B",
+        "8": "B",
+        "127": "E",
+        "84": "B",
+        "47": "B",
+        "125": "E",
+        "55": "D",
+        "91": "D"
+      },
+      "Blood Type": {
+        "63": "D",
+        "119": "B",
+        "146": "F",
+        "98": "E",
+        "87": "A",
+        "8": "E",
+        "127": "F",
+        "84": "D",
+        "47": "E",
+        "125": "A",
+        "55": "D",
+        "91": "B"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Medication": {
+          "raw": "C",
+          "decoded": "Lipitor"
+        },
+        "Blood Type": {
+          "raw": "B",
+          "decoded": "A-"
+        }
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_20",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose room number is between 180 and 376.",
+    "answer": "71, 22, 62",
+    "selected_features": [
+      "Room Number"
+    ],
+    "matching_respondents": [
+      "71",
+      "22",
+      "62"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Room Number": {
+        "88": "442",
+        "72": "115",
+        "71": "212",
+        "143": "130",
+        "3": "377",
+        "133": "413",
+        "49": "130",
+        "22": "325",
+        "62": "376"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 180.4,
+        "max": 376.6
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_21",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents have a test results of 'Abnormal'?",
+    "answer": "126, 143, 62, 122, 5",
+    "selected_features": [
+      "Test Results"
+    ],
+    "matching_respondents": [
+      "126",
+      "143",
+      "62",
+      "122",
+      "5"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Test Results": {
+        "126": "A",
+        "143": "A",
+        "62": "A",
+        "122": "A",
+        "115": "C",
+        "5": "A",
+        "24": "C",
+        "76": "B",
+        "57": "B",
+        "104": "B",
+        "63": "C"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "single_categorical_filter",
+      "criteria": {
+        "Test Results": {
+          "raw": "A",
+          "decoded": "Abnormal"
+        }
+      },
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_22",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents with blood type = 'O-' and hospital = 'HOSP_95'.",
+    "answer": "None",
+    "selected_features": [
+      "Blood Type",
+      "Hospital"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Blood Type": {
+        "149": "A",
+        "95": "B",
+        "122": "H",
+        "142": "G",
+        "136": "A",
+        "89": "F",
+        "109": "D",
+        "141": "C",
+        "85": "G"
+      },
+      "Hospital": {
+        "149": "HOSP_149",
+        "95": "HOSP_95",
+        "122": "HOSP_122",
+        "142": "HOSP_142",
+        "136": "HOSP_136",
+        "89": "HOSP_89",
+        "109": "HOSP_109",
+        "141": "HOSP_141",
+        "85": "HOSP_85"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "two_condition_filter",
+      "criteria": {
+        "Blood Type": {
+          "raw": "H",
+          "decoded": "O-"
+        },
+        "Hospital": {
+          "raw": "HOSP_95",
+          "decoded": "HOSP_95"
+        }
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_23",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose room number is between 205 and 421.",
+    "answer": "117, 79, 65, 81, 48",
+    "selected_features": [
+      "Room Number"
+    ],
+    "matching_respondents": [
+      "117",
+      "79",
+      "65",
+      "81",
+      "48"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Room Number": {
+        "117": "249",
+        "70": "424",
+        "79": "300",
+        "65": "211",
+        "60": "494",
+        "31": "134",
+        "50": "440",
+        "81": "234",
+        "138": "133",
+        "48": "263"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 205.2,
+        "max": 421.8
+      },
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_24",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose age is between 32 and 67.",
+    "answer": "124, 71, 135, 26",
+    "selected_features": [
+      "Age"
+    ],
+    "matching_respondents": [
+      "124",
+      "71",
+      "135",
+      "26"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Age": {
+        "56": "73",
+        "124": "57",
+        "71": "52",
+        "135": "52",
+        "73": "21",
+        "26": "48",
+        "50": "79",
+        "76": "70"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 32.6,
+        "max": 67.4
+      },
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_25",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents whose room number is between 172 and 364.",
+    "answer": "93, 78, 71",
+    "selected_features": [
+      "Room Number"
+    ],
+    "matching_respondents": [
+      "93",
+      "78",
+      "71"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Room Number": {
+        "93": "326",
+        "46": "108",
+        "78": "310",
+        "4": "131",
+        "137": "401",
+        "33": "408",
+        "71": "212",
+        "12": "428"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "numeric_range_filter",
+      "range": {
+        "min": 172.0,
+        "max": 364.0
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_26",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 11 days and do not have a medical condition of 'Asthma'?",
+    "answer": "75, 33",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "75",
+      "33"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "142": "482",
+        "75": "285",
+        "33": "408",
+        "126": "321",
+        "27": "113"
+      },
+      "Medical Condition": {
+        "142": "B",
+        "75": "F",
+        "33": "D",
+        "126": "A",
+        "27": "A"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 11,
+      "excluded_condition": {
+        "raw": "B",
+        "decoded": "Asthma"
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_27",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 7 days and do not have a medical condition of 'Arthritis'?",
+    "answer": "121, 123, 113",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "121",
+      "123",
+      "113"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "147": "373",
+        "73": "410",
+        "121": "465",
+        "123": "328",
+        "113": "268"
+      },
+      "Medical Condition": {
+        "147": "A",
+        "73": "D",
+        "121": "E",
+        "123": "C",
+        "113": "E"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 7,
+      "excluded_condition": {
+        "raw": "A",
+        "decoded": "Arthritis"
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_28",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who are treated by the same doctor as the patient in room '272' and were admitted for the same admission type.",
+    "answer": "None",
+    "selected_features": [
+      "Doctor",
+      "Admission Type",
+      "Room Number"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Doctor": {
+        "48": "DOC_48",
+        "14": "DOC_14",
+        "65": "DOC_65",
+        "123": "DOC_123",
+        "30": "DOC_30",
+        "17": "DOC_17",
+        "103": "DOC_103",
+        "126": "DOC_126",
+        "19": "DOC_19",
+        "148": "DOC_148"
+      },
+      "Admission Type": {
+        "48": "A",
+        "14": "A",
+        "65": "A",
+        "123": "C",
+        "30": "B",
+        "17": "A",
+        "103": "B",
+        "126": "B",
+        "19": "B",
+        "148": "C"
+      },
+      "Room Number": {
+        "48": "263",
+        "14": "255",
+        "65": "211",
+        "123": "328",
+        "30": "272",
+        "17": "182",
+        "103": "138",
+        "126": "321",
+        "19": "333",
+        "148": "177"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "same_doctor_admission_type",
+      "reference_room": "272",
+      "reference_doctor": "DOC_30",
+      "reference_admission": "B",
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_29",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 17 days and do not have a medical condition of 'Diabetes'?",
+    "answer": "None",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "39": "255",
+        "145": "144",
+        "78": "310",
+        "22": "325",
+        "64": "135"
+      },
+      "Medical Condition": {
+        "39": "D",
+        "145": "E",
+        "78": "D",
+        "22": "A",
+        "64": "D"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 17,
+      "excluded_condition": {
+        "raw": "D",
+        "decoded": "Diabetes"
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_30",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 14 days and do not have a medical condition of 'Asthma'?",
+    "answer": "None",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "143": "130",
+        "107": "227",
+        "58": "414",
+        "134": "428",
+        "98": "316",
+        "116": "211"
+      },
+      "Medical Condition": {
+        "143": "D",
+        "107": "D",
+        "58": "D",
+        "134": "F",
+        "98": "B",
+        "116": "F"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 14,
+      "excluded_condition": {
+        "raw": "B",
+        "decoded": "Asthma"
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_31",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 18 days and do not have a medical condition of 'Diabetes'?",
+    "answer": "41",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "41"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "77": "233",
+        "110": "368",
+        "79": "300",
+        "146": "245",
+        "16": "162",
+        "26": "241",
+        "54": "388",
+        "55": "430",
+        "68": "231",
+        "21": "251",
+        "41": "389",
+        "62": "376"
+      },
+      "Medical Condition": {
+        "77": "B",
+        "110": "F",
+        "79": "B",
+        "146": "D",
+        "16": "E",
+        "26": "D",
+        "54": "D",
+        "55": "E",
+        "68": "C",
+        "21": "A",
+        "41": "F",
+        "62": "C"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 18,
+      "excluded_condition": {
+        "raw": "D",
+        "decoded": "Diabetes"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_32",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents with test results = 'Normal', blood type = 'A-', and whose age is greater than 54.",
+    "answer": "20",
+    "selected_features": [
+      "Test Results",
+      "Blood Type",
+      "Age"
+    ],
+    "matching_respondents": [
+      "20"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Test Results": {
+        "142": "A",
+        "20": "C",
+        "41": "A",
+        "1": "A",
+        "105": "A",
+        "116": "C",
+        "121": "C"
+      },
+      "Blood Type": {
+        "142": "G",
+        "20": "B",
+        "41": "G",
+        "1": "D",
+        "105": "E",
+        "116": "G",
+        "121": "F"
+      },
+      "Age": {
+        "142": "37",
+        "20": "65",
+        "41": "44",
+        "1": "53",
+        "105": "54",
+        "116": "84",
+        "121": "76"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "criteria": {
+        "Test Results": {
+          "raw": "C",
+          "decoded": "Normal"
+        },
+        "Blood Type": {
+          "raw": "B",
+          "decoded": "A-"
+        },
+        "Age_greater": 54.0
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_33",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents with hospital = 'HOSP_109', test results = 'Abnormal', and whose billing amount is less than 20228.",
+    "answer": "None",
+    "selected_features": [
+      "Hospital",
+      "Test Results",
+      "Billing Amount"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Hospital": {
+        "9": "HOSP_09",
+        "60": "HOSP_60",
+        "74": "HOSP_74",
+        "73": "HOSP_73",
+        "117": "HOSP_117",
+        "19": "HOSP_19",
+        "68": "HOSP_68",
+        "51": "HOSP_51",
+        "109": "HOSP_109"
+      },
+      "Test Results": {
+        "9": "B",
+        "60": "C",
+        "74": "A",
+        "73": "C",
+        "117": "B",
+        "19": "C",
+        "68": "C",
+        "51": "C",
+        "109": "C"
+      },
+      "Billing Amount": {
+        "9": "6176",
+        "60": "37735",
+        "74": "40783",
+        "73": "49943",
+        "117": "20228",
+        "19": "10352",
+        "68": "19183",
+        "51": "14300",
+        "109": "35522"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "criteria": {
+        "Hospital": {
+          "raw": "HOSP_109",
+          "decoded": "HOSP_109"
+        },
+        "Test Results": {
+          "raw": "A",
+          "decoded": "Abnormal"
+        },
+        "Billing Amount_less": 20228.0
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_34",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents with medical condition = 'Cancer', gender = 'Male', and whose billing amount is greater than 31689.",
+    "answer": "None",
+    "selected_features": [
+      "Medical Condition",
+      "Gender",
+      "Billing Amount"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Medical Condition": {
+        "140": "C",
+        "58": "D",
+        "39": "D",
+        "69": "F",
+        "37": "D",
+        "19": "C"
+      },
+      "Gender": {
+        "140": "B",
+        "58": "B",
+        "39": "B",
+        "69": "B",
+        "37": "A",
+        "19": "A"
+      },
+      "Billing Amount": {
+        "140": "25426",
+        "58": "37952",
+        "39": "45453",
+        "69": "46957",
+        "37": "12577",
+        "19": "10352"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "criteria": {
+        "Medical Condition": {
+          "raw": "C",
+          "decoded": "Cancer"
+        },
+        "Gender": {
+          "raw": "B",
+          "decoded": "Male"
+        },
+        "Billing Amount_greater": 31689.0
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_35",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who are treated by the same doctor as the patient in room '245' and were admitted for the same admission type.",
+    "answer": "None",
+    "selected_features": [
+      "Doctor",
+      "Admission Type",
+      "Room Number"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Doctor": {
+        "43": "DOC_43",
+        "79": "DOC_79",
+        "146": "DOC_146",
+        "74": "DOC_74",
+        "113": "DOC_113"
+      },
+      "Admission Type": {
+        "43": "A",
+        "79": "C",
+        "146": "B",
+        "74": "B",
+        "113": "A"
+      },
+      "Room Number": {
+        "43": "468",
+        "79": "300",
+        "146": "245",
+        "74": "425",
+        "113": "268"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "same_doctor_admission_type",
+      "reference_room": "245",
+      "reference_doctor": "DOC_146",
+      "reference_admission": "B",
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_36",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who are treated by the same doctor as the patient in room '300' and were admitted for the same admission type.",
+    "answer": "None",
+    "selected_features": [
+      "Doctor",
+      "Admission Type",
+      "Room Number"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Doctor": {
+        "120": "DOC_120",
+        "78": "DOC_78",
+        "104": "DOC_104",
+        "70": "DOC_70",
+        "129": "DOC_129",
+        "139": "DOC_139"
+      },
+      "Admission Type": {
+        "120": "C",
+        "78": "C",
+        "104": "A",
+        "70": "A",
+        "129": "A",
+        "139": "C"
+      },
+      "Room Number": {
+        "120": "361",
+        "78": "310",
+        "104": "300",
+        "70": "424",
+        "129": "318",
+        "139": "330"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "same_doctor_admission_type",
+      "reference_room": "300",
+      "reference_doctor": "DOC_104",
+      "reference_admission": "A",
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_37",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who are treated by the same doctor as the patient in room '268' and were admitted for the same admission type.",
+    "answer": "None",
+    "selected_features": [
+      "Doctor",
+      "Admission Type",
+      "Room Number"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Doctor": {
+        "113": "DOC_113",
+        "21": "DOC_21",
+        "11": "DOC_11",
+        "111": "DOC_111",
+        "83": "DOC_83",
+        "65": "DOC_65",
+        "7": "DOC_07",
+        "24": "DOC_24",
+        "59": "DOC_59",
+        "148": "DOC_148",
+        "6": "DOC_06",
+        "69": "DOC_69"
+      },
+      "Admission Type": {
+        "113": "A",
+        "21": "B",
+        "11": "B",
+        "111": "B",
+        "83": "C",
+        "65": "A",
+        "7": "B",
+        "24": "B",
+        "59": "C",
+        "148": "C",
+        "6": "A",
+        "69": "B"
+      },
+      "Room Number": {
+        "113": "268",
+        "21": "251",
+        "11": "394",
+        "111": "249",
+        "83": "102",
+        "65": "211",
+        "7": "368",
+        "24": "295",
+        "59": "115",
+        "148": "177",
+        "6": "489",
+        "69": "331"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "same_doctor_admission_type",
+      "reference_room": "268",
+      "reference_doctor": "DOC_113",
+      "reference_admission": "A",
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_38",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 6 days and do not have a medical condition of 'Cancer'?",
+    "answer": "45, 121, 114, 72",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "45",
+      "121",
+      "114",
+      "72"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "45": "208",
+        "121": "465",
+        "133": "413",
+        "114": "250",
+        "72": "115"
+      },
+      "Medical Condition": {
+        "45": "F",
+        "121": "E",
+        "133": "C",
+        "114": "D",
+        "72": "E"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 6,
+      "excluded_condition": {
+        "raw": "C",
+        "decoded": "Cancer"
+      },
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_39",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents with admission type = 'Emergency', medical condition = 'Hypertension', and whose billing amount is greater than 25230.",
+    "answer": "121",
+    "selected_features": [
+      "Admission Type",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "121"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Admission Type": {
+        "150": "A",
+        "112": "C",
+        "126": "B",
+        "24": "B",
+        "121": "B",
+        "90": "C",
+        "105": "A"
+      },
+      "Medical Condition": {
+        "150": "B",
+        "112": "C",
+        "126": "A",
+        "24": "D",
+        "121": "E",
+        "90": "B",
+        "105": "C"
+      },
+      "Billing Amount": {
+        "150": "13356",
+        "112": "21880",
+        "126": "33682",
+        "24": "8521",
+        "121": "50119",
+        "90": "25230",
+        "105": "29504"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "criteria": {
+        "Admission Type": {
+          "raw": "B",
+          "decoded": "Emergency"
+        },
+        "Medical Condition": {
+          "raw": "E",
+          "decoded": "Hypertension"
+        },
+        "Billing Amount_greater": 25230.0
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_40",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a calculated length of stay greater than 15 days and do not have a medical condition of 'Obesity'?",
+    "answer": "10",
+    "selected_features": [
+      "Room Number",
+      "Medical Condition"
+    ],
+    "matching_respondents": [
+      "10"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Room Number": {
+        "83": "102",
+        "27": "113",
+        "42": "152",
+        "85": "293",
+        "106": "309",
+        "127": "157",
+        "74": "425",
+        "103": "138",
+        "141": "226",
+        "10": "178"
+      },
+      "Medical Condition": {
+        "83": "A",
+        "27": "A",
+        "42": "C",
+        "85": "C",
+        "106": "C",
+        "127": "B",
+        "74": "A",
+        "103": "F",
+        "141": "B",
+        "10": "B"
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "length_of_stay_with_exclusion",
+      "length_threshold": 15,
+      "excluded_condition": {
+        "raw": "F",
+        "decoded": "Obesity"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_41",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "23, 65, 1, 106, 14",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "23",
+      "65",
+      "1",
+      "106",
+      "14"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "23": "E",
+        "81": "A",
+        "65": "C",
+        "83": "E",
+        "30": "D",
+        "104": "C",
+        "132": "E",
+        "1": "D",
+        "139": "B",
+        "119": "E",
+        "106": "E",
+        "14": "C"
+      },
+      "Billing Amount": {
+        "23": "33643",
+        "81": "14681",
+        "65": "29851",
+        "83": "25966",
+        "30": "10301",
+        "104": "4532",
+        "132": "22356",
+        "1": "24870",
+        "139": "18843",
+        "119": "6768",
+        "106": "47909",
+        "14": "21186"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "C",
+        "B",
+        "A",
+        "D",
+        "E"
+      ],
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_42",
+    "difficulty_mode": "Really Hard",
+    "question": "List all respondents whose age is longer than the average for their admission type and are over the age of 57.",
+    "answer": "93, 114, 14",
+    "selected_features": [
+      "Admission Type",
+      "Age"
+    ],
+    "matching_respondents": [
+      "93",
+      "114",
+      "14"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Admission Type": {
+        "133": "B",
+        "93": "B",
+        "128": "A",
+        "114": "A",
+        "14": "A",
+        "53": "C",
+        "69": "B",
+        "141": "A"
+      },
+      "Age": {
+        "133": "22",
+        "93": "58",
+        "128": "28",
+        "114": "81",
+        "14": "85",
+        "53": "38",
+        "69": "18",
+        "141": "26"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_admission_average_with_age_filter",
+      "age_threshold": 57,
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_43",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents from 'HOSP_113' whose billing amount is greater than the average billing amount for all patients at that same hospital.",
+    "answer": "None",
+    "selected_features": [
+      "Hospital",
+      "Billing Amount"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Hospital": {
+        "74": "HOSP_74",
+        "113": "HOSP_113",
+        "125": "HOSP_125",
+        "32": "HOSP_32",
+        "8": "HOSP_08",
+        "62": "HOSP_62",
+        "41": "HOSP_41"
+      },
+      "Billing Amount": {
+        "74": "40783",
+        "113": "19328",
+        "125": "21772",
+        "32": "39723",
+        "8": "3909",
+        "62": "44437",
+        "41": "32974"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "above_hospital_average",
+      "target_hospital": {
+        "raw": "HOSP_113",
+        "decoded": "HOSP_113"
+      },
+      "hospital_average": 19328.0,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_44",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "4, 105",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "4",
+      "105"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "142": "A",
+        "4": "D",
+        "105": "E",
+        "24": "B",
+        "58": "C",
+        "30": "D",
+        "119": "E",
+        "31": "D",
+        "40": "D"
+      },
+      "Billing Amount": {
+        "142": "9586",
+        "4": "37406",
+        "105": "29504",
+        "24": "8521",
+        "58": "37952",
+        "30": "10301",
+        "119": "6768",
+        "31": "6734",
+        "40": "17696"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "C",
+        "B",
+        "A",
+        "D",
+        "E"
+      ],
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_45",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "75, 70, 121, 117, 142, 38",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "75",
+      "70",
+      "121",
+      "117",
+      "142",
+      "38"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "75": "D",
+        "131": "E",
+        "70": "D",
+        "107": "A",
+        "124": "C",
+        "121": "C",
+        "63": "D",
+        "117": "E",
+        "142": "A",
+        "38": "A",
+        "99": "A",
+        "49": "B"
+      },
+      "Billing Amount": {
+        "75": "33208",
+        "131": "14238",
+        "70": "32643",
+        "107": "3326",
+        "124": "46814",
+        "121": "50119",
+        "63": "19973",
+        "117": "20228",
+        "142": "9586",
+        "38": "8409",
+        "99": "2305",
+        "49": "25302"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "C",
+        "B",
+        "A",
+        "D",
+        "E"
+      ],
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_46",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents from 'HOSP_69' whose billing amount is greater than the average billing amount for all patients at that same hospital.",
+    "answer": "None",
+    "selected_features": [
+      "Hospital",
+      "Billing Amount"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Hospital": {
+        "18": "HOSP_18",
+        "71": "HOSP_71",
+        "107": "HOSP_107",
+        "88": "HOSP_88",
+        "130": "HOSP_130",
+        "69": "HOSP_69",
+        "1": "HOSP_01"
+      },
+      "Billing Amount": {
+        "18": "12263",
+        "71": "31486",
+        "107": "3326",
+        "88": "39616",
+        "130": "34618",
+        "69": "46957",
+        "1": "24870"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "above_hospital_average",
+      "target_hospital": {
+        "raw": "HOSP_69",
+        "decoded": "HOSP_69"
+      },
+      "hospital_average": 46957.0,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_47",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "149, 39, 115, 89",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "149",
+      "39",
+      "115",
+      "89"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "77": "E",
+        "149": "D",
+        "126": "B",
+        "39": "A",
+        "115": "E",
+        "138": "A",
+        "124": "C",
+        "89": "D",
+        "86": "D"
+      },
+      "Billing Amount": {
+        "77": "39958",
+        "149": "33211",
+        "126": "33682",
+        "39": "45453",
+        "115": "40693",
+        "138": "7556",
+        "124": "46814",
+        "89": "32629",
+        "86": "21784"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "C",
+        "B",
+        "A",
+        "D",
+        "E"
+      ],
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_48",
+    "difficulty_mode": "Really Hard",
+    "question": "List all respondents whose age is longer than the average for their admission type and are over the age of 41.",
+    "answer": "117, 49, 147, 99, 82, 122",
+    "selected_features": [
+      "Admission Type",
+      "Age"
+    ],
+    "matching_respondents": [
+      "117",
+      "49",
+      "147",
+      "99",
+      "82",
+      "122"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Admission Type": {
+        "117": "A",
+        "83": "C",
+        "49": "A",
+        "62": "A",
+        "147": "B",
+        "99": "B",
+        "60": "B",
+        "106": "A",
+        "12": "B",
+        "82": "A",
+        "122": "B"
+      },
+      "Age": {
+        "117": "58",
+        "83": "24",
+        "49": "72",
+        "62": "27",
+        "147": "50",
+        "99": "67",
+        "60": "26",
+        "106": "19",
+        "12": "20",
+        "82": "82",
+        "122": "73"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "above_admission_average_with_age_filter",
+      "age_threshold": 41,
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_49",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "39, 127, 129, 85, 135",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "39",
+      "127",
+      "129",
+      "85",
+      "135"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "99": "A",
+        "39": "A",
+        "127": "A",
+        "10": "C",
+        "33": "A",
+        "129": "B",
+        "85": "D",
+        "26": "D",
+        "113": "B",
+        "135": "B",
+        "117": "E"
+      },
+      "Billing Amount": {
+        "99": "2305",
+        "39": "45453",
+        "127": "35634",
+        "10": "23762",
+        "33": "8321",
+        "129": "30358",
+        "85": "44940",
+        "26": "23737",
+        "113": "19328",
+        "135": "27360",
+        "117": "20228"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "C",
+        "B",
+        "A",
+        "D",
+        "E"
+      ],
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_50",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose billing amount is higher than the average billing amount for all patients with the same insurance provider.",
+    "answer": "105, 40",
+    "selected_features": [
+      "Insurance Provider",
+      "Billing Amount"
+    ],
+    "matching_respondents": [
+      "105",
+      "40"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Insurance Provider": {
+        "37": "E",
+        "105": "E",
+        "40": "D",
+        "20": "D",
+        "121": "C"
+      },
+      "Billing Amount": {
+        "37": "12577",
+        "105": "29504",
+        "40": "17696",
+        "20": "-503",
+        "121": "50119"
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "above_insurance_average",
+      "insurance_providers": [
+        "D",
+        "E",
+        "C"
+      ],
+      "matches_found": 2
+    }
+  }
+]

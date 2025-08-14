@@ -1,0 +1,2384 @@
+[
+  {
+    "case_id": "case_1",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-04' who scored 3 on 'Situation'.",
+    "answer": "15",
+    "selected_features": [
+      "Date",
+      "Situation"
+    ],
+    "matching_respondents": [
+      "15"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "15": "2025-05-04",
+        "23": "2025-03-14",
+        "22": "2025-05-16"
+      },
+      "Situation": {
+        "15": 3,
+        "23": 3,
+        "22": 3
+      }
+    },
+    "case_respondent_count": 3,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-04",
+        "Situation": 3
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_2",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-02' who scored 3 on 'Background (examination)'.",
+    "answer": "None",
+    "selected_features": [
+      "Date",
+      "Background (examination)"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "3": "2025-04-04",
+        "8": "2025-05-02",
+        "10": "2025-03-14",
+        "22": "2025-05-16",
+        "7": "2025-03-14",
+        "5": "2025-05-04",
+        "1": "2025-05-02",
+        "2": "2025-04-04",
+        "4": "2025-05-16",
+        "20": "2025-05-02"
+      },
+      "Background (examination)": {
+        "3": 3,
+        "8": 2,
+        "10": 2,
+        "22": 3,
+        "7": 3,
+        "5": 3,
+        "1": 2,
+        "2": 3,
+        "4": 2,
+        "20": -1
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-02",
+        "Background (examination)": 3
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_3",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents participated in a 'III - Sepsis' session?",
+    "answer": "15",
+    "selected_features": [
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "15"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "SessionName": {
+        "15": "III - Sepsis",
+        "14": "IV-Hypoglycemia",
+        "21": "I (Myocardial infarction)",
+        "19": "I - MI",
+        "7": "III-Sepsis",
+        "13": "I-VF"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "session_filter",
+      "criteria": {
+        "SessionName": "III - Sepsis"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_4",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-03-14' who scored 3 on 'Recommendation (clear recommendation)'.",
+    "answer": "23",
+    "selected_features": [
+      "Date",
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "23"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "13": "2025-03-14",
+        "8": "2025-05-02",
+        "5": "2025-05-04",
+        "1": "2025-05-02",
+        "4": "2025-05-16",
+        "14": "2025-03-14",
+        "22": "2025-05-16",
+        "6": "2025-04-04",
+        "23": "2025-03-14",
+        "12": "2025-05-02",
+        "9": "2025-05-04",
+        "17": "2025-05-04"
+      },
+      "Recommendation (clear recommendation)": {
+        "13": 2,
+        "8": 2,
+        "5": 2,
+        "1": 2,
+        "4": 2,
+        "14": 1,
+        "22": 2,
+        "6": 2,
+        "23": 3,
+        "12": 3,
+        "9": 3,
+        "17": 3
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-03-14",
+        "Recommendation (clear recommendation)": 3
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_5",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 3 on 'Background (examination)'.",
+    "answer": "15, 5",
+    "selected_features": [
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "15",
+      "5"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Background (examination)": {
+        "18": 2,
+        "8": 2,
+        "4": 2,
+        "15": 3,
+        "5": 3
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Background (examination)": 3
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_6",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents participated in a 'IV (AF)' session?",
+    "answer": "11",
+    "selected_features": [
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "11"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "SessionName": {
+        "22": "IV (VT)",
+        "17": "V (Hypoglycemia)",
+        "18": "IV - VT",
+        "20": "IV (VT)",
+        "11": "IV (AF)",
+        "15": "III - Sepsis",
+        "23": "II-Anaphylaxsis",
+        "14": "IV-Hypoglycemia",
+        "16": "I - MI",
+        "9": "II (Anaphylaxsis)",
+        "8": "III (Sepsis)",
+        "3": "III-Sepsis"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "session_filter",
+      "criteria": {
+        "SessionName": "IV (AF)"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_7",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Recommendation (clear recommendation)'.",
+    "answer": "15, 8, 22, 16, 20, 2, 5",
+    "selected_features": [
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "15",
+      "8",
+      "22",
+      "16",
+      "20",
+      "2",
+      "5"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Recommendation (clear recommendation)": {
+        "15": 2,
+        "9": 3,
+        "8": 2,
+        "22": 2,
+        "17": 3,
+        "16": 2,
+        "21": 3,
+        "20": 2,
+        "19": 3,
+        "2": 2,
+        "12": 3,
+        "5": 2
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Recommendation (clear recommendation)": 2
+      },
+      "matches_found": 7
+    }
+  },
+  {
+    "case_id": "case_8",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-02' who scored 2 on 'Background (examination)'.",
+    "answer": "8",
+    "selected_features": [
+      "Date",
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "8"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "9": "2025-05-04",
+        "11": "2025-04-04",
+        "22": "2025-05-16",
+        "18": "2025-05-04",
+        "3": "2025-04-04",
+        "5": "2025-05-04",
+        "20": "2025-05-02",
+        "8": "2025-05-02"
+      },
+      "Background (examination)": {
+        "9": 2,
+        "11": 3,
+        "22": 3,
+        "18": 2,
+        "3": 3,
+        "5": 3,
+        "20": -1,
+        "8": 2
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-02",
+        "Background (examination)": 2
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_9",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-16' who scored 1 on 'Background (examination)'.",
+    "answer": "21",
+    "selected_features": [
+      "Date",
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "21"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "23": "2025-03-14",
+        "5": "2025-05-04",
+        "7": "2025-03-14",
+        "3": "2025-04-04",
+        "14": "2025-03-14",
+        "19": "2025-05-16",
+        "11": "2025-04-04",
+        "15": "2025-05-04",
+        "21": "2025-05-16",
+        "1": "2025-05-02",
+        "4": "2025-05-16"
+      },
+      "Background (examination)": {
+        "23": 2,
+        "5": 3,
+        "7": 3,
+        "3": 3,
+        "14": 2,
+        "19": 3,
+        "11": 3,
+        "15": 3,
+        "21": 1,
+        "1": 2,
+        "4": 2
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-16",
+        "Background (examination)": 1
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_10",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents participated in a 'I (Myocardial infarction)' session?",
+    "answer": "21",
+    "selected_features": [
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "21"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "SessionName": {
+        "13": "I-VF",
+        "19": "I - MI",
+        "1": "V (Hypoglycemia)",
+        "22": "IV (VT)",
+        "23": "II-Anaphylaxsis",
+        "16": "I - MI",
+        "21": "I (Myocardial infarction)",
+        "12": "II (Anaphylaxis)",
+        "5": "II - Anaphylaxsis",
+        "20": "IV (VT)",
+        "7": "III-Sepsis"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "session_filter",
+      "criteria": {
+        "SessionName": "I (Myocardial infarction)"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_11",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-04' who scored 3 on 'Recommendation (clear recommendation)'.",
+    "answer": "9",
+    "selected_features": [
+      "Date",
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "9"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "18": "2025-05-04",
+        "23": "2025-03-14",
+        "20": "2025-05-02",
+        "8": "2025-05-02",
+        "16": "2025-05-02",
+        "21": "2025-05-16",
+        "9": "2025-05-04",
+        "14": "2025-03-14",
+        "22": "2025-05-16",
+        "1": "2025-05-02",
+        "7": "2025-03-14"
+      },
+      "Recommendation (clear recommendation)": {
+        "18": 2,
+        "23": 3,
+        "20": 2,
+        "8": 2,
+        "16": 2,
+        "21": 3,
+        "9": 3,
+        "14": 1,
+        "22": 2,
+        "1": 2,
+        "7": 2
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-04",
+        "Recommendation (clear recommendation)": 3
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_12",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-04-04' who scored 2 on 'Assessment'.",
+    "answer": "6",
+    "selected_features": [
+      "Date",
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "6"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "22": "2025-05-16",
+        "23": "2025-03-14",
+        "13": "2025-03-14",
+        "6": "2025-04-04",
+        "15": "2025-05-04",
+        "5": "2025-05-04",
+        "1": "2025-05-02",
+        "21": "2025-05-16",
+        "10": "2025-03-14",
+        "19": "2025-05-16"
+      },
+      "Assessment": {
+        "22": 2,
+        "23": 3,
+        "13": 2,
+        "6": 2,
+        "15": 2,
+        "5": 3,
+        "1": 3,
+        "21": 2,
+        "10": 2,
+        "19": 2
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-04-04",
+        "Assessment": 2
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_13",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Recommendation (global rating scale)'.",
+    "answer": "14, 15",
+    "selected_features": [
+      "Recommendation (global rating scale)"
+    ],
+    "matching_respondents": [
+      "14",
+      "15"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "3": 3,
+        "21": 3,
+        "14": 2,
+        "5": 3,
+        "15": 2
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Recommendation (global rating scale)": 2
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_14",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents participated in a 'III-Sepsis' session?",
+    "answer": "7",
+    "selected_features": [
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "7"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "SessionName": {
+        "2": "MI",
+        "9": "II (Anaphylaxsis)",
+        "13": "I-VF",
+        "11": "IV (AF)",
+        "7": "III-Sepsis",
+        "15": "III - Sepsis",
+        "20": "IV (VT)"
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "session_filter",
+      "criteria": {
+        "SessionName": "III-Sepsis"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_15",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 3 on 'Recommendation (clear recommendation)'.",
+    "answer": "9, 3",
+    "selected_features": [
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "9",
+      "3"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Recommendation (clear recommendation)": {
+        "13": 2,
+        "9": 3,
+        "14": 1,
+        "22": 2,
+        "3": 3,
+        "16": 2,
+        "1": 2,
+        "2": 2,
+        "6": 2,
+        "4": 2
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Recommendation (clear recommendation)": 3
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_16",
+    "difficulty_mode": "Easy",
+    "question": "Which respondents participated in a 'V (Hypoglycemia)' session?",
+    "answer": "1",
+    "selected_features": [
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "1"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "SessionName": {
+        "21": "I (Myocardial infarction)",
+        "2": "MI",
+        "1": "V (Hypoglycemia)",
+        "8": "III (Sepsis)",
+        "7": "III-Sepsis",
+        "23": "II-Anaphylaxsis"
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "session_filter",
+      "criteria": {
+        "SessionName": "V (Hypoglycemia)"
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_17",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 3 on 'Situation'.",
+    "answer": "8, 5, 16, 4, 19, 7, 15",
+    "selected_features": [
+      "Situation"
+    ],
+    "matching_respondents": [
+      "8",
+      "5",
+      "16",
+      "4",
+      "19",
+      "7",
+      "15"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Situation": {
+        "8": 3,
+        "5": 3,
+        "16": 3,
+        "4": 3,
+        "19": 3,
+        "7": 3,
+        "15": 3
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Situation": 3
+      },
+      "matches_found": 7
+    }
+  },
+  {
+    "case_id": "case_18",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 3 on 'Assessment'.",
+    "answer": "20, 17",
+    "selected_features": [
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "20",
+      "17"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Assessment": {
+        "12": 2,
+        "6": 2,
+        "20": 3,
+        "21": 2,
+        "4": 2,
+        "22": 2,
+        "10": 2,
+        "19": 2,
+        "17": 3
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Assessment": 3
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_19",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-03-14' who scored 3 on 'Assessment'.",
+    "answer": "23",
+    "selected_features": [
+      "Date",
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "23"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "10": "2025-03-14",
+        "19": "2025-05-16",
+        "22": "2025-05-16",
+        "13": "2025-03-14",
+        "23": "2025-03-14"
+      },
+      "Assessment": {
+        "10": 2,
+        "19": 2,
+        "22": 2,
+        "13": 2,
+        "23": 3
+      }
+    },
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-03-14",
+        "Assessment": 3
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_20",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Identification'.",
+    "answer": "10",
+    "selected_features": [
+      "Identification"
+    ],
+    "matching_respondents": [
+      "10"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Identification": {
+        "3": 0,
+        "19": 3,
+        "21": 3,
+        "8": 3,
+        "4": 3,
+        "10": 2,
+        "22": 3,
+        "2": 3
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Identification": 2
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_21",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Background (examination)'.",
+    "answer": "18, 14, 1, 8",
+    "selected_features": [
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "18",
+      "14",
+      "1",
+      "8"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Background (examination)": {
+        "18": 2,
+        "14": 2,
+        "12": 3,
+        "3": 3,
+        "17": 3,
+        "11": 3,
+        "1": 2,
+        "22": 3,
+        "16": 3,
+        "8": 2
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Background (examination)": 2
+      },
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_22",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Background (history)'.",
+    "answer": "14, 15, 23",
+    "selected_features": [
+      "Background (history)"
+    ],
+    "matching_respondents": [
+      "14",
+      "15",
+      "23"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Background (history)": {
+        "14": 2,
+        "12": 3,
+        "21": 3,
+        "15": 2,
+        "5": 3,
+        "23": 2
+      }
+    },
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Background (history)": 2
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_23",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-02' who scored 2 on 'Recommendation (global rating scale)'.",
+    "answer": "None",
+    "selected_features": [
+      "Date",
+      "Recommendation (global rating scale)"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "17": "2025-05-04",
+        "21": "2025-05-16",
+        "9": "2025-05-04",
+        "20": "2025-05-02",
+        "18": "2025-05-04",
+        "16": "2025-05-02",
+        "15": "2025-05-04"
+      },
+      "Recommendation (global rating scale)": {
+        "17": 2,
+        "21": 3,
+        "9": 2,
+        "20": 3,
+        "18": 2,
+        "16": 3,
+        "15": 2
+      }
+    },
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-02",
+        "Recommendation (global rating scale)": 2
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_24",
+    "difficulty_mode": "Easy",
+    "question": "List all respondents from sessions on '2025-05-02' who scored 2 on 'Recommendation (clear recommendation)'.",
+    "answer": "8, 20, 16",
+    "selected_features": [
+      "Date",
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "8",
+      "20",
+      "16"
+    ],
+    "reasoning_complexity": 2,
+    "feature_values": {
+      "Date": {
+        "19": "2025-05-16",
+        "9": "2025-05-04",
+        "11": "2025-04-04",
+        "8": "2025-05-02",
+        "3": "2025-04-04",
+        "22": "2025-05-16",
+        "15": "2025-05-04",
+        "20": "2025-05-02",
+        "13": "2025-03-14",
+        "16": "2025-05-02",
+        "10": "2025-03-14"
+      },
+      "Recommendation (clear recommendation)": {
+        "19": 3,
+        "9": 3,
+        "11": 3,
+        "8": 2,
+        "3": 3,
+        "22": 2,
+        "15": 2,
+        "20": 2,
+        "13": 2,
+        "16": 2,
+        "10": 2
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "date_score_filter",
+      "criteria": {
+        "Date": "2025-05-02",
+        "Recommendation (clear recommendation)": 2
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_25",
+    "difficulty_mode": "Easy",
+    "question": "Find all respondents who scored 2 on 'Assessment'.",
+    "answer": "6, 21, 7, 12, 13, 19",
+    "selected_features": [
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "6",
+      "21",
+      "7",
+      "12",
+      "13",
+      "19"
+    ],
+    "reasoning_complexity": 1,
+    "feature_values": {
+      "Assessment": {
+        "11": 3,
+        "1": 3,
+        "16": 3,
+        "23": 3,
+        "6": 2,
+        "21": 2,
+        "7": 2,
+        "12": 2,
+        "13": 2,
+        "5": 3,
+        "19": 2
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "score_filter",
+      "criteria": {
+        "Assessment": 2
+      },
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_26",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Recommendation (global rating scale)' and 'Identification' greater than 5?",
+    "answer": "20, 8, 12",
+    "selected_features": [
+      "Recommendation (global rating scale)",
+      "Identification"
+    ],
+    "matching_respondents": [
+      "20",
+      "8",
+      "12"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "20": 3,
+        "9": 2,
+        "18": 2,
+        "1": 2,
+        "17": 2,
+        "7": 2,
+        "3": 3,
+        "8": 3,
+        "12": 3
+      },
+      "Identification": {
+        "20": 3,
+        "9": 3,
+        "18": 3,
+        "1": -1,
+        "17": 3,
+        "7": 3,
+        "3": 0,
+        "8": 3,
+        "12": 3
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Recommendation (global rating scale)",
+        "Identification"
+      ],
+      "threshold": 5,
+      "comparison": "greater",
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_27",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 3 on 'Identification' and whose 'Comments' contain the word 'reflected'.",
+    "answer": "None",
+    "selected_features": [
+      "Identification",
+      "Comments"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Identification": {
+        "16": 3,
+        "18": 3,
+        "8": 3,
+        "23": 3,
+        "20": 3,
+        "15": 3,
+        "1": -1,
+        "3": 0,
+        "5": 3,
+        "4": 3,
+        "7": 3
+      },
+      "Comments": {
+        "16": "Consent denied for video recordings\nSatisfactory",
+        "18": "Not very concise or clear communication\nSatisfactory",
+        "8": "Clear communication during handover\nGood",
+        "23": "Time: (11:43-11:58)\nTalking to registrav could not summarize the condition of patient very clearly\nDID: Sepsis I Anaphylaxsis given by team",
+        "20": "Good",
+        "15": "Detailed Response - clear communication",
+        "1": "Satisfactory",
+        "3": "The patient/simulation is not oriented in TPP.\nClear communication between Reg and colleague during handover",
+        "5": "Good clear and precise clinical handover\nGood",
+        "4": "Clinical handover and communication skills, satisfactory\nNo panic, no arrest team\nSatisfactory",
+        "7": "Time: (1:00-1:17)"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Identification": 3
+      },
+      "keyword": "reflected",
+      "score_matches": 9,
+      "comment_matches": 0,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_28",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Situation' and 'Assessment' greater than 5?",
+    "answer": "16, 18, 17, 20",
+    "selected_features": [
+      "Situation",
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "16",
+      "18",
+      "17",
+      "20"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Situation": {
+        "10": 2,
+        "22": 3,
+        "19": 3,
+        "12": 3,
+        "16": 3,
+        "18": 3,
+        "17": 3,
+        "20": 3
+      },
+      "Assessment": {
+        "10": 2,
+        "22": 2,
+        "19": 2,
+        "12": 2,
+        "16": 3,
+        "18": 3,
+        "17": 3,
+        "20": 3
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Situation",
+        "Assessment"
+      ],
+      "threshold": 5,
+      "comparison": "greater",
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_29",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents from the 'III (Sepsis)' session who scored 2 on 'Assessment' and 3 on 'Situation'.",
+    "answer": "8, 4",
+    "selected_features": [
+      "SessionName",
+      "Assessment",
+      "Situation"
+    ],
+    "matching_respondents": [
+      "8",
+      "4"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "SessionName": {
+        "18": "IV - VT",
+        "11": "IV (AF)",
+        "12": "II (Anaphylaxis)",
+        "15": "III - Sepsis",
+        "9": "II (Anaphylaxsis)",
+        "10": "(MI)-VT",
+        "19": "I - MI",
+        "8": "III (Sepsis)",
+        "2": "MI",
+        "21": "I (Myocardial infarction)",
+        "4": "III (Sepsis)"
+      },
+      "Assessment": {
+        "18": 3,
+        "11": 3,
+        "12": 2,
+        "15": 2,
+        "9": 2,
+        "10": 2,
+        "19": 2,
+        "8": 2,
+        "2": 3,
+        "21": 2,
+        "4": 2
+      },
+      "Situation": {
+        "18": 3,
+        "11": 3,
+        "12": 3,
+        "15": 3,
+        "9": 3,
+        "10": 2,
+        "19": 3,
+        "8": 3,
+        "2": 3,
+        "21": 2,
+        "4": 3
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "session_multi_score_filter",
+      "criteria": {
+        "SessionName": "III (Sepsis)",
+        "Assessment": 2,
+        "Situation": 3
+      },
+      "matches_found": 2
+    }
+  },
+  {
+    "case_id": "case_30",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Assessment' and 'Recommendation (clear recommendation)' greater than 4?",
+    "answer": "18, 20, 16, 9, 2",
+    "selected_features": [
+      "Assessment",
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "18",
+      "20",
+      "16",
+      "9",
+      "2"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Assessment": {
+        "4": 2,
+        "18": 3,
+        "6": 2,
+        "7": 2,
+        "20": 3,
+        "16": 3,
+        "9": 2,
+        "10": 2,
+        "2": 3,
+        "14": 3
+      },
+      "Recommendation (clear recommendation)": {
+        "4": 2,
+        "18": 2,
+        "6": 2,
+        "7": 2,
+        "20": 2,
+        "16": 2,
+        "9": 3,
+        "10": 2,
+        "2": 2,
+        "14": 1
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Assessment",
+        "Recommendation (clear recommendation)"
+      ],
+      "threshold": 4,
+      "comparison": "greater",
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_31",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Background (history)' and 'Assessment' greater than 5?",
+    "answer": "5",
+    "selected_features": [
+      "Background (history)",
+      "Assessment"
+    ],
+    "matching_respondents": [
+      "5"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Background (history)": {
+        "10": 2,
+        "8": 3,
+        "12": 3,
+        "6": 3,
+        "23": 2,
+        "1": 2,
+        "5": 3,
+        "9": 2,
+        "18": 2
+      },
+      "Assessment": {
+        "10": 2,
+        "8": 2,
+        "12": 2,
+        "6": 2,
+        "23": 3,
+        "1": 3,
+        "5": 3,
+        "9": 2,
+        "18": 3
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Background (history)",
+        "Assessment"
+      ],
+      "threshold": 5,
+      "comparison": "greater",
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_32",
+    "difficulty_mode": "Medium",
+    "question": "Find all respondents from the 'IV (VT)' session who scored 3 on 'Identification' and 3 on 'Background (examination)'.",
+    "answer": "22",
+    "selected_features": [
+      "SessionName",
+      "Identification",
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "22"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "SessionName": {
+        "18": "IV - VT",
+        "10": "(MI)-VT",
+        "5": "II - Anaphylaxsis",
+        "16": "I - MI",
+        "4": "III (Sepsis)",
+        "1": "V (Hypoglycemia)",
+        "22": "IV (VT)",
+        "20": "IV (VT)"
+      },
+      "Identification": {
+        "18": 3,
+        "10": 2,
+        "5": 3,
+        "16": 3,
+        "4": 3,
+        "1": -1,
+        "22": 3,
+        "20": 3
+      },
+      "Background (examination)": {
+        "18": 2,
+        "10": 2,
+        "5": 3,
+        "16": 3,
+        "4": 2,
+        "1": 2,
+        "22": 3,
+        "20": -1
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "session_multi_score_filter",
+      "criteria": {
+        "SessionName": "IV (VT)",
+        "Identification": 3,
+        "Background (examination)": 3
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_33",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Assessment' and 'Situation' greater than 5?",
+    "answer": "11, 2, 16, 20",
+    "selected_features": [
+      "Assessment",
+      "Situation"
+    ],
+    "matching_respondents": [
+      "11",
+      "2",
+      "16",
+      "20"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Assessment": {
+        "15": 2,
+        "11": 3,
+        "6": 2,
+        "2": 3,
+        "9": 2,
+        "16": 3,
+        "4": 2,
+        "3": 3,
+        "7": 2,
+        "8": 2,
+        "20": 3
+      },
+      "Situation": {
+        "15": 3,
+        "11": 3,
+        "6": 2,
+        "2": 3,
+        "9": 3,
+        "16": 3,
+        "4": 3,
+        "3": 2,
+        "7": 3,
+        "8": 3,
+        "20": 3
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Assessment",
+        "Situation"
+      ],
+      "threshold": 5,
+      "comparison": "greater",
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_34",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Recommendation (global rating scale)' and 'Recommendation (clear recommendation)' greater than 5?",
+    "answer": "21, 3, 23",
+    "selected_features": [
+      "Recommendation (global rating scale)",
+      "Recommendation (clear recommendation)"
+    ],
+    "matching_respondents": [
+      "21",
+      "3",
+      "23"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "21": 3,
+        "22": 3,
+        "2": 1,
+        "5": 3,
+        "20": 3,
+        "10": 2,
+        "3": 3,
+        "8": 3,
+        "23": 3,
+        "9": 2,
+        "13": 2,
+        "7": 2
+      },
+      "Recommendation (clear recommendation)": {
+        "21": 3,
+        "22": 2,
+        "2": 2,
+        "5": 2,
+        "20": 2,
+        "10": 2,
+        "3": 3,
+        "8": 2,
+        "23": 3,
+        "9": 3,
+        "13": 2,
+        "7": 2
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Recommendation (global rating scale)",
+        "Recommendation (clear recommendation)"
+      ],
+      "threshold": 5,
+      "comparison": "greater",
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_35",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 3 on 'Identification' and whose 'Comments' contain the word 'Overall'.",
+    "answer": "None",
+    "selected_features": [
+      "Identification",
+      "Comments"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Identification": {
+        "20": 3,
+        "23": 3,
+        "8": 3,
+        "17": 3,
+        "13": 3,
+        "15": 3,
+        "18": 3,
+        "10": 2,
+        "14": 3,
+        "16": 3,
+        "7": 3,
+        "5": 3
+      },
+      "Comments": {
+        "20": "Good",
+        "23": "Time: (11:43-11:58)\nTalking to registrav could not summarize the condition of patient very clearly\nDID: Sepsis I Anaphylaxsis given by team",
+        "8": "Clear communication during handover\nGood",
+        "17": "Concise - clear\nSatisfactory",
+        "13": "Time: (10:29-10:54)\nVentricular fibrillation (CVS)\nLack of communication btween 2 main interns\nFurther brief to patient, ask patent concerns",
+        "15": "Detailed Response - clear communication",
+        "18": "Not very concise or clear communication\nSatisfactory",
+        "10": "Time: (15:53-16:14)",
+        "14": "Time: (2:36-2:53)\nLate response for considering consultation",
+        "16": "Consent denied for video recordings\nSatisfactory",
+        "7": "Time: (1:00-1:17)",
+        "5": "Good clear and precise clinical handover\nGood"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Identification": 3
+      },
+      "keyword": "Overall",
+      "score_matches": 11,
+      "comment_matches": 0,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_36",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 1 on 'Recommendation (global rating scale)' and whose 'Comments' contain the word 'Clear'.",
+    "answer": "None",
+    "selected_features": [
+      "Recommendation (global rating scale)",
+      "Comments"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "20": 3,
+        "2": 1,
+        "23": 3,
+        "4": 2,
+        "7": 2,
+        "19": 3,
+        "9": 2,
+        "3": 3,
+        "16": 3,
+        "21": 3,
+        "15": 2,
+        "17": 2
+      },
+      "Comments": {
+        "20": "Good",
+        "2": "",
+        "23": "Time: (11:43-11:58)\nTalking to registrav could not summarize the condition of patient very clearly\nDID: Sepsis I Anaphylaxsis given by team",
+        "4": "Clinical handover and communication skills, satisfactory\nNo panic, no arrest team\nSatisfactory",
+        "7": "Time: (1:00-1:17)",
+        "19": "Wrong CPR position\nClarity is a bit low over whole case scenario\nSatisfactory",
+        "9": "Overall a bit unclear communication reflected",
+        "3": "The patient/simulation is not oriented in TPP.\nClear communication between Reg and colleague during handover",
+        "16": "Consent denied for video recordings\nSatisfactory",
+        "21": "Diagnostic clarity is present\nGood and early assessment of condition is done",
+        "15": "Detailed Response - clear communication",
+        "17": "Concise - clear\nSatisfactory"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Recommendation (global rating scale)": 1
+      },
+      "keyword": "Clear",
+      "score_matches": 1,
+      "comment_matches": 5,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_37",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 3 on 'Identification' and whose 'Comments' contain the word 'Time'.",
+    "answer": "14",
+    "selected_features": [
+      "Identification",
+      "Comments"
+    ],
+    "matching_respondents": [
+      "14"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Identification": {
+        "6": 3,
+        "1": -1,
+        "14": 3,
+        "15": 3,
+        "16": 3,
+        "10": 2,
+        "2": 3,
+        "8": 3
+      },
+      "Comments": {
+        "6": "",
+        "1": "Satisfactory",
+        "14": "Time: (2:36-2:53)\nLate response for considering consultation",
+        "15": "Detailed Response - clear communication",
+        "16": "Consent denied for video recordings\nSatisfactory",
+        "10": "Time: (15:53-16:14)",
+        "2": "",
+        "8": "Clear communication during handover\nGood"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Identification": 3
+      },
+      "keyword": "Time",
+      "score_matches": 6,
+      "comment_matches": 2,
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_38",
+    "difficulty_mode": "Medium",
+    "question": "Which respondents have a total score for 'Background (history)' and 'Background (examination)' greater than 4?",
+    "answer": "15, 3, 8, 7, 2",
+    "selected_features": [
+      "Background (history)",
+      "Background (examination)"
+    ],
+    "matching_respondents": [
+      "15",
+      "3",
+      "8",
+      "7",
+      "2"
+    ],
+    "reasoning_complexity": 4,
+    "feature_values": {
+      "Background (history)": {
+        "23": 2,
+        "10": 2,
+        "15": 2,
+        "3": 3,
+        "8": 3,
+        "9": 2,
+        "7": 2,
+        "14": 2,
+        "2": 2,
+        "18": 2
+      },
+      "Background (examination)": {
+        "23": 2,
+        "10": 2,
+        "15": 3,
+        "3": 3,
+        "8": 2,
+        "9": 2,
+        "7": 3,
+        "14": 2,
+        "2": 3,
+        "18": 2
+      }
+    },
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "total_score_threshold",
+      "score_fields": [
+        "Background (history)",
+        "Background (examination)"
+      ],
+      "threshold": 4,
+      "comparison": "greater",
+      "matches_found": 5
+    }
+  },
+  {
+    "case_id": "case_39",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 3 on 'Recommendation (clear recommendation)' and whose 'Comments' contain the word 'unclear'.",
+    "answer": "9",
+    "selected_features": [
+      "Recommendation (clear recommendation)",
+      "Comments"
+    ],
+    "matching_respondents": [
+      "9"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Recommendation (clear recommendation)": {
+        "21": 3,
+        "5": 2,
+        "9": 3,
+        "22": 2,
+        "3": 3,
+        "2": 2,
+        "6": 2,
+        "10": 2,
+        "16": 2
+      },
+      "Comments": {
+        "21": "Diagnostic clarity is present\nGood and early assessment of condition is done",
+        "5": "Good clear and precise clinical handover\nGood",
+        "9": "Overall a bit unclear communication reflected",
+        "22": "Clear communication skills\nGood",
+        "3": "The patient/simulation is not oriented in TPP.\nClear communication between Reg and colleague during handover",
+        "2": "",
+        "6": "",
+        "10": "Time: (15:53-16:14)",
+        "16": "Consent denied for video recordings\nSatisfactory"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Recommendation (clear recommendation)": 3
+      },
+      "keyword": "unclear",
+      "score_matches": 3,
+      "comment_matches": 1,
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_40",
+    "difficulty_mode": "Medium",
+    "question": "List all respondents who scored 2 on 'Assessment' and whose 'Comments' contain the word 'Clear'.",
+    "answer": "15, 8, 9, 22",
+    "selected_features": [
+      "Assessment",
+      "Comments"
+    ],
+    "matching_respondents": [
+      "15",
+      "8",
+      "9",
+      "22"
+    ],
+    "reasoning_complexity": 3,
+    "feature_values": {
+      "Assessment": {
+        "10": 2,
+        "15": 2,
+        "4": 2,
+        "22": 2,
+        "23": 3,
+        "13": 2,
+        "9": 2,
+        "16": 3,
+        "8": 2,
+        "2": 3,
+        "19": 2,
+        "1": 3
+      },
+      "Comments": {
+        "10": "Time: (15:53-16:14)",
+        "15": "Detailed Response - clear communication",
+        "4": "Clinical handover and communication skills, satisfactory\nNo panic, no arrest team\nSatisfactory",
+        "22": "Clear communication skills\nGood",
+        "23": "Time: (11:43-11:58)\nTalking to registrav could not summarize the condition of patient very clearly\nDID: Sepsis I Anaphylaxsis given by team",
+        "13": "Time: (10:29-10:54)\nVentricular fibrillation (CVS)\nLack of communication btween 2 main interns\nFurther brief to patient, ask patent concerns",
+        "9": "Overall a bit unclear communication reflected",
+        "16": "Consent denied for video recordings\nSatisfactory",
+        "8": "Clear communication during handover\nGood",
+        "2": "",
+        "19": "Wrong CPR position\nClarity is a bit low over whole case scenario\nSatisfactory",
+        "1": "Satisfactory"
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "score_comment_combination",
+      "score_criteria": {
+        "Assessment": 2
+      },
+      "keyword": "Clear",
+      "score_matches": 8,
+      "comment_matches": 5,
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_41",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose 'Recommendation (clear recommendation)' is higher than the average 'Recommendation (clear recommendation)' for all sessions on the same date.",
+    "answer": "21",
+    "selected_features": [
+      "Recommendation (clear recommendation)",
+      "Date"
+    ],
+    "matching_respondents": [
+      "21"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Recommendation (clear recommendation)": {
+        "11": 3,
+        "20": 2,
+        "9": 3,
+        "1": 2,
+        "3": 3,
+        "8": 2,
+        "22": 2,
+        "21": 3,
+        "10": 2,
+        "17": 3,
+        "13": 2
+      },
+      "Date": {
+        "11": "2025-04-04",
+        "20": "2025-05-02",
+        "9": "2025-05-04",
+        "1": "2025-05-02",
+        "3": "2025-04-04",
+        "8": "2025-05-02",
+        "22": "2025-05-16",
+        "21": "2025-05-16",
+        "10": "2025-03-14",
+        "17": "2025-05-04",
+        "13": "2025-03-14"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "above_date_average",
+      "score_type": "Recommendation (clear recommendation)",
+      "date_averages": {
+        "2025-05-04": 3.0,
+        "2025-03-14": 2.0,
+        "2025-05-02": 2.0,
+        "2025-04-04": 3.0,
+        "2025-05-16": 2.5
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_42",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose 'Identification' is higher than the average 'Identification' for all sessions on the same date.",
+    "answer": "None",
+    "selected_features": [
+      "Identification",
+      "Date"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Identification": {
+        "16": 3,
+        "17": 3,
+        "21": 3,
+        "15": 3,
+        "9": 3,
+        "6": 3,
+        "14": 3,
+        "23": 3,
+        "2": 3
+      },
+      "Date": {
+        "16": "2025-05-02",
+        "17": "2025-05-04",
+        "21": "2025-05-16",
+        "15": "2025-05-04",
+        "9": "2025-05-04",
+        "6": "2025-04-04",
+        "14": "2025-03-14",
+        "23": "2025-03-14",
+        "2": "2025-04-04"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_date_average",
+      "score_type": "Identification",
+      "date_averages": {
+        "2025-05-04": 3.0,
+        "2025-03-14": 3.0,
+        "2025-05-02": 3.0,
+        "2025-04-04": 3.0,
+        "2025-05-16": 3.0
+      },
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_43",
+    "difficulty_mode": "Really Hard",
+    "question": "Which respondents participated in a session where the average 'Assessment' for that session name is greater than 2.0?",
+    "answer": "14, 11, 20, 22, 23, 5",
+    "selected_features": [
+      "Assessment",
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "14",
+      "11",
+      "20",
+      "22",
+      "23",
+      "5"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Assessment": {
+        "12": 2,
+        "14": 3,
+        "11": 3,
+        "21": 2,
+        "4": 2,
+        "6": 2,
+        "20": 3,
+        "22": 2,
+        "23": 3,
+        "8": 2,
+        "5": 3
+      },
+      "SessionName": {
+        "12": "II (Anaphylaxis)",
+        "14": "IV-Hypoglycemia",
+        "11": "IV (AF)",
+        "21": "I (Myocardial infarction)",
+        "4": "III (Sepsis)",
+        "6": "II (Anaphylactic Shock)",
+        "20": "IV (VT)",
+        "22": "IV (VT)",
+        "23": "II-Anaphylaxsis",
+        "8": "III (Sepsis)",
+        "5": "II - Anaphylaxsis"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "high_average_session",
+      "score_type": "Assessment",
+      "threshold": 2.0,
+      "session_averages": {
+        "II (Anaphylaxis)": 2.0,
+        "IV-Hypoglycemia": 3.0,
+        "IV (AF)": 3.0,
+        "I (Myocardial infarction)": 2.0,
+        "III (Sepsis)": 2.0,
+        "II (Anaphylactic Shock)": 2.0,
+        "IV (VT)": 2.5,
+        "II-Anaphylaxsis": 3.0,
+        "II - Anaphylaxsis": 3.0
+      },
+      "qualifying_sessions": [
+        "IV-Hypoglycemia",
+        "IV (AF)",
+        "IV (VT)",
+        "II-Anaphylaxsis",
+        "II - Anaphylaxsis"
+      ],
+      "matches_found": 6
+    }
+  },
+  {
+    "case_id": "case_44",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose 'Background (examination)' is higher than the average 'Background (examination)' for all sessions on the same date.",
+    "answer": "15, 19, 7",
+    "selected_features": [
+      "Background (examination)",
+      "Date"
+    ],
+    "matching_respondents": [
+      "15",
+      "19",
+      "7"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Background (examination)": {
+        "18": 2,
+        "2": 3,
+        "15": 3,
+        "3": 3,
+        "11": 3,
+        "9": 2,
+        "19": 3,
+        "4": 2,
+        "13": 1,
+        "7": 3,
+        "23": 2
+      },
+      "Date": {
+        "18": "2025-05-04",
+        "2": "2025-04-04",
+        "15": "2025-05-04",
+        "3": "2025-04-04",
+        "11": "2025-04-04",
+        "9": "2025-05-04",
+        "19": "2025-05-16",
+        "4": "2025-05-16",
+        "13": "2025-03-14",
+        "7": "2025-03-14",
+        "23": "2025-03-14"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "above_date_average",
+      "score_type": "Background (examination)",
+      "date_averages": {
+        "2025-03-14": 2.0,
+        "2025-05-04": 2.3333333333333335,
+        "2025-04-04": 3.0,
+        "2025-05-16": 2.5
+      },
+      "matches_found": 3
+    }
+  },
+  {
+    "case_id": "case_45",
+    "difficulty_mode": "Really Hard",
+    "question": "List all respondents who scored perfectly on 'Identification' and 'Background (history)' and whose 'Background (examination)' is below the average for all sessions.",
+    "answer": "None",
+    "selected_features": [
+      "Identification",
+      "Background (history)",
+      "Background (examination)"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Identification": {
+        "22": 3,
+        "18": 3,
+        "15": 3,
+        "14": 3,
+        "2": 3,
+        "7": 3,
+        "17": 3,
+        "12": 3
+      },
+      "Background (history)": {
+        "22": 3,
+        "18": 2,
+        "15": 2,
+        "14": 2,
+        "2": 2,
+        "7": 2,
+        "17": 3,
+        "12": 3
+      },
+      "Background (examination)": {
+        "22": 3,
+        "18": 2,
+        "15": 3,
+        "14": 2,
+        "2": 3,
+        "7": 3,
+        "17": 3,
+        "12": 3
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "perfect_scores_below_average",
+      "perfect_score_fields": [
+        "Identification",
+        "Background (history)"
+      ],
+      "below_average_field": "Background (examination)",
+      "overall_average": 2.75,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_46",
+    "difficulty_mode": "Really Hard",
+    "question": "List all respondents who scored perfectly on 'Recommendation (global rating scale)' and 'Recommendation (clear recommendation)' and whose 'Background (history)' is below the average for all sessions.",
+    "answer": "None",
+    "selected_features": [
+      "Recommendation (global rating scale)",
+      "Recommendation (clear recommendation)",
+      "Background (history)"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "16": 3,
+        "21": 3,
+        "15": 2,
+        "2": 1,
+        "7": 2,
+        "9": 2,
+        "5": 3,
+        "10": 2,
+        "8": 3,
+        "12": 3,
+        "22": 3,
+        "20": 3
+      },
+      "Recommendation (clear recommendation)": {
+        "16": 2,
+        "21": 3,
+        "15": 2,
+        "2": 2,
+        "7": 2,
+        "9": 3,
+        "5": 2,
+        "10": 2,
+        "8": 2,
+        "12": 3,
+        "22": 2,
+        "20": 2
+      },
+      "Background (history)": {
+        "16": 3,
+        "21": 3,
+        "15": 2,
+        "2": 2,
+        "7": 2,
+        "9": 2,
+        "5": 3,
+        "10": 2,
+        "8": 3,
+        "12": 3,
+        "22": 3,
+        "20": 2
+      }
+    },
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "perfect_scores_below_average",
+      "perfect_score_fields": [
+        "Recommendation (global rating scale)",
+        "Recommendation (clear recommendation)"
+      ],
+      "below_average_field": "Background (history)",
+      "overall_average": 2.5,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_47",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose 'Background (history)' is higher than the average 'Background (history)' for all sessions on the same date.",
+    "answer": "8",
+    "selected_features": [
+      "Background (history)",
+      "Date"
+    ],
+    "matching_respondents": [
+      "8"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Background (history)": {
+        "21": 3,
+        "20": 2,
+        "8": 3,
+        "6": 3,
+        "10": 2,
+        "18": 2,
+        "1": 2,
+        "14": 2
+      },
+      "Date": {
+        "21": "2025-05-16",
+        "20": "2025-05-02",
+        "8": "2025-05-02",
+        "6": "2025-04-04",
+        "10": "2025-03-14",
+        "18": "2025-05-04",
+        "1": "2025-05-02",
+        "14": "2025-03-14"
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_date_average",
+      "score_type": "Background (history)",
+      "date_averages": {
+        "2025-05-04": 2.0,
+        "2025-03-14": 2.0,
+        "2025-05-02": 2.3333333333333335,
+        "2025-04-04": 3.0,
+        "2025-05-16": 3.0
+      },
+      "matches_found": 1
+    }
+  },
+  {
+    "case_id": "case_48",
+    "difficulty_mode": "Really Hard",
+    "question": "List all respondents who scored perfectly on 'Recommendation (global rating scale)' and 'Situation' and whose 'Identification' is below the average for all sessions.",
+    "answer": "None",
+    "selected_features": [
+      "Recommendation (global rating scale)",
+      "Situation",
+      "Identification"
+    ],
+    "matching_respondents": [],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Recommendation (global rating scale)": {
+        "8": 3,
+        "4": 2,
+        "15": 2,
+        "22": 3,
+        "5": 3,
+        "16": 3,
+        "10": 2,
+        "9": 2
+      },
+      "Situation": {
+        "8": 3,
+        "4": 3,
+        "15": 3,
+        "22": 3,
+        "5": 3,
+        "16": 3,
+        "10": 2,
+        "9": 3
+      },
+      "Identification": {
+        "8": 3,
+        "4": 3,
+        "15": 3,
+        "22": 3,
+        "5": 3,
+        "16": 3,
+        "10": 2,
+        "9": 3
+      }
+    },
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "perfect_scores_below_average",
+      "perfect_score_fields": [
+        "Recommendation (global rating scale)",
+        "Situation"
+      ],
+      "below_average_field": "Identification",
+      "overall_average": 2.875,
+      "matches_found": 0
+    }
+  },
+  {
+    "case_id": "case_49",
+    "difficulty_mode": "Really Hard",
+    "question": "Which respondents participated in a session where the average 'Background (examination)' for that session name is greater than 2.0?",
+    "answer": "16, 15, 5, 7",
+    "selected_features": [
+      "Background (examination)",
+      "SessionName"
+    ],
+    "matching_respondents": [
+      "16",
+      "15",
+      "5",
+      "7"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Background (examination)": {
+        "16": 3,
+        "23": 2,
+        "8": 2,
+        "15": 3,
+        "18": 2,
+        "5": 3,
+        "13": 1,
+        "7": 3,
+        "20": -1,
+        "10": 2,
+        "9": 2
+      },
+      "SessionName": {
+        "16": "I - MI",
+        "23": "II-Anaphylaxsis",
+        "8": "III (Sepsis)",
+        "15": "III - Sepsis",
+        "18": "IV - VT",
+        "5": "II - Anaphylaxsis",
+        "13": "I-VF",
+        "7": "III-Sepsis",
+        "20": "IV (VT)",
+        "10": "(MI)-VT",
+        "9": "II (Anaphylaxsis)"
+      }
+    },
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "high_average_session",
+      "score_type": "Background (examination)",
+      "threshold": 2.0,
+      "session_averages": {
+        "I - MI": 3.0,
+        "II-Anaphylaxsis": 2.0,
+        "III (Sepsis)": 2.0,
+        "III - Sepsis": 3.0,
+        "IV - VT": 2.0,
+        "II - Anaphylaxsis": 3.0,
+        "I-VF": 1.0,
+        "III-Sepsis": 3.0,
+        "IV (VT)": 0,
+        "(MI)-VT": 2.0,
+        "II (Anaphylaxsis)": 2.0
+      },
+      "qualifying_sessions": [
+        "I - MI",
+        "III - Sepsis",
+        "II - Anaphylaxsis",
+        "III-Sepsis"
+      ],
+      "matches_found": 4
+    }
+  },
+  {
+    "case_id": "case_50",
+    "difficulty_mode": "Really Hard",
+    "question": "Find all respondents whose 'Background (history)' is higher than the average 'Background (history)' for all sessions on the same date.",
+    "answer": "17, 12",
+    "selected_features": [
+      "Background (history)",
+      "Date"
+    ],
+    "matching_respondents": [
+      "17",
+      "12"
+    ],
+    "reasoning_complexity": 5,
+    "feature_values": {
+      "Background (history)": {
+        "3": 3,
+        "9": 2,
+        "14": 2,
+        "11": 3,
+        "17": 3,
+        "22": 3,
+        "1": 2,
+        "10": 2,
+        "12": 3
+      },
+      "Date": {
+        "3": "2025-04-04",
+        "9": "2025-05-04",
+        "14": "2025-03-14",
+        "11": "2025-04-04",
+        "17": "2025-05-04",
+        "22": "2025-05-16",
+        "1": "2025-05-02",
+        "10": "2025-03-14",
+        "12": "2025-05-02"
+      }
+    },
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_date_average",
+      "score_type": "Background (history)",
+      "date_averages": {
+        "2025-05-04": 2.5,
+        "2025-03-14": 2.0,
+        "2025-05-02": 2.5,
+        "2025-04-04": 3.0,
+        "2025-05-16": 3.0
+      },
+      "matches_found": 2
+    }
+  }
+]

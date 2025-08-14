@@ -1,0 +1,1698 @@
+[
+  {
+    "case_id": "case_1",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Gender' = 'Female' and 'Medical Condition' = 'Cancer'.",
+    "answer": "1",
+    "selected_features": [
+      "Gender",
+      "Medical Condition"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "A",
+        "decoded_value": "Female"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "C",
+        "decoded_value": "Cancer"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 3,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Gender",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "C",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_2",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Gender' = 'Female' and 'Admission Type' = 'Urgent'.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Admission Type"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "A",
+        "decoded_value": "Female"
+      },
+      {
+        "field": "Admission Type",
+        "value": "C",
+        "decoded_value": "Urgent"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Gender",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Admission Type",
+          "value": "C",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_3",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Test Results' of 'Abnormal'.",
+    "answer": "4",
+    "selected_features": [
+      "Test Results"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Test Results",
+        "value": "A",
+        "decoded_value": "Abnormal"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Test Results",
+      "filter_value": {
+        "raw": "A",
+        "decoded": "Abnormal"
+      },
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_4",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Admission Type' of 'Urgent'.",
+    "answer": "2",
+    "selected_features": [
+      "Admission Type"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Admission Type",
+        "value": "C",
+        "decoded_value": "Urgent"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Admission Type",
+      "filter_value": {
+        "raw": "C",
+        "decoded": "Urgent"
+      },
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_5",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Gender' of 'Female'.",
+    "answer": "3",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "A",
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Gender",
+      "filter_value": {
+        "raw": "A",
+        "decoded": "Female"
+      },
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_6",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Test Results' of 'Inconclusive'.",
+    "answer": "2",
+    "selected_features": [
+      "Test Results"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Test Results",
+        "value": "B",
+        "decoded_value": "Inconclusive"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Test Results",
+      "filter_value": {
+        "raw": "B",
+        "decoded": "Inconclusive"
+      },
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_7",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Billing Amount' is less than 20000.",
+    "answer": "1",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Billing Amount",
+        "threshold": 20000,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Billing Amount",
+      "threshold": 20000,
+      "comparison": "less",
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_8",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Billing Amount' is less than 30000.",
+    "answer": "8",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Billing Amount",
+        "threshold": 30000,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Billing Amount",
+      "threshold": 30000,
+      "comparison": "less",
+      "matching_count": 8
+    }
+  },
+  {
+    "case_id": "case_9",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Billing Amount' is less than 25000.",
+    "answer": "3",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Billing Amount",
+        "threshold": 25000,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Billing Amount",
+      "threshold": 25000,
+      "comparison": "less",
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_10",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is greater than 80.",
+    "answer": "2",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 80,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 80,
+      "comparison": "greater",
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_11",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Gender' = 'Female' and 'Medication' = 'Aspirin'.",
+    "answer": "2",
+    "selected_features": [
+      "Gender",
+      "Medication"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "A",
+        "decoded_value": "Female"
+      },
+      {
+        "field": "Medication",
+        "value": "A",
+        "decoded_value": "Aspirin"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Gender",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medication",
+          "value": "A",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_12",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is less than 30.",
+    "answer": "0",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 30,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 30,
+      "comparison": "less",
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_13",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Medication' = 'Ibuprofen' and 'Test Results' = 'Normal'.",
+    "answer": "2",
+    "selected_features": [
+      "Medication",
+      "Test Results"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Medication",
+        "value": "B",
+        "decoded_value": "Ibuprofen"
+      },
+      {
+        "field": "Test Results",
+        "value": "C",
+        "decoded_value": "Normal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Medication",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Test Results",
+          "value": "C",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_14",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Medical Condition' = 'Diabetes' and 'Insurance Provider' = 'Medicare'.",
+    "answer": "2",
+    "selected_features": [
+      "Medical Condition",
+      "Insurance Provider"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Medical Condition",
+        "value": "D",
+        "decoded_value": "Diabetes"
+      },
+      {
+        "field": "Insurance Provider",
+        "value": "D",
+        "decoded_value": "Medicare"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Medical Condition",
+          "value": "D",
+          "comparison": "equal"
+        },
+        {
+          "field": "Insurance Provider",
+          "value": "D",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_15",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is less than 50.",
+    "answer": "4",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 50,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 50,
+      "comparison": "less",
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_16",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Test Results' of 'Normal'.",
+    "answer": "2",
+    "selected_features": [
+      "Test Results"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Test Results",
+        "value": "C",
+        "decoded_value": "Normal"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Test Results",
+      "filter_value": {
+        "raw": "C",
+        "decoded": "Normal"
+      },
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_17",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is greater than 80.",
+    "answer": "1",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 80,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 80,
+      "comparison": "greater",
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_18",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Billing Amount' is greater than 15000.",
+    "answer": "4",
+    "selected_features": [
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Billing Amount",
+        "threshold": 15000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Billing Amount",
+      "threshold": 15000,
+      "comparison": "greater",
+      "matching_count": 4
+    }
+  },
+  {
+    "case_id": "case_19",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Medical Condition' = 'Arthritis' and 'Test Results' = 'Abnormal'.",
+    "answer": "1",
+    "selected_features": [
+      "Medical Condition",
+      "Test Results"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Medical Condition",
+        "value": "A",
+        "decoded_value": "Arthritis"
+      },
+      {
+        "field": "Test Results",
+        "value": "A",
+        "decoded_value": "Abnormal"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Medical Condition",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Test Results",
+          "value": "A",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_20",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Medical Condition' = 'Hypertension' and 'Admission Type' = 'Urgent'.",
+    "answer": "1",
+    "selected_features": [
+      "Medical Condition",
+      "Admission Type"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Medical Condition",
+        "value": "E",
+        "decoded_value": "Hypertension"
+      },
+      {
+        "field": "Admission Type",
+        "value": "C",
+        "decoded_value": "Urgent"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Medical Condition",
+          "value": "E",
+          "comparison": "equal"
+        },
+        {
+          "field": "Admission Type",
+          "value": "C",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_21",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Insurance Provider' = 'Aetna' and 'Gender' = 'Male'.",
+    "answer": "1",
+    "selected_features": [
+      "Insurance Provider",
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Insurance Provider",
+        "value": "A",
+        "decoded_value": "Aetna"
+      },
+      {
+        "field": "Gender",
+        "value": "B",
+        "decoded_value": "Male"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Insurance Provider",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Gender",
+          "value": "B",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_22",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is less than 40.",
+    "answer": "2",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 40,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 40,
+      "comparison": "less",
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_23",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with a 'Gender' of 'Female'.",
+    "answer": "9",
+    "selected_features": [
+      "Gender"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "A",
+        "decoded_value": "Female"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "categorical_single_filter",
+      "field": "Gender",
+      "filter_value": {
+        "raw": "A",
+        "decoded": "Female"
+      },
+      "matching_count": 9
+    }
+  },
+  {
+    "case_id": "case_24",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents with 'Admission Type' = 'Elective' and 'Insurance Provider' = 'UnitedHealthcare'.",
+    "answer": "1",
+    "selected_features": [
+      "Admission Type",
+      "Insurance Provider"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Admission Type",
+        "value": "A",
+        "decoded_value": "Elective"
+      },
+      {
+        "field": "Insurance Provider",
+        "value": "E",
+        "decoded_value": "UnitedHealthcare"
+      }
+    ],
+    "reasoning_complexity": 2,
+    "case_respondent_count": 5,
+    "calculation_details": {
+      "method": "multiple_categorical_conditions",
+      "conditions": [
+        {
+          "field": "Admission Type",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Insurance Provider",
+          "value": "E",
+          "comparison": "equal"
+        }
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_25",
+    "difficulty_mode": "Easy",
+    "question": "Count the respondents whose 'Age' is greater than 50.",
+    "answer": "2",
+    "selected_features": [
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Age",
+        "threshold": 50,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 1,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "numerical_threshold_filter",
+      "field": "Age",
+      "threshold": 50,
+      "comparison": "greater",
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_26",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Medication' = 'Lipitor' and 'Gender' = 'Male' who have a 'Age' greater 50.",
+    "answer": "0",
+    "selected_features": [
+      "Medication",
+      "Gender",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Medication",
+        "value": "C",
+        "comparison": "equal"
+      },
+      {
+        "field": "Gender",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Age",
+        "value": 50,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Medication",
+          "value": "C",
+          "comparison": "equal"
+        },
+        {
+          "field": "Gender",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Age",
+          "value": 50,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_27",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose calculated length of stay is between 5 and 10 days and who have 'Insurance Provider' = 'Aetna'.",
+    "answer": "0",
+    "selected_features": [
+      "Date of Admission",
+      "Discharge Date",
+      "Insurance Provider"
+    ],
+    "filter_conditions": [
+      {
+        "field": "length_of_stay",
+        "min_days": 5,
+        "max_days": 10
+      },
+      {
+        "field": "Insurance Provider",
+        "value": "A",
+        "decoded_value": "Aetna"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "length_of_stay_plus_condition",
+      "length_of_stay_range": [
+        5,
+        10
+      ],
+      "condition": {
+        "field": "Insurance Provider",
+        "value": "A"
+      },
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_28",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Blood Type' = 'O-' and 'Medical Condition' = 'Cancer' who have a 'Age' less 60.",
+    "answer": "0",
+    "selected_features": [
+      "Blood Type",
+      "Medical Condition",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Blood Type",
+        "value": "H",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "C",
+        "comparison": "equal"
+      },
+      {
+        "field": "Age",
+        "value": 60,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Blood Type",
+          "value": "H",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "C",
+          "comparison": "equal"
+        },
+        {
+          "field": "Age",
+          "value": 60,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_29",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose calculated length of stay is between 7 and 12 days and who have 'Blood Type' = 'O+'.",
+    "answer": "0",
+    "selected_features": [
+      "Date of Admission",
+      "Discharge Date",
+      "Blood Type"
+    ],
+    "filter_conditions": [
+      {
+        "field": "length_of_stay",
+        "min_days": 7,
+        "max_days": 12
+      },
+      {
+        "field": "Blood Type",
+        "value": "G",
+        "decoded_value": "O+"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "length_of_stay_plus_condition",
+      "length_of_stay_range": [
+        7,
+        12
+      ],
+      "condition": {
+        "field": "Blood Type",
+        "value": "G"
+      },
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_30",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Gender' = 'Male' and 'Medication' = 'Lipitor' who have a 'Age' less 60.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Medication",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medication",
+        "value": "C",
+        "comparison": "equal"
+      },
+      {
+        "field": "Age",
+        "value": 60,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Gender",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medication",
+          "value": "C",
+          "comparison": "equal"
+        },
+        {
+          "field": "Age",
+          "value": 60,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_31",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Gender' = 'Male' and 'Admission Type' = 'Urgent' who have a 'Billing Amount' greater 30000.",
+    "answer": "0",
+    "selected_features": [
+      "Gender",
+      "Admission Type",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Gender",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Admission Type",
+        "value": "C",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 30000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Gender",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Admission Type",
+          "value": "C",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 30000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_32",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents from 'HOSP_106' with 'Asthma' who have a billing amount greater than 25000.",
+    "answer": "0",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Hospital",
+        "value": "HOSP_106",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 25000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "hospital_condition_billing_filter",
+      "conditions": [
+        {
+          "field": "Hospital",
+          "value": "HOSP_106",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 25000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_33",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose calculated length of stay is between 10 and 15 days and who have 'Admission Type' = 'Emergency'.",
+    "answer": "0",
+    "selected_features": [
+      "Date of Admission",
+      "Discharge Date",
+      "Admission Type"
+    ],
+    "filter_conditions": [
+      {
+        "field": "length_of_stay",
+        "min_days": 10,
+        "max_days": 15
+      },
+      {
+        "field": "Admission Type",
+        "value": "B",
+        "decoded_value": "Emergency"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "length_of_stay_plus_condition",
+      "length_of_stay_range": [
+        10,
+        15
+      ],
+      "condition": {
+        "field": "Admission Type",
+        "value": "B"
+      },
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_34",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents whose calculated length of stay is between 5 and 20 days and who have 'Medication' = 'Lipitor'.",
+    "answer": "0",
+    "selected_features": [
+      "Date of Admission",
+      "Discharge Date",
+      "Medication"
+    ],
+    "filter_conditions": [
+      {
+        "field": "length_of_stay",
+        "min_days": 5,
+        "max_days": 20
+      },
+      {
+        "field": "Medication",
+        "value": "C",
+        "decoded_value": "Lipitor"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "length_of_stay_plus_condition",
+      "length_of_stay_range": [
+        5,
+        20
+      ],
+      "condition": {
+        "field": "Medication",
+        "value": "C"
+      },
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_35",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents from 'HOSP_143' with 'Arthritis' who have a billing amount greater than 25000.",
+    "answer": "0",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Hospital",
+        "value": "HOSP_143",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "A",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 25000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "hospital_condition_billing_filter",
+      "conditions": [
+        {
+          "field": "Hospital",
+          "value": "HOSP_143",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 25000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_36",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents from 'HOSP_95' with 'Asthma' who have a billing amount greater than 20000.",
+    "answer": "0",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Hospital",
+        "value": "HOSP_95",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 20000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "hospital_condition_billing_filter",
+      "conditions": [
+        {
+          "field": "Hospital",
+          "value": "HOSP_95",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 20000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_37",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Admission Type' = 'Emergency' and 'Medication' = 'Paracetamol' who have a 'Age' greater 70.",
+    "answer": "0",
+    "selected_features": [
+      "Admission Type",
+      "Medication",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Admission Type",
+        "value": "B",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medication",
+        "value": "D",
+        "comparison": "equal"
+      },
+      {
+        "field": "Age",
+        "value": 70,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Admission Type",
+          "value": "B",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medication",
+          "value": "D",
+          "comparison": "equal"
+        },
+        {
+          "field": "Age",
+          "value": 70,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_38",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents from 'HOSP_102' with 'Hypertension' who have a billing amount greater than 20000.",
+    "answer": "0",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Hospital",
+        "value": "HOSP_102",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "E",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 20000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "hospital_condition_billing_filter",
+      "conditions": [
+        {
+          "field": "Hospital",
+          "value": "HOSP_102",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "E",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 20000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_39",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents from 'HOSP_67' with 'Arthritis' who have a billing amount greater than 25000.",
+    "answer": "0",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition",
+      "Billing Amount"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Hospital",
+        "value": "HOSP_67",
+        "comparison": "equal"
+      },
+      {
+        "field": "Medical Condition",
+        "value": "A",
+        "comparison": "equal"
+      },
+      {
+        "field": "Billing Amount",
+        "value": 25000,
+        "comparison": "greater"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "hospital_condition_billing_filter",
+      "conditions": [
+        {
+          "field": "Hospital",
+          "value": "HOSP_67",
+          "comparison": "equal"
+        },
+        {
+          "field": "Medical Condition",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Billing Amount",
+          "value": 25000,
+          "comparison": "greater"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_40",
+    "difficulty_mode": "Medium",
+    "question": "Count the respondents with 'Test Results' = 'Abnormal' and 'Admission Type' = 'Urgent' who have a 'Age' less 50.",
+    "answer": "0",
+    "selected_features": [
+      "Test Results",
+      "Admission Type",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Test Results",
+        "value": "A",
+        "comparison": "equal"
+      },
+      {
+        "field": "Admission Type",
+        "value": "C",
+        "comparison": "equal"
+      },
+      {
+        "field": "Age",
+        "value": 50,
+        "comparison": "less"
+      }
+    ],
+    "reasoning_complexity": 3,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "three_condition_filter",
+      "conditions": [
+        {
+          "field": "Test Results",
+          "value": "A",
+          "comparison": "equal"
+        },
+        {
+          "field": "Admission Type",
+          "value": "C",
+          "comparison": "equal"
+        },
+        {
+          "field": "Age",
+          "value": 50,
+          "comparison": "less"
+        }
+      ],
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_41",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Age' that is higher than the average 'Age' for their 'Medical Condition'.",
+    "answer": "3",
+    "selected_features": [
+      "Age",
+      "Medical Condition"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 9,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Age",
+      "grouping_field": "Medical Condition",
+      "matching_count": 3
+    }
+  },
+  {
+    "case_id": "case_42",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who are in a 'Hospital' where the number of individuals with 'Medical Condition = 'Cancer'' is greater than the number with 'Medical Condition = 'Asthma''.",
+    "answer": "2",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 11,
+    "calculation_details": {
+      "method": "group_size_comparison",
+      "grouping_field": "Hospital",
+      "condition_a": "C",
+      "condition_b": "B",
+      "qualifying_groups": [
+        "HOSP_44",
+        "HOSP_63"
+      ],
+      "matching_count": 2
+    }
+  },
+  {
+    "case_id": "case_43",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Billing Amount' that is higher than the average 'Billing Amount' for their 'Insurance Provider'.",
+    "answer": "6",
+    "selected_features": [
+      "Billing Amount",
+      "Insurance Provider"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Billing Amount",
+      "grouping_field": "Insurance Provider",
+      "matching_count": 6
+    }
+  },
+  {
+    "case_id": "case_44",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with 'Insurance Provider = 'Blue Cross'' who have a 'Age' that is lower than the overall average for all respondents.",
+    "answer": "1",
+    "selected_features": [
+      "Insurance Provider",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Insurance Provider",
+        "value": "B",
+        "decoded_value": "Blue Cross"
+      }
+    ],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "condition_below_overall_average",
+      "condition_field": "Insurance Provider",
+      "condition_value": "B",
+      "numerical_field": "Age",
+      "overall_average": 50.285714285714285,
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_45",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Age' that is higher than the average 'Age' for their 'Hospital'.",
+    "answer": "0",
+    "selected_features": [
+      "Age",
+      "Hospital"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Age",
+      "grouping_field": "Hospital",
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_46",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Billing Amount' that is higher than the average 'Billing Amount' for their 'Hospital'.",
+    "answer": "0",
+    "selected_features": [
+      "Billing Amount",
+      "Hospital"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 7,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Billing Amount",
+      "grouping_field": "Hospital",
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_47",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with 'Insurance Provider = 'Blue Cross'' who have a 'Age' that is lower than the overall average for all respondents.",
+    "answer": "1",
+    "selected_features": [
+      "Insurance Provider",
+      "Age"
+    ],
+    "filter_conditions": [
+      {
+        "field": "Insurance Provider",
+        "value": "B",
+        "decoded_value": "Blue Cross"
+      }
+    ],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 10,
+    "calculation_details": {
+      "method": "condition_below_overall_average",
+      "condition_field": "Insurance Provider",
+      "condition_value": "B",
+      "numerical_field": "Age",
+      "overall_average": 46.7,
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_48",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents who are in a 'Hospital' where the number of individuals with 'Medical Condition = 'Diabetes'' is greater than the number with 'Medical Condition = 'Hypertension''.",
+    "answer": "1",
+    "selected_features": [
+      "Hospital",
+      "Medical Condition"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 6,
+    "calculation_details": {
+      "method": "group_size_comparison",
+      "grouping_field": "Hospital",
+      "condition_a": "D",
+      "condition_b": "E",
+      "qualifying_groups": [
+        "HOSP_24"
+      ],
+      "matching_count": 1
+    }
+  },
+  {
+    "case_id": "case_49",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Age' that is higher than the average 'Age' for their 'Hospital'.",
+    "answer": "0",
+    "selected_features": [
+      "Age",
+      "Hospital"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 12,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Age",
+      "grouping_field": "Hospital",
+      "matching_count": 0
+    }
+  },
+  {
+    "case_id": "case_50",
+    "difficulty_mode": "Really Hard",
+    "question": "Count the respondents with a 'Billing Amount' that is higher than the average 'Billing Amount' for their 'Medical Condition'.",
+    "answer": "4",
+    "selected_features": [
+      "Billing Amount",
+      "Medical Condition"
+    ],
+    "filter_conditions": [],
+    "reasoning_complexity": 5,
+    "case_respondent_count": 8,
+    "calculation_details": {
+      "method": "above_group_average",
+      "numerical_field": "Billing Amount",
+      "grouping_field": "Medical Condition",
+      "matching_count": 4
+    }
+  }
+]
