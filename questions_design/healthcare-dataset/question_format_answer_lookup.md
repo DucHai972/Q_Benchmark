@@ -2,7 +2,7 @@
 Logic: The respondent is identified using one or two direct and explicit pieces of information. This requires no complex calculations.
 
 Format Examples:
-What is the [Feature] of the respondent named '[Name]'?
+What is the [Feature] of the respondent '[ID]'?
 
 What is the [Feature] of the [Superlative: e.g., oldest, youngest] respondent?
 
