@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,rule_based_querying,Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?,"Survey Data
+case_2,rule_based_querying,Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -106,7 +106,7 @@ Respondent 15:
   Recommendation (global rating scale): 2
   Comments: Detailed Response - clear communication
 
-","['8', '11', '3']","<example>
+""""""","""""""['8', '11', '3']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -348,16 +348,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?
-</task>","8, 11, 3",False
-case_3,rule_based_querying,Find all respondents whose 'Recommendation (clear recommendation)' score is between 0 and 2.,"Survey Data
+</task>""""""","8, 11, 3",False
+case_3,rule_based_querying,Find all respondents whose 'Recommendation (clear recommendation)' score is between 0 and 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -505,7 +505,7 @@ Respondent 22:
   Comments: Clear communication skills
 Good
 
-","['18', '7', '2', '13', '20', '4', '22']","<example>
+""""""","""""""['18', '7', '2', '13', '20', '4', '22']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -829,16 +829,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Recommendation (clear recommendation)' score is between 0 and 2.
-</task>",[],False
-case_4,rule_based_querying,List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 0.,"Survey Data
+</task>""""""",[],False
+case_4,rule_based_querying,List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 0.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -957,7 +957,7 @@ Respondent 4:
 No panic, no arrest team
 Satisfactory
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -1223,16 +1223,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 0.
-</task>",[],True
-case_5,rule_based_querying,List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 2.,"Survey Data
+</task>""""""",[],True
+case_5,rule_based_querying,List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -1405,7 +1405,7 @@ Respondent 17:
   Comments: Concise - clear
 Satisfactory
 
-",['10'],"<example>
+""""""",['10'],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -1779,16 +1779,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the '(MI)-VT' session whose 'Identification' is exactly 2.
-</task>",10,False
-case_6,rule_based_querying,List all respondents from the 'III - Sepsis' session whose 'Assessment' is exactly 2.,"Survey Data
+</task>""""""",10,False
+case_6,rule_based_querying,List all respondents from the 'III - Sepsis' session whose 'Assessment' is exactly 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -1936,7 +1936,7 @@ Respondent 14:
   Comments: Time: (2:36-2:53)
 Late response for considering consultation
 
-",['15'],"<example>
+""""""",['15'],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -2260,16 +2260,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'III - Sepsis' session whose 'Assessment' is exactly 2.
-</task>",15,False
-case_7,rule_based_querying,List all respondents from the 'MI' session whose 'Assessment' is exactly 2.,"Survey Data
+</task>""""""",15,False
+case_7,rule_based_querying,List all respondents from the 'MI' session whose 'Assessment' is exactly 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -2411,7 +2411,7 @@ Respondent 9:
   Recommendation (global rating scale): 2
   Comments: Overall a bit unclear communication reflected
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -2723,16 +2723,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'MI' session whose 'Assessment' is exactly 2.
-</task>",[],True
-case_8,rule_based_querying,Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 3.,"Survey Data
+</task>""""""",[],True
+case_8,rule_based_querying,Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 3.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -2891,7 +2891,7 @@ Respondent 14:
   Comments: Time: (2:36-2:53)
 Late response for considering consultation
 
-","['10', '5', '7', '11', '8', '13', '19', '16', '9', '20', '14']","<example>
+""""""","""""""['10', '5', '7', '11', '8', '13', '19', '16', '9', '20', '14']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -3237,16 +3237,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 3.
-</task>","10, 5, 7, 11, 8, 13, 19, 16, 9, 20, 14",False
-case_9,rule_based_querying,List all respondents from the 'II (Anaphylaxis)' session whose 'Identification' is exactly 0.,"Survey Data
+</task>""""""","10, 5, 7, 11, 8, 13, 19, 16, 9, 20, 14",False
+case_9,rule_based_querying,List all respondents from the 'II (Anaphylaxis)' session whose 'Identification' is exactly 0.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -3390,7 +3390,7 @@ Respondent 17:
   Comments: Concise - clear
 Satisfactory
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -3706,16 +3706,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'II (Anaphylaxis)' session whose 'Identification' is exactly 0.
-</task>",[],True
-case_10,rule_based_querying,Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?,"Survey Data
+</task>""""""",[],True
+case_10,rule_based_querying,Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -3887,7 +3887,7 @@ Respondent 19:
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-","['6', '21', '20', '3', '22', '19']","<example>
+""""""","""""""['6', '21', '20', '3', '22', '19']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -4259,16 +4259,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents scored higher than 2 on 'Recommendation (global rating scale)'?
-</task>","6, 21, 20, 3, 22, 19",False
-case_11,rule_based_querying,List all respondents from the 'III-Sepsis' session whose 'Background (examination)' is exactly 2.,"Survey Data
+</task>""""""","6, 21, 20, 3, 22, 19",False
+case_11,rule_based_querying,List all respondents from the 'III-Sepsis' session whose 'Background (examination)' is exactly 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -4385,7 +4385,7 @@ Respondent 2:
   Recommendation (global rating scale): 1
   Comments: 
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -4647,16 +4647,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'III-Sepsis' session whose 'Background (examination)' is exactly 2.
-</task>",[],True
-case_12,rule_based_querying,Find all respondents whose 'Assessment' score is between 0 and 1.,"Survey Data
+</task>""""""",[],True
+case_12,rule_based_querying,Find all respondents whose 'Assessment' score is between 0 and 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -4828,7 +4828,7 @@ Respondent 5:
   Comments: Good clear and precise clinical handover
 Good
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -5200,16 +5200,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Assessment' score is between 0 and 1.
-</task>",[],True
-case_13,rule_based_querying,List all respondents from the 'II (Anaphylactic Shock)' session whose 'Background (history)' is exactly 3.,"Survey Data
+</task>""""""",[],True
+case_13,rule_based_querying,List all respondents from the 'II (Anaphylactic Shock)' session whose 'Background (history)' is exactly 3.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -5344,7 +5344,7 @@ Respondent 18:
   Comments: Not very concise or clear communication
 Satisfactory
 
-",['6'],"<example>
+""""""",['6'],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -5642,16 +5642,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'II (Anaphylactic Shock)' session whose 'Background (history)' is exactly 3.
-</task>",6,False
-case_14,rule_based_querying,Find all respondents whose 'Assessment' score is between 0 and 1.,"Survey Data
+</task>""""""",6,False
+case_14,rule_based_querying,Find all respondents whose 'Assessment' score is between 0 and 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -5773,7 +5773,7 @@ Respondent 23:
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -6045,16 +6045,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Assessment' score is between 0 and 1.
-</task>",[],True
-case_15,rule_based_querying,List all respondents from the 'MI' session whose 'Recommendation (global rating scale)' is exactly 0.,"Survey Data
+</task>""""""",[],True
+case_15,rule_based_querying,List all respondents from the 'MI' session whose 'Recommendation (global rating scale)' is exactly 0.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -6213,7 +6213,7 @@ Respondent 14:
   Comments: Time: (2:36-2:53)
 Late response for considering consultation
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -6559,16 +6559,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'MI' session whose 'Recommendation (global rating scale)' is exactly 0.
-</task>",[],True
-case_16,rule_based_querying,Which respondents scored higher than 1 on 'Situation'?,"Survey Data
+</task>""""""",[],True
+case_16,rule_based_querying,Which respondents scored higher than 1 on 'Situation'?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -6737,7 +6737,7 @@ Respondent 9:
   Recommendation (global rating scale): 2
   Comments: Overall a bit unclear communication reflected
 
-","['2', '21', '1', '6', '3', '16', '14', '11', '10', '17', '23', '9']","<example>
+""""""","""""""['2', '21', '1', '6', '3', '16', '14', '11', '10', '17', '23', '9']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -7103,16 +7103,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents scored higher than 1 on 'Situation'?
-</task>","2, 21, 1, 6, 3, 16, 14, 11, 10, 17, 23, 9",False
-case_17,rule_based_querying,Which respondents scored higher than 2 on 'Assessment'?,"Survey Data
+</task>""""""","2, 21, 1, 6, 3, 16, 14, 11, 10, 17, 23, 9",False
+case_17,rule_based_querying,Which respondents scored higher than 2 on 'Assessment'?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -7196,7 +7196,7 @@ Respondent 16:
   Comments: Consent denied for video recordings
 Satisfactory
 
-","['23', '16']","<example>
+""""""","""""""['23', '16']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -7392,16 +7392,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents scored higher than 2 on 'Assessment'?
-</task>","23, 16",False
-case_18,rule_based_querying,List all respondents from the 'V (Hypoglycemia)' session whose 'Background (examination)' is exactly 1.,"Survey Data
+</task>""""""","23, 16",False
+case_18,rule_based_querying,List all respondents from the 'V (Hypoglycemia)' session whose 'Background (examination)' is exactly 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -7533,7 +7533,7 @@ Respondent 1:
   Recommendation (global rating scale): 2
   Comments: Satisfactory
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -7825,16 +7825,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'V (Hypoglycemia)' session whose 'Background (examination)' is exactly 1.
-</task>",[],True
-case_19,rule_based_querying,Find all respondents whose 'Background (examination)' score is between 0 and 1.,"Survey Data
+</task>""""""",[],True
+case_19,rule_based_querying,Find all respondents whose 'Background (examination)' score is between 0 and 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -7957,7 +7957,7 @@ Respondent 21:
   Comments: Diagnostic clarity is present
 Good and early assessment of condition is done
 
-","['13', '21']","<example>
+""""""","""""""['13', '21']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -8231,16 +8231,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Background (examination)' score is between 0 and 1.
-</task>","13, 21",False
-case_20,rule_based_querying,Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 2.,"Survey Data
+</task>""""""","13, 21",False
+case_20,rule_based_querying,Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -8388,7 +8388,7 @@ Respondent 16:
   Comments: Consent denied for video recordings
 Satisfactory
 
-","['13', '17', '2', '4', '14']","<example>
+""""""","""""""['13', '17', '2', '4', '14']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -8712,16 +8712,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Recommendation (global rating scale)' score is between 1 and 2.
-</task>",[],False
-case_21,rule_based_querying,Find all respondents whose 'Background (history)' score is between 0 and 2.,"Survey Data
+</task>""""""",[],False
+case_21,rule_based_querying,Find all respondents whose 'Background (history)' score is between 0 and 2.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -8818,7 +8818,7 @@ Respondent 23:
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
 
-","['20', '13', '23']","<example>
+""""""","""""""['20', '13', '23']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -9040,16 +9040,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Background (history)' score is between 0 and 2.
-</task>","20, 13, 23",False
-case_22,rule_based_querying,List all respondents from the 'I (Myocardial infarction)' session whose 'Background (examination)' is exactly 3.,"Survey Data
+</task>""""""","20, 13, 23",False
+case_22,rule_based_querying,List all respondents from the 'I (Myocardial infarction)' session whose 'Background (examination)' is exactly 3.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -9130,7 +9130,7 @@ Respondent 8:
   Comments: Clear communication during handover
 Good
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -9320,16 +9320,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'I (Myocardial infarction)' session whose 'Background (examination)' is exactly 3.
-</task>",[],True
-case_23,rule_based_querying,Find all respondents whose 'Background (examination)' score is between 0 and 1.,"Survey Data
+</task>""""""",[],True
+case_23,rule_based_querying,Find all respondents whose 'Background (examination)' score is between 0 and 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -9480,7 +9480,7 @@ Respondent 4:
 No panic, no arrest team
 Satisfactory
 
-",['13'],"<example>
+""""""",['13'],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -9810,16 +9810,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose 'Background (examination)' score is between 0 and 1.
-</task>",[],False
-case_24,rule_based_querying,List all respondents from the 'II - Anaphylaxsis' session whose 'Background (examination)' is exactly 1.,"Survey Data
+</task>""""""",[],False
+case_24,rule_based_querying,List all respondents from the 'II - Anaphylaxsis' session whose 'Background (examination)' is exactly 1.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -9915,7 +9915,7 @@ Respondent 20:
   Recommendation (global rating scale): 3
   Comments: Good
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -10135,16 +10135,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'II - Anaphylaxsis' session whose 'Background (examination)' is exactly 1.
-</task>",[],True
-case_25,rule_based_querying,List all respondents from the 'MI' session whose 'Background (history)' is exactly 0.,"Survey Data
+</task>""""""",[],True
+case_25,rule_based_querying,List all respondents from the 'MI' session whose 'Background (history)' is exactly 0.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -10288,7 +10288,7 @@ Respondent 21:
   Comments: Diagnostic clarity is present
 Good and early assessment of condition is done
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -10604,16 +10604,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents from the 'MI' session whose 'Background (history)' is exactly 0.
-</task>",[],True
-case_26,rule_based_querying,Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 1 and a 'Recommendation (global rating scale)' of less than 2?,"Survey Data
+</task>""""""",[],True
+case_26,rule_based_querying,Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 1 and a 'Recommendation (global rating scale)' of less than 2?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -10706,7 +10706,7 @@ Respondent 17:
   Comments: Concise - clear
 Satisfactory
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -10920,16 +10920,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 1 and a 'Recommendation (global rating scale)' of less than 2?
-</task>",[],True
-case_27,rule_based_querying,Which respondents from sessions on '2025-03-14' have a 'Recommendation (global rating scale)' of 3 and a 'Identification' of less than 2?,"Survey Data
+</task>""""""",[],True
+case_27,rule_based_querying,Which respondents from sessions on '2025-03-14' have a 'Recommendation (global rating scale)' of 3 and a 'Identification' of less than 2?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -11089,7 +11089,7 @@ Respondent 7:
   Recommendation (global rating scale): 2
   Comments: Time: (1:00-1:17)
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -11437,16 +11437,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents from sessions on '2025-03-14' have a 'Recommendation (global rating scale)' of 3 and a 'Identification' of less than 2?
-</task>",[],True
-case_28,rule_based_querying,Find all respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 3.,"Survey Data
+</task>""""""",[],True
+case_28,rule_based_querying,Find all respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 3.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -11610,7 +11610,7 @@ Respondent 14:
   Comments: Time: (2:36-2:53)
 Late response for considering consultation
 
-","['3', '18', '8', '19', '17', '6', '22', '23', '5', '14']","<example>
+""""""","""""""['3', '18', '8', '19', '17', '6', '22', '23', '5', '14']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -11966,16 +11966,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 3.
-</task>","3, 18, 8, 19, 17, 6, 22, 23, 5, 14",False
-case_29,rule_based_querying,List all respondents whose 'Assessment' score is equal to their 'Situation' score.,"Survey Data
+</task>""""""","3, 18, 8, 19, 17, 6, 22, 23, 5, 14",False
+case_29,rule_based_querying,List all respondents whose 'Assessment' score is equal to their 'Situation' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -12108,7 +12108,7 @@ Respondent 8:
   Comments: Clear communication during handover
 Good
 
-","['16', '5', '6', '14', '10']","<example>
+""""""","""""""['16', '5', '6', '14', '10']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -12402,16 +12402,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Assessment' score is equal to their 'Situation' score.
-</task>","16, 5, 6, 14, 10",False
-case_30,rule_based_querying,Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 2 and a 'Situation' of less than 2?,"Survey Data
+</task>""""""","16, 5, 6, 14, 10",False
+case_30,rule_based_querying,Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 2 and a 'Situation' of less than 2?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -12503,7 +12503,7 @@ Respondent 15:
   Recommendation (global rating scale): 2
   Comments: Detailed Response - clear communication
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -12715,16 +12715,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents from sessions on '2025-05-04' have a 'Recommendation (clear recommendation)' of 2 and a 'Situation' of less than 2?
-</task>",[],True
-case_31,rule_based_querying,Which respondents from sessions on '2025-05-16' have a 'Background (history)' of 3 and a 'Background (examination)' of less than 2?,"Survey Data
+</task>""""""",[],True
+case_31,rule_based_querying,Which respondents from sessions on '2025-05-16' have a 'Background (history)' of 3 and a 'Background (examination)' of less than 2?,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -12844,7 +12844,7 @@ Respondent 15:
   Recommendation (global rating scale): 2
   Comments: Detailed Response - clear communication
 
-",[],"<example>
+""""""",[],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -13112,16 +13112,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Which respondents from sessions on '2025-05-16' have a 'Background (history)' of 3 and a 'Background (examination)' of less than 2?
-</task>",[],True
-case_32,rule_based_querying,List all respondents whose 'Background (examination)' score is equal to their 'Recommendation (clear recommendation)' score.,"Survey Data
+</task>""""""",[],True
+case_32,rule_based_querying,List all respondents whose 'Background (examination)' score is equal to their 'Recommendation (clear recommendation)' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -13264,7 +13264,7 @@ Respondent 3:
   Comments: The patient/simulation is not oriented in TPP.
 Clear communication between Reg and colleague during handover
 
-","['10', '11', '3']","<example>
+""""""","""""""['10', '11', '3']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -13578,16 +13578,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Background (examination)' score is equal to their 'Recommendation (clear recommendation)' score.
-</task>","10, 11, 3",False
-case_33,rule_based_querying,Find all respondents whose total score for 'Assessment' and 'Background (examination)' is greater than 4.,"Survey Data
+</task>""""""","10, 11, 3",False
+case_33,rule_based_querying,Find all respondents whose total score for 'Assessment' and 'Background (examination)' is greater than 4.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -13749,7 +13749,7 @@ Respondent 20:
   Recommendation (global rating scale): 3
   Comments: Good
 
-","['11', '16', '19', '23', '5', '14']","<example>
+""""""","""""""['11', '16', '19', '23', '5', '14']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -14101,16 +14101,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose total score for 'Assessment' and 'Background (examination)' is greater than 4.
-</task>","11, 16, 19, 23, 5, 14",False
-case_34,rule_based_querying,List all respondents whose 'Identification' score is equal to their 'Background (history)' score.,"Survey Data
+</task>""""""","11, 16, 19, 23, 5, 14",False
+case_34,rule_based_querying,List all respondents whose 'Identification' score is equal to their 'Background (history)' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -14269,7 +14269,7 @@ Respondent 15:
   Recommendation (global rating scale): 2
   Comments: Detailed Response - clear communication
 
-","['12', '4', '19', '21', '6', '8']","<example>
+""""""","""""""['12', '4', '19', '21', '6', '8']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -14615,16 +14615,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Identification' score is equal to their 'Background (history)' score.
-</task>","12, 4, 19, 21, 6, 8",False
-case_35,rule_based_querying,Find all respondents whose total score for 'Situation' and 'Recommendation (clear recommendation)' is greater than 4.,"Survey Data
+</task>""""""","12, 4, 19, 21, 6, 8",False
+case_35,rule_based_querying,Find all respondents whose total score for 'Situation' and 'Recommendation (clear recommendation)' is greater than 4.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -14757,7 +14757,7 @@ Respondent 18:
   Comments: Not very concise or clear communication
 Satisfactory
 
-","['15', '3', '16', '5', '22', '8', '18']","<example>
+""""""","""""""['15', '3', '16', '5', '22', '8', '18']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -15051,16 +15051,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose total score for 'Situation' and 'Recommendation (clear recommendation)' is greater than 4.
-</task>","15, 3, 16, 5, 22, 8, 18",False
-case_36,rule_based_querying,List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.,"Survey Data
+</task>""""""","15, 3, 16, 5, 22, 8, 18",False
+case_36,rule_based_querying,List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -15196,7 +15196,7 @@ Respondent 9:
   Recommendation (global rating scale): 2
   Comments: Overall a bit unclear communication reflected
 
-","['23', '9']","<example>
+""""""","""""""['23', '9']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -15496,16 +15496,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.
-</task>","23, 9",False
-case_37,rule_based_querying,List all respondents whose 'Background (history)' score is equal to their 'Assessment' score.,"Survey Data
+</task>""""""","23, 9",False
+case_37,rule_based_querying,List all respondents whose 'Background (history)' score is equal to their 'Assessment' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -15626,7 +15626,7 @@ Respondent 6:
   Recommendation (global rating scale): 3
   Comments: 
 
-",['3'],"<example>
+""""""",['3'],"""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -15896,16 +15896,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Background (history)' score is equal to their 'Assessment' score.
-</task>",3,False
-case_38,rule_based_querying,List all respondents whose 'Recommendation (global rating scale)' score is equal to their 'Assessment' score.,"Survey Data
+</task>""""""",3,False
+case_38,rule_based_querying,List all respondents whose 'Recommendation (global rating scale)' score is equal to their 'Assessment' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -16080,7 +16080,7 @@ Respondent 9:
   Recommendation (global rating scale): 2
   Comments: Overall a bit unclear communication reflected
 
-","['13', '11', '4', '23', '5', '9']","<example>
+""""""","""""""['13', '11', '4', '23', '5', '9']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -16458,16 +16458,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Recommendation (global rating scale)' score is equal to their 'Assessment' score.
-</task>",,False
-case_39,rule_based_querying,List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.,"Survey Data
+</task>""""""","13, 11, 4, 23, 5, 9",False
+case_39,rule_based_querying,List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -16641,7 +16641,7 @@ Respondent 23:
 Talking to registrav could not summarize the condition of patient very clearly
 DID: Sepsis I Anaphylaxsis given by team
 
-","['19', '12', '17', '11', '10', '23']","<example>
+""""""","""""""['19', '12', '17', '11', '10', '23']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -17017,16 +17017,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 List all respondents whose 'Recommendation (clear recommendation)' score is equal to their 'Situation' score.
-</task>",,False
-case_40,rule_based_querying,Find all respondents whose total score for 'Assessment' and 'Situation' is greater than 4.,"Survey Data
+</task>""""""","19, 12, 17, 11, 10, 23",False
+case_40,rule_based_querying,Find all respondents whose total score for 'Assessment' and 'Situation' is greater than 4.,"""""""Survey Data
 ==================================================
 
 Questions:
@@ -17196,7 +17196,7 @@ Respondent 20:
   Recommendation (global rating scale): 3
   Comments: Good
 
-","['5', '12', '1', '16', '4', '14', '3', '2', '17', '22', '20']","<example>
+""""""","""""""['5', '12', '1', '16', '4', '14', '3', '2', '17', '22', '20']""""""","""""""<example>
 List all respondents from the '(MI)-VT' session whose 'Recommendation (global rating scale)' is exactly 0.
 
 DATA:
@@ -17564,15 +17564,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 <task>
 Find all respondents whose total score for 'Assessment' and 'Situation' is greater than 4.
-</task>",,False
+</task>""""""","5, 12, 1, 16, 4, 14, 3, 2, 17, 22, 20",False
 case_41,rule_based_querying,List all respondents whose 'Recommendation (global rating scale)' is within 1 point of the lowest 'Assessment' for their session name.,"Survey Data
 ==================================================
 
@@ -18035,7 +18035,7 @@ Rules:
 
 <task>
 List all respondents whose 'Recommendation (global rating scale)' is within 1 point of the lowest 'Assessment' for their session name.
-</task>",,False
+</task>","10, 11, 12, 15, 16, 17, 18, 7, 8",False
 case_42,rule_based_querying,Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?,"Survey Data
 ==================================================
 
@@ -18558,7 +18558,7 @@ Rules:
 
 <task>
 Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?
-</task>",,False
+</task>","2, 3, 4, 10, 13",False
 case_43,rule_based_querying,Which respondents have a total score across all rubric items that is higher than the average total score for all respondents?,"Survey Data
 ==================================================
 
@@ -18994,7 +18994,7 @@ Rules:
 
 <task>
 Which respondents have a total score across all rubric items that is higher than the average total score for all respondents?
-</task>",,False
+</task>","17, 22, 11",False
 case_44,rule_based_querying,List all respondents whose 'Background (history)' is within 2 point of the lowest 'Recommendation (global rating scale)' for their session name.,"Survey Data
 ==================================================
 
@@ -19502,7 +19502,7 @@ Rules:
 
 <task>
 List all respondents whose 'Background (history)' is within 2 point of the lowest 'Recommendation (global rating scale)' for their session name.
-</task>",,False
+</task>","21, 6, 22, 14, 13, 1, 7, 15, 10, 17, 20",False
 case_45,rule_based_querying,Find all respondents whose 'Background (examination)' is greater than the average 'Background (examination)' for their session name.,"Survey Data
 ==================================================
 
@@ -19899,7 +19899,7 @@ Rules:
 
 <task>
 Find all respondents whose 'Background (examination)' is greater than the average 'Background (examination)' for their session name.
-</task>",,False
+</task>",[],True
 case_46,rule_based_querying,Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?,"Survey Data
 ==================================================
 
@@ -20377,7 +20377,7 @@ Rules:
 
 <task>
 Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?
-</task>",,False
+</task>","15, 9, 13, 10",False
 case_47,rule_based_querying,Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?,"Survey Data
 ==================================================
 
@@ -20930,7 +20930,7 @@ Rules:
 
 <task>
 Which respondents have a total score across all items that is lower than the average total score for all sessions on the same date?
-</task>",,False
+</task>","4, 15, 10, 3, 2",False
 case_48,rule_based_querying,Which respondents have a total score across all rubric items that is higher than the average total score for all respondents?,"Survey Data
 ==================================================
 
@@ -21336,7 +21336,7 @@ Rules:
 
 <task>
 Which respondents have a total score across all rubric items that is higher than the average total score for all respondents?
-</task>",,False
+</task>","12, 5, 17, 19",False
 case_49,rule_based_querying,Find all respondents whose 'Assessment' is greater than the average 'Assessment' for their session name.,"Survey Data
 ==================================================
 
@@ -21856,7 +21856,7 @@ Rules:
 
 <task>
 Find all respondents whose 'Assessment' is greater than the average 'Assessment' for their session name.
-</task>",,False
+</task>","5, 16, 18, 20, 23",False
 case_50,rule_based_querying,List all respondents whose 'Background (history)' is within 1 point of the lowest 'Identification' for their session name.,"Survey Data
 ==================================================
 
@@ -22319,4 +22319,4 @@ Rules:
 
 <task>
 List all respondents whose 'Background (history)' is within 1 point of the lowest 'Identification' for their session name.
-</task>",,False
+</task>","15, 20, 2, 12, 16, 5, 7, 14, 18",False

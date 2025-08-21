@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
+case_2,answer_reverse_lookup,Which respondents are 6.0?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -538,7 +538,7 @@ case_2,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>",20,"<example>
+</html>""",20,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -1651,17 +1651,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are 6.0?
-</task>","125, 62, 71, 113, 20, 74, 61, 70",True
+</task>""","125, 62, 71, 113, 20, 74, 61, 70",True
 case_3,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -3468,8 +3468,8 @@ Rules:
 
 <task>
 Which respondents are 6.0?
-</task>",,False
-case_4,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 2003.,"<!DOCTYPE html>
+</task>","82, 139, 60, 99, 40, 55, 17",False
+case_4,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 2003.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -4111,7 +4111,7 @@ case_4,answer_reverse_lookup,List all respondents with a 'Gender' of Male who we
   </li>
 </ul>
 </body>
-</html>","85, 16","<example>
+</html>""","""85, 16""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -5430,18 +5430,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Gender' of Male who were born in 2003.
-</task>","85, 16",True
-case_5,answer_reverse_lookup,List all respondents with a 'Gender' of Female who were born in 2004.,"<!DOCTYPE html>
+</task>""","85, 16",True
+case_5,answer_reverse_lookup,List all respondents with a 'Gender' of Female who were born in 2004.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -6083,7 +6083,7 @@ case_5,answer_reverse_lookup,List all respondents with a 'Gender' of Female who 
   </li>
 </ul>
 </body>
-</html>",70,"<example>
+</html>""",70,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -7402,18 +7402,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Gender' of Female who were born in 2004.
-</task>",70,True
-case_6,answer_reverse_lookup,Which respondents are 1999.0?,"<!DOCTYPE html>
+</task>""",70,True
+case_6,answer_reverse_lookup,Which respondents are 1999.0?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -8058,7 +8058,7 @@ case_6,answer_reverse_lookup,Which respondents are 1999.0?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>",100,"<example>
+</html>""",100,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -9383,18 +9383,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are 1999.0?
-</task>",100,True
-case_7,answer_reverse_lookup,Find all respondents with a Worry of 1.,"<!DOCTYPE html>
+</task>""",100,True
+case_7,answer_reverse_lookup,Find all respondents with a Worry of 1.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9727,7 +9727,7 @@ case_7,answer_reverse_lookup,Find all respondents with a Worry of 1.,"<!DOCTYPE 
   </li>
 </ul>
 </body>
-</html>","110, 35, 119, 47","<example>
+</html>""","""110, 35, 119, 47""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -10428,18 +10428,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents with a Worry of 1.
-</task>","110, 35, 119, 47",True
-case_8,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 2002.,"<!DOCTYPE html>
+</task>""","110, 35, 119, 47",True
+case_8,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 2002.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -10767,7 +10767,7 @@ case_8,answer_reverse_lookup,List all respondents with a 'Gender' of Male who we
   </li>
 </ul>
 </body>
-</html>",84,"<example>
+</html>""",84,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -11458,18 +11458,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Gender' of Male who were born in 2002.
-</task>",84,True
-case_9,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 5.0 who were born in 2001.,"<!DOCTYPE html>
+</task>""",84,True
+case_9,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 5.0 who were born in 2001.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -12056,7 +12056,7 @@ case_9,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 5.
   </li>
 </ul>
 </body>
-</html>",None,"<example>
+</html>""",,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -13265,17 +13265,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Ethnic identity' of 5.0 who were born in 2001.
-</task>",None,True
+</task>""",,True
 case_10,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -15079,8 +15079,8 @@ Rules:
 
 <task>
 Which respondents are 6.0?
-</task>",,False
-case_11,answer_reverse_lookup,List all respondents with a 'Gender' of Female who were born in 2003.,"<!DOCTYPE html>
+</task>","18, 8, 64, 52, 6, 40, 62, 33",True
+case_11,answer_reverse_lookup,List all respondents with a 'Gender' of Female who were born in 2003.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -15778,7 +15778,7 @@ case_11,answer_reverse_lookup,List all respondents with a 'Gender' of Female who
   </li>
 </ul>
 </body>
-</html>",56,"<example>
+</html>""",56,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -17209,18 +17209,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Gender' of Female who were born in 2003.
-</task>",56,True
-case_12,answer_reverse_lookup,Which respondents are male?,"<!DOCTYPE html>
+</task>""",56,True
+case_12,answer_reverse_lookup,Which respondents are male?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -17760,7 +17760,7 @@ case_12,answer_reverse_lookup,Which respondents are male?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>","148, 97, 102, 20, 63","<example>
+</html>""","""148, 97, 102, 20, 63""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -18875,17 +18875,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are male?
-</task>","148, 97, 102, 20, 63",True
+</task>""","148, 97, 102, 20, 63",True
 case_13,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -19924,8 +19924,8 @@ Rules:
 
 <task>
 Which respondents are 6.0?
-</task>",,False
-case_14,answer_reverse_lookup,Which respondents are 2004.0?,"<!DOCTYPE html>
+</task>","89, 137, 110, 95, 18",True
+case_14,answer_reverse_lookup,Which respondents are 2004.0?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -20512,7 +20512,7 @@ case_14,answer_reverse_lookup,Which respondents are 2004.0?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>",40,"<example>
+</html>""",40,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -21721,18 +21721,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are 2004.0?
-</task>",40,True
-case_15,answer_reverse_lookup,Which respondents are male?,"<!DOCTYPE html>
+</task>""",40,True
+case_15,answer_reverse_lookup,Which respondents are male?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -22271,7 +22271,7 @@ case_15,answer_reverse_lookup,Which respondents are male?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>","138, 124, 120, 112, 69, 83, 63, 23, 72","<example>
+</html>""","""138, 124, 120, 112, 69, 83, 63, 23, 72""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -23384,18 +23384,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are male?
-</task>","138, 124, 120, 112, 69, 83, 63, 23, 72",True
-case_16,answer_reverse_lookup,List all respondents with a 'Socio-economic status' of 2.0 who were born in 2002.,"<!DOCTYPE html>
+</task>""","138, 124, 120, 112, 69, 83, 63, 23, 72",True
+case_16,answer_reverse_lookup,List all respondents with a 'Socio-economic status' of 2.0 who were born in 2002.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -24090,7 +24090,7 @@ case_16,answer_reverse_lookup,List all respondents with a 'Socio-economic status
   </li>
 </ul>
 </body>
-</html>",None,"<example>
+</html>""",,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -25515,18 +25515,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Socio-economic status' of 2.0 who were born in 2002.
-</task>",None,True
-case_17,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 1998.,"<!DOCTYPE html>
+</task>""",,True
+case_17,answer_reverse_lookup,List all respondents with a 'Gender' of Male who were born in 1998.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -26063,7 +26063,7 @@ case_17,answer_reverse_lookup,List all respondents with a 'Gender' of Male who w
   </li>
 </ul>
 </body>
-</html>",None,"<example>
+</html>""",,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -27172,18 +27172,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Gender' of Male who were born in 1998.
-</task>",None,True
-case_18,answer_reverse_lookup,Find all respondents with a Life satisfaction of 8.,"<!DOCTYPE html>
+</task>""",,True
+case_18,answer_reverse_lookup,Find all respondents with a Life satisfaction of 8.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -27828,7 +27828,7 @@ case_18,answer_reverse_lookup,Find all respondents with a Life satisfaction of 8
   </li>
 </ul>
 </body>
-</html>","126, 143, 24, 57, 104, 63","<example>
+</html>""","""126, 143, 24, 57, 104, 63""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -29153,18 +29153,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents with a Life satisfaction of 8.
-</task>","126, 143, 24, 57, 104, 63",True
-case_19,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 6.0 who were born in 2006.,"<!DOCTYPE html>
+</task>""","126, 143, 24, 57, 104, 63",True
+case_19,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 6.0 who were born in 2006.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -29704,7 +29704,7 @@ case_19,answer_reverse_lookup,List all respondents with a 'Ethnic identity' of 6
   </li>
 </ul>
 </body>
-</html>",95,"<example>
+</html>""",95,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -30819,17 +30819,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 List all respondents with a 'Ethnic identity' of 6.0 who were born in 2006.
-</task>",95,True
+</task>""",95,True
 case_20,answer_reverse_lookup,Which respondents are 3.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -32655,7 +32655,7 @@ Rules:
 <task>
 Which respondents are 3.0?
 </task>",,False
-case_21,answer_reverse_lookup,Find all respondents with a Life satisfaction of 5.,"<!DOCTYPE html>
+case_21,answer_reverse_lookup,Find all respondents with a Life satisfaction of 5.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -33142,7 +33142,7 @@ case_21,answer_reverse_lookup,Find all respondents with a Life satisfaction of 5
   </li>
 </ul>
 </body>
-</html>",71,"<example>
+</html>""",71,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -34151,17 +34151,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents with a Life satisfaction of 5.
-</task>",71,True
+</task>""",71,True
 case_22,answer_reverse_lookup,Which respondents are 6.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -35674,8 +35674,8 @@ Rules:
 
 <task>
 Which respondents are 6.0?
-</task>",,False
-case_23,answer_reverse_lookup,Find all respondents with a Happiness of 5.,"<!DOCTYPE html>
+</task>","4, 12, 33, 71, 78, 93, 137",False
+case_23,answer_reverse_lookup,Find all respondents with a Happiness of 5.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -36007,7 +36007,7 @@ case_23,answer_reverse_lookup,Find all respondents with a Happiness of 5.,"<!DOC
   </li>
 </ul>
 </body>
-</html>","142, 27","<example>
+</html>""","""142, 27""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -36706,17 +36706,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents with a Happiness of 5.
-</task>","142, 27",True
+</task>""","142, 27",True
 case_24,answer_reverse_lookup,Which respondents are 5.0?,"<!DOCTYPE html>
 <html>
 <head>
@@ -37755,8 +37755,8 @@ Rules:
 
 <task>
 Which respondents are 5.0?
-</task>",,False
-case_25,answer_reverse_lookup,Which respondents are 2002.0?,"<!DOCTYPE html>
+</task>","121, 123",True
+case_25,answer_reverse_lookup,Which respondents are 2002.0?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -38347,7 +38347,7 @@ case_25,answer_reverse_lookup,Which respondents are 2002.0?,"<!DOCTYPE html>
   </li>
 </ul>
 </body>
-</html>","14, 30, 103, 148","<example>
+</html>""","""14, 30, 103, 148""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -39564,18 +39564,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents are 2002.0?
-</task>","14, 30, 103, 148",True
-case_26,answer_reverse_lookup,Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 4?,"<!DOCTYPE html>
+</task>""","14, 30, 103, 148",True
+case_26,answer_reverse_lookup,Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 4?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -39904,7 +39904,7 @@ case_26,answer_reverse_lookup,Which respondents have a total score for 'Depressi
   </li>
 </ul>
 </body>
-</html>",64,"<example>
+</html>""",64,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -40597,18 +40597,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 4?
-</task>",64,True
-case_27,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Life satisfaction' of exactly 8?,"<!DOCTYPE html>
+</task>""",64,True
+case_27,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Life satisfaction' of exactly 8?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -40985,7 +40985,7 @@ case_27,answer_reverse_lookup,Which respondents have a total score for 'Stress' 
   </li>
 </ul>
 </body>
-</html>",98,"<example>
+</html>""",98,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -41774,18 +41774,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Stress' and 'Life satisfaction' of exactly 8?
-</task>",98,True
-case_28,answer_reverse_lookup,Find all respondents born in 2002 with a Worry greater than 4 and a Anger less than 4.,"<!DOCTYPE html>
+</task>""",98,True
+case_28,answer_reverse_lookup,Find all respondents born in 2002 with a Worry greater than 4 and a Anger less than 4.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -42481,7 +42481,7 @@ case_28,answer_reverse_lookup,Find all respondents born in 2002 with a Worry gre
   </li>
 </ul>
 </body>
-</html>",None,"<example>
+</html>""",,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -43908,18 +43908,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents born in 2002 with a Worry greater than 4 and a Anger less than 4.
-</task>",None,True
-case_29,answer_reverse_lookup,Which respondents have a total score for 'Loneliness' and 'Learning' of exactly 10?,"<!DOCTYPE html>
+</task>""",,True
+case_29,answer_reverse_lookup,Which respondents have a total score for 'Loneliness' and 'Learning' of exactly 10?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -44355,7 +44355,7 @@ case_29,answer_reverse_lookup,Which respondents have a total score for 'Loneline
   </li>
 </ul>
 </body>
-</html>","142, 121","<example>
+</html>""","""142, 121""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -45262,18 +45262,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Loneliness' and 'Learning' of exactly 10?
-</task>","142, 121",True
-case_30,answer_reverse_lookup,Find all respondents born in 2004 with a Loneliness greater than 6 and a Happiness less than 4.,"<!DOCTYPE html>
+</task>""","142, 121",True
+case_30,answer_reverse_lookup,Find all respondents born in 2004 with a Loneliness greater than 6 and a Happiness less than 4.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -45817,7 +45817,7 @@ case_30,answer_reverse_lookup,Find all respondents born in 2004 with a Lonelines
   </li>
 </ul>
 </body>
-</html>",None,"<example>
+</html>""",,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -46940,18 +46940,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents born in 2004 with a Loneliness greater than 6 and a Happiness less than 4.
-</task>",None,True
-case_31,answer_reverse_lookup,Find all respondents born in 2001 with a Enjoyment greater than 4 and a Life satisfaction less than 6.,"<!DOCTYPE html>
+</task>""",,True
+case_31,answer_reverse_lookup,Find all respondents born in 2001 with a Enjoyment greater than 4 and a Life satisfaction less than 6.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -47437,7 +47437,7 @@ case_31,answer_reverse_lookup,Find all respondents born in 2001 with a Enjoyment
   </li>
 </ul>
 </body>
-</html>",140,"<example>
+</html>""",140,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -48444,18 +48444,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents born in 2001 with a Enjoyment greater than 4 and a Life satisfaction less than 6.
-</task>",140,True
-case_32,answer_reverse_lookup,Which respondents have a total score for 'Enjoyment' and 'Stress' of exactly 11?,"<!DOCTYPE html>
+</task>""",140,True
+case_32,answer_reverse_lookup,Which respondents have a total score for 'Enjoyment' and 'Stress' of exactly 11?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -49051,7 +49051,7 @@ case_32,answer_reverse_lookup,Which respondents have a total score for 'Enjoymen
   </li>
 </ul>
 </body>
-</html>","146, 104, 70, 129","<example>
+</html>""","""146, 104, 70, 129""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -50278,18 +50278,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Enjoyment' and 'Stress' of exactly 11?
-</task>","146, 104, 70, 129",True
-case_33,answer_reverse_lookup,Which respondents have a total score for 'Life satisfaction' and 'Learning' of exactly 18?,"<!DOCTYPE html>
+</task>""","146, 104, 70, 129",True
+case_33,answer_reverse_lookup,Which respondents have a total score for 'Life satisfaction' and 'Learning' of exactly 18?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -50929,7 +50929,7 @@ case_33,answer_reverse_lookup,Which respondents have a total score for 'Life sat
   </li>
 </ul>
 </body>
-</html>",111,"<example>
+</html>""",111,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -52244,18 +52244,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Life satisfaction' and 'Learning' of exactly 18?
-</task>",111,True
-case_34,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Learning' of exactly 9?,"<!DOCTYPE html>
+</task>""",111,True
+case_34,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Learning' of exactly 9?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -52842,7 +52842,7 @@ case_34,answer_reverse_lookup,Which respondents have a total score for 'Stress' 
   </li>
 </ul>
 </body>
-</html>","45, 114","<example>
+</html>""","""45, 114""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -54051,18 +54051,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Stress' and 'Learning' of exactly 9?
-</task>","45, 114",True
-case_35,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Anger' of exactly 4?,"<!DOCTYPE html>
+</task>""","45, 114",True
+case_35,answer_reverse_lookup,Which respondents have a total score for 'Stress' and 'Anger' of exactly 4?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -54708,7 +54708,7 @@ case_35,answer_reverse_lookup,Which respondents have a total score for 'Stress' 
   </li>
 </ul>
 </body>
-</html>","24, 83, 42","<example>
+</html>""","""24, 83, 42""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -56035,18 +56035,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Stress' and 'Anger' of exactly 4?
-</task>","24, 83, 42",True
-case_36,answer_reverse_lookup,Find all respondents born in 2002 with a Enjoyment greater than 4 and a Stress less than 6.,"<!DOCTYPE html>
+</task>""","24, 83, 42",True
+case_36,answer_reverse_lookup,Find all respondents born in 2002 with a Enjoyment greater than 4 and a Stress less than 6.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -56640,7 +56640,7 @@ case_36,answer_reverse_lookup,Find all respondents born in 2002 with a Enjoyment
   </li>
 </ul>
 </body>
-</html>","103, 10, 81, 104","<example>
+</html>""","""103, 10, 81, 104""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -57863,18 +57863,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents born in 2002 with a Enjoyment greater than 4 and a Stress less than 6.
-</task>","10, 81, 103, 104",False
-case_37,answer_reverse_lookup,Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 3?,"<!DOCTYPE html>
+</task>""","10, 81, 103, 104",False
+case_37,answer_reverse_lookup,Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 3?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -58575,7 +58575,7 @@ case_37,answer_reverse_lookup,Which respondents have a total score for 'Depressi
   </li>
 </ul>
 </body>
-</html>",114,"<example>
+</html>""",114,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -60012,18 +60012,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Depression' and 'Loneliness' of exactly 3?
-</task>",114,True
-case_38,answer_reverse_lookup,Which respondents have a total score for 'Happiness' and 'Life satisfaction' of exactly 15?,"<!DOCTYPE html>
+</task>""",114,True
+case_38,answer_reverse_lookup,Which respondents have a total score for 'Happiness' and 'Life satisfaction' of exactly 15?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -60721,7 +60721,7 @@ case_38,answer_reverse_lookup,Which respondents have a total score for 'Happines
   </li>
 </ul>
 </body>
-</html>",113,"<example>
+</html>""",113,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -62152,18 +62152,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Happiness' and 'Life satisfaction' of exactly 15?
-</task>",,False
-case_39,answer_reverse_lookup,Find all respondents born in 2005 with a Happiness greater than 4 and a Loneliness less than 5.,"<!DOCTYPE html>
+</task>""",113,True
+case_39,answer_reverse_lookup,Find all respondents born in 2005 with a Happiness greater than 4 and a Loneliness less than 5.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -62652,7 +62652,7 @@ case_39,answer_reverse_lookup,Find all respondents born in 2005 with a Happiness
   </li>
 </ul>
 </body>
-</html>",128,"<example>
+</html>""",128,"""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -63665,18 +63665,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents born in 2005 with a Happiness greater than 4 and a Loneliness less than 5.
-</task>",,False
-case_40,answer_reverse_lookup,Which respondents have a total score for 'Loneliness' and 'Enjoyment' of exactly 11?,"<!DOCTYPE html>
+</task>""",128,True
+case_40,answer_reverse_lookup,Which respondents have a total score for 'Loneliness' and 'Enjoyment' of exactly 11?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -64274,7 +64274,7 @@ case_40,answer_reverse_lookup,Which respondents have a total score for 'Loneline
   </li>
 </ul>
 </body>
-</html>","124, 121","<example>
+</html>""","""124, 121""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -65505,17 +65505,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Which respondents have a total score for 'Loneliness' and 'Enjoyment' of exactly 11?
-</task>",,False
+</task>""","124, 121",True
 case_41,answer_reverse_lookup,Find all respondents whose Laughter is higher than the average Laughter for their gender.,"<!DOCTYPE html>
 <html>
 <head>
@@ -67184,7 +67184,7 @@ Rules:
 
 <task>
 Find all respondents whose Laughter is higher than the average Laughter for their gender.
-</task>",,False
+</task>","130, 73, 77",True
 case_42,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -69321,7 +69321,7 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
+</task>","149, 126, 39, 115, 138, 124, 89, 86, 142, 97",True
 case_43,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -71134,7 +71134,7 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
+</task>","12, 60, 82, 106, 122",False
 case_44,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -73115,7 +73115,7 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
+</task>","4, 10, 39, 113, 135",False
 case_45,answer_reverse_lookup,List all respondents whose total 'Depressive Symptoms' score is higher than the average for their 'Socio-economic status' group.,"<!DOCTYPE html>
 <html>
 <head>
@@ -74775,7 +74775,7 @@ Rules:
 
 <task>
 List all respondents whose total 'Depressive Symptoms' score is higher than the average for their 'Socio-economic status' group.
-</task>",,False
+</task>","21, 40, 68, 85",False
 case_46,answer_reverse_lookup,Find all respondents whose Learning is higher than the average Learning for their gender.,"<!DOCTYPE html>
 <html>
 <head>
@@ -76909,7 +76909,7 @@ Rules:
 
 <task>
 Find all respondents whose Learning is higher than the average Learning for their gender.
-</task>",,False
+</task>","10, 24, 74, 82, 98, 125, 139",False
 case_47,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -78413,7 +78413,7 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
+</task>","8, 15, 77, 84, 114",False
 case_48,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -80244,8 +80244,8 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
-case_49,answer_reverse_lookup,Find all respondents whose Enjoyment is higher than the average Enjoyment for their gender.,"<!DOCTYPE html>
+</task>","38, 63, 96, 111, 136",False
+case_49,answer_reverse_lookup,Find all respondents whose Enjoyment is higher than the average Enjoyment for their gender.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -80732,7 +80732,7 @@ case_49,answer_reverse_lookup,Find all respondents whose Enjoyment is higher tha
   </li>
 </ul>
 </body>
-</html>","150, 37","<example>
+</html>""","""150, 37""","""<example>
 List all respondents with a 'Socio-economic status' of 1.0 who were born in 2002.
 
 DATA:
@@ -81741,17 +81741,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 </output>
 
 <task>
 Find all respondents whose Enjoyment is higher than the average Enjoyment for their gender.
-</task>","150, 37",True
+</task>""","150, 37",True
 case_50,answer_reverse_lookup,Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?,"<!DOCTYPE html>
 <html>
 <head>
@@ -83741,4 +83741,4 @@ Rules:
 
 <task>
 Which respondents were born in a year where the average 'Life satisfaction' for that year was greater than the overall average 'Life satisfaction'?
-</task>",,False
+</task>","66, 41, 19, 114, 109",True

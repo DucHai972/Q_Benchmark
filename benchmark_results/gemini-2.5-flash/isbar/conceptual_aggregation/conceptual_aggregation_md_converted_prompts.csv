@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,conceptual_aggregation,How many respondents participated in a 'IV-Hypoglycemia' session?,"# Survey Data
+case_2,conceptual_aggregation,How many respondents participated in a 'IV-Hypoglycemia' session?,"""# Survey Data
 
 ## Questions
 
@@ -166,7 +166,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -528,16 +528,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a 'IV-Hypoglycemia' session?
-</task>",1,True
-case_3,conceptual_aggregation,Count the respondents who scored 3 on 'Background (examination)'.,"# Survey Data
+</task>""",1.0,True
+case_3,conceptual_aggregation,Count the respondents who scored 3 on 'Background (examination)'.,"""# Survey Data
 
 ## Questions
 
@@ -721,7 +721,7 @@ Good
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
 
-",6,"<example>
+""",6,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -1117,16 +1117,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Background (examination)'.
-</task>",6,True
-case_4,conceptual_aggregation,How many respondents participated in a 'IV - VT' session?,"# Survey Data
+</task>""",6.0,True
+case_4,conceptual_aggregation,How many respondents participated in a 'IV - VT' session?,"""# Survey Data
 
 ## Questions
 
@@ -1305,7 +1305,7 @@ Satisfactory
 - **Comments:** Not very concise or clear communication
 Satisfactory
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -1691,16 +1691,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a 'IV - VT' session?
-</task>",2,False
-case_5,conceptual_aggregation,Count the respondents who scored 3 on 'Background (examination)'.,"# Survey Data
+</task>""",2.0,False
+case_5,conceptual_aggregation,Count the respondents who scored 3 on 'Background (examination)'.,"""# Survey Data
 
 ## Questions
 
@@ -1803,7 +1803,7 @@ DID: Sepsis I Anaphylaxsis given by team
 - **Comments:** Consent denied for video recordings
 Satisfactory
 
-",3,"<example>
+""",3,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -2037,16 +2037,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Background (examination)'.
-</task>",3,True
-case_6,conceptual_aggregation,How many respondents participated in a 'I (Myocardial infarction)' session?,"# Survey Data
+</task>""",3.0,True
+case_6,conceptual_aggregation,How many respondents participated in a 'I (Myocardial infarction)' session?,"""# Survey Data
 
 ## Questions
 
@@ -2132,7 +2132,7 @@ Good and early assessment of condition is done
 - **Comments:** Clear communication skills
 Good
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -2332,16 +2332,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a 'I (Myocardial infarction)' session?
-</task>",1,True
-case_7,conceptual_aggregation,Count the respondents who scored 2 on 'Background (examination)'.,"# Survey Data
+</task>""",1.0,True
+case_7,conceptual_aggregation,Count the respondents who scored 2 on 'Background (examination)'.,"""# Survey Data
 
 ## Questions
 
@@ -2481,7 +2481,7 @@ Satisfactory
 - **Comments:** Not very concise or clear communication
 Satisfactory
 
-",5,"<example>
+""",5,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -2789,16 +2789,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 2 on 'Background (examination)'.
-</task>",5,True
-case_8,conceptual_aggregation,How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (global rating scale)'?,"# Survey Data
+</task>""",5.0,True
+case_8,conceptual_aggregation,How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (global rating scale)'?,"""# Survey Data
 
 ## Questions
 
@@ -2881,7 +2881,7 @@ case_8,conceptual_aggregation,How many respondents from sessions on '2025-03-14'
 - **Comments:** Time: (2:36-2:53)
 Late response for considering consultation
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -3075,16 +3075,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (global rating scale)'?
-</task>",2,True
-case_9,conceptual_aggregation,How many respondents from sessions on '2025-05-16' scored 3 on 'Recommendation (clear recommendation)'?,"# Survey Data
+</task>""",2.0,True
+case_9,conceptual_aggregation,How many respondents from sessions on '2025-05-16' scored 3 on 'Recommendation (clear recommendation)'?,"""# Survey Data
 
 ## Questions
 
@@ -3198,7 +3198,7 @@ Satisfactory
 - **Comments:** Not very concise or clear communication
 Satisfactory
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -3454,16 +3454,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-16' scored 3 on 'Recommendation (clear recommendation)'?
-</task>",1,True
-case_10,conceptual_aggregation,How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (clear recommendation)'?,"# Survey Data
+</task>""",1.0,True
+case_10,conceptual_aggregation,How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (clear recommendation)'?,"""# Survey Data
 
 ## Questions
 
@@ -3566,7 +3566,7 @@ Satisfactory
 - **Comments:** Good clear and precise clinical handover
 Good
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -3800,16 +3800,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-03-14' scored 2 on 'Recommendation (clear recommendation)'?
-</task>",1,True
-case_11,conceptual_aggregation,Count the respondents who scored 3 on 'Background (history)'.,"# Survey Data
+</task>""",1.0,True
+case_11,conceptual_aggregation,Count the respondents who scored 3 on 'Background (history)'.,"""# Survey Data
 
 ## Questions
 
@@ -3934,7 +3934,7 @@ Good
 - **Recommendation (global rating scale):** 2
 - **Comments:** Time: (15:53-16:14)
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -4212,16 +4212,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Background (history)'.
-</task>",2,True
-case_12,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Background (history)'?,"# Survey Data
+</task>""",2.0,True
+case_12,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Background (history)'?,"""# Survey Data
 
 ## Questions
 
@@ -4333,7 +4333,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 2
 - **Comments:** Overall a bit unclear communication reflected
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -4585,16 +4585,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-04' scored 2 on 'Background (history)'?
-</task>",2,True
-case_13,conceptual_aggregation,Count the respondents who scored 2 on 'Situation'.,"# Survey Data
+</task>""",2.0,True
+case_13,conceptual_aggregation,Count the respondents who scored 2 on 'Situation'.,"""# Survey Data
 
 ## Questions
 
@@ -4779,7 +4779,7 @@ Good
 - **Comments:** Time: (2:36-2:53)
 Late response for considering consultation
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -5177,16 +5177,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 2 on 'Situation'.
-</task>",2,True
-case_14,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Assessment'?,"# Survey Data
+</task>""",2.0,True
+case_14,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Assessment'?,"""# Survey Data
 
 ## Questions
 
@@ -5274,7 +5274,7 @@ Further brief to patient, ask patent concerns
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -5478,16 +5478,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-04' scored 2 on 'Assessment'?
-</task>",1,True
-case_15,conceptual_aggregation,Count the respondents who scored 2 on 'Recommendation (global rating scale)'.,"# Survey Data
+</task>""",1.0,True
+case_15,conceptual_aggregation,Count the respondents who scored 2 on 'Recommendation (global rating scale)'.,"""# Survey Data
 
 ## Questions
 
@@ -5571,7 +5571,7 @@ Good
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -5767,16 +5767,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 2 on 'Recommendation (global rating scale)'.
-</task>",1,True
-case_16,conceptual_aggregation,Count the respondents who scored 3 on 'Identification'.,"# Survey Data
+</task>""",1.0,True
+case_16,conceptual_aggregation,Count the respondents who scored 3 on 'Identification'.,"""# Survey Data
 
 ## Questions
 
@@ -5901,7 +5901,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 2
 - **Comments:** Time: (15:53-16:14)
 
-",7,"<example>
+""",7,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -6179,16 +6179,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Identification'.
-</task>",7,True
-case_17,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?,"# Survey Data
+</task>""",7.0,True
+case_17,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?,"""# Survey Data
 
 ## Questions
 
@@ -6369,7 +6369,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 2
 - **Comments:** Overall a bit unclear communication reflected
 
-",3,"<example>
+""",3,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -6759,16 +6759,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?
-</task>",3,True
-case_18,conceptual_aggregation,How many respondents participated in a '(MI)-VT' session?,"# Survey Data
+</task>""",3.0,True
+case_18,conceptual_aggregation,How many respondents participated in a '(MI)-VT' session?,"""# Survey Data
 
 ## Questions
 
@@ -6923,7 +6923,7 @@ Further brief to patient, ask patent concerns
 - **Recommendation (global rating scale):** 1
 - **Comments:** 
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -7261,16 +7261,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a '(MI)-VT' session?
-</task>",1,True
-case_19,conceptual_aggregation,How many respondents participated in a 'III (Sepsis)' session?,"# Survey Data
+</task>""",1.0,True
+case_19,conceptual_aggregation,How many respondents participated in a 'III (Sepsis)' session?,"""# Survey Data
 
 ## Questions
 
@@ -7453,7 +7453,7 @@ Good
 - **Recommendation (global rating scale):** 1
 - **Comments:** 
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -7847,16 +7847,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a 'III (Sepsis)' session?
-</task>",2,False
-case_20,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?,"# Survey Data
+</task>""",2.0,False
+case_20,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?,"""# Survey Data
 
 ## Questions
 
@@ -8042,7 +8042,7 @@ Satisfactory
 - **Comments:** Diagnostic clarity is present
 Good and early assessment of condition is done
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -8442,16 +8442,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-04' scored 3 on 'Situation'?
-</task>",1,True
-case_21,conceptual_aggregation,Count the respondents who scored 3 on 'Recommendation (global rating scale)'.,"# Survey Data
+</task>""",1.0,True
+case_21,conceptual_aggregation,Count the respondents who scored 3 on 'Recommendation (global rating scale)'.,"""# Survey Data
 
 ## Questions
 
@@ -8606,7 +8606,7 @@ DID: Sepsis I Anaphylaxsis given by team
 - **Recommendation (global rating scale):** 2
 - **Comments:** Satisfactory
 
-",5,"<example>
+""",5,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -8944,16 +8944,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Recommendation (global rating scale)'.
-</task>",5,True
-case_22,conceptual_aggregation,How many respondents participated in a 'III (Sepsis)' session?,"# Survey Data
+</task>""",5.0,True
+case_22,conceptual_aggregation,How many respondents participated in a 'III (Sepsis)' session?,"""# Survey Data
 
 ## Questions
 
@@ -9040,7 +9040,7 @@ Good
 - **Comments:** Not very concise or clear communication
 Satisfactory
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -9242,16 +9242,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents participated in a 'III (Sepsis)' session?
-</task>",2,True
-case_23,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Recommendation (clear recommendation)'?,"# Survey Data
+</task>""",2.0,True
+case_23,conceptual_aggregation,How many respondents from sessions on '2025-05-04' scored 2 on 'Recommendation (clear recommendation)'?,"""# Survey Data
 
 ## Questions
 
@@ -9367,7 +9367,7 @@ Good
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-",3,"<example>
+""",3,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -9627,16 +9627,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-04' scored 2 on 'Recommendation (clear recommendation)'?
-</task>",3,True
-case_24,conceptual_aggregation,Count the respondents who scored 3 on 'Recommendation (clear recommendation)'.,"# Survey Data
+</task>""",3.0,True
+case_24,conceptual_aggregation,Count the respondents who scored 3 on 'Recommendation (clear recommendation)'.,"""# Survey Data
 
 ## Questions
 
@@ -9733,7 +9733,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -9955,16 +9955,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who scored 3 on 'Recommendation (clear recommendation)'.
-</task>",2,True
-case_25,conceptual_aggregation,How many respondents from sessions on '2025-05-16' scored 2 on 'Background (examination)'?,"# Survey Data
+</task>""",2.0,True
+case_25,conceptual_aggregation,How many respondents from sessions on '2025-05-16' scored 2 on 'Background (examination)'?,"""# Survey Data
 
 ## Questions
 
@@ -10091,7 +10091,7 @@ Satisfactory
 - **Recommendation (global rating scale):** 1
 - **Comments:** 
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -10373,15 +10373,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from sessions on '2025-05-16' scored 2 on 'Background (examination)'?
-</task>",1,True
+</task>""",1.0,True
 case_26,conceptual_aggregation,How many respondents who scored 2 on 'Recommendation (clear recommendation)' also have 'Comments' that contain the word 'reflected'?,"# Survey Data
 
 ## Questions
@@ -10922,8 +10922,8 @@ Rules:
 
 <task>
 How many respondents who scored 2 on 'Recommendation (clear recommendation)' also have 'Comments' that contain the word 'reflected'?
-</task>",,False
-case_27,conceptual_aggregation,Count the respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 5.,"# Survey Data
+</task>",0,True
+case_27,conceptual_aggregation,Count the respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 5.,"""# Survey Data
 
 ## Questions
 
@@ -11039,7 +11039,7 @@ DID: Sepsis I Anaphylaxsis given by team
 - **Comments:** Clear communication during handover
 Good
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -11299,16 +11299,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents whose total score for 'Background (examination)' and 'Assessment' is greater than 5.
-</task>",1,True
-case_28,conceptual_aggregation,How many respondents from the 'II (Anaphylaxsis)' session scored 3 on 'Situation' and 2 on 'Assessment'?,"# Survey Data
+</task>""",1.0,True
+case_28,conceptual_aggregation,How many respondents from the 'II (Anaphylaxsis)' session scored 3 on 'Situation' and 2 on 'Assessment'?,"""# Survey Data
 
 ## Questions
 
@@ -11461,7 +11461,7 @@ Good
 - **Recommendation (global rating scale):** 3
 - **Comments:** Clear communication and handover
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -11795,16 +11795,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from the 'II (Anaphylaxsis)' session scored 3 on 'Situation' and 2 on 'Assessment'?
-</task>",1,True
-case_29,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Situation' is greater than 5.,"# Survey Data
+</task>""",1.0,True
+case_29,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Situation' is greater than 5.,"""# Survey Data
 
 ## Questions
 
@@ -11890,7 +11890,7 @@ Good
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -12090,15 +12090,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Situation' is greater than 5.
-</task>",2,True
+</task>""",2.0,True
 case_30,conceptual_aggregation,How many respondents from the 'II (Anaphylactic Shock)' session scored 3 on 'Background (examination)' and 2 on 'Recommendation (clear recommendation)'?,"# Survey Data
 
 ## Questions
@@ -12591,8 +12591,31 @@ Rules:
 
 <task>
 How many respondents from the 'II (Anaphylactic Shock)' session scored 3 on 'Background (examination)' and 2 on 'Recommendation (clear recommendation)'?
-</task>",,False
-case_31,conceptual_aggregation,How many respondents who scored 2 on 'Background (examination)' also have 'Comments' that contain the word 'communication'?,"# Survey Data
+</task>","1.  **Identify the target `SessionName`**: The question asks for respondents from the 'II (Anaphylactic Shock)' session.
+2.  **Identify the criteria for scores**:
+    *   `Background (examination)` must be 3.
+    *   `Recommendation (clear recommendation)` must be 2.
+3.  **Iterate through each respondent and check the conditions**:
+
+    *   **Respondent 1**: `SessionName` is 'V (Hypoglycemia)'. Does not match.
+    *   **Respondent 6**:
+        *   `SessionName`: 'II (Anaphylactic Shock)' - Matches.
+        *   `Background (examination)`: 3 - Matches.
+        *   `Recommendation (clear recommendation)`: 2 - Matches.
+        *   **Count: 1**
+    *   **Respondent 9**: `SessionName` is 'II (Anaphylaxsis)'. Does not exactly match 'II (Anaphylactic Shock)'.
+    *   **Respondent 2**: `SessionName` is 'MI'. Does not match.
+    *   **Respondent 5**: `SessionName` is 'II - Anaphylaxsis'. Does not exactly match 'II (Anaphylactic Shock)'.
+    *   **Respondent 14**: `SessionName` is 'IV-Hypoglycemia'. Does not match.
+    *   **Respondent 17**: `SessionName` is 'V (Hypoglycemia)'. Does not match.
+    *   **Respondent 4**: `SessionName` is 'III (Sepsis)'. Does not match.
+    *   **Respondent 12**: `SessionName` is 'II (Anaphylaxis)'. Does not exactly match 'II (Anaphylactic Shock)'.
+    *   **Respondent 20**: `SessionName` is 'IV (VT)'. Does not match.
+
+Only Respondent 6 meets all the specified criteria.
+
+1",True
+case_31,conceptual_aggregation,How many respondents who scored 2 on 'Background (examination)' also have 'Comments' that contain the word 'communication'?,"""# Survey Data
 
 ## Questions
 
@@ -12762,7 +12785,7 @@ Good
 - **Comments:** Clear communication skills
 Good
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -13130,16 +13153,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents who scored 2 on 'Background (examination)' also have 'Comments' that contain the word 'communication'?
-</task>",2,True
-case_32,conceptual_aggregation,How many respondents who scored 3 on 'Background (examination)' also have 'Comments' that contain the word 'reflected'?,"# Survey Data
+</task>""",2.0,True
+case_32,conceptual_aggregation,How many respondents who scored 3 on 'Background (examination)' also have 'Comments' that contain the word 'reflected'?,"""# Survey Data
 
 ## Questions
 
@@ -13321,7 +13344,7 @@ Good
 - **Recommendation (global rating scale):** 3
 - **Comments:** Good
 
-",0,"<example>
+""",0,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -13713,16 +13736,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents who scored 3 on 'Background (examination)' also have 'Comments' that contain the word 'reflected'?
-</task>",0,True
-case_33,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Background (history)' is greater than 5.,"# Survey Data
+</task>""",0.0,True
+case_33,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Background (history)' is greater than 5.,"""# Survey Data
 
 ## Questions
 
@@ -13890,7 +13913,7 @@ Good and early assessment of condition is done
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
 
-",4,"<example>
+""",4,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -14254,16 +14277,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents whose total score for 'Recommendation (clear recommendation)' and 'Background (history)' is greater than 5.
-</task>",4,True
-case_34,conceptual_aggregation,How many respondents from the '(MI)-VT' session scored 2 on 'Assessment' and 2 on 'Recommendation (clear recommendation)'?,"# Survey Data
+</task>""",4.0,True
+case_34,conceptual_aggregation,How many respondents from the '(MI)-VT' session scored 2 on 'Assessment' and 2 on 'Recommendation (clear recommendation)'?,"""# Survey Data
 
 ## Questions
 
@@ -14446,7 +14469,7 @@ Good and early assessment of condition is done
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -14840,16 +14863,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from the '(MI)-VT' session scored 2 on 'Assessment' and 2 on 'Recommendation (clear recommendation)'?
-</task>",1,True
-case_35,conceptual_aggregation,How many respondents from the 'I-VF' session scored 2 on 'Assessment' and 3 on 'Situation'?,"# Survey Data
+</task>""",1.0,True
+case_35,conceptual_aggregation,How many respondents from the 'I-VF' session scored 2 on 'Assessment' and 3 on 'Situation'?,"""# Survey Data
 
 ## Questions
 
@@ -15031,7 +15054,7 @@ DID: Sepsis I Anaphylaxsis given by team
 - **Recommendation (global rating scale):** 3
 - **Comments:** 
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -15423,16 +15446,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from the 'I-VF' session scored 2 on 'Assessment' and 3 on 'Situation'?
-</task>",1,True
-case_36,conceptual_aggregation,How many respondents who scored 2 on 'Recommendation (global rating scale)' also have 'Comments' that contain the word 'unclear'?,"# Survey Data
+</task>""",1.0,True
+case_36,conceptual_aggregation,How many respondents who scored 2 on 'Recommendation (global rating scale)' also have 'Comments' that contain the word 'unclear'?,"""# Survey Data
 
 ## Questions
 
@@ -15598,7 +15621,7 @@ Late response for considering consultation
 - **Recommendation (global rating scale):** 2
 - **Comments:** Detailed Response - clear communication
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -15958,15 +15981,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents who scored 2 on 'Recommendation (global rating scale)' also have 'Comments' that contain the word 'unclear'?
-</task>",1,True
+</task>""",1.0,True
 case_37,conceptual_aggregation,How many respondents from the 'IV - VT' session scored 2 on 'Recommendation (global rating scale)' and 3 on 'Situation'?,"# Survey Data
 
 ## Questions
@@ -16504,8 +16527,8 @@ Rules:
 
 <task>
 How many respondents from the 'IV - VT' session scored 2 on 'Recommendation (global rating scale)' and 3 on 'Situation'?
-</task>",,False
-case_38,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (global rating scale)' and 'Assessment' is greater than 5.,"# Survey Data
+</task>",1,True
+case_38,conceptual_aggregation,Count the respondents whose total score for 'Recommendation (global rating scale)' and 'Assessment' is greater than 5.,"""# Survey Data
 
 ## Questions
 
@@ -16671,7 +16694,7 @@ Clear communication between Reg and colleague during handover
 - **Comments:** Clear communication during handover
 Good
 
-",3,"<example>
+""",3,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -17031,16 +17054,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents whose total score for 'Recommendation (global rating scale)' and 'Assessment' is greater than 5.
-</task>",,False
-case_39,conceptual_aggregation,How many respondents from the 'II (Anaphylaxis)' session scored 3 on 'Background (examination)' and 3 on 'Recommendation (clear recommendation)'?,"# Survey Data
+</task>""",3.0,True
+case_39,conceptual_aggregation,How many respondents from the 'II (Anaphylaxis)' session scored 3 on 'Background (examination)' and 3 on 'Recommendation (clear recommendation)'?,"""# Survey Data
 
 ## Questions
 
@@ -17183,7 +17206,7 @@ Late response for considering consultation
 - **Comments:** Consent denied for video recordings
 Satisfactory
 
-",1,"<example>
+""",1,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -17497,15 +17520,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 How many respondents from the 'II (Anaphylaxis)' session scored 3 on 'Background (examination)' and 3 on 'Recommendation (clear recommendation)'?
-</task>",,False
+</task>""",1.0,True
 case_40,conceptual_aggregation,How many respondents who scored 3 on 'Background (examination)' also have 'Comments' that contain the word 'unclear'?,"# Survey Data
 
 ## Questions
@@ -18091,7 +18114,7 @@ Rules:
 
 <task>
 How many respondents who scored 3 on 'Background (examination)' also have 'Comments' that contain the word 'unclear'?
-</task>",,False
+</task>",0,True
 case_41,conceptual_aggregation,Count the respondents who participated in a session where the average 'Recommendation (global rating scale)' for that session name is greater than 2.5.,"# Survey Data
 
 ## Questions
@@ -18596,7 +18619,7 @@ Rules:
 
 <task>
 Count the respondents who participated in a session where the average 'Recommendation (global rating scale)' for that session name is greater than 2.5.
-</task>",,False
+</task>",8,True
 case_42,conceptual_aggregation,Count the respondents who participated in a session where the average 'Situation' for that session name is greater than 2.0.,"# Survey Data
 
 ## Questions
@@ -19014,7 +19037,7 @@ Rules:
 
 <task>
 Count the respondents who participated in a session where the average 'Situation' for that session name is greater than 2.0.
-</task>",,False
+</task>",7,True
 case_43,conceptual_aggregation,Count the respondents who participated in a session where the average 'Background (examination)' for that session name is greater than 2.0.,"# Survey Data
 
 ## Questions
@@ -19519,8 +19542,8 @@ Rules:
 
 <task>
 Count the respondents who participated in a session where the average 'Background (examination)' for that session name is greater than 2.0.
-</task>",,False
-case_44,conceptual_aggregation,Count the respondents who participated in a session where the average 'Assessment' for that session name is greater than 2.5.,"# Survey Data
+</task>",7,False
+case_44,conceptual_aggregation,Count the respondents who participated in a session where the average 'Assessment' for that session name is greater than 2.5.,"""# Survey Data
 
 ## Questions
 
@@ -19647,7 +19670,7 @@ Satisfactory
 Clarity is a bit low over whole case scenario
 Satisfactory
 
-",2,"<example>
+""",2,"""<example>
 How many respondents participated in a 'I - MI' session?
 
 DATA:
@@ -19929,15 +19952,15 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 
 <task>
 Count the respondents who participated in a session where the average 'Assessment' for that session name is greater than 2.5.
-</task>",1,False
+</task>""",1.0,False
 case_45,conceptual_aggregation,How many respondents whose comments contain 'Good' also have a total score across all rubric items that is below the average total score for all sessions?,"# Survey Data
 
 ## Questions
@@ -20433,7 +20456,53 @@ Rules:
 
 <task>
 How many respondents whose comments contain 'Good' also have a total score across all rubric items that is below the average total score for all sessions?
-</task>",,False
+</task>","To answer the question, I need to:
+1.  Calculate the total score for each respondent based on the rubric items.
+2.  Calculate the average total score across all respondents.
+3.  Identify respondents whose 'Comments' contain the word 'Good'.
+4.  From those identified, count how many have a total score below the overall average.
+
+**Rubric Items for Scoring:**
+*   Identification
+*   Situation
+*   Background (history)
+*   Background (examination)
+*   Assessment
+*   Recommendation (clear recommendation)
+*   Recommendation (global rating scale)
+
+**1. Calculate Total Score for Each Respondent:**
+
+*   **Respondent 7:** 3 + 3 + 2 + 3 + 2 + 2 + 2 = 17
+*   **Respondent 17:** 3 + 3 + 3 + 3 + 3 + 3 + 2 = 20
+*   **Respondent 4:** 3 + 3 + 3 + 2 + 2 + 2 + 2 = 17
+*   **Respondent 12:** 3 + 3 + 3 + 3 + 2 + 3 + 3 = 20
+*   **Respondent 14:** 3 + 3 + 2 + 2 + 3 + 1 + 2 = 16
+*   **Respondent 21:** 3 + 2 + 3 + 1 + 2 + 3 + 3 = 17
+*   **Respondent 10:** 2 + 2 + 2 + 2 + 2 + 2 + 2 = 14
+*   **Respondent 16:** 3 + 3 + 3 + 3 + 3 + 2 + 3 = 20
+*   **Respondent 9:** 3 + 3 + 2 + 2 + 2 + 3 + 2 = 17
+*   **Respondent 11:** 3 + 3 + 3 + 3 + 3 + 3 + 3 = 21
+
+**2. Calculate the Average Total Score:**
+
+*   Sum of all scores = 17 + 20 + 17 + 20 + 16 + 17 + 14 + 20 + 17 + 21 = 179
+*   Number of respondents = 10
+*   Average total score = 179 / 10 = 17.9
+
+**3. Identify Respondents whose 'Comments' contain 'Good':**
+
+*   **Respondent 12:** Comments: ""Good"" (Contains 'Good')
+*   **Respondent 21:** Comments: ""Diagnostic clarity is present Good and early assessment of condition is done"" (Contains 'Good')
+
+**4. Count how many of these have a total score below the average (17.9):**
+
+*   **Respondent 12:** Total score = 20. Is 20 < 17.9? No.
+*   **Respondent 21:** Total score = 17. Is 17 < 17.9? Yes.
+
+Only Respondent 21 meets both criteria.
+
+1",True
 case_46,conceptual_aggregation,Count the respondents who participated in a session where the average 'Situation' for that session name is greater than 2.0.,"# Survey Data
 
 ## Questions
@@ -20938,7 +21007,7 @@ Rules:
 
 <task>
 Count the respondents who participated in a session where the average 'Situation' for that session name is greater than 2.0.
-</task>",,False
+</task>",7,True
 case_47,conceptual_aggregation,How many respondents have a 'Identification' score that is higher than the average 'Identification' for all sessions on the same date?,"# Survey Data
 
 ## Questions
@@ -21392,7 +21461,7 @@ Rules:
 
 <task>
 How many respondents have a 'Identification' score that is higher than the average 'Identification' for all sessions on the same date?
-</task>",,False
+</task>",4,False
 case_48,conceptual_aggregation,How many respondents have a 'Background (examination)' score that is higher than the average 'Background (examination)' for all sessions on the same date?,"# Survey Data
 
 ## Questions
@@ -21939,7 +22008,7 @@ Rules:
 
 <task>
 How many respondents have a 'Background (examination)' score that is higher than the average 'Background (examination)' for all sessions on the same date?
-</task>",,False
+</task>",3,True
 case_49,conceptual_aggregation,How many respondents whose comments contain 'Clear' also have a total score across all rubric items that is below the average total score for all sessions?,"# Survey Data
 
 ## Questions
@@ -22369,7 +22438,7 @@ Rules:
 
 <task>
 How many respondents whose comments contain 'Clear' also have a total score across all rubric items that is below the average total score for all sessions?
-</task>",,False
+</task>",0,True
 case_50,conceptual_aggregation,How many respondents whose comments contain 'Satisfactory' also have a total score across all rubric items that is below the average total score for all sessions?,"# Survey Data
 
 ## Questions
@@ -22901,4 +22970,37 @@ Rules:
 
 <task>
 How many respondents whose comments contain 'Satisfactory' also have a total score across all rubric items that is below the average total score for all sessions?
-</task>",,False
+</task>","1.  **Calculate the total score for each respondent:**
+    *   **Respondent 1:** -1 (Identification) + 2 (Situation) + 2 (Background history) + 2 (Background examination) + 3 (Assessment) + 2 (Recommendation clear) + 2 (Recommendation GRS) = 12
+    *   **Respondent 11:** 3 + 3 + 3 + 3 + 3 + 3 + 3 = 21
+    *   **Respondent 6:** 3 + 2 + 3 + 3 + 2 + 2 + 3 = 18
+    *   **Respondent 20:** 3 + 3 + 2 + (-1) + 3 + 2 + 3 = 15
+    *   **Respondent 15:** 3 + 3 + 2 + 3 + 2 + 2 + 2 = 17
+    *   **Respondent 12:** 3 + 3 + 3 + 3 + 2 + 3 + 3 = 20
+    *   **Respondent 3:** 0 + 2 + 3 + 3 + 3 + 3 + 3 = 17
+    *   **Respondent 14:** 3 + 3 + 2 + 2 + 3 + 1 + 2 = 16
+    *   **Respondent 16:** 3 + 3 + 3 + 3 + 3 + 2 + 3 = 20
+    *   **Respondent 2:** 3 + 3 + 2 + 3 + 3 + 2 + 1 = 17
+    *   **Respondent 4:** 3 + 3 + 3 + 2 + 2 + 2 + 2 = 17
+
+2.  **Calculate the average total score for all sessions:**
+    *   Sum of all scores = 12 + 21 + 18 + 15 + 17 + 20 + 17 + 16 + 20 + 17 + 17 = 190
+    *   Number of respondents = 11
+    *   Average total score = 190 / 11 ≈ 17.27
+
+3.  **Identify respondents whose comments contain 'Satisfactory' (case-insensitive):**
+    *   Respondent 1 (Comments: ""Satisfactory"") - Total Score: 12
+    *   Respondent 16 (Comments: ""Consent denied for video recordings Satisfactory"") - Total Score: 20
+    *   Respondent 4 (Comments: ""Clinical handover and communication skills, satisfactory No panic, no arrest team Satisfactory"") - Total Score: 17
+
+4.  **Check which of these respondents have a total score below the average (17.27):**
+    *   Respondent 1 (Score: 12) is below 17.27.
+    *   Respondent 16 (Score: 20) is not below 17.27.
+    *   Respondent 4 (Score: 17) is below 17.27.
+
+5.  **Count the number of respondents who meet both conditions:**
+    *   Respondent 1 and Respondent 4 meet both conditions.
+
+There are 2 such respondents.
+
+2",True

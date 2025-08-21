@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,rule_based_querying,Find all respondents whose 'Billing Amount' is between 8883 and 37043.,"<!DOCTYPE html>
+case_2,rule_based_querying,Find all respondents whose 'Billing Amount' is between 8883 and 37043.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -211,7 +211,7 @@ case_2,rule_based_querying,Find all respondents whose 'Billing Amount' is betwee
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['42', '139', '36']","<example>
+</html>""","""['42', '139', '36']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -668,17 +668,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 8883 and 37043.
-</task>","42, 139, 36",False
-case_3,rule_based_querying,List all female respondents whose 'Age' is less than 41.,"<!DOCTYPE html>
+</task>""","42, 139, 36",False
+case_3,rule_based_querying,List all female respondents whose 'Age' is less than 41.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -805,7 +805,7 @@ case_3,rule_based_querying,List all female respondents whose 'Age' is less than 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",['129'],"<example>
+</html>""",['129'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -1092,17 +1092,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all female respondents whose 'Age' is less than 41.
-</task>",129,False
-case_4,rule_based_querying,List all female respondents whose 'Age' is less than 44.,"<!DOCTYPE html>
+</task>""",129,False
+case_4,rule_based_querying,List all female respondents whose 'Age' is less than 44.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -1229,7 +1229,7 @@ case_4,rule_based_querying,List all female respondents whose 'Age' is less than 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",['88'],"<example>
+</html>""",['88'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -1516,17 +1516,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all female respondents whose 'Age' is less than 44.
-</task>",88,False
-case_5,rule_based_querying,Which respondents have a 'Billing Amount' greater than 16209?,"<!DOCTYPE html>
+</task>""",88,False
+case_5,rule_based_querying,Which respondents have a 'Billing Amount' greater than 16209?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -1755,7 +1755,7 @@ case_5,rule_based_querying,Which respondents have a 'Billing Amount' greater tha
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['59', '92', '97', '48', '98', '76', '64']","<example>
+</html>""","""['59', '92', '97', '48', '98', '76', '64']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -2246,17 +2246,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Billing Amount' greater than 16209?
-</task>","59, 92, 97, 48, 98, 76, 64",False
-case_6,rule_based_querying,Which respondents have a 'Age' greater than 36?,"<!DOCTYPE html>
+</task>""","59, 92, 97, 48, 98, 76, 64",False
+case_6,rule_based_querying,Which respondents have a 'Age' greater than 36?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -2383,7 +2383,7 @@ case_6,rule_based_querying,Which respondents have a 'Age' greater than 36?,"<!DO
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['40', '100', '82', '93']","<example>
+</html>""","""['40', '100', '82', '93']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -2670,17 +2670,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Age' greater than 36?
-</task>","40, 100, 82, 93",False
-case_7,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12278 and 27551.,"<!DOCTYPE html>
+</task>""","40, 100, 82, 93",False
+case_7,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12278 and 27551.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -2807,7 +2807,7 @@ case_7,rule_based_querying,Find all respondents whose 'Billing Amount' is betwee
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['114', '93']","<example>
+</html>""","""['114', '93']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -3094,17 +3094,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 12278 and 27551.
-</task>","93, 114",False
-case_8,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 28104.,"<!DOCTYPE html>
+</task>""","93, 114",False
+case_8,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 28104.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -3231,7 +3231,7 @@ case_8,rule_based_querying,List all male respondents whose 'Billing Amount' is l
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",['143'],"<example>
+</html>""",['143'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -3518,17 +3518,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all male respondents whose 'Billing Amount' is less than 28104.
-</task>",143,False
-case_9,rule_based_querying,Find all respondents whose 'Age' is between 30 and 63.,"<!DOCTYPE html>
+</task>""",143,False
+case_9,rule_based_querying,Find all respondents whose 'Age' is between 30 and 63.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -3740,7 +3740,7 @@ case_9,rule_based_querying,Find all respondents whose 'Age' is between 30 and 63
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['7', '91', '142', '24', '84', '4', '75']","<example>
+</html>""","""['7', '91', '142', '24', '84', '4', '75']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -4197,17 +4197,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Age' is between 30 and 63.
-</task>","7, 91, 142, 24, 84, 4, 75",False
-case_10,rule_based_querying,List all female respondents whose 'Billing Amount' is less than 24637.,"<!DOCTYPE html>
+</task>""","7, 91, 142, 24, 84, 4, 75",False
+case_10,rule_based_querying,List all female respondents whose 'Billing Amount' is less than 24637.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -4419,7 +4419,7 @@ case_10,rule_based_querying,List all female respondents whose 'Billing Amount' i
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",['144'],"<example>
+</html>""",['144'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -4876,17 +4876,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all female respondents whose 'Billing Amount' is less than 24637.
-</task>",144,False
-case_11,rule_based_querying,Find all respondents whose 'Age' is between 28 and 57.,"<!DOCTYPE html>
+</task>""",144,False
+case_11,rule_based_querying,Find all respondents whose 'Age' is between 28 and 57.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -5030,7 +5030,7 @@ case_11,rule_based_querying,Find all respondents whose 'Age' is between 28 and 5
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['43', '71', '124']","<example>
+</html>""","""['43', '71', '124']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -5351,17 +5351,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Age' is between 28 and 57.
-</task>","43, 71, 124",False
-case_12,rule_based_querying,List all female respondents whose 'Age' is less than 53.,"<!DOCTYPE html>
+</task>""","43, 71, 124",False
+case_12,rule_based_querying,List all female respondents whose 'Age' is less than 53.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -5488,7 +5488,7 @@ case_12,rule_based_querying,List all female respondents whose 'Age' is less than
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['65', '118']","<example>
+</html>""","""['65', '118']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -5775,17 +5775,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all female respondents whose 'Age' is less than 53.
-</task>","65, 118",False
-case_13,rule_based_querying,List all male respondents whose 'Age' is less than 48.,"<!DOCTYPE html>
+</task>""","65, 118",False
+case_13,rule_based_querying,List all male respondents whose 'Age' is less than 48.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -5912,7 +5912,7 @@ case_13,rule_based_querying,List all male respondents whose 'Age' is less than 4
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['78', '2']","<example>
+</html>""","""['78', '2']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -6199,17 +6199,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all male respondents whose 'Age' is less than 48.
-</task>","78, 2",False
-case_14,rule_based_querying,Which respondents have a 'Billing Amount' greater than 17004?,"<!DOCTYPE html>
+</task>""","78, 2",False
+case_14,rule_based_querying,Which respondents have a 'Billing Amount' greater than 17004?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -6404,7 +6404,7 @@ case_14,rule_based_querying,Which respondents have a 'Billing Amount' greater th
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['113', '86', '77', '83', '46']","<example>
+</html>""","""['113', '86', '77', '83', '46']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -6827,17 +6827,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Billing Amount' greater than 17004?
-</task>","113, 86, 77, 83, 46",False
-case_15,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 30437.,"<!DOCTYPE html>
+</task>""","113, 86, 77, 83, 46",False
+case_15,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 30437.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -7049,7 +7049,7 @@ case_15,rule_based_querying,List all male respondents whose 'Billing Amount' is 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['148', '63', '84', '97']","<example>
+</html>""","""['148', '63', '84', '97']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -7506,17 +7506,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all male respondents whose 'Billing Amount' is less than 30437.
-</task>","148, 63, 84, 97",False
-case_16,rule_based_querying,Which respondents have a 'Billing Amount' greater than 25465?,"<!DOCTYPE html>
+</task>""","148, 63, 84, 97",False
+case_16,rule_based_querying,Which respondents have a 'Billing Amount' greater than 25465?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -7677,7 +7677,7 @@ case_16,rule_based_querying,Which respondents have a 'Billing Amount' greater th
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['47', '141', '7', '75']","<example>
+</html>""","""['47', '141', '7', '75']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -8032,17 +8032,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Billing Amount' greater than 25465?
-</task>","47, 141, 7, 75",False
-case_17,rule_based_querying,Which respondents have a 'Billing Amount' greater than 24130?,"<!DOCTYPE html>
+</task>""","47, 141, 7, 75",False
+case_17,rule_based_querying,Which respondents have a 'Billing Amount' greater than 24130?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -8169,7 +8169,7 @@ case_17,rule_based_querying,Which respondents have a 'Billing Amount' greater th
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['105', '128', '36', '62', '65']","<example>
+</html>""","""['105', '128', '36', '62', '65']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -8456,17 +8456,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Billing Amount' greater than 24130?
-</task>","105, 128, 36, 62, 65",False
-case_18,rule_based_querying,Find all respondents whose 'Billing Amount' is between 9407 and 32871.,"<!DOCTYPE html>
+</task>""","105, 128, 36, 62, 65",False
+case_18,rule_based_querying,Find all respondents whose 'Billing Amount' is between 9407 and 32871.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -8610,7 +8610,7 @@ case_18,rule_based_querying,Find all respondents whose 'Billing Amount' is betwe
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['97', '19', '150', '103']","<example>
+</html>""","""['97', '19', '150', '103']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -8931,17 +8931,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 9407 and 32871.
-</task>","97, 19, 150, 103",False
-case_19,rule_based_querying,List all male respondents whose 'Age' is less than 57.,"<!DOCTYPE html>
+</task>""","97, 19, 150, 103",False
+case_19,rule_based_querying,List all male respondents whose 'Age' is less than 57.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9153,7 +9153,7 @@ case_19,rule_based_querying,List all male respondents whose 'Age' is less than 5
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['140', '28', '12']","<example>
+</html>""","""['140', '28', '12']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -9610,17 +9610,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all male respondents whose 'Age' is less than 57.
-</task>","140, 28, 12",False
-case_20,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12135 and 39165.,"<!DOCTYPE html>
+</task>""","140, 28, 12",False
+case_20,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12135 and 39165.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9832,7 +9832,7 @@ case_20,rule_based_querying,Find all respondents whose 'Billing Amount' is betwe
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['26', '57', '131', '149']","<example>
+</html>""","""['26', '57', '131', '149']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -10289,17 +10289,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 12135 and 39165.
-</task>","26, 57, 131, 149",False
-case_21,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 37725.,"<!DOCTYPE html>
+</task>""","26, 57, 131, 149",False
+case_21,rule_based_querying,List all male respondents whose 'Billing Amount' is less than 37725.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -10460,7 +10460,7 @@ case_21,rule_based_querying,List all male respondents whose 'Billing Amount' is 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['89', '7']","<example>
+</html>""","""['89', '7']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -10815,17 +10815,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all male respondents whose 'Billing Amount' is less than 37725.
-</task>","7, 89",False
-case_22,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12319 and 39298.,"<!DOCTYPE html>
+</task>""","7, 89",False
+case_22,rule_based_querying,Find all respondents whose 'Billing Amount' is between 12319 and 39298.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -11054,7 +11054,7 @@ case_22,rule_based_querying,Find all respondents whose 'Billing Amount' is betwe
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['27', '76', '37', '90', '117', '134']","<example>
+</html>""","""['27', '76', '37', '90', '117', '134']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -11545,17 +11545,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 12319 and 39298.
-</task>","27, 76, 37, 90, 117, 134",False
-case_23,rule_based_querying,Which respondents have a 'Age' greater than 41?,"<!DOCTYPE html>
+</task>""","27, 76, 37, 90, 117, 134",False
+case_23,rule_based_querying,Which respondents have a 'Age' greater than 41?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -11784,7 +11784,7 @@ case_23,rule_based_querying,Which respondents have a 'Age' greater than 41?,"<!D
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['90', '122', '25', '116', '82', '77', '6']","<example>
+</html>""","""['90', '122', '25', '116', '82', '77', '6']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -12275,17 +12275,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Age' greater than 41?
-</task>","90, 122, 25, 116, 82, 77, 6",False
-case_24,rule_based_querying,Which respondents have a 'Billing Amount' greater than 15341?,"<!DOCTYPE html>
+</task>""","90, 122, 25, 116, 82, 77, 6",False
+case_24,rule_based_querying,Which respondents have a 'Billing Amount' greater than 15341?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -12412,7 +12412,7 @@ case_24,rule_based_querying,Which respondents have a 'Billing Amount' greater th
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['63', '45', '41']","<example>
+</html>""","""['63', '45', '41']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -12699,17 +12699,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents have a 'Billing Amount' greater than 15341?
-</task>","63, 45, 41",False
-case_25,rule_based_querying,Find all respondents whose 'Billing Amount' is between 10047 and 30813.,"<!DOCTYPE html>
+</task>""","63, 45, 41",False
+case_25,rule_based_querying,Find all respondents whose 'Billing Amount' is between 10047 and 30813.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -12904,7 +12904,7 @@ case_25,rule_based_querying,Find all respondents whose 'Billing Amount' is betwe
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['144', '110', '102', '51']","<example>
+</html>""","""['144', '110', '102', '51']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -13327,16 +13327,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is between 10047 and 30813.
-</task>","144, 110, 102, 51",False
+</task>""","144, 110, 102, 51",False
 case_26,rule_based_querying,Find all respondents whose calculated length of stay is greater than 41 days.,"<!DOCTYPE html>
 <html>
 <head>
@@ -14066,7 +14066,7 @@ Rules:
 
 <task>
 Find all respondents whose calculated length of stay is greater than 41 days.
-</task>",,False
+</task>",EMPTY_MODEL_RESPONSE,False
 case_27,rule_based_querying,Find all respondents whose calculated length of stay is greater than 33 days.,"<!DOCTYPE html>
 <html>
 <head>
@@ -14694,8 +14694,8 @@ Rules:
 
 <task>
 Find all respondents whose calculated length of stay is greater than 33 days.
-</task>",,False
-case_28,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"<!DOCTYPE html>
+</task>",EMPTY_MODEL_RESPONSE,False
+case_28,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -14890,7 +14890,7 @@ case_28,rule_based_querying,List all respondents whose 'Age' is an even number a
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['45', '81']","<example>
+</html>""","""['45', '81']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -15313,17 +15313,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.
-</task>","45, 81",False
-case_29,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"<!DOCTYPE html>
+</task>""","45, 81",False
+case_29,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -15467,7 +15467,7 @@ case_29,rule_based_querying,List all respondents whose 'Age' is an even number a
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",['96'],"<example>
+</html>""",['96'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -15788,16 +15788,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.
-</task>",96,False
+</task>""",96,False
 case_30,rule_based_querying,Find all respondents whose calculated length of stay is greater than 43 days.,"<!DOCTYPE html>
 <html>
 <head>
@@ -16476,8 +16476,8 @@ Rules:
 
 <task>
 Find all respondents whose calculated length of stay is greater than 43 days.
-</task>",,False
-case_31,rule_based_querying,Which male respondents are over the age of 57 and have a 'Billing Amount' less than 21479?,"<!DOCTYPE html>
+</task>",EMPTY_MODEL_RESPONSE,False
+case_31,rule_based_querying,Which male respondents are over the age of 57 and have a 'Billing Amount' less than 21479?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -16706,7 +16706,7 @@ case_31,rule_based_querying,Which male respondents are over the age of 57 and ha
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['92', '35', '50', '99']","<example>
+</html>""","""['92', '35', '50', '99']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -17197,17 +17197,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which male respondents are over the age of 57 and have a 'Billing Amount' less than 21479?
-</task>","92, 35, 50, 99",False
-case_32,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'elective' procedure.,"<!DOCTYPE html>
+</task>""","92, 35, 50, 99",False
+case_32,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'elective' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -17419,7 +17419,7 @@ case_32,rule_based_querying,List all respondents whose 'Room Number' is an even 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['114', '43', '57', '71']","<example>
+</html>""","""['114', '43', '57', '71']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -17876,17 +17876,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Room Number' is an even number and who were admitted for an 'elective' procedure.
-</task>","114, 43, 57, 71",False
-case_33,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'urgent' procedure.,"<!DOCTYPE html>
+</task>""","114, 43, 57, 71",False
+case_33,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'urgent' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -18064,7 +18064,7 @@ case_33,rule_based_querying,List all respondents whose 'Room Number' is an even 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['118', '145', '29']","<example>
+</html>""","""['118', '145', '29']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -18453,17 +18453,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Room Number' is an even number and who were admitted for an 'urgent' procedure.
-</task>","118, 145, 29",False
-case_34,rule_based_querying,Which female respondents are over the age of 73 and have a 'Billing Amount' less than 25426?,"<!DOCTYPE html>
+</task>""","118, 145, 29",False
+case_34,rule_based_querying,Which female respondents are over the age of 73 and have a 'Billing Amount' less than 25426?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -18641,7 +18641,7 @@ case_34,rule_based_querying,Which female respondents are over the age of 73 and 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",[],"<example>
+</html>""",[],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -19030,17 +19030,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which female respondents are over the age of 73 and have a 'Billing Amount' less than 25426?
-</task>",None,False
-case_35,rule_based_querying,Find all respondents whose calculated length of stay is greater than 37 days.,"<!DOCTYPE html>
+</task>""",,False
+case_35,rule_based_querying,Find all respondents whose calculated length of stay is greater than 37 days.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -19218,7 +19218,7 @@ case_35,rule_based_querying,Find all respondents whose calculated length of stay
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['90', '113', '31', '54']","<example>
+</html>""","""['90', '113', '31', '54']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -19607,17 +19607,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose calculated length of stay is greater than 37 days.
-</task>",,False
-case_36,rule_based_querying,Which male respondents are over the age of 52 and have a 'Billing Amount' less than 25089?,"<!DOCTYPE html>
+</task>""",54,False
+case_36,rule_based_querying,Which male respondents are over the age of 52 and have a 'Billing Amount' less than 25089?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -19812,7 +19812,7 @@ case_36,rule_based_querying,Which male respondents are over the age of 52 and ha
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",['110'],"<example>
+</html>""",['110'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -20235,17 +20235,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which male respondents are over the age of 52 and have a 'Billing Amount' less than 25089?
-</task>",110,False
-case_37,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"<!DOCTYPE html>
+</task>""",110,False
+case_37,rule_based_querying,List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -20389,7 +20389,7 @@ case_37,rule_based_querying,List all respondents whose 'Age' is an even number a
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['147', '69']","<example>
+</html>""","""['147', '69']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -20710,17 +20710,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Age' is an even number and who were admitted for an 'emergency' procedure.
-</task>","147, 69",False
-case_38,rule_based_querying,Which female respondents are over the age of 31 and have a 'Billing Amount' less than 28838?,"<!DOCTYPE html>
+</task>""","147, 69",False
+case_38,rule_based_querying,Which female respondents are over the age of 31 and have a 'Billing Amount' less than 28838?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -20932,7 +20932,7 @@ case_38,rule_based_querying,Which female respondents are over the age of 31 and 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",[],"<example>
+</html>""",[],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -21389,17 +21389,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which female respondents are over the age of 31 and have a 'Billing Amount' less than 28838?
-</task>",None,False
-case_39,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'emergency' procedure.,"<!DOCTYPE html>
+</task>""",,False
+case_39,rule_based_querying,List all respondents whose 'Room Number' is an even number and who were admitted for an 'emergency' procedure.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -21577,7 +21577,7 @@ case_39,rule_based_querying,List all respondents whose 'Room Number' is an even 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",[],"<example>
+</html>""",[],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -21966,16 +21966,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents whose 'Room Number' is an even number and who were admitted for an 'emergency' procedure.
-</task>",None,False
+</task>""",,False
 case_40,rule_based_querying,Find all respondents whose calculated length of stay is greater than 34 days.,"<!DOCTYPE html>
 <html>
 <head>
@@ -22705,7 +22705,7 @@ Rules:
 
 <task>
 Find all respondents whose calculated length of stay is greater than 34 days.
-</task>",,False
+</task>",EMPTY_MODEL_RESPONSE,False
 case_41,rule_based_querying,Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?,"<!DOCTYPE html>
 <html>
 <head>
@@ -23231,7 +23231,7 @@ Rules:
 
 <task>
 Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?
-</task>",,False
+</task>",EMPTY_MODEL_RESPONSE,False
 case_42,rule_based_querying,Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?,"<!DOCTYPE html>
 <html>
 <head>
@@ -23961,8 +23961,8 @@ Rules:
 
 <task>
 Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?
-</task>",,False
-case_43,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their insurance provider.,"<!DOCTYPE html>
+</task>",EMPTY_MODEL_RESPONSE,False
+case_43,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their insurance provider.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -24123,7 +24123,7 @@ case_43,rule_based_querying,Find all respondents whose 'Billing Amount' is great
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['41', '71', '65']","<example>
+</html>""","""['41', '71', '65']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -24478,17 +24478,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their insurance provider.
-</task>","41, 65, 71",False
-case_44,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"<!DOCTYPE html>
+</task>""","41, 65, 71",False
+case_44,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -24683,7 +24683,7 @@ case_44,rule_based_querying,Which patients have a 'Billing Amount' that is highe
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['60', '110', '1', '55']","<example>
+</html>""","""['60', '110', '1', '55']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -25106,17 +25106,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?
-</task>",,False
-case_45,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.,"<!DOCTYPE html>
+</task>""","1, 55, 60, 110",False
+case_45,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -25345,7 +25345,7 @@ case_45,rule_based_querying,Find all respondents whose 'Billing Amount' is great
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>","['58', '3', '88', '109']","<example>
+</html>""","""['58', '3', '88', '109']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -25836,16 +25836,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.
-</task>",,False
+</task>""","3, 58, 88, 109",False
 case_46,rule_based_querying,Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?,"<!DOCTYPE html>
 <html>
 <head>
@@ -26524,8 +26524,8 @@ Rules:
 
 <task>
 Which respondents have a calculated length of stay that is more than double the average length of stay for their admission type?
-</task>",,False
-case_47,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.,"<!DOCTYPE html>
+</task>",EMPTY_MODEL_RESPONSE,False
+case_47,rule_based_querying,Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -26635,7 +26635,7 @@ case_47,rule_based_querying,Find all respondents whose 'Billing Amount' is great
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",['55'],"<example>
+</html>""",['55'],"""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -26888,17 +26888,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose 'Billing Amount' is greater than the average 'Billing Amount' for their medical condition.
-</task>",55,False
-case_48,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"<!DOCTYPE html>
+</task>""",55,False
+case_48,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -27110,7 +27110,7 @@ case_48,rule_based_querying,Which patients have a 'Billing Amount' that is highe
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>","['56', '23', '110', '64']","<example>
+</html>""","""['56', '23', '110', '64']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -27567,17 +27567,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?
-</task>",,False
-case_49,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"<!DOCTYPE html>
+</task>""","23, 56, 64, 110",False
+case_49,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -27755,7 +27755,7 @@ case_49,rule_based_querying,Which patients have a 'Billing Amount' that is highe
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['64', '73', '53']","<example>
+</html>""","""['64', '73', '53']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -28144,17 +28144,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?
-</task>","53, 64, 73",False
-case_50,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"<!DOCTYPE html>
+</task>""","53, 64, 73",False
+case_50,rule_based_querying,Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -28315,7 +28315,7 @@ case_50,rule_based_querying,Which patients have a 'Billing Amount' that is highe
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>","['101', '62', '127']","<example>
+</html>""","""['101', '62', '127']""","""<example>
 Find all respondents whose 'Age' is between 28 and 47.
 
 DATA:
@@ -28670,13 +28670,13 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which patients have a 'Billing Amount' that is higher than the average billing amount for all patients with the same medical condition?
-</task>","62, 101, 127",False
+</task>""","62, 101, 127",False

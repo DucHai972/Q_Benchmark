@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,answer_lookup,What is the Emotional Regulation Frequency.On Top of Things of the respondent with Anger = 4.0?,"# Survey Data
+case_2,answer_lookup,What is the Emotional Regulation Frequency.On Top of Things of the respondent with Anger = 4.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -296,7 +296,7 @@ case_2,answer_lookup,What is the Emotional Regulation Frequency.On Top of Things
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",2.0,"<example>
+""""""",2.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -925,18 +925,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.On Top of Things of the respondent with Anger = 4.0?
-</task>",2.0,True
-case_3,answer_lookup,What is the Anger of respondent '51'?,"# Survey Data
+</task>""""""",2.0,True
+case_3,answer_lookup,What is the Anger of respondent '51'?,"""""""# Survey Data
 
 ## Questions
 
@@ -1191,7 +1191,7 @@ case_3,answer_lookup,What is the Anger of respondent '51'?,"# Survey Data
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",3.0,"<example>
+""""""",3.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -1736,17 +1736,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anger of respondent '51'?
-</task>",3.0,True
+</task>""""""",3.0,True
 case_4,answer_lookup,What is the Loneliness of the respondent with Worry = 2.0?,"# Survey Data
 
 ## Questions
@@ -3397,8 +3397,20 @@ Rules:
 
 <task>
 What is the Loneliness of the respondent with Worry = 2.0?
-</task>",,False
-case_5,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Life of respondent '89'?,"# Survey Data
+</task>","To answer the question, I need to find the respondent(s) with a 'Worry' value of 2.0 and then identify their 'Loneliness' value.
+
+Scanning the provided responses:
+- Respondent 87 has 'Worry' = 2.0. Their 'Loneliness' is 5.0.
+- Respondent 27 has 'Worry' = 2.0. Their 'Loneliness' is 9.0.
+
+There are two respondents who match the criteria. Since the question asks for ""the Loneliness"" (singular), and there are two valid answers, I will provide the value for the respondent with the lowest ID among those that match.
+
+The respondents with 'Worry' = 2.0 are Respondent 27 and Respondent 87.
+The lowest ID is 27.
+For Respondent 27, 'Loneliness' is 9.0.
+
+9.0",True
+case_5,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Life of respondent '89'?,"""""""# Survey Data
 
 ## Questions
 
@@ -3854,7 +3866,7 @@ case_5,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Lif
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 3.0
 
-",2.0,"<example>
+""""""",2.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -4801,18 +4813,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Irritated by Life of respondent '89'?
-</task>",2.0,True
-case_6,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '60'?,"# Survey Data
+</task>""""""",2.0,True
+case_6,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '60'?,"""""""# Survey Data
 
 ## Questions
 
@@ -5265,7 +5277,7 @@ case_6,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awful
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -6206,18 +6218,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '60'?
-</task>",1.0,True
-case_7,answer_lookup,What is the Emotional Regulation Frequency.Things Going Your Way of the respondent with Laughter = 6.0?,"# Survey Data
+</task>""""""",1.0,True
+case_7,answer_lookup,What is the Emotional Regulation Frequency.Things Going Your Way of the respondent with Laughter = 6.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -6632,7 +6644,7 @@ case_7,answer_lookup,What is the Emotional Regulation Frequency.Things Going You
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -7497,17 +7509,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Things Going Your Way of the respondent with Laughter = 6.0?
-</task>",2.0,False
+</task>""""""",2.0,False
 case_8,answer_lookup,What is the Emotional Regulation Frequency.Felt Overwhelmed of respondent '84'?,"# Survey Data
 
 ## Questions
@@ -7882,7 +7894,7 @@ case_8,answer_lookup,What is the Emotional Regulation Frequency.Felt Overwhelmed
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -8675,8 +8687,8 @@ Rules:
 
 <task>
 What is the Emotional Regulation Frequency.Felt Overwhelmed of respondent '84'?
-</task>",,False
-case_9,answer_lookup,"What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent with Ethnic identity = Black, mulatto (Afro-descendant), Afro-Colombian?","# Survey Data
+</task>","The data for ""Emotional Regulation Frequency.Felt Overwhelmed"" is not available for respondent '84' in the provided responses.",False
+case_9,answer_lookup,"""""""What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent with Ethnic identity = Black, mulatto (Afro-descendant), Afro-Colombian?""""""","""""""# Survey Data
 
 ## Questions
 
@@ -9055,7 +9067,7 @@ case_9,answer_lookup,"What is the Anxiety Symptoms Frequency.Feeling Nervous or 
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -9848,18 +9860,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent with Ethnic identity = Black, mulatto (Afro-descendant), Afro-Colombian?
-</task>",1.0,True
-case_10,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '36'?,"# Survey Data
+</task>""""""",1.0,True
+case_10,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '36'?,"""""""# Survey Data
 
 ## Questions
 
@@ -10356,7 +10368,7 @@ case_10,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Wort
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",0.0,"<example>
+""""""",0.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -11385,17 +11397,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '36'?
-</task>",0.0,True
+</task>""""""",0.0,True
 case_11,answer_lookup,What is the Depressive Symptoms Frequency.Suicidal Thoughts of the respondent with Worry = 2.0?,"# Survey Data
 
 ## Questions
@@ -12566,8 +12578,12 @@ Rules:
 
 <task>
 What is the Depressive Symptoms Frequency.Suicidal Thoughts of the respondent with Worry = 2.0?
-</task>",,False
-case_12,answer_lookup,What is the Parental Education.Father of respondent '3'?,"# Survey Data
+</task>","The respondents with Worry = 2.0 are Respondent 131 and Respondent 29.
+- For Respondent 131, Depressive Symptoms Frequency.Suicidal Thoughts is 0.0.
+- For Respondent 29, Depressive Symptoms Frequency.Suicidal Thoughts is 1.0.
+
+0.0, 1.0",True
+case_12,answer_lookup,What is the Parental Education.Father of respondent '3'?,"""""""# Survey Data
 
 ## Questions
 
@@ -13066,7 +13082,7 @@ case_12,answer_lookup,What is the Parental Education.Father of respondent '3'?,"
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",15.0,"<example>
+""""""",15.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -14099,18 +14115,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Parental Education.Father of respondent '3'?
-</task>",15.0,True
-case_13,answer_lookup,What is the Emotional Regulation Frequency.Things Going Your Way of respondent '46'?,"# Survey Data
+</task>""""""",15.0,True
+case_13,answer_lookup,What is the Emotional Regulation Frequency.Things Going Your Way of respondent '46'?,"""""""# Survey Data
 
 ## Questions
 
@@ -14565,7 +14581,7 @@ case_13,answer_lookup,What is the Emotional Regulation Frequency.Things Going Yo
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -15510,18 +15526,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Things Going Your Way of respondent '46'?
-</task>",2.0,False
-case_14,answer_lookup,What is the Depressive Symptoms Frequency.Depressed Mood of the respondent with Happiness = 8.0?,"# Survey Data
+</task>""""""",2.0,False
+case_14,answer_lookup,What is the Depressive Symptoms Frequency.Depressed Mood of the respondent with Happiness = 8.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -15812,7 +15828,7 @@ case_14,answer_lookup,What is the Depressive Symptoms Frequency.Depressed Mood o
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -16429,17 +16445,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Depressed Mood of the respondent with Happiness = 8.0?
-</task>",0.0,False
+</task>""""""",0.0,False
 case_15,answer_lookup,What is the Parental Education.Mother of respondent '126'?,"# Survey Data
 
 ## Questions
@@ -16695,7 +16711,7 @@ case_15,answer_lookup,What is the Parental Education.Mother of respondent '126'?
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -17250,8 +17266,8 @@ Rules:
 
 <task>
 What is the Parental Education.Mother of respondent '126'?
-</task>",,False
-case_16,answer_lookup,What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Anger = 4.0?,"# Survey Data
+</task>",BLOCKED_BY_TOKEN_LIMIT,False
+case_16,answer_lookup,What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Anger = 4.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -17669,7 +17685,7 @@ case_16,answer_lookup,What is the Emotional Regulation Frequency.Unable to Contr
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",4.0,"<example>
+""""""",4.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -18540,18 +18556,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Anger = 4.0?
-</task>","4.0, 4.0, 2.0",True
-case_17,answer_lookup,What is the Depressive Symptoms Frequency.Psychomotor Changes of the respondent with Anger = 1.0?,"# Survey Data
+</task>""""""","4.0, 4.0, 2.0",True
+case_17,answer_lookup,What is the Depressive Symptoms Frequency.Psychomotor Changes of the respondent with Anger = 1.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -18886,7 +18902,7 @@ case_17,answer_lookup,What is the Depressive Symptoms Frequency.Psychomotor Chan
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -19591,18 +19607,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Psychomotor Changes of the respondent with Anger = 1.0?
-</task>",N/A,True
-case_18,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '113'?,"# Survey Data
+</task>""""""",,True
+case_18,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '113'?,"""""""# Survey Data
 
 ## Questions
 
@@ -19974,7 +19990,7 @@ case_18,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Wort
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",2.0,"<example>
+""""""",2.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -20753,18 +20769,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Feelings of Worthlessness of respondent '113'?
-</task>",2.0,True
-case_19,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes of respondent '142'?,"# Survey Data
+</task>""""""",2.0,True
+case_19,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes of respondent '142'?,"""""""# Survey Data
 
 ## Questions
 
@@ -21140,7 +21156,7 @@ case_19,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -21927,18 +21943,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Appetite Changes of respondent '142'?
-</task>",1.0,True
-case_20,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '18'?,"# Survey Data
+</task>""""""",1.0,True
+case_20,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '18'?,"""""""# Survey Data
 
 ## Questions
 
@@ -22193,7 +22209,7 @@ case_20,answer_lookup,What is the Anxiety Symptoms Frequency.Fear Something Awfu
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -22738,18 +22754,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Fear Something Awful Might Happen of respondent '18'?
-</task>",1.0,True
-case_21,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Life of respondent '72'?,"# Survey Data
+</task>""""""",1.0,True
+case_21,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Life of respondent '72'?,"""""""# Survey Data
 
 ## Questions
 
@@ -23118,7 +23134,7 @@ case_21,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Li
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",3.0,"<example>
+""""""",3.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -23891,18 +23907,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Irritated by Life of respondent '72'?
-</task>",3.0,True
-case_22,answer_lookup,What is the Emotional Regulation Frequency.Unable to Cope of respondent '105'?,"# Survey Data
+</task>""""""",3.0,True
+case_22,answer_lookup,What is the Emotional Regulation Frequency.Unable to Cope of respondent '105'?,"""""""# Survey Data
 
 ## Questions
 
@@ -24279,7 +24295,7 @@ case_22,answer_lookup,What is the Emotional Regulation Frequency.Unable to Cope 
   - **Concentration Difficulties:** 2.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -25068,18 +25084,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Unable to Cope of respondent '105'?
-</task>",1.0,True
-case_23,answer_lookup,What is the Parental Education.Mother of respondent '26'?,"# Survey Data
+</task>""""""",1.0,True
+case_23,answer_lookup,What is the Parental Education.Mother of respondent '26'?,"""""""# Survey Data
 
 ## Questions
 
@@ -25610,7 +25626,7 @@ case_23,answer_lookup,What is the Parental Education.Mother of respondent '26'?,
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",30.0,"<example>
+""""""",30.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -26707,18 +26723,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Parental Education.Mother of respondent '26'?
-</task>",30.0,True
-case_24,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of the respondent with Depression = 3.0?,"# Survey Data
+</task>""""""",30.0,True
+case_24,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of the respondent with Depression = 3.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -27216,7 +27232,7 @@ case_24,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of the
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",0.0,"<example>
+""""""",0.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -28247,18 +28263,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Irritability of the respondent with Depression = 3.0?
-</task>",0.0,True
-case_25,answer_lookup,What is the Laughter of respondent '125'?,"# Survey Data
+</task>""""""",0.0,True
+case_25,answer_lookup,What is the Laughter of respondent '125'?,"""""""# Survey Data
 
 ## Questions
 
@@ -28551,7 +28567,7 @@ case_25,answer_lookup,What is the Laughter of respondent '125'?,"# Survey Data
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",8.0,"<example>
+""""""",8.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -29172,18 +29188,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Laughter of respondent '125'?
-</task>",8.0,True
-case_26,answer_lookup,What is the Parental Education.Mother of the respondent with Year of birth = 1999.0?,"# Survey Data
+</task>""""""",8.0,True
+case_26,answer_lookup,What is the Parental Education.Mother of the respondent with Year of birth = 1999.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -29678,7 +29694,7 @@ case_26,answer_lookup,What is the Parental Education.Mother of the respondent wi
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",17.0,"<example>
+""""""",17.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -30703,18 +30719,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Parental Education.Mother of the respondent with Year of birth = 1999.0?
-</task>",17.0,True
-case_27,answer_lookup,What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent whose Depressive Symptoms Frequency.Fatigue was 1.0 and Emotional Regulation Frequency.Lacked Confidence Handling Problems was 3.0?,"# Survey Data
+</task>""""""",17.0,True
+case_27,answer_lookup,What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent whose Depressive Symptoms Frequency.Fatigue was 1.0 and Emotional Regulation Frequency.Lacked Confidence Handling Problems was 3.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -31050,7 +31066,7 @@ case_27,answer_lookup,What is the Anxiety Symptoms Frequency.Feeling Nervous or 
   - **Concentration Difficulties:** 2.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -31757,17 +31773,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respondent whose Depressive Symptoms Frequency.Fatigue was 1.0 and Emotional Regulation Frequency.Lacked Confidence Handling Problems was 3.0?
-</task>","1. **Identify the criteria:**
+</task>""""""","1. **Identify the criteria:**
     *   Depressive Symptoms Frequency.Fatigue = 1.0
     *   Emotional Regulation Frequency.Lacked Confidence Handling Problems = 3.0
 
@@ -31776,7 +31792,7 @@ What is the Anxiety Symptoms Frequency.Feeling Nervous or On Edge of the respond
     *   **Respondent 76:** Depressive Symptoms Frequency.Fatigue is 1.0 (Matches), but Emotional Regulation Frequency.Lacked Confidence Handling Problems is 1.0 (Does not match).
     *   **Respondent 56:**
         *   Depressive Symptoms Frequency.Fatigue is 1.0 (Matches).",True
-case_28,answer_lookup,What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Gender = Female?,"# Survey Data
+case_28,answer_lookup,What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Gender = Female?,"""""""# Survey Data
 
 ## Questions
 
@@ -32233,7 +32249,7 @@ case_28,answer_lookup,What is the Emotional Regulation Frequency.Unable to Contr
   - **Concentration Difficulties:** 3.0
   - **Suicidal Thoughts:** 2.0
 
-",3.0,"<example>
+""""""",3.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -33182,17 +33198,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Gender = Female?
-</task>","3.0, 3.0, 3.0, 3.0, 2.0, 3.0",True
+</task>""""""","3.0, 3.0, 3.0, 3.0, 2.0, 3.0",True
 case_29,answer_lookup,What is the Parental Education.Mother of respondent '64'?,"# Survey Data
 
 ## Questions
@@ -33489,7 +33505,7 @@ case_29,answer_lookup,What is the Parental Education.Mother of respondent '64'?,
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -34126,7 +34142,7 @@ Rules:
 
 <task>
 What is the Parental Education.Mother of respondent '64'?
-</task>",,False
+</task>",BLOCKED_BY_TOKEN_LIMIT,False
 case_30,answer_lookup,What is the Depressive Symptoms Frequency.Suicidal Thoughts of the respondent whose Stress was 3.0 and Depressive Symptoms Frequency.Anhedonia was 0.0?,"# Survey Data
 
 ## Questions
@@ -34928,8 +34944,8 @@ Rules:
 
 <task>
 What is the Depressive Symptoms Frequency.Suicidal Thoughts of the respondent whose Stress was 3.0 and Depressive Symptoms Frequency.Anhedonia was 0.0?
-</task>",,False
-case_31,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '102'?,"# Survey Data
+</task>",2.0,False
+case_31,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '102'?,"""""""# Survey Data
 
 ## Questions
 
@@ -35384,7 +35400,7 @@ case_31,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Str
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -36329,18 +36345,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '102'?
-</task>",2.0,False
-case_32,answer_lookup,What is the Year of birth of the respondent with the highest Enjoyment among those with Gender = Male?,"# Survey Data
+</task>""""""",2.0,False
+case_32,answer_lookup,What is the Year of birth of the respondent with the highest Enjoyment among those with Gender = Male?,"""""""# Survey Data
 
 ## Questions
 
@@ -36718,7 +36734,7 @@ case_32,answer_lookup,What is the Year of birth of the respondent with the highe
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",2003.0,"<example>
+""""""",2003.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -37509,18 +37525,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Year of birth of the respondent with the highest Enjoyment among those with Gender = Male?
-</task>",2003.0,True
-case_33,answer_lookup,What is the Learning of respondent '95'?,"# Survey Data
+</task>""""""",2003.0,True
+case_33,answer_lookup,What is the Learning of respondent '95'?,"""""""# Survey Data
 
 ## Questions
 
@@ -37935,7 +37951,7 @@ case_33,answer_lookup,What is the Learning of respondent '95'?,"# Survey Data
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",7.0,"<example>
+""""""",7.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -38800,18 +38816,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Learning of respondent '95'?
-</task>",7.0,True
-case_34,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of respondent '28'?,"# Survey Data
+</task>""""""",7.0,True
+case_34,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of respondent '28'?,"""""""# Survey Data
 
 ## Questions
 
@@ -39350,7 +39366,7 @@ case_34,answer_lookup,What is the Anxiety Symptoms Frequency.Irritability of res
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",1.0,"<example>
+""""""",1.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -40463,17 +40479,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Anxiety Symptoms Frequency.Irritability of respondent '28'?
-</task>",1.0,True
+</task>""""""",1.0,True
 case_35,answer_lookup,What is the Depressive Symptoms Frequency.Anhedonia of the respondent whose Depressive Symptoms Frequency.Suicidal Thoughts was 0.0 and Life satisfaction was 5.0?,"# Survey Data
 
 ## Questions
@@ -42121,8 +42137,8 @@ Rules:
 
 <task>
 What is the Depressive Symptoms Frequency.Anhedonia of the respondent whose Depressive Symptoms Frequency.Suicidal Thoughts was 0.0 and Life satisfaction was 5.0?
-</task>",,False
-case_36,answer_lookup,What is the Depression of the respondent whose Anxiety Symptoms Frequency.Fear Something Awful Might Happen was 1.0 and Anxiety Symptoms Frequency.Feeling Nervous or On Edge was 2.0?,"# Survey Data
+</task>",2.0,True
+case_36,answer_lookup,What is the Depression of the respondent whose Anxiety Symptoms Frequency.Fear Something Awful Might Happen was 1.0 and Anxiety Symptoms Frequency.Feeling Nervous or On Edge was 2.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -42499,7 +42515,7 @@ case_36,answer_lookup,What is the Depression of the respondent whose Anxiety Sym
   - **Concentration Difficulties:** 3.0
   - **Suicidal Thoughts:** 2.0
 
-",2.0,"<example>
+""""""",2.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -43288,18 +43304,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depression of the respondent whose Anxiety Symptoms Frequency.Fear Something Awful Might Happen was 1.0 and Anxiety Symptoms Frequency.Feeling Nervous or On Edge was 2.0?
-</task>",2.0,True
-case_37,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of the respondent whose Emotional Regulation Frequency.Upset by Unexpected Events was 1.0 and Laughter was 9.0?,"# Survey Data
+</task>""""""",2.0,True
+case_37,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Worthlessness of the respondent whose Emotional Regulation Frequency.Upset by Unexpected Events was 1.0 and Laughter was 9.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -43674,7 +43690,7 @@ case_37,answer_lookup,What is the Depressive Symptoms Frequency.Feelings of Wort
   - **Concentration Difficulties:** 3.0
   - **Suicidal Thoughts:** 0.0
 
-",0.0,"<example>
+""""""",0.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -44459,18 +44475,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Feelings of Worthlessness of the respondent whose Emotional Regulation Frequency.Upset by Unexpected Events was 1.0 and Laughter was 9.0?
-</task>",0.0,True
-case_38,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '111'?,"# Survey Data
+</task>""""""",0.0,True
+case_38,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '111'?,"""""""# Survey Data
 
 ## Questions
 
@@ -44885,7 +44901,7 @@ case_38,answer_lookup,What is the Emotional Regulation Frequency.Nervous and Str
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+""""""",,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -45750,18 +45766,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Emotional Regulation Frequency.Nervous and Stressed of respondent '111'?
-</task>",,False
-case_39,answer_lookup,What is the Parental Education.Mother of the respondent with the highest Anxiety Symptoms Frequency.Restlessness among those with Socio-economic status = 3.0?,"# Survey Data
+</task>""""""",,True
+case_39,answer_lookup,What is the Parental Education.Mother of the respondent with the highest Anxiety Symptoms Frequency.Restlessness among those with Socio-economic status = 3.0?,"""""""# Survey Data
 
 ## Questions
 
@@ -46218,7 +46234,7 @@ case_39,answer_lookup,What is the Parental Education.Mother of the respondent wi
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",4.0,"<example>
+""""""",4.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -47167,18 +47183,18 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Parental Education.Mother of the respondent with the highest Anxiety Symptoms Frequency.Restlessness among those with Socio-economic status = 3.0?
-</task>",,False
-case_40,answer_lookup,What is the Learning of respondent '121'?,"# Survey Data
+</task>""""""",4.0,True
+case_40,answer_lookup,What is the Learning of respondent '121'?,"""""""# Survey Data
 
 ## Questions
 
@@ -47631,7 +47647,7 @@ case_40,answer_lookup,What is the Learning of respondent '121'?,"# Survey Data
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",6.0,"<example>
+""""""",6.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -48572,17 +48588,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Learning of respondent '121'?
-</task>",,False
+</task>""""""",6.0,True
 case_41,answer_lookup,What is the Emotional Regulation Frequency.Angered by Uncontrollable Events of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?,"# Survey Data
 
 ## Questions
@@ -48996,7 +49012,7 @@ case_41,answer_lookup,What is the Emotional Regulation Frequency.Angered by Unco
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -49867,8 +49883,12 @@ Rules:
 
 <task>
 What is the Emotional Regulation Frequency.Angered by Uncontrollable Events of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?
-</task>",,False
-case_42,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Socio-economic status = 3.0 in this case?,"# Survey Data
+</task>","The requested data point, ""Emotional Regulation Frequency.Angered by Uncontrollable Events"", is not present in the provided responses for any of the respondents. The ""Emotional Regulation Frequency"" section in the responses only lists a subset of the sub-questions defined in the schema, and ""Angered by Uncontrollable Events"" is not among them.
+
+Therefore, the information needed to answer the question is not available in the provided data.
+
+Not available",False
+case_42,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Socio-economic status = 3.0 in this case?,"""""""# Survey Data
 
 ## Questions
 
@@ -50363,7 +50383,7 @@ case_42,answer_lookup,What is the Depressive Symptoms Frequency.Appetite Changes
   - **Concentration Difficulties:** 2.0
   - **Suicidal Thoughts:** 1.0
 
-",0.0,"<example>
+""""""",0.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -51388,17 +51408,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depressive Symptoms Frequency.Appetite Changes of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Socio-economic status = 3.0 in this case?
-</task>",0.0,True
+</task>""""""",0.0,True
 case_43,answer_lookup,What is the Year of birth of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?,"# Survey Data
 
 ## Questions
@@ -52815,7 +52835,7 @@ Rules:
 
 <task>
 What is the Year of birth of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?
-</task>",,False
+</task>",2003.0,True
 case_44,answer_lookup,What is the Happiness of the respondent whose Emotional Regulation Frequency.Irritated by Life is higher than the average Emotional Regulation Frequency.Irritated by Life for all respondents with Gender = Male in this case?,"# Survey Data
 
 ## Questions
@@ -54472,7 +54492,35 @@ Rules:
 
 <task>
 What is the Happiness of the respondent whose Emotional Regulation Frequency.Irritated by Life is higher than the average Emotional Regulation Frequency.Irritated by Life for all respondents with Gender = Male in this case?
-</task>",,False
+</task>","1.  **Identify Male Respondents and their 'Emotional Regulation Frequency.Irritated by Life' scores:**
+    *   Respondent 138 (Gender: Male): 2.0
+    *   Respondent 111 (Gender: Male): 3.0
+    *   Respondent 18 (Gender: Male): 2.0
+    *   Respondent 85 (Gender: Male): 3.0
+    *   Respondent 32 (Gender: Male): 3.0
+    *   Respondent 77 (Gender: Male): 3.0
+    *   Respondent 130 (Gender: Male): 4.0
+    *   Respondent 80 (Gender: Male): 4.0
+    *   Respondent 105 (Gender: Male): 3.0
+
+2.  **Calculate the average 'Emotional Regulation Frequency.Irritated by Life' for male respondents:**
+    *   Sum of scores = 2.0 + 3.0 + 2.0 + 3.0 + 3.0 + 3.0 + 4.0 + 4.0 + 3.0 = 27.0
+    *   Number of male respondents = 9
+    *   Average = 27.0 / 9 = 3.0
+
+3.  **Identify all respondents whose 'Emotional Regulation Frequency.Irritated by Life' is higher than the average (3.0):**
+    *   Respondent 94: 'Irritated by Life' = 4.0 (Higher than 3.0). Happiness = 10.0
+    *   Respondent 130: 'Irritated by Life' = 4.0 (Higher than 3.0). Happiness = 8.0
+    *   Respondent 80: 'Irritated by Life' = 4.0 (Higher than 3.0). Happiness = 8.0
+
+4.  **Determine the Happiness value:**
+    There are multiple respondents whose 'Emotional Regulation Frequency.Irritated by Life' is higher than the average for male respondents. Since the question asks for ""the Happiness of *the* respondent"" implying a single value, and without further criteria to select a unique respondent, we will provide the highest Happiness value among the matching respondents.
+    *   Respondent 94: Happiness = 10.0
+    *   Respondent 130: Happiness = 8.0
+    *   Respondent 80: Happiness = 8.0
+    The highest Happiness value among these is 10.0.
+
+10.0",True
 case_45,answer_lookup,What is the Anxiety Symptoms Frequency.Excessive Worry of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Socio-economic status = 2.0 in this case?,"# Survey Data
 
 ## Questions
@@ -54929,7 +54977,7 @@ case_45,answer_lookup,What is the Anxiety Symptoms Frequency.Excessive Worry of 
   - **Concentration Difficulties:** 0.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -55886,7 +55934,7 @@ Rules:
 
 <task>
 What is the Anxiety Symptoms Frequency.Excessive Worry of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Socio-economic status = 2.0 in this case?
-</task>",,False
+</task>","The data for ""Anxiety Symptoms Frequency.Excessive Worry"" is not available for any respondent in the provided ""Responses"" section.",False
 case_46,answer_lookup,What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Enjoyment = 8.0?,"# Survey Data
 
 ## Questions
@@ -57420,7 +57468,7 @@ Rules:
 
 <task>
 What is the Emotional Regulation Frequency.Unable to Control Important Things of the respondent with Enjoyment = 8.0?
-</task>",,False
+</task>",2.0,True
 case_47,answer_lookup,What is the Anxiety Symptoms Frequency.Uncontrollable Worrying of the respondent whose Anxiety Symptoms Frequency.Trouble Relaxing is higher than the average Anxiety Symptoms Frequency.Trouble Relaxing for all respondents with Gender = Male in this case?,"# Survey Data
 
 ## Questions
@@ -57963,7 +58011,7 @@ case_47,answer_lookup,What is the Anxiety Symptoms Frequency.Uncontrollable Worr
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",N/A,"<example>
+",,"<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -59092,8 +59140,34 @@ Rules:
 
 <task>
 What is the Anxiety Symptoms Frequency.Uncontrollable Worrying of the respondent whose Anxiety Symptoms Frequency.Trouble Relaxing is higher than the average Anxiety Symptoms Frequency.Trouble Relaxing for all respondents with Gender = Male in this case?
-</task>",,False
-case_48,answer_lookup,What is the Depression of the respondent whose Emotional Regulation Frequency.Unable to Control Important Things is higher than the average Emotional Regulation Frequency.Unable to Control Important Things for all respondents with Socio-economic status = 3.0 in this case?,"# Survey Data
+</task>","1.  **Identify Male Respondents and their ""Anxiety Symptoms Frequency.Trouble Relaxing"" values:**
+    *   Respondent 22 (Gender: Male): Trouble Relaxing = 2.0
+    *   Respondent 73 (Gender: Male): Trouble Relaxing = 0.0
+    *   Respondent 86 (Gender: Male): Trouble Relaxing = 2.0
+    *   Respondent 61 (Gender: Male): Trouble Relaxing = 1.0
+    *   Respondent 80 (Gender: Male): Trouble Relaxing = 1.0
+    *   Respondent 58 (Gender: Male): Trouble Relaxing = 0.0
+    *   Respondent 38 (Gender: Male): Trouble Relaxing = 0.0
+
+2.  **Calculate the average ""Anxiety Symptoms Frequency.Trouble Relaxing"" for male respondents:**
+    *   Sum of Trouble Relaxing values for males = 2.0 + 0.0 + 2.0 + 1.0 + 1.0 + 0.0 + 0.0 = 6.0
+    *   Number of male respondents = 7
+    *   Average = 6.0 / 7 ≈ 0.857
+
+3.  **Identify respondents whose ""Anxiety Symptoms Frequency.Trouble Relaxing"" is higher than the average (0.857):**
+    *   Respondent 122: Trouble Relaxing = 2.0 (2.0 > 0.857)
+    *   Respondent 22: Trouble Relaxing = 2.0 (2.0 > 0.857)
+    *   Respondent 86: Trouble Relaxing = 2.0 (2.0 > 0.857)
+    *   Respondent 24: Trouble Relaxing = 1.0 (1.0 > 0.857)
+    *   Respondent 61: Trouble Relaxing = 1.0 (1.0 > 0.857)
+    *   Respondent 80: Trouble Relaxing = 1.0 (1.0 > 0.857)
+    *   Respondent 51: Trouble Relaxing = 1.0 (1.0 > 0.857)
+
+4.  **Retrieve ""Anxiety Symptoms Frequency.Uncontrollable Worrying"" for these respondents:**
+    Upon reviewing the provided data for all respondents, the specific sub-question ""Uncontrollable Worrying"" under ""Anxiety Symptoms Frequency"" is not explicitly listed for any respondent. In such cases, where a specific symptom frequency is not reported, it is typically interpreted as having a value of 0 (""Not at all"" bothered by the problem, as per the Likert scale definition for 0). Therefore, for all respondents identified in step 3, the value for ""Anxiety Symptoms Frequency.Uncontrollable Worrying"" is 0.0.
+
+0.0",False
+case_48,answer_lookup,What is the Depression of the respondent whose Emotional Regulation Frequency.Unable to Control Important Things is higher than the average Emotional Regulation Frequency.Unable to Control Important Things for all respondents with Socio-economic status = 3.0 in this case?,"""""""# Survey Data
 
 ## Questions
 
@@ -59469,7 +59543,7 @@ case_48,answer_lookup,What is the Depression of the respondent whose Emotional R
   - **Concentration Difficulties:** 1.0
   - **Suicidal Thoughts:** 0.0
 
-",0.0,"<example>
+""""""",0.0,"""""""<example>
 What is the Depressive Symptoms Frequency.Sleep Problems of respondent '71'?
 
 DATA:
@@ -60256,17 +60330,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"""""[MCQ: A. Abnormal B. Inconclusive C. Normal]"""""""" and the response is """"""""a"""""""", output """"""""Abnormal"""""""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"""""42"""""""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"""""17, 21, 23"""""""").
+- Preserve capitalization exactly as in the schema (e.g., output """"""""Abnormal"""""""", not """"""""abnormal"""""""" or """"""""A"""""""").
 
 </output>
 
 <task>
 What is the Depression of the respondent whose Emotional Regulation Frequency.Unable to Control Important Things is higher than the average Emotional Regulation Frequency.Unable to Control Important Things for all respondents with Socio-economic status = 3.0 in this case?
-</task>",0.0,True
+</task>""""""",0.0,True
 case_49,answer_lookup,What is the Emotional Regulation Frequency.Irritated by Life of the respondent with Socio-economic status = 4.0?,"# Survey Data
 
 ## Questions
@@ -61809,7 +61883,7 @@ Rules:
 
 <task>
 What is the Emotional Regulation Frequency.Irritated by Life of the respondent with Socio-economic status = 4.0?
-</task>",,False
+</task>","3.0, 2.0, 2.0, 3.0, 3.0",True
 case_50,answer_lookup,What is the Life satisfaction of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?,"# Survey Data
 
 ## Questions
@@ -62986,4 +63060,37 @@ Rules:
 
 <task>
 What is the Life satisfaction of the respondent whose Anxiety Symptoms Frequency.Feeling Nervous or On Edge is higher than the average Anxiety Symptoms Frequency.Feeling Nervous or On Edge for all respondents with Gender = Female in this case?
-</task>",,False
+</task>","To answer the question, we need to follow these steps:
+
+1.  **Identify all female respondents:**
+    *   Respondent 64: Gender = 2.0 (Female)
+    *   Respondent 35: Gender = 2.0 (Female)
+    *   Respondent 119: Gender = 2.0 (Female)
+    *   Respondent 136: Gender = 2.0 (Female)
+    *   Respondent 144: Gender = 2.0 (Female)
+
+2.  **Extract 'Anxiety Symptoms Frequency.Feeling Nervous or On Edge' for these female respondents:**
+    *   Respondent 64: 1.0
+    *   Respondent 35: 1.0
+    *   Respondent 119: 1.0
+    *   Respondent 136: 2.0
+    *   Respondent 144: 3.0
+
+3.  **Calculate the average 'Anxiety Symptoms Frequency.Feeling Nervous or On Edge' for female respondents:**
+    *   Sum = 1.0 + 1.0 + 1.0 + 2.0 + 3.0 = 8.0
+    *   Count = 5
+    *   Average = 8.0 / 5 = 1.6
+
+4.  **Identify respondents whose 'Anxiety Symptoms Frequency.Feeling Nervous or On Edge' is higher than the average (1.6):**
+    *   Respondent 136: 2.0 (Higher than 1.6)
+    *   Respondent 144: 3.0 (Higher than 1.6)
+
+5.  **Select ""the respondent"" from the identified list.** Since the question asks for ""the respondent"" (singular) and two respondents meet the criteria, we select the respondent with the highest value for the condition ('Anxiety Symptoms Frequency.Feeling Nervous or On Edge').
+    *   Respondent 136 has 2.0.
+    *   Respondent 144 has 3.0.
+    *   Respondent 144 has the highest value (3.0) among those above average.
+
+6.  **Retrieve the 'Life satisfaction' for Respondent 144:**
+    *   Respondent 144: Life satisfaction = 5.0
+
+5.0",True

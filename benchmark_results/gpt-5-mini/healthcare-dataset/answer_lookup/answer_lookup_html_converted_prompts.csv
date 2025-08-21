@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,answer_lookup,What is the billing amount of the patient named 'James Brown'?,"<!DOCTYPE html>
+case_2,answer_lookup,What is the billing amount of the respondent 56?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -421,9 +421,9 @@ Rules:
 </output>
 
 <task>
-What is the billing amount of the patient named 'James Brown'?
-</task>",No matching respondent with name 'James Brown',False
-case_3,answer_lookup,What is the insurance provider of the patient named 'Patricia Garcia'?,"<!DOCTYPE html>
+What is the billing amount of the respondent 56?
+</task>",19747,True
+case_3,answer_lookup,What is the insurance provider of the respondent 57?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -794,9 +794,9 @@ Rules:
 </output>
 
 <task>
-What is the insurance provider of the patient named 'Patricia Garcia'?
-</task>",Patient 'Patricia Garcia' not found in the provided responses.,False
-case_4,answer_lookup,What is the admission type of the patient named 'james jones'?,"<!DOCTYPE html>
+What is the insurance provider of the respondent 57?
+</task>",Medicare,True
+case_4,answer_lookup,What is the admission type of the respondent 72?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -1524,9 +1524,9 @@ Rules:
 </output>
 
 <task>
-What is the admission type of the patient named 'james jones'?
-</task>",No respondent named james jones found.,False
-case_5,answer_lookup,What is the medical condition of the patient with medication = 'Penicillin' and room number = '482'?,"<!DOCTYPE html>
+What is the admission type of the respondent 72?
+</task>",Emergency,True
+case_5,answer_lookup,What is the medical condition of the patient with medication = 'Penicillin' and room number = '482'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -1721,7 +1721,7 @@ case_5,answer_lookup,What is the medical condition of the patient with medicatio
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Asthma,"<example>
+</html>""",Asthma,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -2144,17 +2144,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medical condition of the patient with medication = 'Penicillin' and room number = '482'?
-</task>",Asthma,True
-case_6,answer_lookup,What is the billing amount of the patient with blood type = 'AB+' and medical condition = 'Diabetes'?,"<!DOCTYPE html>
+</task>""",Asthma,True
+case_6,answer_lookup,What is the billing amount of the patient with blood type = 'AB+' and medical condition = 'Diabetes'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -2349,7 +2349,7 @@ case_6,answer_lookup,What is the billing amount of the patient with blood type =
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",45820,"<example>
+</html>""",45820,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -2772,17 +2772,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the billing amount of the patient with blood type = 'AB+' and medical condition = 'Diabetes'?
-</task>","45820, 23737",True
-case_7,answer_lookup,What is the medical condition of the patient with room number = '406' and date of admission = '2022-07-08'?,"<!DOCTYPE html>
+</task>""","45820, 23737",True
+case_7,answer_lookup,What is the medical condition of the patient with room number = '406' and date of admission = '2022-07-08'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -2960,7 +2960,7 @@ case_7,answer_lookup,What is the medical condition of the patient with room numb
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Asthma,"<example>
+</html>""",Asthma,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -3349,17 +3349,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medical condition of the patient with room number = '406' and date of admission = '2022-07-08'?
-</task>",Asthma,True
-case_8,answer_lookup,What is the medication of the patient with medical condition = 'Diabetes' and age = '21'?,"<!DOCTYPE html>
+</task>""",Asthma,True
+case_8,answer_lookup,What is the medication of the patient with medical condition = 'Diabetes' and age = '21'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -3520,7 +3520,7 @@ case_8,answer_lookup,What is the medication of the patient with medical conditio
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Paracetamol,"<example>
+</html>""",Paracetamol,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -3875,17 +3875,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient with medical condition = 'Diabetes' and age = '21'?
-</task>",Paracetamol,True
-case_9,answer_lookup,What is the medication of the patient with age = '45' and billing amount = '6176'?,"<!DOCTYPE html>
+</task>""",Paracetamol,True
+case_9,answer_lookup,What is the medication of the patient with age = '45' and billing amount = '6176'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -4046,7 +4046,7 @@ case_9,answer_lookup,What is the medication of the patient with age = '45' and b
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Lipitor,"<example>
+</html>""",Lipitor,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -4401,17 +4401,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient with age = '45' and billing amount = '6176'?
-</task>",Lipitor,True
-case_10,answer_lookup,What is the billing amount of the patient with medical condition = 'Hypertension' and discharge date = '2022-01-16'?,"<!DOCTYPE html>
+</task>""",Lipitor,True
+case_10,answer_lookup,What is the billing amount of the patient with medical condition = 'Hypertension' and discharge date = '2022-01-16'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -4623,7 +4623,7 @@ case_10,answer_lookup,What is the billing amount of the patient with medical con
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",8451,"<example>
+</html>""",8451,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -5080,17 +5080,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the billing amount of the patient with medical condition = 'Hypertension' and discharge date = '2022-01-16'?
-</task>",8451,True
-case_11,answer_lookup,What is the blood type of the patient named 'William Martinez'?,"<!DOCTYPE html>
+</task>""",8451,True
+case_11,answer_lookup,What is the blood type of the respondent 40?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -5614,9 +5614,9 @@ Rules:
 </output>
 
 <task>
-What is the blood type of the patient named 'William Martinez'?
-</task>",No respondent named William Martinez in the dataset.,False
-case_12,answer_lookup,What is the doctor of the patient with discharge date = '2021-03-11' and medication = 'Ibuprofen'?,"<!DOCTYPE html>
+What is the blood type of the respondent 40?
+</task>",AB+,True
+case_12,answer_lookup,What is the doctor of the patient with discharge date = '2021-03-11' and medication = 'Ibuprofen'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -5828,7 +5828,7 @@ case_12,answer_lookup,What is the doctor of the patient with discharge date = '2
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",DOC_98,"<example>
+</html>""",DOC_98,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -6285,17 +6285,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the doctor of the patient with discharge date = '2021-03-11' and medication = 'Ibuprofen'?
-</task>",DOC_98,True
-case_13,answer_lookup,What is the medication of the patient with medical condition = 'Cancer' and age = '67'?,"<!DOCTYPE html>
+</task>""",DOC_98,True
+case_13,answer_lookup,What is the medication of the patient with medical condition = 'Cancer' and age = '67'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -6490,7 +6490,7 @@ case_13,answer_lookup,What is the medication of the patient with medical conditi
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Penicillin,"<example>
+</html>""",Penicillin,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -6913,17 +6913,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient with medical condition = 'Cancer' and age = '67'?
-</task>",Penicillin,True
-case_14,answer_lookup,What is the admission type of the patient with blood type = 'AB+' and age = '37'?,"<!DOCTYPE html>
+</task>""",Penicillin,True
+case_14,answer_lookup,What is the admission type of the patient with blood type = 'AB+' and age = '37'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -7050,7 +7050,7 @@ case_14,answer_lookup,What is the admission type of the patient with blood type 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Elective,"<example>
+</html>""",Elective,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -7337,17 +7337,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the admission type of the patient with blood type = 'AB+' and age = '37'?
-</task>",Elective,True
-case_15,answer_lookup,What is the billing amount of the patient named 'Robert Taylor'?,"<!DOCTYPE html>
+</task>""",Elective,True
+case_15,answer_lookup,What is the billing amount of the respondent 126?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -7718,9 +7718,9 @@ Rules:
 </output>
 
 <task>
-What is the billing amount of the patient named 'Robert Taylor'?
-</task>",No respondent named Robert Taylor in the dataset.,False
-case_16,answer_lookup,What is the hospital of the patient named 'MICHAEL JOHNSON'?,"<!DOCTYPE html>
+What is the billing amount of the respondent 126?
+</task>",33682,True
+case_16,answer_lookup,What is the hospital of the respondent 62?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -8295,9 +8295,9 @@ Rules:
 </output>
 
 <task>
-What is the hospital of the patient named 'MICHAEL JOHNSON'?
-</task>",No patient named MICHAEL JOHNSON in the responses.,False
-case_17,answer_lookup,What is the admission type of the patient with billing amount = '32562' and date of admission = '2024-03-17'?,"<!DOCTYPE html>
+What is the hospital of the respondent 62?
+</task>",HOSP_62,True
+case_17,answer_lookup,What is the admission type of the patient with billing amount = '32562' and date of admission = '2024-03-17'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -8441,7 +8441,7 @@ case_17,answer_lookup,What is the admission type of the patient with billing amo
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Emergency,"<example>
+</html>""",Emergency,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -8762,17 +8762,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the admission type of the patient with billing amount = '32562' and date of admission = '2024-03-17'?
-</task>",Emergency,True
-case_18,answer_lookup,What is the medical condition of the patient named 'JENNIFER ANDERSON'?,"<!DOCTYPE html>
+</task>""",Emergency,True
+case_18,answer_lookup,What is the medical condition of the respondent 80?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9296,9 +9296,9 @@ Rules:
 </output>
 
 <task>
-What is the medical condition of the patient named 'JENNIFER ANDERSON'?
-</task>",No respondent named JENNIFER ANDERSON found.,False
-case_19,answer_lookup,What is the hospital of the patient named 'ElIzAbEtH WiLsOn'?,"<!DOCTYPE html>
+What is the medical condition of the respondent 80?
+</task>",Cancer,True
+case_19,answer_lookup,What is the hospital of the respondent 87?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9822,9 +9822,9 @@ Rules:
 </output>
 
 <task>
-What is the hospital of the patient named 'ElIzAbEtH WiLsOn'?
-</task>",No respondent named ElIzAbEtH WiLsOn in the dataset.,False
-case_20,answer_lookup,What is the doctor of the patient with hospital = 'HOSP_85' and date of admission = '2022-10-29'?,"<!DOCTYPE html>
+What is the hospital of the respondent 87?
+</task>",HOSP_87,True
+case_20,answer_lookup,What is the doctor of the patient with hospital = 'HOSP_85' and date of admission = '2022-10-29'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -9934,7 +9934,7 @@ case_20,answer_lookup,What is the doctor of the patient with hospital = 'HOSP_85
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",DOC_85,"<example>
+</html>""",DOC_85,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -10187,17 +10187,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the doctor of the patient with hospital = 'HOSP_85' and date of admission = '2022-10-29'?
-</task>",DOC_85,True
-case_21,answer_lookup,What is the insurance provider of the patient named 'JoHn WiLlIaMs'?,"<!DOCTYPE html>
+</task>""",DOC_85,True
+case_21,answer_lookup,What is the insurance provider of the respondent 55?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -10721,9 +10721,9 @@ Rules:
 </output>
 
 <task>
-What is the insurance provider of the patient named 'JoHn WiLlIaMs'?
-</task>",No respondent named JoHn WiLlIaMs found in the dataset.,False
-case_22,answer_lookup,What is the blood type of the patient named 'ROBERT MILLER'?,"<!DOCTYPE html>
+What is the insurance provider of the respondent 55?
+</task>",Medicare,True
+case_22,answer_lookup,What is the blood type of the respondent 111?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -11247,9 +11247,9 @@ Rules:
 </output>
 
 <task>
-What is the blood type of the patient named 'ROBERT MILLER'?
-</task>",No matching respondent with name 'ROBERT MILLER' in the dataset.,False
-case_23,answer_lookup,What is the blood type of the patient with test results = 'Normal' and room number = '476'?,"<!DOCTYPE html>
+What is the blood type of the respondent 111?
+</task>",AB-,True
+case_23,answer_lookup,What is the blood type of the patient with test results = 'Normal' and room number = '476'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -11478,7 +11478,7 @@ case_23,answer_lookup,What is the blood type of the patient with test results = 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",A+,"<example>
+</html>""",A+,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -11969,17 +11969,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the blood type of the patient with test results = 'Normal' and room number = '476'?
-</task>",A+,True
-case_24,answer_lookup,What is the billing amount of the lowest billing patient?,"<!DOCTYPE html>
+</task>""",A+,True
+case_24,answer_lookup,What is the billing amount of the lowest billing patient?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -12191,7 +12191,7 @@ case_24,answer_lookup,What is the billing amount of the lowest billing patient?,
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",-503,"<example>
+</html>""",-503,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -12648,17 +12648,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the billing amount of the lowest billing patient?
-</task>",-503,True
-case_25,answer_lookup,What is the medication of the patient named 'Susan Miller'?,"<!DOCTYPE html>
+</task>""",-503,True
+case_25,answer_lookup,What is the medication of the respondent 125?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -13080,9 +13080,9 @@ Rules:
 </output>
 
 <task>
-What is the medication of the patient named 'Susan Miller'?
-</task>",No respondent named Susan Miller in the dataset,False
-case_26,answer_lookup,What is the gender of the patient with the lowest billing amount among those with discharge date = '2019-12-13'?,"<!DOCTYPE html>
+What is the medication of the respondent 125?
+</task>",Penicillin,True
+case_26,answer_lookup,What is the gender of the patient with the lowest billing amount among those with discharge date = '2019-12-13'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -13294,7 +13294,7 @@ case_26,answer_lookup,What is the gender of the patient with the lowest billing 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",Female,"<example>
+</html>""",Female,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -13751,17 +13751,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the gender of the patient with the lowest billing amount among those with discharge date = '2019-12-13'?
-</task>",Female,True
-case_27,answer_lookup,What is the billing amount of the patient with medical condition = 'Asthma' and blood type = 'B-'?,"<!DOCTYPE html>
+</task>""",Female,True
+case_27,answer_lookup,What is the billing amount of the patient with medical condition = 'Asthma' and blood type = 'B-'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -13905,7 +13905,7 @@ case_27,answer_lookup,What is the billing amount of the patient with medical con
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",18843,"<example>
+</html>""",18843,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -14226,17 +14226,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the billing amount of the patient with medical condition = 'Asthma' and blood type = 'B-'?
-</task>",18843,True
-case_28,answer_lookup,What is the admission type of the patient with the lowest billing amount among those with medication = 'Ibuprofen'?,"<!DOCTYPE html>
+</task>""",18843,True
+case_28,answer_lookup,What is the admission type of the patient with the lowest billing amount among those with medication = 'Ibuprofen'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -14431,7 +14431,7 @@ case_28,answer_lookup,What is the admission type of the patient with the lowest 
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Urgent,"<example>
+</html>""",Urgent,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -14854,17 +14854,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the admission type of the patient with the lowest billing amount among those with medication = 'Ibuprofen'?
-</task>",Urgent,True
-case_29,answer_lookup,What is the test results of the patient with insurance provider = 'Cigna' and blood type = 'A+'?,"<!DOCTYPE html>
+</task>""",Urgent,True
+case_29,answer_lookup,What is the test results of the patient with insurance provider = 'Cigna' and blood type = 'A+'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -14991,7 +14991,7 @@ case_29,answer_lookup,What is the test results of the patient with insurance pro
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Abnormal,"<example>
+</html>""",Abnormal,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -15278,17 +15278,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the test results of the patient with insurance provider = 'Cigna' and blood type = 'A+'?
-</task>",Abnormal,True
-case_30,answer_lookup,What is the age of the patient with the lowest age among those with hospital = 'HOSP_108'?,"<!DOCTYPE html>
+</task>""",Abnormal,True
+case_30,answer_lookup,What is the age of the patient with the lowest age among those with hospital = 'HOSP_108'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -15398,7 +15398,7 @@ case_30,answer_lookup,What is the age of the patient with the lowest age among t
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",63,"<example>
+</html>""",63,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -15651,17 +15651,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the age of the patient with the lowest age among those with hospital = 'HOSP_108'?
-</task>",63,True
-case_31,answer_lookup,What is the discharge date of the patient with the lowest age among those with gender = 'Male'?,"<!DOCTYPE html>
+</task>""",63,True
+case_31,answer_lookup,What is the discharge date of the patient with the lowest age among those with gender = 'Male'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -15856,7 +15856,7 @@ case_31,answer_lookup,What is the discharge date of the patient with the lowest 
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",2024-02-04,"<example>
+</html>""",2024-02-04,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -16279,17 +16279,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the discharge date of the patient with the lowest age among those with gender = 'Male'?
-</task>",2024-02-04,True
-case_32,answer_lookup,What is the medication of the patient with the highest billing amount among those with room number = '144'?,"<!DOCTYPE html>
+</task>""",2024-02-04,True
+case_32,answer_lookup,What is the medication of the patient with the highest billing amount among those with room number = '144'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -16399,7 +16399,7 @@ case_32,answer_lookup,What is the medication of the patient with the highest bil
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Penicillin,"<example>
+</html>""",Penicillin,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -16652,17 +16652,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient with the highest billing amount among those with room number = '144'?
-</task>",Penicillin,True
-case_33,answer_lookup,What is the discharge date of the patient named 'James Martinez'?,"<!DOCTYPE html>
+</task>""",Penicillin,True
+case_33,answer_lookup,What is the discharge date of the respondent 63?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -17186,9 +17186,9 @@ Rules:
 </output>
 
 <task>
-What is the discharge date of the patient named 'James Martinez'?
-</task>",No matching patient found.,False
-case_34,answer_lookup,What is the medication of the lowest patient with admission type = 'Elective' and medical condition = 'Cancer'?,"<!DOCTYPE html>
+What is the discharge date of the respondent 63?
+</task>",2023-06-10,True
+case_34,answer_lookup,What is the medication of the lowest patient with admission type = 'Elective' and medical condition = 'Cancer'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -17332,7 +17332,7 @@ case_34,answer_lookup,What is the medication of the lowest patient with admissio
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Penicillin,"<example>
+</html>""",Penicillin,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -17653,17 +17653,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the lowest patient with admission type = 'Elective' and medical condition = 'Cancer'?
-</task>",Penicillin,True
-case_35,answer_lookup,What is the room number of the patient with the lowest age among those with date of admission = '2019-11-06'?,"<!DOCTYPE html>
+</task>""",Penicillin,True
+case_35,answer_lookup,What is the room number of the patient with the lowest age among those with date of admission = '2019-11-06'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -17790,7 +17790,7 @@ case_35,answer_lookup,What is the room number of the patient with the lowest age
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",482,"<example>
+</html>""",482,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -18077,17 +18077,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the room number of the patient with the lowest age among those with date of admission = '2019-11-06'?
-</task>",482,True
-case_36,answer_lookup,What is the gender of the patient with the highest age among those with blood type = 'B+'?,"<!DOCTYPE html>
+</task>""",482,True
+case_36,answer_lookup,What is the gender of the patient with the highest age among those with blood type = 'B+'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -18265,7 +18265,7 @@ case_36,answer_lookup,What is the gender of the patient with the highest age amo
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Female,"<example>
+</html>""",Female,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -18654,17 +18654,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the gender of the patient with the highest age among those with blood type = 'B+'?
-</task>",Female,True
-case_37,answer_lookup,What is the admission type of the patient with the highest billing amount among those with room number = '302'?,"<!DOCTYPE html>
+</task>""",Female,True
+case_37,answer_lookup,What is the admission type of the patient with the highest billing amount among those with room number = '302'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -18791,7 +18791,7 @@ case_37,answer_lookup,What is the admission type of the patient with the highest
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Elective,"<example>
+</html>""",Elective,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -19078,17 +19078,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the admission type of the patient with the highest billing amount among those with room number = '302'?
-</task>",Elective,True
-case_38,answer_lookup,What is the hospital of the patient with doctor = 'DOC_03' and blood type = 'B-'?,"<!DOCTYPE html>
+</task>""",Elective,True
+case_38,answer_lookup,What is the hospital of the patient with doctor = 'DOC_03' and blood type = 'B-'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -19266,7 +19266,7 @@ case_38,answer_lookup,What is the hospital of the patient with doctor = 'DOC_03'
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",HOSP_03,"<example>
+</html>""",HOSP_03,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -19655,17 +19655,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the hospital of the patient with doctor = 'DOC_03' and blood type = 'B-'?
-</task>",HOSP_03,True
-case_39,answer_lookup,What is the test results of the patient with the highest billing amount among those with admission type = 'Urgent'?,"<!DOCTYPE html>
+</task>""",HOSP_03,True
+case_39,answer_lookup,What is the test results of the patient with the highest billing amount among those with admission type = 'Urgent'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -19775,7 +19775,7 @@ case_39,answer_lookup,What is the test results of the patient with the highest b
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Inconclusive,"<example>
+</html>""",Inconclusive,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -20028,17 +20028,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the test results of the patient with the highest billing amount among those with admission type = 'Urgent'?
-</task>",Inconclusive,True
-case_40,answer_lookup,What is the medical condition of the patient with the highest billing amount among those with hospital = 'HOSP_27'?,"<!DOCTYPE html>
+</task>""",Inconclusive,True
+case_40,answer_lookup,What is the medical condition of the patient with the highest billing amount among those with hospital = 'HOSP_27'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -20182,7 +20182,7 @@ case_40,answer_lookup,What is the medical condition of the patient with the high
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Arthritis,"<example>
+</html>""",Arthritis,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -20503,17 +20503,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medical condition of the patient with the highest billing amount among those with hospital = 'HOSP_27'?
-</task>",Arthritis,True
-case_41,answer_lookup,What is the blood type of the patient whose billing amount is the highest above the average billing amount for all patients with gender = 'Female' in this case?,"<!DOCTYPE html>
+</task>""",Arthritis,True
+case_41,answer_lookup,What is the blood type of the patient whose billing amount is the highest above the average billing amount for all patients with gender = 'Female' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -20708,7 +20708,7 @@ case_41,answer_lookup,What is the blood type of the patient whose billing amount
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",A+,"<example>
+</html>""",A+,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -21131,17 +21131,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the blood type of the patient whose billing amount is the highest above the average billing amount for all patients with gender = 'Female' in this case?
-</task>",,False
-case_42,answer_lookup,What is the admission type of the patient with the highest age among those with insurance provider = 'Blue Cross'?,"<!DOCTYPE html>
+</task>""",A+,True
+case_42,answer_lookup,What is the admission type of the patient with the highest age among those with insurance provider = 'Blue Cross'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -21319,7 +21319,7 @@ case_42,answer_lookup,What is the admission type of the patient with the highest
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",Elective,"<example>
+</html>""",Elective,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -21708,17 +21708,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the admission type of the patient with the highest age among those with insurance provider = 'Blue Cross'?
-</task>",Elective,True
-case_43,answer_lookup,What is the age of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?,"<!DOCTYPE html>
+</task>""",Elective,True
+case_43,answer_lookup,What is the age of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -21896,7 +21896,7 @@ case_43,answer_lookup,What is the age of the patient whose age is the highest ab
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",81,"<example>
+</html>""",81,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -22285,17 +22285,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the age of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?
-</task>",81,True
-case_44,answer_lookup,What is the blood type of the patient whose age is the highest above the average age for all patients with admission type = 'Emergency' in this case?,"<!DOCTYPE html>
+</task>""",81,True
+case_44,answer_lookup,What is the blood type of the patient whose age is the highest above the average age for all patients with admission type = 'Emergency' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -22507,7 +22507,7 @@ case_44,answer_lookup,What is the blood type of the patient whose age is the hig
   <li><strong>Test Results:</strong> b</li>
 </ul>
 </body>
-</html>",O+,"<example>
+</html>""",O+,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -22964,17 +22964,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the blood type of the patient whose age is the highest above the average age for all patients with admission type = 'Emergency' in this case?
-</task>",O+,True
-case_45,answer_lookup,What is the insurance provider of the patient with the lowest age among those with test results = 'Abnormal'?,"<!DOCTYPE html>
+</task>""",O+,True
+case_45,answer_lookup,What is the insurance provider of the patient with the lowest age among those with test results = 'Abnormal'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -23169,7 +23169,7 @@ case_45,answer_lookup,What is the insurance provider of the patient with the low
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",UnitedHealthcare,"<example>
+</html>""",UnitedHealthcare,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -23592,17 +23592,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the insurance provider of the patient with the lowest age among those with test results = 'Abnormal'?
-</task>",UnitedHealthcare,True
-case_46,answer_lookup,What is the age of the patient whose billing amount is the highest above the average billing amount for all patients with blood type = 'AB-' in this case?,"<!DOCTYPE html>
+</task>""",UnitedHealthcare,True
+case_46,answer_lookup,What is the age of the patient whose billing amount is the highest above the average billing amount for all patients with blood type = 'AB-' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -23763,7 +23763,7 @@ case_46,answer_lookup,What is the age of the patient whose billing amount is the
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",81,"<example>
+</html>""",81,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -24118,17 +24118,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the age of the patient whose billing amount is the highest above the average billing amount for all patients with blood type = 'AB-' in this case?
-</task>",81,True
-case_47,answer_lookup,What is the admission type of the patient named 'jessica davis'?,"<!DOCTYPE html>
+</task>""",81,True
+case_47,answer_lookup,What is the admission type of the respondent 98?,"<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -24703,9 +24703,9 @@ Rules:
 </output>
 
 <task>
-What is the admission type of the patient named 'jessica davis'?
-</task>",Patient 'jessica davis' not found in the responses.,False
-case_48,answer_lookup,What is the medical condition of the patient whose billing amount is the highest above the average billing amount for all patients with medication = 'Aspirin' in this case?,"<!DOCTYPE html>
+What is the admission type of the respondent 98?
+</task>",Elective,True
+case_48,answer_lookup,What is the medical condition of the patient whose billing amount is the highest above the average billing amount for all patients with medication = 'Aspirin' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -24849,7 +24849,7 @@ case_48,answer_lookup,What is the medical condition of the patient whose billing
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Arthritis,"<example>
+</html>""",Arthritis,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -25170,17 +25170,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medical condition of the patient whose billing amount is the highest above the average billing amount for all patients with medication = 'Aspirin' in this case?
-</task>",Arthritis,True
-case_49,answer_lookup,What is the medication of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?,"<!DOCTYPE html>
+</task>""",Arthritis,True
+case_49,answer_lookup,What is the medication of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -25392,7 +25392,7 @@ case_49,answer_lookup,What is the medication of the patient whose age is the hig
   <li><strong>Test Results:</strong> c</li>
 </ul>
 </body>
-</html>",Ibuprofen,"<example>
+</html>""",Ibuprofen,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -25849,17 +25849,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient whose age is the highest above the average age for all patients with insurance provider = 'Medicare' in this case?
-</task>",Ibuprofen,True
-case_50,answer_lookup,What is the medication of the patient with the highest billing amount among those with room number = '422'?,"<!DOCTYPE html>
+</task>""",Ibuprofen,True
+case_50,answer_lookup,What is the medication of the patient with the highest billing amount among those with room number = '422'?,"""<!DOCTYPE html>
 <html>
 <head>
 <title>Survey Data</title>
@@ -26054,7 +26054,7 @@ case_50,answer_lookup,What is the medication of the patient with the highest bil
   <li><strong>Test Results:</strong> a</li>
 </ul>
 </body>
-</html>",Paracetamol,"<example>
+</html>""",Paracetamol,"""<example>
 What is the age of the patient with admission type = 'Emergency' and discharge date = '2021-03-05'?
 
 DATA:
@@ -26477,13 +26477,13 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 What is the medication of the patient with the highest billing amount among those with room number = '422'?
-</task>",Paracetamol,True
+</task>""",Paracetamol,True

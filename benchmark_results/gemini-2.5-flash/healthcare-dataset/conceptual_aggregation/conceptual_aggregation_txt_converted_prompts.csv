@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'Cigna'?,"Survey Data
+case_2,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'Cigna'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -101,7 +101,7 @@ Respondent 24:
   Medication: c
   Test Results: c
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -338,17 +338,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Insurance Provider = 'Cigna'?
-</task>",0,True
-case_3,conceptual_aggregation,Count the respondents whose Billing Amount is greater than 10000.,"Survey Data
+</task>""",0.0,True
+case_3,conceptual_aggregation,Count the respondents whose Billing Amount is greater than 10000.,"""Survey Data
 ==================================================
 
 Questions:
@@ -546,7 +546,7 @@ Respondent 96:
   Medication: a
   Test Results: c
 
-",9,"<example>
+""",9,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -975,17 +975,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Count the respondents whose Billing Amount is greater than 10000.
-</task>",9,True
-case_4,conceptual_aggregation,How many respondents have a Medication of 'Penicillin'?,"Survey Data
+</task>""",9.0,True
+case_4,conceptual_aggregation,How many respondents have a Medication of 'Penicillin'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -1183,7 +1183,7 @@ Respondent 62:
   Medication: b
   Test Results: a
 
-",3,"<example>
+""",3,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -1612,17 +1612,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Medication of 'Penicillin'?
-</task>",3,True
-case_5,conceptual_aggregation,How many respondents have a Test Results of 'Abnormal'?,"Survey Data
+</task>""",3.0,True
+case_5,conceptual_aggregation,How many respondents have a Test Results of 'Abnormal'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -1836,7 +1836,7 @@ Respondent 19:
   Medication: d
   Test Results: c
 
-",5,"<example>
+""",5,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -2297,17 +2297,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Test Results of 'Abnormal'?
-</task>",5,True
-case_6,conceptual_aggregation,Count the respondents whose Billing Amount is greater than 40000.,"Survey Data
+</task>""",5.0,True
+case_6,conceptual_aggregation,Count the respondents whose Billing Amount is greater than 40000.,"""Survey Data
 ==================================================
 
 Questions:
@@ -2521,7 +2521,7 @@ Respondent 98:
   Medication: b
   Test Results: c
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -2982,17 +2982,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Count the respondents whose Billing Amount is greater than 40000.
-</task>",1,True
-case_7,conceptual_aggregation,How many respondents have a Test Results of 'Inconclusive'?,"Survey Data
+</task>""",1.0,True
+case_7,conceptual_aggregation,How many respondents have a Test Results of 'Inconclusive'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -3174,7 +3174,7 @@ Respondent 74:
   Medication: a
   Test Results: a
 
-",5,"<example>
+""",5,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -3571,17 +3571,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Test Results of 'Inconclusive'?
-</task>",5,True
-case_8,conceptual_aggregation,How many respondents have a Test Results of 'Inconclusive'?,"Survey Data
+</task>""",5.0,True
+case_8,conceptual_aggregation,How many respondents have a Test Results of 'Inconclusive'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -3731,7 +3731,7 @@ Respondent 80:
   Medication: d
   Test Results: c
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -4064,17 +4064,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Test Results of 'Inconclusive'?
-</task>",2,True
-case_9,conceptual_aggregation,How many respondents have a Medication of 'Aspirin'?,"Survey Data
+</task>""",2.0,True
+case_9,conceptual_aggregation,How many respondents have a Medication of 'Aspirin'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -4288,7 +4288,7 @@ Respondent 136:
   Medication: b
   Test Results: a
 
-",3,"<example>
+""",3,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -4749,17 +4749,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Medication of 'Aspirin'?
-</task>",3,True
-case_10,conceptual_aggregation,How many respondents have Gender = 'Male' and Insurance Provider = 'Medicare'?,"Survey Data
+</task>""",3.0,True
+case_10,conceptual_aggregation,How many respondents have Gender = 'Male' and Insurance Provider = 'Medicare'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -4925,7 +4925,7 @@ Respondent 37:
   Medication: c
   Test Results: a
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -5290,17 +5290,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Male' and Insurance Provider = 'Medicare'?
-</task>",0,True
-case_11,conceptual_aggregation,Count the respondents whose Age is greater than 60.,"Survey Data
+</task>""",0.0,True
+case_11,conceptual_aggregation,Count the respondents whose Age is greater than 60.,"""Survey Data
 ==================================================
 
 Questions:
@@ -5450,7 +5450,7 @@ Respondent 32:
   Medication: c
   Test Results: b
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -5783,17 +5783,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Count the respondents whose Age is greater than 60.
-</task>",2,True
-case_12,conceptual_aggregation,How many respondents have a Medical Condition of 'Asthma'?,"Survey Data
+</task>""",2.0,True
+case_12,conceptual_aggregation,How many respondents have a Medical Condition of 'Asthma'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -6007,7 +6007,7 @@ Respondent 57:
   Medication: d
   Test Results: b
 
-",4,"<example>
+""",4,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -6468,17 +6468,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Medical Condition of 'Asthma'?
-</task>",4,True
-case_13,conceptual_aggregation,How many respondents have Gender = 'Male' and Medical Condition = 'Asthma'?,"Survey Data
+</task>""",4.0,True
+case_13,conceptual_aggregation,How many respondents have Gender = 'Male' and Medical Condition = 'Asthma'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -6596,7 +6596,7 @@ Respondent 12:
   Medication: b
   Test Results: b
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -6865,17 +6865,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Male' and Medical Condition = 'Asthma'?
-</task>",0,True
-case_14,conceptual_aggregation,How many respondents have Gender = 'Female' and Admission Type = 'Urgent'?,"Survey Data
+</task>""",0.0,True
+case_14,conceptual_aggregation,How many respondents have Gender = 'Female' and Admission Type = 'Urgent'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -6977,7 +6977,7 @@ Respondent 61:
   Medication: e
   Test Results: a
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -7214,17 +7214,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Admission Type = 'Urgent'?
-</task>",0,True
-case_15,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'Medicare'?,"Survey Data
+</task>""",0.0,True
+case_15,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'Medicare'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -7358,7 +7358,7 @@ Respondent 107:
   Medication: a
   Test Results: a
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -7659,17 +7659,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Insurance Provider = 'Medicare'?
-</task>",2,True
-case_16,conceptual_aggregation,How many respondents have Gender = 'Female' and Admission Type = 'Emergency'?,"Survey Data
+</task>""",2.0,True
+case_16,conceptual_aggregation,How many respondents have Gender = 'Female' and Admission Type = 'Emergency'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -7787,7 +7787,7 @@ Respondent 56:
   Medication: a
   Test Results: a
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -8056,17 +8056,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Admission Type = 'Emergency'?
-</task>",2,True
-case_17,conceptual_aggregation,How many respondents have a Medical Condition of 'Cancer'?,"Survey Data
+</task>""",2.0,True
+case_17,conceptual_aggregation,How many respondents have a Medical Condition of 'Cancer'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -8280,7 +8280,7 @@ Respondent 32:
   Medication: c
   Test Results: b
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -8741,17 +8741,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Medical Condition of 'Cancer'?
-</task>",1,True
-case_18,conceptual_aggregation,How many respondents have Gender = 'Male' and Admission Type = 'Elective'?,"Survey Data
+</task>""",1.0,True
+case_18,conceptual_aggregation,How many respondents have Gender = 'Male' and Admission Type = 'Elective'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -8965,7 +8965,7 @@ Respondent 54:
   Medication: a
   Test Results: a
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -9426,17 +9426,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Male' and Admission Type = 'Elective'?
-</task>",2,True
-case_19,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'UnitedHealthcare'?,"Survey Data
+</task>""",2.0,True
+case_19,conceptual_aggregation,How many respondents have Gender = 'Female' and Insurance Provider = 'UnitedHealthcare'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -9586,7 +9586,7 @@ Respondent 65:
   Medication: d
   Test Results: c
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -9919,17 +9919,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Insurance Provider = 'UnitedHealthcare'?
-</task>",0,True
-case_20,conceptual_aggregation,How many respondents have Gender = 'Female' and Medical Condition = 'Asthma'?,"Survey Data
+</task>""",0.0,True
+case_20,conceptual_aggregation,How many respondents have Gender = 'Female' and Medical Condition = 'Asthma'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -10063,7 +10063,7 @@ Respondent 83:
   Medication: e
   Test Results: a
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -10364,17 +10364,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Medical Condition = 'Asthma'?
-</task>",0,True
-case_21,conceptual_aggregation,How many respondents have a Blood Type of 'O+'?,"Survey Data
+</task>""",0.0,True
+case_21,conceptual_aggregation,How many respondents have a Blood Type of 'O+'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -10476,7 +10476,7 @@ Respondent 108:
   Medication: d
   Test Results: c
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -10713,17 +10713,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Blood Type of 'O+'?
-</task>",1,True
-case_22,conceptual_aggregation,How many respondents have Gender = 'Female' and Medical Condition = 'Diabetes'?,"Survey Data
+</task>""",1.0,True
+case_22,conceptual_aggregation,How many respondents have Gender = 'Female' and Medical Condition = 'Diabetes'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -10841,7 +10841,7 @@ Respondent 28:
   Medication: d
   Test Results: b
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -11110,17 +11110,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Female' and Medical Condition = 'Diabetes'?
-</task>",1,True
-case_23,conceptual_aggregation,How many respondents have a Blood Type of 'A+'?,"Survey Data
+</task>""",1.0,True
+case_23,conceptual_aggregation,How many respondents have a Blood Type of 'A+'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -11334,7 +11334,7 @@ Respondent 28:
   Medication: d
   Test Results: b
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -11795,17 +11795,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Blood Type of 'A+'?
-</task>",1,True
-case_24,conceptual_aggregation,How many respondents have Gender = 'Male' and Insurance Provider = 'Aetna'?,"Survey Data
+</task>""",1.0,True
+case_24,conceptual_aggregation,How many respondents have Gender = 'Male' and Insurance Provider = 'Aetna'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -12019,7 +12019,7 @@ Respondent 98:
   Medication: b
   Test Results: c
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -12480,17 +12480,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Male' and Insurance Provider = 'Aetna'?
-</task>",2,True
-case_25,conceptual_aggregation,How many respondents have Gender = 'Male' and Admission Type = 'Urgent'?,"Survey Data
+</task>""",2.0,True
+case_25,conceptual_aggregation,How many respondents have Gender = 'Male' and Admission Type = 'Urgent'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -12656,7 +12656,7 @@ Respondent 59:
   Medication: d
   Test Results: c
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -13021,17 +13021,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have Gender = 'Male' and Admission Type = 'Urgent'?
-</task>",1,True
-case_26,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?,"Survey Data
+</task>""",1.0,True
+case_26,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -13229,7 +13229,7 @@ Respondent 122:
   Medication: c
   Test Results: a
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -13658,17 +13658,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?
-</task>",1,True
-case_27,conceptual_aggregation,How many respondents from 'HOSP_96' are over the age of 60 and are not taking 'Aspirin'?,"Survey Data
+</task>""",1.0,True
+case_27,conceptual_aggregation,How many respondents from 'HOSP_96' are over the age of 60 and are not taking 'Aspirin'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -13786,7 +13786,7 @@ Respondent 34:
   Medication: d
   Test Results: a
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -14055,17 +14055,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents from 'HOSP_96' are over the age of 60 and are not taking 'Aspirin'?
-</task>",0,True
-case_28,conceptual_aggregation,Count the respondents whose length of stay is between 15 and 25 days and who were admitted for an 'Emergency' procedure.,"Survey Data
+</task>""",0.0,True
+case_28,conceptual_aggregation,Count the respondents whose length of stay is between 15 and 25 days and who were admitted for an 'Emergency' procedure.,"""Survey Data
 ==================================================
 
 Questions:
@@ -14167,7 +14167,7 @@ Respondent 91:
   Medication: d
   Test Results: c
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -14404,17 +14404,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Count the respondents whose length of stay is between 15 and 25 days and who were admitted for an 'Emergency' procedure.
-</task>",1,True
-case_29,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?,"Survey Data
+</task>""",1.0,True
+case_29,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -14612,7 +14612,7 @@ Respondent 58:
   Medication: a
   Test Results: c
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -15041,17 +15041,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents with Gender = 'Female' and Admission Type = 'Emergency' have a Billing Amount below 30000?
-</task>",0,True
-case_30,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Elective' have a Billing Amount below 40000?,"Survey Data
+</task>""",0.0,True
+case_30,conceptual_aggregation,How many respondents with Gender = 'Female' and Admission Type = 'Elective' have a Billing Amount below 40000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -15169,7 +15169,7 @@ Respondent 147:
   Medication: e
   Test Results: a
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -15438,16 +15438,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents with Gender = 'Female' and Admission Type = 'Elective' have a Billing Amount below 40000?
-</task>",1,True
+</task>""",1.0,True
 case_31,conceptual_aggregation,Count the respondents whose length of stay is between 10 and 20 days and who were admitted for an 'Emergency' procedure.,"Survey Data
 ==================================================
 
@@ -15940,7 +15940,40 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 10 and 20 days and who were admitted for an 'Emergency' procedure.
-</task>",,False
+</task>","To answer the question, we need to identify respondents who meet two criteria:
+1.  Their length of stay (Discharge Date - Date of Admission) is between 10 and 20 days, inclusive.
+2.  Their Admission Type is 'Emergency'.
+
+Let's examine each respondent:
+
+*   **Respondent 110:**
+    *   Date of Admission: 2019-12-12, Discharge Date: 2019-08-21. The discharge date is before the admission date, so the length of stay is not valid for this calculation.
+    *   Admission Type: 'a' (Elective) - Not 'Emergency'.
+*   **Respondent 144:**
+    *   Date of Admission: 2022-09-22, Discharge Date: 2022-11-07. Length of Stay = 46 days. (Not between 10 and 20).
+    *   Admission Type: 'c' (Urgent) - Not 'Emergency'.
+*   **Respondent 143:**
+    *   Date of Admission: 2022-12-10, Discharge Date: 2022-09-27. The discharge date is before the admission date, so the length of stay is not valid for this calculation.
+    *   Admission Type: 'b' (Emergency) - Meets this condition, but not the length of stay.
+*   **Respondent 7:**
+    *   Date of Admission: 2021-03-05, Discharge Date: 2021-03-05. Length of Stay = 0 days. (Not between 10 and 20).
+    *   Admission Type: 'b' (Emergency) - Meets this condition, but not the length of stay.
+*   **Respondent 69:**
+    *   Date of Admission: 2022-01-09, Discharge Date: 2022-01-12. Length of Stay = 3 days. (Not between 10 and 20).
+    *   Admission Type: 'b' (Emergency) - Meets this condition, but not the length of stay.
+*   **Respondent 8:**
+    *   Date of Admission: 2022-06-17, Discharge Date: 2022-09-07. Length of Stay = 82 days. (Not between 10 and 20).
+    *   Admission Type: 'a' (Elective) - Not 'Emergency'.
+*   **Respondent 47:**
+    *   Date of Admission: 2024-04-07, Discharge Date: 2024-03-28. The discharge date is before the admission date, so the length of stay is not valid for this calculation.
+    *   Admission Type: 'c' (Urgent) - Not 'Emergency'.
+*   **Respondent 70:**
+    *   Date of Admission: 2019-07-09, Discharge Date: 2019-09-01. Length of Stay = 54 days. (Not between 10 and 20).
+    *   Admission Type: 'a' (Elective) - Not 'Emergency'.
+
+No respondents meet both criteria.
+
+0",True
 case_32,conceptual_aggregation,Count the respondents whose length of stay is between 15 and 25 days and who were admitted for an 'Emergency' procedure.,"Survey Data
 ==================================================
 
@@ -16481,7 +16514,7 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 15 and 25 days and who were admitted for an 'Emergency' procedure.
-</task>",,False
+</task>",0,True
 case_33,conceptual_aggregation,Count the respondents whose length of stay is between 10 and 20 days and who were admitted for an 'Elective' procedure.,"Survey Data
 ==================================================
 
@@ -16878,7 +16911,58 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 10 and 20 days and who were admitted for an 'Elective' procedure.
-</task>",,False
+</task>","To answer the question, we need to calculate the length of stay for each respondent and check their admission type.
+
+**Length of Stay Calculation:**
+Length of Stay = Discharge Date - Date of Admission
+
+**Conditions:**
+1.  Length of stay is between 10 and 20 days (inclusive).
+2.  Admission Type is 'Elective' (which corresponds to 'A' in the MCQ options for Question 11).
+
+Let's examine each respondent:
+
+*   **Respondent 136:**
+    *   Date of Admission: 2023-06-25
+    *   Discharge Date: 2023-07-05
+    *   Length of Stay: (2023-07-05) - (2023-06-25) = 10 days. (Meets condition 1)
+    *   Admission Type: 'c' which is 'Urgent'. (Does not meet condition 2, as it's not 'Elective')
+    *   Result: Does not meet both conditions.
+
+*   **Respondent 56:**
+    *   Date of Admission: 2020-01-30
+    *   Discharge Date: 2020-06-01
+    *   Length of Stay: (2020-06-01) - (2020-01-30) = 123 days. (Does not meet condition 1, as 123 is not between 10 and 20)
+    *   Admission Type: 'c' which is 'Urgent'.
+    *   Result: Does not meet both conditions.
+
+*   **Respondent 97:**
+    *   Date of Admission: 2020-07-01
+    *   Discharge Date: 2020-03-05
+    *   Invalid date range (Discharge Date is before Admission Date). This respondent cannot be included.
+
+*   **Respondent 108:**
+    *   Date of Admission: 2020-08-11
+    *   Discharge Date: 2020-07-20
+    *   Invalid date range (Discharge Date is before Admission Date). This respondent cannot be included.
+
+*   **Respondent 117:**
+    *   Date of Admission: 2021-01-17
+    *   Discharge Date: 2021-07-31
+    *   Length of Stay: (2021-07-31) - (2021-01-17) = 195 days. (Does not meet condition 1, as 195 is not between 10 and 20)
+    *   Admission Type: 'a' which is 'Elective'.
+    *   Result: Does not meet both conditions.
+
+*   **Respondent 88:**
+    *   Date of Admission: 2023-06-08
+    *   Discharge Date: 2023-07-02
+    *   Length of Stay: (2023-07-02) - (2023-06-08) = 24 days. (Does not meet condition 1, as 24 is not between 10 and 20)
+    *   Admission Type: 'a' which is 'Elective'.
+    *   Result: Does not meet both conditions.
+
+None of the respondents meet both criteria.
+
+0",True
 case_34,conceptual_aggregation,How many respondents with Gender = 'Male' and Admission Type = 'Elective' have a Billing Amount below 30000?,"Survey Data
 ==================================================
 
@@ -17323,7 +17407,7 @@ Rules:
 
 <task>
 How many respondents with Gender = 'Male' and Admission Type = 'Elective' have a Billing Amount below 30000?
-</task>",,False
+</task>",0,True
 case_35,conceptual_aggregation,Count the respondents whose length of stay is between 10 and 30 days and who were admitted for an 'Elective' procedure.,"Survey Data
 ==================================================
 
@@ -17768,7 +17852,7 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 10 and 30 days and who were admitted for an 'Elective' procedure.
-</task>",,False
+</task>",1,False
 case_36,conceptual_aggregation,Count the respondents whose length of stay is between 5 and 35 days and who were admitted for an 'Emergency' procedure.,"Survey Data
 ==================================================
 
@@ -18309,8 +18393,8 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 5 and 35 days and who were admitted for an 'Emergency' procedure.
-</task>",,False
-case_37,conceptual_aggregation,How many respondents from 'HOSP_53' are over the age of 65 and are not taking 'Aspirin'?,"Survey Data
+</task>",2,True
+case_37,conceptual_aggregation,How many respondents from 'HOSP_53' are over the age of 65 and are not taking 'Aspirin'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -18476,7 +18560,7 @@ Respondent 36:
   Medication: e
   Test Results: c
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -18841,17 +18925,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents from 'HOSP_53' are over the age of 65 and are not taking 'Aspirin'?
-</task>",0,True
-case_38,conceptual_aggregation,How many respondents from 'HOSP_34' are over the age of 50 and are not taking 'Aspirin'?,"Survey Data
+</task>""",0.0,True
+case_38,conceptual_aggregation,How many respondents from 'HOSP_34' are over the age of 50 and are not taking 'Aspirin'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -19017,7 +19101,7 @@ Respondent 98:
   Medication: b
   Test Results: c
 
-",0,"<example>
+""",0,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -19382,17 +19466,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents from 'HOSP_34' are over the age of 50 and are not taking 'Aspirin'?
-</task>",,False
-case_39,conceptual_aggregation,How many respondents with Gender = 'Male' and Admission Type = 'Emergency' have a Billing Amount below 40000?,"Survey Data
+</task>""",0.0,True
+case_39,conceptual_aggregation,How many respondents with Gender = 'Male' and Admission Type = 'Emergency' have a Billing Amount below 40000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -19542,7 +19626,7 @@ Respondent 5:
   Medication: c
   Test Results: a
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -19875,16 +19959,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents with Gender = 'Male' and Admission Type = 'Emergency' have a Billing Amount below 40000?
-</task>",,False
+</task>""",2.0,True
 case_40,conceptual_aggregation,Count the respondents whose length of stay is between 10 and 40 days and who were admitted for an 'Urgent' procedure.,"Survey Data
 ==================================================
 
@@ -20569,7 +20653,7 @@ Rules:
 
 <task>
 Count the respondents whose length of stay is between 10 and 40 days and who were admitted for an 'Urgent' procedure.
-</task>",,False
+</task>",0,False
 case_41,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Arthritis is greater than the number of patients with Asthma.,"Survey Data
 ==================================================
 
@@ -21254,7 +21338,7 @@ Rules:
 
 <task>
 Count the respondents who are in a hospital where the number of patients with Arthritis is greater than the number of patients with Asthma.
-</task>",,False
+</task>",2,True
 case_42,conceptual_aggregation,How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?,"Survey Data
 ==================================================
 
@@ -21843,7 +21927,7 @@ Rules:
 
 <task>
 How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?
-</task>",,False
+</task>",4,True
 case_43,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Asthma is greater than the number of patients with Arthritis.,"Survey Data
 ==================================================
 
@@ -22288,7 +22372,7 @@ Rules:
 
 <task>
 Count the respondents who are in a hospital where the number of patients with Asthma is greater than the number of patients with Arthritis.
-</task>",,False
+</task>",5,True
 case_44,conceptual_aggregation,How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?,"Survey Data
 ==================================================
 
@@ -22973,8 +23057,8 @@ Rules:
 
 <task>
 How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?
-</task>",,False
-case_45,conceptual_aggregation,How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?,"Survey Data
+</task>",6,True
+case_45,conceptual_aggregation,How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?,"""Survey Data
 ==================================================
 
 Questions:
@@ -23076,7 +23160,7 @@ Respondent 119:
   Medication: c
   Test Results: a
 
-",2,"<example>
+""",2,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -23313,16 +23397,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?
-</task>",2,True
+</task>""",2.0,True
 case_46,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Obesity is greater than the number of patients with Arthritis.,"Survey Data
 ==================================================
 
@@ -24007,7 +24091,7 @@ Rules:
 
 <task>
 Count the respondents who are in a hospital where the number of patients with Obesity is greater than the number of patients with Arthritis.
-</task>",,False
+</task>",3,True
 case_47,conceptual_aggregation,How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?,"Survey Data
 ==================================================
 
@@ -24692,8 +24776,8 @@ Rules:
 
 <task>
 How many respondents have a Billing Amount that is higher than the average Billing Amount for their Admission Type?
-</task>",,False
-case_48,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Cancer is greater than the number of patients with Diabetes.,"Survey Data
+</task>",6,True
+case_48,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Cancer is greater than the number of patients with Diabetes.,"""Survey Data
 ==================================================
 
 Questions:
@@ -24827,7 +24911,7 @@ Respondent 94:
   Medication: e
   Test Results: a
 
-",1,"<example>
+""",1,"""<example>
 How many respondents have Gender = 'Male' and Medical Condition = 'Hypertension'?
 
 DATA:
@@ -25128,16 +25212,16 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Count the respondents who are in a hospital where the number of patients with Cancer is greater than the number of patients with Diabetes.
-</task>",1,True
+</task>""",1.0,True
 case_49,conceptual_aggregation,How many respondents over the age of 60 have a length of stay that is longer than the average for their specific Admission Type?,"Survey Data
 ==================================================
 
@@ -25726,7 +25810,110 @@ Rules:
 
 <task>
 How many respondents over the age of 60 have a length of stay that is longer than the average for their specific Admission Type?
-</task>",,False
+</task>","To determine the number of respondents who meet the criteria, we need to follow these steps:
+
+1.  **Calculate the Length of Stay (LOS) for each respondent:** This is the difference in days between the Discharge Date and the Date of Admission. If the Discharge Date is before the Admission Date, the length of stay is considered 0 or invalid for this calculation.
+2.  **Identify the Admission Type for each respondent.**
+3.  **Calculate the average Length of Stay for each Admission Type**, considering only valid (positive) lengths of stay.
+4.  **Filter respondents whose Age is over 60.**
+5.  **For each filtered respondent, compare their LOS with the average LOS for their specific Admission Type.**
+
+**Step 1 & 2: Calculate LOS and identify Admission Type for all respondents:**
+
+*   **Respondent 73:**
+    *   Age: 21
+    *   Date of Admission: 2024-01-05, Discharge Date: 2024-03-26
+    *   LOS: (March 26, 2024 - January 5, 2024) = 81 days
+    *   Admission Type: a (Elective)
+*   **Respondent 100:**
+    *   Age: 42
+    *   Date of Admission: 2023-08-13, Discharge Date: 2023-08-25
+    *   LOS: (August 25, 2023 - August 13, 2023) = 12 days
+    *   Admission Type: c (Urgent)
+*   **Respondent 105:**
+    *   Age: 54
+    *   Date of Admission: 2023-05-18, Discharge Date: 2023-06-03
+    *   LOS: (June 3, 2023 - May 18, 2023) = 16 days
+    *   Admission Type: a (Elective)
+*   **Respondent 87:**
+    *   Age: 55
+    *   Date of Admission: 2023-04-09, Discharge Date: 2023-01-27
+    *   LOS: (January 27, 2023 - April 9, 2023) = -72 days. Invalid, treat as 0 for comparison.
+    *   Admission Type: a (Elective)
+*   **Respondent 14:**
+    *   Age: 85
+    *   Date of Admission: 2023-10-03, Discharge Date: 2023-09-11
+    *   LOS: (September 11, 2023 - October 3, 2023) = -22 days. Invalid, treat as 0 for comparison.
+    *   Admission Type: a (Elective)
+*   **Respondent 86:**
+    *   Age: 80
+    *   Date of Admission: 2021-12-19, Discharge Date: 2021-10-14
+    *   LOS: (October 14, 2021 - December 19, 2021) = -66 days. Invalid, treat as 0 for comparison.
+    *   Admission Type: a (Elective)
+*   **Respondent 17:**
+    *   Age: 19
+    *   Date of Admission: 2021-07-03, Discharge Date: 2021-08-12
+    *   LOS: (August 12, 2021 - July 3, 2021) = 40 days
+    *   Admission Type: a (Elective)
+*   **Respondent 85:**
+    *   Age: 67
+    *   Date of Admission: 2022-10-29, Discharge Date: 2022-11-20
+    *   LOS: (November 20, 2022 - October 29, 2022) = 22 days
+    *   Admission Type: b (Emergency)
+*   **Respondent 25:**
+    *   Age: 63
+    *   Date of Admission: 2023-11-05, Discharge Date: 2023-11-07
+    *   LOS: (November 7, 2023 - November 5, 2023) = 2 days
+    *   Admission Type: a (Elective)
+*   **Respondent 143:**
+    *   Age: 80
+    *   Date of Admission: 2022-12-10, Discharge Date: 2022-09-27
+    *   LOS: (September 27, 2022 - December 10, 2022) = -74 days. Invalid, treat as 0 for comparison.
+    *   Admission Type: b (Emergency)
+
+**Step 3: Calculate average LOS for each Admission Type (using only valid positive LOS):**
+
+*   **Elective (a):**
+    *   Valid LOS: R73 (81), R105 (16), R17 (40), R25 (2)
+    *   Average LOS (Elective) = (81 + 16 + 40 + 2) / 4 = 139 / 4 = 34.75 days
+*   **Emergency (b):**
+    *   Valid LOS: R85 (22)
+    *   Average LOS (Emergency) = 22 / 1 = 22 days
+*   **Urgent (c):**
+    *   Valid LOS: R100 (12)
+    *   Average LOS (Urgent) = 12 / 1 = 12 days
+
+**Step 4 & 5: Filter respondents over 60 and compare their LOS to the average for their Admission Type:**
+
+*   **Respondent 14:**
+    *   Age: 85 (Over 60: Yes)
+    *   LOS: 0 days
+    *   Admission Type: Elective
+    *   Is 0 > 34.75? No.
+*   **Respondent 86:**
+    *   Age: 80 (Over 60: Yes)
+    *   LOS: 0 days
+    *   Admission Type: Elective
+    *   Is 0 > 34.75? No.
+*   **Respondent 85:**
+    *   Age: 67 (Over 60: Yes)
+    *   LOS: 22 days
+    *   Admission Type: Emergency
+    *   Is 22 > 22? No (it is equal, not strictly longer).
+*   **Respondent 25:**
+    *   Age: 63 (Over 60: Yes)
+    *   LOS: 2 days
+    *   Admission Type: Elective
+    *   Is 2 > 34.75? No.
+*   **Respondent 143:**
+    *   Age: 80 (Over 60: Yes)
+    *   LOS: 0 days
+    *   Admission Type: Emergency
+    *   Is 0 > 22? No.
+
+None of the respondents over the age of 60 have a length of stay that is strictly longer than the average for their specific Admission Type.
+
+0",True
 case_50,conceptual_aggregation,Count the respondents who are in a hospital where the number of patients with Cancer is greater than the number of patients with Asthma.,"Survey Data
 ==================================================
 
@@ -26363,4 +26550,40 @@ Rules:
 
 <task>
 Count the respondents who are in a hospital where the number of patients with Cancer is greater than the number of patients with Asthma.
-</task>",,False
+</task>","1. **Identify Medical Condition codes:**
+   - Medical Condition B: Asthma
+   - Medical Condition C: Cancer
+
+2. **Group respondents by Hospital and count occurrences of 'Cancer' and 'Asthma' for each hospital:**
+   - **HOSP_73:** Respondent 73 (Medical Condition: Diabetes). Cancer: 0, Asthma: 0.
+   - **HOSP_65:** Respondent 65 (Medical Condition: Hypertension). Cancer: 0, Asthma: 0.
+   - **HOSP_39:** Respondent 39 (Medical Condition: Diabetes). Cancer: 0, Asthma: 0.
+   - **HOSP_86:** Respondent 86 (Medical Condition: Hypertension). Cancer: 0, Asthma: 0.
+   - **HOSP_21:** Respondent 21 (Medical Condition: Arthritis). Cancer: 0, Asthma: 0.
+   - **HOSP_150:** Respondent 150 (Medical Condition: Asthma). Cancer: 0, Asthma: 1.
+   - **HOSP_37:** Respondent 37 (Medical Condition: Diabetes). Cancer: 0, Asthma: 0.
+   - **HOSP_90:** Respondent 90 (Medical Condition: Asthma). Cancer: 0, Asthma: 1.
+   - **HOSP_80:** Respondent 80 (Medical Condition: Cancer). Cancer: 1, Asthma: 0.
+   - **HOSP_101:** Respondent 101 (Medical Condition: Hypertension). Cancer: 0, Asthma: 0.
+   - **HOSP_34:** Respondent 34 (Medical Condition: Hypertension). Cancer: 0, Asthma: 0.
+
+3. **Determine which hospitals have a 'Cancer' count greater than an 'Asthma' count:**
+   - HOSP_73: 0 > 0 (False)
+   - HOSP_65: 0 > 0 (False)
+   - HOSP_39: 0 > 0 (False)
+   - HOSP_86: 0 > 0 (False)
+   - HOSP_21: 0 > 0 (False)
+   - HOSP_150: 0 > 1 (False)
+   - HOSP_37: 0 > 0 (False)
+   - HOSP_90: 0 > 1 (False)
+   - **HOSP_80: 1 > 0 (True)**
+   - HOSP_101: 0 > 0 (False)
+   - HOSP_34: 0 > 0 (False)
+
+4. **Count the respondents who are in the qualifying hospitals:**
+   - Only HOSP_80 meets the condition.
+   - Respondent 80 is in HOSP_80.
+
+Therefore, there is 1 respondent who meets the criteria.
+
+1",True

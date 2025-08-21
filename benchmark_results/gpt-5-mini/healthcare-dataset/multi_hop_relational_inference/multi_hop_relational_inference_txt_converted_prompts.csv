@@ -1,5 +1,5 @@
 case_id,task,question,questionnaire,expected_answer,prompt,Response,Correct
-case_2,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '109'.,"Survey Data
+case_2,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '109'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -117,7 +117,7 @@ Respondent 47:
   Medication: b
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -386,17 +386,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '109'.
-</task>",None,True
-case_3,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '20'?,"Survey Data
+</task>""",,True
+case_3,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '20'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -546,7 +546,7 @@ Respondent 76:
   Medication: d
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -879,17 +879,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '20'?
-</task>",None,True
-case_4,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '10'?,"Survey Data
+</task>""",,True
+case_4,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '10'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -1007,7 +1007,7 @@ Respondent 34:
   Medication: d
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -1276,17 +1276,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '10'?
-</task>",None,True
-case_5,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '73'?,"Survey Data
+</task>""",,True
+case_5,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '73'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -1484,7 +1484,7 @@ Respondent 73:
   Medication: c
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -1913,17 +1913,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '73'?
-</task>",None,True
-case_6,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '62', excluding the respondent themselves.","Survey Data
+</task>""",,True
+case_6,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '62', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -2137,7 +2137,7 @@ Respondent 98:
   Medication: b
   Test Results: c
 
-","147, 73","<example>
+""","""147, 73""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -2598,17 +2598,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '62', excluding the respondent themselves.
-</task>","147, 73",True
-case_7,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '14'.,"Survey Data
+</task>""","147, 73",True
+case_7,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '14'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -2806,7 +2806,7 @@ Respondent 32:
   Medication: c
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -3235,17 +3235,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '14'.
-</task>",None,True
-case_8,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '22', excluding the respondent themselves.","Survey Data
+</task>""",,True
+case_8,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '22', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -3411,7 +3411,7 @@ Respondent 57:
   Medication: d
   Test Results: b
 
-","116, 38, 112","<example>
+""","""116, 38, 112""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -3776,17 +3776,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '22', excluding the respondent themselves.
-</task>","116, 38, 112",True
-case_9,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '90'.,"Survey Data
+</task>""","116, 38, 112",True
+case_9,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '90'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -4000,7 +4000,7 @@ Respondent 8:
   Medication: b
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -4461,17 +4461,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '90'.
-</task>",None,True
-case_10,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '36'?,"Survey Data
+</task>""",,True
+case_10,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '36'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -4653,7 +4653,7 @@ Respondent 21:
   Medication: e
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -5050,17 +5050,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '36'?
-</task>",None,True
-case_11,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '141'?,"Survey Data
+</task>""",,True
+case_11,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '141'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -5162,7 +5162,7 @@ Respondent 136:
   Medication: b
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -5399,17 +5399,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '141'?
-</task>",None,True
-case_12,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '78'?,"Survey Data
+</task>""",,True
+case_12,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '78'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -5607,7 +5607,7 @@ Respondent 128:
   Medication: b
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -6036,17 +6036,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '78'?
-</task>",None,True
-case_13,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '75', excluding the respondent themselves.","Survey Data
+</task>""",,True
+case_13,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '75', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -6148,7 +6148,7 @@ Respondent 75:
   Medication: e
   Test Results: a
 
-",62,"<example>
+""",62,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -6385,17 +6385,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '75', excluding the respondent themselves.
-</task>",62,True
-case_14,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '48', excluding the respondent themselves.","Survey Data
+</task>""",62,True
+case_14,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '48', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -6593,7 +6593,7 @@ Respondent 140:
   Medication: e
   Test Results: a
 
-",91,"<example>
+""",91,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -7022,17 +7022,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '48', excluding the respondent themselves.
-</task>",91,True
-case_15,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '65'.,"Survey Data
+</task>""",91,True
+case_15,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '65'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -7134,7 +7134,7 @@ Respondent 65:
   Medication: d
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -7371,17 +7371,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '65'.
-</task>",None,True
-case_16,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '92'?,"Survey Data
+</task>""",,True
+case_16,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '92'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -7483,7 +7483,7 @@ Respondent 27:
   Medication: d
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -7720,17 +7720,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '92'?
-</task>",None,True
-case_17,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '17', excluding the respondent themselves.","Survey Data
+</task>""",,True
+case_17,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '17', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -7912,7 +7912,7 @@ Respondent 17:
   Medication: b
   Test Results: a
 
-","35, 140","<example>
+""","""35, 140""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -8309,17 +8309,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '17', excluding the respondent themselves.
-</task>","35, 140",True
-case_18,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '11'.,"Survey Data
+</task>""","35, 140",True
+case_18,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '11'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -8533,7 +8533,7 @@ Respondent 65:
   Medication: d
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -8994,17 +8994,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '11'.
-</task>",None,True
-case_19,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '13'.,"Survey Data
+</task>""",,True
+case_19,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '13'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -9106,7 +9106,7 @@ Respondent 85:
   Medication: e
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -9343,17 +9343,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '13'.
-</task>",None,True
-case_20,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '95'.,"Survey Data
+</task>""",,True
+case_20,multi_hop_relational_inference,List all respondents who are treated by the same doctor as respondent '95'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -9519,7 +9519,7 @@ Respondent 128:
   Medication: b
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -9884,17 +9884,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are treated by the same doctor as respondent '95'.
-</task>",None,True
-case_21,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '69'?,"Survey Data
+</task>""",,True
+case_21,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '69'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -10108,7 +10108,7 @@ Respondent 27:
   Medication: d
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -10569,17 +10569,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '69'?
-</task>",None,True
-case_22,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '76'?,"Survey Data
+</task>""",,True
+case_22,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '76'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -10697,7 +10697,7 @@ Respondent 43:
   Medication: d
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -10966,17 +10966,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '76'?
-</task>",None,True
-case_23,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '15'?,"Survey Data
+</task>""",,True
+case_23,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '15'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -11190,7 +11190,7 @@ Respondent 41:
   Medication: d
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -11651,17 +11651,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '15'?
-</task>",None,True
-case_24,multi_hop_relational_inference,"Find all respondents with the same insurance provider as respondent '37', excluding the respondent themselves.","Survey Data
+</task>""",,True
+case_24,multi_hop_relational_inference,"""Find all respondents with the same insurance provider as respondent '37', excluding the respondent themselves.""","""Survey Data
 ==================================================
 
 Questions:
@@ -11763,7 +11763,7 @@ Respondent 18:
   Medication: a
   Test Results: a
 
-",9,"<example>
+""",9,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -12000,17 +12000,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents with the same insurance provider as respondent '37', excluding the respondent themselves.
-</task>",9,True
-case_25,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '116'?,"Survey Data
+</task>""",9,True
+case_25,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '116'?,"""Survey Data
 ==================================================
 
 Questions:
@@ -12160,7 +12160,7 @@ Respondent 95:
   Medication: c
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -12493,17 +12493,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '116'?
-</task>",None,True
-case_26,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '81' but are a different gender.,"Survey Data
+</task>""",,True
+case_26,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '81' but are a different gender.,"""Survey Data
 ==================================================
 
 Questions:
@@ -12685,7 +12685,7 @@ Respondent 64:
   Medication: e
   Test Results: a
 
-",102,"<example>
+""",102,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -13082,17 +13082,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who have the same 'Admission Type' as respondent '81' but are a different gender.
-</task>",102,True
-case_27,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '7' and also have a 'Billing Amount' over 30000?,"Survey Data
+</task>""",102,True
+case_27,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '7' and also have a 'Billing Amount' over 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -13210,7 +13210,7 @@ Respondent 144:
   Medication: e
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -13479,17 +13479,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '7' and also have a 'Billing Amount' over 30000?
-</task>",7,False
-case_28,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '67' and also have a 'Billing Amount' over 20000?,"Survey Data
+</task>""",7,False
+case_28,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '67' and also have a 'Billing Amount' over 20000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -13607,7 +13607,7 @@ Respondent 126:
   Medication: b
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -13876,17 +13876,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '67' and also have a 'Billing Amount' over 20000?
-</task>",None,True
-case_29,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '35' but are a different gender.,"Survey Data
+</task>""",,True
+case_29,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '35' but are a different gender.,"""Survey Data
 ==================================================
 
 Questions:
@@ -14036,7 +14036,7 @@ Respondent 82:
   Medication: a
   Test Results: a
 
-","19, 45","<example>
+""","""19, 45""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -14369,17 +14369,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who have the same 'Admission Type' as respondent '35' but are a different gender.
-</task>","19, 45",True
-case_30,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '141' and also have a 'Billing Amount' over 30000?,"Survey Data
+</task>""","19, 45",True
+case_30,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '141' and also have a 'Billing Amount' over 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -14561,7 +14561,7 @@ Respondent 58:
   Medication: a
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -14958,17 +14958,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '141' and also have a 'Billing Amount' over 30000?
-</task>",141,False
-case_31,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '36' and who have 'Inconclusive' test results.,"Survey Data
+</task>""",141,False
+case_31,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '36' and who have 'Inconclusive' test results.,"""Survey Data
 ==================================================
 
 Questions:
@@ -15086,7 +15086,7 @@ Respondent 93:
   Medication: b
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -15355,17 +15355,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents who are treated by the same doctor as respondent '36' and who have 'Inconclusive' test results.
-</task>",None,True
-case_32,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '142' but are a different gender.,"Survey Data
+</task>""",,True
+case_32,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '142' but are a different gender.,"""Survey Data
 ==================================================
 
 Questions:
@@ -15547,7 +15547,7 @@ Respondent 106:
   Medication: c
   Test Results: b
 
-",106,"<example>
+""",106,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -15944,17 +15944,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who have the same 'Admission Type' as respondent '142' but are a different gender.
-</task>",106,True
-case_33,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '47' and who have 'Normal' test results.,"Survey Data
+</task>""",106,True
+case_33,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '47' and who have 'Normal' test results.,"""Survey Data
 ==================================================
 
 Questions:
@@ -16152,7 +16152,7 @@ Respondent 34:
   Medication: d
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -16581,17 +16581,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents who are treated by the same doctor as respondent '47' and who have 'Normal' test results.
-</task>",47,False
-case_34,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '58' and also have a 'Billing Amount' over 30000?,"Survey Data
+</task>""",47,False
+case_34,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '58' and also have a 'Billing Amount' over 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -16789,7 +16789,7 @@ Respondent 89:
   Medication: b
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -17218,17 +17218,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '58' and also have a 'Billing Amount' over 30000?
-</task>",None,True
-case_35,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '78' and who have 'Normal' test results.,"Survey Data
+</task>""",,True
+case_35,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '78' and who have 'Normal' test results.,"""Survey Data
 ==================================================
 
 Questions:
@@ -17394,7 +17394,7 @@ Respondent 24:
   Medication: c
   Test Results: c
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -17759,17 +17759,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents who are treated by the same doctor as respondent '78' and who have 'Normal' test results.
-</task>",None,True
-case_36,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '145' and who have 'Inconclusive' test results.,"Survey Data
+</task>""",,True
+case_36,multi_hop_relational_inference,Find all respondents who are treated by the same doctor as respondent '145' and who have 'Inconclusive' test results.,"""Survey Data
 ==================================================
 
 Questions:
@@ -17903,7 +17903,7 @@ Respondent 8:
   Medication: b
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -18204,17 +18204,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents who are treated by the same doctor as respondent '145' and who have 'Inconclusive' test results.
-</task>",None,True
-case_37,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '148' and also have a 'Billing Amount' over 20000?,"Survey Data
+</task>""",,True
+case_37,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '148' and also have a 'Billing Amount' over 20000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -18332,7 +18332,7 @@ Respondent 107:
   Medication: a
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -18601,17 +18601,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '148' and also have a 'Billing Amount' over 20000?
-</task>",148,False
-case_38,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '128' and also have a 'Billing Amount' over 40000?,"Survey Data
+</task>""",148,False
+case_38,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '128' and also have a 'Billing Amount' over 40000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -18713,7 +18713,7 @@ Respondent 124:
   Medication: d
   Test Results: b
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -18950,17 +18950,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '128' and also have a 'Billing Amount' over 40000?
-</task>",None,True
-case_39,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '113' and also have a 'Billing Amount' over 20000?,"Survey Data
+</task>""",,True
+case_39,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '113' and also have a 'Billing Amount' over 20000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -19110,7 +19110,7 @@ Respondent 107:
   Medication: a
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -19443,17 +19443,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '113' and also have a 'Billing Amount' over 20000?
-</task>",None,True
-case_40,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '88' but are a different gender.,"Survey Data
+</task>""",,True
+case_40,multi_hop_relational_inference,List all respondents who have the same 'Admission Type' as respondent '88' but are a different gender.,"""Survey Data
 ==================================================
 
 Questions:
@@ -19667,7 +19667,7 @@ Respondent 144:
   Medication: e
   Test Results: a
 
-",82,"<example>
+""",82,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -20128,17 +20128,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who have the same 'Admission Type' as respondent '88' but are a different gender.
-</task>",82,True
-case_41,multi_hop_relational_inference,List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.,"Survey Data
+</task>""",82,True
+case_41,multi_hop_relational_inference,List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -20256,7 +20256,7 @@ Respondent 116:
   Medication: b
   Test Results: c
 
-","82, 69","<example>
+""","""82, 69""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -20525,17 +20525,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.
-</task>","82, 69",True
-case_42,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '13' and also have a 'Billing Amount' over 30000?,"Survey Data
+</task>""","82, 69",True
+case_42,multi_hop_relational_inference,Which respondents are in the same hospital as respondent '13' and also have a 'Billing Amount' over 30000?,"""Survey Data
 ==================================================
 
 Questions:
@@ -20685,7 +20685,7 @@ Respondent 41:
   Medication: d
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -21018,17 +21018,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are in the same hospital as respondent '13' and also have a 'Billing Amount' over 30000?
-</task>",None,True
-case_43,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"Survey Data
+</task>""",,True
+case_43,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"""Survey Data
 ==================================================
 
 Questions:
@@ -21210,7 +21210,7 @@ Respondent 24:
   Medication: c
   Test Results: c
 
-","148, 128, 132, 24","<example>
+""","""148, 128, 132, 24""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -21607,17 +21607,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?
-</task>","148, 128, 132, 24",True
-case_44,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"Survey Data
+</task>""","148, 128, 132, 24",True
+case_44,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"""Survey Data
 ==================================================
 
 Questions:
@@ -21815,7 +21815,7 @@ Respondent 74:
   Medication: a
   Test Results: a
 
-","130, 118, 62, 91, 13, 73","<example>
+""","""130, 118, 62, 91, 13, 73""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -22244,17 +22244,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?
-</task>","130, 118, 62, 91, 13, 73",True
-case_45,multi_hop_relational_inference,Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '94'.,"Survey Data
+</task>""","130, 118, 62, 91, 13, 73",True
+case_45,multi_hop_relational_inference,Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '94'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -22356,7 +22356,7 @@ Respondent 94:
   Medication: e
   Test Results: a
 
-",None,"<example>
+""",,"""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -22593,17 +22593,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '94'.
-</task>",None,True
-case_46,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"Survey Data
+</task>""",,True
+case_46,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"""Survey Data
 ==================================================
 
 Questions:
@@ -22801,7 +22801,7 @@ Respondent 19:
   Medication: d
   Test Results: c
 
-","12, 146, 144, 93, 142, 19","<example>
+""","""12, 146, 144, 93, 142, 19""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -23230,17 +23230,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?
-</task>","12, 146, 144, 93, 142, 19",True
-case_47,multi_hop_relational_inference,List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.,"Survey Data
+</task>""","12, 146, 144, 93, 142, 19",True
+case_47,multi_hop_relational_inference,List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -23438,7 +23438,7 @@ Respondent 143:
   Medication: a
   Test Results: a
 
-","130, 116, 87","<example>
+""","""130, 116, 87""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -23867,17 +23867,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 List all respondents who are taking the same medication as the youngest patient with 'Diabetes'.
-</task>","130, 116, 87",True
-case_48,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"Survey Data
+</task>""","130, 116, 87",True
+case_48,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"""Survey Data
 ==================================================
 
 Questions:
@@ -24059,7 +24059,7 @@ Respondent 86:
   Medication: b
   Test Results: c
 
-","37, 51, 131, 129, 12, 36","<example>
+""","""37, 51, 131, 129, 12, 36""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -24456,17 +24456,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?
-</task>","37, 51, 131, 129, 12, 36",True
-case_49,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"Survey Data
+</task>""","37, 51, 131, 129, 12, 36",True
+case_49,multi_hop_relational_inference,Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?,"""Survey Data
 ==================================================
 
 Questions:
@@ -24680,7 +24680,7 @@ Respondent 130:
   Medication: b
   Test Results: a
 
-","133, 39, 132, 36, 84, 101, 130","<example>
+""","""133, 39, 132, 36, 84, 101, 130""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -25141,17 +25141,17 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Which respondents are from a hospital where the average age of patients is lower than the overall average age of all respondents?
-</task>","133, 39, 132, 36, 84, 101, 130",True
-case_50,multi_hop_relational_inference,Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '107'.,"Survey Data
+</task>""","133, 39, 132, 36, 84, 101, 130",True
+case_50,multi_hop_relational_inference,Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '107'.,"""Survey Data
 ==================================================
 
 Questions:
@@ -25365,7 +25365,7 @@ Respondent 68:
   Medication: b
   Test Results: c
 
-","145, 77, 122, 5, 95, 85, 29, 150, 79, 7, 68","<example>
+""","""145, 77, 122, 5, 95, 85, 29, 150, 79, 7, 68""","""<example>
 Find all respondents with the same insurance provider as respondent '144', excluding the respondent themselves.
 
 DATA:
@@ -25826,13 +25826,13 @@ Provide your final answer directly and concisely. Output must be the human-reada
 
 Rules:
 - For MCQ fields, map any letter codes in the Responses (case-insensitive) to the corresponding option text from the Questions schema, and output only that text. Do NOT include the letter or both.
-  Example: If the schema is ""[MCQ: A. Abnormal B. Inconclusive C. Normal]"" and the response is ""a"", output ""Abnormal"".
+  Example: If the schema is """"[MCQ: A. Abnormal B. Inconclusive C. Normal]"""" and the response is """"a"""", output """"Abnormal"""".
 - For open-ended fields, output the exact text value.
-- If the question asks for a count, provide only the number (e.g., ""42"").
-- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., ""17, 21, 23"").
-- Preserve capitalization exactly as in the schema (e.g., output ""Abnormal"", not ""abnormal"" or ""A"").
+- If the question asks for a count, provide only the number (e.g., """"42"""").
+- If the question asks for a list of names or IDs, provide a simple comma-separated list (e.g., """"17, 21, 23"""").
+- Preserve capitalization exactly as in the schema (e.g., output """"Abnormal"""", not """"abnormal"""" or """"A"""").
 </output>
 
 <task>
 Find all respondents whose billing amount is higher than the average for all patients treated by the same doctor as respondent '107'.
-</task>","145, 77, 122, 5, 95, 85, 29, 150, 79, 7, 68",True
+</task>""","145, 77, 122, 5, 95, 85, 29, 150, 79, 7, 68",True
